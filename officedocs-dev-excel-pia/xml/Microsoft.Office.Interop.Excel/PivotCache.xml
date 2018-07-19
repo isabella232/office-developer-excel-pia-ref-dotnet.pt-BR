@@ -1,0 +1,1480 @@
+<Type Name="PivotCache" FullName="Microsoft.Office.Interop.Excel.PivotCache">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="95fb67e4ccce659f9704901963b16bd33fec57c6" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20579496" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface PivotCache" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotCache" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotCache" />
+  <TypeSignature Language="VB.NET" Value="Public Interface PivotCache" />
+  <TypeSignature Language="C++ CLI" Value="public interface class PivotCache" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002441C-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Representa o cache de memória para um relatório de tabela dinâmica.</summary>
+    <remarks>
+      <para>O objeto <b>PivotCache</b> é membro do <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> conjunto.</para>
+      <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotCache" /> método para retornar um objeto <b>PivotCache</b> para um relatório de tabela dinâmica (cada relatório possui somente um cache).</para>
+      <para>Uso <b>PivotCaches</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de cache de tabela dinâmica, para retornar um único objeto <b>PivotCache</b> da coleção <b>PivotCaches</b> para uma pasta de trabalho.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ADOConnection">
+      <MemberSignature Language="C#" Value="public object ADOConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ADOConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.ADOConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ADOConnection As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ADOConnection { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2074)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2074)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um objeto de conexão ADO se o cache de tabela dinâmica estiver conectado a uma fonte de dados OLE DB.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>A propriedade <b>ADOConnection</b> expõe a conexão do Microsoft Excel ao provedor de dados, permitindo ao usuário escrever código dentro do contexto da mesma sessão que o Excel está usando com ADO (fonte relacional) ou ADOMD (fonte OLAP).</para>
+          <para>a propriedade <b>ADOConnection</b> está disponível apenas para sessões de onde a fonte de dados é uma fonte de dados OLE DB. Quando não houver nenhuma sessão ADO a consulta resultará em um erro em tempo de execução.</para> Propriedade de 
+          <para>o <b>ADOConnection</b> pode ser usada para qualquer cache baseado em OLE DB com ADO. O objeto de conexão ADO pode ser usado com ADOMD para encontrar informações sobre os cubos OLAP no qual o cache está baseado.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundQuery">
+      <MemberSignature Language="C#" Value="public bool BackgroundQuery { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BackgroundQuery" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.BackgroundQuery" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackgroundQuery As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BackgroundQuery { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1427)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1427)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1427)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> se as consultas para a tabela de consulta ou o relatório de tabela dinâmica são executadas de forma assíncrona (em segundo plano).</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Para fontes de dados OLAP, essa propriedade é somente leitura e sempre retorna <b>False</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandText">
+      <MemberSignature Language="C#" Value="public object CommandText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object CommandText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.CommandText" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommandText As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CommandText { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1829)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1829)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1829)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define a sequência de comando para a fonte de dados especificado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Para fontes OLE DB, o <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.CommandType" /> propriedade descreve o tipo de valor da propriedade <b>CommandText</b> .</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCmdType CommandType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCmdType CommandType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.CommandType" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommandType As XlCmdType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCmdType CommandType { Microsoft::Office::Interop::Excel::XlCmdType get(); void set(Microsoft::Office::Interop::Excel::XlCmdType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1830)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1830)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1830)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCmdType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define uma constante descrevendo o tipo de valor do <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.CommandText" /> propriedade. O valor padrão é <b>xlCmdSQL</b>.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />pode ser uma das seguintes constantes <b>XlCmdType</b> :</para>
+          <para>
+            <b>xlCmdCube</b>. Contém um nome de cubo para uma fonte de dados OLAP.</para>
+          <para>
+            <b>xlCmdDefault</b>. Contém o texto de comando que o provedor OLE DB entende.</para>
+          <para>
+            <b>xlCmdSql</b>. Contém uma instrução SQL.</para>
+          <para>
+            <b>xlCmdTable</b>. Contém um nome de tabela para acessar fontes de dados OLE DB.</para>
+          <para>Você pode definir a propriedade <b>CommandType</b> somente se o valor do <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" /> propriedade do cache de tabela dinâmica ou tabela de consulta for <b>xlOLEDBQuery</b>.</para>
+          <para>Se o valor da propriedade <b>CommandType</b> for <b>xlCmdCube</b>, você não pode alterar esse valor se houver um relatório de tabela dinâmica associado à tabela de consulta.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Connection">
+      <MemberSignature Language="C#" Value="public object Connection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Connection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />
+      <MemberSignature Language="VB.NET" Value="Public Property Connection As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Connection { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1432)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1432)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1432)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define informações de conexão para um cache de tabela dinâmica.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>A propriedade de <b>Conexão</b> pode ser uma das seguintes opções: configurações de OLE DB que permitem que o Microsoft Excel para se conectar a uma fonte de dados OLE DB, ODBC configurações que permitem que o Microsoft Excel conectar aos dados ODBC de origem, uma URL que permite que o Microsoft Excel para se conectar a um Dados da Web de origem, o caminho e nome do arquivo de um arquivo de texto ou o caminho e nome de um arquivo que especifica um banco de dados ou a consulta à Web.</para>
+          <para>a configuração da propriedade de <b>Conexão</b> não inicia imediatamente a conexão à fonte de dados. Você deve usar o <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> método para fazer a conexão e recuperar os dados.</para>
+          <para>Ao usar um arquivo de cubo offline, defina o <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> propriedade como <b>True</b> e use o <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" /> propriedade em vez da propriedade de <b>Conexão</b> .</para>
+          <para>Para obter mais informações sobre a sintaxe da sequência de conexão, consulte o <see cref="M:Microsoft.Office.Interop.Excel.PivotCaches.Add(Microsoft.Office.Interop.Excel.XlPivotTableSourceType,System.Object)" /> método da coleção <b>PivotCaches</b> .</para>
+          <para>Como alternativa, você pode optar por acessar uma fonte de dados diretamente usando a biblioteca do Microsoft ActiveX Data Objects (ADO).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePivotChart">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Shape CreatePivotChart (object ChartDestination, object XlChartType, object Left, object Top, object Width, object Height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Shape CreatePivotChart([in]object ChartDestination, [in]object XlChartType, [in]object Left, [in]object Top, [in]object Width, [in]object Height) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.PivotCache.CreatePivotChart(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreatePivotChart (ChartDestination As Object, Optional XlChartType As Object, Optional Left As Object, Optional Top As Object, Optional Width As Object, Optional Height As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3062)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ChartDestination" Type="System.Object" />
+        <Parameter Name="XlChartType" Type="System.Object" />
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Top" Type="System.Object" />
+        <Parameter Name="Width" Type="System.Object" />
+        <Parameter Name="Height" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="ChartDestination">Planilha de destino</param>
+        <param name="XlChartType">O tipo de gráfico</param>
+        <param name="Left">A distância, em pontos, entre a borda esquerda do objeto à borda esquerda da coluna A (em uma planilha) ou da borda esquerda da área do gráfico (em um gráfico).</param>
+        <param name="Top">A distância, em pontos, entre a borda superior da forma mais superior no intervalo de formas à borda superior da planilha.</param>
+        <param name="Width">A largura, em pontos, do objeto.</param>
+        <param name="Height">A largura, em pontos, do objeto.</param>
+        <summary>Cria um gráfico dinâmico autônomo a partir de um objeto <b>PivotCache</b> . Uma <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto é retornado.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Se o objeto <b>PivotCache</b> que o método é chamado de não tiver nenhum da tabela dinâmica anexada:</para>
+          <list type="bullet">
+            <item>
+              <description>uma tabela dinâmica de nível de pasta de trabalho é criada a partir do PivotCache existente.</description>
+            </item>
+            <item>
+              <description>Um autônomo PivotChart será criado com uma referência à tabela dinâmica recém-criada.</description>
+            </item>
+          </list>
+          <para>Se o PivotCache já tiver da tabela dinâmica associada:</para>
+          <list type="bullet">
+            <item>
+              <description>O PivotCache é clonada</description>
+            </item>
+            <item>
+              <description>uma nova tabela de nível de pasta de trabalho dinâmica é criada com base no PivotCache clonado.</description>
+            </item>
+            <item>
+              <description>Um autônomo de gráfico dinâmico é criado com uma referência à tabela dinâmica nova nível de pasta de trabalho.</description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePivotTable">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotTable CreatePivotTable (object TableDestination, object TableName, object ReadData, object DefaultVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.PivotTable CreatePivotTable([in]object TableDestination, [in]object TableName, [in]object ReadData, [in]object DefaultVersion) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.PivotCache.CreatePivotTable(System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreatePivotTable (TableDestination As Object, Optional TableName As Object, Optional ReadData As Object, Optional DefaultVersion As Object) As PivotTable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1836)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="TableDestination" Type="System.Object" />
+        <Parameter Name="TableName" Type="System.Object" />
+        <Parameter Name="ReadData" Type="System.Object" />
+        <Parameter Name="DefaultVersion" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="TableDestination">
+          <b>Objeto</b>necessário. A célula no canto superior esquerdo do intervalo de destino do relatório de tabela dinâmica (o intervalo na planilha onde o relatório de tabela dinâmica resultante será colocado). O intervalo de destino deve estar em uma planilha na pasta de trabalho que contém o objeto <b>PivotCache</b> especificado por expression.</param>
+        <param name="TableName">
+          <b>Objeto</b>de opcional. O nome do novo relatório de tabela dinâmica.</param>
+        <param name="ReadData">
+          <b>Objeto</b>de opcional. <b>True</b> para criar um cache de tabela dinâmica que contém todos os registros do banco de dados externo; Este cache pode ser muito grande. <b>False</b> para permitir a definição de alguns dos campos de campos de página como baseado em servidor antes que os dados sejam realmente lidos.</param>
+        <param name="DefaultVersion">
+          <b>Objeto</b>de opcional. A versão padrão do relatório de tabela dinâmica.</param>
+        <summary>Cria um relatório de tabela dinâmica com base em um <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> objeto.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Para obter uma maneira alternativa de criar um relatório de tabela dinâmica baseado em um cache de tabela dinâmica, consulte o <see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" /> método do <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objeto.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
+          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableRefresh">
+      <MemberSignature Language="C#" Value="public bool EnableRefresh { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableRefresh" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.EnableRefresh" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableRefresh As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableRefresh { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1477)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1477)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1477)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> se a tabela de consulta ou o cache de tabela dinâmica pode ser atualizada pelo usuário. O valor padrão é <b>True</b>.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>O <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.RefreshOnFileOpen" /> propriedade será ignorada se a propriedade <b>EnableRefresh</b> for definida como <b>False</b>.</para>
+          <para>Para fontes de dados OLAP, a definição dessa propriedade como <b>False</b> desabilita as atualizações.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(486)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(486)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o número de índice do objeto dentro da coleção de objetos similares.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsConnected">
+      <MemberSignature Language="C#" Value="public bool IsConnected { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsConnected" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.IsConnected" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsConnected As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsConnected { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2075)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2075)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna <b>True</b> se o <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" /> propriedade for <b>True</b> e o cache de tabela dinâmica está conectado à sua fonte. Retorna <b>False</b> se ele não está atualmente conectado à sua fonte.</summary>
+        <value>To be added.</value>
+        <remarks>Propriedade <para>o <b>IsConnected</b> não verifica para ver se a conexão está conectado. Mesmo se essa propriedade retorna <b>True</b>, enviar comandos ao provedor pode resultar em um erro se a conexão não é mais válida.</para><para>Requer que o tipo de fonte do cache seja externo e que é uma fonte de dados OLE DB.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalConnection">
+      <MemberSignature Language="C#" Value="public object LocalConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object LocalConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocalConnection As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ LocalConnection { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1835)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1835)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1835)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define a sequência de conexão para um arquivo de cubo offline.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Para uma fonte de dados não-OLAP, o valor da propriedade <b>LocalConnection</b> é uma sequência vazia e o <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> propriedade estiver definida como <b>False</b>.</para>
+          <para>a configuração da propriedade <b>LocalConnection</b> não inicia imediatamente a conexão à fonte de dados. Primeiro, você deve usar o <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> método para fazer a conexão e recuperar os dados.</para>
+          <para>o valor da propriedade <b>LocalConnection</b> é usado se o <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> propriedade estiver definida como <b>True</b>. Se a propriedade <b>UseLocalConnection</b> é definida como False, o <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> propriedade especifica a cadeia de caracteres de conexão para tabelas de consulta baseadas em fontes que não sejam arquivos de cubo local.</para>
+          <para>Para obter mais informações sobre a sintaxe de cadeias de caracteres de conexão, consulte o tópico de ajuda para o <see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" /> método da coleção de <b>tabelas dinâmicas</b> .</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaintainConnection">
+      <MemberSignature Language="C#" Value="public bool MaintainConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MaintainConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaintainConnection As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MaintainConnection { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1832)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1832)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1832)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> se a conexão à fonte de dados especificado é mantido após a atualização e até a pasta de trabalho está fechada. O valor padrão é <b>True</b>.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Você pode definir a propriedade <b>MaintainConnection</b> somente se o <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" /> propriedade da tabela de consulta ou o cache de tabela dinâmica é definida como <b>xlOLEDBQuery</b>.</para>
+          <para>Se você prevê frequentes consultas para um servidor, a definição dessa propriedade como <b>True</b> pode melhorar o desempenho, reduzindo o tempo de reconexão. A configuração da propriedade como <b>False</b> faz com que uma conexão aberta a ser fechado.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeConnection">
+      <MemberSignature Language="C#" Value="public void MakeConnection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MakeConnection() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.PivotCache.MakeConnection" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MakeConnection ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MakeConnection();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2076)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Estabelece uma conexão para o cache de tabela dinâmica especificado.</summary>
+        <remarks>
+          <para>O método <b>MakeConnection</b> pode ser usado depois que o cache libera uma conexão e o usuário deseja restabelecer a conexão.</para>
+          <para>Vários objetos e métodos podem retornar um erro em tempo de execução se o cache não está conectado. O uso desse método garante uma conexão antes de executar a outros objetos ou métodos.</para>
+          <para>Esse método resultará em um erro em tempo de execução se o <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" /> propriedade do cache de tabela dinâmica especificado tiver sido definida como <b>False</b>, o <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceType" /> propriedade do cache de tabela dinâmica especificado não tiver sido definida como <b>xlExternal</b>, ou se a conexão não é OLEDB.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemoryUsed">
+      <MemberSignature Language="C#" Value="public int MemoryUsed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MemoryUsed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.MemoryUsed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemoryUsed As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MemoryUsed { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(372)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(372)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna a quantidade de memória em bytes sendo utilizados pelo objeto.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>A propriedade <b>MemoryUsed</b> reflete o estado temporário do cache no momento em que ele é consultado.</para>
+          <para>Se o <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> objeto não tem nenhum relatório de tabela dinâmica anexado a ele, essa propriedade retornará 0 (zero).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MissingItemsLimit">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlPivotTableMissingItems MissingItemsLimit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlPivotTableMissingItems MissingItemsLimit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.MissingItemsLimit" />
+      <MemberSignature Language="VB.NET" Value="Public Property MissingItemsLimit As XlPivotTableMissingItems" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlPivotTableMissingItems MissingItemsLimit { Microsoft::Office::Interop::Excel::XlPivotTableMissingItems get(); void set(Microsoft::Office::Interop::Excel::XlPivotTableMissingItems value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2078)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2078)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2078)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlPivotTableMissingItems</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define a quantidade máxima de itens exclusivos por campo de tabela dinâmica que são retidos, mesmo quando eles não têm suportados dados nos registros do cache.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableMissingItems" />pode ser uma das seguintes constantes <b>XlPivotTableMissingItems</b> :</para>
+          <para>
+            <b>xlMissingItemsDefault</b> o número padrão de itens exclusivos permitido por tabela dinâmica.</para>
+          <para>
+            <b>xlMissingItemsMax</b> o número máximo de itens exclusivos por campo dinâmico permitido (32.500).</para>
+          <para>
+            <b>xlMissingItemsNone</b> nenhum itens exclusivos por campo dinâmico permitido (zero).</para>
+          <para>Essa propriedade pode ser definida como um valor entre 0 e 32500. Se for especificado um número inteiro menor do que zero, isso é equivalente à especificação <b>xlMissingItemsDefault</b>. Inteiros maiores do que 32.500 podem ser especificados, mas terá o mesmo efeito que especificar <b>xlMissingItemsMax</b>.</para>
+          <para>a propriedade <b>MissingItemsLimit</b> funciona somente para dinâmicas não - OLAP; caso contrário, um erro em tempo de execução pode ocorrer.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OLAP">
+      <MemberSignature Language="C#" Value="public bool OLAP { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OLAP" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.OLAP" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OLAP As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OLAP { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2077)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2077)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna <b>True</b> se o cache de tabela dinâmica estiver conectado a um servidor Online Analytical Processing (OLAP).</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OptimizeCache">
+      <MemberSignature Language="C#" Value="public bool OptimizeCache { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OptimizeCache" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.OptimizeCache" />
+      <MemberSignature Language="VB.NET" Value="Public Property OptimizeCache As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OptimizeCache { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1428)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1428)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1428)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> se o cache de tabela dinâmica é otimizado ao ser construído. O valor padrão é <b>False</b>.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Otimização do cache resulta em consultas adicionais e deprecia o desempenho inicial do relatório de tabela dinâmica.</para>
+          <para>Fontes de dados para OLE DB, essa propriedade é somente leitura e sempre retorna <b>False</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o objeto pai para o objeto especificado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlQueryType QueryType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlQueryType QueryType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueryType As XlQueryType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlQueryType QueryType { Microsoft::Office::Interop::Excel::XlQueryType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1831)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1831)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlQueryType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indica o tipo de consulta usada pelo Microsoft Excel para preencher o cache de tabela dinâmica.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlQueryType" />pode ser uma das seguintes constantes <b>XlQueryType</b> :</para>
+          <para>
+            <b>xlTextImport</b>. Com base em um arquivo de texto; para tabelas de consulta somente.</para>
+          <para>
+            <b>xlOLEDBQuery</b>. Com base em uma consulta OLE DB, incluindo fontes de dados OLAP.</para>
+          <para>
+            <b>xlWebQuery</b>. Com base em uma página da Web; para tabelas de consulta somente.</para>
+          <para>
+            <b>xlADORecordset</b>. Com base em uma consulta de recordset do ADO.</para>
+          <para>
+            <b>xlDAORecordSet</b>. Com base em uma consulta do conjunto de registros DAO; para tabelas de consulta somente.</para>
+          <para>
+            <b>xlODBCQuery</b>. Com base em uma fonte de dados ODBC.</para>
+          <para>Você especifica a fonte de dados no prefixo para o <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> valor da propriedade.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecordCount">
+      <MemberSignature Language="C#" Value="public int RecordCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RecordCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.RecordCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RecordCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RecordCount { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1478)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1478)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o número de registros no cache da tabela dinâmica ou o número de registros no cache que contém o item especificado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Essa propriedade reflete o estado temporário do cache no momento em que ele é consultado. O cache pode alterar entre consultas.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Recordset">
+      <MemberSignature Language="C#" Value="public object Recordset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Recordset" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.Recordset" />
+      <MemberSignature Language="VB.NET" Value="Public Property Recordset As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Recordset { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1165)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1165)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1165)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define um objeto <b>Recordset</b> que é usado como a fonte de dados para a tabela de consulta especificada ou o cache de tabela dinâmica.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Se essa propriedade é usada para substituir um conjunto de registros existente, a alteração terá efeito quando o <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> método for executado.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Refresh() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1417)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Atualiza o cache do <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objeto.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshDate">
+      <MemberSignature Language="C#" Value="public DateTime RefreshDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime RefreshDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.RefreshDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RefreshDate As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime RefreshDate { DateTime get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(696)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(696)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna a data em que o cache de tabela dinâmica foi atualizado pela última vez.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>O cache deve ter pelo menos um relatório de tabela dinâmica associado a.</para>
+          <para>Para fontes de dados OLAP, esta propriedade é atualizada após cada consulta.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshName">
+      <MemberSignature Language="C#" Value="public string RefreshName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RefreshName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.RefreshName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RefreshName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RefreshName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(697)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(697)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o nome da pessoa que atualizou pela última vez o cache de tabela dinâmica.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshOnFileOpen">
+      <MemberSignature Language="C#" Value="public bool RefreshOnFileOpen { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RefreshOnFileOpen" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.RefreshOnFileOpen" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefreshOnFileOpen As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RefreshOnFileOpen { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1479)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1479)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1479)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> se a tabela dinâmica cache é automaticamente atualizado sempre que a pasta de trabalho é aberta. O valor padrão é <b>False</b>.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Relatórios de tabela dinâmica não são atualizados automaticamente. Use o <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> método para atualizar os dados depois que a pasta de trabalho for aberta.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshPeriod">
+      <MemberSignature Language="C#" Value="public int RefreshPeriod { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RefreshPeriod" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.RefreshPeriod" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefreshPeriod As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RefreshPeriod { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1833)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1833)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1833)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define o número de minutos entre as atualizações.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>A definição do período como 0 (zero) desabilita automática atingiu o tempo atualizada e é equivalente à definição desta propriedade como <b>Null</b>.</para>
+          <para>o valor da propriedade <b>RefreshPeriod</b> pode ser um inteiro de 0 a 32,767.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetTimer">
+      <MemberSignature Language="C#" Value="public void ResetTimer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetTimer() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.PivotCache.ResetTimer" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetTimer ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetTimer();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1834)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Redefine o timer de atualização para o relatório de tabela dinâmica especificado como o último intervalo definido por você usando a <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.RefreshPeriod" /> propriedade.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RobustConnect">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlRobustConnect RobustConnect { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlRobustConnect RobustConnect" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.RobustConnect" />
+      <MemberSignature Language="VB.NET" Value="Public Property RobustConnect As XlRobustConnect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlRobustConnect RobustConnect { Microsoft::Office::Interop::Excel::XlRobustConnect get(); void set(Microsoft::Office::Interop::Excel::XlRobustConnect value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2081)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2081)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2081)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlRobustConnect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define como o cache de tabela dinâmica se conecta à sua fonte de dados.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" />pode ser uma das seguintes constantes <b>XlRobustConnect</b> :</para>
+          <para>
+            <b>xlAlways</b> o cache sempre usa informações de fonte externa (conforme definido pela <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceConnectionFile" /> ou <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceDataFile" /> propriedade) para reconectar.</para>
+          <para>
+            <b>xlAsRequired</b> o cache usa informações de fonte externa para se conectar novamente usando o <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> propriedade.</para>
+          <para>
+            <b>xlNever</b> o cache nunca usa informações de fonte para reconectar.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveAsODC">
+      <MemberSignature Language="C#" Value="public void SaveAsODC (string ODCFileName, object Description, object Keywords);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveAsODC([in]string ODCFileName, [in]object Description, [in]object Keywords) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.PivotCache.SaveAsODC(System.String,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveAsODC (ODCFileName As String, Optional Description As Object, Optional Keywords As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2082)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ODCFileName" Type="System.String" />
+        <Parameter Name="Description" Type="System.Object" />
+        <Parameter Name="Keywords" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="ODCFileName">
+          <b>String</b> necessário. Local onde salvar o arquivo.</param>
+        <param name="Description">
+          <b>Objeto</b>de opcional. Descrição que será salva no arquivo.</param>
+        <param name="Keywords">
+          <b>Objeto</b>de opcional. Palavras-chave separadas por espaço que podem ser usadas para pesquisar o arquivo.</param>
+        <summary>Salva a origem do cache de tabela dinâmica como um arquivo de Conexão de dados do Microsoft Office.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SavePassword">
+      <MemberSignature Language="C#" Value="public bool SavePassword { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SavePassword" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.SavePassword" />
+      <MemberSignature Language="VB.NET" Value="Public Property SavePassword As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SavePassword { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1481)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1481)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1481)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> se as informações de senha de uma sequência de conexão ODBC é salvo com a consulta especificada. <b>False</b> se a senha será removida.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Essa propriedade afeta apenas as consultas ODBC.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceConnectionFile">
+      <MemberSignature Language="C#" Value="public string SourceConnectionFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceConnectionFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.SourceConnectionFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceConnectionFile As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceConnectionFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2079)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2079)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2079)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define uma <b>cadeia de caracteres</b> indicando o arquivo de Conexão de dados do Microsoft Office ou arquivo semelhante que foi usado para criar a tabela dinâmica.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceData">
+      <MemberSignature Language="C#" Value="public object SourceData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SourceData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.SourceData" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceData As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SourceData { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(686)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(686)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(686)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna a fonte de dados para o relatório de tabela dinâmica.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>A tabela a seguir mostra os valores retornados pela propriedade <b>SourceDate</b> :</para>
+          <list type="table">
+            <item>
+              <term>banco de dados ou lista do Microsoft Excel</term>
+              <description>a referência de célula como texto.</description>
+            </item>
+            <item>
+              <description>Uma matriz de 
+              <term>fonte de dados externa</term>. Cada linha consiste em uma cadeia de caracteres da conexão SQL com os elementos restantes como a cadeia de caracteres de consulta, dividida em segmentos de 255 caracteres.</description>
+            </item>
+            <item>
+              <term>Vários intervalos de consolidação</term>
+              <description>uma matriz bidimensional. Cada linha consiste em uma referência e seus itens de campo de página associada.</description>
+            </item>
+            <item>
+              <term>Relatório de tabela dinâmica outra</term>
+              <description>um dos três tipos acima das informações.</description>
+            </item>
+          </list>
+          <para>Essa propriedade não está disponível para fontes de dados OLE DB.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceDataFile">
+      <MemberSignature Language="C#" Value="public string SourceDataFile { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceDataFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.SourceDataFile" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceDataFile As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceDataFile { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2080)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2080)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna uma <b>cadeia de caracteres</b> que indica o arquivo de dados de origem para o cache da tabela dinâmica.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Para fontes de dados com base em arquivo (por exemplo, o Microsoft Access), a propriedade <b>SourceDataFile</b> contém um caminho totalmente qualificado para o arquivo de dados de origem. Para fontes de dados baseado em servidor (por exemplo, o SQL Server) é <b>Nulo</b> . A propriedade <b>SourceDataFile</b> esteja definida como <b>Null</b> se o <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> propriedade for alterada programaticamente.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlPivotTableSourceType SourceType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlPivotTableSourceType SourceType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.SourceType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceType As XlPivotTableSourceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlPivotTableSourceType SourceType { Microsoft::Office::Interop::Excel::XlPivotTableSourceType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(685)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(685)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlPivotTableSourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um valor que identifica o tipo de item sendo publicado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" />pode ser uma das seguintes constantes de <b>XlPivotTableSourceType</b> :</para>
+          <para>
+            <b>xlConsolidation</b>
+          </para>
+          <para>
+            <b>xlDatabase</b>
+          </para>
+          <para>
+            <b>xlExternal</b>
+          </para>
+          <para>
+            <b>xlPivotTable</b>
+          </para>
+          <para>
+            <b>xlScenario</b>
+          </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sql">
+      <MemberSignature Language="C#" Value="public object Sql { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Sql" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.Sql" />
+      <MemberSignature Language="VB.NET" Value="Public Property Sql As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Sql { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1480)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1480)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1480)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reservado para uso interno.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpgradeOnRefresh">
+      <MemberSignature Language="C#" Value="public bool UpgradeOnRefresh { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UpgradeOnRefresh" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.UpgradeOnRefresh" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpgradeOnRefresh As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UpgradeOnRefresh { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2545)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2545)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2545)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contém informações sobre se atualizar o <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> e todas as conectadas <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> na próxima atualização. Leitura/gravação.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>O valor padrão é <b>False</b>. Se a propriedade é definida como <b>True</b> para um <b>PivotCache</b>, atualizar qualquer <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> anexado ao que <b>PivotCache</b> atualizará o <b>PivotCache</b> e todos os os anexado <b>tabelas dinâmicas</b> para a versão 2007 (PivotTable.Version = 3) como parte do a atualização.</para>
+          <para>Se a propriedade estiver definida como <b>False</b> para um <b>PivotCache</b>, atualizar qualquer <b>tabela dinâmica</b> anexado ao <b>PivotCache</b> não alterará a versão do <b>PivotCache</b>, nem a versão de qualquer anexo <b>tabelas dinâmicas </b>. Todas elas permaneçam a mesma versão conforme antes da atualização.</para>
+          <para>Salvar em um formato de arquivo short_Excel2007, quando compatibilidade modo irá definir essa propriedade como <b>True</b> para todos <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> na pasta de trabalho.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseLocalConnection">
+      <MemberSignature Language="C#" Value="public bool UseLocalConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseLocalConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseLocalConnection As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseLocalConnection { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1837)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1837)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1837)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> se o <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" /> propriedade é usada para especificar a cadeia de caracteres que permite que o Microsoft Excel para se conectar a uma fonte de dados. <b>False</b> se a cadeia de caracteres de conexão especificado pelo <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> propriedade é usada.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlPivotTableVersionList Version { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlPivotTableVersionList Version" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.Version" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As XlPivotTableVersionList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlPivotTableVersionList Version { Microsoft::Office::Interop::Excel::XlPivotTableVersionList get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(392)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(392)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlPivotTableVersionList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna a versão do Microsoft Excel na qual o <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> foi criado. Somente leitura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" />
+        </value>
+        <remarks>
+          <para>Essa propriedade retorna a versão do <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. As configurações padrão e comportamentos dependem da versão para permitir o antigo códigos de modelo de objeto de <b>tabela dinâmica</b> deve ser executada no 1st_Excel12 com os mesmos comportamentos quando a versão do <b>PivotTable</b> corresponde à versão do Excel para o qual o código foi escrito.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkbookConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.WorkbookConnection WorkbookConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.WorkbookConnection WorkbookConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCache.WorkbookConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkbookConnection As WorkbookConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::WorkbookConnection ^ WorkbookConnection { Microsoft::Office::Interop::Excel::WorkbookConnection ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2544)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2544)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Estabelece uma conexão entre a pasta de trabalho atual e o <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> objeto. Somente leitura.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>O objeto <b>WorkbookConnection</b> representa uma conexão a uma fonte de dados externos.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

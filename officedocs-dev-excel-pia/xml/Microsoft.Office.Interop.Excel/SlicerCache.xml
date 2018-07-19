@@ -1,0 +1,943 @@
+<Type Name="SlicerCache" FullName="Microsoft.Office.Interop.Excel.SlicerCache">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="951453b7aced83a646566a98d4ccf3cf249622cc" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20579587" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface SlicerCache" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SlicerCache" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SlicerCache" />
+  <TypeSignature Language="VB.NET" Value="Public Interface SlicerCache" />
+  <TypeSignature Language="C++ CLI" Value="public interface class SlicerCache" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000244C4-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Representa o estado atual do filtro de uma segmentação de dados e informações sobre quais <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> ou <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> a segmentação de dados está conectada.</summary>
+    <remarks>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.SlicerCaches" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> objeto para acessar a coleção de <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objetos em uma pasta de trabalho.</para>
+      <para>Cada segmentação de dados tem uma base <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> object que representa os itens exibidos na segmentação de dados e o estado atual de interface de usuário dos blocos exibida com suas legendas de item correspondente. Cada controle da segmentação de dados que o usuário vê no Excel é representado por um <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto que tem um <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto associado a.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Quando usado sem um qualificador de objeto, essa propriedade obtém um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel. Quando usado com um qualificador de objeto, essa propriedade obtém um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o criador do objeto especificado.</summary>
+        <value>Um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
+        <remarks>
+          <para>Somente leitura.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearAllFilters">
+      <MemberSignature Language="C#" Value="public void ClearAllFilters ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearAllFilters() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.SlicerCache.ClearAllFilters" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearAllFilters ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearAllFilters();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2561)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Limpa o filtro de segmentação de dados ou linha do tempo, dependendo do tipo de cache de segmentação de dados.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearDateFilter">
+      <MemberSignature Language="C#" Value="public void ClearDateFilter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearDateFilter() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.SlicerCache.ClearDateFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearDateFilter ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearDateFilter();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3115)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Limpa o filtro para uma linha de tempo (filtro de data).</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearManualFilter">
+      <MemberSignature Language="C#" Value="public void ClearManualFilter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearManualFilter() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.SlicerCache.ClearManualFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearManualFilter ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearManualFilter();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2594)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Limpa a filtragem de todas as segmentações de dados associadas ao cache da segmentação de dados especificada.</summary>
+        <remarks>
+          <para>Se você desmarcar a filtragem de uma segmentação de dados usando o <see cref="M:Microsoft.Office.Interop.Excel.SlicerCache.ClearManualFilter" /> método, mas um ou mais segmentações de dados são multifiltragem dados em que a segmentação de dados, alguns itens na primeira segmentação de dados permanecerá desabilitadas. Por exemplo, se você tiver uma segmentação de dados do cliente e o país que estão entre filtrada e executar ActiveWorkbook.SlicerCaches("Slicer_Customer"). ClearManualFilter, todos os itens na segmentação de dados do cliente não ficará disponíveis até você executar ActiveWorkbook.SlicerCaches("Slicer_Country"). ClearManualFilter. Para obter mais informações sobre filtragem cruzada, consulte o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> propriedade.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém um <b>inteiro</b> de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
+        <value>De 32 bits <b>inteiro</b> que indica o aplicativo no qual esse objeto foi criado.</value>
+        <remarks>
+          <para>Somente leitura <b>long</b>.</para>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. O <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.Creator" /> propriedade foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CrossFilterType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType CrossFilterType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType CrossFilterType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />
+      <MemberSignature Language="VB.NET" Value="Public Property CrossFilterType As XlSlicerCrossFilterType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlSlicerCrossFilterType CrossFilterType { Microsoft::Office::Interop::Excel::XlSlicerCrossFilterType get(); void set(Microsoft::Office::Interop::Excel::XlSlicerCrossFilterType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2978)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2978)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2978)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém ou define se uma segmentação de dados estiverem participando multifiltragem com outras segmentações de dados que compartilham o mesmo cache de segmentação de dados e sobre como a filtragem cruzada é exibida.</summary>
+        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType" /> objeto.</value>
+        <remarks>
+          <para>Leitura/gravação.</para>
+          <para>Se mais de uma segmentação de dados estiver associada a mesma tabela dinâmica, por padrão, se o item ou itens que você filtra por em uma segmentação de dados não tem nenhum dado correspondente em outra segmentação de dados, esses itens estará esmaecidos. Por exemplo, se você tiver uma segmentação de dados de estado e de segmentação de dados Country e você clicar em um país em que a segmentação de dados do país, todos os estados que não estão nesse país estará esmaecida. Esse recurso é conhecido como "cruze filtragem".</para> Configurações de 
+          <para>a interface do usuário que correspondem à configuração do <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> são de propriedade a indicar visualmente os itens sem dados e Mostrar itens sem dados último caixas de seleção na caixa de diálogo Configurações de segmentação de dados. Definindo o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> propriedade a ser <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithDataAtTop" /> corresponde à seleção de ambos os indicar visualmente os itens sem dados e Mostrar itens sem dados última caixas de seleção. Definindo o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> propriedade <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithNoData" /> corresponde à seleção de somente a indicar visualmente os itens cujo nenhuma caixa de seleção de dados. Desmarcar ambas as caixas de seleção corresponde à configuração de <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> propriedade <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerNoCrossFilter" />.</para> Fontes de dados OLAP de 
+          <para>(<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>true</b>) não são compatíveis com o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto. Para fontes de dados OLAP, use o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> do objeto, em vez disso.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.SlicerCache.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Excluir o cache da segmentação de dados especificada e as segmentações de dados associadas a ele.</summary>
+        <remarks>
+          <para>Para excluir uma determinada segmentação de dados independentemente do cache de segmentação de dados, use o <see cref="M:Microsoft.Office.Interop.Excel.Slicer.Delete" /> método do <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> do objeto em vez disso.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterCleared">
+      <MemberSignature Language="C#" Value="public bool FilterCleared { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FilterCleared" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.FilterCleared" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FilterCleared As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FilterCleared { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3113)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3113)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna se o estado de filtro de segmentação de dados ou do cronograma está desmarcado. <b>Boolean</b> (<b>bool</b> em c#). Somente leitura</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(486)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(486)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém o índice do objeto <b>SlicerCache</b> especificado no <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> conjunto.</summary>
+        <value>Retorna <see cref="T:System.Int32" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="List">
+      <MemberSignature Language="C#" Value="public bool List { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool List" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.List" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property List As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool List { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(861)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(861)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> se o cache de segmentação de dados é para uma segmentação de dados em uma tabela. <b>False</b> caso contrário. <b>Boolean</b> (<b>bool</b> em c#) Somente leitura</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListObject">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ListObject ListObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ListObject ListObject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.ListObject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListObject As ListObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ListObject ^ ListObject { Microsoft::Office::Interop::Excel::ListObject ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2257)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2257)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ListObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um objeto <b>ListObject</b> para o <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> objeto. Somente leitura</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém ou define o nome do cache de segmentação de dados.</summary>
+        <value>O nome do cache de segmentação de dados.</value>
+        <remarks>
+          <para>Nome do cache de segmentação de dados deve ser exclusivo no namespace da pasta de trabalho. Por padrão, o nome atribuído a um cache de segmentação de dados é Slicer_ seguido do nome do campo de tabela dinâmica do cache de segmentação de dados está associado. Por exemplo, se a segmentação de dados está associada com o campo da categoria de produto na tabela dinâmica, o nome padrão será Slicer_Product_Category (espaços no nome de campo são substituídos por caracteres de sublinhado). Se houver mais de um campo de categoria de produto na mesma pasta de trabalho com uma segmentação de dados associado a ela, ou alguma outra entidade nomeada na pasta de trabalho com o nome Slicer_Product_Category, o Excel irá acrescentar um número após o nome para produzir um nome exclusivo , como Slicer_Product_Category1.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OLAP">
+      <MemberSignature Language="C#" Value="public bool OLAP { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OLAP" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OLAP As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OLAP { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2077)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2077)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém se a segmentação de dados associada ao cache de segmentação de dados especificada se baseia em uma fonte de dados OLAP.</summary>
+        <value>
+          <b>true</b> se a segmentação de dados associada ao cache de segmentação de dados especificada se baseia em uma fonte de dados OLAP; Caso contrário, <b>false</b>.</value>
+        <remarks>
+          <para>Somente leitura.</para>
+          <para>
+            <b>true</b>, se a segmentação de dados se baseia em uma fonte de dados OLAP; caso contrário <b>false</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém o pai <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> objeto para especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto.</summary>
+        <value>O pai <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> objeto para especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto.</value>
+        <remarks>
+          <para>Somente leitura.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotTables">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.SlicerPivotTables PivotTables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.SlicerPivotTables PivotTables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.PivotTables" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotTables As SlicerPivotTables" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::SlicerPivotTables ^ PivotTables { Microsoft::Office::Interop::Excel::SlicerPivotTables ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(690)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(690)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.SlicerPivotTables</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> coleção que contém informações sobre as tabelas dinâmicas do cache de segmentação de dados está filtrando no momento.</summary>
+        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> coleção que contém informações sobre as tabelas dinâmicas do cache de segmentação de dados está filtrando no momento.</value>
+        <remarks>
+          <para>Somente leitura.</para>
+          <para>o <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> coleção retornada pelo <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.PivotTables" /> propriedade estará vazia se a segmentação de dados associado com o especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> não estiver conectada a nenhuma tabela dinâmica.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequireManualUpdate">
+      <MemberSignature Language="C#" Value="public bool RequireManualUpdate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RequireManualUpdate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.RequireManualUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequireManualUpdate As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequireManualUpdate { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3114)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3114)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(3114)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>True quando manual de atualizações do cache de segmentação de dados necessários. Boolean (<b>bool</b> em c#) leitura/gravação</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowAllItems">
+      <MemberSignature Language="C#" Value="public bool ShowAllItems { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowAllItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowAllItems As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowAllItems { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(452)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(452)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(452)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém ou define se a segmentação de dados conectada para os itens de exibição de cache de segmentação de dados especificada que foram excluídos no PivotCache correspondente.</summary>
+        <value>
+          <b>true</b> se a segmentação de dados conectada ao cache de segmentação de dados especificado exibir itens que foram excluídos no PivotCache correspondente; Caso contrário, <b>false</b>. O padrão é <b>true</b>.</value>
+        <remarks>
+          <para>Leitura/gravação.</para>
+          <para>Quando o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> propriedade estiver definida como <b>true</b> (o padrão), os itens que foram excluídos nos dados de origem são exibidos na segmentação de dados conectada ao cache de segmentação de dados especificada. O <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> propriedade corresponde à configuração dos Mostrar itens excluídos da caixa de seleção de fonte de dados, na caixa de diálogo Configurações de segmentação de dados.</para>
+          <para>o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> propriedade só se aplica a segmentações de dados que se baseiam em intervalos da pasta de trabalho ou listas (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />  =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />), ou para segmentações de dados que se baseiam em fontes de dados relacionais (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />  =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" /> e <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />. <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>false</b>). Uma tentativa de definir o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> propriedade segmentações de dados que estão conectados a tabelas dinâmicas com base em fontes de dados OLAP externos (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>true</b>) gera um erro em tempo de execução.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SlicerCacheLevels">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.SlicerCacheLevels SlicerCacheLevels { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.SlicerCacheLevels SlicerCacheLevels" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerCacheLevels" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SlicerCacheLevels As SlicerCacheLevels" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::SlicerCacheLevels ^ SlicerCacheLevels { Microsoft::Office::Interop::Excel::SlicerCacheLevels ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2974)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2974)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.SlicerCacheLevels</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém a coleção de <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objetos que representam os níveis de uma hierarquia OLAP na qual o cache de segmentação de dados especificada se baseia.</summary>
+        <value>A coleção de <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objetos que representam os níveis de uma hierarquia OLAP na qual o cache de segmentação de dados especificada se baseia.</value>
+        <remarks>
+          <para>Somente leitura.</para>
+          <para>o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerCacheLevels" /> propriedade só se aplica a segmentações de dados que filtram fontes de dados OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>true</b>). A tentativa de acessar essa propriedade de segmentação de dados não-OLAP irá gerar um erro em tempo de execução.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SlicerCacheType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlSlicerCacheType SlicerCacheType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlSlicerCacheType SlicerCacheType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerCacheType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SlicerCacheType As XlSlicerCacheType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlSlicerCacheType SlicerCacheType { Microsoft::Office::Interop::Excel::XlSlicerCacheType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3111)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3111)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlSlicerCacheType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o tipo de cache de segmentação de dados – segmentação de dados ou linha do tempo. Somente leitura</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SlicerItems">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.SlicerItems SlicerItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.SlicerItems SlicerItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SlicerItems As SlicerItems" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::SlicerItems ^ SlicerItems { Microsoft::Office::Interop::Excel::SlicerItems ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2977)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2977)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.SlicerItems</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> coleção que contém a coleção de todos os itens no cache de segmentação de dados.</summary>
+        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> coleção que contém a coleção de todos os itens no cache de segmentação de dados.</value>
+        <remarks>
+          <para>Somente leitura.</para>
+          <para>o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto só é aplicável para segmentações de dados que se baseiam em tabelas dinâmicas com base nas listas ou intervalos de pasta de trabalho (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />  =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />), ou para segmentações de dados que se baseiam em tabelas dinâmicas com base em fontes de dados relacionais (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />  =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" /> e <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />. <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>false</b>). Tentativa de acesso a <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> propriedade segmentações de dados que estão conectados a uma fonte de dados OLAP externa (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>true</b>) gera um erro em tempo de execução. Para fontes de dados OLAP, use o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> do objeto em vez disso.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Slicers">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Slicers Slicers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Slicers Slicers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.Slicers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Slicers As Slicers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Slicers ^ Slicers { Microsoft::Office::Interop::Excel::Slicers ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2881)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2881)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Slicers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> coleção que contém a coleção de <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objetos associados ao <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.</summary>
+        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> coleção que contém a coleção de <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objetos associados ao <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.</value>
+        <remarks>
+          <para>Somente leitura.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortItems">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlSlicerSort SortItems { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlSlicerSort SortItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.SortItems" />
+      <MemberSignature Language="VB.NET" Value="Public Property SortItems As XlSlicerSort" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlSlicerSort SortItems { Microsoft::Office::Interop::Excel::XlSlicerSort get(); void set(Microsoft::Office::Interop::Excel::XlSlicerSort value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2979)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2979)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2979)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlSlicerSort</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém ou define se os itens na segmentação de dados são classificados.</summary>
+        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.XlSlicerSort" /> objeto.</value>
+        <remarks>
+          <para>Leitura/gravação.</para>
+          <para>a configuração padrão dessa propriedade é <see cref="F:Microsoft.Office.Interop.Excel.XlSortOrder.xlAscending" />.</para>
+          <para>o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortItems" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto só se aplica a segmentações de dados que se baseiam em tabelas dinâmicas que estão conectadas aos intervalos de pasta de trabalho ou listas (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />  = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />). Tentativa de acesso a <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortItems" /> propriedade segmentações de dados que estão conectados a uma fontes de dados OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>true</b>) gera um erro em tempo de execução. Para fontes de dados OLAP, use o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SortItems" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> do objeto em vez disso.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortUsingCustomLists">
+      <MemberSignature Language="C#" Value="public bool SortUsingCustomLists { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SortUsingCustomLists" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.SortUsingCustomLists" />
+      <MemberSignature Language="VB.NET" Value="Public Property SortUsingCustomLists As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SortUsingCustomLists { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2574)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2574)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2574)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém ou define se os itens no cache de segmentação de dados especificado serão classificados de listas personalizadas.</summary>
+        <value>
+          <b>true</b> se itens no cache de segmentação de dados especificado serão classificados de listas personalizadas; Caso contrário, <b>false</b>.</value>
+        <remarks>
+          <para>Leitura/gravação.</para>
+          <para>o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortUsingCustomLists" /> propriedade corresponde à configuração das listas de uso personalizado, quando a caixa de seleção da caixa de diálogo Configurações de segmentação de dados de classificação. Para acessar as listas personalizadas associadas com a instalação atual do Excel, clique na guia arquivo, clique em Opções, clique em Avançado e, em seguida, clique em Editar listas personalizadas em categoria geral.</para>
+          <para>o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortUsingCustomLists" /> propriedade só se aplica a segmentações de dados que estão filtrando fontes de dados não-OLAP. A tentativa de acessar essa propriedade de um cache de segmentação de dados que está filtrando uma fonte de dados OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>true</b>) gera um erro em tempo de execução.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceName">
+      <MemberSignature Language="C#" Value="public string SourceName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(721)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(721)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém o nome da fonte de dados que está conectada a segmentação de dados.</summary>
+        <value>O nome da fonte de dados a segmentação de dados está conectada a.</value>
+        <remarks>
+          <para>Somente leitura.</para>
+          <para>Segmentações de dados com base nos dados da pasta de trabalho (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />  =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />), ou segmentações de dados com base em dados externos não-OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />  =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" /> e <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />. <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>false</b>), retorna o nome da coluna correspondente nos dados de origem.</para> Segmentações de dados 
+          <para>para OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>true</b>), retorna o nome exclusivo MDX da hierarquia a segmentação de dados se baseia em.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlPivotTableSourceType SourceType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlPivotTableSourceType SourceType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceType As XlPivotTableSourceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlPivotTableSourceType SourceType { Microsoft::Office::Interop::Excel::XlPivotTableSourceType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(685)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(685)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlPivotTableSourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém o tipo de fonte de dados que está conectada a segmentação de dados.</summary>
+        <value>O tipo de fonte de dados a segmentação de dados está conectada a.</value>
+        <remarks>
+          <para>Somente leitura.</para>
+          <para>Apenas o <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" /> e <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" /> tipos de fonte de dados são suportados.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimelineState">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.TimelineState TimelineState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.TimelineState TimelineState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.TimelineState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimelineState As TimelineState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::TimelineState ^ TimelineState { Microsoft::Office::Interop::Excel::TimelineState ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3112)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3112)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.TimelineState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>O estado de cronograma específica do objeto <b>SlicerCache</b> . Somente leitura</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisibleSlicerItems">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.SlicerItems VisibleSlicerItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.SlicerItems VisibleSlicerItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VisibleSlicerItems As SlicerItems" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::SlicerItems ^ VisibleSlicerItems { Microsoft::Office::Interop::Excel::SlicerItems ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2975)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2975)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.SlicerItems</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> coleção que contém a coleção de todos os itens visíveis no cache de segmentação de dados especificada.</summary>
+        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> coleção que contém a coleção de todos os itens visíveis no cache de segmentação de dados especificada.</value>
+        <remarks>
+          <para>Somente leitura.</para>
+          <para>o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItems" /> propriedade é aplicável somente para as segmentações de dados que se baseiam em tabelas dinâmicas com base nas listas ou intervalos de pasta de trabalho (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />  = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />). Tentativa de acesso a <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItems" /> propriedade segmentações de dados que estão conectados a uma fonte de dados OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>true</b>) gera um erro em tempo de execução.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisibleSlicerItemsList">
+      <MemberSignature Language="C#" Value="public object VisibleSlicerItemsList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object VisibleSlicerItemsList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItemsList" />
+      <MemberSignature Language="VB.NET" Value="Public Property VisibleSlicerItemsList As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ VisibleSlicerItemsList { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2976)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2976)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2976)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém ou define a lista de nomes exclusivos de MDX para membros em todos os níveis da hierarquia onde a filtragem manual está aplicada.</summary>
+        <value>A lista de nomes exclusivos de MDX para membros em todos os níveis da hierarquia onde a filtragem manual está aplicada.</value>
+        <remarks>
+          <para>Leitura/gravação.</para>
+          <para>o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItemsList" /> propriedade só é aplicável segmentações de dados que se baseiam em fontes de dados OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>true</b>).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkbookConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.WorkbookConnection WorkbookConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.WorkbookConnection WorkbookConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerCache.WorkbookConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkbookConnection As WorkbookConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::WorkbookConnection ^ WorkbookConnection { Microsoft::Office::Interop::Excel::WorkbookConnection ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2544)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2544)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object que representa a conexão de dados usado pela segmentação de dados especificada.</summary>
+        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object que representa a conexão de dados usado pela segmentação de dados especificada.</value>
+        <remarks>
+          <para>Somente leitura.</para>
+          <para>o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.WorkbookConnection" /> propriedade só se aplica a segmentações de dados que se baseiam em fontes de dados externas (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />  = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" />). Tentativa de acesso a <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.WorkbookConnection" /> propriedade segmentações de dados que estão conectados a tabelas dinâmicas com base em intervalos da pasta de trabalho ou listas (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />  =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />) gera um erro em tempo de execução.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,776 @@
+<Type Name="ColorScale" FullName="Microsoft.Office.Interop.Excel.ColorScale">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="06c205813dcccacb04e48254943037851cce5de7" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20585586" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ColorScale" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorScale" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorScale" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ColorScale" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ColorScale" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024493-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Representa uma regra de formatação condicional de escala de cores.</summary>
+    <remarks>
+      <para>Todos os objetos de formatação condicionais estão contidos dentro de um <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> objeto da coleção, que é um filho de um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> conjunto. Você pode criar uma regra de formatação por meio de um de escala de cores a <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddColorScale(System.Int32)" /> método da coleção <b>FormatConditions</b> .</para> Dimensiona 
+      <para>cor é visual guias que ajudarão a entender a distribuição de dados e variação. Você pode aplicar um duas cores ou uma escala de três cores a um intervalo de dados, os dados em uma tabela ou dados em um relatório de tabela dinâmica. Para uma formatação condicional da escala de duas cores, você atribui o valor, tipo e cor aos limites mínimos e máximo de um intervalo. Uma escala de três cores também tem um limite de ponto médio.</para><para>Cada um desses limites é determinado pela definição das propriedades do <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> objeto. O objeto <b>ColorScaleCriteria</b> , que é um filho do objeto <b>ColorScale</b> , é uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objetos da escala de cores.</para><para /></remarks>
+    <example>
+      <para>O exemplo de código a seguir cria um intervalo de números e aplica uma regra de formatação condicional da escala de duas cores para aquele intervalo. A cor para o limite mínimo, em seguida, é atribuída para vermelho e o limite máximo como azul.</para>
+      <code>&lt;span class="label"&gt;Sub CreateColorScaleCF() 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Dim cfColorScale As &lt;/span&gt;
+&lt;i&gt;ColorScale&lt;/i&gt;
+&lt;span class="label"&gt;'Fill cells with sample data from 1 to 10     With ActiveSheet         .Range("C1") = 1         .Range("C2") = 2         .Range("C1:C2").AutoFill Destination:=Range("C1:C10")     End With          Range("C1:C10").Select          'Create a two-color ColorScale object for the created sample data range     Set cfColorScale = Selection.FormatConditions.AddColorScale(ColorScaleType:=2)          'Set the minimum threshold to red and maximum threshold to blue     cfColorScale.ColorScaleCriteria(1).FormatColor.Color = RGB(255, 0, 0)     cfColorScale.ColorScaleCriteria(2).FormatColor.Color = RGB(0, 0, 255)          End Sub&lt;/span&gt;</code>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScale.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Quando usado sem um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object que representa o aplicativo Microsoft Office Excel. Quando usado com um qualificador de objeto, essa propriedade retorna um objeto <b>Application</b> que representa o criador do objeto especificado. Somente leitura.</summary>
+        <value>
+          <b>Aplicativo</b> (consulte acima)</value>
+        <remarks>
+          <para>Você pode usar essa propriedade com um objeto de automação OLE para retornar o aplicativo desse objeto.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppliesTo">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Range AppliesTo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Range AppliesTo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScale.AppliesTo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AppliesTo As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Range ^ AppliesTo { Microsoft::Office::Interop::Excel::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2626)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2626)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto especificando o intervalo de células ao qual a regra de formatação é aplicada.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColorScaleCriteria">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ColorScaleCriteria ColorScaleCriteria { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ColorScaleCriteria ColorScaleCriteria" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScale.ColorScaleCriteria" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColorScaleCriteria As ColorScaleCriteria" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ColorScaleCriteria ^ ColorScaleCriteria { Microsoft::Office::Interop::Excel::ColorScaleCriteria ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2716)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2716)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ColorScaleCriteria</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> object, que é uma coleção de um indivíduo <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objetos. O <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objeto Especifica o tipo, o valor e a cor dos critérios de limite usado na formatação condicional da escala de cores. Somente leitura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScale.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna uma constante no <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeração que indica o aplicativo no qual esse objeto foi criado. Somente leitura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
+        </value>
+        <remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.  O <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.Creator" /> propriedade foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ColorScale.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Exclui o objeto de regra da formatação condicional especificado.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Formula">
+      <MemberSignature Language="C#" Value="public string Formula { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Formula" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScale.Formula" />
+      <MemberSignature Language="VB.NET" Value="Public Property Formula As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Formula { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(261)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(261)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(261)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define um valor <b>String</b> representando uma fórmula que determina os valores em que o conjunto de ícones será aplicado.</summary>
+        <value>
+          <b>String</b>
+        </value>
+        <remarks>
+          <para>Essa propriedade é útil para limitar o intervalo de valores que exibirá o formato condicional. Um cenário típico é quando você tem um intervalo de números que contém valores positivos e negativos. Convém criar mais de um formato condicional para esse intervalo de números — um para valores positivos e outro para valores negativos.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifyAppliesToRange">
+      <MemberSignature Language="C#" Value="public void ModifyAppliesToRange (Microsoft.Office.Interop.Excel.Range Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ModifyAppliesToRange([in]class Microsoft.Office.Interop.Excel.Range Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ColorScale.ModifyAppliesToRange(Microsoft.Office.Interop.Excel.Range)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ModifyAppliesToRange(Microsoft::Office::Interop::Excel::Range ^ Range);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2627)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Excel.Range" />
+      </Parameters>
+      <Docs>
+        <param name="Range">O intervalo ao qual esta regra de formatação será aplicada.</param>
+        <summary>Define o intervalo de células ao qual esta regra de formatação se aplicará.</summary>
+        <remarks>
+          <para>o intervalo deve estar no estilo de referência A1 e estar totalmente contido dentro da folha que é o pai do <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> conjunto. Ele pode incluir o operador de intervalo (dois-pontos), o operador de interseção (um espaço) ou o operador union (uma vírgula). Os sinais de dólar também pode ser usados, mas eles serão ignorados.</para>
+          <para>Você também pode usar um nome definido de local em qualquer parte do intervalo, mas o nome deve estar no idioma da macro.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScale.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o objeto pai para o objeto especificado. Somente leitura.</summary>
+        <value>
+          <b>Object</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="public int Priority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Priority" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScale.Priority" />
+      <MemberSignature Language="VB.NET" Value="Public Property Priority As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Priority { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(985)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(985)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(985)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define um valor de prioridade da regra de formatação condicional. A prioridade determina a ordem da avaliação quando houver várias regras de formatação condicional em uma planilha.</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>
+          <para>Ao definir a prioridade, o valor deve ser um inteiro positivo entre 1 e o número total de regras de formatação condicional na planilha. A prioridade deve ser um valor exclusivo para todas as regras na planilha, para que a alteração da prioridade para a regra de formatação condicional especificada pode causar o valor de prioridade das outras regras na planilha a ser deslocado.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PTCondition">
+      <MemberSignature Language="C#" Value="public bool PTCondition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PTCondition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScale.PTCondition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PTCondition As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PTCondition { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2631)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2631)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um valor <b>Boolean</b> que indica se o formato condicional está sendo aplicado a um <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> gráfico. Somente leitura.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScopeType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlPivotConditionScope ScopeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlPivotConditionScope ScopeType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScale.ScopeType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScopeType As XlPivotConditionScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlPivotConditionScope ScopeType { Microsoft::Office::Interop::Excel::XlPivotConditionScope get(); void set(Microsoft::Office::Interop::Excel::XlPivotConditionScope value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2615)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2615)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2615)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define uma das constantes do <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> enumeração, que determina a abrangência do formato condicional quando aplicado a um gráfico de tabela dinâmica.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
+        </value>
+        <remarks>
+          <para>O valor padrão é <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, que define o escopo usando o <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.AppliesTo" />propriedade.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFirstPriority">
+      <MemberSignature Language="C#" Value="public void SetFirstPriority ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetFirstPriority() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ColorScale.SetFirstPriority" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetFirstPriority ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFirstPriority();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2629)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Define o valor de prioridade para esta regra de formatação condicional como "1", de forma que esta regra seja avaliada antes das outras regras na planilha.</summary>
+        <remarks>
+          <para>Quando você tem várias regras de formatação condicionais em uma planilha, se a regra não foi definida anteriormente para prioridade mais alta "1", esse método fará com que a prioridade de todas as outras regras existentes na planilha seja aumentada por uma.</para>
+          <para>
+            <b>Observação</b>: os níveis de prioridade de regras de formatação condicional são aplicados em uma base de nível de planilha.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLastPriority">
+      <MemberSignature Language="C#" Value="public void SetLastPriority ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetLastPriority() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ColorScale.SetLastPriority" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetLastPriority ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLastPriority();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2630)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Define a ordem de avaliação para esta regra de formatação condicional, de forma que seja avaliada após todas as outras regras da planilha.</summary>
+        <remarks>
+          <para>A Value real da prioridade será igual ao número total de regras de formatação condicional na planilha. Quando você tem várias regras de formatação condicionais em uma planilha, esse método fará com que a prioridade de regras que tinha um valor de prioridade maior do que esta regra seja aumentada por uma.</para>
+          <para>
+            <b>Observação</b>: os níveis de prioridade de regras de formatação condicional são aplicados em uma base de nível de planilha.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopIfTrue">
+      <MemberSignature Language="C#" Value="public bool StopIfTrue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StopIfTrue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScale.StopIfTrue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StopIfTrue As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StopIfTrue { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2625)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2625)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define um valor <b>Boolean</b> que determina se as regras de formatação adicionais na célula devem ser avaliadas se a regra atual for avaliar como <b>True</b>.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>Para oferecer suporte a compatibilidade com versões anteriores, o valor padrão para essa propriedade é <b>True</b>, o que é o oposto de uma formatação a regra criada na interface do usuário.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public int Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScale.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Type { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna uma das constantes do <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> enumeração, que especifica o tipo de formatação condicional. Somente leitura.</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>
+          <para>Essa propriedade sempre retornará um valor <b>inteiro</b> de "3", que é equivalente a <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlColorScale" />.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

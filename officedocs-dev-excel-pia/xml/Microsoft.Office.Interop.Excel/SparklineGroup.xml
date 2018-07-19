@@ -1,0 +1,749 @@
+<Type Name="SparklineGroup" FullName="Microsoft.Office.Interop.Excel.SparklineGroup">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="2c34b4c1cd646b1414ae18e10ee0fbe1e821f9fa" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20585075" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface SparklineGroup : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SparklineGroup implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SparklineGroup" />
+  <TypeSignature Language="VB.NET" Value="Public Interface SparklineGroup&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class SparklineGroup : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000244B7-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Representa um grupo de minigráficos.</summary>
+    <remarks>
+      <para>O <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> objeto pode conter vários minigráficos e contém as configurações de propriedade para o grupo, como configurações de cor e eixo. Cada Minigráfico é representado por um <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" /> objeto.</para> Uso de 
+      <para>o <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.Modify(Microsoft.Office.Interop.Excel.Range,System.String)" /> método para adicionar ou remover os Minigráficos do grupo de minigráficos. Use o <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifyLocation(Microsoft.Office.Interop.Excel.Range)" /> método para alterar o local do Minigráfico e usar o <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifySourceData(System.String)" /> método para alterar o intervalo de dados de origem.</para><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SparklineGroup.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Quando usado sem um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel. Quando usado com um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o criador do objeto especificado.</summary>
+        <value>Um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
+        <remarks>
+          <para>Somente leitura.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Axes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.SparkAxes Axes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.SparkAxes Axes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SparklineGroup.Axes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Axes As SparkAxes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::SparkAxes ^ Axes { Microsoft::Office::Interop::Excel::SparkAxes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.SparkAxes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém o associado <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> objeto.</summary>
+        <value>O associado <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> objeto.</value>
+        <remarks>
+          <para>Somente leitura.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SparklineGroup.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém o número de minigráficos no grupo de minigráficos.</summary>
+        <value>O número de minigráficos no grupo de minigráficos.</value>
+        <remarks>
+          <para>Somente leitura.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SparklineGroup.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém um <b>inteiro</b> de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
+        <value>De 32 bits <b>inteiro</b> que indica o aplicativo no qual esse objeto foi criado.</value>
+        <remarks>
+          <para>Somente leitura <b>long</b>.</para>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. O <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Creator" /> propriedade foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateRange">
+      <MemberSignature Language="C#" Value="public string DateRange { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DateRange" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SparklineGroup.DateRange" />
+      <MemberSignature Language="VB.NET" Value="Public Property DateRange As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DateRange { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2948)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2948)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2948)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém ou define o intervalo de datas do grupo de minigráficos.</summary>
+        <value>O intervalo de datas do grupo de minigráficos.</value>
+        <remarks>
+          <para>Raed/gravação.</para>
+          <para>Para limpar a data de intervalo definir essa propriedade como uma sequência vazia.</para>
+          <para>o intervalo de datas deve ser um intervalo dimensional contínuo.</para>
+          <para>o intervalo de datas pode estar localizado em uma planilha diferente da <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> e <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" /> propriedades.</para>
+          <para>Células vazias e valores de data não no intervalo de datas não são exibidos.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.SparklineGroup.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Exclui o grupo de minigráficos.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayBlanksAs">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlDisplayBlanksAs DisplayBlanksAs { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlDisplayBlanksAs DisplayBlanksAs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SparklineGroup.DisplayBlanksAs" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayBlanksAs As XlDisplayBlanksAs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlDisplayBlanksAs DisplayBlanksAs { Microsoft::Office::Interop::Excel::XlDisplayBlanksAs get(); void set(Microsoft::Office::Interop::Excel::XlDisplayBlanksAs value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(93)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(93)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(93)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlDisplayBlanksAs</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém ou define a forma com que as células vazias são plotadas em um gráfico.</summary>
+        <value>Especifica a forma que as células vazias são plotadas em um gráfico.</value>
+        <remarks>
+          <para>Essa propriedade pode ser uma do <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayBlanksAs" /> constantes. Leitura/gravação.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayHidden">
+      <MemberSignature Language="C#" Value="public bool DisplayHidden { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayHidden" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SparklineGroup.DisplayHidden" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayHidden As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayHidden { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2953)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2953)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2953)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Especifica se as células ocultas são plotadas no grupo de minigráficos.</summary>
+        <value>
+          <b>true</b> se as células ocultas são plotadas no grupo de minigráficos; Caso contrário, <b>false</b>.</value>
+        <remarks>
+          <para>Leitura/gravação.</para>
+          <para>
+            <b>true</b> se as células ocultas forem mostradas no grupo de minigráficos.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.SparklineGroup.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>Retorna <see cref="T:System.Collections.IEnumerator" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Sparkline Item[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Sparkline Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SparklineGroup.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item(Index As Object) As Sparkline" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Sparkline ^ Item[System::Object ^] { Microsoft::Office::Interop::Excel::Sparkline ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Sparkline</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Valor de índice do minigráfico.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" /> objeto.</summary>
+        <value>Retorna <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineWeight">
+      <MemberSignature Language="C#" Value="public object LineWeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object LineWeight" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SparklineGroup.LineWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property LineWeight As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ LineWeight { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2954)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2954)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2954)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém ou define a espessura da minigráficos no grupo de minigráficos.</summary>
+        <value>A espessura da minigráficos no grupo de minigráficos.</value>
+        <remarks>
+          <para>Leitura/gravação.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Range Location { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Range Location" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" />
+      <MemberSignature Language="VB.NET" Value="Public Property Location As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Range ^ Location { Microsoft::Office::Interop::Excel::Range ^ get(); void set(Microsoft::Office::Interop::Excel::Range ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1397)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1397)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1397)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém ou define o <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa o local do grupo de minigráficos.</summary>
+        <value>O <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa o local do grupo de minigráficos.</value>
+        <remarks>
+          <para>Leitura/gravação.</para>
+          <para>o local para todos os Minigráficos em um grupo de minigráficos deve estar na mesma folha, mas os dados de origem para o grupo de minigráficos podem estar em uma planilha ou pasta de trabalho.</para>
+          <para>o tamanho do intervalo que representa o <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> propriedade deve ser igual ao número de linhas ou colunas no <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" /> propriedade para o <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> objeto.</para> Intervalo de contínua 
+          <para>uma associado a um grupo de minigráficos só pode ser uma dimensional. Se o intervalo não for contínuo, cada célula deve ser especificada individualmente.</para><para><b>Observação</b>: não use o <see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" /> método para criar um intervalo não contínuo, pois o <see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" /> método retorna uma referência de intervalo único.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Modify">
+      <MemberSignature Language="C#" Value="public void Modify (Microsoft.Office.Interop.Excel.Range Location, string SourceData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Modify([in]class Microsoft.Office.Interop.Excel.Range Location, [in]string SourceData) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.SparklineGroup.Modify(Microsoft.Office.Interop.Excel.Range,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Modify (Location As Range, SourceData As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Modify(Microsoft::Office::Interop::Excel::Range ^ Location, System::String ^ SourceData);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1581)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Location" Type="Microsoft.Office.Interop.Excel.Range" />
+        <Parameter Name="SourceData" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Location">O <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa o local do grupo de minigráficos.</param>
+        <param name="SourceData">O intervalo que representa os dados de origem do grupo de minigráficos.</param>
+        <summary>Define o local e os dados de origem do grupo de minigráficos.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifyDateRange">
+      <MemberSignature Language="C#" Value="public void ModifyDateRange (string DateRange);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ModifyDateRange([in]string DateRange) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifyDateRange(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ModifyDateRange (DateRange As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ModifyDateRange(System::String ^ DateRange);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2951)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="DateRange" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="DateRange">O intervalo de datas do grupo de minigráficos.</param>
+        <summary>Define o intervalo de datas do grupo de minigráficos.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifyLocation">
+      <MemberSignature Language="C#" Value="public void ModifyLocation (Microsoft.Office.Interop.Excel.Range Location);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ModifyLocation([in]class Microsoft.Office.Interop.Excel.Range Location) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifyLocation(Microsoft.Office.Interop.Excel.Range)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ModifyLocation (Location As Range)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ModifyLocation(Microsoft::Office::Interop::Excel::Range ^ Location);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2949)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Location" Type="Microsoft.Office.Interop.Excel.Range" />
+      </Parameters>
+      <Docs>
+        <param name="Location">O <see cref="T:Microsoft.Office.Interop.Excel.Range" /> que representa o local do grupo de minigráficos.</param>
+        <summary>Define o associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto para modificar o local do grupo de minigráficos.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifySourceData">
+      <MemberSignature Language="C#" Value="public void ModifySourceData (string SourceData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ModifySourceData([in]string SourceData) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifySourceData(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ModifySourceData (SourceData As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ModifySourceData(System::String ^ SourceData);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2950)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SourceData" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="SourceData">O intervalo que representa os dados de origem.</param>
+        <summary>Define o intervalo que representa os dados de origem do grupo de minigráficos.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SparklineGroup.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém o objeto pai do objeto especificado.</summary>
+        <value>O objeto pai do objeto especificado.</value>
+        <remarks>
+          <para>Somente leitura.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlotBy">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlSparklineRowCol PlotBy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlSparklineRowCol PlotBy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SparklineGroup.PlotBy" />
+      <MemberSignature Language="VB.NET" Value="Public Property PlotBy As XlSparklineRowCol" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlSparklineRowCol PlotBy { Microsoft::Office::Interop::Excel::XlSparklineRowCol get(); void set(Microsoft::Office::Interop::Excel::XlSparklineRowCol value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(202)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(202)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(202)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlSparklineRowCol</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém ou define como plotar o Minigráfico quando os dados no qual ele se baseia estiverem em um intervalo em forma de quadrado.</summary>
+        <value>Especifica como plotar o minigráfico quando os dados nos quais ele é baseado estão em um intervalo de formato quadrado.</value>
+        <remarks>
+          <para>Leitura/gravação.</para>
+          <para>Essa propriedade pode ser definida somente se os dados no qual se baseia o Minigráfico estiverem em um intervalo em forma de quadrado, por exemplo, se os dados estiverem no intervalo a1: B2.</para>
+          <para>é o valor padrão para os dados em um intervalo em forma de quadrado sp plote os dados por linhas (<see cref="F:Microsoft.Office.Interop.Excel.XlSparklineRowCol.xlSparklineRowsSquare" />).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Points">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.SparkPoints Points { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.SparkPoints Points" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SparklineGroup.Points" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Points As SparkPoints" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::SparkPoints ^ Points { Microsoft::Office::Interop::Excel::SparkPoints ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(70)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(70)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.SparkPoints</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém a posição do nó especificado como um par de coordenadas. Cada coordenada é expressa em pontos.</summary>
+        <value>A posição do nó especificado como um par de coordenadas.</value>
+        <remarks>
+          <para>Um par de coordenadas é um par de valores que representam as coordenadas x e y de um ponto são armazenados em uma matriz bidimensional que contém coordenadas para vários pontos.</para>
+          <para>Essa propriedade é somente leitura. Use o <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" /> método para definir o valor dessa propriedade.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeriesColor">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.FormatColor SeriesColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.FormatColor SeriesColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SparklineGroup.SeriesColor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SeriesColor As FormatColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::FormatColor ^ SeriesColor { Microsoft::Office::Interop::Excel::FormatColor ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2952)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2952)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.FormatColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> object que representa a cor da série principal para o grupo de minigráficos.</summary>
+        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> object que representa a cor da série principal para o grupo de minigráficos.</value>
+        <remarks>
+          <para>Somente leitura.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceData">
+      <MemberSignature Language="C#" Value="public string SourceData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceData As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceData { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(686)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(686)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(686)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém ou define o intervalo que contém os dados de origem para o grupo de minigráficos.</summary>
+        <value>O intervalo que contém os dados de origem para o grupo de minigráficos.</value>
+        <remarks>
+          <para>Leitura/gravação.</para>
+          <para>o número de linhas ou colunas do intervalo de dados de origem deve ser igual ao número de células no <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> propriedade variam.</para>
+          <para>o intervalo de origem de dados para um único Minigráfico no grupo de minigráficos deve ser contínuo.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlSparkType Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlSparkType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SparklineGroup.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As XlSparkType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlSparkType Type { Microsoft::Office::Interop::Excel::XlSparkType get(); void set(Microsoft::Office::Interop::Excel::XlSparkType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlSparkType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém ou define o tipo de Minigráfico para o grupo.</summary>
+        <value>O tipo de Minigráfico para o grupo.</value>
+        <remarks>
+          <para>Leitura/gravação.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

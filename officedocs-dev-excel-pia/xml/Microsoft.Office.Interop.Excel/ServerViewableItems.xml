@@ -1,0 +1,366 @@
+<Type Name="ServerViewableItems" FullName="Microsoft.Office.Interop.Excel.ServerViewableItems">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="c2be0679f4fcc0da628343344a5b5b0cce8a4549" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20579447" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ServerViewableItems : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ServerViewableItems implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ServerViewableItems&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ServerViewableItems : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000244A4-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Uma coleção de objetos que foram marcados como visíveis no servidor.</summary>
+    <remarks>
+      <para>Isso é uma coleção de referências a objetos no <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Somente os objetos nesta coleção serão exibidos no servidor.  Por padrão, a pasta de trabalho inteira (incluindo todas as planilhas) é mostrada.  </para>
+      <para>Somente um <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> objeto pode existir por <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.  Esta coleção não é indexável pelo nome, porque não há nenhuma garantia de que os nomes dos objetos que estão marcados como visíveis no servidor são exclusivos.</para>
+      <para>Interface de usuário no Excel, você pode exibir a coleção de objetos que estão marcados como visíveis no servidor, na caixa de diálogo Opções de serviços do Excel.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public object this[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object _Default(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ServerViewableItems._Default(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property _Default(Index As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::Object ^] { System::Object ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">To be added.</param>
+        <summary>Reservado para uso interno.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public object Add (object Obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Add([in]object Obj) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ServerViewableItems.Add(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Obj As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Add(System::Object ^ Obj);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(181)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Obj">
+          <b>Objeto</b> necessário<paramref name="Obj" /> pode ser uma referência a planilhas ou itens nomeados (por exemplo, chamado <see cref="T:Microsoft.Office.Interop.Excel.Range" />s, gráficos, tabelas, e <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s). Você não pode ter folhas e itens nomeados no mesmo conjunto.</param>
+        <summary>Adiciona uma referência para a <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> conjunto.</summary>
+        <returns>
+          <b>Object</b>
+        </returns>
+        <remarks>
+          <para>Se você tenta adicionar uma mistura de folhas e itens nomeados para o <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> conjunto, será retornado um erro.  O <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> coleção pode conter referências apenas a planilhas ou referências apenas aos itens nomeados, mas não ambos na mesma chamada.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ServerViewableItems.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto. Somente leitura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
+        </value>
+        <remarks>
+          <para>Quando usado sem um qualificador de objeto, essa propriedade retorna o aplicativo do Microsoft Office Excel. Quando usado com um qualificador de objeto, essa propriedade retorna um objeto <b>Application</b> que representa o criador do objeto especificado.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ServerViewableItems.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o número de objetos da coleção. Somente leitura.</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ServerViewableItems.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <b>inteiro</b> de 32 bits que indica o aplicativo no qual esse objeto foi criado. Somente leitura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
+        </value>
+        <remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.  A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ServerViewableItems.Delete(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete (Index As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete(System::Object ^ Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Necessário <b>inteiro</b> o índice do objeto que você deseja excluir.</param>
+        <summary>Exclui uma referência a um objeto de <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> conjunto no <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.</summary>
+        <remarks>
+          <para>Se você não quiser que um determinado objeto esteja visível nos serviços do Excel, use esse método para remover esse objeto.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteAll">
+      <MemberSignature Language="C#" Value="public void DeleteAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteAll() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ServerViewableItems.DeleteAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteAll ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteAll();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2239)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Exclui referências a todos os objetos do <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> conjunto no <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.</summary>
+        <remarks>
+          <para>Se você não quiser que nenhum dos objetos no <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> coleção esteja visível no servidor, use esse método para removê-los ao mesmo tempo.</para>
+          <para>
+            <b>Observação</b>: se o <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> coleção não contiver pelo menos um <b>objeto</b>, você verá a mensagem "Não é possível para exibição especificado denominado intervalo ou o Item" ao visualizar a <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> nos serviços do Excel.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ServerViewableItems.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object Item (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Item([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ServerViewableItems.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Item (Index As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Item(System::Object ^ Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Necessário <b>inteiro</b> o índice do <b>objeto</b> a ser retornado.</param>
+        <summary>Retorna um único <b>objeto</b> do <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> conjunto.</summary>
+        <returns>
+          <b>Object</b>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ServerViewableItems.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o pai do objeto especificado. Somente leitura.</summary>
+        <value>
+          <b>Object</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
