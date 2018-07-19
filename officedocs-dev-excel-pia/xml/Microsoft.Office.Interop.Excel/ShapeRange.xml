@@ -1,0 +1,2412 @@
+<Type Name="ShapeRange" FullName="Microsoft.Office.Interop.Excel.ShapeRange">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="31a303422ec357161186ed476f9e5e4506d2d55c" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20582898" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ShapeRange : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShapeRange implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ShapeRange" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ShapeRange&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ShapeRange : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002443B-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Representa um intervalo de formas, que é um conjunto de formas em um documento.</summary>
+    <remarks>
+      <para>Um intervalo de formas pode conter, no mínimo, uma única forma ou até todas as formas no documento. Você pode incluir as formas que desejar — escolhidas entre todas as formas no documento ou todas as formas da seleção — para construir um intervalo de formas. Por exemplo, você poderia construir uma <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> coleção que contém as três primeiras formas em um documento, todas as formas selecionadas em um documento ou todas as formas livres em um documento.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Shape _Default (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Shape _Default([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange._Default(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function _Default (Index As Object) As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Excel::Shape ^ _Default(System::Object ^ Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">To be added.</param>
+        <summary>Reservado para uso interno.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Adjustments">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Adjustments Adjustments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Adjustments Adjustments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Adjustments" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Adjustments As Adjustments" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Adjustments ^ Adjustments { Microsoft::Office::Interop::Excel::Adjustments ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1691)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1691)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Adjustments</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Adjustments" /> objeto que contém valores de ajuste para todos os ajustes na forma especificada. Aplica a qualquer <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> object que representa uma AutoForma, WordArt ou um conector. Somente leitura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Align">
+      <MemberSignature Language="C#" Value="public void Align (Microsoft.Office.Core.MsoAlignCmd AlignCmd, Microsoft.Office.Core.MsoTriState RelativeTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Align([in]valuetype Microsoft.Office.Core.MsoAlignCmd AlignCmd, [in]valuetype Microsoft.Office.Core.MsoTriState RelativeTo) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.Align(Microsoft.Office.Core.MsoAlignCmd,Microsoft.Office.Core.MsoTriState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Align (AlignCmd As MsoAlignCmd, RelativeTo As MsoTriState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Align(Microsoft::Office::Core::MsoAlignCmd AlignCmd, Microsoft::Office::Core::MsoTriState RelativeTo);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1740)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="AlignCmd" Type="Microsoft.Office.Core.MsoAlignCmd" />
+        <Parameter Name="RelativeTo" Type="Microsoft.Office.Core.MsoTriState" />
+      </Parameters>
+      <Docs>
+        <param name="AlignCmd">Necessário <see cref="T:Microsoft.Office.Core.MsoAlignCmd" />. Especifica o modo pelo qual as formas serão alinhadas no intervalo especificado.</param>
+        <param name="RelativeTo">Necessário <see cref="T:Microsoft.Office.Core.MsoTriState" />. Não é usada no Microsoft Excel. Deve ser <b>False</b>.</param>
+        <summary>Alinha as formas no intervalo de formas especificado.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlternativeText">
+      <MemberSignature Language="C#" Value="public string AlternativeText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AlternativeText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.AlternativeText" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlternativeText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AlternativeText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1891)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1891)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1891)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define a cadeia de caracteres de texto descritiva (alternativa) para um <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> do objeto quando o objeto é salvo em uma página da Web. <b>String</b> de leitura/gravação.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>O texto alternativo pode ser exibido no lugar da imagem da forma no navegador da Web ou diretamente sobre a imagem quando o ponteiro do mouse é posicionado sobre a imagem (em navegadores que oferecem suporte a esses recursos).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel. Somente leitura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Apply">
+      <MemberSignature Language="C#" Value="public void Apply ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Apply() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.Apply" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Apply ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Apply();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1675)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Aplica a formatação da forma especificada que foi copiada usando o <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.PickUp" /> método.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoShapeType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoAutoShapeType AutoShapeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoAutoShapeType AutoShapeType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.AutoShapeType" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoShapeType As MsoAutoShapeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoAutoShapeType AutoShapeType { Microsoft::Office::Core::MsoAutoShapeType get(); void set(Microsoft::Office::Core::MsoAutoShapeType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1693)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1693)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1693)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoAutoShapeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define o tipo de forma para especificado <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> object, que deve representar uma AutoForma que não seja uma linha, um desenho de forma livre ou um conector. Leitura/gravação <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" />.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Quando você altera o tipo de uma forma, a forma retém seu tamanho, cor e outros atributos.</para>
+          <para>Uso o <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.Type" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> objeto para definir ou retornar o tipo de conector.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundStyle">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoBackgroundStyleIndex BackgroundStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoBackgroundStyleIndex BackgroundStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.BackgroundStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackgroundStyle As MsoBackgroundStyleIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoBackgroundStyleIndex BackgroundStyle { Microsoft::Office::Core::MsoBackgroundStyleIndex get(); void set(Microsoft::Office::Core::MsoBackgroundStyleIndex value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2661)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2661)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2661)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoBackgroundStyleIndex</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define o estilo do plano de fundo. Leitura/gravação.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoBackgroundStyleIndex" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlackWhiteMode">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoBlackWhiteMode BlackWhiteMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoBlackWhiteMode BlackWhiteMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.BlackWhiteMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property BlackWhiteMode As MsoBlackWhiteMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoBlackWhiteMode BlackWhiteMode { Microsoft::Office::Core::MsoBlackWhiteMode get(); void set(Microsoft::Office::Core::MsoBlackWhiteMode value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1707)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1707)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1707)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoBlackWhiteMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define um valor que indica a maneira pela qual a forma especificada aparecerá quando a apresentação for exibida em preto e branco. Leitura/gravação <see cref="T:Microsoft.Office.Core.MsoBlackWhiteMode" />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Callout">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.CalloutFormat Callout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.CalloutFormat Callout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Callout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Callout As CalloutFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::CalloutFormat ^ Callout { Microsoft::Office::Interop::Excel::CalloutFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1694)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1694)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.CalloutFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> objeto que contém o texto explicativo formatação propriedades para a forma especificada. Aplica-se a <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objetos que representam textos explicativos de linha. Somente leitura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanvasCropBottom">
+      <MemberSignature Language="C#" Value="public void CanvasCropBottom (float Increment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CanvasCropBottom([in]float32 Increment) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.CanvasCropBottom(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CanvasCropBottom (Increment As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CanvasCropBottom(float Increment);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2175)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Increment" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Increment">To be added.</param>
+        <summary>Reservado para uso interno.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanvasCropLeft">
+      <MemberSignature Language="C#" Value="public void CanvasCropLeft (float Increment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CanvasCropLeft([in]float32 Increment) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.CanvasCropLeft(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CanvasCropLeft (Increment As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CanvasCropLeft(float Increment);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2172)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Increment" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Increment">To be added.</param>
+        <summary>Reservado para uso interno.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanvasCropRight">
+      <MemberSignature Language="C#" Value="public void CanvasCropRight (float Increment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CanvasCropRight([in]float32 Increment) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.CanvasCropRight(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CanvasCropRight (Increment As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CanvasCropRight(float Increment);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2174)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Increment" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Increment">To be added.</param>
+        <summary>Reservado para uso interno.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanvasCropTop">
+      <MemberSignature Language="C#" Value="public void CanvasCropTop (float Increment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CanvasCropTop([in]float32 Increment) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.CanvasCropTop(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CanvasCropTop (Increment As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CanvasCropTop(float Increment);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2173)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Increment" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Increment">To be added.</param>
+        <summary>Reservado para uso interno.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanvasItems">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CanvasShapes CanvasItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.CanvasShapes CanvasItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.CanvasItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanvasItems As CanvasShapes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CanvasShapes ^ CanvasItems { Microsoft::Office::Core::CanvasShapes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2171)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2171)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CanvasShapes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reservado para uso interno.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Chart">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Chart Chart { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Chart Chart" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Chart" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Chart As Chart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Chart ^ Chart { Microsoft::Office::Interop::Excel::Chart ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Chart</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um objeto representando o gráfico contido no intervalo de formas. Somente leitura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel._Chart" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Child">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState Child { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState Child" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Child" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Child As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Child { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2169)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2169)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna <b>msoTrue</b> se a forma especificada for uma forma filha ou se todas as formas em um intervalo de formas forem formas filhas do mesmo pai. Somente leitura <see cref="T:Microsoft.Office.Core.MsoTriState" />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionSiteCount">
+      <MemberSignature Language="C#" Value="public int ConnectionSiteCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ConnectionSiteCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.ConnectionSiteCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionSiteCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ConnectionSiteCount { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1695)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1695)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o número de locais de conexão na forma especificada. <b>Integer</b> somente leitura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Connector">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState Connector { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState Connector" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Connector" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connector As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Connector { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1696)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1696)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> se a forma especificada for um conector. Somente leitura <see cref="T:Microsoft.Office.Core.MsoTriState" />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectorFormat">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ConnectorFormat ConnectorFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ConnectorFormat ConnectorFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.ConnectorFormat" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectorFormat As ConnectorFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ConnectorFormat ^ ConnectorFormat { Microsoft::Office::Interop::Excel::ConnectorFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1697)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1697)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ConnectorFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> objeto que contém as propriedades de formatação de conector. Aplica-se a <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objetos que representam conectores. Somente leitura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o número de objetos na coleção. <b>Integer</b> somente leitura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Exclui o objeto.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Diagram">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Diagram Diagram { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Diagram Diagram" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Diagram" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Diagram As Diagram" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Diagram ^ Diagram { Microsoft::Office::Interop::Excel::Diagram ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2167)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2167)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Diagram</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Diagram" /> objeto que representa um diagrama.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiagramNode">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.DiagramNode DiagramNode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.DiagramNode DiagramNode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.DiagramNode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DiagramNode As DiagramNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::DiagramNode ^ DiagramNode { Microsoft::Office::Interop::Excel::DiagramNode ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2165)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2165)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.DiagramNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object que representa um nó em um diagrama.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Distribute">
+      <MemberSignature Language="C#" Value="public void Distribute (Microsoft.Office.Core.MsoDistributeCmd DistributeCmd, Microsoft.Office.Core.MsoTriState RelativeTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Distribute([in]valuetype Microsoft.Office.Core.MsoDistributeCmd DistributeCmd, [in]valuetype Microsoft.Office.Core.MsoTriState RelativeTo) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.Distribute(Microsoft.Office.Core.MsoDistributeCmd,Microsoft.Office.Core.MsoTriState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Distribute (DistributeCmd As MsoDistributeCmd, RelativeTo As MsoTriState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Distribute(Microsoft::Office::Core::MsoDistributeCmd DistributeCmd, Microsoft::Office::Core::MsoTriState RelativeTo);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1742)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="DistributeCmd" Type="Microsoft.Office.Core.MsoDistributeCmd" />
+        <Parameter Name="RelativeTo" Type="Microsoft.Office.Core.MsoTriState" />
+      </Parameters>
+      <Docs>
+        <param name="DistributeCmd">Necessário <see cref="T:Microsoft.Office.Core.MsoDistributeCmd" />. Especifica se as formas no intervalo serão distribuídas horizontal ou verticalmente.</param>
+        <param name="RelativeTo">Necessário <see cref="T:Microsoft.Office.Core.MsoTriState" />. Não é usada no Microsoft Excel. Deve ser <b>False</b>.</param>
+        <summary>Distribui horizontal e verticalmente as formas no intervalo especificado de formas.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Duplicate">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ShapeRange Duplicate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.ShapeRange Duplicate() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.Duplicate" />
+      <MemberSignature Language="VB.NET" Value="Public Function Duplicate () As ShapeRange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Excel::ShapeRange ^ Duplicate();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1039)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ShapeRange</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Duplica o objeto e retorna uma referência para a nova cópia.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fill">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.FillFormat Fill { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.FillFormat Fill" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Fill" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Fill As FillFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::FillFormat ^ Fill { Microsoft::Office::Interop::Excel::FillFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1663)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1663)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.FillFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto que contém as propriedades para o gráfico especificado ou a forma de formatação de preenchimento. Somente leitura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flip">
+      <MemberSignature Language="C#" Value="public void Flip (Microsoft.Office.Core.MsoFlipCmd FlipCmd);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Flip([in]valuetype Microsoft.Office.Core.MsoFlipCmd FlipCmd) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.Flip(Microsoft.Office.Core.MsoFlipCmd)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Flip (FlipCmd As MsoFlipCmd)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Flip(Microsoft::Office::Core::MsoFlipCmd FlipCmd);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1676)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FlipCmd" Type="Microsoft.Office.Core.MsoFlipCmd" />
+      </Parameters>
+      <Docs>
+        <param name="FlipCmd">Necessário <see cref="T:Microsoft.Office.Core.MsoFlipCmd" />. Especifica se a forma será invertida horizontal ou verticalmente.</param>
+        <summary>Inverte a forma especificada ao redor de seu eixo horizontal ou vertical.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Glow">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.GlowFormat Glow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.GlowFormat Glow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Glow" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Glow As GlowFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::GlowFormat ^ Glow { Microsoft::Office::Core::GlowFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2663)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2663)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.GlowFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um objeto que contém as propriedades de formatação de brilho para o intervalo de formas. Somente leitura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.GlowFormat" />
+        </value>
+        <remarks>
+          <para>O efeito de brilho adiciona uma borda colorida vibrante aos gráficos.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Shape Group ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Shape Group() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.Group" />
+      <MemberSignature Language="VB.NET" Value="Public Function Group () As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Excel::Shape ^ Group();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(46)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Agrupa as formas no intervalo especificado. Retorna as formas agrupadas como um único <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Como um grupo de formas é tratado como uma única forma, agrupar e desagrupar formas altera o número de itens na coleção <b>Shapes</b> e altera os números de índice dos itens que vêm após os itens afetados na coleção.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupItems">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.GroupShapes GroupItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.GroupShapes GroupItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.GroupItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GroupItems As GroupShapes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::GroupShapes ^ GroupItems { Microsoft::Office::Interop::Excel::GroupShapes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1698)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1698)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.GroupShapes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.GroupShapes" /> object que representa as formas individuais no grupo especificado. Aplica-se a <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objetos que representam formas agrupadas. Somente leitura.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> método do objeto <b>GroupShapes</b> para retornar uma única forma do grupo.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasChart">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState HasChart { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState HasChart" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.HasChart" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasChart As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState HasChart { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2658)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2658)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna informações sobre se um <see cref="P:Microsoft.Office.Interop.Excel.ShapeRange" /> contém um quadro. Somente leitura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoTriState" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasDiagram">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState HasDiagram { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState HasDiagram" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.HasDiagram" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasDiagram As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState HasDiagram { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2168)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2168)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna se uma forma ou intervalo de formas contém um diagrama. Somente leitura <see cref="T:Microsoft.Office.Core.MsoTriState" />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasDiagramNode">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState HasDiagramNode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState HasDiagramNode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.HasDiagramNode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasDiagramNode As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState HasDiagramNode { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2166)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2166)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um valor indicando se existe um nó de diagrama em uma determinada forma ou intervalo de formas. Somente leitura <see cref="T:Microsoft.Office.Core.MsoTriState" />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public float Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Height" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Height { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A altura do objeto. Leitura/gravação <b>único</b>.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalFlip">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState HorizontalFlip { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState HorizontalFlip" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.HorizontalFlip" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalFlip As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState HorizontalFlip { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1699)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1699)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> se a forma especificada está invertida em torno do eixo horizontal. Somente leitura <see cref="T:Microsoft.Office.Core.MsoTriState" />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public int ID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.ID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ID { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(570)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(570)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o tipo do objeto especificado. <b>Integer</b> somente leitura.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Você pode usar um rótulo de identificação como uma referência de hiperlink em outros documentos HTML ou na mesma página da Web.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncrementLeft">
+      <MemberSignature Language="C#" Value="public void IncrementLeft (float Increment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IncrementLeft([in]float32 Increment) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.IncrementLeft(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub IncrementLeft (Increment As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void IncrementLeft(float Increment);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1678)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Increment" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Increment">
+          <b>Single</b>obrigatório. Especifica quanto a forma deve ser movida horizontalmente, em pontos. Um valor positivo move a forma para a direita; um valor negativo move-a para a esquerda.</param>
+        <summary>Move a forma especificada horizontalmente pelo número especificado de pontos.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncrementRotation">
+      <MemberSignature Language="C#" Value="public void IncrementRotation (float Increment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IncrementRotation([in]float32 Increment) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.IncrementRotation(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub IncrementRotation (Increment As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void IncrementRotation(float Increment);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1680)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Increment" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Increment">
+          <b>Single</b>obrigatório. Especifica quanto a forma deve ser girada horizontalmente em graus. Um valor positivo rotaciona a forma em sentido horário; um valor negativo a rotaciona em sentido anti-horário.</param>
+        <summary>Altera a rotação da forma especificada ao redor do eixo z pelo número especificado de graus. Use o <see cref="P:Microsoft.Office.Interop.Excel.ShapeRange.Rotation" /> propriedade para definir a rotação absoluta da forma.</summary>
+        <remarks>
+          <para>Para girar uma forma tridimensional em torno do eixo x ou do eixo y, use o <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> método ou o <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> método.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncrementTop">
+      <MemberSignature Language="C#" Value="public void IncrementTop (float Increment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IncrementTop([in]float32 Increment) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.IncrementTop(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub IncrementTop (Increment As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void IncrementTop(float Increment);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1681)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Increment" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Increment">
+          <b>Single</b>obrigatório. Especifica quanto o objeto shape deve ser movido verticalmente, em pontos. Um valor positivo move a forma para baixo; um valor negativo a move para cima.</param>
+        <summary>Move a forma especificada verticalmente pelo número especificado de pontos.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Shape Item (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Shape Item([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Item (Index As Object) As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Excel::Shape ^ Item(System::Object ^ Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <b>Objeto</b>necessário. O nome ou número de índice do objeto.</param>
+        <summary>Retorna um único objeto de uma coleção.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>O nome de texto do objeto é o valor do <see cref="P:Microsoft.Office.Interop.Excel.ShapeRange.Name" /> e <see cref="P:Microsoft.Office.Interop.Excel.Range.Value(System.Object)" /> propriedades.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public float Left { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Left" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Left" />
+      <MemberSignature Language="VB.NET" Value="Public Property Left As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Left { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A distância da borda esquerda do objeto à borda esquerda da coluna A (em uma planilha) ou a borda esquerda da área do gráfico (em um gráfico). Leitura/gravação <b>único</b>.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Line">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.LineFormat Line { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.LineFormat Line" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Line" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Line As LineFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::LineFormat ^ Line { Microsoft::Office::Interop::Excel::LineFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(817)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(817)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.LineFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.LineFormat" /> objeto que contém as propriedades para a forma especificada de formatação de linha. Somente leitura.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Para uma linha, o objeto <b>LineFormat</b> representa a própria linha; para uma forma com uma borda, o objeto <b>LineFormat</b> representa a borda.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LockAspectRatio">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState LockAspectRatio { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState LockAspectRatio" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.LockAspectRatio" />
+      <MemberSignature Language="VB.NET" Value="Public Property LockAspectRatio As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState LockAspectRatio { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1700)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1700)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1700)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> se a forma especificada retém suas proporções originais quando você a redimensiona. <b>False</b> se você pode alterar a altura e largura da forma independentemente uma da outra, ao redimensioná-la. Leitura/gravação <see cref="T:Microsoft.Office.Core.MsoTriState" />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define o nome do objeto. <b>String</b> de leitura/gravação.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>A tabela a seguir mostra os valores de exemplo da propriedade de <b>nome</b> e propriedades relacionadas dada a uma fonte de dados OLAP com o nome exclusivo "[Europe]. [France]. [Paris] "e o nome de uma fonte de dados não-OLAP com o item"Paris".</para>
+          <list type="table">
+            <item>
+              <term>
+                <b>Legenda</b>
+              </term>
+              <description>Paris</description>
+              <description>Paris</description>
+            </item>
+            <item>
+              <term>
+                <b>nome</b>
+              </term>
+              <description>[Europe]. [ França]. [Paris] (somente leitura)</description>
+              <description>Paris</description>
+            </item>
+            <item>
+              <term>
+                <b>SourceName</b>
+              </term>
+              <description>[Europe]. [ França]. [Paris] (somente leitura)</description>
+              <description>(Igual ao valor da propriedade SQL, somente leitura)</description>
+            </item>
+            <item>
+              <term>
+                <b>Valor</b>
+              </term>
+              <description>[Europe]. [ França]. [Paris] (somente leitura)</description>
+              <description>Paris</description>
+            </item>
+          </list>
+          <para>Ao se especificar um índice para o <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> coleção, você pode usar a sintaxe mostrada na tabela a seguir.</para> expressão 
+          <list type="table"><item><term>. PivotItems ("[Europe]. [ França]. [Paris] ")</term><description>expressão. PivotItems("Paris")</description></item></list><para>ao usar o <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> propriedade referência um determinado membro de uma coleção, você pode usar o nome do índice de texto conforme mostrado na tabela a seguir.</para><list type="table"><item><term>[Europe]. [ França]. [Paris]</term><description>Paris</description></item></list><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Nodes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ShapeNodes Nodes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ShapeNodes Nodes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Nodes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Nodes As ShapeNodes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ShapeNodes ^ Nodes { Microsoft::Office::Interop::Excel::ShapeNodes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1701)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1701)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ShapeNodes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" /> coleção que representa a descrição geométrica da forma especificada. Aplica-se a <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objetos que representam desenhos de forma livre.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o objeto pai para o objeto especificado. Somente leitura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentGroup">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Shape ParentGroup { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Shape ParentGroup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.ParentGroup" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentGroup As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Shape ^ ParentGroup { Microsoft::Office::Interop::Excel::Shape ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2170)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2170)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object que representa a forma pai comum de uma forma filha ou um intervalo de formas filhas.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PickUp">
+      <MemberSignature Language="C#" Value="public void PickUp ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PickUp() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.PickUp" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PickUp ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PickUp();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1682)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Copia a formatação da forma especificada. Use o <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Apply" /> método para aplicar a formatação copiada a outra forma.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PictureFormat">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PictureFormat PictureFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PictureFormat PictureFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.PictureFormat" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PictureFormat As PictureFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PictureFormat ^ PictureFormat { Microsoft::Office::Interop::Excel::PictureFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1631)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1631)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PictureFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> objeto que contém a imagem de formatação de propriedades para a forma especificada. Aplica-se a <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objetos que representam imagens ou objetos OLE. Somente leitura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reflection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.ReflectionFormat Reflection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.ReflectionFormat Reflection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Reflection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reflection As ReflectionFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::ReflectionFormat ^ Reflection { Microsoft::Office::Core::ReflectionFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2664)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2664)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.ReflectionFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Core.ReflectionFormat" /> objeto para um intervalo de formas especificado que contém as propriedades do intervalo da forma de formatação de reflexão. Somente leitura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.ReflectionFormat" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Regroup">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Shape Regroup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Shape Regroup() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.Regroup" />
+      <MemberSignature Language="VB.NET" Value="Public Function Regroup () As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Excel::Shape ^ Regroup();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1744)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reagrupa o grupo que o intervalo de formas especificado pertencia anteriormente. Retorna as formas reagrupadas como um único <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>O método <b>Regroup</b> Restaura somente o grupo para o primeiro previamente agrupados forma encontrada na especificado <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> conjunto. Portanto, se o intervalo de formas especificado contiver formas que pertenciam anteriormente a grupos diferentes, somente um dos grupos será restaurado.</para>
+          <para>Observe que, como um grupo de formas é tratado como uma única forma, agrupar e desagrupar formas altera o número de itens no <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> conjunto e alterações os números de índice dos itens que vêm após os itens afetados na coleção.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RerouteConnections">
+      <MemberSignature Language="C#" Value="public void RerouteConnections ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RerouteConnections() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.RerouteConnections" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RerouteConnections ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RerouteConnections();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1683)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Redireciona os conectores para que eles tomem o caminho mais curto possível entre as formas que conectam.</summary>
+        <remarks>
+          <para>Para redirecionar os conectores, o método <b>RerouteConnections</b> pode desconectar as extremidades de um conector e reconecte-los para sites de conexão diferentes nas formas conectadas. Este método redireciona todos os conectores anexados à forma especificada; Se a forma especificada for um conector, este será redirecionado.</para> Se esse método é aplicado a um conector, somente esse conector de 
+          <para>serão redirecionados. Se esse método é aplicado a uma forma conectada, todos os conectores dessa forma serão redirecionados.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotation">
+      <MemberSignature Language="C#" Value="public float Rotation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Rotation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Rotation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Rotation As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Rotation { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(59)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(59)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(59)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define a rotação da forma em graus. Leitura/gravação <b>único</b>.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleHeight">
+      <MemberSignature Language="C#" Value="public void ScaleHeight (float Factor, Microsoft.Office.Core.MsoTriState RelativeToOriginalSize, object Scale);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ScaleHeight([in]float32 Factor, [in]valuetype Microsoft.Office.Core.MsoTriState RelativeToOriginalSize, [in]object Scale) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.ScaleHeight(System.Single,Microsoft.Office.Core.MsoTriState,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScaleHeight (Factor As Single, RelativeToOriginalSize As MsoTriState, Optional Scale As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1684)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Factor" Type="System.Single" />
+        <Parameter Name="RelativeToOriginalSize" Type="Microsoft.Office.Core.MsoTriState" />
+        <Parameter Name="Scale" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Factor">
+          <b>Single</b>obrigatório. Especifica a proporção entre a altura da forma, após ter sido redimensionada, e a sua altura original ou atual. Por exemplo, para se aumentar um retângulo em 50 por cento, especifique 1,5 para esse argumento.</param>
+        <param name="RelativeToOriginalSize">Necessário <see cref="T:Microsoft.Office.Core.MsoTriState" />. <b>msoTrue</b> para dimensionar a forma em relação a seu tamanho original. <b>msoFalse</b> para dimensioná-lo em relação ao seu tamanho atual. Você pode especificar <b>msoTrue</b> para esse argumento somente se a forma especificada é uma imagem ou um objeto OLE.</param>
+        <param name="Scale">Opcional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />. Especifica qual parte da forma mantém sua posição quando a forma é dimensionada.</param>
+        <summary>Dimensiona a altura da forma por um fator especificado.</summary>
+        <remarks>
+          <para>Para imagens e objetos OLE, você pode indicar se deseja dimensionar a forma em relação ao original ou o tamanho atual. Formas que não sejam imagens e objetos OLE sempre são redimensionadas em relação à altura atual.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleWidth">
+      <MemberSignature Language="C#" Value="public void ScaleWidth (float Factor, Microsoft.Office.Core.MsoTriState RelativeToOriginalSize, object Scale);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ScaleWidth([in]float32 Factor, [in]valuetype Microsoft.Office.Core.MsoTriState RelativeToOriginalSize, [in]object Scale) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.ScaleWidth(System.Single,Microsoft.Office.Core.MsoTriState,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScaleWidth (Factor As Single, RelativeToOriginalSize As MsoTriState, Optional Scale As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1688)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Factor" Type="System.Single" />
+        <Parameter Name="RelativeToOriginalSize" Type="Microsoft.Office.Core.MsoTriState" />
+        <Parameter Name="Scale" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Factor">
+          <b>Single</b>obrigatório. Especifica a proporção entre a largura da forma, após ter sido redimensionada, e a sua largura original ou atual. Por exemplo, para se aumentar um retângulo em 50 por cento, especifique 1,5 para esse argumento.</param>
+        <param name="RelativeToOriginalSize">Necessário <see cref="T:Microsoft.Office.Core.MsoTriState" />. <b>False</b> para dimensioná-lo em relação ao seu tamanho atual. Você pode especificar <b>True</b> para este argumento somente se a forma especificada é uma imagem ou um objeto OLE.</param>
+        <param name="Scale">Opcional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />. Especifica qual parte da forma mantém sua posição quando a forma é dimensionada.</param>
+        <summary>Dimensiona a largura da forma por um fator especificado.</summary>
+        <remarks>
+          <para>Para imagens e objetos OLE, você pode indicar se deseja dimensionar a forma em relação ao original ou o tamanho atual. Formas que não sejam imagens e objetos OLE sempre são redimensionadas em relação à sua largura atual.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="public void Select (object Replace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Select([in]object Replace) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.Select(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Select (Optional Replace As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(235)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Replace" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Replace">
+          <b>Objeto</b>de opcional. Para substituir o objeto.</param>
+        <summary>Seleciona o objeto.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetShapesDefaultProperties">
+      <MemberSignature Language="C#" Value="public void SetShapesDefaultProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetShapesDefaultProperties() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.SetShapesDefaultProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetShapesDefaultProperties ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetShapesDefaultProperties();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1689)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Define a formatação da forma especificada como padrão para a mesma.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shadow">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ShadowFormat Shadow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ShadowFormat Shadow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Shadow" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shadow As ShadowFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ShadowFormat ^ Shadow { Microsoft::Office::Interop::Excel::ShadowFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ShadowFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> se a fonte for uma fonte sombreada ou se o objeto tem uma sombra. <b>Boolean</b> de leitura/gravação.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShapeStyle">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoShapeStyleIndex ShapeStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoShapeStyleIndex ShapeStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.ShapeStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShapeStyle As MsoShapeStyleIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoShapeStyleIndex ShapeStyle { Microsoft::Office::Core::MsoShapeStyleIndex get(); void set(Microsoft::Office::Core::MsoShapeStyleIndex value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2660)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2660)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2660)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoShapeStyleIndex</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" /> que representa o estilo para um intervalo de formas de forma. Leitura/gravação.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SoftEdge">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.SoftEdgeFormat SoftEdge { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.SoftEdgeFormat SoftEdge" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.SoftEdge" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SoftEdge As SoftEdgeFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::SoftEdgeFormat ^ SoftEdge { Microsoft::Office::Core::SoftEdgeFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2662)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2662)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.SoftEdgeFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um objeto que contém a formação da borda propriedades para um intervalo de formas especificado. Somente leitura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.SoftEdgeFormat" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextEffect">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.TextEffectFormat TextEffect { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.TextEffectFormat TextEffect" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.TextEffect" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextEffect As TextEffectFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::TextEffectFormat ^ TextEffect { Microsoft::Office::Interop::Excel::TextEffectFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1702)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1702)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.TextEffectFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> objeto que contém as propriedades de formatação de efeito de texto da forma especificada. Aplica-se a <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objetos que representam WordArt. Somente leitura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextFrame">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.TextFrame TextFrame { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.TextFrame TextFrame" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.TextFrame" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextFrame As TextFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::TextFrame ^ TextFrame { Microsoft::Office::Interop::Excel::TextFrame ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1692)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1692)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.TextFrame</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> objeto que contém o alinhamento e ancoragem propriedades para o intervalo de formas especificado. Somente leitura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextFrame2">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.TextFrame2 TextFrame2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.TextFrame2 TextFrame2" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.TextFrame2" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextFrame2 As TextFrame2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::TextFrame2 ^ TextFrame2 { Microsoft::Office::Interop::Excel::TextFrame2 ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2659)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2659)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.TextFrame2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um objeto que contém a formatação do intervalo especificado da forma de texto. Somente leitura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.TextFrame2" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThreeD">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ThreeDFormat ThreeD { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ThreeDFormat ThreeD" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.ThreeD" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThreeD As ThreeDFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ThreeDFormat ^ ThreeD { Microsoft::Office::Interop::Excel::ThreeDFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1703)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1703)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ThreeDFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objeto que contém as propriedades para a forma especificada de formatação de efeitos 3D. Somente leitura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(199)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(199)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(199)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém ou define o título do texto alternativo associado ao intervalo especificado da forma.</summary>
+        <value>O título do texto alternativo associado ao intervalo especificado da forma.</value>
+        <remarks>
+          <para>Leitura/gravação.</para>
+          <para>Para definir a cadeia de caracteres de texto descritivo do texto alternativo para um intervalo de formas, use o <see cref="P:Microsoft.Office.Interop.Excel.ShapeRange.AlternativeText" /> propriedade.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="public float Top { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Top" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Top" />
+      <MemberSignature Language="VB.NET" Value="Public Property Top As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Top { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A distância da borda superior da forma mais superior no intervalo da forma até a borda superior da planilha. Leitura/gravação <b>único</b>.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoShapeType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoShapeType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As MsoShapeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoShapeType Type { Microsoft::Office::Core::MsoShapeType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoShapeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define o tipo de forma. Somente leitura <see cref="T:Microsoft.Office.Core.MsoShapeType" />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ungroup">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ShapeRange Ungroup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.ShapeRange Ungroup() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.Ungroup" />
+      <MemberSignature Language="VB.NET" Value="Public Function Ungroup () As ShapeRange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Excel::ShapeRange ^ Ungroup();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(244)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ShapeRange</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Desagrupa quaisquer formas agrupadas na forma especificada ou intervalo de formas. Desmonta figuras e objetos OLE dentro da forma especificada ou o intervalo de formas. Retorna as formas desagrupadas como um único <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objeto.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Como um grupo de formas é tratado como um único objeto, agrupar e desagrupar formas altera o número de itens no <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> conjunto e alterações os números de índice dos itens que vêm após os itens afetados na coleção.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalFlip">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState VerticalFlip { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState VerticalFlip" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.VerticalFlip" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerticalFlip As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState VerticalFlip { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1704)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1704)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> se a forma especificada está invertida em torno do eixo vertical. Somente leitura <see cref="T:Microsoft.Office.Core.MsoTriState" />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Vertices">
+      <MemberSignature Language="C#" Value="public object Vertices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Vertices" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Vertices" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Vertices As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Vertices { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(621)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(621)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna as coordenadas dos vértices do desenho de forma livre especificado (e pontos de controle para curvas Bézier) como uma série de pares de coordenadas. Somente leitura <b>objeto</b>.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Você pode usar a matriz retornada por esta propriedade como um argumento para o <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddCurve(System.Object)" /> método ou <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddPolyline(System.Object)" /> método.</para>
+          <para>a tabela a seguir mostra como a propriedade <b>Vertices</b> associa os valores de matriz vertArray () às coordenadas dos vértices de um triângulo.</para>
+          <list type="table">
+            <item>
+              <term>vertArray (1, 1)</term>
+              <description>de distância horizontal do primeiro vértice até o lado esquerdo do documento</description>
+            </item>
+            <item>
+              <term>vertArray (1, 2)</term>
+              <description>de distância vertical do primeiro vértice até a parte superior do documento</description>
+            </item>
+            <item>
+              <term> vertArray (2, 1)</term>
+              <description>a distância horizontal do segundo vértice até o lado esquerdo do documento</description>
+            </item>
+            <item>
+              <term>vertArray (2, 2)</term>
+              <description>de distância vertical do segundo vértice até a parte superior do documento</description>
+            </item>
+            <item>
+              <term> vertArray (3, 1)</term>
+              <description>a distância horizontal do terceiro vértice até o lado esquerdo do documento</description>
+            </item>
+            <item>
+              <term>vertArray (3, 2)</term>
+              <description>a distância vertical do terceiro vértice até a parte superior do documento</description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState Visible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState Visible" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visible As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Visible { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determina se o objeto está visível. Leitura/gravação <see cref="T:Microsoft.Office.Core.MsoTriState" />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public float Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Width" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Width { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A largura do objeto. Leitura/gravação <b>único</b>.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ZOrder">
+      <MemberSignature Language="C#" Value="public void ZOrder (Microsoft.Office.Core.MsoZOrderCmd ZOrderCmd);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ZOrder([in]valuetype Microsoft.Office.Core.MsoZOrderCmd ZOrderCmd) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ZOrder (ZOrderCmd As MsoZOrderCmd)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ZOrder(Microsoft::Office::Core::MsoZOrderCmd ZOrderCmd);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(622)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ZOrderCmd" Type="Microsoft.Office.Core.MsoZOrderCmd" />
+      </Parameters>
+      <Docs>
+        <param name="ZOrderCmd">Necessário <see cref="T:Microsoft.Office.Core.MsoZOrderCmd" />. Especifica para onde deve se mover a forma especificada em relação às outras formas.</param>
+        <summary>Move a forma especificada para a frente ou para trás das outras formas na coleção (isto é, altera a posição da forma na ordem z).</summary>
+        <remarks>
+          <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.ShapeRange.ZOrderPosition" /> propriedade para determinar a posição atual de uma forma na ordem z.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ZOrderPosition">
+      <MemberSignature Language="C#" Value="public int ZOrderPosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ZOrderPosition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ShapeRange.ZOrderPosition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ZOrderPosition As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ZOrderPosition { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1705)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1705)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna a posição da forma especificada, de acordo com a ordem z. <b>Integer</b> somente leitura.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Para definir a posição da forma na ordem z, use o <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> método.</para> A posição da 
+          <para>uma forma na ordem z corresponde ao número de índice da forma no <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> conjunto. Por exemplo, se houver quatro formas em myDocument, myDocument.Shapes(1) a expressão retorna a forma de trás na ordem z, e o myDocument.Shapes(4) expressão retorna a forma à frente da ordem z.</para><para>Sempre que você adiciona uma nova forma a uma coleção, ela é adicionada à frente da ordem z por padrão.</para><para /></remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

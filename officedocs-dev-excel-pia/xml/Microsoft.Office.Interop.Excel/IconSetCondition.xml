@@ -1,0 +1,659 @@
+<Type Name="IconSetCondition" FullName="Microsoft.Office.Interop.Excel.IconSetCondition">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="bc68b806e9539de6f5350ba189ec017a58c6f1db" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20580721" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface IconSetCondition" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IconSetCondition" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IconSetCondition" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IconSetCondition" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IconSetCondition" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024497-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Representa a regra de formatação condicional de um conjunto de ícones.</summary>
+    <remarks>
+      <para>Todos os objetos de formatação condicionais estão contidos dentro de um <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> objeto da coleção, que é um filho de um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> conjunto. Você pode criar um conjunto de ícones regra de formatação por meio de um a <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método ou <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddIconSetCondition" /> método da coleção <b>FormatConditions</b> .</para>
+      <para>Cada conjunto de ícones contém três, quatro ou cinco ícones. Você usa o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> objeto para retornar um <see cref="T:Microsoft.Office.Interop.Excel.IconSets" /> objeto para especificar um dos conjuntos de ícone interno. Cada ícone individual no conjunto de ícones é atribuída a um subconjunto dos valores do intervalo pelos membros do <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> obect. O tipo de limite também é especificado por este objeto.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Quando usado sem um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object que representa o aplicativo Microsoft Office Excel. Quando usado com um qualificador de objeto, essa propriedade retorna um objeto <b>Application</b> que representa o criador do objeto especificado. Somente leitura.</summary>
+        <value>
+          <b>Aplicativo</b> (consulte acima)</value>
+        <remarks>
+          <para>Você pode usar essa propriedade com um objeto de automação OLE para retornar o aplicativo desse objeto.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppliesTo">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Range AppliesTo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Range AppliesTo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.AppliesTo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AppliesTo As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Range ^ AppliesTo { Microsoft::Office::Interop::Excel::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2626)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2626)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto especificando o intervalo de células ao qual a regra de formatação é aplicada.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um inteiro de 32 bits equivalente a um <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> valor que indica o aplicativo no qual esse objeto foi criado. Somente leitura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
+        </value>
+        <remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.  A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.IconSetCondition.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Exclui o objeto de regra da formatação condicional especificado.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Formula">
+      <MemberSignature Language="C#" Value="public string Formula { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Formula" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.Formula" />
+      <MemberSignature Language="VB.NET" Value="Public Property Formula As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Formula { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(261)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(261)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(261)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define um valor <b>String</b> representando uma fórmula que determina os valores em que o conjunto de ícones será aplicado.</summary>
+        <value>
+          <b>String</b>
+        </value>
+        <remarks>
+          <para>Essa propriedade é útil para limitar o intervalo de valores que exibirá o formato condicional. Um cenário típico é quando você tem um intervalo de números que contém valores positivos e negativos. Convém criar mais de um formato condicional para esse intervalo de números — um para valores positivos e outro para valores negativos.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconCriteria">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.IconCriteria IconCriteria { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.IconCriteria IconCriteria" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconCriteria" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IconCriteria As IconCriteria" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::IconCriteria ^ IconCriteria { Microsoft::Office::Interop::Excel::IconCriteria ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2727)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2727)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.IconCriteria</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> coleção, que representa o conjunto de critérios para a regra de formatação condicional de conjunto de um ícone.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />
+        </value>
+        <remarks>
+          <para>Depois de ter o <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />coleção, você pode usar o <see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Item(System.Object)" /> propriedade da coleção, para retornar um <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> objeto. O <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> objeto representa um único critério de um conjunto de ícones.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconSet">
+      <MemberSignature Language="C#" Value="public object IconSet { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object IconSet" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconSet" />
+      <MemberSignature Language="VB.NET" Value="Public Property IconSet As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ IconSet { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2726)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2726)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2726)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Interop.Excel.IconSets" /> coleção, que especifica o conjunto de ícones usado no formato condicional.</summary>
+        <value>
+          <b>Object</b>
+        </value>
+        <remarks>
+          <para>Você pode atribuir o ícone definido usando o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> objeto.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifyAppliesToRange">
+      <MemberSignature Language="C#" Value="public void ModifyAppliesToRange (Microsoft.Office.Interop.Excel.Range Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ModifyAppliesToRange([in]class Microsoft.Office.Interop.Excel.Range Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.IconSetCondition.ModifyAppliesToRange(Microsoft.Office.Interop.Excel.Range)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ModifyAppliesToRange(Microsoft::Office::Interop::Excel::Range ^ Range);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2627)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Excel.Range" />
+      </Parameters>
+      <Docs>
+        <param name="Range">O intervalo ao qual esta regra de formatação será aplicada.</param>
+        <summary>Define o intervalo de células ao qual esta regra de formatação se aplicará.</summary>
+        <remarks>
+          <para>o intervalo deve estar no estilo de referência A1 e estar totalmente contido dentro da folha que é o pai do <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> conjunto. Ele pode incluir o operador de intervalo (dois-pontos), o operador de interseção (um espaço) ou o operador union (uma vírgula). Os sinais de dólar também pode ser usados, mas eles serão ignorados.</para>
+          <para>Você também pode usar um nome definido de local em qualquer parte do intervalo, mas o nome deve estar no idioma da macro.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o objeto pai para o objeto especificado. Somente leitura.</summary>
+        <value>
+          <b>Object</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PercentileValues">
+      <MemberSignature Language="C#" Value="public bool PercentileValues { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PercentileValues" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.PercentileValues" />
+      <MemberSignature Language="VB.NET" Value="Public Property PercentileValues As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PercentileValues { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2724)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2724)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2724)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define um valor <b>Boolean</b> que indica se os limites do formato condicional de um conjunto de ícones são determinados usando percentis.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>Esta propriedade retornará <b>False</b> se não cada limite é definido para percentil. A definição dessa propriedade como <b>True</b> , todos os tipos de limite será definido para percentil.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="public int Priority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Priority" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.Priority" />
+      <MemberSignature Language="VB.NET" Value="Public Property Priority As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Priority { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(985)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(985)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(985)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define um valor de prioridade da regra de formatação condicional. A prioridade determina a ordem da avaliação quando houver várias regras de formatação condicional em uma planilha.</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>
+          <para>Ao definir a prioridade, o valor deve ser um inteiro positivo entre 1 e o número total de regras de formatação condicional na planilha. A prioridade deve ser um valor exclusivo para todas as regras na planilha, para que a alteração da prioridade para a regra de formatação condicional especificada pode causar o valor de prioridade das outras regras na planilha a ser deslocado.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PTCondition">
+      <MemberSignature Language="C#" Value="public bool PTCondition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PTCondition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.PTCondition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PTCondition As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PTCondition { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2631)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2631)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um valor <b>Boolean</b> indicando se o formato condicional está sendo aplicado a um gráfico PivotTable. Somente leitura.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReverseOrder">
+      <MemberSignature Language="C#" Value="public bool ReverseOrder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReverseOrder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.ReverseOrder" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReverseOrder As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReverseOrder { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2723)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2723)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2723)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define um valor <b>Boolean</b> que indica se a ordem dos ícones é revertida para um conjunto de ícones.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>Por padrão, a maioria dos conjuntos de ícones que você pode usar associar imagens positivas com valores mais altos. Por exemplo, o conjunto de ícones de "3 semáforo" aplica um círculo verde para o limite de valor superior e um círculo vermelho com os valores mais baixos no intervalo. Se seus dados estão, de tal modo que valores inferiores fiquem mais desejáveis, como os resultados de tempo maratona, convém reverter a ordem que os ícones são aplicadas ao intervalo para associar o círculo verde para os valores mais baixos.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScopeType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlPivotConditionScope ScopeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlPivotConditionScope ScopeType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.ScopeType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScopeType As XlPivotConditionScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlPivotConditionScope ScopeType { Microsoft::Office::Interop::Excel::XlPivotConditionScope get(); void set(Microsoft::Office::Interop::Excel::XlPivotConditionScope value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2615)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2615)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2615)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define uma das constantes do <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> enumeração, que determina a abrangência do formato condicional quando aplicado a um gráfico de tabela dinâmica.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
+        </value>
+        <remarks>
+          <para>O valor padrão é <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, que define o escopo usando o <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.AppliesTo" /> propriedade.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFirstPriority">
+      <MemberSignature Language="C#" Value="public void SetFirstPriority ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetFirstPriority() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.IconSetCondition.SetFirstPriority" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetFirstPriority ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFirstPriority();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2629)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Define o valor de prioridade para esta regra de formatação condicional como "1", de forma que esta regra seja avaliada antes das outras regras na planilha.</summary>
+        <remarks>
+          <para>Quando você tem várias regras de formatação condicionais em uma planilha, se a regra não foi definida anteriormente para prioridade mais alta "1", esse método fará com que a prioridade de todas as outras regras existentes na planilha seja aumentada por um.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLastPriority">
+      <MemberSignature Language="C#" Value="public void SetLastPriority ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetLastPriority() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.IconSetCondition.SetLastPriority" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetLastPriority ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLastPriority();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2630)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Define a ordem de avaliação para esta regra de formatação condicional, de forma que seja avaliada após todas as outras regras da planilha.</summary>
+        <remarks>
+          <para>O valor real da prioridade será igual ao número total de regras de formatação condicional na planilha. Quando você tem várias regras de formatação condicionais em uma planilha, esse método fará com que a prioridade de regras que tinha um valor de prioridade maior do que esta regra seja aumentada por um.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowIconOnly">
+      <MemberSignature Language="C#" Value="public bool ShowIconOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowIconOnly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.ShowIconOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowIconOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowIconOnly { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2725)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2725)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2725)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define um valor <b>Boolean</b> que indica se somente o ícone é exibido para a formatação condicional de um conjunto de ícones.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>O valor padrão para essa propriedade é <b>False</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopIfTrue">
+      <MemberSignature Language="C#" Value="public bool StopIfTrue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StopIfTrue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.StopIfTrue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StopIfTrue As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StopIfTrue { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2625)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2625)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define um valor <b>Boolean</b> que determina se as regras de formatação adicionais na célula devem ser avaliadas se a regra atual for avaliar como <b>True</b>.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>Para oferecer suporte a compatibilidade com versões anteriores, o valor padrão para essa propriedade é <b>True</b>, o que é o oposto de uma formatação a regra criada na interface do usuário.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public int Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Type { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna uma das constantes do <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> enumeração, que especifica o tipo de formatação condicional. Somente leitura.</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>
+          <para>Essa propriedade sempre retornará um valor de 6, que é equivalente a <see cref="T:Microsoft.Office.Interop.Excel.XlIconSet" />.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

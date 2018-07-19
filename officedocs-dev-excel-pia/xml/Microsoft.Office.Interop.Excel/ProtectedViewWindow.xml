@@ -1,0 +1,537 @@
+<Type Name="ProtectedViewWindow" FullName="Microsoft.Office.Interop.Excel.ProtectedViewWindow">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="e408f0f28015c64503fb4f24fd3d1bb9d13526ce" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20574757" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ProtectedViewWindow" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ProtectedViewWindow" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ProtectedViewWindow" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ProtectedViewWindow" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000244CD-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Representa uma janela de modo de exibição protegido.</summary>
+    <remarks>Janela de <para>um modo de exibição protegido é usada para exibir uma pasta de trabalho a partir de um local potencialmente não segura. Locais não seguros são definidos como o seguinte:</para><list type="number"><item><description>arquivos abertos da Internet.</description></item><item><description>Anexos abertos do Microsoft Outlook 2010.</description></item><item><description>Arquivos bloqueados pela diretiva de bloqueio de arquivo.</description></item><item><description>Arquivos não aprovados na validação de arquivo do Office.</description></item><item><description>Arquivos abertos explicitamente no modo de exibição protegido usando o comando Abrir no modo de exibição protegido do botão Abrir na caixa de diálogo Abrir.</description></item></list><para>Pastas de trabalho exibidas em uma janela de modo de exibição protegido não podem ser editadas e são impedidas de executar conteúdo ativo como o Visual Basic para aplicativos macros e conexões de dados.</para><para>Para retornar um único <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objeto do <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> conjunto, use protectedviewwindows (index), onde Index é o número de índice da janela que você deseja abrir. Você também pode acessar o <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> object que representa a janela ativa do modo de exibição protegido usando o <see cref="P:Microsoft.Office.Interop.Excel.Application.ActiveProtectedViewWindow" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</para><para>Após acessar um <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> do objeto, use o <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Workbook" /> propriedade para acessar o <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object que representa o arquivo de pasta de trabalho que está aberto na janela modo de exibição protegido. Como uma janela de modo de exibição protegido foi projetada para proteger o usuário contra códigos potencialmente maliciosos, as operações você pode executar usando um <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto retornado por uma <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objeto serão limitado. A maioria das operações que não são permitidos serão retornar "Erro de tempo de execução 1004: este comando não está disponível quando o Excel está em modo seguro."</para><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public string this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string _Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow._Default" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property _Default As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>Retorna <see cref="T:System.String" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Activate">
+      <MemberSignature Language="C#" Value="public void Activate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Activate() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Activate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Activate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Activate();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(304)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Traz a janela Modo de Exibição Protegido para a frente da ordem z.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Caption">
+      <MemberSignature Language="C#" Value="public string Caption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Caption" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Caption" />
+      <MemberSignature Language="VB.NET" Value="Public Property Caption As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Caption { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém ou define um valor que representa o nome que aparece na barra de título da janela do modo de exibição protegido.</summary>
+        <value>O nome que aparece na barra de título da janela do modo de exibição protegido.</value>
+        <remarks>
+          <para>Leitura/gravação.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public bool Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Close() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Function Close () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Close();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(277)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Fecha a janela de modo de exibição protegido especificada.</summary>
+        <returns>Retorna <see cref="T:System.Boolean" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Edit">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Workbook Edit (object WriteResPassword, object UpdateLinks);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Workbook Edit([in]object WriteResPassword, [in]object UpdateLinks) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Edit(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Edit (Optional WriteResPassword As Object, Optional UpdateLinks As Object) As Workbook" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(562)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Workbook</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="WriteResPassword" Type="System.Object" />
+        <Parameter Name="UpdateLinks" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="WriteResPassword">A senha necessária para gravar em uma pasta de trabalho de gravação reservada.</param>
+        <param name="UpdateLinks">Especifica as referências de maneira externas (links) no arquivo, como a referência a um intervalo na pasta de trabalho Budget na fórmula a seguir = soma ([Budget] anual! C10: C25), são atualizados.</param>
+        <summary>Abre a pasta de trabalho que está aberta na janela Modo de Exibição Protegido especificada para fins de edição.</summary>
+        <returns>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto.</returns>
+        <remarks>
+          <para>Se o <paramref name="WriteResPassword" /> parâmetro for omitido e a pasta de trabalho requer uma senha, o usuário será solicitado a senha.</para>
+          <para>Se o <paramref name="UpdateLinks" /> parâmetro for omitido, o usuário será solicitado para especificar como os vínculos serão atualizados. Se o Excel está abrindo um arquivo em WKS, WK1 ou WK3 Formatar e o <paramref name="UpdateLinks" /> argumento é 0, nenhum gráfico será criado; Caso contrário, o Excel gerará gráficos partir dos gráficos anexados ao arquivo.</para>
+          <para>Evite usar senhas codificadas em seus aplicativos. Se uma senha for necessária em um procedimento, solicitar a senha do usuário, armazene em uma variável e, em seguida, use a variável no seu código.</para>
+          <para>Você pode especificar um dos valores, listados na tabela a seguir, no <paramref name="UpdateLinks" /> parâmetro para determinar se as referências externas (links) serão atualizadas quando a pasta de trabalho é aberta.</para>
+          <list type="table">
+            <item>
+              <term>0</term>
+              <description>referências externas (links) não serão atualizadas quando a pasta de trabalho é aberta.</description>
+            </item>
+            <item>
+              <term>3</term>
+              <description>referências externas (links) serão atualizadas quando a pasta de trabalho é aberta.</description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableResize">
+      <MemberSignature Language="C#" Value="public bool EnableResize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableResize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.EnableResize" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableResize As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableResize { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1192)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1192)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1192)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém ou define se a janela do modo de exibição protegido pode ser redimensionada.</summary>
+        <value>
+          <b>true</b> se a janela do modo de exibição protegido pode ser redimensionada; Caso contrário, <b>false</b>.</value>
+        <remarks>
+          <para>Leitura/gravação.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public double Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Height" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém ou define um valor que representa a altura, em pontos, da janela do modo de exibição protegido.</summary>
+        <value>A altura, em pontos, da janela do modo de exibição protegido.</value>
+        <remarks>
+          <para>Leitura/gravação.</para>
+          <para>Não é possível definir essa propriedade se a janela de modo de exibição protegido é maximizada ou minimizada. Use o <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> propriedade para determinar o estado da janela.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public double Left { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Left" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Left" />
+      <MemberSignature Language="VB.NET" Value="Public Property Left As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Left { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém ou define um valor que representa a distância, em pontos, da borda esquerda da área do cliente até a borda esquerda da janela do modo de exibição protegido.</summary>
+        <value>A distância, em pontos, da borda esquerda da área do cliente até a borda esquerda da janela do modo de exibição protegido.</value>
+        <remarks>
+          <para>Leitura/gravação.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceName">
+      <MemberSignature Language="C#" Value="public string SourceName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.SourceName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(721)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(721)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém o nome do arquivo de origem que está aberto na janela de modo de exibição protegido especificada.</summary>
+        <value>O nome do arquivo de origem que está aberto na janela de modo de exibição protegido especificada.</value>
+        <remarks>
+          <para>Somente leitura.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourcePath">
+      <MemberSignature Language="C#" Value="public string SourcePath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourcePath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.SourcePath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourcePath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourcePath { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2993)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2993)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém o caminho do arquivo de origem que está aberto na janela de modo de exibição protegido especificada.</summary>
+        <value>O caminho do arquivo de origem que está aberto na janela de modo de exibição protegido especificada.</value>
+        <remarks>
+          <para>Somente leitura.</para>
+          <para>o caminho não inclui um caractere precedente (por exemplo, "C:\MSOffice"). Use o <see cref="P:Microsoft.Office.Interop.Excel._Application.PathSeparator" /> propriedade para adicionar o caractere que separa pastas e letras de unidade. Use o <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.SourceName" /> do <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objeto para retornar o nome do arquivo de origem sem o caminho.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="public double Top { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Top" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Top" />
+      <MemberSignature Language="VB.NET" Value="Public Property Top As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Top { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém ou define um valor que representa a distância, em pontos, da borda superior da janela de modo de exibição protegido especificada até a borda superior da área útil.</summary>
+        <value>A distância, em pontos, da borda superior da janela de modo de exibição protegido especificada até a borda superior da área útil.</value>
+        <remarks>
+          <para>Leitura/gravação.</para>
+          <para>Você não pode definir essa propriedade para uma janela maximizada do modo de exibição protegido. Use o <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> propriedade para retornar ou definir o estado da janela.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public bool Visible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém ou define um valor que determina se a janela de modo de exibição protegido especificada está visível.</summary>
+        <value>
+          <b>true</b> se a janela de modo de exibição protegido especificada estiver visível; Caso contrário, <b>false</b>.</value>
+        <remarks>
+          <para>Leitura/gravação.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public double Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Width" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém ou define um valor que especifica a largura, em pontos, da janela de modo de exibição protegido especificada.</summary>
+        <value>A largura, em pontos, da janela de modo de exibição protegido especificada.</value>
+        <remarks>
+          <para>Leitura/gravação.</para>
+          <para>Não é possível definir essa propriedade se a janela de modo de exibição protegido é maximizada ou minimizada. Use o <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> propriedade para determinar o estado da janela.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowState">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlProtectedViewWindowState WindowState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlProtectedViewWindowState WindowState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" />
+      <MemberSignature Language="VB.NET" Value="Public Property WindowState As XlProtectedViewWindowState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlProtectedViewWindowState WindowState { Microsoft::Office::Interop::Excel::XlProtectedViewWindowState get(); void set(Microsoft::Office::Interop::Excel::XlProtectedViewWindowState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(396)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(396)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(396)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlProtectedViewWindowState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém ou define o estado da janela de modo de exibição protegido especificada.</summary>
+        <value>O estado da janela de modo de exibição protegido especificada.</value>
+        <remarks>
+          <para>Leitura/gravação.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Workbook">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Workbook Workbook { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Workbook Workbook" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Workbook" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Workbook As Workbook" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Workbook ^ Workbook { Microsoft::Office::Interop::Excel::Workbook ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(752)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(752)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Workbook</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtém um objeto que representa a pasta de trabalho que está aberta na janela de modo de exibição protegido especificada.</summary>
+        <value>A pasta de trabalho que está aberta na janela de modo de exibição protegido especificada.</value>
+        <remarks>
+          <para>Somente leitura.</para>
+          <para>Como uma janela de modo de exibição protegido foi projetada para proteger o usuário contra códigos potencialmente maliciosos, as operações você pode executar usando um <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto retornado pelo <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> método serão limitado. Qualquer operação que não é permitida retornará "Erro de tempo de execução 1004: este comando não está disponível quando o Excel está em modo seguro."</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

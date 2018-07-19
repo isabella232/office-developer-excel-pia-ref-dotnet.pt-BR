@@ -1,0 +1,376 @@
+<Type Name="Diagram" FullName="Microsoft.Office.Interop.Excel.Diagram">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="284dac8d28fb2f4619db584ffa0820a68ade7b37" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20572664" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Diagram" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Diagram" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Diagram" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Diagram" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Diagram" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002446F-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4112)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Representa um diagrama.</summary>
+    <remarks>
+      <para>Use a propriedade de <b>diagrama</b> do <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto ou <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> coleção, para retornar um objeto de <b>diagrama</b> .</para>
+      <para>Você também pode converter o diagrama atual em um diagrama diferente usando o <see cref="M:Microsoft.Office.Interop.Excel.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" /> método.</para>
+      <para>
+        <b>Observação</b> : se o diagrama atual for um organograma (<b>msoDiagramOrgChart</b>) ocorrerá um erro de tempo de execução.</para>
+      <para>Há vários tipos de diagramas à sua escolha ao trabalhar com o objeto de <b>diagrama</b> . Consulte o <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddDiagram(Microsoft.Office.Core.MsoDiagramType,System.Single,System.Single,System.Single,System.Single)" /> método para exibir uma lista dos tipos de diagrama disponível.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Diagram.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoFormat">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState AutoFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState AutoFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Diagram.AutoFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoFormat As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState AutoFormat { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(114)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(114)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(114)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Define ou retorna uma constante que indica o estado de formatação automático de um diagrama.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>A configuração de <b>AutoFormatação</b> como <b>msoFalse</b> desabilita a formatação automática do diagrama. A configuração de <b>AutoFormatação</b> como <b>msoTrue</b> ativa a formatação automática do diagrama.</para>
+          <para>
+            <b>Constantesmsotristate não aplicar a essa propriedade</b> : <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoLayout">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState AutoLayout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState AutoLayout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Diagram.AutoLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoLayout As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState AutoLayout { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2243)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2243)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2243)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define uma constante que determina o posicionamento automático de nós e conectores em um diagrama.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>A configuração de <b>AutoLayout</b> como <b>msoFalse</b> desabilita a formatação automática do diagrama. A configuração de <b>AutoLayout</b> como <b>msoTrue</b> ativa a formatação automática do diagrama.</para>
+          <para>
+            <b>Constantesmsotristate não aplicar a essa propriedade</b> : <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public void Convert (Microsoft.Office.Core.MsoDiagramType Type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Convert([in]valuetype Microsoft.Office.Core.MsoDiagramType Type) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Convert (Type As MsoDiagramType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Convert(Microsoft::Office::Core::MsoDiagramType Type);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1046)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.MsoDiagramType" />
+      </Parameters>
+      <Docs>
+        <param name="Type">Necessário <see cref="T:Microsoft.Office.Core.MsoDiagramType" />. O tipo de diagrama para converter em. <b>MsoDiagramType</b> pode ser uma destas constantes: <b>msoDiagramCycle</b> Um diagrama de processo com um tipo de diagrama de ciclo contínuo. <b>msoDiagramMixed</b> Um tipo de diagrama misto. <b>msoDiagramOrgChart</b> Um tipo de diagrama de relações hierárquicas. <b>msoDiagramPyramid</b> Uma base com base em tipo de diagrama de relações. <b>msoDiagramRadial</b> Um tipo de diagrama mostrando as relações de um elemento essencial. <b>msoDiagramTarget</b> Um tipo de diagrama mostrando as etapas para atingir uma meta. <b>msoDiagramVenn</b> Um tipo de diagrama mostrando as áreas de sobreposição entre elementos.</param>
+        <summary>Converte o diagrama atual em um diagrama diferente.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Diagram.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
+          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FitText">
+      <MemberSignature Language="C#" Value="public void FitText ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FitText() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Diagram.FitText" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FitText ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void FitText();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2304)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ajusta o tamanho do texto em que os nós em um diagrama para ajuste aos limites de nós.</summary>
+        <remarks>
+          <para>Funções esse método somente no Microsoft Office PowerPoint 2003.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Nodes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.DiagramNodes Nodes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.DiagramNodes Nodes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Diagram.Nodes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Nodes As DiagramNodes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::DiagramNodes ^ Nodes { Microsoft::Office::Interop::Excel::DiagramNodes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1701)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1701)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.DiagramNodes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" /> objeto que contém uma lista simples de todos os nós do diagrama especificado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Diagram.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o objeto pai para o objeto especificado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reverse">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState Reverse { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState Reverse" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Diagram.Reverse" />
+      <MemberSignature Language="VB.NET" Value="Public Property Reverse As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Reverse { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2244)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2244)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2244)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Inverte os nós em um diagrama.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>Reverter</b> a configuração como <b>msoFalse</b> deixa os nós do diagrama como estão. <b>Reverter</b> a configuração como <b>msoTrue</b> inverte os nós em um diagrama.</para>
+          <para>
+            <b>Constantesmsotristate não aplicar a essa propriedade</b> : <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoDiagramType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoDiagramType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Diagram.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As MsoDiagramType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoDiagramType Type { Microsoft::Office::Core::MsoDiagramType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoDiagramType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define o tipo de diagrama.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Core.MsoDiagramType" />pode ser uma destas constantes <b>MsoDiagramType</b> :</para>
+          <para>
+            <b>msoDiagramCycle</b>
+          </para>
+          <para>
+            <b>msoDiagramMixed</b>
+          </para>
+          <para>
+            <b>msoDiagramOrgChart</b>
+          </para>
+          <para>
+            <b>msoDiagramPyramid</b>
+          </para>
+          <para>
+            <b>msoDiagramRadial</b>
+          </para>
+          <para>
+            <b>msoDiagramTarget</b>
+          </para>
+          <para>
+            <b> msoDiagramVenn</b>
+          </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
