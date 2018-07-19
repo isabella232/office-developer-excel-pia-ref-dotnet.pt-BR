@@ -1,0 +1,297 @@
+<Type Name="QueryTables" FullName="Microsoft.Office.Interop.Excel.QueryTables">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="dca19c730db3c359bc26e265f3af266c406db4a5" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20586937" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface QueryTables : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract QueryTables implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.QueryTables" />
+  <TypeSignature Language="VB.NET" Value="Public Interface QueryTables&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class QueryTables : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024429-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> objetos. Cada objeto <b>QueryTable</b> representa uma tabela de planilha construída com base em dados retornados de uma fonte de dados externa.</summary>
+    <remarks>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.QueryTables" /> propriedade para retornar a coleção <b>QueryTables</b> .</para>
+      <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" /> método para criar uma nova tabela de consulta e adicioná-lo à coleção <b>QueryTables</b> .</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.QueryTable this[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.QueryTable _Default(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.QueryTables._Default(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property _Default(Index As Object) As QueryTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::QueryTable ^ default[System::Object ^] { Microsoft::Office::Interop::Excel::QueryTable ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.QueryTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">To be added.</param>
+        <summary>Reservado para uso interno.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.QueryTable Add (object Connection, Microsoft.Office.Interop.Excel.Range Destination, object Sql);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.QueryTable Add([in]object Connection, [in]class Microsoft.Office.Interop.Excel.Range Destination, [in]object Sql) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Connection As Object, Destination As Range, Optional Sql As Object) As QueryTable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(181)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.QueryTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Connection" Type="System.Object" />
+        <Parameter Name="Destination" Type="Microsoft.Office.Interop.Excel.Range" />
+        <Parameter Name="Sql" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Connection">
+          <b>Objeto</b>necessário. A fonte de dados para a tabela de consulta. Pode ser uma sequência de caracteres a seguir: um contendo um OLE DB ou uma cadeia de caracteres de conexão ODBC. A cadeia de caracteres de conexão ODBC tem o formato "ODBC; &lt;cadeia de caracteres de conexão&gt;". Um objeto <b>QueryTable</b> do qual as informações da consulta são inicialmente copiadas, incluindo a cadeia de caracteres de conexão e o texto SQL, mas não incluindo o <paramref name="Destination" /> intervalo. A especificação de um objeto <b>QueryTable</b> faz o <paramref name="Sql" /> argumentos a serem ignorados. Um objeto ADO ou DAO <b>Recordset</b> . Dados é lido a partir do recordset do ADO ou DAO. O Microsoft Excel retém o recordset até que a tabela de consulta for excluída ou a conexão é alterada. A tabela de consulta resultante não pode ser editada. Uma consulta à Web. Uma cadeia de caracteres no formulário "URL; &lt;url&gt;", onde"URL;"é obrigatório, mas não localizado e o restante da cadeia de caracteres é usado para a URL da consulta à Web. Localizador de dados. Uma cadeia de caracteres, no formato "FINDER; &lt;caminho de arquivo do localizador de dados&gt;"onde"FINDER;"é obrigatório, mas não localizado. O restante da cadeia de caracteres é o caminho e o nome de um arquivo de localizador de dados (*. dqy ou iqy). O arquivo é lido quando o método <b>Add</b> é executado; as chamadas subsequentes para o <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> propriedade da tabela de consulta retornará cadeias de caracteres começando com "ODBC;" ou "URL;" conforme apropriado. Um arquivo de texto. Uma cadeia de caracteres, no formato "TEXT; &lt;caminho do arquivo de texto e o nome&gt;", onde o texto é necessária, mas não localizado.</param>
+        <param name="Destination">Necessário <b>intervalo</b>. A célula no canto superior esquerdo do intervalo de destino de tabela de consulta (o intervalo onde a tabela de consulta resultante será colocada). O intervalo de destino deve estar na planilha que contém o <see cref="T:Microsoft.Office.Interop.Excel.QueryTables" /> objeto.</param>
+        <param name="Sql">
+          <b>Objeto</b>de opcional. A sequência de consulta SQL a ser executado na fonte de dados ODBC. Este argumento é opcional quando você estiver usando uma fonte de dados ODBC você não pode usar esse argumento quando um objeto <b>QueryTable</b> , arquivo de texto ou objeto DAO <b>Recordset</b> ADO ou é especificado como a fonte de dados.</param>
+        <summary>Cria uma nova tabela de consulta. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> object que representa a nova tabela de consulta.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Uma consulta criada com esse método não é executada até o <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> método for chamado.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.QueryTables.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel. Somente leitura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.QueryTables.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o número de objetos na coleção. <b>Integer</b> somente leitura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.QueryTables.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.QueryTables.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.QueryTable Item (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.QueryTable Item([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.QueryTables.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Item (Index As Object) As QueryTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Excel::QueryTable ^ Item(System::Object ^ Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.QueryTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <b>Objeto</b>necessário. O nome ou número de índice do objeto.</param>
+        <summary>Retorna um único objeto de uma coleção.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>O nome de texto do objeto é o valor do <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Name" /> propriedade.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.QueryTables.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o objeto pai para o objeto especificado. Somente leitura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
