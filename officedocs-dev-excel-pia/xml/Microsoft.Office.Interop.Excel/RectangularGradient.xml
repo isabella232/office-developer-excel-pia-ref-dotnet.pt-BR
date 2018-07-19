@@ -1,0 +1,665 @@
+<Type Name="RectangularGradient" FullName="Microsoft.Office.Interop.Excel.RectangularGradient">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="4cba2599f80d4b3a1cd4ad4d3fcc0d4672314334" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20584445" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface RectangularGradient" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RectangularGradient" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.RectangularGradient" />
+  <TypeSignature Language="VB.NET" Value="Public Interface RectangularGradient" />
+  <TypeSignature Language="C++ CLI" Value="public interface class RectangularGradient" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000244B0-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="0cd09-101">O <see cref="T:Microsoft.Office.Interop.Excel.RectangularGradient" /> transições por meio de uma série de cores do objeto de forma linear ao longo de um ângulo específico.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="0cd09-101">The <see cref="T:Microsoft.Office.Interop.Excel.RectangularGradient" /> object transitions through a series of colors in a linear manner along a specific angle.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="0cd09-102">
+        <para>
+          <b>Observação</b>: algumas coisas a considerar quando trabalhar com <see cref="T:Microsoft.Office.Interop.Excel.RectangularGradient" /> objetos</para>
+        <list type="bullet">
+          <item>
+            <description>tentar acessar um <see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" /> propriedade de um <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objeto que não tem um preenchimento gradiente existente resultará em um erro em tempo de execução.  Lembre-se do <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> propriedade antes de acessar o <see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" /> propriedade.</description>
+          </item>
+          <item>
+            <description>Se <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> é alterado de um tipo de gradiente para um tipo não seja de gradiente, o <see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" /> objeto será preenchido com valores padrão.</description>
+          </item>
+        </list>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="0cd09-102">
+          <para>
+            <b>Note</b>: Some things to consider when working with <see cref="T:Microsoft.Office.Interop.Excel.RectangularGradient" /> objects</para>
+          <list type="bullet">
+            <item>
+              <description>Attempting to access a <see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" /> property of an <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object that does not have an existing gradient fill will result in a Run Time Error.  Be aware of the <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> property before accessing the <see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" /> property.</description>
+            </item>
+            <item>
+              <description>If <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> is changed from a gradient type to a non-gradient type, the <see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" />  object will populate with default values.</description>
+            </item>
+          </list>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.RectangularGradient.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0cd09-103">Quando usado sem um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object que representa o aplicativo Microsoft Office Excel.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-103">When used without an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object that represents the Microsoft Office Excel application.</span>
+          </span>
+          <span data-ttu-id="0cd09-104">Quando usado com um qualificador de objeto, essa propriedade retorna um objeto <b>Application</b> que representa o criador do objeto especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-104">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object.</span>
+          </span>
+          <span data-ttu-id="0cd09-105">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-105">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColorStops">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ColorStops ColorStops { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ColorStops ColorStops" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.RectangularGradient.ColorStops" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColorStops As ColorStops" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ColorStops ^ ColorStops { Microsoft::Office::Interop::Excel::ColorStops ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2761)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2761)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ColorStops</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0cd09-106">Retorna o <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.ColorStops" /> para o <see cref="T:Microsoft.Office.Interop.Excel.RectangularGradient" /> objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-106">Returns the <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.ColorStops" /> for the <see cref="T:Microsoft.Office.Interop.Excel.RectangularGradient" /> object.</span>
+          </span>
+          <span data-ttu-id="0cd09-107">Somente leitura</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-107">Read-only</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.ColorStops" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.RectangularGradient.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0cd09-108">Retorna um <b>inteiro</b> de 32 bits que indica o aplicativo no qual esse objeto foi criado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-108">Returns a 32-bit <b>Integer</b> that indicates the application in which this object was created.</span>
+          </span>
+          <span data-ttu-id="0cd09-109">Somente leitura</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-109">Read-only</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
+        </value>
+        <remarks>
+          <span data-ttu-id="0cd09-110">
+            <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-110">
+              <para>If the object was created in Microsoft Excel, this property returns the String XCEL, which is equivalent to the hexadecimal number 5843454C. The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.RectangularGradient.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0cd09-111">Retorna o pai do objeto especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-111">Returns the parent for the specified object.</span>
+          </span>
+          <span data-ttu-id="0cd09-112">Somente leitura</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-112">Read-only</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0cd09-113">
+            <b>Object</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-113">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RectangleBottom">
+      <MemberSignature Language="C#" Value="public double RectangleBottom { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 RectangleBottom" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />
+      <MemberSignature Language="VB.NET" Value="Public Property RectangleBottom As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RectangleBottom { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2763)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2763)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2763)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0cd09-p105">Representa o ponto ou vetor para o qual o preenchimento gradual converge. Leitura/gravação.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-p105">Represents the point or vector that the gradient fill converges to. Read/write</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0cd09-116">
+            <b>Double</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-116">
+              <b>Double</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="0cd09-117">
+            <para>Funciona com <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />, <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />, e <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />.  Valores válidos são listados na tabela abaixo.</para>
+            <list type="table">
+              <item>
+                <term>
+                  <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />
+                </term>0-1
+            </item>
+              <item>
+                <term>
+                  <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />
+                </term>0-1
+            </item>
+              <item>
+                <term>
+                  <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />
+                </term>0-1
+            </item>
+              <item>
+                <term>
+                  <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />
+                </term>0-1
+            </item>
+            </list>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-117">
+              <para>Works with <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />, <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />, and <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />.  Valid values are listed in the table below.</para>
+              <list type="table">
+                <item>
+                  <term>
+                    <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />
+                  </term>
+                  <description>0-1</description>
+                </item>
+                <item>
+                  <term>
+                    <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />
+                  </term>
+                  <description>0-1</description>
+                </item>
+                <item>
+                  <term>
+                    <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />
+                  </term>
+                  <description>0-1</description>
+                </item>
+                <item>
+                  <term>
+                    <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />
+                  </term>
+                  <description>0-1</description>
+                </item>
+              </list>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RectangleLeft">
+      <MemberSignature Language="C#" Value="public double RectangleLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 RectangleLeft" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property RectangleLeft As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RectangleLeft { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2764)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2764)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2764)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0cd09-p106">Representa o ponto ou vetor para o qual o preenchimento gradual converge. Leitura/gravação.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-p106">Represents the point or vector that the gradient fill converges to. Read/write</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0cd09-120">
+            <b>Double</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-120">
+              <b>Double</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="0cd09-121">
+            <para>Funciona com <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />, <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />, e <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />.  Valores válidos são listados na tabela abaixo.</para>
+            <list type="table">
+              <item>
+                <term>
+                  <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />
+                </term>0-1
+            </item>
+              <item>
+                <term>
+                  <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />
+                </term>0-1
+            </item>
+              <item>
+                <term>
+                  <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />
+                </term>0-1
+            </item>
+              <item>
+                <term>
+                  <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />
+                </term>0-1
+            </item>
+            </list>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-121">
+              <para>Works with <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />, <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />, and <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />.  Valid values are listed in the table below.</para>
+              <list type="table">
+                <item>
+                  <term>
+                    <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />
+                  </term>
+                  <description>0-1</description>
+                </item>
+                <item>
+                  <term>
+                    <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />
+                  </term>
+                  <description>0-1</description>
+                </item>
+                <item>
+                  <term>
+                    <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />
+                  </term>
+                  <description>0-1</description>
+                </item>
+                <item>
+                  <term>
+                    <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />
+                  </term>
+                  <description>0-1</description>
+                </item>
+              </list>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RectangleRight">
+      <MemberSignature Language="C#" Value="public double RectangleRight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 RectangleRight" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />
+      <MemberSignature Language="VB.NET" Value="Public Property RectangleRight As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RectangleRight { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2765)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2765)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2765)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0cd09-p107">Representa o ponto ou vetor para o qual o preenchimento gradual converge. Leitura/gravação.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-p107">Represents the point or vector that the gradient fill converges to. Read/write</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0cd09-124">
+            <b>Double</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-124">
+              <b>Double</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="0cd09-125">
+            <para>Funciona com <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />, <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />, e <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />.  Valores válidos são listados na tabela abaixo.</para>
+            <list type="table">
+              <item>
+                <term>
+                  <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />
+                </term>0-1
+            </item>
+              <item>
+                <term>
+                  <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />
+                </term>0-1
+            </item>
+              <item>
+                <term>
+                  <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />
+                </term>0-1
+            </item>
+              <item>
+                <term>
+                  <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />
+                </term>0-1
+            </item>
+            </list>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-125">
+              <para>Works with <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />, <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />, and <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />.  Valid values are listed in the table below.</para>
+              <list type="table">
+                <item>
+                  <term>
+                    <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />
+                  </term>
+                  <description>0-1</description>
+                </item>
+                <item>
+                  <term>
+                    <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />
+                  </term>
+                  <description>0-1</description>
+                </item>
+                <item>
+                  <term>
+                    <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />
+                  </term>
+                  <description>0-1</description>
+                </item>
+                <item>
+                  <term>
+                    <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />
+                  </term>
+                  <description>0-1</description>
+                </item>
+              </list>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RectangleTop">
+      <MemberSignature Language="C#" Value="public double RectangleTop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 RectangleTop" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />
+      <MemberSignature Language="VB.NET" Value="Public Property RectangleTop As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RectangleTop { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2762)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2762)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2762)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0cd09-p108">Representa o ponto ou vetor para o qual o preenchimento gradual converge. Leitura/gravação.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-p108">Represents the point or vector that the gradient fill converges to. Read/write</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0cd09-128">
+            <b>Double</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-128">
+              <b>Double</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="0cd09-129">
+            <para>Funciona com <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />, <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />, e <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />.  Valores válidos são listados na tabela abaixo.</para>
+            <list type="table">
+              <item>
+                <term>
+                  <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />
+                </term>0-1
+            </item>
+              <item>
+                <term>
+                  <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />
+                </term>0-1
+            </item>
+              <item>
+                <term>
+                  <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />
+                </term>0-1
+            </item>
+              <item>
+                <term>
+                  <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />
+                </term>0-1
+            </item>
+            </list>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0cd09-129">
+              <para>Works with <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />, <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />, and <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />.  Valid values are listed in the table below.</para>
+              <list type="table">
+                <item>
+                  <term>
+                    <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />
+                  </term>
+                  <description>0-1</description>
+                </item>
+                <item>
+                  <term>
+                    <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />
+                  </term>
+                  <description>0-1</description>
+                </item>
+                <item>
+                  <term>
+                    <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />
+                  </term>
+                  <description>0-1</description>
+                </item>
+                <item>
+                  <term>
+                    <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />
+                  </term>
+                  <description>0-1</description>
+                </item>
+              </list>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,1134 @@
+<Type Name="Charts" FullName="Microsoft.Office.Interop.Excel.Charts">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f0e75c27ff1370b7c1737585a6a29f589fcd20eb" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20581736" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Charts : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Charts implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Charts" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Charts&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Charts : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002086D-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="4861f-101">Uma coleção de todas folhas de gráfico da pasta de trabalho ativa ou especificada.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="4861f-101">A collection of all the chart sheets in the specified or active workbook.</span>
+      </span>
+      <span data-ttu-id="4861f-102">Cada folha de gráfico é representada por um <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> objeto.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="4861f-102">Each chart sheet is represented by a <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> object.</span>
+      </span>
+      <span data-ttu-id="4861f-103">Isso não inclui os gráficos incorporados em planilhas ou folhas de diálogo.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="4861f-103">This doesn’t include charts embedded on worksheets or dialog sheets.</span>
+      </span>
+      <span data-ttu-id="4861f-104">Para obter informações sobre gráficos incorporados, consulte o <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> objeto.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="4861f-104">For information about embedded charts, see the <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> object.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="4861f-105">
+        <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> propriedade para retornar a coleção <b>Charts</b> . Use o <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> método para criar uma nova planilha de gráfico e adicioná-lo à pasta de trabalho.</para>
+        <para>Você pode combinar os <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> método com o <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para adicionar um novo gráfico que contém dados de uma planilha.</para>
+        <para>Uso <b>gráficos</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice de folha de gráfico ou o nome, para retornar um único objeto <b>Chart</b> .</para>
+        <para>o <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> conjunto contém todas as planilhas na pasta de trabalho (tanto planilhas e folhas de gráfico). Use <b>folhas</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome da planilha ou um número, para retornar uma única folha.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="4861f-105">
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> property to return the <b>Charts</b> collection. Use the <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> method to create a new chart sheet and add it to the workbook.</para>
+          <para>You can combine the <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> method with the <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to add a new chart that contains data from a worksheet.</para>
+          <para>Use <b>Charts</b>(<paramref name="index" />), where <paramref name="index" /> is the chart sheet index number or name, to return a single <b>Chart</b> object.</para>
+          <para>The <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection contains all the sheets in the workbook (both chart sheets and worksheets). Use <b>Sheets</b>(<paramref name="index" />), where <paramref name="index" /> is the sheet name or number, to return a single sheet.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public object this[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object _Default(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Charts._Default(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property _Default(Index As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::Object ^] { System::Object ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">To be added.</param>
+        <summary>
+          <span data-ttu-id="4861f-106">Reservado para uso interno.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-106">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_Dummy7">
+      <MemberSignature Language="C#" Value="public void _Dummy7 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void _Dummy7() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Charts._Dummy7" />
+      <MemberSignature Language="VB.NET" Value="Public Sub _Dummy7 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void _Dummy7();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(65543)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1089)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="4861f-107">Reservado para uso interno.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-107">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_PrintOut">
+      <MemberSignature Language="C#" Value="public void _PrintOut (object From, object To, object Copies, object Preview, object ActivePrinter, object PrintToFile, object Collate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void _PrintOut([in]object From, [in]object To, [in]object Copies, [in]object Preview, [in]object ActivePrinter, [in]object PrintToFile, [in]object Collate) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Charts._PrintOut(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub _PrintOut (Optional From As Object, Optional To As Object, Optional Copies As Object, Optional Preview As Object, Optional ActivePrinter As Object, Optional PrintToFile As Object, Optional Collate As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(905)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="From" Type="System.Object" />
+        <Parameter Name="To" Type="System.Object" />
+        <Parameter Name="Copies" Type="System.Object" />
+        <Parameter Name="Preview" Type="System.Object" />
+        <Parameter Name="ActivePrinter" Type="System.Object" />
+        <Parameter Name="PrintToFile" Type="System.Object" />
+        <Parameter Name="Collate" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="From">To be added.</param>
+        <param name="To">To be added.</param>
+        <param name="Copies">To be added.</param>
+        <param name="Preview">To be added.</param>
+        <param name="ActivePrinter">To be added.</param>
+        <param name="PrintToFile">To be added.</param>
+        <param name="Collate">To be added.</param>
+        <summary>
+          <span data-ttu-id="4861f-108">Reservado para uso interno.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-108">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Chart Add (object Before, object After, object Count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Chart Add([in]object Before, [in]object After, [in]object Count) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Optional Before As Object, Optional After As Object, Optional Count As Object) As Chart" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(181)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Chart</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Before" Type="System.Object" />
+        <Parameter Name="After" Type="System.Object" />
+        <Parameter Name="Count" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Before">To be added.</param>
+        <param name="After">To be added.</param>
+        <param name="Count">To be added.</param>
+        <summary>
+          <span data-ttu-id="4861f-109">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-109">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add2">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Chart Add2 (object Before, object After, object Count, object NewLayout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Chart Add2([in]object Before, [in]object After, [in]object Count, [in]object NewLayout) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Charts.Add2(System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add2 (Optional Before As Object, Optional After As Object, Optional Count As Object, Optional NewLayout As Object) As Chart" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3054)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Chart</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Before" Type="System.Object" />
+        <Parameter Name="After" Type="System.Object" />
+        <Parameter Name="Count" Type="System.Object" />
+        <Parameter Name="NewLayout" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Before">
+          <span data-ttu-id="4861f-110">Um objeto que especifica a planilha antes da qual a nova planilha será adicionada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-110">An object that specifies the sheet before which the new sheet is added.</span>
+          </span>
+        </param>
+        <param name="After">
+          <span data-ttu-id="4861f-111">Um objeto que especifica a planilha depois após a qual a nova planilha será adicionada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-111">An object that specifies the sheet after which the new sheet is added.</span>
+          </span>
+        </param>
+        <param name="Count">
+          <span data-ttu-id="4861f-p102">O número de planilhas a serem adicionadas. O valor padrão é um.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-p102">The number of sheets to be added. The default value is one.</span>
+          </span>
+        </param>
+        <param name="NewLayout">
+          <span data-ttu-id="4861f-114">Se <b>NewLayout</b> for <b>True</b>, o gráfico será inserido usando as novas regras de formatação dinâmicas (título estiver na e legenda é apenas em se há várias séries).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-114">If <b>NewLayout</b> is <b>True</b>, the chart is inserted by using the new dynamic formatting rules (Title is on, and Legend is on only if there are multiple series).</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="4861f-115">Insere um gráfico diretamente para a grade.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-115">Inserts a chart directly onto the grid.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Charts.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4861f-116">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-116">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+          </span>
+          <span data-ttu-id="4861f-117">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-117">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public void Copy (object Before, object After);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Copy([in]object Before, [in]object After) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Charts.Copy(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Copy (Optional Before As Object, Optional After As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(551)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Before" Type="System.Object" />
+        <Parameter Name="After" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Before">
+          <span data-ttu-id="4861f-118">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-118">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="4861f-119">A planilha antes da qual a planilha copiada será colocada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-119">The sheet before which the copied sheet will be placed.</span>
+          </span>
+          <span data-ttu-id="4861f-120">Não é possível especificar <paramref name="Before" /> se você especificar <paramref name="After" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-120">You cannot specify <paramref name="Before" /> if you specify <paramref name="After" />.</span>
+          </span>
+        </param>
+        <param name="After">
+          <span data-ttu-id="4861f-121">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-121">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="4861f-122">A planilha após o qual a planilha copiada será colocada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-122">The sheet after which the copied sheet will be placed.</span>
+          </span>
+          <span data-ttu-id="4861f-123">Não é possível especificar <paramref name="After" /> se você especificar <paramref name="Before" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-123">You cannot specify <paramref name="After" /> if you specify <paramref name="Before" />.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="4861f-124">Copia a planilha para outro local na pasta de trabalho.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-124">Copies the sheet to another location in the workbook.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="4861f-125">
+            <para>Se você não especificar um <paramref name="Before" /> ou <paramref name="After" />, o Microsoft Excel criará uma nova pasta de trabalho contendo a planilha copiada.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-125">
+              <para>If you don't specify either <paramref name="Before" /> or <paramref name="After" />, Microsoft Excel creates a new workbook that contains the copied sheet.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Charts.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4861f-126">Retorna o número de objetos na coleção.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-126">Returns the number of objects in the collection.</span>
+          </span>
+          <span data-ttu-id="4861f-127">Integer somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-127">Read-only Integer.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Charts.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4861f-128">Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-128">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+          </span>
+          <span data-ttu-id="4861f-129">Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-129">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
+          </span>
+          <span data-ttu-id="4861f-130">Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-130">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="4861f-131">
+            <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-131">
+              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Charts.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="4861f-132">Exclui o objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-132">Deletes the object.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Charts.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HPageBreaks">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.HPageBreaks HPageBreaks { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.HPageBreaks HPageBreaks" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Charts.HPageBreaks" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HPageBreaks As HPageBreaks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::HPageBreaks ^ HPageBreaks { Microsoft::Office::Interop::Excel::HPageBreaks ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1418)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1418)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.HPageBreaks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4861f-133">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> coleção que representa a página horizontal quebras na planilha.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-133">Returns an <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> collection that represents the horizontal page breaks on the sheet.</span>
+          </span>
+          <span data-ttu-id="4861f-134">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-134">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="4861f-135">
+            <para>Não há um limite de 1026 quebras de página horizontais por planilha.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-135">
+              <para>There is a limit of 1026 horizontal page breaks per sheet.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object Item[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Charts.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item(Index As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Item[System::Object ^] { System::Object ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="4861f-136">
+            <b>Objeto</b>necessário.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-136">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="4861f-137">O nome ou número de índice do objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-137">The name or index number of the object.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="4861f-138">Retorna um único objeto de uma coleção.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-138">Returns a single object from a collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Move">
+      <MemberSignature Language="C#" Value="public void Move (object Before, object After);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Move([in]object Before, [in]object After) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Charts.Move(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Move (Optional Before As Object, Optional After As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(637)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Before" Type="System.Object" />
+        <Parameter Name="After" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Before">
+          <span data-ttu-id="4861f-139">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-139">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="4861f-140">A planilha antes da qual a planilha movida será colocada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-140">The sheet before which the moved sheet will be placed.</span>
+          </span>
+          <span data-ttu-id="4861f-141">Não é possível especificar <paramref name="Before" /> se você especificar <paramref name="After" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-141">You cannot specify <paramref name="Before" /> if you specify <paramref name="After" />.</span>
+          </span>
+        </param>
+        <param name="After">
+          <span data-ttu-id="4861f-142">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-142">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="4861f-143">A planilha após o qual a planilha movida será colocada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-143">The sheet after which the moved sheet will be placed.</span>
+          </span>
+          <span data-ttu-id="4861f-144">Não é possível especificar <paramref name="After" /> se você especificar <paramref name="Before" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-144">You cannot specify <paramref name="After" /> if you specify <paramref name="Before" />.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="4861f-145">Move a planilha para outro lugar na pasta de trabalho.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-145">Moves the sheet to another location in the workbook.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="4861f-146">
+            <para>Se você não especificar um <paramref name="Before" /> ou <paramref name="After" />, o Microsoft Excel criará uma nova pasta de trabalho contendo a planilha movida.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-146">
+              <para>If you don't specify either <paramref name="Before" /> or <paramref name="After" />, Microsoft Excel creates a new workbook that contains the moved sheet.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Charts.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4861f-p112">Retorna o objeto pai para o objeto especificado. Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-p112">Returns the parent object for the specified object. Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintOut">
+      <MemberSignature Language="C#" Value="public void PrintOut (object From, object To, object Copies, object Preview, object ActivePrinter, object PrintToFile, object Collate, object PrToFileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PrintOut([in]object From, [in]object To, [in]object Copies, [in]object Preview, [in]object ActivePrinter, [in]object PrintToFile, [in]object Collate, [in]object PrToFileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Charts.PrintOut(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PrintOut (Optional From As Object, Optional To As Object, Optional Copies As Object, Optional Preview As Object, Optional ActivePrinter As Object, Optional PrintToFile As Object, Optional Collate As Object, Optional PrToFileName As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1772)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="From" Type="System.Object" />
+        <Parameter Name="To" Type="System.Object" />
+        <Parameter Name="Copies" Type="System.Object" />
+        <Parameter Name="Preview" Type="System.Object" />
+        <Parameter Name="ActivePrinter" Type="System.Object" />
+        <Parameter Name="PrintToFile" Type="System.Object" />
+        <Parameter Name="Collate" Type="System.Object" />
+        <Parameter Name="PrToFileName" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="From">
+          <span data-ttu-id="4861f-149">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-149">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="4861f-150">O número de página pela qual começar a impressão.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-150">The number of the page at which to start printing.</span>
+          </span>
+          <span data-ttu-id="4861f-151">Se esse argumento for omitido, a impressão começará no início.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-151">If this argument is omitted, printing starts at the beginning.</span>
+          </span>
+        </param>
+        <param name="To">
+          <span data-ttu-id="4861f-152">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-152">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="4861f-153">O número da última página a ser impresso.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-153">The number of the last page to print.</span>
+          </span>
+          <span data-ttu-id="4861f-154">Se esse argumento for omitido, a impressão termina com a última página.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-154">If this argument is omitted, printing ends with the last page.</span>
+          </span>
+        </param>
+        <param name="Copies">
+          <span data-ttu-id="4861f-155">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-155">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="4861f-156">O número de cópias que serão impressas.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-156">The number of copies to print.</span>
+          </span>
+          <span data-ttu-id="4861f-157">Se esse argumento for omitido, será impressa uma cópia.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-157">If this argument is omitted, one copy is printed.</span>
+          </span>
+        </param>
+        <param name="Preview">
+          <span data-ttu-id="4861f-158">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-158">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="4861f-159">
+            <b>True</b> para que o Microsoft Excel invocar a visualização de impressão antes de imprimir o objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-159">
+              <b>True</b> to have Microsoft Excel invoke print preview before printing the object.</span>
+          </span>
+          <span data-ttu-id="4861f-160">
+            <b>False</b> (ou omitido) para imprimir o objeto imediatamente.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-160">
+              <b>False</b> (or omitted) to print the object immediately.</span>
+          </span>
+        </param>
+        <param name="ActivePrinter">
+          <span data-ttu-id="4861f-161">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-161">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="4861f-162">Define o nome da impressora ativa.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-162">Sets the name of the active printer.</span>
+          </span>
+        </param>
+        <param name="PrintToFile">
+          <span data-ttu-id="4861f-163">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-163">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="4861f-164">
+            <b>True</b> para imprimir em um arquivo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-164">
+              <b>True</b> to print to a file.</span>
+          </span>
+          <span data-ttu-id="4861f-165">Se <paramref name="PrToFileName" /> não for especificado, o Microsoft Excel solicita que o usuário insira o nome do arquivo de saída.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-165">If <paramref name="PrToFileName" /> is not specified, Microsoft Excel prompts the user to enter the name of the output file.</span>
+          </span>
+        </param>
+        <param name="Collate">
+          <span data-ttu-id="4861f-166">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-166">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="4861f-167">
+            <b>True</b> para agrupar várias cópias.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-167">
+              <b>True</b> to collate multiple copies.</span>
+          </span>
+        </param>
+        <param name="PrToFileName">
+          <span data-ttu-id="4861f-168">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-168">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="4861f-169">Se <paramref name="PrintToFile" /> estiver definida como <b>True</b>, este argumento especificará o nome do arquivo que você deseja imprimir.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-169">If <paramref name="PrintToFile" /> is set to <b>True</b>, this argument specifies the name of the file you want to print to.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="4861f-170">Imprime o objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-170">Prints the object.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="4861f-171">
+            <para>"Páginas" nas descrições de <paramref name="From" /> e <paramref name="To" /> se refere a páginas impressas, páginas não geral na planilha ou pasta de trabalho.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-171">
+              <para>"Pages" in the descriptions of <paramref name="From" /> and <paramref name="To" /> refers to printed pages, not overall pages in the sheet or workbook.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintOut_2">
+      <MemberSignature Language="C#" Value="public void PrintOut_2 (object From, object To, object Copies, object Preview, object ActivePrinter, object PrintToFile, object Collate, object PrToFileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PrintOut_2([in]object From, [in]object To, [in]object Copies, [in]object Preview, [in]object ActivePrinter, [in]object PrintToFile, [in]object Collate, [in]object PrToFileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Charts.PrintOut_2(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PrintOut_2 (Optional From As Object, Optional To As Object, Optional Copies As Object, Optional Preview As Object, Optional ActivePrinter As Object, Optional PrintToFile As Object, Optional Collate As Object, Optional PrToFileName As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2361)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="From" Type="System.Object" />
+        <Parameter Name="To" Type="System.Object" />
+        <Parameter Name="Copies" Type="System.Object" />
+        <Parameter Name="Preview" Type="System.Object" />
+        <Parameter Name="ActivePrinter" Type="System.Object" />
+        <Parameter Name="PrintToFile" Type="System.Object" />
+        <Parameter Name="Collate" Type="System.Object" />
+        <Parameter Name="PrToFileName" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="From">To be added.</param>
+        <param name="To">To be added.</param>
+        <param name="Copies">To be added.</param>
+        <param name="Preview">To be added.</param>
+        <param name="ActivePrinter">To be added.</param>
+        <param name="PrintToFile">To be added.</param>
+        <param name="Collate">To be added.</param>
+        <param name="PrToFileName">To be added.</param>
+        <summary>
+          <span data-ttu-id="4861f-172">Reservado para uso interno.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-172">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintPreview">
+      <MemberSignature Language="C#" Value="public void PrintPreview (object EnableChanges);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PrintPreview([in]object EnableChanges) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Charts.PrintPreview(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PrintPreview (Optional EnableChanges As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(281)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="EnableChanges" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="EnableChanges">
+          <span data-ttu-id="4861f-173">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-173">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="4861f-174">
+            <b>True</b> para habilitar as alterações de gráficos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-174">
+              <b>True</b> to enable changes to the specified charts.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="4861f-175">Mostra uma visualização de como o objeto aparecerá quando for impresso.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-175">Shows a preview of the object as it would look when printed.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="public void Select (object Replace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Select([in]object Replace) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Charts.Select(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Select (Optional Replace As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(235)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Replace" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Replace">
+          <span data-ttu-id="4861f-176">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-176">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="4861f-177">Para substituir o objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-177">The object to replace.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="4861f-178">Seleciona o objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-178">Selects the object.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public object Visible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Visible" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Charts.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visible As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Visible { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4861f-179">Determina se o objeto está visível.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-179">Determines whether the object is visible.</span>
+          </span>
+          <span data-ttu-id="4861f-180">
+            <b>Objeto</b> de leitura/gravação.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-180">Read/write <b>Object</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VPageBreaks">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.VPageBreaks VPageBreaks { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.VPageBreaks VPageBreaks" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Charts.VPageBreaks" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VPageBreaks As VPageBreaks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::VPageBreaks ^ VPageBreaks { Microsoft::Office::Interop::Excel::VPageBreaks ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1419)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1419)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.VPageBreaks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4861f-181">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" /> coleção que representa a página vertical quebras na planilha.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-181">Returns a <see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" /> collection that represents the vertical page breaks on the sheet.</span>
+          </span>
+          <span data-ttu-id="4861f-182">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4861f-182">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

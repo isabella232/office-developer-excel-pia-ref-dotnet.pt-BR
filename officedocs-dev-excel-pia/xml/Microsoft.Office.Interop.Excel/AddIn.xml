@@ -1,0 +1,633 @@
+<Type Name="AddIn" FullName="Microsoft.Office.Interop.Excel.AddIn">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="7b2ad4081ea4bdb99cc06e468b6712922b5b097b" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20584144" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface AddIn" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIn" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AddIn" />
+  <TypeSignature Language="VB.NET" Value="Public Interface AddIn" />
+  <TypeSignature Language="C++ CLI" Value="public interface class AddIn" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020857-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="1aead-101">Representa um único suplemento, instalado ou não.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="1aead-101">Represents a single add-in, either installed or not installed.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="1aead-102">
+        <para>O objeto <b>AddIn</b> é um membro do <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> conjunto. A coleção <b>AddIns</b> contém uma lista de todos os suplementos disponíveis no Microsoft Excel, independentemente de estarem ou instalados. Essa lista corresponde à lista de suplementos exibidos na caixa de diálogo Suplementos (menu Ferramentas).</para>
+        <para>Uso <b>AddIns</b>(<paramref name="index" />), onde <paramref name="index" /> é o título do suplemento ou número de índice, para retornar um único objeto <b>AddIn</b> .</para>
+        <para>Não confunda o título do suplemento, que aparece na caixa de diálogo suplementos com o nome do suplemento, que é o nome de arquivo do suplemento. Você deve escrever o título do suplemento exatamente como ele foi digitado na caixa de diálogo suplementos, mas a capitalização não precisa corresponder.</para>
+        <para>o número de índice representa a posição do suplemento na caixa Suplementos disponíveis na caixa de diálogo suplementos.</para>
+        <para>o <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> método adiciona um suplemento à lista de suplementos disponíveis, mas não instala o suplemento do <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> propriedade do add-in como <b>True</b> para instalar o suplemento. Para instalar um suplemento que não aparece na lista de suplementos disponíveis, você deve primeiro usar o método <b>Add</b> e, em seguida, defina a propriedade <b>Installed</b> . Isso pode ser feito em uma única etapa</para>
+        <para>usar <b>pastas de trabalho</b>(<paramref name="index" />) onde <paramref name="index" /> é o filename suplemento (não seu título) para retornar uma referência para a pasta de trabalho correspondente para um suplemento carregado. Você deve usar o nome de arquivo porque suplementos carregados normalmente não aparecem no <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> conjunto.</para>
+        <para>Se a propriedade <b>Installed</b> retorna <b>True</b>, mas ainda falha nas chamadas para funções do add-in, o suplemento pode não ser realmente carregado. Isso ocorre porque o objeto <b>Addin</b> representa a existência e estado do add-in instalado, mas não representa o conteúdo real da pasta de trabalho do suplemento. Para garantir que um suplemento instalado está carregado, você deve abrir a pasta de trabalho do suplemento.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="1aead-102">
+          <para>The <b>AddIn</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> collection. The <b>AddIns</b> collection contains a list of all the add-ins available to Microsoft Excel, regardless of whether they’re installed. This list corresponds to the list of add-ins displayed in the Add-Ins dialog box (Tools menu).</para>
+          <para>Use <b>AddIns</b>(<paramref name="index" />), where <paramref name="index" /> is the add-in title or index number, to return a single <b>AddIn</b> object.</para>
+          <para>Don’t confuse the add-in title, which appears in the Add-Ins dialog box, with the add-in name, which is the file name of the add-in. You must spell the add-in title exactly as it’s spelled in the Add-Ins dialog box, but the capitalization doesn’t have to match.</para>
+          <para>The index number represents the position of the add-in in the Add-ins available box in the Add-Ins dialog box.</para>
+          <para>The <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> method adds an add-in to the list of available add-ins but doesn’t install the add-in. Set the <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> property of the add-in to <b>True</b> to install the add-in. To install an add-in that doesn’t appear in the list of available add-ins, you must first use the <b>Add</b> method and then set the <b>Installed</b> property. This can be done in a single step</para>
+          <para>Use <b>Workbooks</b>(<paramref name="index" />) where <paramref name="index" /> is the add-in filename (not title) to return a reference to the workbook corresponding to a loaded add-in. You must use the file name because loaded add-ins don’t normally appear in the <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> collection.</para>
+          <para>If the <b>Installed</b> property returns <b>True</b>, but calls to functions in the add-in still fail, the add-in may not actually be loaded. This is because the <b>Addin</b> object represents the existence and installed state of the add-in but doesn't represent the actual contents of the add-in workbook. To guarantee that an installed add-in is loaded, you should open the add-in workbook.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AddIn.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1aead-103">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1aead-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Author">
+      <MemberSignature Language="C#" Value="public string Author { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Author" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AddIn.Author" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Author As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Author { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(574)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(574)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1aead-104">Reservado para uso interno.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1aead-104">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CLSID">
+      <MemberSignature Language="C#" Value="public string CLSID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CLSID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AddIn.CLSID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CLSID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CLSID { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2043)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2043)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1aead-105">Retorna um identificador exclusivo somente leitura, ou CLSID, identificando um objeto, como uma <b>String</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1aead-105">Returns a read-only unique identifier, or CLSID, identifying an object, as a <b>String</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Comments">
+      <MemberSignature Language="C#" Value="public string Comments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Comments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AddIn.Comments" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Comments As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Comments { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(575)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(575)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1aead-106">Reservado para uso interno.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1aead-106">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AddIn.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1aead-107">Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1aead-107">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="1aead-108">
+            <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
+          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1aead-108">
+              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
+              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FullName">
+      <MemberSignature Language="C#" Value="public string FullName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FullName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AddIn.FullName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FullName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(289)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(289)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1aead-109">Retorna o nome do objeto, incluindo seu caminho no disco, como uma cadeia de caracteres.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1aead-109">Returns the name of the object, including its path on disk, as a string.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="1aead-110">
+            <para>Essa propriedade é equivalente ao <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> seguido de propriedade, seguida o atual separador de sistema de arquivos, o <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> propriedade.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1aead-110">
+              <para>This property is equivalent to the <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> property, followed by the current file system separator, followed by the <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Installed">
+      <MemberSignature Language="C#" Value="public bool Installed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Installed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AddIn.Installed" />
+      <MemberSignature Language="VB.NET" Value="Public Property Installed As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Installed { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(550)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(550)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(550)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1aead-111">
+            <b>True</b> se o suplemento está instalado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1aead-111">
+              <b>True</b> if the add-in is installed.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="1aead-112">
+            <para>A definição dessa propriedade como <b>True</b> instala o suplemento e chama suas funções Auto_Adicionar. A definição dessa propriedade como <b>False</b> remove o suplemento e chama suas funções Auto_Remover.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1aead-112">
+              <para>Setting this property to <b>True</b> installs the add-in and calls its Auto_Add functions. Setting this property to <b>False</b> removes the add-in and calls its Auto_Remove functions.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOpen">
+      <MemberSignature Language="C#" Value="public bool IsOpen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOpen" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AddIn.IsOpen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOpen As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOpen { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2865)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2865)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1aead-113">Obtém se o suplemento é aberto no momento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1aead-113">Gets whether the add-in is currently open.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="1aead-114">
+            <b>true</b> se o suplemento está atualmente aberto. Caso contrário, <b>false</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1aead-114">
+              <b>true</b> if the add-in is currently open; otherwise, <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="1aead-115">
+            <para>
+              <b>Boolean</b> Somente leitura.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1aead-115">
+              <para>
+                <b>boolean</b> Read-only.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Keywords">
+      <MemberSignature Language="C#" Value="public string Keywords { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Keywords" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AddIn.Keywords" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keywords As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Keywords { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(577)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(577)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1aead-116">Reservado para uso interno.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1aead-116">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AddIn.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1aead-117">Retorna o nome do objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1aead-117">Returns the name of the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AddIn.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1aead-118">Retorna o objeto pai para o objeto especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1aead-118">Returns the parent object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AddIn.Path" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(291)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(291)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1aead-119">Retorna o caminho completo para o aplicativo, excluindo o separador final e o nome do aplicativo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1aead-119">Returns the complete path to the application, excluding the final separator and name of the application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="progID">
+      <MemberSignature Language="C#" Value="public string progID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string progID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AddIn.progID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property progID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ progID { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1523)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1523)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1aead-120">Retorna os identificadores programáticos para o objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1aead-120">Returns the programmatic identifiers for the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subject">
+      <MemberSignature Language="C#" Value="public string Subject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Subject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AddIn.Subject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Subject As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Subject { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(953)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(953)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1aead-121">Reservado para uso interno.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1aead-121">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AddIn.Title" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Title As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(199)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(199)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1aead-122">Reservado para uso interno.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1aead-122">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
