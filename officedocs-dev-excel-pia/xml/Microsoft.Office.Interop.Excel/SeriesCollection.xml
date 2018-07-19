@@ -1,0 +1,752 @@
+<Type Name="SeriesCollection" FullName="Microsoft.Office.Interop.Excel.SeriesCollection">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="d44d6dd2808248a2c1a9c306f871ed35d2124273" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20578964" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface SeriesCollection : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SeriesCollection implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SeriesCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Interface SeriesCollection&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class SeriesCollection : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002086C-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="93e84-101">Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.Series" /> objetos no gráfico especificado ou grupo de gráficos.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="93e84-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.Series" /> objects in the specified chart or chart group.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="93e84-102">
+        <para>Use o <see cref="M:Microsoft.Office.Interop.Excel._Chart.SeriesCollection(System.Object)" /> método para retornar a coleção <b>SeriesCollection</b> .</para>
+        <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel.SeriesCollection.Add(System.Object,Microsoft.Office.Interop.Excel.XlRowCol,System.Object,System.Object,System.Object)" /> método para criar uma nova série e adicioná-lo ao gráfico.</para>
+        <para>Uso <b>SeriesCollection</b>(<paramref name="index" />), onde índice é o número de índice da série ou o nome, para retornar um único objeto <b>Series</b> .</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="93e84-102">
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel._Chart.SeriesCollection(System.Object)" /> method to return the <b>SeriesCollection</b> collection.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.SeriesCollection.Add(System.Object,Microsoft.Office.Interop.Excel.XlRowCol,System.Object,System.Object,System.Object)" /> method to create a new series and add it to the chart.</para>
+          <para>Use <b>SeriesCollection</b>(<paramref name="index" />), where index is the series index number or name, to return a single <b>Series</b> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Series _Default (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Series _Default([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.SeriesCollection._Default(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function _Default (Index As Object) As Series" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Excel::Series ^ _Default(System::Object ^ Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Series</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">To be added.</param>
+        <summary>
+          <span data-ttu-id="93e84-103">Reservado para uso interno.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-103">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Series Add (object Source, Microsoft.Office.Interop.Excel.XlRowCol Rowcol = (Microsoft.Office.Interop.Excel.XlRowCol) -4105, object SeriesLabels, object CategoryLabels, object Replace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Series Add([in]object Source, [in]valuetype Microsoft.Office.Interop.Excel.XlRowCol Rowcol, [in]object SeriesLabels, [in]object CategoryLabels, [in]object Replace) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.SeriesCollection.Add(System.Object,Microsoft.Office.Interop.Excel.XlRowCol,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Source As Object, Optional Rowcol As XlRowCol = (Microsoft.Office.Interop.Excel.XlRowCol) -4105, Optional SeriesLabels As Object, Optional CategoryLabels As Object, Optional Replace As Object) As Series" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(181)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Series</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Source" Type="System.Object" />
+        <Parameter Name="Rowcol" Type="Microsoft.Office.Interop.Excel.XlRowCol" />
+        <Parameter Name="SeriesLabels" Type="System.Object" />
+        <Parameter Name="CategoryLabels" Type="System.Object" />
+        <Parameter Name="Replace" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Source">
+          <span data-ttu-id="93e84-104">
+            <b>Objeto</b>necessário.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-104">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="93e84-105">Os novos dados, como um objeto Range ou uma matriz de pontos de dados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-105">The new data, either as a Range object or an array of data points.</span>
+          </span>
+        </param>
+        <param name="Rowcol">
+          <span data-ttu-id="93e84-106">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-106">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" />.</span>
+          </span>
+          <span data-ttu-id="93e84-107">Especifica se os novos valores estão nas linhas ou colunas do intervalo especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-107">Specifies whether the new values are in the rows or columns of the specified range.</span>
+          </span>
+        </param>
+        <param name="SeriesLabels">
+          <span data-ttu-id="93e84-108">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-108">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="93e84-109">Ignorado se <paramref name="Source" /> é uma matriz.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-109">Ignored if <paramref name="Source" /> is an array.</span>
+          </span>
+          <span data-ttu-id="93e84-110">
+            <b>True</b> se a primeira linha ou coluna contém o nome da série de dados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-110">
+              <b>True</b> if the first row or column contains the name of the data series.</span>
+          </span>
+          <span data-ttu-id="93e84-111">
+            <b>False</b> se a primeira linha ou coluna contiver o primeiro ponto de dados da série.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-111">
+              <b>False</b> if the first row or column contains the first data point of the series.</span>
+          </span>
+          <span data-ttu-id="93e84-112">Se esse argumento for omitido, o Microsoft Excel tenta determinar o local do nome da série a partir do conteúdo da primeira linha ou coluna.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-112">If this argument is omitted, Microsoft Excel attempts to determine the location of the series name from the contents of the first row or column.</span>
+          </span>
+        </param>
+        <param name="CategoryLabels">
+          <span data-ttu-id="93e84-113">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-113">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="93e84-114">Ignorado se <paramref name="Source" /> é uma matriz.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-114">Ignored if <paramref name="Source" /> is an array.</span>
+          </span>
+          <span data-ttu-id="93e84-115">
+            <b>True</b> se a primeira linha ou coluna contém o nome dos rótulos de categoria.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-115">
+              <b>True</b> if the first row or column contains the name of the category labels.</span>
+          </span>
+          <span data-ttu-id="93e84-116">
+            <b>False</b> se a primeira linha ou coluna contiver o primeiro ponto de dados da série.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-116">
+              <b>False</b> if the first row or column contains the first data point of the series.</span>
+          </span>
+          <span data-ttu-id="93e84-117">Se esse argumento for omitido, o Microsoft Excel tenta determinar a localização dos rótulos de categoria a partir do conteúdo da primeira linha ou coluna.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-117">If this argument is omitted, Microsoft Excel attempts to determine the location of the category label from the contents of the first row or column.</span>
+          </span>
+        </param>
+        <param name="Replace">
+          <span data-ttu-id="93e84-118">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-118">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="93e84-119">Se <paramref name="CategoryLabels" /> for <b>True</b> e <paramref name="Replace" /> for <b>True</b>, a substituição de categorias especificadas as categorias existem que estão atualmente na série.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-119">If <paramref name="CategoryLabels" /> is <b>True</b> and <paramref name="Replace" /> is <b>True</b>, the specified categories replace the categories that currently exist for the series.</span>
+          </span>
+          <span data-ttu-id="93e84-120">Se <paramref name="Replace" /> for <b>False</b>, as categorias existentes não serão substituídas.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-120">If <paramref name="Replace" /> is <b>False</b>, the existing categories will not be replaced.</span>
+          </span>
+          <span data-ttu-id="93e84-121">O valor padrão é <b>False</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-121">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="93e84-122">Adiciona uma ou mais séries novas para o <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> conjunto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-122">Adds one or more new series to the <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="93e84-123">
+            <para>Este método não está disponível para relatórios de gráfico dinâmico.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-123">
+              <para>This method is not available for PivotChart reports.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SeriesCollection.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="93e84-124">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-124">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SeriesCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="93e84-125">Retorna o número de objetos na coleção.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-125">Returns the number of objects in the collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SeriesCollection.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="93e84-126">Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-126">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="93e84-127">
+            <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
+          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-127">
+              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
+              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Extend">
+      <MemberSignature Language="C#" Value="public object Extend (object Source, object Rowcol, object CategoryLabels);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Extend([in]object Source, [in]object Rowcol, [in]object CategoryLabels) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.SeriesCollection.Extend(System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Extend (Source As Object, Optional Rowcol As Object, Optional CategoryLabels As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(227)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Source" Type="System.Object" />
+        <Parameter Name="Rowcol" Type="System.Object" />
+        <Parameter Name="CategoryLabels" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Source">
+          <span data-ttu-id="93e84-128">
+            <b>Objeto</b>necessário.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-128">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="93e84-129">Os novos dados a ser adicionado ao <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> objeto, seja como um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto ou uma matriz de pontos de dados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-129">The new data to be added to the <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> object, either as a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object or an array of data points.</span>
+          </span>
+        </param>
+        <param name="Rowcol">
+          <span data-ttu-id="93e84-130">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-130">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="93e84-131">Ignorado se <paramref name="Source" /> é uma matriz.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-131">Ignored if <paramref name="Source" /> is an array.</span>
+          </span>
+          <span data-ttu-id="93e84-132">Especifica se os novos valores estão nas linhas ou colunas da fonte de dado intervalo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-132">Specifies whether the new values are in the rows or columns of the given range source.</span>
+          </span>
+          <span data-ttu-id="93e84-133">Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" /> constantes: <b>xlRows</b> ou <b>xlColumns</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-133">Can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" /> constants: <b>xlRows</b> or <b>xlColumns</b>.</span>
+          </span>
+          <span data-ttu-id="93e84-134">Se esse argumento for omitido, o Microsoft Excel tenta determinar onde os valores estão pelo tamanho e orientação do intervalo selecionado ou pelas dimensões da matriz.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-134">If this argument is omitted, Microsoft Excel attempts to determine where the values are by the size and orientation of the selected range or by the dimensions of the array.</span>
+          </span>
+        </param>
+        <param name="CategoryLabels">
+          <span data-ttu-id="93e84-135">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-135">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="93e84-136">Ignorado se <paramref name="Source" /> é uma matriz.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-136">Ignored if <paramref name="Source" /> is an array.</span>
+          </span>
+          <span data-ttu-id="93e84-137">
+            <b>True</b> para que a primeira linha ou coluna contenha o nome dos rótulos de categoria.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-137">
+              <b>True</b> to have the first row or column contain the name of the category labels.</span>
+          </span>
+          <span data-ttu-id="93e84-138">
+            <b>False</b> para que a primeira linha ou coluna contenha o primeiro ponto de dados da série.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-138">
+              <b>False</b> to have the first row or column contain the first data point of the series.</span>
+          </span>
+          <span data-ttu-id="93e84-139">Se esse argumento for omitido, o Microsoft Excel tenta determinar a localização dos rótulos de categoria a partir do conteúdo da primeira linha ou coluna.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-139">If this argument is omitted, Microsoft Excel attempts to determine the location of the category label from the contents of the first row or column.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="93e84-140">Adiciona novos pontos de dados a uma coleção de séries existente.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-140">Adds new data points to an existing series collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="93e84-141">
+            <para>Este método não está disponível para relatórios de gráfico dinâmico.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-141">
+              <para>This method is not available for PivotChart reports.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.SeriesCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Series Item (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Series Item([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.SeriesCollection.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Item (Index As Object) As Series" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Excel::Series ^ Item(System::Object ^ Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Series</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="93e84-142">
+            <b>Objeto</b>necessário.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-142">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="93e84-143">O nome ou número de índice do objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-143">The name or index number for the object.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="93e84-144">Retorna um único objeto de uma coleção.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-144">Returns a single object from a collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewSeries">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Series NewSeries ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Series NewSeries() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.SeriesCollection.NewSeries" />
+      <MemberSignature Language="VB.NET" Value="Public Function NewSeries () As Series" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Excel::Series ^ NewSeries();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Series</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="93e84-145">Cria uma nova série.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-145">Creates a new series.</span>
+          </span>
+          <span data-ttu-id="93e84-146">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Series" /> object que representa a nova série.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-146">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Series" /> object that represents the new series.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="93e84-147">
+            <para>Este método não está disponível para relatórios de gráfico dinâmico.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-147">
+              <para>This method isn’t available for PivotChart reports.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SeriesCollection.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="93e84-148">Retorna o objeto pai para o objeto especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-148">Returns the parent object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Paste">
+      <MemberSignature Language="C#" Value="public object Paste (Microsoft.Office.Interop.Excel.XlRowCol Rowcol = (Microsoft.Office.Interop.Excel.XlRowCol) -4105, object SeriesLabels, object CategoryLabels, object Replace, object NewSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Paste([in]valuetype Microsoft.Office.Interop.Excel.XlRowCol Rowcol, [in]object SeriesLabels, [in]object CategoryLabels, [in]object Replace, [in]object NewSeries) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.SeriesCollection.Paste(Microsoft.Office.Interop.Excel.XlRowCol,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Paste (Optional Rowcol As XlRowCol = (Microsoft.Office.Interop.Excel.XlRowCol) -4105, Optional SeriesLabels As Object, Optional CategoryLabels As Object, Optional Replace As Object, Optional NewSeries As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(211)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Rowcol" Type="Microsoft.Office.Interop.Excel.XlRowCol" />
+        <Parameter Name="SeriesLabels" Type="System.Object" />
+        <Parameter Name="CategoryLabels" Type="System.Object" />
+        <Parameter Name="Replace" Type="System.Object" />
+        <Parameter Name="NewSeries" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Rowcol">
+          <span data-ttu-id="93e84-149">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-149">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" />.</span>
+          </span>
+          <span data-ttu-id="93e84-150">Especifica se os valores correspondentes a uma determinada série de dados estão em linhas ou colunas.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-150">Specifies whether the values corresponding to a particular data series are in rows or columns.</span>
+          </span>
+          <span data-ttu-id="93e84-151">Pode ser uma destas constantes <b>XlRowCol</b> :<b>xlColumns</b> padrão<b>xlRows</b></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-151">Can be one of these <b>XlRowCol</b> constants:<b>xlColumns</b> default<b>xlRows</b></span>
+          </span>
+        </param>
+        <param name="SeriesLabels">
+          <span data-ttu-id="93e84-152">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-152">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="93e84-153">
+            <b>True</b> para usar o conteúdo da célula na primeira coluna de cada linha (ou a primeira linha de cada coluna) como o nome da série de dados nessa linha (ou coluna).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-153">
+              <b>True</b> to use the contents of the cell in the first column of each row (or the first row of each column) as the name of the data series in that row (or column).</span>
+          </span>
+          <span data-ttu-id="93e84-154">
+            <b>False</b> para usar o conteúdo da célula na primeira coluna de cada linha (ou a primeira linha de cada coluna) como primeiro ponto de dados da série de dados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-154">
+              <b>False</b> to use the contents of the cell in the first column of each row (or the first row of each column) as the first data point in the data series.</span>
+          </span>
+          <span data-ttu-id="93e84-155">O valor padrão é <b>False</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-155">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <param name="CategoryLabels">
+          <span data-ttu-id="93e84-156">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-156">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="93e84-157">
+            <b>True</b> para usar o conteúdo da primeira linha (ou coluna) da seleção como as categorias do gráfico.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-157">
+              <b>True</b> to use the contents of the first row (or column) of the selection as the categories for the chart.</span>
+          </span>
+          <span data-ttu-id="93e84-158">
+            <b>False</b> para usar o conteúdo da primeira linha (ou coluna) como a primeira série de dados do gráfico.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-158">
+              <b>False</b> to use the contents of the first row (or column) as the first data series in the chart.</span>
+          </span>
+          <span data-ttu-id="93e84-159">O valor padrão é <b>False</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-159">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <param name="Replace">
+          <span data-ttu-id="93e84-160">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-160">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="93e84-161">
+            <b>True</b> para aplicar categorias ao substituir categorias existentes pelas informações do intervalo copiado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-161">
+              <b>True</b> to apply categories while replacing existing categories with information from the copied range.</span>
+          </span>
+          <span data-ttu-id="93e84-162">
+            <b>False</b> para inserir novas categorias sem substituir nenhuma das antigas.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-162">
+              <b>False</b> to insert new categories without replacing any old ones.</span>
+          </span>
+          <span data-ttu-id="93e84-163">O valor padrão é <b>True</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-163">The default value is <b>True</b>.</span>
+          </span>
+        </param>
+        <param name="NewSeries">
+          <span data-ttu-id="93e84-164">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-164">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="93e84-165">
+            <b>True</b> para colar os dados como uma nova série.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-165">
+              <b>True</b> to paste the data as a new series.</span>
+          </span>
+          <span data-ttu-id="93e84-166">
+            <b>False</b> para colar os dados como novos pontos em uma série existente.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-166">
+              <b>False</b> to paste the data as new points in an existing series.</span>
+          </span>
+          <span data-ttu-id="93e84-167">O valor padrão é <b>True</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-167">The default value is <b>True</b>.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="93e84-168">Cola dados da Área de Transferência na coleção de séries especificada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="93e84-168">Pastes data from the Clipboard into the specified series collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
