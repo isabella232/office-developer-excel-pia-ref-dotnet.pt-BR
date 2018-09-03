@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20581064" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface WorkbookConnection" />
@@ -30,22 +30,22 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="a26f7-101">Uma conexão é um conjunto de informações necessárias para obter dados de uma fonte de dados externos que não seja uma pasta de trabalho do 1st_Excel12.</span>
+      <span data-ttu-id="12858-101">Uma conexão é um conjunto de informações necessárias para obter dados de uma fonte de dados externos que não seja uma pasta de trabalho do 1st_Excel12.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="a26f7-101">A connection is a set of information needed to obtain data from an external data source other than an 1st_Excel12 workbook.</span>
+        <span data-stu-id="12858-101">A connection is a set of information needed to obtain data from an external data source other than an 1st_Excel12 workbook.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="a26f7-102">Conexões <para>podem ser armazenados em uma pasta de trabalho do Excel.  Quando a pasta de trabalho for aberta, o Excel criará uma cópia de na memória da conexão que é referenciado como o objeto de conexão.  Um objeto de conexão contém informações como o nome do servidor e o nome do objeto a ser aberto nesse servidor.  Opcionalmente, o objeto de conexão também pode incluir as credenciais de autenticação e/ou em um comando que deve ser passado para o servidor e executado (exemplo: uma instrução SELECT a ser executada pelo SQL Server.)  </para><para><b>Observação</b>: A forma exata da conexão depende do mecanismo que está sendo usado para recuperar dados – conexões ODBC, conexões OLEDB e consultas Web conterão informações diferentes.</para><para>Uma conexão também pode ser armazenado em um arquivo de conexão separados.  A maioria das conexões em uma pasta de trabalho do Excel incluem um ponteiro para um arquivo de conexão externo.  Arquivos de Conexão têm extensões que claramente rotulam-los como arquivos de conexão (*. ODC, *. IQY, etc.) e pode estar localizado na máquina local do usuário ou em outros locais bem conhecidos ou confiáveis como WSS (biblioteca de Conexão de dados) ou outros servidores corporativos.  Arquivos de Conexão permitem que vários usuários dentro da mesma organização reutilizar conexões.  Os administradores de rede são capazes de alterar o modo de que toda a organização se conecta a uma fonte de dados back-end, alterando a um arquivo de conexão único.  Um arquivo de conexão não é sempre necessário ao se conectar a uma fonte de dados externa.</para> Nomes de Conexão 
-      <para>são cadeias de caracteres que identificam exclusivamente conexões na pasta de trabalho em que eles são usados.     Existem outras propriedades de uma conexão que não são exclusivas.  Sempre que uma fórmula no Excel usa um argumento que é uma conexão, ele será suficiente para se referir ao nome dessa conexão, diretamente (como uma cadeia de caracteres) ou indiretamente (fazendo referência a uma célula que contém o nome de conexão como uma string.)</para><para /></span>
+      <span data-ttu-id="12858-102">Conexões <para>podem ser armazenados em uma pasta de trabalho do Excel.  Quando a pasta de trabalho for aberta, o Excel criará uma cópia de na memória da conexão que é referenciado como o objeto de conexão.  Um objeto de conexão contém informações como o nome do servidor e o nome do objeto a ser aberto nesse servidor.  Opcionalmente, o objeto de conexão também pode incluir as credenciais de autenticação e/ou em um comando que deve ser passado para o servidor e executado (exemplo: uma instrução SELECT a ser executada pelo SQL Server.)  </para><para><b>Observação</b>: A forma exata da conexão depende do mecanismo que está sendo usado para recuperar dados – conexões ODBC, conexões OLEDB e consultas Web conterão informações diferentes.</para><para>Uma conexão também pode ser armazenado em um arquivo de conexão separados.  A maioria das conexões em uma pasta de trabalho do Excel incluem um ponteiro para um arquivo de conexão externo.  Arquivos de Conexão têm extensões que claramente rotulam-los como arquivos de conexão (*. ODC, *. IQY, etc.) e pode estar localizado na máquina local do usuário ou em outros locais bem conhecidos ou confiáveis como WSS (biblioteca de Conexão de dados) ou outros servidores corporativos.  Arquivos de Conexão permitem que vários usuários dentro da mesma organização reutilizar conexões.  Os administradores de rede são capazes de alterar o modo de que toda a organização se conecta a uma fonte de dados back-end, alterando a um arquivo de conexão único.  Um arquivo de conexão não é sempre necessário ao se conectar a uma fonte de dados externa.</para> Nomes de Conexão 
+      <para>são cadeias de caracteres que identificam exclusivamente conexões na pasta de trabalho em que eles são usados.     Existem outras propriedades de uma conexão que não são exclusivas.  Sempre que uma fórmula no Excel usa um argumento que é uma conexão, ele será suficiente para se referir ao nome dessa conexão, diretamente (como uma cadeia de caracteres) ou indiretamente (fazendo referência a uma célula que contém o nome de conexão como uma string.)</para><para></para></span>
       <span class="sxs-lookup">
-        <span data-stu-id="a26f7-102">
+        <span data-stu-id="12858-102">
           <para>Connections can be stored within an Excel workbook.  When the workbook is opened, Excel creates an in-memory copy of the connection which is refered to as the connection object.  A connection object contains information such as the name of the server and the name of the object to be opened on that server.  Optionally, the connection object may also include authentication credentials and/or a command that is to be passed to the server and executed (example: a SELECT statement to be executed by SQL Server.)  </para>
           <para>
             <b>Note</b>: The exact form of the connection depends on the mechanism that is being used to retrieve data – ODBC connections, OLEDB connections, and Web Queries will contain different information.</para>
           <para>A connection may also be stored in a separate connection file.  Most  connections in an Excel workbook include a pointer to an external connection file.  Connection files have extensions that clearly label them as connection files (*.ODC, *.IQY, etc.) and may be located on the user's local machine or in other well known or trusted locations such as WSS (Data Connection Library), or other corporate servers.  Connection files enable multiple users within the same organization to re-use connections.  Network administrators are able to change the way the entire organization connects to a back-end data source by changing a single connection file.  A connection file is not always required when connecting to an external data source.</para>
           <para>Connection names are strings that uniquely identify connections within the workbook in which they are used.     There are other properties of a connection that are not unique.  Whenever a formula in Excel takes an argument that is a connection, it will be sufficient to refer to the name of that connection, either directly (as a string) or indirectly (by referring to a cell that contains the connection name as a string.)</para>
-          <para />
+          <para></para>
         </span>
       </span>
     </remarks>
@@ -112,29 +112,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a26f7-103">Quando usado sem um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object que representa o aplicativo Microsoft Office Excel.</span>
+          <span data-ttu-id="12858-103">Quando usado sem um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object que representa o aplicativo Microsoft Office Excel.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-103">When used without an object qualifier, this property returns an  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object that represents the Microsoft Office Excel  application.</span>
+            <span data-stu-id="12858-103">When used without an object qualifier, this property returns an  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object that represents the Microsoft Office Excel  application.</span>
           </span>
-          <span data-ttu-id="a26f7-104">Quando usado com um qualificador de objeto, essa propriedade retorna um objeto <b>Application</b> que representa o criador do objeto especificado.</span>
+          <span data-ttu-id="12858-104">Quando usado com um qualificador de objeto, essa propriedade retorna um objeto <b>Application</b> que representa o criador do objeto especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-104">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object.</span>
+            <span data-stu-id="12858-104">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object.</span>
           </span>
-          <span data-ttu-id="a26f7-105">Somente leitura.</span>
+          <span data-ttu-id="12858-105">Somente leitura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-105">Read-only.</span>
+            <span data-stu-id="12858-105">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="a26f7-106">
+          <span data-ttu-id="12858-106">
             <para>Você pode usar essa propriedade com um objeto de automação OLE para retornar o aplicativo desse objeto.</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-106">
+            <span data-stu-id="12858-106">
               <para>You can use this property with an OLE Automation object to return the application of that object.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -164,26 +164,26 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a26f7-107">Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</span>
+          <span data-ttu-id="12858-107">Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-107">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="12858-107">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
-          <span data-ttu-id="a26f7-108">
+          <span data-ttu-id="12858-108">
             <b>Integer</b> somente leitura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-108">Read-only <b>Integer</b>.</span>
+            <span data-stu-id="12858-108">Read-only <b>Integer</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="a26f7-109">
+          <span data-ttu-id="12858-109">
             <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.  A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-109">
+            <span data-stu-id="12858-109">
               <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.  The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -213,13 +213,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a26f7-110">Retorna um objeto <b>DataFeedConnection</b> que contém os dados e a funcionalidade necessária para se conectar ao feeds de dados.</span>
+          <span data-ttu-id="12858-110">Retorna um objeto <b>DataFeedConnection</b> que contém os dados e a funcionalidade necessária para se conectar ao feeds de dados.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-110">Returns a <b>DataFeedConnection</b> object that contains the data and functionality needed to connect to data feeds.</span>
+            <span data-stu-id="12858-110">Returns a <b>DataFeedConnection</b> object that contains the data and functionality needed to connect to data feeds.</span>
           </span>
-          <span data-ttu-id="a26f7-111">Somente leitura</span>
+          <span data-ttu-id="12858-111">Somente leitura</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-111">Read-only</span>
+            <span data-stu-id="12858-111">Read-only</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -248,24 +248,24 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="a26f7-112">Exclui a conexão de uma pasta de trabalho.</span>
+          <span data-ttu-id="12858-112">Exclui a conexão de uma pasta de trabalho.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-112">Deletes a workbook connection.</span>
+            <span data-stu-id="12858-112">Deletes a workbook connection.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="a26f7-113">
+          <span data-ttu-id="12858-113">
             <para>Use esse método para excluir uma conexão de dados externos. Esse método não se aplica aos links para outras pastas de trabalho. </para>
             <para>a exclusão de uma conexão não excluir ou remover todos os objetos que estavam usando essa conexão.  Excluir uma conexão não causará qualquer um dos arquivos de conexão a ser excluído do sistema de arquivos.  Se você editar qualquer um desses objetos para usar outra conexão, tudo vai começar a trabalhar novamente.</para>
             <para>Objetos que usam uma conexão excluída se comportam como se a conexão não pôde ser estabelecida.  </para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-113">
+            <span data-stu-id="12858-113">
               <para>Use this method to delete an external data connection. This method does not apply to links to other workbooks. </para>
               <para>Deleting a connection will not delete or remove any objects that were using that connection.  Deleting a connection will not cause any of the connection files to be deleted from the file system.  If you edit any of those objects to use another connection, everything will start working again.</para>
               <para>Objects that use a deleted connection behave as if the connection could not be established.  </para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -298,26 +298,26 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a26f7-114">Retorna ou define uma breve descrição para um <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto.</span>
+          <span data-ttu-id="12858-114">Retorna ou define uma breve descrição para um <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-114">Returns or sets a brief description for a <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object.</span>
+            <span data-stu-id="12858-114">Returns or sets a brief description for a <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object.</span>
           </span>
-          <span data-ttu-id="a26f7-115">
+          <span data-ttu-id="12858-115">
             <b>String</b> de leitura/gravação.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-115">Read/write <b>String</b>.</span>
+            <span data-stu-id="12858-115">Read/write <b>String</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="a26f7-116">
+          <span data-ttu-id="12858-116">
             <para>Em Propriedades de Conexão a caixa de diálogo, o usuário pode editar o nome da conexão e/ou a descrição.  Alterar o nome e descrição nessa caixa de diálogo altera aos campos somente dentro do objeto de conexão do Excel.</para> O tamanho máximo de uma descrição de 
-          <para>é 255 caracteres.  Se o usuário Especifica uma descrição dentro de um arquivo de conexão que tenha mais de 255 caracteres, a descrição é truncar para ajustar o limite de 255 caracteres.</para><para /></span>
+          <para>é 255 caracteres.  Se o usuário Especifica uma descrição dentro de um arquivo de conexão que tenha mais de 255 caracteres, a descrição é truncar para ajustar o limite de 255 caracteres.</para><para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-116">
+            <span data-stu-id="12858-116">
               <para>In the Connection Properties dialog box, the user may edit the name of the connection and/or the description.  Changing the name and description in this dialog box changes those fields only within the Excel connection object.</para>
               <para>The maximum size of a description is 255 characters.  If the user specifies a description within a connection file that is longer than 255 characters, the description is truncate to fit the 255 character limit.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -347,27 +347,27 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a26f7-117">Especifica se é ou não o objeto <b>WorkbookConnection</b> foi adicionado ao modelo.</span>
+          <span data-ttu-id="12858-117">Especifica se é ou não o objeto <b>WorkbookConnection</b> foi adicionado ao modelo.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-117">Specifies whether or not the <b>WorkbookConnection</b> object has been added to the model.</span>
+            <span data-stu-id="12858-117">Specifies whether or not the <b>WorkbookConnection</b> object has been added to the model.</span>
           </span>
-          <span data-ttu-id="a26f7-118">
+          <span data-ttu-id="12858-118">
             <b>Boolean</b> (<b>bool</b> em c#) Somente leitura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-118">
+            <span data-stu-id="12858-118">
               <b>Boolean</b> (<b>bool</b> in C#) Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="a26f7-119">
+          <span data-ttu-id="12858-119">
             <para>Deve ser false para conexões de legado.</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-119">
+            <span data-stu-id="12858-119">
               <para>Must be false for legacy connections.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -397,13 +397,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a26f7-120">Retorna um objeto que contém informações para o novo tipo de Conexão de modelo introduzido no Excel 2013 para interagir com o modelo de dados integrado.</span>
+          <span data-ttu-id="12858-120">Retorna um objeto que contém informações para o novo tipo de Conexão de modelo introduzido no Excel 2013 para interagir com o modelo de dados integrado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-120">Returns an object that contains information for the new Model Connection Type introduced in Excel 2013 to interact with the integrated Data Model.</span>
+            <span data-stu-id="12858-120">Returns an object that contains information for the new Model Connection Type introduced in Excel 2013 to interact with the integrated Data Model.</span>
           </span>
-          <span data-ttu-id="a26f7-121">Somente leitura</span>
+          <span data-ttu-id="12858-121">Somente leitura</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-121">Read-only</span>
+            <span data-stu-id="12858-121">Read-only</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -434,13 +434,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a26f7-122">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.ModelTables" /> objeto associado com a conexão específica.</span>
+          <span data-ttu-id="12858-122">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.ModelTables" /> objeto associado com a conexão específica.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-122">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ModelTables" /> object associated with the particular connection.</span>
+            <span data-stu-id="12858-122">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ModelTables" /> object associated with the particular connection.</span>
           </span>
-          <span data-ttu-id="a26f7-123">Somente leitura</span>
+          <span data-ttu-id="12858-123">Somente leitura</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-123">Read-only</span>
+            <span data-stu-id="12858-123">Read-only</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -474,9 +474,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a26f7-p108">Retorna ou define o nome do objeto de conexão da pasta de trabalho. <b>String</b> de leitura/gravação.</span>
+          <span data-ttu-id="12858-p108">Retorna ou define o nome do objeto de conexão da pasta de trabalho. <b>String</b> de leitura/gravação.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-p108">Returns or sets the name of the workbook connection object. Read/write <b>String</b>.</span>
+            <span data-stu-id="12858-p108">Returns or sets the name of the workbook connection object. Read/write <b>String</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -507,13 +507,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a26f7-126">Detalhes do Retuns a Conexão ODBC for especificado <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto.</span>
+          <span data-ttu-id="12858-126">Detalhes do Retuns a Conexão ODBC for especificado <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-126">Retuns the ODBC Connection details for the specified <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object.</span>
+            <span data-stu-id="12858-126">Retuns the ODBC Connection details for the specified <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object.</span>
           </span>
-          <span data-ttu-id="a26f7-127">Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />.</span>
+          <span data-ttu-id="12858-127">Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-127">Read-only <see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />.</span>
+            <span data-stu-id="12858-127">Read-only <see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -544,13 +544,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a26f7-128">Detalhes do Retuns a Conexão OLE DB for especificado <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto.</span>
+          <span data-ttu-id="12858-128">Detalhes do Retuns a Conexão OLE DB for especificado <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-128">Retuns the OLEDB Connection details for the specified <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object.</span>
+            <span data-stu-id="12858-128">Retuns the OLEDB Connection details for the specified <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object.</span>
           </span>
-          <span data-ttu-id="a26f7-129">Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />.</span>
+          <span data-ttu-id="12858-129">Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-129">Read-only <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />.</span>
+            <span data-stu-id="12858-129">Read-only <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -581,9 +581,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a26f7-p111">Retorna o objeto pai para o objeto especificado. Somente leitura.</span>
+          <span data-ttu-id="12858-p111">Retorna o objeto pai para o objeto especificado. Somente leitura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-p111">Returns the parent object for the specified object. Read-only.</span>
+            <span data-stu-id="12858-p111">Returns the parent object for the specified object. Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -614,13 +614,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a26f7-132">Retorna o intervalo do objeto especificado <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto.</span>
+          <span data-ttu-id="12858-132">Retorna o intervalo do objeto especificado <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-132">Returns the range of object for the specified <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object.</span>
+            <span data-stu-id="12858-132">Returns the range of object for the specified <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object.</span>
           </span>
-          <span data-ttu-id="a26f7-133">Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.Ranges" />.</span>
+          <span data-ttu-id="12858-133">Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.Ranges" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-133">Read-only <see cref="T:Microsoft.Office.Interop.Excel.Ranges" />.</span>
+            <span data-stu-id="12858-133">Read-only <see cref="T:Microsoft.Office.Interop.Excel.Ranges" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -649,22 +649,22 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="a26f7-134">Atualiza a conexão de uma pasta de trabalho.</span>
+          <span data-ttu-id="12858-134">Atualiza a conexão de uma pasta de trabalho.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-134">Refreshes a workbook connection.</span>
+            <span data-stu-id="12858-134">Refreshes a workbook connection.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="a26f7-135">
+          <span data-ttu-id="12858-135">
             <para>Se o <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> propriedade for <b>False</b>, as caixas de diálogo não são exibidas e o método <b>Refresh</b> falhará com a exceção informações de Conexão insuficientes.</para>
             <para>Uma falha na atualização para uma conexão não terá impacto nas operações de atualização para as outras conexões.</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-135">
+            <span data-stu-id="12858-135">
               <para>If the <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> property is <b>False</b>, dialog boxes are not displayed and the <b>Refresh</b> method fails with the Insufficient Connection Information exception.</para>
               <para>A refresh failure for one connection will not have any impact on refresh operations  for the other connections. </para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -697,19 +697,19 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a26f7-136">Determina se a conexão deve ser atualizado quando atualizar todos os é executado.</span>
+          <span data-ttu-id="12858-136">Determina se a conexão deve ser atualizado quando atualizar todos os é executado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-136">Determines if the connection should be refreshed when refresh all is executed.</span>
+            <span data-stu-id="12858-136">Determines if the connection should be refreshed when refresh all is executed.</span>
           </span>
-          <span data-ttu-id="a26f7-137">
+          <span data-ttu-id="12858-137">
             <b>Boolean</b> (<b>bool</b> em c#).</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-137">
+            <span data-stu-id="12858-137">
               <b>Boolean</b> (<b>bool</b> in C#).</span>
           </span>
-          <span data-ttu-id="a26f7-138">Leitura/gravação.</span>
+          <span data-ttu-id="12858-138">Leitura/gravação.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-138">Read/Write.</span>
+            <span data-stu-id="12858-138">Read/Write.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -740,13 +740,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a26f7-139">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.TextConnection" /> objeto que contém as informações em uma consulta em um arquivo de texto.</span>
+          <span data-ttu-id="12858-139">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.TextConnection" /> objeto que contém as informações em uma consulta em um arquivo de texto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-139">Returns a <see cref="T:Microsoft.Office.Interop.Excel.TextConnection" /> object that contains the information on a query to a text file.</span>
+            <span data-stu-id="12858-139">Returns a <see cref="T:Microsoft.Office.Interop.Excel.TextConnection" /> object that contains the information on a query to a text file.</span>
           </span>
-          <span data-ttu-id="a26f7-140">Somente leitura.</span>
+          <span data-ttu-id="12858-140">Somente leitura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-140">Read-only.</span>
+            <span data-stu-id="12858-140">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -777,13 +777,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a26f7-141">Retorna o tipo de conexão de pasta de trabalho.</span>
+          <span data-ttu-id="12858-141">Retorna o tipo de conexão de pasta de trabalho.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-141">Returns the workbook connection type.</span>
+            <span data-stu-id="12858-141">Returns the workbook connection type.</span>
           </span>
-          <span data-ttu-id="a26f7-142">Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlConnectionType" />.</span>
+          <span data-ttu-id="12858-142">Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlConnectionType" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-142">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlConnectionType" />.</span>
+            <span data-stu-id="12858-142">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlConnectionType" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -814,13 +814,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a26f7-143">Retorna um objeto que contém informações para uma conexão do modelo PowerPivot aos dados na pasta de trabalho como um intervalo, intervalo nomeado ou tabela.</span>
+          <span data-ttu-id="12858-143">Retorna um objeto que contém informações para uma conexão do modelo PowerPivot aos dados na pasta de trabalho como um intervalo, intervalo nomeado ou tabela.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-143">Returns an object that contains information for a connection from the PowerPivot Model to data within the workbook such as a range, named range, or table.</span>
+            <span data-stu-id="12858-143">Returns an object that contains information for a connection from the PowerPivot Model to data within the workbook such as a range, named range, or table.</span>
           </span>
-          <span data-ttu-id="a26f7-144">Somente leitura.</span>
+          <span data-ttu-id="12858-144">Somente leitura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a26f7-144">Read-only.</span>
+            <span data-stu-id="12858-144">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>

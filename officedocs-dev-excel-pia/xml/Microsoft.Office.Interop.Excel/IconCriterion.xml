@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20579293" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface IconCriterion" />
@@ -30,30 +30,30 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="76fb1-p101">Representa o critério de um ícone individual em um conjunto de ícones. O critério especifica o intervalo de valores e o tipo de limite associado ao ícone na regra de formatação condicional de um conjunto de ícones.</span>
+      <span data-ttu-id="f52c9-p101">Representa o critério de um ícone individual em um conjunto de ícones. O critério especifica o intervalo de valores e o tipo de limite associado ao ícone na regra de formatação condicional de um conjunto de ícones.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="76fb1-p101">Represents the criterion for an individual icon in an icon set. The criterion specifies the range of values and the threshold type associated with the icon in an icon set conditional formatting rule.</span>
+        <span data-stu-id="f52c9-p101">Represents the criterion for an individual icon in an icon set. The criterion specifies the range of values and the threshold type associated with the icon in an icon set conditional formatting rule.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="76fb1-103">
+      <span data-ttu-id="f52c9-103">
         <para>Todos os critérios para um formato condicional de conjunto de ícones estão contidos em um <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> conjunto. Você pode acessar cada objeto <b>IconCriterion</b> na coleção passando-se um índice na coleção. Consulte o exemplo para obter detalhes.</para>
-        <para />
+        <para></para>
       </span>
       <span class="sxs-lookup">
-        <span data-stu-id="76fb1-103">
+        <span data-stu-id="f52c9-103">
           <para>All of the criteria for an icon set conditional format are contained in an <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> collection. You can access each <b>IconCriterion</b> object in the collection by passing an index into the collection. See the example for details.</para>
-          <para />
+          <para></para>
         </span>
       </span>
     </remarks>
     <example>
-      <span data-ttu-id="76fb1-104">
+      <span data-ttu-id="f52c9-104">
         <para>O exemplo de código a seguir cria um intervalo de números que representam as pontuações de teste e aplica uma regra de formatação condicional do conjunto de ícones para aquele intervalo. O tipo de conjunto de ícones, em seguida, é alterado de ícones padrão para um conjunto de ícones de seta de cinco. Finalmente, o tipo de limite é modificado de percentil para um número codificadas.</para>
         <code>&lt;span class="label"&gt;Sub CreateIconSetCF()    Dim cfIconSet As IconSetCondition        'Fill cells with sample data    With ActiveSheet        .Range("C1") = 55        .Range("C2") = 92        .Range("C3") = 88        .Range("C4") = 77        .Range("C5") = 66        .Range("C6") = 93        .Range("C7") = 76        .Range("C8") = 80        .Range("C9") = 79        .Range("C10") = 83        .Range("C11") = 66        .Range("C12") = 74    End With        Range("C1:C12").Select          'Create an icon set conditional format for the created sample data range    Set cfIconSet = Selection.FormatConditions.AddIconSetCondition        'Change the icon set to a five-arrow icon set    cfIconSet.IconSet = ActiveWorkbook.IconSets(xl5Arrows)        'The IconCriterion collection contains all IconCriteria    'By indexing into the collection you can modify each criterion    With cfIconSet.IconCriteria(1)        .Type = xlConditionValueNumber        .Value = 0        .Operator = 7    End With    With cfIconSet.IconCriteria(2)        .Type = xlConditionValueNumber        .Value = 60        .Operator = 7    End With    With cfIconSet.IconCriteria(3)        .Type = xlConditionValueNumber        .Value = 70        .Operator = 7    End With    With cfIconSet.IconCriteria(4)        .Type = xlConditionValueNumber        .Value = 80        .Operator = 7    End With    With cfIconSet.IconCriteria(5)        .Type = xlConditionValueNumber        .Value = 90        .Operator = 7    End With        End Sub&lt;/span&gt;</code>
       </span>
       <span class="sxs-lookup">
-        <span data-stu-id="76fb1-104">
+        <span data-stu-id="f52c9-104">
           <para>The following code example creates a range of numbers representing test scores and then applies an icon set conditional formatting rule to that range. The type of icon set is then changed from the default icons to a five-arrow icon set. Finally, the threshold type is modified from percentile to a hard-coded number.</para>
           <code>&lt;span class="label"&gt;Sub CreateIconSetCF()    Dim cfIconSet As IconSetCondition        'Fill cells with sample data    With ActiveSheet        .Range("C1") = 55        .Range("C2") = 92        .Range("C3") = 88        .Range("C4") = 77        .Range("C5") = 66        .Range("C6") = 93        .Range("C7") = 76        .Range("C8") = 80        .Range("C9") = 79        .Range("C10") = 83        .Range("C11") = 66        .Range("C12") = 74    End With        Range("C1:C12").Select          'Create an icon set conditional format for the created sample data range    Set cfIconSet = Selection.FormatConditions.AddIconSetCondition        'Change the icon set to a five-arrow icon set    cfIconSet.IconSet = ActiveWorkbook.IconSets(xl5Arrows)        'The IconCriterion collection contains all IconCriteria    'By indexing into the collection you can modify each criterion    With cfIconSet.IconCriteria(1)        .Type = xlConditionValueNumber        .Value = 0        .Operator = 7    End With    With cfIconSet.IconCriteria(2)        .Type = xlConditionValueNumber        .Value = 60        .Operator = 7    End With    With cfIconSet.IconCriteria(3)        .Type = xlConditionValueNumber        .Value = 70        .Operator = 7    End With    With cfIconSet.IconCriteria(4)        .Type = xlConditionValueNumber        .Value = 80        .Operator = 7    End With    With cfIconSet.IconCriteria(5)        .Type = xlConditionValueNumber        .Value = 90        .Operator = 7    End With        End Sub&lt;/span&gt;</code>
         </span>
@@ -88,21 +88,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="76fb1-105">Obtém ou define o ícone de um critério em uma regra de formatação condicional do conjunto de ícones.</span>
+          <span data-ttu-id="f52c9-105">Obtém ou define o ícone de um critério em uma regra de formatação condicional do conjunto de ícones.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="76fb1-105">Gets or sets the icon for a criterion in an icon set conditional formatting rule.</span>
+            <span data-stu-id="f52c9-105">Gets or sets the icon for a criterion in an icon set conditional formatting rule.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="76fb1-106">
+          <span data-ttu-id="f52c9-106">
             <para>Depois de definir a propriedade <b>Icon</b> do critério do ícone em uma ícone conjunto regra de formatação condicional, o <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconSet" /> propriedade for alterada para <b>xlCustomSet</b>.</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="76fb1-106">
+            <span data-stu-id="f52c9-106">
               <para>After you set the <b>Icon</b> property for the icon criterion in an icon set conditional formatting rule, the <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconSet" /> property is changed to <b>xlCustomSet</b>.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -132,21 +132,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="76fb1-107">Obtém um valor indicando que representa os critérios de limite.</span>
+          <span data-ttu-id="f52c9-107">Obtém um valor indicando que representa os critérios de limite.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="76fb1-107">Gets a value indicating which threshold the criteria represents.</span>
+            <span data-stu-id="f52c9-107">Gets a value indicating which threshold the criteria represents.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="76fb1-108">
-            <para>Para um conjunto de ícones, essa propriedade será retornará um valor de "1" para o limite mínimo, "2" para o próximo limite e assim por diante.</para>
-            <para />
+          <span data-ttu-id="f52c9-108">
+            <para>Para um conjunto de ícones, essa propriedade retornará um valor de "1" para o limite mínimo, "2" para o próximo limite e assim por diante.</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="76fb1-108">
+            <span data-stu-id="f52c9-108">
               <para>For an icon set, this property will return a value of "1" for the minimum threshold, "2" for the next threshold, and so on.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -179,21 +179,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="76fb1-109">Retorna ou define uma das constantes do <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> enumeração, que especifica se o limite é "maior que" ou "maior que ou igual a" o valor limite.</span>
+          <span data-ttu-id="f52c9-109">Retorna ou define uma das constantes do <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> enumeração, que especifica se o limite é "maior que" ou "maior que ou igual a" o valor limite.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="76fb1-109">Returns or sets one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> enumeration, which specifes if the threshold is "greater than" or "greater than or equal to" the threshold value.</span>
+            <span data-stu-id="f52c9-109">Returns or sets one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> enumeration, which specifes if the threshold is "greater than" or "greater than or equal to" the threshold value.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="76fb1-110">
+          <span data-ttu-id="f52c9-110">
             <para>Para a regra de formatação condicional de conjunto de um ícone, essa propriedade pode ser definida como somente uma das duas seguintes constantes: <b>xlGreater</b> ou <b>xlGreaterEqual</b>.</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="76fb1-110">
+            <span data-stu-id="f52c9-110">
               <para>For an icon set conditional formatting rule, this property can be set to only one of the following two constants: <b>xlGreater</b> or <b>xlGreaterEqual</b>.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -226,25 +226,22 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="76fb1-111">Retorna uma das constantes do <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> enumeração, que especifica como o valor de limite para um conjunto de ícones é determinado.</span>
+          <span data-ttu-id="f52c9-111">Retorna uma das constantes do <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> enumeração, que especifica como o valor de limite para um conjunto de ícones é determinado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="76fb1-111">Returns one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> enumeration, which specifies how the threshold value for an icon set is determined.</span>
+            <span data-stu-id="f52c9-111">Returns one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> enumeration, which specifies how the threshold value for an icon set is determined.</span>
           </span>
-          <span data-ttu-id="76fb1-112">Somente leitura.</span>
+          <span data-ttu-id="f52c9-112">Somente leitura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="76fb1-112">Read-only.</span>
+            <span data-stu-id="f52c9-112">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="76fb1-113">
-            <para>O tipo de valor de limite para um conjunto de ícones pode ser um número, por cento, fórmula ou percentil. Definir o tipo como percentil usará a função percentil no Excel para determinar o valor limite.</para>
-            <para />
-          </span>
+          <span data-ttu-id="f52c9-113">O tipo de valor de limite para um ícone de <para>set pode ser um número, por cento, fórmula ou percentil. Definir o tipo como percentil usará a função percentil no Excel para determinar o valor limite.</para><para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="76fb1-113">
+            <span data-stu-id="f52c9-113">
               <para>The type of threshold value for an icon set can be  a number, percent, formula, or percentile. Setting the type to percentile will use the Percentile function in Excel to determine the threshold value.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -277,23 +274,23 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="76fb1-p103">Retorna ou define o valor limite de um ícone em uma formatação condicional. <b>Variant</b> de leitura/gravação.</span>
+          <span data-ttu-id="f52c9-p103">Retorna ou define o valor limite de um ícone em uma formatação condicional. <b>Variant</b> de leitura/gravação.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="76fb1-p103">Returns or sets the threshold value for an icon in a conditional format. Read/write <b>Variant</b>.</span>
+            <span data-stu-id="f52c9-p103">Returns or sets the threshold value for an icon in a conditional format. Read/write <b>Variant</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="76fb1-116">
+          <span data-ttu-id="f52c9-116">
             <para>Você pode definir o valor apenas se o <see cref="P:Microsoft.Office.Interop.Excel.IconCriterion.Type" /> propriedade para o formato condicional for definida como uma das seguintes constantes: <b>xlConditionValueNumber</b>, <b>xlConditionValuePercent</b>, <b>xlConditionValuePercentile</b>ou <b> xlConditionValueFormula</b>.</para>
             <para>Se o tipo de limite é uma fórmula, você pode definir a fórmula como uma <b>cadeia de caracteres</b>. A fórmula deve retornar um único número.</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="76fb1-116">
+            <span data-stu-id="f52c9-116">
               <para>You can set the value only if the <see cref="P:Microsoft.Office.Interop.Excel.IconCriterion.Type" /> property for the conditional format is set to one of the following constants: <b>xlConditionValueNumber</b>, <b>xlConditionValuePercent</b>, <b>xlConditionValuePercentile</b>, or <b>xlConditionValueFormula</b>.</para>
               <para>If the type of threshold  is a formula, you can set the formula as a <b>String</b>. The formula must return a single number.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
