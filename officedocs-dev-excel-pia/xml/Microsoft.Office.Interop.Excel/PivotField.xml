@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20577235" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotField" />
@@ -59,7 +59,7 @@
             <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.VisibleFields(System.Object)" /> propriedade</description>
         </item>
       </list>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -130,7 +130,7 @@
         <summary>Adiciona outro item a um campo de página com vários itens.</summary>
         <remarks>
           <para>Para evitar erros de tempo de execução, a fonte de dados deve ser uma fonte OLAP, o campo escolhido deve estar atualmente na posição da página, e o <see cref="P:Microsoft.Office.Interop.Excel.CubeField.EnableMultiplePageItems" /> propriedade deve ser definida como <b>True</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -166,7 +166,7 @@ Somente leitura.</summary>
           <para>Essa propriedade oferece uma maneira simples de verificar facilmente se a filtragem manual está aplicada a um <b>PivotField</b> ou <see cref="T:Microsoft.Office.Interop.Excel.CubeField" />.</para>
           <para>Para tabelas dinâmicas OLAP, essa propriedade está disponível somente para o objeto <b>CubeField</b> . Tentar obter ou defini-la no objeto <b>PivotField</b> em um OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> retornará um erro de tempo de execução.</para>
           <para>Para <b>PivotTables</b>, essa propriedade está disponível para o objeto <b>PivotField</b> .</para> O valor de 
-          <para>o padrão é <b>True</b>.  Essa propriedade é definida automaticamente como <b>True</b> quando nenhuma filtragem manual está aplicada (independente de se o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" /> propriedade é <b>True</b> ou <b>False</b>). Ele é automaticamente definido como <b>False</b> quando qualquer filtragem manual está aplicada (independente de se o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" /> propriedade é <b>True</b> ou <b>False</b>).</para><para>Essa propriedade reflete diretamente o estado da caixa de seleção Selecionar tudo na lista suspensa Filtro para o <b>PivotField</b> ou o <b>CubeField</b>.</para><para /></remarks>
+          <para>o padrão é <b>True</b>.  Essa propriedade é definida automaticamente como <b>True</b> quando nenhuma filtragem manual está aplicada (independente de se o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" /> propriedade é <b>True</b> ou <b>False</b>). Ele é automaticamente definido como <b>False</b> quando qualquer filtragem manual está aplicada (independente de se o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" /> propriedade é <b>True</b> ou <b>False</b>).</para><para>Essa propriedade reflete diretamente o estado da caixa de seleção Selecionar tudo na lista suspensa Filtro para o <b>PivotField</b> ou o <b>CubeField</b>.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -462,7 +462,7 @@ Somente leitura.</summary>
           </item>
           <para>classificação é suportada apenas por subtotais personalizados que realmente são exibidos na tabela dinâmica, portanto tentar definir <b>AutoSortCustomSubtotal</b> como um valor que representa um subtotal personalizado não no modo de tabela dinâmica será retornar um erro em tempo de execução.</para>
           <para>Se classificação for aplicada com base em um subtotal personalizado, e esse subtotal for removido da tabela dinâmica, a propriedade <b>AutoSortCustomSubtotal</b> será automaticamente definida para o valor padrão (1).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -615,7 +615,7 @@ Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Essa propriedade não está disponível para fontes de dados OLAP.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -674,8 +674,8 @@ Somente leitura.</summary>
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.CalculatedItems" /> coleção que representa todos os itens calculados no relatório de tabela dinâmica especificado. Somente leitura.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Para fontes de dados OLAP, esse método retorna uma coleção de comprimento zero.</para>
-          <para />
+          <para>Fontes de dados for OLAP, esse método retorna uma coleção de comprimento zero.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -708,8 +708,8 @@ Somente leitura.</summary>
         <summary>Retorna ou define o tipo de cálculo realizado por um campo especificado. Essa propriedade é válida somente para campos de dados. Leitura/gravação <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldCalculation" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Para fontes de dados OLAP, esta propriedade só pode retornar ou ser definida como <b>xlNormal</b>.</para>
-          <para />
+          <para>Fontes de dados para OLAP, esta propriedade só pode retornar ou ser definida como <b>xlNormal</b>.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -772,7 +772,7 @@ Somente leitura.</summary>
         <remarks>
           <para>Se o campo especificado não tiver campo filho, essa propriedade causará um erro.</para>
           <para>Essa propriedade não está disponível para fontes de dados OLAP.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -808,7 +808,7 @@ Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Essa propriedade não está disponível para fontes de dados OLAP.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1037,7 +1037,7 @@ Somente leitura.</summary>
               <term>xlAllDatesInPeriodDecember</term>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1066,7 +1066,7 @@ Somente leitura.</summary>
         <remarks>
           <para>Este método está disponível para o <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /><b>objeto</b> em <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> e para o <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> objeto em OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />. Chamá-lo para uma <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> em um OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> retornará um erro de tempo de execução.</para>
           <para>Depois de chamar este método, as seguintes coleções estarão vazias: <b>HiddenItemsList</b>, <b>HiddenItems</b>, <b>VisibleItemsList</b>e <b>VisibleItems</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1143,11 +1143,8 @@ Somente leitura.</summary>
             <item>
               <term />
             </item>
-            <item>
-              <term />
-            </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1176,10 +1173,7 @@ Somente leitura.</summary>
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para />
-        </remarks>
+        <remarks>Propriedade <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CubeField">
@@ -1271,7 +1265,7 @@ Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Para evitar erros de tempo de execução, a fonte de dados deve ser uma fonte OLAP, o campo escolhido deve estar atualmente na posição da página, e o <see cref="P:Microsoft.Office.Interop.Excel.CubeField.EnableMultiplePageItems" /> propriedade deve ser definida como <b>True</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1304,8 +1298,8 @@ Somente leitura.</summary>
         <summary>Retorna ou define a página atualmente exibida do relatório de tabela dinâmica especificado. O nome da página é exibido no campo da página. Observe que essa propriedade funciona somente se a página atualmente exibida já existir. <b>String</b> de leitura/gravação</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Essa propriedade se aplica a tabelas dinâmicas que estão conectadas a uma fonte de dados OLAP. A tentativa de retornar ou definir esta propriedade com uma tabela dinâmica que não está conectada a uma fonte de dados OLAP resultará em um erro em tempo de execução.</para>
-          <para />
+          <para>Essa propriedade se aplica a tabelas dinâmicas que estão conectadas a uma fonte de dados OLAP. Tentativa de retornar ou definir esta propriedade com uma tabela dinâmica que não está conectada a uma fonte de dados OLAP resultará em um erro em tempo de execução.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1344,7 +1338,7 @@ Somente leitura.</summary>
           <para>Definir a propriedade <b>DatabaseSort</b> como <b>False</b> fará com que a ordem de classificação seja a ordem atual dos itens, se a classificação automática não será aplicada.</para>
           <para>Definir a propriedade <b>DatabaseSort</b> como <b>True</b> ou <b>False</b> causa uma atualização.</para>
           <para>Definir a propriedade <b>DatabaseSort</b> como <b>True</b> para uma fonte não-OLAP ou um campo de dados OLAP causa um erro em tempo de execução.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1387,7 +1381,7 @@ Somente leitura.</summary>
               <description>Dados qualificados pelo item</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1473,7 +1467,7 @@ Somente leitura.</summary>
         </value>
         <remarks>
           <para>Esta propriedade retorna <b>True</b> quando uma propriedade membro determinado é usada como uma legenda e <b>False</b> quando uma propriedade de membro <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> não é usado como legenda. Tentando usar essa propriedade para <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s que não sejam propriedades do membro retornará um erro de tempo de execução.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1510,7 +1504,7 @@ Somente leitura.</summary>
         <remarks>
           <para>Tentar obter ou definir essas propriedades para <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s que não sejam propriedades do membro retornará um erro de tempo de execução.</para>
           <para>Uma propriedade membro determinado é exibido em dicas de ferramentas quando a propriedade <b>DisplayAsTooltip</b> estiver definida como <b>True</b>e não são exibidas em dicas de ferramentas quando ela é definida como <b>False</b>. O valor padrão é <b>True</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1578,7 +1572,7 @@ Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Para fontes de dados OLAP, o valor é <b>False</b> para campos de medida.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1613,7 +1607,7 @@ Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Para fontes de dados OLAP, o valor é <b>False</b> para campos de medida.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1680,7 +1674,7 @@ Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Para fontes de dados OLAP, o valor é <b>False</b> para campos de medida.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1715,7 +1709,7 @@ Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Para fontes de dados OLAP, o valor é <b>False</b> para campos de medida.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1751,7 +1745,7 @@ Somente leitura.</summary>
         <remarks>
           <para>Você pode usar essa propriedade somente para fontes de dados OLAP.</para>
           <para>Você não pode definir essa propriedade se o campo ou item estiver oculto.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1783,7 +1777,7 @@ Somente leitura.</summary>
         <summary>O método <b>DrillTo</b> oferece suporte a uma especificado análise <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> de outro <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />.</summary>
         <remarks>
           <para>Esta operação pode ser feita somente em campos que são realmente diante o <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Portanto, qualquer uma hierarquia contendo os solicitados <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> tem que ser em linhas ou colunas do <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />, ou o campo de atributo/relacional precisa estar em linhas ou colunas do <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> colocado ao lado de pelo menos um campo de atributo/relacional. Além disso, o campo sendo esburacado para deve estar na mesma cadeia hierarquia ou atributo. Se essas condições não forem atendidas, ocorrerá um erro de tempo de execução.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1816,8 +1810,8 @@ Somente leitura.</summary>
         <summary>Quando estiver definido como <b>False</b>, desativa a capacidade de usar o campo suspenso na interface do usuário. O valor padrão é <b>True</b>. <b>Boolean</b> de leitura/gravação</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o campo de tabela dinâmica OLAP não for o nível mais alto para a hierarquia, ocorrerá um erro de tempo de execução.</para>
-          <para />
+          <para>Ocorrerá um erro de tempo de execução se o campo de tabela dinâmica OLAP não for o nível mais alto para a hierarquia.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1854,8 +1848,8 @@ Somente leitura.</summary>
         <remarks>
           <para>o valor da propriedade existente é mantido para OLAP.</para>
           <para>
-            <b>Observação</b>: em short_Excel2007, se você criar OLAP pré-short_Excel2007 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s (PivotTable.Version &lt; 3) com o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.SubtotalHiddenPageItems" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objeto e o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.EnableMultiplePageItems" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto definido como <b>True</b>, alterando o estado das caixas de seleção no menu suspenso de filtro da área de página não terá efeito.  Nesse caso, o filtro será sempre definido para <b>todos</b>, inclusive os itens (ocultos) desmarcados.</para>
-          <para />
+            <b>Observação</b>: em short_Excel2007, se você criar OLAP pré-short_Excel2007 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s (PivotTable.Version &lt; 3) com o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.SubtotalHiddenPageItems" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objeto e o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.EnableMultiplePageItems" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto definido como <b>True</b>, alterando o estado das caixas de seleção no menu suspenso de filtro da área de página não terá efeito.  Nesse caso, o filtro sempre será definido para <b>todos</b>, inclusive os itens (ocultos) desmarcados.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1893,7 +1887,7 @@ Somente leitura.</summary>
           <para>Se você definir o valor ou fórmula de uma célula como uma data, o Microsoft Excel verifica se essa célula já está formatada com um dos formatos de número de data ou hora. Se não, o Microsoft Excel altera o formato de número para o formato de número de data curta padrão.</para>
           <para>Se o intervalo for um intervalo one - ou bidimensional, você pode definir a fórmula como uma matriz do Visual Basic de mesmas dimensões. Da mesma forma, você pode colocar a fórmula em uma matriz do Visual Basic.</para>
           <para>a definição da fórmula para um intervalo de múltiplas células preenche todas as células do intervalo com a fórmula.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1925,10 +1919,7 @@ Somente leitura.</summary>
       <Docs>
         <summary>Retorna ou define a função usada para resumir campo de tabela dinâmica (apenas campos de dados). Leitura/gravação <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" />.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para fontes de dados OLAP, essa propriedade é somente leitura e sempre retorna <b>xlUnknown</b>. Para outras fontes de dados, essa propriedade não pode ser definida para <b>xlUnknown</b>.</para>
-          <para />
-        </remarks>
+        <remarks>Fontes de <para>dados for OLAP, esta propriedade é somente leitura e sempre retorna <b>xlUnknown</b>. Para outras fontes de dados, essa propriedade não pode ser definida como <b>xlUnknown</b>.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupLevel">
@@ -1959,7 +1950,7 @@ Somente leitura.</summary>
         <remarks>
           <para>Essa propriedade não está disponível para fontes de dados OLAP.</para>
           <para>o campo pai de nível mais alto (campo pai mais à esquerda) é o nível um, seu filho é de nível dois e assim por diante.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1997,7 +1988,7 @@ Somente leitura.</summary>
           <para>Retorna <b>True</b> para níveis ocultos e <b>False</b> para os níveis visíveis (não ocultos).</para>
           <para>Essa propriedade é aplicável apenas aos níveis de hierarquias OLAP.</para>
           <para>Para fontes de dados relacionais e atributos OLAP, esta propriedade é sempre <b>False</b>. Tentar defini-la como <b>True</b> para um atributo ou um campo relacional retornará um erro de tempo de execução.  Não é possível definir essa propriedade como <b>True</b> para um nível se todos os outros níveis da hierarquia do mesmo já tem essa configuração, defina como <b>True</b>. Pelo menos um nível de uma hierarquia deve ter esta propriedade definida como <b>False</b>. A tentativa de fazer isso retornará um erro de tempo de execução.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2032,8 +2023,8 @@ Somente leitura.</summary>
         <summary>Retorna um objeto representando um único item de tabela dinâmica oculto (um <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> objeto) ou uma coleção de todos os itens ocultos (um <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> objeto) no campo especificado. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Para fontes de dados OLAP, essa propriedade sempre retorna uma coleção vazia.</para>
-          <para />
+          <para>Fontes de dados for OLAP, essa propriedade sempre retorna uma coleção vazia.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2066,8 +2057,8 @@ Somente leitura.</summary>
         <summary>Retorna ou define um <b>objeto</b> que especifica uma matriz de cadeias de caracteres que são itens ocultos de um campo de tabela dinâmica. Leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>A propriedade <b>HiddenItemsList</b> só é válida para fontes de dados Online Analytical Processing (OLAP); o uso desta propriedade em fontes de dados não-OLAP retornará um erro em tempo de execução.</para>
-          <para />
+          <para>a propriedade <b>HiddenItemsList</b> só é válida para fontes de dados Online Analytical Processing (OLAP); o uso desta propriedade em fontes de dados não-OLAP retornará um erro de tempo de execução.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2104,7 +2095,7 @@ Somente leitura.</summary>
         <remarks>
           <para>O valor padrão para essa propriedade é <b>False</b>.</para>
           <para>Quando a filtragem manual está aplicada, os desenvolvedores podem configurar o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" /> propriedade como <b>True</b> para rastrear itens excluídos. Eles podem definir a propriedade como <b>False</b> para rastrear itens incluídos.  Se novos itens são adicionados aos dados de origem após o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" /> propriedade estiver definida como <b>True</b>, os novos itens aparecem no <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> depois que a próxima operação de atualização porque não estão na coleção de itens que o Excel está acompanhando.</para> Hierarquias de 
-          <para>OLAP para essa configuração foi definida no <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> objeto e tentar defini-la em <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s que fazem parte de uma hierarquia falhará (com um erro em tempo de execução). Você pode obter esta configuração a partir do <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s que fazem parte de uma hierarquia e ele retornará o mesmo que o correspondente <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> propriedade.</para><para>Rolagens essa configuração limpará coleções a seguir: <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItemsList" />, <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItems(System.Object)" />, <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItemsList" />, e <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItems(System.Object)" />.  Quando <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> estiver definida como <b>False</b>, o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItemsList" /> e <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItems(System.Object)" /> coleções estarão vazias e itens não podem ser adicionados a eles.  Um erro de tempo de execução é retornado ao tentar adicionar itens.  Quando <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> estiver definida como <b>True</b>, o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItemsList" /> e <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItems(System.Object)" /> coleções estarão vazias e itens não podem ser adicionados a eles.  Um erro de tempo de execução é retornado ao tentar adicionar itens.</para><para>Em <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s, essa configuração foi definida no <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto. Ativar/desativar essa configuração não alterará o estado de filtro.</para><para /></remarks>
+          <para>OLAP para essa configuração foi definida no <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> objeto e tentar defini-la em <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s que fazem parte de uma hierarquia falhará (com um erro em tempo de execução). Você pode obter esta configuração a partir do <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s que fazem parte de uma hierarquia e ele retornará o mesmo que o correspondente <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> propriedade.</para><para>Rolagens essa configuração limpará coleções a seguir: <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItemsList" />, <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItems(System.Object)" />, <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItemsList" />, e <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItems(System.Object)" />.  Quando <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> estiver definida como <b>False</b>, o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItemsList" /> e <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItems(System.Object)" /> coleções estarão vazias e itens não podem ser adicionados a eles.  Um erro de tempo de execução é retornado ao tentar adicionar itens.  Quando <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> estiver definida como <b>True</b>, o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItemsList" /> e <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItems(System.Object)" /> coleções estarão vazias e itens não podem ser adicionados a eles.  Um erro de tempo de execução é retornado ao tentar adicionar itens.</para><para>Em <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s, essa configuração foi definida no <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto. Ativar/desativar essa configuração não alterará o estado de filtro.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCalculated">
@@ -2134,8 +2125,8 @@ Somente leitura.</summary>
           <b>True</b> se o campo de tabela dinâmica ou de um item de tabela dinâmica é um campo ou item calculado. <b>Boolean</b> somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Para fontes de dados OLAP, essa propriedade sempre retorna <b>False</b>.</para>
-          <para />
+          <para>Fontes de dados for OLAP, essa propriedade sempre retorna <b>False</b>.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2165,8 +2156,8 @@ Somente leitura.</summary>
         <summary>Retorna <b>True</b> quando a tabela dinâmica contiver propriedades de membro. <b>Boolean</b> de somente leitura</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Essa propriedade retornará um erro em tempo de execução se não for usada a uma fonte de dados Online Analytical Processing (OLAP).</para>
-          <para />
+          <para>Esta propriedade retornará um erro em tempo de execução se uma fonte de dados Online Analytical Processing (OLAP) não é usada.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2230,7 +2221,7 @@ Somente leitura.</summary>
         <remarks>
           <para>, Você pode definir essa propriedade para qualquer campo de tabela dinâmica; no entanto, a linha em branco será exibida apenas se o campo especificado não for um campo de linha diferente do campo de linha mais interno de (nível inferior). Para fontes de dados não-OLAP, o valor dessa propriedade não é alterado quando o campo é reorganizado ou adicionado ao relatório de tabela dinâmica.</para>
           <para>Você não pode inserir dados na linha em branco no relatório de tabela dinâmica.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2265,8 +2256,8 @@ Somente leitura.</summary>
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>A definição dessa propriedade como <b>True</b> (padrão), terá nenhum efeito visual imediato <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> se o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutForm" /> propriedade estiver definida como <see cref="F:Microsoft.Office.Interop.Excel.XlLayoutFormType.xlTabular" />, mas ela pode ser definida de forma independente.</para>
-          <para />
+          <para>a definição dessa propriedade como <b>True</b> (padrão), terá nenhum efeito visual imediato <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> se o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutForm" /> propriedade estiver definida como <see cref="F:Microsoft.Office.Interop.Excel.XlLayoutFormType.xlTabular" />, mas ela pode ser definida de forma independente.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2299,8 +2290,8 @@ Somente leitura.</summary>
         <summary>Retorna ou define a maneira como os itens de tabela dinâmica especificados são exibidos — no formato de tabela ou no formato de estrutura de tópicos. Leitura/gravação <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutFormType" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Você pode definir essa propriedade para qualquer campo de tabela dinâmica; No entanto, a formatação será exibida apenas se o campo especificado não for um campo de linha que não seja o mais interno (campo de linha de nível inferior. Para fontes de dados não-OLAP, o valor dessa propriedade não é alterado quando o campo é reorganizado ou quando ele é adicionado à ou removido do relatório de tabela dinâmica.</para>
-          <para />
+          <para>, Você pode definir essa propriedade para qualquer campo de tabela dinâmica; no entanto, a formatação será exibida apenas se o campo especificado não for um campo de linha que não seja o mais interno (campo de linha de nível inferior. Para fontes de dados não-OLAP, o valor dessa propriedade não é alterado quando o campo é reorganizado ou quando ele é adicionado à ou removido do relatório de tabela dinâmica.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2335,7 +2326,7 @@ Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Embora você possa definir essa propriedade para qualquer campo de tabela dinâmica, a opção de impressão aparece somente se o campo especificado for um campo de linha diferente do campo de linha mais interno de (nível mais baixo). Para fontes de dados não-OLAP, o valor dessa propriedade não é alterado quando o campo é reorganizado ou quando ele é adicionado à ou removido do relatório de tabela dinâmica.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2370,7 +2361,7 @@ Somente leitura.</summary>
         <remarks>
           <para>Você pode definir essa propriedade para qualquer campo de tabela dinâmica no formato de estrutura de tópicos; no entanto, a formatação será exibida apenas se o campo especificado não for um campo de linha mais interno (o mais baixo nível). Para fontes de dados não-OLAP, o valor dessa propriedade não é alterado quando o campo é reorganizado ou quando ele é adicionado à ou removido do relatório.</para>
           <para>o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutForm" /> propriedade determina se o relatório será exibido no formato de tabela ou no formato de estrutura de tópicos.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2408,7 +2399,7 @@ Somente leitura.</summary>
           <para>
             <b>Observação</b>: esta configuração tem efeito visual apenas quando <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> estiver definida como <b>True</b> para o <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />.</para>
           <para>Quando <see cref="P:Microsoft.Office.Interop.Excel.PivotField.MemberPropertyCaption" /> estiver definido, a configuração é lembrada ao ativar/desativar o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> propriedade.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2501,7 +2492,7 @@ Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Para o <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> do objeto, você pode definir a propriedade <b>NumberFormat</b> somente para um campo de dados.</para> Código de 
-          <para>o formato é a mesma cadeia de caracteres da opção códigos de formato da caixa de diálogo Formatar células. A função <b>Format</b> usa cadeias de caracteres de código de formatação diferentes a <b>NumberFormat</b> e <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.NumberFormatLocal" /> propriedades.</para><para /></remarks>
+          <para>o formato é a mesma cadeia de caracteres da opção códigos de formato da caixa de diálogo Formatar células. A função <b>Format</b> usa cadeias de caracteres de código de formatação diferentes a <b>NumberFormat</b> e <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.NumberFormatLocal" /> propriedades.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -2532,10 +2523,7 @@ Somente leitura.</summary>
       <Docs>
         <summary>A posição do campo no relatório de tabela dinâmica especificado. Leitura/gravação <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" />.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para fontes de dados OLAP, a definição dessa propriedade para um campo em uma hierarquia define a orientação para os outros campos na mesma hierarquia. Campos de dimensão só podem ser orientados na linha, coluna e áreas de campo de página do relatório de tabela dinâmica. Campos de medida só podem ser orientados na área de dados. A definição de um campo de hierarquia ou dados como <b>xlHidden</b> remove o campo ou a hierarquia do relatório de tabela dinâmica.</para>
-          <para />
-        </remarks>
+        <remarks>Fontes de dados de <para>para OLAP, a definição dessa propriedade para um campo em uma hierarquia define a orientação para os outros campos na mesma hierarquia. Campos de dimensão só podem ser orientados na linha, coluna e áreas de campo de página do relatório de tabela dinâmica. Campos de medida só podem ser orientados na área de dados. A definição de um campo de hierarquia ou dados como <b>xlHidden</b> remove o campo ou a hierarquia do relatório de tabela dinâmica.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -2593,7 +2581,7 @@ Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Essa propriedade não está disponível para fontes de dados OLAP.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2629,7 +2617,7 @@ Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Essa propriedade não está disponível para fontes de dados OLAP.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2691,7 +2679,7 @@ Somente leitura.</summary>
         <returns>To be added.</returns>
         <remarks>
           <para>Para fontes de dados OLAP, a coleção é indexada pelo nome exclusivo (o nome retornado pelo <see cref="P:Microsoft.Office.Interop.Excel.PivotField.SourceName" /> propriedade), e não por nome para exibição.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2757,7 +2745,7 @@ Somente leitura.</summary>
         <remarks>
           <para>a definição dessa propriedade reorganizará a ordem das propriedades para esse campo de cubo. Essa propriedade é baseada em um. O intervalo permitido é de um para o número máximo de campos de propriedades membros sendo exibidos para a hierarquia.</para>
           <para>Se o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IsMemberProperty" /> propriedade for <b>False</b>, usando o <b>PropertyOrder</b> propriedade criará um erro em tempo de execução.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2789,7 +2777,7 @@ Somente leitura.</summary>
         <remarks>
           <para>Válido somente para campos que são campos de propriedade do membro.</para>
           <para>Se o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IsMemberProperty" /> propriedade for <b>False</b>, usando o <b>PropertyParentField</b> propriedade retornará um erro em tempo de execução.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2826,7 +2814,7 @@ Somente leitura.</summary>
           <para>Leitura/gravação.</para>
           <para>
             <b>true</b> se rótulos de item forem repetidos para o campo dinâmico especificado; caso contrário <b>false</b>. A configuração do <see cref="P:Microsoft.Office.Interop.Excel.PivotField.RepeatLabels" /> propriedade corresponde à caixa de seleção Repetir item rótulos no Layout &amp; guia Imprimir da caixa de diálogo Configurações do campo para um campo em um PivotTable.To Especifique se deseja repetir rótulos de item para todos os campos dinâmicos em uma tabela dinâmica em uma única operação, use o <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RepeatAllLabels(Microsoft.Office.Interop.Excel.XlPivotFieldRepeatLabels)" /> método.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2877,7 +2865,7 @@ Somente leitura.</summary>
               <description>o campo é um tipo de dados que não pode ser com base em servidor (um campo Memorando ou um objeto OLE).</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2912,7 +2900,7 @@ Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Para fontes de dados OLAP, o valor é sempre <b>False</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2977,8 +2965,8 @@ Somente leitura.</summary>
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>A propriedade retorna <b>True</b> se o <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> está visível no momento e retorna <b>False</b> se não estiver visível no momento. A visibilidade do <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> é determinado pelo ou não o <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> legenda é visível no <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> no formato de tabela (não-compact).</para>
-          <para />
+          <para>a propriedade retorna <b>True</b> se o <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> está visível no momento e retorna <b>False</b> se não estiver visível no momento. A visibilidade do <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> é determinado pelo ou não o <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> legenda é visível no <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> no formato de tabela (não-compact).</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3011,7 +2999,7 @@ Somente leitura.</summary>
         </value>
         <remarks>
           <para>Você pode usar o <see cref="T:Microsoft.Office.Interop.Excel.PivotField.Name" /> ou o <see cref="T:Microsoft.Office.Interop.Excel.PivotField.SourceName" /> para não-OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3074,7 +3062,7 @@ Somente leitura.</summary>
         <remarks>
           <para>A propriedade <b>StandardFormula</b> principalmente afeta os nomes de item com a data ou a formatação de números. Ele fornece uma maneira para especificar ou consultar uma fórmula para um determinado item calculado.</para>
           <para>a propriedade <b>StandardFormula</b> é "internacional-," enquanto o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.Formula" /> propriedade não é.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3142,10 +3130,7 @@ Somente leitura.</summary>
           <b>Objeto</b>de opcional. Um índice de subtotal, conforme mostrado na tabela a seguir. Se esse argumento for omitido, o método <b>Subtotals</b> retorna uma matriz que contém um valor <b>booleano</b> para cada subtotal. Nums9StdDev10StdDevp11Var12VarpIf IndexMeaning1Automatic2Sum3Count4Average5Max6Min7Product8Count um índice for <b>True</b>, o campo mostrará esse subtotal. Se o índice 1 (automático) for <b>True</b>, todos os outros valores são definidos como <b>False</b>.</param>
         <summary>Retorna ou define subtotais exibidos com o campo especificado. Válida somente para campos de dados não. <b>Objeto</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para fontes de dados OLAP, <paramref name="Index" /> só pode retornar ou ser definida como 1 (automático). A matriz retornada sempre contém <b>True</b> ou <b>False</b> para o primeiro elemento de matriz e contém <b>False</b> para todos os outros elementos. Uma matriz de valores de elemento que são todos <b>False</b> indica que não existem subtotais.</para>
-          <para />
-        </remarks>
+        <remarks>Fontes de dados de <para>para OLAP, <paramref name="Index" /> só pode retornar ou ser definida como 1 (automático). A matriz retornada sempre contém <b>True</b> ou <b>False</b> para o primeiro elemento de matriz e contém <b>False</b> para todos os outros elementos. Uma matriz de valores de elemento que são todos <b>False</b> indica que não existem subtotais.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TotalLevels">
@@ -3175,7 +3160,7 @@ Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Todos os campos em um conjunto de campos agrupados possuem o mesmo valor <b>TotalLevels</b> .</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3213,7 +3198,7 @@ Somente leitura.</summary>
           <para>Se <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> estiver definida como <b>True</b> para um <see cref="P:Microsoft.Office.Interop.Excel.PivotField" />, em seguida, <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> Especifica qual legenda de propriedade do membro a ser exibida. Se nenhum for especificado, a primeira propriedade do membro dessa <see cref="P:Microsoft.Office.Interop.Excel.PivotField" /> (na ordem da fonte de dados) serão exibidos como a legenda para itens do que <see cref="P:Microsoft.Office.Interop.Excel.PivotField" />.</para>
           <para>Se <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> estiver definida como <b>False</b>, então o regulares <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> legendas são usadas para o <see cref="P:Microsoft.Office.Interop.Excel.PivotField" />.</para>
           <para>Se você tentar definir <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> como <b>True</b> para um <see cref="P:Microsoft.Office.Interop.Excel.PivotField" /> sem propriedades membro, será retornado um erro de tempo de execução. Para <see cref="P:Microsoft.Office.Interop.Excel.PivotField" />s sem propriedades membro, a propriedade serão sempre ser <b>False</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3278,10 +3263,7 @@ Somente leitura.</summary>
           <b>Objeto</b>de opcional. O número ou o nome de um item a ser retornado (pode ser uma matriz para especificar mais de um item).</param>
         <summary>Retorna um objeto representando um único item de tabela dinâmica visível (um <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> objeto) ou uma coleção de todos os itens visíveis (um <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> objeto) no campo especificado. Somente leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para fontes de dados OLAP, essa propriedade é somente leitura e sempre retorna <b>True</b>. Não há nenhuma itens ocultos.</para>
-          <para />
-        </remarks>
+        <remarks>Fontes de <para>dados for OLAP, esta propriedade é somente leitura e sempre retorna <b>True</b>. Não existem itens ocultos.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleItemsList">
@@ -3316,7 +3298,7 @@ Somente leitura.</summary>
         </value>
         <remarks>
           <para>Essa propriedade é aplicável a OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />somente s.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

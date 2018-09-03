@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20574757" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ProtectedViewWindow" />
@@ -30,7 +30,7 @@
   </Attributes>
   <Docs>
     <summary>Representa uma janela de modo de exibição protegido.</summary>
-    <remarks>Janela de <para>um modo de exibição protegido é usada para exibir uma pasta de trabalho a partir de um local potencialmente não segura. Locais não seguros são definidos como o seguinte:</para><list type="number"><item><description>arquivos abertos da Internet.</description></item><item><description>Anexos abertos do Microsoft Outlook 2010.</description></item><item><description>Arquivos bloqueados pela diretiva de bloqueio de arquivo.</description></item><item><description>Arquivos não aprovados na validação de arquivo do Office.</description></item><item><description>Arquivos abertos explicitamente no modo de exibição protegido usando o comando Abrir no modo de exibição protegido do botão Abrir na caixa de diálogo Abrir.</description></item></list><para>Pastas de trabalho exibidas em uma janela de modo de exibição protegido não podem ser editadas e são impedidas de executar conteúdo ativo como o Visual Basic para aplicativos macros e conexões de dados.</para><para>Para retornar um único <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objeto do <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> conjunto, use protectedviewwindows (index), onde Index é o número de índice da janela que você deseja abrir. Você também pode acessar o <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> object que representa a janela ativa do modo de exibição protegido usando o <see cref="P:Microsoft.Office.Interop.Excel.Application.ActiveProtectedViewWindow" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</para><para>Após acessar um <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> do objeto, use o <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Workbook" /> propriedade para acessar o <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object que representa o arquivo de pasta de trabalho que está aberto na janela modo de exibição protegido. Como uma janela de modo de exibição protegido foi projetada para proteger o usuário contra códigos potencialmente maliciosos, as operações você pode executar usando um <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto retornado por uma <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objeto serão limitado. A maioria das operações que não são permitidos serão retornar "Erro de tempo de execução 1004: este comando não está disponível quando o Excel está em modo seguro."</para><para /></remarks>
+    <remarks>Janela de <para>um modo de exibição protegido é usada para exibir uma pasta de trabalho a partir de um local potencialmente não segura. Locais não seguros são definidos como o seguinte:</para><list type="number"><item><description>arquivos abertos da Internet.</description></item><item><description>Anexos abertos do Microsoft Outlook 2010.</description></item><item><description>Arquivos bloqueados pela diretiva de bloqueio de arquivo.</description></item><item><description>Arquivos não aprovados na validação de arquivo do Office.</description></item><item><description>Arquivos abertos explicitamente no modo de exibição protegido usando o comando Abrir no modo de exibição protegido do botão Abrir na caixa de diálogo Abrir.</description></item></list><para>Pastas de trabalho exibidas em uma janela de modo de exibição protegido não podem ser editadas e são impedidas de executar conteúdo ativo como o Visual Basic para aplicativos macros e conexões de dados.</para><para>Para retornar um único <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objeto do <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> conjunto, use protectedviewwindows (index), onde Index é o número de índice da janela que você deseja abrir. Você também pode acessar o <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> object que representa a janela ativa do modo de exibição protegido usando o <see cref="P:Microsoft.Office.Interop.Excel.Application.ActiveProtectedViewWindow" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</para><para>Após acessar um <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> do objeto, use o <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Workbook" /> propriedade para acessar o <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object que representa o arquivo de pasta de trabalho que está aberto na janela modo de exibição protegido. Como uma janela de modo de exibição protegido foi projetada para proteger o usuário contra códigos potencialmente maliciosos, as operações você pode executar usando um <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto retornado por uma <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objeto serão limitado. A maioria das operações que não são permitidos serão retornar "Erro de tempo de execução 1004: este comando não está disponível quando o Excel está em modo seguro."</para><para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -119,7 +119,7 @@
         <value>O nome que aparece na barra de título da janela do modo de exibição protegido.</value>
         <remarks>
           <para>Leitura/gravação.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -191,7 +191,7 @@
               <description>referências externas (links) serão atualizadas quando a pasta de trabalho é aberta.</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -226,7 +226,7 @@
           <b>true</b> se a janela do modo de exibição protegido pode ser redimensionada; Caso contrário, <b>false</b>.</value>
         <remarks>
           <para>Leitura/gravação.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -261,7 +261,7 @@
         <remarks>
           <para>Leitura/gravação.</para>
           <para>Não é possível definir essa propriedade se a janela de modo de exibição protegido é maximizada ou minimizada. Use o <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> propriedade para determinar o estado da janela.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -295,7 +295,7 @@
         <value>A distância, em pontos, da borda esquerda da área do cliente até a borda esquerda da janela do modo de exibição protegido.</value>
         <remarks>
           <para>Leitura/gravação.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -326,7 +326,7 @@
         <value>O nome do arquivo de origem que está aberto na janela de modo de exibição protegido especificada.</value>
         <remarks>
           <para>Somente leitura.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -358,7 +358,7 @@
         <remarks>
           <para>Somente leitura.</para>
           <para>o caminho não inclui um caractere precedente (por exemplo, "C:\MSOffice"). Use o <see cref="P:Microsoft.Office.Interop.Excel._Application.PathSeparator" /> propriedade para adicionar o caractere que separa pastas e letras de unidade. Use o <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.SourceName" /> do <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objeto para retornar o nome do arquivo de origem sem o caminho.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -393,7 +393,7 @@
         <remarks>
           <para>Leitura/gravação.</para>
           <para>Você não pode definir essa propriedade para uma janela maximizada do modo de exibição protegido. Use o <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> propriedade para retornar ou definir o estado da janela.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -428,7 +428,7 @@
           <b>true</b> se a janela de modo de exibição protegido especificada estiver visível; Caso contrário, <b>false</b>.</value>
         <remarks>
           <para>Leitura/gravação.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -463,7 +463,7 @@
         <remarks>
           <para>Leitura/gravação.</para>
           <para>Não é possível definir essa propriedade se a janela de modo de exibição protegido é maximizada ou minimizada. Use o <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> propriedade para determinar o estado da janela.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -497,7 +497,7 @@
         <value>O estado da janela de modo de exibição protegido especificada.</value>
         <remarks>
           <para>Leitura/gravação.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -529,7 +529,7 @@
         <remarks>
           <para>Somente leitura.</para>
           <para>Como uma janela de modo de exibição protegido foi projetada para proteger o usuário contra códigos potencialmente maliciosos, as operações você pode executar usando um <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto retornado pelo <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> método serão limitado. Qualquer operação que não é permitida retornará "Erro de tempo de execução 1004: este comando não está disponível quando o Excel está em modo seguro."</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

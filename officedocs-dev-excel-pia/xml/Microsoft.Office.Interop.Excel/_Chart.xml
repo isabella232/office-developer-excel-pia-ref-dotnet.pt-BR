@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20580322" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _Chart" />
@@ -386,8 +386,8 @@
         <param name="Filename">O nome de arquivo de um modelo de gráfico.</param>
         <summary>Aplica um tipo de gráfico personalizado ou padrão a um gráfico.</summary>
         <remarks>
-          <para>Este método não oferece suporte a constantes assumir para nativo ou combinação de gráficos.</para>
-          <para />
+          <para>Esse método não oferece suporte a constantes assumir para nativo ou combinação de gráficos.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -508,8 +508,8 @@
         <param name="ChartType">O tipo de gráfico.</param>
         <summary>Aplica os layouts mostrados na faixa de opções.</summary>
         <remarks>
-          <para>Quando você usa um layout no tipo de gráfico atual, um número de 1 a 10 é aplicado ao tipo de gráfico.  Você também pode aplicar o layout de um tipo de gráfico em outro tipo de gráfico.  Por exemplo, você pode aplicar os layouts que estão disponíveis a partir de um gráfico de linhas em um gráfico de colunas.  O layout apenas adiciona os elementos do gráfico que estão disponíveis para esse tipo de gráfico específico.</para>
-          <para />
+          <para>Quando você usa um layout em tipo de gráfico atual, um número de 1 a 10 é aplicado ao tipo de gráfico.  Você também pode aplicar o layout de um tipo de gráfico em outro tipo de gráfico.  Por exemplo, você pode aplicar os layouts que estão disponíveis a partir de um gráfico de linhas em um gráfico de colunas.  O layout apenas adiciona os elementos do gráfico que estão disponíveis para esse tipo de gráfico específico.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -913,8 +913,8 @@
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.XlCategoryLabelLevel" /> constante referindo-se ao nível de onde os rótulos de categoria estão sendo originados. <b>Inteiro</b> (<b>int</b> em c#) Leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se houver uma hierarquia, 0 refere-se ao máximo o nível pai, 1 refere-se ao seu filhos e assim por diante. Portanto, 0 é igual a primeiro nível, o segundo nível igual a-1, 2 é igual ao terceiro nível, e assim por diante.</para>
-          <para />
+          <para>Se não houver uma hierarquia, 0 se refere ao máximo o nível pai, 1 refere-se ao seu filhos e assim por diante. Portanto, 0 é igual a primeiro nível, o segundo nível igual a-1, 2 é igual ao terceiro nível, e assim por diante.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1043,7 +1043,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Esse método não é equivalente ao <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> propriedade. Esse método retorna gráficos incorporados; a propriedade <b>Charts</b> retorna folhas de gráfico. Use o <see cref="P:Microsoft.Office.Interop.Excel.ChartObject.Chart" /> propriedade para retornar o objeto de <b>gráfico</b> para um gráfico incorporado.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1079,7 +1079,7 @@
         </value>
         <remarks>
           <para>Você pode usar um número de 1 a 48 para definir o estilo do gráfico.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1144,7 +1144,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Alguns tipos de gráfico não estão disponíveis para relatórios de gráfico dinâmico.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1207,7 +1207,7 @@
         <summary>Modifica as propriedades do gráfico especificado. Você pode usar esse método para formatar rapidamente um gráfico sem definir todas as propriedades individuais. Esse método não é interativo, e ele altera apenas as propriedades especificadas.</summary>
         <remarks>
           <para>Se <paramref name="Source" /> for omitido e a seleção não for um gráfico incorporado na planilha ativa ou a planilha ativa não for um gráfico existente, este método falhará e ocorrerá um erro.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1309,7 +1309,7 @@
         <summary>Limpa todas as cores que não seguem o estilo de cor aplicado ao gráfico no gráfico especificado.</summary>
         <remarks>
           <para>Use esse método para redefinir todos os a cor do gráfico formatação como o estilo de cor aplicado ao gráfico.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1335,10 +1335,7 @@
       <Parameters />
       <Docs>
         <summary>Limpa a formatação dos elementos gráficos para automático.</summary>
-        <remarks>
-          <para>Use esse método para redefinir os formatação para automático dos elementos gráficos.    Se você usar esse método em um gráfico, toda a formatação (incluindo substituições) serão redefinidas.</para>
-          <para />
-        </remarks>
+        <remarks>Use este método para redefinir os formatação para automático dos elementos gráficos do <para>.    Se você usar esse método em um gráfico, toda a formatação (incluindo substituições) serão redefinidas.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CodeName">
@@ -1367,7 +1364,7 @@
         <summary>Retorna o nome de código para o objeto.</summary>
         <value>To be added.</value>
         <remarks>O valor que você vê na célula à direita do (Name) na janela Propriedades do <para>é o nome de código do objeto selecionado. Em tempo de design, você pode alterar o nome de código de um objeto alterando este valor. Você não pode alterar essa propriedade programaticamente em tempo de execução.</para> O nome de código para um objeto de 
-          <para>pode ser usado no lugar de uma expressão que retorna o objeto. É possível que o nome da planilha seja diferente do nome de código. Quando você cria uma planilha, o nome da planilha e o nome de código são os mesmos, mas alterar o nome da planilha não altera o nome de código e a alteração do nome de código não altera o nome da planilha.</para><para /></remarks>
+          <para>pode ser usado no lugar de uma expressão que retorna o objeto. É possível que o nome da planilha seja diferente do nome de código. Quando você cria uma planilha, o nome da planilha e o nome de código são os mesmos, mas alterar o nome da planilha não altera o nome de código e a alteração do nome de código não altera o nome da planilha.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Column3DGroup">
@@ -1472,7 +1469,7 @@
         <summary>Copia a planilha para outro local na pasta de trabalho.</summary>
         <remarks>
           <para>Se você não especificar um <paramref name="Before" /> ou <paramref name="After" />, o Microsoft Excel criará uma nova pasta de trabalho contendo a planilha copiada.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1644,10 +1641,7 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
-        <remarks>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para />
-        </remarks>
+        <remarks>Propriedade <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataTable">
@@ -1976,9 +1970,9 @@
         <remarks>
           <para>Essa distância é medida da parte superior da caixa de texto, a menos que a propriedade <b>AutoAttach</b> esteja definida como <b>True</b> e a caixa de texto estiver à esquerda da origem da linha do texto explicativo (o lugar para que o texto explicativo aponta), nesse caso, a distância de posicionamento é medido do t inferior s da caixa de texto. </para>
           <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> método para definir o valor dessa propriedade.</para>
-          <para />
+          <para></para>
           <para>o valor dessa propriedade reflete com precisão a posição do anexo de linha do texto explicativo à caixa de texto somente se o texto explicativo tiver explicitamente definido drop valor — ou seja, se o valor do <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /> é <b>conectada</b>.</para>
-          <para />
+          <para></para>
         </remarks>
         <example>
           <para>Este exemplo substitui o posicionamento personalizado da forma um em myDocument com uma de duas colocações personalizadas, dependendo se o valor de posicionamento personalizado é maior ou menor que metade da altura da caixa de texto explicativo. Por exemplo funcione, a forma um deve ser um texto explicativo.</para>
@@ -2253,8 +2247,8 @@ With myDocument.Shapes(1).Callout
         <summary>Retorna ou define a elevação do modo de exibição gráfico 3D em graus.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>A elevação do gráfico é a altura na qual você visualiza o gráfico em graus. O padrão é 15 para a maioria dos tipos de gráfico. O valor dessa propriedade deve estar entre -90 e 90, exceto para gráficos de barras 3D, onde ele deve estar entre 0 e 44.</para>
-          <para />
+          <para>a elevação do gráfico é a altura na qual você visualiza o gráfico em graus. O padrão é 15 para a maioria dos tipos de gráfico. O valor dessa propriedade deve estar entre -90 e 90, exceto para gráficos de barras 3D, onde ele deve estar entre 0 e 44.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2370,8 +2364,8 @@ With myDocument.Shapes(1).Callout
         <param name="FixedFormatExtClassPtr">Ponteiro para a classe FixedFormatExt.</param>
         <summary>Exporta para um arquivo do formato especificado.</summary>
         <remarks>
-          <para>Este método também oferece suporte ao inicializar um suplemento para exportar um arquivo para um arquivo de formato fixo. Por exemplo, o Excel executará conversão de formato de arquivo se os conversores estão presentes. Geralmente, a conversão é iniciada pelo usuário.</para>
-          <para />
+          <para>Este método também oferece suporte ao inicializar um suplemento para exportar um arquivo para um arquivo de formato fixo. Por exemplo, o Excel executará conversão de formato de arquivo se os conversores estão presentes. A conversão geralmente é iniciada pelo usuário.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2435,9 +2429,9 @@ With myDocument.Shapes(1).Callout
         <summary>Permite recuperar o filtrada check-out da série especificada pelo argumento Index.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Objetos de 
-            <b>série</b> em linhas ou colunas ocultas não aparecem na coleção de séries atual, a menos que o usuário tiver habilitado a opção <b>Mostrar dados em linhas e colunas ocultas</b> na caixa de diálogo Selecionar dados.</para>
-          <para />
+          <para>Objetos 
+            <b>series</b> em linhas ou colunas ocultas não aparecem na coleção de séries atual, a menos que o usuário tiver habilitado a opção <b>Mostrar dados em linhas e colunas ocultas</b> na caixa de diálogo Select Data.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2776,7 +2770,7 @@ With myDocument.Shapes(1).Callout
               <description>Especifica o deslocamento dentro do <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> coleção para uma linha de tendência específica dentro de uma série.</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2891,8 +2885,8 @@ With myDocument.Shapes(1).Callout
         <summary>Retorna ou define quais eixos existem no gráfico.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>O Microsoft Excel pode criar ou excluir eixos se você alterar o tipo de gráfico ou a <see cref="P:Microsoft.Office.Interop.Excel.Axis.AxisGroup" /> propriedade.</para>
-          <para />
+          <para>Microsoft Excel pode criar ou excluir eixos se você alterar o tipo de gráfico ou a <see cref="P:Microsoft.Office.Interop.Excel.Axis.AxisGroup" /> propriedade.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3073,7 +3067,7 @@ With myDocument.Shapes(1).Callout
         <remarks>
           <para>Título de um eixo é representado por um <see cref="T:Microsoft.Office.Interop.Excel.AxisTitle" /> objeto.</para>
           <para>Um título de gráfico é representado por um <see cref="T:Microsoft.Office.Interop.Excel.ChartTitle" /> objeto.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3373,8 +3367,8 @@ With myDocument.Shapes(1).Callout
         <summary>Retorna ou define as entradas de texto da caixa de listagem especificada ou de uma caixa de combinação, como uma matriz de cadeia de caracteres, ou retorna ou define uma única entrada de texto. Ocorre um erro quando não há entradas na lista.</summary>
         <returns>Variant</returns>
         <remarks>
-          <para>A definição dessa propriedade limpa qualquer intervalo especificado pelo <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> propriedade.</para>
-          <para />
+          <para>a definição dessa propriedade limpa qualquer intervalo especificado pelo <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> propriedade.</para>
+          <para></para>
         </remarks>
         <example>
           <para>Este exemplo define as entradas em uma caixa de listagem na planilha um. Se Shapes(2) não representar uma caixa de listagem, este exemplo falhará.</para>
@@ -3499,7 +3493,7 @@ With myDocument.Shapes(1).Callout
         <summary>Move a planilha para outro lugar na pasta de trabalho.</summary>
         <remarks>
           <para>Se você não especificar um <paramref name="Before" /> ou <paramref name="After" />, o Microsoft Excel criará uma nova pasta de trabalho contendo a planilha movida.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3876,8 +3870,8 @@ With myDocument.Shapes(1).Callout
           <b>Objeto</b>de opcional. Especifica as informações de gráfico a serem coladas se um gráfico estiver na Área de Transferência. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlPasteType" /> constantes: <b>xlFormats</b>, <b>xlFormulas</b>ou <b>xlAll</b>. O valor padrão é <b>xlAll</b>. Se não houver dados que não seja um gráfico da área de transferência, esse argumento não pode ser usado.</param>
         <summary>Cola dados de gráfico da Área de Transferência para o gráfico especificado.</summary>
         <remarks>
-          <para>Este método altera a seleção atual.</para>
-          <para />
+          <para>Esse método transformará a seleção atual.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4048,7 +4042,7 @@ With myDocument.Shapes(1).Callout
         <value>To be added.</value>
         <remarks>
           <para>Se o gráfico especificado não for um relatório de gráfico dinâmico, o valor dessa propriedade não é <b>nada</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4208,7 +4202,7 @@ With myDocument.Shapes(1).Callout
         <remarks>
           <para>Somente leitura.</para>
           <para>Porque gráficos e planilhas de gráfico não suportam comentários, o <see cref="P:Microsoft.Office.Interop.Excel._Chart.PrintedCommentPages" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel._Chart" /> objeto sempre retornará zero.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4266,7 +4260,7 @@ With myDocument.Shapes(1).Callout
         <summary>Imprime o objeto.</summary>
         <remarks>
           <para>"Páginas" nas descrições de <paramref name="From" /> e <paramref name="To" /> se refere a páginas impressas — não a páginas gerais na planilha ou pasta de trabalho.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4382,10 +4376,7 @@ With myDocument.Shapes(1).Callout
         <param name="UserInterfaceOnly">
           <b>Objeto</b>de opcional. <b>True</b> para proteger a interface de usuário, mas não as macros. Se esse argumento for omitido, a proteção aplica-se tanto a macros quanto à interface do usuário.</param>
         <summary>Protege um gráfico contra modificação.</summary>
-        <remarks>
-          <para>Use senhas fortes que combinam maiusculas e minúsculas, números e símbolos. Senhas fracas não misturam esses elementos. Senha forte: Y6dh! et5. Senha fraca: House27. Use uma senha forte que você possa lembrar para que você não tenha anotá-la.</para>
-          <para />
-        </remarks>
+        <remarks>Senhas <para>uso forte que combinam maiusculas e minúsculas, números e símbolos. Senhas fracas não misturam esses elementos. Senha forte: Y6dh! et5. Senha fraca: House27. Use uma senha forte que você possa lembrar para que você não tenha anotá-la.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ProtectContents">
@@ -4514,8 +4505,8 @@ With myDocument.Shapes(1).Callout
           <b>True</b> se a formatação do gráfico não pode ser modificada pelo usuário.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Quando essa propriedade for <b>True</b>, o comando objeto no menu Formatar está desabilitado e os elementos do gráfico não podem ser adicionados, movidos, redimensionados ou excluídos.</para>
-          <para />
+          <para>Quando essa propriedade é <b>True</b>, o comando objeto no menu Formatar está desativado e elementos do gráfico não podem ser adicionados, movidos, redimensionados ou excluídos.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4620,7 +4611,7 @@ With myDocument.Shapes(1).Callout
         <value>To be added.</value>
         <remarks>
           <para>Quando essa propriedade for <b>True</b>, as formas não podem ser adicionadas ao gráfico e os eventos Click e DoubleClick para elementos de gráfico não ocorrem.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4755,7 +4746,7 @@ With myDocument.Shapes(1).Callout
         <value>To be added.</value>
         <remarks>
           <para>Se essa propriedade for <b>True</b>, o <see cref="P:Microsoft.Office.Interop.Excel._Chart.Perspective" /> propriedade será ignorada.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4877,8 +4868,8 @@ With myDocument.Shapes(1).Callout
         <param name="Filename">O nome do modelo de gráfico.</param>
         <summary>Salva um modelo de gráfico personalizado na lista de modelos de gráficos disponíveis.</summary>
         <remarks>
-          <para>Por padrão, esse método salva o gráfico ativo para o diretório de modelo de gráfico do usuário.  Se um caminho UNC ou URL for especificado, o gráfico serão salvas no local especificado em vez disso.</para>
-          <para />
+          <para>Por padrão, esse método salva o gráfico ativo para o diretório de modelo de gráfico do usuário.  Se um caminho UNC ou URL for especificado, o gráfico serão salvas no local especificado em vez disso. </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5139,10 +5130,10 @@ With myDocument.Shapes(1).Callout
               <description>Botões PlotArea, Chart Wall e base do gráfico.</description>
             </item>
           </list>
-          <para />
+          <para></para>
           <para>
             <b>MsoChartElementType</b> é uma enumeração de constantes que se referem a todos os comandos acima.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5235,7 +5226,7 @@ With myDocument.Shapes(1).Callout
           <b>true</b> se todos os botões em um gráfico dinâmico de campo devem ser exibidos; Caso contrário, <b>false</b>.</value>
         <remarks>
           <para>Leitura/gravação.</para> Conjunto de 
-          <para>o <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAllFieldButtons" /> propriedade como <b>true</b> para exibir todos os botões de campos na tabela dinâmica especificada. Defina a propriedade como <b>false</b> para ocultar todos os botões de campos.</para><para>o <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAllFieldButtons" /> propriedade corresponde ao comando Ocultar tudo na lista suspensa botões de campos da guia analisar, que está disponível quando um gráfico dinâmico é selecionado.</para><para /></remarks>
+          <para>o <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAllFieldButtons" /> propriedade como <b>true</b> para exibir todos os botões de campos na tabela dinâmica especificada. Defina a propriedade como <b>false</b> para ocultar todos os botões de campos.</para><para>o <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAllFieldButtons" /> propriedade corresponde ao comando Ocultar tudo na lista suspensa botões de campos da guia analisar, que está disponível quando um gráfico dinâmico é selecionado.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowAxisFieldButtons">
@@ -5269,7 +5260,7 @@ With myDocument.Shapes(1).Callout
           <b>true</b> se botões de campo de eixo em um gráfico dinâmico deve ser exibido; Caso contrário, <b>false</b>.</value>
         <remarks>
           <para>Leitura/gravação.</para> Conjunto de 
-          <para>o <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAxisFieldButtons" /> propriedade como <b>true</b> para exibir os botões de campos de eixo na tabela dinâmica especificada. Defina a propriedade como <b>false</b> para ocultar os botões.</para><para>o <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAxisFieldButtons" /> propriedade corresponde ao comando Mostrar botões de campos de eixo na lista suspensa botões de campos da guia analisar, que está disponível quando um gráfico dinâmico é selecionado.</para><para /></remarks>
+          <para>o <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAxisFieldButtons" /> propriedade como <b>true</b> para exibir os botões de campos de eixo na tabela dinâmica especificada. Defina a propriedade como <b>false</b> para ocultar os botões.</para><para>o <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAxisFieldButtons" /> propriedade corresponde ao comando Mostrar botões de campos de eixo na lista suspensa botões de campos da guia analisar, que está disponível quando um gráfico dinâmico é selecionado.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowDataLabelsOverMaximum">
@@ -5304,7 +5295,7 @@ With myDocument.Shapes(1).Callout
         </value>
         <remarks>
           <para>Se você alterar o eixo dos valores de tal forma que se tornou menor que o tamanho dos pontos de dados, você pode usar essa propriedade para definir se deve mostrar os rótulos de dados. Essa propriedade se aplica somente a gráficos 2D.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5339,7 +5330,7 @@ With myDocument.Shapes(1).Callout
           <b>true</b> se o campo legenda botões em um gráfico dinâmico deve ser exibido; Caso contrário, <b>false</b>.</value>
         <remarks>
           <para>Leitura/gravação.</para> Conjunto de 
-          <para>o <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowLegendFieldButtons" /> propriedade como <b>true</b> para exibir os botões de campos de legenda na tabela dinâmica especificada. Defina a propriedade como <b>false</b> para ocultar os botões.</para><para>o <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowLegendFieldButtons" /> propriedade corresponde ao comando Mostrar botões de campos de legenda na lista suspensa botões de campos da guia analisar, que está disponível quando um gráfico dinâmico é selecionado.</para><para /></remarks>
+          <para>o <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowLegendFieldButtons" /> propriedade como <b>true</b> para exibir os botões de campos de legenda na tabela dinâmica especificada. Defina a propriedade como <b>false</b> para ocultar os botões.</para><para>o <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowLegendFieldButtons" /> propriedade corresponde ao comando Mostrar botões de campos de legenda na lista suspensa botões de campos da guia analisar, que está disponível quando um gráfico dinâmico é selecionado.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowReportFilterFieldButtons">
@@ -5373,7 +5364,7 @@ With myDocument.Shapes(1).Callout
           <b>true</b> se o campo de filtro de relatório botões em um gráfico dinâmico deve ser exibido; Caso contrário, <b>false</b>.</value>
         <remarks>
           <para>Leitura/gravação.</para> Conjunto de 
-          <para>o <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowReportFilterFieldButtons" /> propriedade como <b>true</b> para exibir os botões de campo de filtro de relatório na tabela dinâmica especificada. Defina a propriedade como <b>false</b> para ocultar os botões.</para><para>o <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowReportFilterFieldButtons" /> propriedade corresponde ao comando Mostrar botões de campos de filtro de relatório na lista suspensa botões de campos da guia analisar, que está disponível quando um gráfico dinâmico é selecionado.</para><para /></remarks>
+          <para>o <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowReportFilterFieldButtons" /> propriedade como <b>true</b> para exibir os botões de campo de filtro de relatório na tabela dinâmica especificada. Defina a propriedade como <b>false</b> para ocultar os botões.</para><para>o <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowReportFilterFieldButtons" /> propriedade corresponde ao comando Mostrar botões de campos de filtro de relatório na lista suspensa botões de campos da guia analisar, que está disponível quando um gráfico dinâmico é selecionado.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowValueFieldButtons">
@@ -5407,7 +5398,7 @@ With myDocument.Shapes(1).Callout
           <b>true</b> se o campo de valor botões em um gráfico dinâmico deve ser exibido; Caso contrário, <b>false</b>.</value>
         <remarks>
           <para>Leitura/gravação.</para> Conjunto de 
-          <para>o <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowValueFieldButtons" /> propriedade como <b>true</b> para exibir os botões de campo de valor na tabela dinâmica especificada. Defina a propriedade como <b>false</b> para ocultar botão.</para><para>o <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowValueFieldButtons" /> propriedade corresponde ao comando Mostrar botões de campos de valor na lista suspensa botões de campos da guia analisar, que está disponível quando um gráfico dinâmico é selecionado.</para><para /></remarks>
+          <para>o <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowValueFieldButtons" /> propriedade como <b>true</b> para exibir os botões de campo de valor na tabela dinâmica especificada. Defina a propriedade como <b>false</b> para ocultar botão.</para><para>o <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowValueFieldButtons" /> propriedade corresponde ao comando Mostrar botões de campos de valor na lista suspensa botões de campos da guia analisar, que está disponível quando um gráfico dinâmico é selecionado.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowWindow">
@@ -5767,8 +5758,8 @@ With myDocument.Shapes(1).Callout
           <b>Objeto</b>de opcional. Uma string que indica a senha diferencia maiusculas de minúsculas usar para unprotect a planilha ou pasta de trabalho. Se a planilha ou pasta de trabalho não está protegida por senha, esse argumento será ignorado. Se você omitir esse argumento para uma planilha protegida com uma senha, você será solicitado para a senha. Se você omitir esse argumento para uma pasta de trabalho for protegida por uma senha, o método falhará.</param>
         <summary>Remove a proteção de uma planilha ou de uma pasta de trabalho. Esse método não terá efeito caso a planilha ou a pasta de trabalho não esteja protegida.</summary>
         <remarks>
-          <para>Se você esquecer a senha, você não pode unprotect a planilha ou pasta de trabalho. É recomendável manter uma lista de suas senhas e seus respectivos nomes de documentos em um local seguro.</para>
-          <para />
+          <para>Se você esquecer a senha, você não pode ser unprotect a planilha ou pasta de trabalho. É uma boa ideia manter uma lista de suas senhas e seus respectivos nomes de documentos em um local seguro.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5839,7 +5830,7 @@ With myDocument.Shapes(1).Callout
         <value>To be added.</value>
         <remarks>
           <para>Essa propriedade não se aplica a gráficos de pizza 3D.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

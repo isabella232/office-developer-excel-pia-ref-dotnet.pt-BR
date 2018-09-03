@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20580238" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AppEvents_Event" />
@@ -53,7 +53,7 @@
           <para>Esse evento ocorre sempre que o cálculo é concluído e não existem consultas pendentes.  É obrigatório para ambas as condições sejam atendidas antes que o evento ocorre.  O evento pode ser gerado, mesmo quando houver nenhum dado de planilha na pasta de trabalho, como sempre que o cálculo é concluída para a pasta de trabalho inteira e não existem consultas em execução.  </para>
           <para>Os desenvolvedores de suplemento usam o <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> evento saber quando todos os dados na pasta de trabalho foram completamente atualizados por quaisquer consultas e/ou cálculos que podem ter sido em andamento.</para>
           <para>Esse evento ocorre depois que todos os <see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Calculate" />, <see cref="E:Microsoft.Office.Interop.Excel.RefreshEvents_Event.AfterRefresh" />, e <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetChange" /> eventos.  É o último evento ocorra após concluíram todo o processamento de atualização e todo o processamento de calc, e ocorre após<see cref="P:Microsoft.Office.Interop.Excel._Application.CalculationState" /> estiver definida como <see cref="F:Microsoft.Office.Interop.Excel.XlCalculationState.xlDone" />.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -246,7 +246,7 @@
         <summary>Ocorre quando uma planilha é clicada duas vezes, antes da ação padrão de clique duplo.</summary>
         <remarks>
           <para>Esse evento não ocorre em planilhas de gráfico.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -268,7 +268,7 @@
         <summary>Ocorre quando uma planilha é clicada com o botão direito, antes da ação padrão de clique com o botão direito.</summary>
         <remarks>
           <para>Esse evento não ocorre em planilhas de gráfico.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -309,7 +309,7 @@
         <summary>Ocorre quando células de uma planilha são alteradas pelo usuário ou por um vínculo externo.</summary>
         <remarks>
           <para>Esse evento não ocorre em planilhas de gráfico.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -350,7 +350,7 @@
         <summary>Ocorre quando você clica em qualquer hiperlink no Microsoft Excel.</summary>
         <remarks>
           <para>Para eventos de nível de planilha, consulte o <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.FollowHyperlink" /> evento.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -390,8 +390,8 @@
       <Docs>
         <summary>Ocorre depois que uma célula ou intervalo de células dentro de uma Tabela Dinâmica é editado ou recalculado (para células que contêm fórmulas).</summary>
         <remarks>
-          <para>O <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableAfterValueChange" /> evento não ocorre sob quaisquer condições que não seja de edição ou recalcular células. Por exemplo, ele não ocorrerá quando a tabela dinâmica é atualizada, classificada, filtrada ou aprofundada, embora essas operações mover células e potencialmente recuperam novos valores da fonte de dados OLAP.</para>
-          <para />
+          <para>o <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableAfterValueChange" /> evento não ocorre sob quaisquer condições que não seja de edição ou recalcular células. Por exemplo, ele não ocorrerá quando a tabela dinâmica é atualizada, classificada, filtrada ou aprofundada, embora essas operações mover células e potencialmente recuperam novos valores da fonte de dados OLAP.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -412,8 +412,8 @@
       <Docs>
         <summary>Ocorre antes que as alterações sejam aplicadas a uma Tabela Dinâmica.</summary>
         <remarks>
-          <para>O <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeAllocateChanges" /> evento ocorre imediatamente antes do Excel executa uma instrução UPDATE cubo para aplicar todas as alterações à fonte de dados OLAP da tabela dinâmica e imediatamente após o usuário ter optado aplicar as alterações na interface do usuário.</para>
-          <para />
+          <para>o <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeAllocateChanges" /> evento ocorre imediatamente antes do Excel executa uma instrução UPDATE cubo para aplicar todas as alterações à fonte de dados OLAP da tabela dinâmica e imediatamente após o usuário ter optado aplicar as alterações na interface do usuário.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -434,8 +434,8 @@
       <Docs>
         <summary>Ocorre antes que as alterações sejam confirmadas com base em uma fonte de dados OLAP de uma Tabela Dinâmica.</summary>
         <remarks>
-          <para>O <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeCommitChanges" /> evento ocorre imediatamente antes que o Excel executa uma COMMIT TRANSACTION em relação a fonte de dados OLAP da tabela dinâmica e imediatamente após o usuário ter optado por salvar as alterações para a tabela dinâmica inteira.</para>
-          <para />
+          <para>o <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeCommitChanges" /> evento ocorre imediatamente antes que o Excel executa uma COMMIT TRANSACTION em relação a fonte de dados OLAP da tabela dinâmica e imediatamente após o usuário ter optado por salvar as alterações para a tabela dinâmica inteira.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -456,8 +456,8 @@
       <Docs>
         <summary>Ocorre antes que as alterações em uma tabela dinâmica sejam descartadas.</summary>
         <remarks>
-          <para>Ocorre imediatamente antes que o Excel executar uma instrução de transação de REVERSÃO em relação a fonte de dados OLAP, se uma transação ainda está ativa e, em seguida, descarta todos os valores editados na tabela dinâmica, após o usuário ter optado descartar as alterações.</para>
-          <para />
+          <para>Ocorre imediatamente antes do Excel executa uma instrução de transação de REVERSÃO em relação a fonte de dados OLAP, se uma transação ainda está ativa e, em seguida, descarta todos os valores editados na tabela dinâmica, após o usuário ter optado descartar as alterações.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -670,7 +670,7 @@
         <remarks>
           <para>Use o evento <b>AfterXmlExport</b> se quiser realizar uma operação após os dados XML terem sido exportados de uma pasta de trabalho específica.</para>
           <para>Recursos XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -693,7 +693,7 @@
         <remarks>
           <para>Use o evento <b>AfterXmlImport</b> se quiser realizar uma operação após os dados XML terem sido importados em uma pasta de trabalho específica.</para>
           <para>Recursos XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -773,7 +773,7 @@
         <remarks>
           <para>Use o evento <b>BeforeXmlExport</b> se quiser capturar dados XML que estão sendo exportados ou salvos a partir de uma pasta de trabalho específica.</para>
           <para>Recursos XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -796,7 +796,7 @@
         <remarks>
           <para>Use o evento <b>BeforeXmlImport</b> se quiser capturar dados XML que está sendo importado ou atualizada para uma pasta de trabalho específica.</para>
           <para>Recursos XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -857,7 +857,7 @@
         <remarks>
           <para>O <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> evento ocorre quando um novo gráfico será inserido ou colado em uma planilha, uma planilha de gráfico ou outros tipos de planilha. Se vários gráficos são inseridos ou colados, o evento ocorrerá para cada gráfico na ordem que eles são inseridos ou colados. Se um objeto chart ou a planilha de gráfico é movida de um local para outro, o evento não ocorrerá. No entanto, se o gráfico é movido entre um objeto de gráfico e uma planilha de gráfico, o evento ocorrerá porque um novo gráfico deve ser criado.</para>
           <para>o <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> evento não ocorrerá nos seguintes cenários: copiar ou colar uma planilha de gráfico, alterando a um tipo de gráfico, alterando a uma fonte de dados do gráfico, desfazer ou Refazer Inserir ou colar um gráfico e carregamento de uma pasta de trabalho que contém um quadro.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -954,8 +954,8 @@
       <Docs>
         <summary>O <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookRowsetComplete" />evento ocorre quando o usuário analisa o conjunto de registros ou invoca a ação do conjunto de linhas em uma tabela dinâmica OLAP.</summary>
         <remarks>
-          <para>Como o recordset é criado de maneira assíncrona, o evento permite a automação determinar quando a ação tiver sido concluída. Além disso, como o conjunto de registros é criado em uma planilha separada, o evento deve estar no nível de pasta de trabalho.</para>
-          <para />
+          <para>Como o recordset é criado de maneira assíncrona, o evento permite a automação determinar quando a ação foi concluída. Além disso, como o conjunto de registros é criado em uma planilha separada, o evento deve estar no nível de pasta de trabalho.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

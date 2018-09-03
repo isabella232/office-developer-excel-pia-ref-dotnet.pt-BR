@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20574722" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotCell" />
@@ -34,7 +34,7 @@
       <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.Range.PivotCell" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Range" /> coleção, para retornar um objeto <b>PivotCell</b> .</para>
       <para>Depois que um objeto <b>PivotCell</b> é retornado, você pode usar o <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.PivotCellType" /> propriedade para determinar que tipo de célula um intervalo específico de ilhas</para>
       <para>Você pode usar o <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" /> ou <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" /> propriedade para determinar a <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> coleção que corresponde aos itens no eixo de linha ou coluna que representa o número selecionado.</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -63,7 +63,7 @@
         <remarks>
           <para>Esse método executa uma instrução UPDATE cubo para adicionar apenas a alteração dessa célula específica, mas também inclui qualquer anteriores alterações aplicadas. Depois que a instrução UPDATE cubo é executada, uma atualização de tabela dinâmica é executada e, em seguida, uma instrução de transação de REVERSÃO é executada.</para>
           <para>Executando o <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.AllocateChange" /> método para uma célula em um relatório de tabela dinâmica com base em uma fonte de dados não OLAP gera um erro em tempo de execução.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -186,7 +186,7 @@
               <description>Definido como <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> para todas as células com uma fórmula de editado.</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -245,7 +245,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para /></remarks>
+          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomSubtotalFunction">
@@ -313,7 +313,7 @@
             <b>xlVarP</b>
           </para>
           <para>a propriedade <b>CustomSubtotalFunction</b> retornará um erro se o tipo de objeto <b>PivotCell</b> não for um subtotal personalizado. Essa propriedade só se aplica a fonte de dados não-OLAP.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -344,7 +344,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Esta propriedade retornará um erro se o objeto <b>PivotCell</b> não for um dos tipos permitidos: <b>XlPivotCellTypeValue</b>, <b>XlPivotCellTypeDataField</b>, <b>XlPivotCellTypeSubtotal</b>ou <b>XlPivotCellTypeGrandTotal</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -377,7 +377,7 @@
           <para>Somente leitura.</para>
           <para>Sempre que uma célula na área de valores de um relatório de tabela dinâmica é editada, o <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> propriedade acomodará o valor que foi recuperado última da fonte de dados antes de edição foi realizada. Para o relatório valor células de tabela dinâmica que não foram editados ou para o qual o valor da fonte de dados não foi explicitamente recuperado, essa propriedade retornará uma referência null (Nothing no Visual Basic). Relatórios de tabelas dinâmicas com fontes de dados OLAP, o valor do <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> propriedade é recuperada de uma conexão separada para garantir que ele não contiver o valor de qualquer operação de write-back que o usuário pode ter feito.</para>
           <para>Lendo o <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> propriedade para células que estão fora da área de valores de um relatório de tabela dinâmica gera um erro em tempo de execução.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -405,7 +405,7 @@
         <summary>Descarta as alterações feitas na célula especificada de um relatório de Tabela Dinâmica.</summary>
         <remarks>
           <para>Para uma célula em uma tabela dinâmica com base em uma fonte de dados OLAP, o <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" /> método Remove o valor ou fórmula inserida na célula especificada e, em seguida, executa uma atualização de tabela dinâmica para recuperar o valor mais recente da fonte de dados. O valor da fonte de dados será ser definido como uma referência nula (Nothing no Visual Basic) por este método para a célula especificada. O método também remove todas as alterações feitas nesta célula da lista de alteração do Excel para que ela não é mais será incluída na declaração de cubo de atualização para a fonte de dados. Este método também recria o estado da sessão para todas as outras alterações feitas na transação. Isso inclui uma instrução ROLLBACK TRANSACTION executá-lo e, em seguida, executar uma instrução UPDATE cubo com todas as alterações, exceto para a célula especificada. Para uma célula em uma tabela dinâmica com base em uma fonte de dados não-OLAP, este método simplesmente limpa a célula editada.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -467,7 +467,7 @@
         <value>Uma coleção de itens que fornece as coordenadas MDX completos da célula valor especificado na tabela dinâmica com uma fonte de dados OLAP.</value>
         <remarks>
           <para>Somente leitura.</para> As dimensões de 
-          <para>retornados na tupla pelo <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.MDX" /> propriedade incluem as coordenadas de linha e coluna, bem como as coordenadas de filtro de relatório. Para células fora da área de valores da tabela dinâmica e fora de uma tabela dinâmica, acessar essa propriedade irá gerar um erro em tempo de execução. Para tabelas dinâmicas com a seleção de vários itens em um campo de filtro de relatório, acessar essa propriedade também gerará um erro em tempo de execução.</para><para /></remarks>
+          <para>retornados na tupla pelo <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.MDX" /> propriedade incluem as coordenadas de linha e coluna, bem como as coordenadas de filtro de relatório. Para células fora da área de valores da tabela dinâmica e fora de uma tabela dinâmica, acessar essa propriedade irá gerar um erro em tempo de execução. Para tabelas dinâmicas com a seleção de vários itens em um campo de filtro de relatório, acessar essa propriedade também gerará um erro em tempo de execução.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -546,7 +546,7 @@
             <b>xlPivotCellSubtotal</b> uma célula na área de linha ou coluna que é um subtotal.</para>
           <para>
             <b>xlPivotCellValue</b> qualquer célula na área de dados (exceto uma linha em branco).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -581,7 +581,7 @@
           <para>Se <b>PivotCell</b> estiver em linhas, a propriedade <b>PivotColumnLine</b> retornará um erro em tempo de execução.</para>
           <para>Se <b>PivotCell</b> estiver em colunas, a propriedade <b>PivotColumnLine</b> retornará o objeto <b>PivotLine</b> da coluna.</para>
           <para>Se <b>PivotCell</b> estiver na área de dados, a propriedade <b>PivotColumnLine</b> retornará o objeto <b>PivotLine</b> da coluna correspondente.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -672,7 +672,7 @@
           <para>Se <b>PivotCell</b> estiver em linhas, <b>PivotRowLine</b> retornará o objeto <b>PivotLine</b> da linha.</para>
           <para>Se <b>PivotCell</b> estiver em colunas, <b>PivotRowLine</b> retornará um erro em tempo de execução.</para>
           <para>Se <b>PivotCell</b> estiver na área de dados, <b>PivotRowLine</b> retornará o objeto <b>PivotLine</b> da linha de correspondente.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -787,7 +787,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Uma ação de servidor é um recurso opcional que um administrador de cubo OLAP pode definir em um servidor que usa um cubo membro ou medida como um parâmetro em uma consulta para obter detalhes no cubo.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
