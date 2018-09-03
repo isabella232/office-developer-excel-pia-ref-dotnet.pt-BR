@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20584144" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AddIn" />
@@ -38,7 +38,7 @@
       <para>o <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> método adiciona um suplemento à lista de suplementos disponíveis, mas não instala o suplemento do <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> propriedade do add-in como <b>True</b> para instalar o suplemento. Para instalar um suplemento que não aparece na lista de suplementos disponíveis, você deve primeiro usar o método <b>Add</b> e, em seguida, defina a propriedade <b>Installed</b> . Isso pode ser feito em uma única etapa</para>
       <para>usar <b>pastas de trabalho</b>(<paramref name="index" />) onde <paramref name="index" /> é o filename suplemento (não seu título) para retornar uma referência para a pasta de trabalho correspondente para um suplemento carregado. Você deve usar o nome de arquivo porque suplementos carregados normalmente não aparecem no <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> conjunto.</para>
       <para>Se a propriedade <b>Installed</b> retorna <b>True</b>, mas ainda falha nas chamadas para funções do add-in, o suplemento pode não ser realmente carregado. Isso ocorre porque o objeto <b>Addin</b> representa a existência e estado do add-in instalado, mas não representa o conteúdo real da pasta de trabalho do suplemento. Para garantir que um suplemento instalado está carregado, você deve abrir a pasta de trabalho do suplemento.</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -187,7 +187,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para /></remarks>
+          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FullName">
@@ -216,8 +216,8 @@
         <summary>Retorna o nome do objeto, incluindo seu caminho no disco, como uma cadeia de caracteres.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Essa propriedade é equivalente ao <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> seguido de propriedade, seguida o atual separador de sistema de arquivos, o <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> propriedade.</para>
-          <para />
+          <para>Esta propriedade é equivalente ao <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> seguido de propriedade, seguida o atual separador de sistema de arquivos, o <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> propriedade.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -251,8 +251,8 @@
           <b>True</b> se o suplemento está instalado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>A definição dessa propriedade como <b>True</b> instala o suplemento e chama suas funções Auto_Adicionar. A definição dessa propriedade como <b>False</b> remove o suplemento e chama suas funções Auto_Remover.</para>
-          <para />
+          <para>a definição dessa propriedade como <b>True</b> instala o suplemento e chama suas funções Auto_Adicionar. A definição dessa propriedade como <b>False</b> remove o suplemento e chama suas funções Auto_Remover.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -284,8 +284,8 @@
           <b>true</b> se o suplemento está atualmente aberto. Caso contrário, <b>false</b>.</value>
         <remarks>
           <para>
-            <b>Boolean</b> Somente leitura.</para>
-          <para />
+            <b>boolean</b> somente leitura.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
