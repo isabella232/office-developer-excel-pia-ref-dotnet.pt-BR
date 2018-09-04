@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20587511" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FormatConditions : System.Collections.IEnumerable" />
@@ -36,7 +36,7 @@
     <summary>Representa a coleção de formatos condicionais para um único intervalo.</summary>
     <remarks>
       <para>Coleção <b>FormatConditions</b> pode conter até três formatos condicionais. Cada formato é representado por um <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> objeto.</para> Uso de 
-      <para>o <see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" /> propriedade para retornar um objeto <b>FormatConditions</b> . Use o <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> método para criar um novo formato condicional e use o <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> método para alterar um formato condicional existente.</para><para>Se você tentar criar mais de três formatos condicionais para um único intervalo, o método <b>Add</b> falhará. Se um intervalo tiver três formatos, você pode usar o método <b>Modify</b> para alterar um dos formatos ou você pode usar o <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> método para excluir um formato e, em seguida, use o método <b>Add</b> para criar um novo formato.</para><para>Para obter mais informações sobre formatos condicionais, consulte o <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> objeto.</para><para /></remarks>
+      <para>o <see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" /> propriedade para retornar um objeto <b>FormatConditions</b> . Use o <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> método para criar um novo formato condicional e use o <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> método para alterar um formato condicional existente.</para><para>Se você tentar criar mais de três formatos condicionais para um único intervalo, o método <b>Add</b> falhará. Se um intervalo tiver três formatos, você pode usar o método <b>Modify</b> para alterar um dos formatos ou você pode usar o <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> método para excluir um formato e, em seguida, use o método <b>Add</b> para criar um novo formato.</para><para>Para obter mais informações sobre formatos condicionais, consulte o <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> objeto.</para><para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -114,8 +114,8 @@
         <summary>Adiciona um novo formato condicional.</summary>
         <returns>Uma <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> object que representa o novo formato condicional.</returns>
         <remarks>
-          <para>Você não pode definir mais do que três formatos condicionais para um intervalo. Use o <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> método para modificar um formato condicional existente ou use o <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> método para excluir um formato existente antes de adicionar um novo.</para>
-          <para />
+          <para>Não pode definir mais do que três formatos condicionais para um intervalo. Use o <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> método para modificar um formato condicional existente ou use o <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> método para excluir um formato existente antes de adicionar um novo.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -144,8 +144,8 @@
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" />objeto</returns>
         <remarks>
-          <para>O <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> objeto é usado para localizar valores acima ou abaixo uma média ou desvio padrão em um intervalo de células. Por exemplo, você pode encontrar os responsáveis pela execução médios acima em uma revisão de desempenho anual ou você pode localizar materiais fabricados que estejam abaixo duas desvios padrão em uma classificação de qualidade.</para>
-          <para />
+          <para>o <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> objeto é usado para localizar valores acima ou abaixo uma média ou desvio padrão em um intervalo de células. Por exemplo, você pode encontrar os responsáveis pela execução médios acima em uma revisão de desempenho anual ou você pode localizar materiais fabricados que estejam abaixo duas desvios padrão em uma classificação de qualidade.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -176,10 +176,7 @@
         <summary>Retorna uma nova <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> objeto que representa uma regra de formatação condicional que usa gradações em cores de célula para indicar diferenças relativas nos valores de células incluídos em um intervalo selecionado.</summary>
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" />objeto</returns>
-        <remarks>
-          <para>Escalas de cor são visuais guias que ajudarão a entender a distribuição de dados e variação. Uma escala de cores o ajudará a identificar diferenças relativas nos valores de células em um determinado intervalo usando a variação de cor. Cores diferentes e gradações entre as cores representam diferenças nos valores de célula. Por exemplo, em uma escala de três cores, você pode especificar que células com os valores mais altos de dados relativos serão verdes, células com valores intermediários serão amarelas e células com os valores mais baixos serão vermelhas.</para>
-          <para />
-        </remarks>
+        <remarks>Dimensiona <para>cor é visual guias que ajudarão a entender a distribuição de dados e variação. Uma escala de cores o ajudará a identificar diferenças relativas nos valores de células em um determinado intervalo usando a variação de cor. Cores diferentes e gradações entre as cores representam diferenças nos valores de célula. Por exemplo, em uma escala de três cores, você pode especificar que células com os valores mais altos de dados relativos serão verdes, células com valores intermediários serão amarelas e células com os valores mais baixos serão red.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddDatabar">
@@ -206,10 +203,7 @@
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> objeto que representa um regra de formatação condicional do intervalo especificado de barra de dados.</summary>
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.Databar" />objeto</returns>
-        <remarks>
-          <para>Barras de dados ajudam você a ver o valor de uma célula em relação a outras células. O comprimento da barra de dados representa o valor na célula. Uma barra mais longa representa um valor mais alto e uma barra mais curta representa um valor mais baixo. Barras de dados são úteis para reconhecimento de números superior e inferiores, especialmente com grandes volumes de dados, como superior e inferior vendendo toys em um feriado relatório de vendas.</para>
-          <para />
-        </remarks>
+        <remarks>Barras de dados <para>ajudam você a ver o valor de uma célula em relação a outras células. O comprimento da barra de dados representa o valor na célula. Uma barra mais longa representa um valor mais alto e uma barra mais curta representa um valor mais baixo. Barras de dados são úteis para reconhecimento de números superior e inferiores, especialmente com grandes volumes de dados, como superior e inferior vendendo toys em um feriado relatório de vendas.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddIconSetCondition">
@@ -237,8 +231,8 @@
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" />objeto</returns>
         <remarks>
-          <para>Use um ícone definido para anotar e classificar dados em categorias de três a cinco separadas por um valor limite. Cada ícone representa um intervalo de valores. Por exemplo, no conjunto de ícones setas 3, o vermelho seta para cima representa os valores mais altos, a seta lateral amarela representa valores intermediários e seta para baixo a verde representa valores inferiores.</para>
-          <para />
+          <para>Usar um ícone definido para anotar e classificar dados em categorias de três a cinco separadas por um valor limite. Cada ícone representa um intervalo de valores. Por exemplo, no conjunto de ícones setas 3, o vermelho seta para cima representa os valores mais altos, a seta lateral amarela representa valores intermediários e seta para baixo a verde representa valores inferiores.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -267,8 +261,8 @@
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.Top10" />objeto</returns>
         <remarks>
-          <para>Usando o <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> objeto, você pode encontrar os maiores e menores valores em um intervalo de células com base em um valor de corte que você especificar. Por exemplo, você pode encontrar os cinco produtos mais vendidos em um relatório regional, os parte inferior 15% de produtos em uma pesquisa de cliente ou os 25 salários principais em uma análise do departamento pessoal.</para>
-          <para />
+          <para>Usando o <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> objeto, você pode encontrar os maiores e menores valores em um intervalo de células com base em um valor de corte que você especificar. Por exemplo, você pode encontrar os cinco produtos mais vendidos em um relatório regional, os parte inferior 15% de produtos em um cliente pesquisa ou os salários top 25 em uma análise de pessoal de departamento.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -298,7 +292,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" />objeto</returns>
         <remarks>
           <para>Você pode usar o <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> objeto para visualizar rapidamente as células que contêm valores exclusivos ou duplicados.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -385,7 +379,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para /></remarks>
+          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
