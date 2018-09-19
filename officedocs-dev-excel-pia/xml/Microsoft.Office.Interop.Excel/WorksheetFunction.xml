@@ -1,10 +1,10 @@
 <Type Name="WorksheetFunction" FullName="Microsoft.Office.Interop.Excel.WorksheetFunction">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c4f9fcb96caaeda1ab919426e45e33ce9a1e04aa" />
+    <Meta Name="ms.openlocfilehash" Value="0e8779a13b1ae831ceba99e1523c885328838f42" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/06/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/17/2018" />
     <Meta Name="ms.locfileid" Value="20574610" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface WorksheetFunction" />
@@ -166,23 +166,23 @@
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>Usa (NASD) 30/360</description>
+              <description>USA (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>real/real</description>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>30/360 europeu</description>
+              <description>Europeu 30/360</description>
             </item>
           </list>
           <para></para>
@@ -229,32 +229,32 @@
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>Usa (NASD) 30/360</description>
+              <description>USA (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>real/real</description>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>30/360 europeu</description>
+              <description>Europeu 30/360</description>
             </item>
           </list>
           <para>A lista a seguir contém informações para estar ciente ao trabalhar com JUROSACUMV:</para>
           <list type="bullet">
             <item>
-              <description>O Microsoft Excel armazena datas como números de série sequenciais para que possam ser usadas em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1 e 1 de janeiro de 2008 é o número de série 39448 porque está 39.448 dias após 1º de janeiro de 1900. </description>
+              <description>O Microsoft Excel armazena datas como números de série sequenciais que podem ser usados em cálculos. Por padrão, 1 de janeiro, 1900 é o número de série 1, e 1 de janeiro, 2008 é o número de série 39448 porque é 39.448 dias depois de 1 de janeiro, 1900.</description>
             </item>
             <item>
-              <description>Problema, vencimento e base são truncados para inteiros.</description>
+              <description>Emissão, vencimento e base são truncados para números inteiros.</description>
             </item>
             <item>
               <description>Se emissão ou vencimento não for uma data válida, JUROSACUMV gerará um erro.</description>
@@ -263,13 +263,15 @@
               <description>Se taxa ≤ 0 ou se par ≤ 0, JUROSACUMV gerará um erro.</description>
             </item>
             <item>
-              <description>Se base &lt; 0 ou se base &gt; 4, JUROSACUMV gerará um erro.</description>
+              <description>Se base &lt; 0 ou se base &gt; 4, JUROSACUMV gerará um erro. </description>
             </item>
             <item>
               <description>Se emissão ≥ maturidade, JUROSACUMV gerará um erro.</description>
             </item>
             <item>
-              <description>JUROSACUMV é calculado da seguinte maneira:</description>
+              <description>JUROSACUMV é calculado da seguinte maneira: 
+
+ </description>
             </item>
           </list>
           <para>onde:</para>
@@ -486,15 +488,15 @@
           <list type="table">
             <item>
               <term>1-13</term>
-              <description>Tipos válidos: referência a qualquer célula estruturada referencesInvalid tipos de nomes de uniões interseções definido: dados reais matrizes</description>
-              <description>Tipos válidos: referência a qualquer célula estruturada referencesInvalid tipos de nomes de uniões interseções definido: dados reais matrizes</description>
-              <description>Tipos válidos: referência a qualquer célula estruturada referencesInvalid tipos de nomes de uniões interseções definido: dados reais matrizes</description>
+              <description>Tipos válidos: referência a qualquer célula estruturada referencesInvalid tipos de nomes de uniões interseções definido: matrizes de dados reais</description>
+              <description>Tipos válidos: referência a qualquer célula estruturada referencesInvalid tipos de nomes de uniões interseções definido: matrizes de dados reais</description>
+              <description>Tipos válidos: referência a qualquer célula estruturada referencesInvalid tipos de nomes de uniões interseções definido: matrizes de dados reais</description>
             </item>
             <item>
-              <term>14 e 17</term>
-              <description>tipos válidos: qualquer referência de célula definidos de interseções uniões nomes estruturada referências matrizes de dados real</description>
-              <description>tipos válidos: qualquer referência de célula definidos de interseções uniões nomes estruturada referências matrizes de dados real</description>
-              <description>É permitida nenhuma referência</description>
+              <term>17 de 14</term>
+              <description>Tipos válidos: qualquer referência de célula definidos de interseções uniões nomes estruturada referências matrizes de dados real</description>
+              <description>Tipos válidos: qualquer referência de célula definidos de interseções uniões nomes estruturada referências matrizes de dados real</description>
+              <description>Não é permitida nenhuma referência</description>
             </item>
           </list>
           <para>Se um segundo argumento ref for necessário mas não for fornecido, AGGREGATE retornará um erro #VALUE!.</para>
@@ -549,15 +551,16 @@
             </item>
             <item>
               <term>1</term>
-              <description>real</description>
+              <description>Real</description>
             </item>
             <item>
               <term>3</term>
               <description>365 dias em um ano</description>
             </item>
             <item>
-              <term>4</term>de
-              <description>360 dias em um ano (método europeu)</description></item>
+              <term>4</term>
+              <description>360 dias em um ano (método europeu)</description>
+            </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
           <para>Esta função retorna a depreciação até o último período da vida útil dos ativos ou até que o valor combinado de depreciação seja maior do que o custo dos ativos menos o valor residual.</para>
@@ -630,15 +633,16 @@
             </item>
             <item>
               <term>1</term>
-              <description>real</description>
+              <description>Real</description>
             </item>
             <item>
               <term>3</term>
               <description>365 dias em um ano</description>
             </item>
             <item>
-              <term>4</term>de
-              <description>360 dias em um ano (método europeu)</description></item>
+              <term>4</term>
+              <description>360 dias em um ano (método europeu)</description>
+            </item>
           </list>
           <para>
             <b>Importante</b>: as datas devem ser inseridas usando a função data ou como resultados de outras fórmulas ou funções. Por exemplo, use DATE(2008,5,23) para o dia 23 de maio de 2008. Podem ocorrer problemas se as datas são inseridas como texto.</para>
@@ -1148,10 +1152,10 @@
               <description>Média que é a média aritmética e é calculada adicionando um grupo de números e em seguida, dividindo pela contagem desses números. Por exemplo, a média de 2, 3, 3, 5, 7 e 10 é 30 dividido por 6, que é 5. </description>
             </item>
             <item>
-              <description>Mediano que é o número médio de um grupo de números; isso ocorre, metade dos números possui valores que são maiores que o mediano e metade dos números possui valores que são menores que o mediano. Por exemplo, o mediano de 2, 3, 3, 5, 7 e 10 é 4.</description>
+              <description>Mediano que é o número médio de um grupo de números; ou seja, metade dos números possui valores que são maiores que o mediano e metade dos números possui valores que são menores que o mediano. Por exemplo, o mediano de 2, 3, 3, 5, 7 e 10 é 4.</description>
             </item>
             <item>
-              <description>De modo que é o número de ocorrência mais frequente em um grupo de números. Por exemplo, o modo de 2, 3, 3, 5, 7 e 10 é 3.</description>
+              <description>Modo em que é o número de ocorrência mais frequente em um grupo de números. Por exemplo, o modo de 2, 3, 3, 5, 7 e 10 é 3.</description>
             </item>
           </list>
           <para>Para uma distribuição simétrica de um grupo de números, estas três medidas de tendência central são as mesmas. Para uma distribuição enviesada de um grupo de números, elas podem ser diferentes.</para>
@@ -1198,22 +1202,22 @@
           <para>Intervalo_média não precisa ter o mesmo tamanho e a mesma forma do intervalo. As células reais para as quais é calculada a média são determinadas pelo uso da célula superior esquerda em intervalo_média como a célula inicial e, em seguida, pela inclusão das células que correspondem em tamanho e forma ao intervalo. Por exemplo:</para>
           <list type="table">
             <item>
-              <term>A1: a5</term>
-              <description>B1: B5</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B5</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: a5</term>
-              <description>B1: B3</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B3</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: B4</term>
+              <term>A1:B4</term>
               <description>C1:D4</description>
               <description>C1:D4</description>
             </item>
             <item>
-              <term>A1: B4</term>
+              <term>A1:B4</term>
               <description>C1:C2</description>
               <description>C1:D4</description>
             </item>
@@ -1224,10 +1228,10 @@
               <description>Média que é a média aritmética e é calculada adicionando um grupo de números e em seguida, dividindo pela contagem desses números. Por exemplo, a média de 2, 3, 3, 5, 7 e 10 é 30 dividido por 6, que é 5. </description>
             </item>
             <item>
-              <description>Mediano que é o número médio de um grupo de números; isso ocorre, metade dos números possui valores que são maiores que o mediano e metade dos números possui valores que são menores que o mediano. Por exemplo, o mediano de 2, 3, 3, 5, 7 e 10 é 4.</description>
+              <description>Mediano que é o número médio de um grupo de números; ou seja, metade dos números possui valores que são maiores que o mediano e metade dos números possui valores que são menores que o mediano. Por exemplo, o mediano de 2, 3, 3, 5, 7 e 10 é 4.</description>
             </item>
             <item>
-              <description>De modo que é o número de ocorrência mais frequente em um grupo de números. Por exemplo, o modo de 2, 3, 3, 5, 7 e 10 é 3.</description>
+              <description>Modo em que é o número de ocorrência mais frequente em um grupo de números. Por exemplo, o modo de 2, 3, 3, 5, 7 e 10 é 3.</description>
             </item>
           </list>
           <para>Para uma distribuição simétrica de um grupo de números, estas três medidas de tendência central são as mesmas. Para uma distribuição enviesada de um grupo de números, elas podem ser diferentes.</para>
@@ -1327,22 +1331,22 @@
           <para>Cada intervalo_critérios não precisa ter o mesmo tamanho e a mesma forma do intervalo_média. As células reais para as quais é calculada a média são determinadas pelo uso da célula superior esquerda no intervalo_critérios como a célula inicial e, em seguida, pela inclusão das células que correspondem em tamanho e forma ao intervalo. Por exemplo:</para>
           <list type="table">
             <item>
-              <term>A1: a5</term>
-              <description>B1: B5</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B5</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: a5</term>
-              <description>B1: B3</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B3</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: B4</term>
+              <term>A1:B4</term>
               <description>C1:D4</description>
               <description>C1:D4</description>
             </item>
             <item>
-              <term>A1: B4</term>
+              <term>A1:B4</term>
               <description>C1:C2</description>
               <description>C1:D4</description>
             </item>
@@ -1353,10 +1357,10 @@
               <description>Média que é a média aritmética e é calculada adicionando um grupo de números e em seguida, dividindo pela contagem desses números. Por exemplo, a média de 2, 3, 3, 5, 7 e 10 é 30 dividido por 6, que é 5. </description>
             </item>
             <item>
-              <description>Mediano que é o número médio de um grupo de números; isso ocorre, metade dos números possui valores que são maiores que o mediano e metade dos números possui valores que são menores que o mediano. Por exemplo, o mediano de 2, 3, 3, 5, 7 e 10 é 4.</description>
+              <description>Mediano que é o número médio de um grupo de números; ou seja, metade dos números possui valores que são maiores que o mediano e metade dos números possui valores que são menores que o mediano. Por exemplo, o mediano de 2, 3, 3, 5, 7 e 10 é 4.</description>
             </item>
             <item>
-              <description>De modo que é o número de ocorrência mais frequente em um grupo de números. Por exemplo, o modo de 2, 3, 3, 5, 7 e 10 é 3.</description>
+              <description>Modo em que é o número de ocorrência mais frequente em um grupo de números. Por exemplo, o modo de 2, 3, 3, 5, 7 e 10 é 3.</description>
             </item>
           </list>
           <para>Para uma distribuição simétrica de um grupo de números, estas três medidas de tendência central são as mesmas. Para uma distribuição enviesada de um grupo de números, elas podem ser diferentes.</para>
@@ -1694,7 +1698,7 @@
               <description>Se algum argumento não for numérico, <b>Beta_Inv</b> gera um valor de erro.</description>
             </item>
             <item>
-              <description>Se alfa ≤ 0 ou beta ≤ 0, <b>Beta_Inv</b> gerará um valor de erro.</description>
+              <description>Se alfa ≤ 0 ou beta ≤ 0, <b>Beta_Inv</b> gera um valor de erro.</description>
             </item>
             <item>
               <description>Se probabilidade ≤ 0 ou probabilidade &gt; 1, <b>Beta_Inv</b> gera um valor de erro.</description>
@@ -1750,7 +1754,7 @@
               <description>Se algum argumento não for numérico, <b>BetaDist</b> retornará o #VALUE! valor de erro.</description>
             </item>
             <item>
-              <description>Se alfa ≤ 0 ou beta ≤ 0, <b>BetaDist</b> gerará um valor de erro.</description>
+              <description>Se alfa ≤ 0 ou beta ≤ 0, <b>BetaDist</b> gera um valor de erro.</description>
             </item>
             <item>
               <description>Se x &lt; um, x &gt; B ou A = B, <b>BetaDist</b> gera um valor de erro.</description>
@@ -1805,10 +1809,10 @@
               <description>Se algum argumento não for numérico, <b>BetaInv</b> gera um valor de erro.</description>
             </item>
             <item>
-              <description>Se alfa ≤ 0 ou beta ≤ 0, <b>BetaInv</b> gerará um valor de erro.</description>
+              <description>Se alfa ≤ 0 ou beta ≤ 0, <b>BetaInv</b> gera um valor de erro. </description>
             </item>
             <item>
-              <description>Se probabilidade ≤ 0 ou probabilidade &gt; 1, <b>BetaInv</b> gera um valor de erro.</description>
+              <description>Se probabilidade ≤ 0 ou probabilidade &gt; 1, <b>BetaInv</b> gera um valor de erro. </description>
             </item>
             <item>
               <description>Se você omite valores de A e B, <b>BetaInv</b> usará a distribuição beta cumulativa padrão, de modo que A = 0 e B = 1.</description>
@@ -1963,16 +1967,18 @@
           <para>Use o método <b>Binom_Dist</b> em problemas com um número fixo de testes ou tentativas, quando os resultados de qualquer tentativa forem apenas sucesso ou falha, quando tentativas forem independentes e quando a probabilidade de sucesso for constante durante toda a experiência. Por exemplo, o método <b>Binom_Dist</b> pode calcular a probabilidade de dois dos próximos três bebês Masculino. </para>
           <list type="bullet">
             <item>
-              <description>Núm_s e tentativas são truncadas para inteiros.</description>
+              <description>Núm_s e tentativas são truncados para inteiros.</description>
             </item>
             <item>
-              <description>Se núm_s, tentativas ou probabilidade_s não for numérico, o método <b>Binom_Dist</b> gerará um erro.</description>
+              <description>Se núm_s, tentativas ou probabilidade_s não for numérico, o método <b>Binom_Dist</b> gerará um erro. </description>
             </item>
             <item>
-              <description>Se núm_s &lt; 0 ou núm_s &gt; tentativas, o método <b>Binom_Dist</b> gerará um erro.</description>
+              <description>Se núm_s &lt; 0 ou núm_s &gt; tentativas, o método <b>Binom_Dist</b> gerará um erro. </description>
             </item>
             <item>
-              <description>Se probabilidade_s &lt; 0 ou probabilidade_s &gt; 1, o método <b>Binom_Dist</b> gerará um erro. A função massa de probabilidade binomial é:</description>
+              <description>Se probabilidade_s &lt; 0 ou probabilidade_s &gt; 1, o método <b>Binom_Dist</b> gerará um erro. A função de probabilidade de massa binomial é: 
+
+ </description>
             </item>
           </list>
           <para>Onde:</para>
@@ -2381,13 +2387,16 @@
               <description>Arredonda em direção a zero.</description>
             </item>
             <item>
-              <term>+/+</term>Arredonda para longe de zero.
+              <term>+/+</term>
+              <description>Arredonda para longe de zero.</description>
             </item>
             <item>
-              <term>-/+</term>Arredonda em direção a zero.
+              <term>-/+</term>
+              <description>Arredonda em direção a zero.</description>
             </item>
             <item>
-              <term>+/-</term>Arredonda para longe de zero.
+              <term>+/-</term>
+              <description>Arredonda para longe de zero.</description>
             </item>
           </list>
           <para>Se um dos argumentos não for numérico, <b>Ceiling_Precise</b> gerará um erro.</para>
@@ -3169,29 +3178,29 @@
         <remarks>
           <list type="table">
             <item>
-              <term>Gram</term>
+              <term>Grama</term>
               <description>"g"</description>
             </item>
             <item>
-              <term>Espaçador</term>
+              <term>Slug</term>
               <description>"sg"</description>
             </item>
             <item>
-              <term>Libra massa (avoirdupois)</term>
-              <description>"lbm"</description>
+              <term>Massa em libras (avoirdupois)</term>
+              <description>"lb"</description>
             </item>
             <item>
               <term>U (unidade de massa atômica)</term>
               <description>"u"</description>
             </item>
             <item>
-              <term>Onça em massa (avoirdupois)</term>
-              <description>"ozm"</description>
+              <term>Massa em onças (avoirdupois)</term>
+              <description>"oz"</description>
             </item>
           </list>
           <list type="table">
             <item>
-              <term>Medidor</term>
+              <term>Metro</term>
               <description>"m"</description>
             </item>
             <item>
@@ -3199,60 +3208,60 @@
               <description>"mi"</description>
             </item>
             <item>
-              <term>milha náutica</term>
-              <description>"Nmi"</description>
+              <term>Milha náutica</term>
+              <description>"mn"</description>
             </item>
             <item>
-              <term>polegada</term>
+              <term>Polegada</term>
               <description>"pol"</description>
             </item>
             <item>
-              <term>pé</term>
-              <description>"pés"</description>
+              <term>Pé</term>
+              <description>"pé"</description>
             </item>
             <item>
-              <term>Jardim</term>
+              <term>Jarda</term>
               <description>"yd"</description>
             </item>
             <item>
-              <term>Angstrom</term>
-              <description>"ang"</description>
+              <term>Ângstrom</term>
+              <description>"Å"</description>
             </item>
             <item>
-              <term>paica (1/72 pol.)</term>
-              <description>"Paica"</description>
+              <term>Paica (1/72 pol.)</term>
+              <description>"paica"</description>
             </item>
           </list>
           <list type="table">
             <item>
               <term>Ano</term>
-              <description>"ano"</description>
+              <description>"a"</description>
             </item>
             <item>
-              <term>dia</term>
-              <description>"dia"</description>
+              <term>Dia</term>
+              <description>"d"</description>
             </item>
             <item>
-              <term>hora</term>
+              <term>Hora</term>
               <description>"h"</description>
             </item>
             <item>
-              <term>minuto</term>
-              <description>"mn"</description>
+              <term>Minuto</term>
+              <description>"min"</description>
             </item>
             <item>
-              <term>segundo</term>
+              <term>Segundo</term>
               <description>"s"</description>
             </item>
           </list>
           <list type="table">
             <item>
               <term>Pascal</term>
-              <description>"Pa" (ou "p")</description>
+              <description>"Pa"</description>
             </item>
             <item>
-              <term>atmosfera</term>
-              <description>"atm" (ou "às")</description>
+              <term>Atmosfera</term>
+              <description>"atm"</description>
             </item>
             <item>
               <term>mm de Mercúrio</term>
@@ -3265,43 +3274,45 @@
               <description>"N"</description>
             </item>
             <item>
-              <term>Dyne</term>
-              <description>"DIN" (ou "dy")</description>
+              <term>Dina</term>
+              <description>"dina"</description>
             </item>
-            <item>de
-              <term>libra forçar</term><description>"lbf"</description></item>
+            <item>
+              <term>Libra-força</term>
+              <description>"lbf"</description>
+            </item>
           </list>
           <list type="table">
             <item>
-              <item>
-                <term>Joule</term>
-                <description>"J"</description>
-              </item>
+              <term>Joule</term>
+              <description>"J"</description>
+            </item>
+            <item>
               <term>Erg</term>
-              <description>"f"</description>
+              <description>"erg"</description>
             </item>
             <item>
               <term>Caloria termodinâmica</term>
-              <description>"c"</description>
+              <description>"cal"</description>
             </item>
             <item>
               <term>Caloria IT</term>
-              <description>"cal"</description>
+              <description>"calIT"</description>
             </item>
             <item>
               <term>Eletron-volt</term>
               <description>"eV" (ou "ev")</description>
             </item>
             <item>
-              <term>Potência-hora</term>
+              <term>Cavalo-força-hora</term>
               <description>"HPh" (ou "hh")</description>
             </item>
             <item>
-              <term>Watt-Hour</term>
+              <term>Watt-hora</term>
               <description>"Wh" (ou "wh")</description>
             </item>
             <item>
-              <term>Foot-pound</term>
+              <term>Pé-libra</term>
               <description>"flb"</description>
             </item>
             <item>
@@ -3311,14 +3322,13 @@
           </list>
           <list type="table">
             <item>
-              <term>Potência</term>
+              <term>Cavalo-força</term>
               <description>"HP" (ou "h")</description>
             </item>
-            <term>
-              <item>
-                <description>"W" (ou "w")</description>
-              </item>
-            </term>
+            <item>
+              <term>Watt</term>
+              <description>"W" (ou "w")</description>
+            </item>
           </list>
           <list type="table">
             <item>
@@ -3327,7 +3337,7 @@
             </item>
             <item>
               <term>Gauss</term>
-              <description>"ga"</description>
+              <description>"Gs"</description>
             </item>
           </list>
           <list type="table">
@@ -3336,7 +3346,7 @@
               <description>"C" (ou "cel")</description>
             </item>
             <item>
-              <term>grau Fahrenheit</term>
+              <term>Grau Fahrenheit</term>
               <description>"F" (ou "fah")</description>
             </item>
             <item>
@@ -3344,68 +3354,85 @@
               <description>"K" (ou "kel")</description>
             </item>
           </list>
-          <item>
-            <term>Colher de chá</term>
-            <description>"tsp"</description>
-          </item>
-          <item>
-            <term>colher de sopa</term>
-            <description>"TB"</description>
-          </item>
-          <item>
-            <term>Onça fluida</term>
-            <description>"g"</description>
-          </item>
-          <item>
-            <term>xícara</term>
-            <description>"xícara"</description>
-          </item>
-          <item>
-            <term> de 
-          <list type="table"> Pint americano
-              <description>"pt" (ou "us_pt")</description><item><term>pint inglês</term><description>"uk_pt"</description></item><item><term>quarto</term><description>"qt"</description></item><item><term>galão</term><description>"gal"</description></item><item><term>litros </term><description>"l" (ou "lt")</description></item></list></term>
-          </item>
+          <list type="table">
+            <item>
+              <term>Colher de chá</term>
+              <description>"cha"</description>
+            </item>
+            <item>
+              <term>Colher de sopa</term>
+              <description>"sop"</description>
+            </item>
+            <item>
+              <term>Onça fluida</term>
+              <description>"oz"</description>
+            </item>
+            <item>
+              <term>Xícara</term>
+              <description>"xic"</description>
+            </item>
+            <item>
+              <term>Pinta americana</term>
+              <description>"pt" (ou "us_pt")</description>
+            </item>
+            <item>
+              <term>Pinta inglesa</term>
+              <description>"uk_pt"</description>
+            </item>
+            <item>
+              <term>Quarto</term>
+              <description>"qt"</description>
+            </item>
+            <item>
+              <term>Galão</term>
+              <description>"gal"</description>
+            </item>
+            <item>
+              <term>Litro</term>
+              <description>"l" (ou "lt")</description>
+            </item>
+          </list>
           <para>Os seguintes prefixos abreviados de unidades podem ser acrescentados antes de qualquer valor métrico de_unidade ou para_unidade.</para>
           <list type="table">
             <item>
-              <term>ExA</term>
-              <description>1e + 18</description>
-              <description>"F"</description>
+              <term>hexa</term>
+              <description>1E+18</description>
+              <description>"E"</description>
             </item>
             <item>
               <term>peta</term>
-              <description>1E + 15</description>
+              <description>1E+15</description>
               <description>"P"</description>
             </item>
             <item>
-              <term>Tera</term>
-              <description>1E + 12</description>
+              <term>tera</term>
+              <description>1E+12</description>
               <description>"T"</description>
             </item>
             <item>
               <term>giga</term>
-              <description>1E + 09</description>
+              <description>1E+09</description>
               <description>"G"</description>
             </item>
             <item>
               <term>mega</term>
-              <description>1E + 06</description>
+              <description>1E+06</description>
               <description>"M"</description>
             </item>
             <item>
               <term>quilo</term>
-              <description>1E + 03</description>
+              <description>1E+03</description>
               <description>"k"</description>
             </item>
             <item>
               <term>hecto</term>
-              <description>1E + 02</description>
+              <description>1E+02</description>
               <description>"h"</description>
             </item>
             <item>
-              <term>dekao</term>
-              <description>1E + 01</description>
-              <description>"f"</description>
+              <term>deca</term>
+              <description>1E+01</description>
+              <description>"e"</description>
             </item>
             <item>
               <term>deci</term>
@@ -3413,22 +3440,22 @@
               <description>"d"</description>
             </item>
             <item>
-              <term>centésimos</term>
+              <term>centi</term>
               <description>1E-02</description>
               <description>"c"</description>
             </item>
             <item>
-              <term>milli</term>
+              <term>mili</term>
               <description>1E-03</description>
               <description>"m"</description>
             </item>
             <item>
-              <term>Micro</term>
+              <term>micro</term>
               <description>1E-06</description>
               <description>"u"</description>
             </item>
             <item>
-              <term>Nano</term>
+              <term>nano</term>
               <description>1E-09</description>
               <description>"n"</description>
             </item>
@@ -3438,12 +3465,12 @@
               <description>"p"</description>
             </item>
             <item>
-              <term>femto</term>
+              <term>fento</term>
               <description>1E-15</description>
               <description>"f"</description>
             </item>
             <item>
-              <term>atto</term>
+              <term>ato</term>
               <description>1E-18</description>
               <description>"a"</description>
             </item>
@@ -3973,23 +4000,23 @@
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>Usa (NASD) 30/360</description>
+              <description>USA (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>real/real</description>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>30/360 europeu</description>
+              <description>Europeu 30/360</description>
             </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
@@ -4041,23 +4068,23 @@
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>Usa (NASD) 30/360</description>
+              <description>USA (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>real/real</description>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>30/360 europeu</description>
+              <description>Europeu 30/360</description>
             </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
@@ -4109,23 +4136,23 @@
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>Usa (NASD) 30/360</description>
+              <description>USA (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>real/real</description>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>30/360 europeu</description>
+              <description>Europeu 30/360</description>
             </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
@@ -4177,23 +4204,23 @@
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>Usa (NASD) 30/360</description>
+              <description>USA (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>real/real</description>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>30/360 europeu</description>
+              <description>Europeu 30/360</description>
             </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
@@ -4245,23 +4272,23 @@
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>Usa (NASD) 30/360</description>
+              <description>USA (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>real/real</description>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>30/360 europeu</description>
+              <description>Europeu 30/360</description>
             </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
@@ -4313,23 +4340,23 @@
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>Usa (NASD) 30/360</description>
+              <description>USA (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>real/real</description>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>30/360 europeu</description>
+              <description>Europeu 30/360</description>
             </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
@@ -4651,7 +4678,7 @@
             </item>
             <item>
               <term>1</term>
-              <description>no início do período</description>
+              <description>No início do período</description>
             </item>
           </list>
           <para>Certifique-se de que esteja sendo consistente sobre as unidades usadas para especificar taxa e nper. Se você fizer pagamentos mensais por um empréstimo de quatro anos com uma taxa de juros anual de 12%, use 12 12% para taxa e 4 * 12 para <paramref name="Arg2" />. Se você fizer pagamentos anuais no mesmo empréstimo, use 12% para taxa e 4 para <paramref name="Arg2" />. </para>
@@ -4709,7 +4736,7 @@
             </item>
             <item>
               <term>1</term>
-              <description>no início do período</description>
+              <description>No início do período</description>
             </item>
           </list>
           <para>Certifique-se de que esteja sendo consistente sobre as unidades usadas para especificar taxa e nper. Se você fizer pagamentos mensais por um empréstimo de quatro anos com uma taxa de juros anual de 12%, use 12 12% para taxa e 4 * 12 para <paramref name="Arg2" />. Se você fizer pagamentos anuais no mesmo empréstimo, use 12% para taxa e 4 para <paramref name="Arg2" />. </para>
@@ -4758,12 +4785,12 @@
           <para>Onde entrada é o texto ou o valor que você deseja localizar. Por exemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Ribeiro"</term>
+              <description>=Ribeiro</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Quando a filtragem de dados de texto, o Excel não faz distinção entre caracteres maiusculos e minúsculos. No entanto, você pode usar uma fórmula para executar uma pesquisa diferencia maiusculas de minúsculas.</para>
@@ -4839,13 +4866,13 @@
             <item>
               <term>
                 <b>Falso</b> ou omitido</term>
-              <description>método US (NASD). Se a data inicial for o dia 31 de um mês, ela se torna igual ao dia 30 do mesmo mês. Se a data final é o dia 31 de um mês e a data inicial é anterior ao dia 30 de um mês, a data final será igual do 1st do próximo mês; Caso contrário, a data final será igual ao dia 30 do mesmo mês.</description>
+              <description>Método US (NASD). Se a data inicial for o dia 31 de um mês, ela se tornará igual ao dia 30 do mesmo mês. Se a data final for o dia 31 de um mês e a data inicial for anterior ao trigésimo dia de um mês, a data final se tornará igual ao dia primeiro do próximo mês. Caso contrário, a data final se tornará igual ao trigésimo dia do mesmo mês.</description>
             </item>
             <item>
               <term>
-                <b>true</b>
+                <b>True</b>
               </term>
-              <description>método europeu. A data inicial e final datas que ocorrem no dia 31 de um mês torna-se igual ao dia 30 do mesmo mês.</description>
+              <description>Método europeu. A data inicial e final que ocorrer no dia 31 de um mês se tornará igual ao trigésimo dia do mesmo mês.</description>
             </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
@@ -4964,12 +4991,12 @@
           <para>Onde a entrada é o texto ou valor que você deseja localizar. Por exemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Ribeiro"</term>
+              <description>=Ribeiro</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Quando a filtragem de dados de texto, o Excel não faz distinção entre caracteres maiusculos e minúsculos. No entanto, você pode usar uma fórmula para executar uma pesquisa diferencia maiusculas de minúsculas.</para>
@@ -5013,12 +5040,12 @@
           <para>Onde a entrada é o texto ou valor que você deseja localizar. Por exemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Ribeiro"</term>
+              <description>=Ribeiro</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Quando a filtragem de dados de texto, o Excel não faz distinção entre caracteres maiusculos e minúsculos. No entanto, você pode usar uma fórmula para executar uma pesquisa diferencia maiusculas de minúsculas.</para>
@@ -5416,12 +5443,12 @@
           <para>Onde a entrada é o texto ou valor que você deseja localizar. Por exemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Ribeiro"</term>
+              <description>=Ribeiro</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Quando a filtragem de dados de texto, o Excel não faz distinção entre caracteres maiusculos e minúsculos. No entanto, você pode usar uma fórmula para executar uma pesquisa diferencia maiusculas de minúsculas.</para>
@@ -5520,12 +5547,12 @@
           <para>Onde a entrada é o texto ou valor que você deseja localizar. Por exemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Ribeiro"</term>
+              <description>=Ribeiro</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Quando a filtragem de dados de texto, o Excel não faz distinção entre caracteres maiusculos e minúsculos. No entanto, você pode usar uma fórmula para executar uma pesquisa diferencia maiusculas de minúsculas.</para>
@@ -5569,12 +5596,12 @@
           <para>Onde a entrada é o texto ou valor que você deseja localizar. Por exemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Ribeiro"</term>
+              <description>=Ribeiro</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Quando a filtragem de dados de texto, o Excel não faz distinção entre caracteres maiusculos e minúsculos. No entanto, você pode usar uma fórmula para executar uma pesquisa diferencia maiusculas de minúsculas.</para>
@@ -5723,12 +5750,12 @@
           <para>Onde a entrada é o texto ou valor que você deseja localizar. Por exemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Ribeiro"</term>
+              <description>=Ribeiro</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Quando a filtragem de dados de texto, o Excel não faz distinção entre caracteres maiusculos e minúsculos. No entanto, você pode usar uma fórmula para executar uma pesquisa diferencia maiusculas de minúsculas.</para>
@@ -5772,12 +5799,12 @@
           <para>Onde a entrada é o texto ou valor que você deseja localizar. Por exemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Ribeiro"</term>
+              <description>=Ribeiro</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Quando a filtragem de dados de texto, o Excel não faz distinção entre caracteres maiusculos e minúsculos. No entanto, você pode usar uma fórmula para executar uma pesquisa diferencia maiusculas de minúsculas.</para>
@@ -5821,12 +5848,12 @@
           <para>Onde a entrada é o texto ou valor que você deseja localizar. Por exemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Ribeiro"</term>
+              <description>=Ribeiro</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Quando a filtragem de dados de texto, o Excel não faz distinção entre caracteres maiusculos e minúsculos. No entanto, você pode usar uma fórmula para executar uma pesquisa diferencia maiusculas de minúsculas.</para>
@@ -5870,12 +5897,12 @@
           <para>Onde a entrada é o texto ou valor que você deseja localizar. Por exemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Ribeiro"</term>
+              <description>=Ribeiro</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Quando a filtragem de dados de texto, o Excel não faz distinção entre caracteres maiusculos e minúsculos. No entanto, você pode usar uma fórmula para executar uma pesquisa diferencia maiusculas de minúsculas.</para>
@@ -6047,23 +6074,23 @@
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>Usa (NASD) 30/360</description>
+              <description>USA (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>real/real</description>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>30/360 europeu</description>
+              <description>Europeu 30/360</description>
             </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
@@ -6114,12 +6141,12 @@
           <para>Onde a entrada é o texto ou valor que você deseja localizar. Por exemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Ribeiro"</term>
+              <description>=Ribeiro</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Quando a filtragem de dados de texto, o Excel não faz distinção entre caracteres maiusculos e minúsculos. No entanto, você pode usar uma fórmula para executar uma pesquisa diferencia maiusculas de minúsculas.</para>
@@ -6163,12 +6190,12 @@
           <para>Onde a entrada é o texto ou valor que você deseja localizar. Por exemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Ribeiro"</term>
+              <description>=Ribeiro</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Quando a filtragem de dados de texto, o Excel não faz distinção entre caracteres maiusculos e minúsculos. No entanto, você pode usar uma fórmula para executar uma pesquisa diferencia maiusculas de minúsculas.</para>
@@ -7029,7 +7056,7 @@
           <list type="bullet">
             <item>
               <description>
-                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Find(System.String,System.String,System.Object)" /> sempre conta cada caractere, byte único ou dois bytes, como 1, independentemente de qual o ilhas de configuração do idioma padrão</description>
+                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Find(System.String,System.String,System.Object)" />sempre conta cada caractere, byte único ou dois bytes, como 1, independentemente da configuração de idioma padrão.</description>
             </item>
             <item>
               <description>
@@ -7314,13 +7341,16 @@
               <description>Arredonda para longe de zero.</description>
             </item>
             <item>
-              <term>+/+</term>Arredonda em direção a zero.
+              <term>+/+</term>
+              <description>Arredonda em direção a zero.</description>
             </item>
             <item>
-              <term>-/+</term>Arredonda para longe de zero.
+              <term>-/+</term>
+              <description>Arredonda para longe de zero.</description>
             </item>
             <item>
-              <term>+/-</term>Arredonda em direção a zero.
+              <term>+/-</term>
+              <description>Arredonda em direção a zero.</description>
             </item>
           </list>
           <para>Se algum argumento for não numérico, o método <b>Floor_Precise</b> gerará um erro. </para>
@@ -7491,11 +7521,11 @@
           <list type="table">
             <item>
               <term>0</term>
-              <description>No final do período</description>
+              <description>No fim do período</description>
             </item>
             <item>
               <term>1</term>
-              <description>no início do período</description>
+              <description>No início do período</description>
             </item>
           </list>
           <para>Certifique-se de que esteja sendo consistente quanto às unidades usadas para especificar taxa e nper. Se fizer pagamentos mensais de um empréstimo de quatro anos com taxa de juros de 12% ao ano, use 12%/12 para taxa e 4*12 para nper. Se você fizer pagamentos anuais para o mesmo empréstimo, use 12% para taxa e 4 para nper.</para>
@@ -9738,7 +9768,7 @@
             </item>
             <item>
               <description>
-                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" /> retorna um valor de 0. O <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" /> algoritmo foi projetado para retornar resultados razoáveis para dados collinear e, nesse caso, pelo menos uma resposta pode ser encontrada.</description>
+                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" />Retorna um valor igual a 0. O <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" /> algoritmo foi projetado para retornar resultados razoáveis para dados collinear e, nesse caso, pelo menos uma resposta pode ser encontrada.</description>
             </item>
           </list>
           <para></para>
@@ -9782,23 +9812,23 @@
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>Usa (NASD) 30/360</description>
+              <description>USA (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>real/real</description>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>30/360 europeu</description>
+              <description>Europeu 30/360</description>
             </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
@@ -9859,14 +9889,14 @@
           <list type="table">
             <item>
               <term>0</term>
-              <description>No final do período</description>
+              <description>No fim do período</description>
             </item>
             <item>
               <term>1</term>
-              <description>no início do período</description>
+              <description>No início do período</description>
             </item>
           </list>
-          <para>Certifique-se de que esteja sendo consistente quanto às unidades usadas para especificar taxa e nper. Se fizer pagamentos mensais de um empréstimo de quatro anos com taxa de juros de 12% ao ano, use 12%/12 para taxa e 4*12 para nper. Se você fizer pagamentos anuais para o mesmo empréstimo, use 12% para taxa e 4 para nper.</para>
+          <para>Certifique-se de que esteja sendo consistente quanto às unidades usadas para especificar taxa e nper. Se fizer pagamentos mensais de um empréstimo de quatro anos com taxa de juros de 12% ao ano, use 12%/12 para taxa e 4*12 para nper. Se você fizer pagamentos anuais para o mesmo empréstimo, use 12% para taxa e 4 para nper. </para>
           <para>Todos os argumentos, saques, tais como depósitos em poupança, serão representados por números negativos; depósitos recebidos, tais como cheques de dividendos, serão representados por números positivos.</para>
           <para></para>
         </remarks>
@@ -10661,35 +10691,35 @@
           <list type="table">
             <item>
               <term>se1, se2,..., sen</term>
-              <description>o erro padrão valores para os coeficientes m1, m2,..., mn.</description>
+              <description>Os valores padrão de erro dos coeficientes m1,m2,...,mn.</description>
             </item>
             <item>
               <term>seb</term>
-              <description>o valor de erro padrão para a constante b (seb = # n/d quando constante é <b>Falso</b>).</description>
+              <description>O valor de erro padrão para a constante b (seb = # n/d quando constante é <b>Falso</b>).</description>
             </item>
             <item>
-              <term>r2</term>
-              <description>o coeficiente de determinação. Compara valores y estimados e reais e valor varia de 0 a 1. Se ele for 1, há uma correlação perfeita na amostra — não há nenhuma diferença entre o valor y estimado e o valor y real. Por outro lado, se o coeficiente de determinação for 0, a equação de regressão não é útil para prever um valor y. </description>
+              <term>R2</term>
+              <description>O coeficiente de determinação. Compara valores y estimados e reais e valor varia de 0 a 1. Se ele for 1, há uma correlação perfeita na amostra — não há nenhuma diferença entre o valor y estimado e o valor y real. Por outro lado, se o coeficiente de determinação for 0, a equação de regressão não é útil para prever um valor y. </description>
             </item>
             <item>
               <term>sey</term>
-              <description>o erro padrão da estimativa de y.</description>
+              <description>O erro padrão da estimativa de y.</description>
             </item>
             <item>
               <term>F</term>
-              <description>F a estatística ou o valor F observado. Use a estatística F para determinar se a relação observada entre as variáveis dependentes e independentes ocorre por acaso.</description>
+              <description>A estatística F ou valor F observado. Use a estatística F para determinar se a relação observada entre as variáveis dependentes e independentes ocorrerá aleatoriamente.</description>
             </item>
             <item>
               <term>df</term>
-              <description>o grau de liberdade. Use o grau de liberdade para ajudá-lo a encontrar os valores F críticos em uma tabela estatística. Compare os valores encontrados na tabela com a estatística F retornados por <b>lin</b> para determinar uma confiança. </description>
+              <description>O grau de liberdade. Use o grau de liberdade para ajudá-lo a encontrar os valores F críticos em uma tabela estatística. Compare os valores encontrados na tabela com a estatística F retornados por <b>lin</b> para determinar uma confiança. </description>
             </item>
             <item>
               <term>ssreg</term>
-              <description>a soma de regressão dos quadrados.</description>
+              <description>A soma de regressão dos quadrados.</description>
             </item>
             <item>
               <term>ssresid</term>
-              <description>a soma dos quadrados resíduo.</description>
+              <description>A soma dos quadrados resíduo.</description>
             </item>
           </list>
           <para>A ilustração a seguir mostra a ordem na qual as estatísticas adicionais de regressão são retornadas.</para>
@@ -11102,13 +11132,15 @@ Index(LOGEST(known_y's,known_x's),2)</para>
         <remarks>
           <list type="table">
             <item>
-              <term>Procure em um intervalo de uma linha ou uma coluna (conhecido como vetor) um valor e retornar um valor da mesma posição em um segundo intervalo de uma linha ou uma coluna.</term>
+              <term>Examinar um intervalo de uma linha ou uma coluna (conhecido como vetor) em busca de um valor e retornar um valor da mesma posição em um segundo intervalo de uma linha ou uma coluna.</term>
               <description>Formato de vetor</description>
-              <description>Use o formato de vetor quando tiver uma grande lista de valores para procurar ou quando os valores puderem mudar ao longo do tempo.</description>
+              <description>Use o formato de vetor quando tiver uma lista grande de valores para procurar ou quando os valores puderem mudar ao longo do tempo.</description>
             </item>
             <item>
-              <term>Aparência na primeira linha ou coluna de uma matriz para especificado valor e retorna um valor da mesma posição na última linha ou coluna da matriz</term>de
-              <description>formato de matriz</description><description>usar a matriz de formulário quando você tem uma pequena lista de valores e eles permanecem constantes ao longo do tempo.</description></item>
+              <term>Examinar a primeira linha ou coluna de uma matriz em busca do valor especificado e retornar um valor da mesma posição na última linha ou coluna da matriz.</term>
+              <description>Formato de matriz</description>
+              <description>Use o formato de matriz quando tiver uma pequena lista de valores e eles se mantiverem constantes ao longo do tempo.</description>
+            </item>
           </list>
           <para>
             <b>Observação</b>: você também pode usar a função <b>Lookup</b> como uma alternativa a função se para testes elaboradas ou testes para mais de sete condições. Consulte os exemplos a forma de matriz.</para>
@@ -11469,10 +11501,10 @@ Index(LOGEST(known_y's,known_x's),2)</para>
               <description>Média que é a média aritmética e é calculada adicionando um grupo de números e em seguida, dividindo pela contagem desses números. Por exemplo, a média de 2, 3, 3, 5, 7 e 10 é 30 dividido por 6, que é 5. </description>
             </item>
             <item>
-              <description>Mediano que é o número médio de um grupo de números; isso ocorre, metade dos números possui valores que são maiores que o mediano e metade dos números possui valores que são menores que o mediano. Por exemplo, o mediano de 2, 3, 3, 5, 7 e 10 é 4.</description>
+              <description>Mediano que é o número médio de um grupo de números; ou seja, metade dos números possui valores que são maiores que o mediano e metade dos números possui valores que são menores que o mediano. Por exemplo, o mediano de 2, 3, 3, 5, 7 e 10 é 4.</description>
             </item>
             <item>
-              <description>De modo que é o número de ocorrência mais frequente em um grupo de números. Por exemplo, o modo de 2, 3, 3, 5, 7 e 10 é 3.</description>
+              <description>Modo em que é o número de ocorrência mais frequente em um grupo de números. Por exemplo, o modo de 2, 3, 3, 5, 7 e 10 é 3.</description>
             </item>
           </list>
           <para>Para uma distribuição simétrica de um grupo de números, estas três medidas de tendência central são as mesmas. Para uma distribuição enviesada de um grupo de números, elas podem ser diferentes.</para>
@@ -11817,10 +11849,10 @@ Index(LOGEST(known_y's,known_x's),2)</para>
               <description>Média que é a média aritmética e é calculada adicionando um grupo de números e em seguida, dividindo pela contagem desses números. Por exemplo, a média de 2, 3, 3, 5, 7 e 10 é 30 dividido por 6, que é 5. </description>
             </item>
             <item>
-              <description>Mediano que é o número médio de um grupo de números; isso ocorre, metade dos números possui valores que são maiores que o mediano e metade dos números possui valores que são menores que o mediano. Por exemplo, o mediano de 2, 3, 3, 5, 7 e 10 é 4. </description>
+              <description>Mediano que é o número médio de um grupo de números; ou seja, metade dos números possui valores que são maiores que o mediano e metade dos números possui valores que são menores que o mediano. Por exemplo, o mediano de 2, 3, 3, 5, 7 e 10 é 4. </description>
             </item>
             <item>
-              <description>De modo que está ocorrendo número em um grupo de números com mais frequência. Por exemplo, o modo de 2, 3, 3, 5, 7 e 10 é 3.</description>
+              <description>Modo em que é o número de ocorrência mais frequente em um grupo de números. Por exemplo, o modo de 2, 3, 3, 5, 7 e 10 é 3.</description>
             </item>
           </list>
           <para>Para uma distribuição simétrica de um grupo de números, estas três medidas de tendência central são as mesmas. Para uma distribuição enviesada de um grupo de números, elas podem ser diferentes.</para>
@@ -12013,8 +12045,14 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="bullet">
             <item>
               <description>Médio a média aritmética e é calculada adicionando um grupo de números e em seguida, dividindo pela contagem desses números. Por exemplo, a média de 2, 3, 3, 5, 7 e 10 é 30 dividido por 6, que é 5. </description>
-            </item>Número 
-            <item><description>mediano ao meio de um grupo de números; ou seja, metade dos números que têm valores que são maiores que o mediano e metade dos números que têm valores que são menores que o mediano. Por exemplo, o mediano de 2, 3, 3, 5, 7 e 10 é 4. </description></item><item><description>Modo o número de ocorrência mais frequente em um grupo de números. Por exemplo, o modo de 2, 3, 3, 5, 7 e 10 é 3.</description></item></list>
+            </item>
+            <item>
+              <description>Mediano o número intermediário de um grupo de números; ou seja, metade dos números possui valores que são maiores que o mediano e metade dos números possui valores que são menores que o mediano. Por exemplo, o mediano de 2, 3, 3, 5, 7 e 10 é 4. </description>
+            </item>
+            <item>
+              <description>O número de ocorrência mais frequente em um grupo de números de modo. Por exemplo, o modo de 2, 3, 3, 5, 7 e 10 é 3.</description>
+            </item>
+          </list>
           <para>Para uma distribuição simétrica de um grupo de números, estas três medidas de tendência central são as mesmas. Para uma distribuição enviesada de um grupo de números, elas podem ser diferentes.</para>
           <para></para>
         </remarks>
@@ -12761,11 +12799,11 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>No final do período</description>
+              <description>No fim do período</description>
             </item>
             <item>
               <term>1</term>
-              <description>no início do período</description>
+              <description>No início do período</description>
             </item>
           </list>
           <para></para>
@@ -13096,23 +13134,23 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>Usa (NASD) 30/360</description>
+              <description>USA (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>real/real</description>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>30/360 europeu</description>
+              <description>Europeu 30/360</description>
             </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
@@ -13199,23 +13237,23 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>Usa (NASD) 30/360</description>
+              <description>USA (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>real/real</description>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>30/360 europeu</description>
+              <description>Europeu 30/360</description>
             </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
@@ -13276,23 +13314,23 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>Usa (NASD) 30/360</description>
+              <description>USA (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>real/real</description>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>30/360 europeu</description>
+              <description>Europeu 30/360</description>
             </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
@@ -13352,23 +13390,23 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>Usa (NASD) 30/360</description>
+              <description>USA (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>real/real</description>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>30/360 europeu</description>
+              <description>Europeu 30/360</description>
             </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
@@ -14023,11 +14061,11 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>No final do período</description>
+              <description>No fim do período</description>
             </item>
             <item>
               <term>1</term>
-              <description>no início do período</description>
+              <description>No início do período</description>
             </item>
           </list>
           <para>O pagamento retornado por <b>PGTO</b> inclui principal e juros, mas não impostos, pagamentos de reserva ou taxas às vezes associadas aos empréstimos. </para>
@@ -14207,11 +14245,11 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>No final do período</description>
+              <description>No fim do período</description>
             </item>
             <item>
               <term>1</term>
-              <description>no início do período</description>
+              <description>No início do período</description>
             </item>
           </list>
           <para>Verifique se você está sendo consistente quanto às unidades usadas para especificar taxa e nper. Se fizer pagamentos mensais de um empréstimo de quatro anos com taxa de juros de 12% ao ano, use 12%/12 para taxa e 4*12 para nper. Se você fizer pagamentos anuais para o mesmo empréstimo, use 12% para taxa e 4 para nper.</para>
@@ -14262,23 +14300,23 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>Usa (NASD) 30/360</description>
+              <description>USA (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>real/real</description>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>30/360 europeu</description>
+              <description>Europeu 30/360</description>
             </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
@@ -14341,23 +14379,23 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>Usa (NASD) 30/360</description>
+              <description>USA (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>real/real</description>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>30/360 europeu</description>
+              <description>Europeu 30/360</description>
             </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
@@ -14420,23 +14458,23 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>Usa (NASD) 30/360</description>
+              <description>USA (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>real/real</description>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>30/360 europeu</description>
+              <description>Europeu 30/360</description>
             </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
@@ -14654,34 +14692,35 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>No final do período</description>
+              <description>No fim do período</description>
             </item>
             <item>
               <term>1</term>
-              <description>no início do período</description>
+              <description>No início do período</description>
             </item>
           </list>
-          <para>Verifique se você está sendo consistente quanto às unidades usadas para especificar taxa e nper. Se fizer pagamentos mensais de um empréstimo de quatro anos com taxa de juros de 12% ao ano, use 12%/12 para taxa e 4*12 para nper. Se você fizer pagamentos anuais para o mesmo empréstimo, use 12% para taxa e 4 para nper.</para>
+          <para>Verifique se você está sendo consistente quanto às unidades usadas para especificar taxa e nper. Se fizer pagamentos mensais de um empréstimo de quatro anos com taxa de juros de 12% ao ano, use 12%/12 para taxa e 4*12 para nper. Se você fizer pagamentos anuais para o mesmo empréstimo, use 12% para taxa e 4 para nper. </para>
           <para>As seguintes funções se aplicam a anuidades: </para>
           <list type="table">
             <item>
               <term>PGTOJURACUM</term>
-              <description>PPgto</description>
+              <description>PPGTO</description>
             </item>
             <item>
               <term>PGTOCAPACUM</term>
-              <description>PV</description>
+              <description>VP</description>
             </item>
             <item>
-              <description>Taxa</description> de 
-              <term>VF</term></item>
+              <term>VF</term>
+              <description>TAXA</description>
+            </item>
             <item>
               <term>VFPLANO</term>
               <description>XTIR</description>
             </item>
             <item>
               <term>IPGTO</term>
-              <description>XNPV</description>
+              <description>XVPL</description>
             </item>
             <item>
               <term>PGTO</term>
@@ -14689,10 +14728,10 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             </item>
           </list>
           <para>Uma anuidade é uma série de pagamentos constantes feitos durante um período contínuo. Por exemplo, um empréstimo de carro ou uma hipoteca é uma anuidade. Para obter mais informações, consulte a descrição de cada função de anuidade. </para>
-          <para>Em funções de anuidade, saque, como um depósito em poupança, é representado por um número negativo; depósito recebidos, como um cheque de dividendos, é representados por um número positivo. Por exemplo, um depósito de R$ 1.000,00 no banco seria representado pelo argumento -1000 se você fosse o depositante e pelo argumento 1000 se você fosse o banco.</para>
+          <para>Em funções de anuidade, saque, como um depósito em poupança, é representado por um número negativo; depósito recebidos, como um cheque de dividendos, é representados por um número positivo. Por exemplo, um depósito de R$ 1.000,00 no banco seria representado pelo argumento -1000 se você fosse o depositante e pelo argumento 1000 se você fosse o banco. </para>
           <para>O Microsoft Excel resolve um argumento financeiro em relação aos demais. Se a taxa não for 0, então: 
 
-</para>
+ </para>
           <para>Figura 1: Equação quando taxa não for 0</para>
           <para></para>
           <para></para>
@@ -14740,19 +14779,19 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             </item>
             <item>
               <term>1</term>
-              <description>primeiro quartil (25º percentil)</description>
+              <description>Primeiro quartil (25º percentil)</description>
             </item>
             <item>
               <term>2</term>
-              <description>valor de médio (50º percentil)</description>
+              <description>Valor médio (50º percentil)</description>
             </item>
             <item>
               <term>3</term>
-              <description>terceiro quartil (75 percentil)</description>
+              <description>Terceiro quartil (75º percentil)</description>
             </item>
             <item>
               <term>4</term>
-              <description>valor máximo</description>
+              <description>Valor máximo</description>
             </item>
           </list>
           <para>Se matriz estiver vazia, <b>quartil</b> retornará #NUM! valor de erro. </para>
@@ -15089,11 +15128,11 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>No final do período</description>
+              <description>No fim do período</description>
             </item>
             <item>
               <term>1</term>
-              <description>no início do período</description>
+              <description>No início do período</description>
             </item>
           </list>
           <para>Se você omitir estimativa, este argumento será considerado 10%.</para>
@@ -15142,23 +15181,23 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>Usa (NASD) 30/360</description>
+              <description>USA (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>real/real</description>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>30/360 europeu</description>
+              <description>Europeu 30/360</description>
             </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
@@ -15326,35 +15365,35 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>Clássica.</description>
+              <description>Clássico</description>
             </item>
             <item>
               <term>1</term>
-              <description>mais conciso.</description>
+              <description>Mais conciso.</description>
             </item>
             <item>
               <term>2</term>
-              <description>mais conciso.</description>
+              <description>Mais conciso.</description>
             </item>
             <item>
               <term>3</term>
-              <description>mais conciso.</description>
+              <description>Mais conciso.</description>
             </item>
             <item>
               <term>4</term>
-              <description>simplificado.</description>
+              <description>Simplificado</description>
             </item>
             <item>
               <term>
-                <b>true</b>
+                <b>True</b>
               </term>
-              <description>clássica.</description>
+              <description>Clássica.</description>
             </item>
             <item>
               <term>
-                <b>false</b>
+                <b>False</b>
               </term>
-              <description>simplificado.</description>
+              <description>Simplificado</description>
             </item>
           </list>
           <para>Se o número for negativo, o valor de erro #VALOR! será retornado.</para>
@@ -16207,7 +16246,7 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             </item>
             <item>
               <description>
-                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" /> retorna um valor de 0. O <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" /> algoritmo foi projetado para retornar resultados razoáveis para dados collinear e, nesse caso, pelo menos uma resposta pode ser encontrada.</description>
+                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" />Retorna um valor igual a 0. O <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" /> algoritmo foi projetado para retornar resultados razoáveis para dados collinear e, nesse caso, pelo menos uma resposta pode ser encontrada.</description>
             </item>
           </list>
           <para></para>
@@ -17021,22 +17060,22 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <para>Intervalo_soma não possui o mesmo tamanho e a mesma forma que o intervalo. As células reais que foram adicionadas são determinadas utilizando-se o intervalo_soma na célula superior, à esquerda, como a célula inicial e então incluindo as células que correspondem em tamanho e forma ao intervalo. Por exemplo:</para>
           <list type="table">
             <item>
-              <term>A1: a5</term>
-              <description>B1: B5</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B5</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: a5</term>
-              <description>B1: B3</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B3</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: B4</term>
+              <term>A1:B4</term>
               <description>C1:D4</description>
               <description>C1:D4</description>
             </item>
             <item>
-              <term>A1: B4</term>
+              <term>A1:B4</term>
               <description>C1:C2</description>
               <description>C1:D4</description>
             </item>
@@ -17134,22 +17173,22 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <para>Cada criteria_range não precisa ter o mesmo tamanho e a mesma forma do sum_range. As células reais adicionadas são determinadas pelo uso da célula superior esquerda do criteria_range como a célula inicial e pela inclusão de células que correspondam em tamanho e em forma a sum_range. Por exemplo:</para>
           <list type="table">
             <item>
-              <term>A1: a5</term>
-              <description>B1: B5</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B5</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: a5</term>
-              <description>B1: B3</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B3</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: B4</term>
+              <term>A1:B4</term>
               <description>C1:D4</description>
               <description>C1:D4</description>
             </item>
             <item>
-              <term>A1: B4</term>
+              <term>A1:B4</term>
               <description>C1:C2</description>
               <description>C1:D4</description>
             </item>
@@ -18458,15 +18497,15 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>1</term>
-              <description>Emparelhada</description>
+              <description>Combinados</description>
             </item>
             <item>
               <term>2</term>
-              <description>variância igual de duas amostras (homoscedástica)</description>
+              <description>Variância igual de duas amostras (homoscedástica)</description>
             </item>
             <item>
               <term>3</term>
-              <description>variância desigual de duas amostras (heteroscedástica)</description>
+              <description>Variância desigual de duas amostras (heteroscedástica)</description>
             </item>
           </list>
           <para>Se matriz1 e matriz2 tiverem um número diferente de pontos de dados e tipo = 1 (par), retorna de <b>TESTET</b> o valor de erro # n /. </para>
@@ -19127,43 +19166,43 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>1 ou omitido</term>
-              <description>Números 1 (domingo) a 7 (sábado). Se comporta como versões anteriores do Microsoft Excel.</description>
+              <description>Números 1 (domingo) a 7 (sábado). Como nas versões anteriores do Microsoft Excel.</description>
             </item>
             <item>
               <term>2</term>
-              <description>números 1 (segunda-feira) a 7 (domingo).</description>
+              <description>Números 1 (segunda-feira) a 7 (domingo).</description>
             </item>
             <item>
               <term>3</term>
-              <description>números 0 (segunda-feira) a 6 (domingo).</description>
+              <description>Números 0 (segunda-feira) a 6 (domingo).</description>
             </item>
             <item>
               <term>11</term>
-              <description>números 1 (segunda-feira) a 7 (domingo).</description>
+              <description>Números 1 (segunda-feira) a 7 (domingo).</description>
             </item>
             <item>
               <term>12</term>
-              <description>números 1 (terça-feira) a 7 (segunda-feira)</description>
+              <description>Números 1 (terça-feira) a 7 (segunda-feira)</description>
             </item>
             <item>
               <term>13</term>
-              <description>números 1 (quarta-feira) a 7 (terça-feira)</description>
+              <description>Números 1 (quarta-feira) a 7 (terça-feira)</description>
             </item>
             <item>
               <term>14</term>
-              <description>números 1 (quinta-feira) a 7 (quarta-feira)</description>
+              <description>Números 1 (quinta-feira) a 7 (quarta-feira)</description>
             </item>
             <item>
               <term>15</term>
-              <description>números 1 (sexta-feira) a 7 (quinta-feira)</description>
+              <description>Números 1 (sexta-feira) a 7 (quinta-feira)</description>
             </item>
             <item>
               <term>16</term>
-              <description>números 1 (sábado) a 7 (sexta-feira)</description>
+              <description>Números 1 (sábado) a 7 (sexta-feira)</description>
             </item>
             <item>
               <term>17</term>
-              <description>números 1 (domingo) a 7 (sábado)</description>
+              <description>Números 1 (domingo) a 7 (sábado)</description>
             </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
@@ -19204,11 +19243,11 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>1</term>
-              <description>Semana começa no domingo. Dias da semana são numerados de 1 a 7.</description>
+              <description>A semana começa no domingo. Os dias da semana são numerados de 1 a 7.</description>
             </item>
             <item>
               <term>2</term>
-              <description>semana começa na segunda-feira. Dias da semana são numerados de 1 a 7.</description>
+              <description>A semana começa na segunda-feira. Os dias da semana são numerados de 1 a 7.</description>
             </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
@@ -19621,23 +19660,23 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>Usa (NASD) 30/360</description>
+              <description>USA (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>real/real</description>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>30/360 europeu</description>
+              <description>Europeu 30/360</description>
             </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
@@ -19687,23 +19726,23 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>Usa (NASD) 30/360</description>
+              <description>USA (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>real/real</description>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>30/360 europeu</description>
+              <description>Europeu 30/360</description>
             </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
@@ -19758,23 +19797,23 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 ou omitido</term>
-              <description>Usa (NASD) 30/360</description>
+              <description>USA (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>real/real</description>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>30/360 europeu</description>
+              <description>Europeu 30/360</description>
             </item>
           </list>
           <para>O Microsoft Excel armazena datas como números de série sequenciais para que eles possam ser usados em cálculos. Por padrão, 1 de janeiro de 1900 é o número de série 1, e 1 de janeiro de 2008 é o número de série 39448, porque vem 39.448 dias depois de 1 de janeiro de 1900. O Microsoft Excel para o Macintosh usa um sistema de data diferente como padrão.</para>
