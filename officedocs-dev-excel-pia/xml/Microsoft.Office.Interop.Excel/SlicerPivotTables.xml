@@ -1,10 +1,10 @@
 <Type Name="SlicerPivotTables" FullName="Microsoft.Office.Interop.Excel.SlicerPivotTables">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b123a1bc4260dc8310b68183d37e0c58e2055b96" />
+    <Meta Name="ms.openlocfilehash" Value="e7cf06ad9737671167d43d23e4d02fbaa27f0834" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580980" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SlicerPivotTables : System.Collections.IEnumerable" />
@@ -36,7 +36,7 @@
     <summary>Representa informações sobre a coleção de tabelas dinâmicas associadas especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto.</summary>
     <remarks>
       <para>O <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> conjunto contém informações sobre as tabelas dinâmicas que o cache de segmentação de dados está filtrando no momento. Ele fornece propriedades para determinar o número de tabelas dinâmicas a segmentação de dados está associada e para recuperar <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objetos que representam as tabelas dinâmicas que está sendo filtradas. Ele também fornece métodos para adicionando e removendo tabelas dinâmicas do <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> conjunto. O <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> coleção estará vazia se a segmentação de dados associado com o especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> não estiver conectada a nenhuma tabela dinâmica.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.PivotTables" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto para retornar o <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> conjunto associado um <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />, que por sua vez pode ser associado a um ou mais segmentações de dados.</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.PivotTables" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto para retornar o <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> conjunto associado um <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />, que por sua vez pode ser associado a um ou mais segmentações de dados.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -101,7 +101,7 @@
         <param name="PivotTable">Uma <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object que representa a tabela dinâmica para adicionar.</param>
         <summary>Adiciona uma referência a uma tabela dinâmica para o <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> conjunto.</summary>
         <remarks>
-          <para>Tabela dinâmica um de quando é adicionada ao <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> coleção, ela pode ser filtrada pelo seu pai <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> e pelas segmentações de dados associadas a.</para>
+          <para>Quando uma tabela dinâmica é adicionada ao <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> coleção, ela pode ser filtrada pelo seu pai <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> e pelas segmentações de dados associadas a ela.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -317,7 +317,7 @@
         <param name="PivotTable">Uma <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object que representa a tabela dinâmica para remover, ou o nome ou o índice da tabela dinâmica na coleção.</param>
         <summary>Remove uma referência a uma tabela dinâmica do <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> conjunto.</summary>
         <remarks>
-          <para>Tabela dinâmica um de quando é removida do <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> conjunto, não é mais filtrada pelo seu pai <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> e pelas segmentações de dados associadas a.</para>
+          <para>Quando uma tabela dinâmica é removida do <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> conjunto, não é mais filtrada pelo seu pai <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> e pelas segmentações de dados associadas a ela.</para>
           <para></para>
         </remarks>
       </Docs>

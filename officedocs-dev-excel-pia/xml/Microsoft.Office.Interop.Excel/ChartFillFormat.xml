@@ -1,10 +1,10 @@
 <Type Name="ChartFillFormat" FullName="Microsoft.Office.Interop.Excel.ChartFillFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c7085bf85affb6e2fef37f11e45a4f8673cac74d" />
+    <Meta Name="ms.openlocfilehash" Value="bd04354836c97d4508a39ba9a578e1e6ede7fef8" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585593" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartFillFormat" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Usado somente com gráficos. Representa formatação de preenchimento para elementos gráficos.</summary>
     <remarks>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Excel.ChartArea.Fill" /> propriedade para retornar um <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> objeto.</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.ChartArea.Fill" /> propriedade para retornar um <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> objeto.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -118,8 +118,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -222,7 +224,7 @@
         <summary>Retorna o grau do gradiente do preenchimento sombreado uma cor especificado como um valor de ponto flutuante de 0,0 (escuro) a 1,0 (claro).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> método para definir o grau do gradiente para o preenchimento.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> método para definir o grau do gradiente para o preenchimento.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -271,7 +273,7 @@
             <b>msoGradientFromTitle</b>
           </para>
           <para>
-            <b> msoGradientHorizontal</b>
+            <b>msoGradientHorizontal</b>
           </para>
           <para>
             <b>msoGradientMixed</b>
@@ -310,7 +312,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Os valores da propriedade <b>GradientVariant</b> correspondem às variações de gradiente (numeradas da esquerda para a direita e de cima para baixo) na guia gradiente na caixa de diálogo efeitos de preenchimento.</para>
-          <para>Uso a <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> método para definir a variante de gradiente para o preenchimento.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> método para definir a variante de gradiente para o preenchimento.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -404,7 +406,7 @@
         <value>To be added.</value>
         <remarks>
           <para>A propriedade <b>Pattern</b> pode ser uma do <see cref="T:Microsoft.Office.Core.MsoPatternType" /> constantes.</para>
-          <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.Patterned(Microsoft.Office.Core.MsoPatternType)" /> método para definir o tipo de padrão para o preenchimento.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.Patterned(Microsoft.Office.Core.MsoPatternType)" /> método para definir o tipo de padrão para o preenchimento.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -497,7 +499,7 @@
         <value>To be added.</value>
         <remarks>
           <para>A propriedade <b>PresetGradiantType</b> pode ser uma do <see cref="T:Microsoft.Office.Core.MsoPresetGradientType" /> constantes.</para>
-          <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" /> método para definir o tipo de gradiente predefinido para o preenchimento.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" /> método para definir o tipo de gradiente predefinido para o preenchimento.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -529,7 +531,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Propriedade <b>PresetTexture</b> pode ser uma do <see cref="T:Microsoft.Office.Core.MsoPresetTexture" /> constantes.</para>
-          <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" /> método para definir a textura predefinida para o preenchimento.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" /> método para definir a textura predefinida para o preenchimento.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -616,7 +618,7 @@
         <summary>Retorna o nome do arquivo de textura personalizado do preenchimento especificado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Uso a <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.UserPicture(System.Object,System.Object,System.Object,System.Object)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.UserTextured(System.String)" /> método para definir o arquivo de textura para o preenchimento.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.UserPicture(System.Object,System.Object,System.Object,System.Object)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.UserTextured(System.String)" /> método para definir o arquivo de textura para o preenchimento.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -658,7 +660,7 @@
           <para>
             <b>msoTextureUserDefined</b>
           </para>
-          <para>uso o <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.UserTextured(System.String)" /> método para definir o tipo de textura para o preenchimento.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.UserTextured(System.String)" /> método para definir o tipo de textura para o preenchimento.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -721,7 +723,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoFillType" /> pode ser uma das seguintes constantes:</para>
+            <see cref="T:Microsoft.Office.Core.MsoFillType" />pode ser uma das seguintes constantes:</para>
           <para>
             <b>msoFillGradient</b>
           </para>
@@ -746,7 +748,7 @@
           <para>
             <b>xlNone</b>
           </para>
-          <para>a constante<b>msoFillBackground</b> não é usada no Microsoft Excel.</para>
+          <para>A constante<b>msoFillBackground</b> não é usada no Microsoft Excel.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -861,8 +863,8 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> o objeto está visível.</para>
-          <para>Se você definir a propriedade <b>Visible</b> para um nome como <b>False</b>, o nome não aparecerá na caixa de diálogo Definir nome.</para>
+            <b>msoTrue</b> O objeto está visível.</para>
+          <para>Se você definir a propriedade <b>Visible</b> de um nome como <b>False</b>, o nome não aparecerá na caixa de diálogo Definir Nome.</para>
           <para></para>
         </remarks>
       </Docs>

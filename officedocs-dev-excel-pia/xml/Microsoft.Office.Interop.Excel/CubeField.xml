@@ -1,10 +1,10 @@
 <Type Name="CubeField" FullName="Microsoft.Office.Interop.Excel.CubeField">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dd2f0a8509580a113ef53628d35dc680262b50f0" />
+    <Meta Name="ms.openlocfilehash" Value="bf16f6175f71fd20e3da730314c01f3723f6ca55" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582415" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CubeField" />
@@ -29,8 +29,8 @@
     <summary>Representa um campo de hierarquia ou de medida de um cubo OLAP.</summary>
     <remarks>
       <para>Em um relatório de tabela dinâmica, o objeto <b>CubeField</b> é membro do <see cref="T:Microsoft.Office.Interop.Excel.CubeFields" /> conjunto.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.CubeField" /> propriedade para retornar o objeto <b>CubeField</b> .</para>
-      <para>Uso <b>CubeFields</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do campo de cubo, para retornar um único objeto <b>CubeField</b> .</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.CubeField" /> propriedade para retornar o objeto <b>CubeField</b> .</para>
+      <para>Use <b>CubeFields</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do campo de cubo, para retornar um único objeto <b>CubeField</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -100,7 +100,7 @@
           <b>Objeto</b>de opcional. Define o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.PropertyOrder" /> valor de propriedade para um <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> objeto. A posição real na coleção será imediatamente antes do campo de tabela dinâmica que atualmente tem o mesmo <paramref name="PropertyOrder" /> valor que é fornecido no argumento. Se nenhum campo tiver o valor da propriedade determinada ordem, o intervalo de valores aceitáveis é de 1 até o número de propriedades de membro já mostrando para a hierarquia mais um. Este argumento é baseada em um. Se for omitido, a propriedade vai para o final da lista.</param>
         <summary>Adiciona um campo de propriedades membro para a exibição do campo de cubo.</summary>
         <remarks>
-          <para>o campo de propriedade especificado não será visível se o modo de exibição de tabela dinâmica não tiver campos.</para>
+          <para>O campo de propriedade especificado não será visível se o modo de tabela dinâmica não tiver campos.</para>
           <para>Para excluir propriedades membro, use o <see cref="M:Microsoft.Office.Interop.Excel.PivotField.Delete" /> método para excluir o <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto do <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> conjunto.</para>
           <para></para>
         </remarks>
@@ -168,7 +168,7 @@
           <para>Valor padrão é <b>True</b> e está disponível para o <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />e o <see cref="T:Microsoft.Office.Interop.Excel.CubeField" />objetos.</para>
           <para>Para tabelas dinâmicas OLAP, esta propriedade só está disponível para o <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> objeto. Tentar obter ou defini-la no <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto nas tabelas dinâmicas OLAP retornará um erro de tempo de execução.</para>
           <para>Para PivotTables, essa propriedade está disponível para o <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto.</para>
-          <para>Esta propriedade é automaticamente definida como <b>True</b> quando nenhuma filtragem manual está aplicada (independente de se o <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> propriedade é true ou false). Ele é automaticamente definido como <b>False</b> quando qualquer filtragem manual está aplicada (independente de se o <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> propriedade é true ou false).</para>
+          <para>Essa propriedade é definida automaticamente como <b>True</b> quando nenhuma filtragem manual está aplicada (independente de se o <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> propriedade é true ou false). Ele é automaticamente definido como <b>False</b> quando qualquer filtragem manual está aplicada (independente de se o <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> propriedade é true ou false).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -258,7 +258,7 @@
       <Docs>
         <summary>O <see cref="M:Microsoft.Office.Interop.Excel.CubeField.ClearManualFilter" /> método fornece uma maneira fácil para definir a propriedade <b>Visible</b> como <b>True</b> para todos os itens de um campo dinâmico em tabelas dinâmicas e para esvaziar a <b>HiddenItemsInList</b>/<b>visibleitemslist nas tabelas dinâmicas OLAP</b> .</summary>
         <remarks>
-          <para>Este método está disponível para o <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />do objeto em <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />e para o <see cref="T:Microsoft.Office.Interop.Excel.CubeField" />objeto na tabela dinâmica OLAP. Chamá-lo para um campo dinâmico em uma tabela dinâmica OLAP retornará um erro de tempo de execução.</para>
+          <para>Este método está disponível para o <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />do objeto em <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />e para o <see cref="T:Microsoft.Office.Interop.Excel.CubeField" />objeto na tabela dinâmica OLAP. Chamá-lo para um campo dinâmico em uma tabela dinâmica OLAP retornará um erro em tempo de execução.</para>
           <para>Depois de chamar este método, as <b>coleções HiddenItemsList</b>/<b>HiddenItems</b> e <b>VisibleItemsList</b>/coleções<b>VisibleItems</b> estarão vazias.</para>
           <para></para>
         </remarks>
@@ -287,7 +287,7 @@
       <Docs>
         <summary>O <see cref="M:Microsoft.Office.Interop.Excel.CubeField.CreatePivotFields" /> método é novo no Microsoft Office Excel 2007. Ele permite aos usuários aplicar um filtro a campos dinâmicos ainda não adicionados à tabela dinâmica criando o correspondente <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />objeto.</summary>
         <remarks>
-          <para>Em tabelas dinâmicas OLAP, <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> não existem até o correspondente <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> é adicionado ao <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. O <see cref="M:Microsoft.Office.Interop.Excel.CubeField.CreatePivotFields" />método permite aos usuários criar todos os <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> de um <see cref="T:Microsoft.Office.Interop.Excel.CubeField" />.  Os usuários também podem adicionar filtros para os campos dinâmicos e definir propriedades neles antes CubeField é adicionado ao <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</para>
+          <para>Nas tabelas dinâmicas OLAP, <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> não existem até o correspondente <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> é adicionado ao <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. O <see cref="M:Microsoft.Office.Interop.Excel.CubeField.CreatePivotFields" />método permite aos usuários criar todos os <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> de um <see cref="T:Microsoft.Office.Interop.Excel.CubeField" />.  Os usuários também podem adicionar filtros para os campos dinâmicos e definir propriedades neles antes CubeField é adicionado ao <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -318,8 +318,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CubeFieldSubType">
@@ -350,7 +352,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCubeFieldSubType" />
         </value>
         <remarks>
-          <para>O <see cref="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldSubType" /> pode ser qualquer um dos valores da enumeração a seguir</para>
+          <para>O <see cref="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldSubType" /> pode ser qualquer um dos valores da enumeração a seguir </para>
           <list type="bullet">
             <item>
               <description>
@@ -395,6 +397,11 @@
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Excel.XlCubeFieldSubType.xlCubeMeasure" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCubeFieldSubType.xlCubeSet" />
               </description>
             </item>
           </list>
@@ -525,7 +532,7 @@
         <value>To be added.</value>
         <remarks>
           <para>O valor padrão é <b>True</b>.</para>
-          <para>Fontes de dados OLAP para o valor é <b>False</b> para campos de medir.</para>
+          <para>Para fontes de dados OLAP, o valor é <b>False</b> para campos de medida.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -561,7 +568,7 @@
         <value>To be added.</value>
         <remarks>
           <para>O valor padrão é <b>True</b>.</para>
-          <para>Fontes de dados OLAP para o valor é <b>False</b> para campos de medir.</para>
+          <para>Para fontes de dados OLAP, o valor é <b>False</b> para campos de medida.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -596,7 +603,7 @@
           <b>True</b> se o campo pode estar ocultos por seja arrastado para fora do relatório de tabela dinâmica.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>o valor padrão é <b>True</b>.</para>
+          <para>O valor padrão é <b>True</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -632,7 +639,7 @@
         <value>To be added.</value>
         <remarks>
           <para>O valor padrão é <b>True</b>.</para>
-          <para>Fontes de dados OLAP para o valor é <b>False</b> para campos de medir.</para>
+          <para>Para fontes de dados OLAP, o valor é <b>False</b> para campos de medida.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -667,8 +674,8 @@
           <b>True</b> se o campo puder ser arrastado para a posição da linha.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>O valor padrão é <b>True</b>. </para>
-          <para>Fontes de dados OLAP para o valor é <b>False</b> para campos de medir.</para>
+          <para>O valor padrão é <b>True</b>.</para>
+          <para>Para fontes de dados OLAP, o valor é <b>False</b> para campos de medida.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -741,8 +748,8 @@
         <remarks>
           <para>Leitura/gravação.</para>
           <para>
-            <b>true</b> se todas as hierarquias do conjunto nomeado especificado são exibidas no mesmo campo; caso contrário <b>false</b>.</para>
-          <para>o valor dessa propriedade corresponde à configuração dos itens de exibição de níveis diferentes em campos separados de caixa de seleção do layout de &amp; guia Imprimir da caixa de diálogo Configurações do campo para um conjunto nomeado em um relatório de tabela dinâmica que se baseia em um cubo OLAP.</para>
+            <b>true</b> se todas as hierarquias do conjunto nomeado especificado são exibidas no mesmo campo; Caso contrário <b>false</b>.</para>
+          <para>O valor dessa propriedade corresponde à configuração dos itens de exibição de níveis diferentes em campos separados de caixa de seleção do layout de &amp; guia Imprimir da caixa de diálogo Configurações do campo para um conjunto nomeado em um relatório de tabela dinâmica que se baseia em um cubo OLAP.</para>
           <para>Esta propriedade retornará um erro se o <see cref="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldType" /> propriedade de especificado <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> objeto não for <b>xlSet</b>.</para>
           <para></para>
         </remarks>
@@ -811,7 +818,7 @@
         <summary>Retorna ou define os níveis superiores da hierarquia especificada que estão ocultas.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>o valor padrão é 0 (zero), indicando que não há níveis estão ocultos.</para>
+          <para>O valor padrão é 0 (zero), indicando que não há níveis estão ocultos.</para>
           <para>Para definir o valor dessa propriedade como um número inteiro maior que 0, primeiro você deve definir o valor como 0.</para>
           <para></para>
         </remarks>
@@ -849,8 +856,8 @@
         <remarks>
           <para>Leitura/gravação.</para>
           <para>
-            <b>true</b> se o conjunto nomeado for exibido conforme ordenado com as duplicatas removidas; caso contrário <b>false</b>.</para>
-          <para>o valor dessa propriedade corresponde à configuração da ordem automaticamente e remover duplicatas da caixa de seleção set no Layout &amp; guia Imprimir da caixa de diálogo Configurações do campo para um conjunto nomeado em um relatório de tabela dinâmica com base em um cubo OLAP.</para>
+            <b>true</b> se o conjunto nomeado for exibido conforme ordenado com as duplicatas removidas; Caso contrário <b>false</b>.</para>
+          <para>O valor dessa propriedade corresponde à configuração da ordem automaticamente e remover duplicatas da caixa de seleção set no Layout &amp; guia Imprimir da caixa de diálogo Configurações do campo para um conjunto nomeado em um relatório de tabela dinâmica com base em um cubo OLAP.</para>
           <para>Esta propriedade retornará um erro se o <see cref="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldType" /> propriedade de especificado <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> objeto não for <b>xlSet</b>.</para>
           <para></para>
         </remarks>
@@ -888,9 +895,9 @@
         </value>
         <remarks>
           <para>Valor padrão é <b>False</b>.</para>
-          <para>Quando essa configuração é definida como <b>True</b>, os itens excluídos são controladas quando filtragem manual está aplicada. Quando essa configuração é definida como <b>False</b>, os itens incluídos são controlados quando filtragem manual está aplicada.</para>
-          <para>Quando <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> estiver definida como <b>False</b>, as coleções <b>HiddenItemsList</b> e <b>HiddenItems</b> estão vazias e itens não podem ser adicionados a elas.</para>
-          <para>Quando <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> estiver definida como <b>True</b>, as coleções <b>VisibleItemsList</b> e <b>VisibleItems</b> estão vazias e itens não podem ser adicionados a elas.</para>
+          <para>Quando essa configuração é definida como <b>True</b>, os itens excluídos são controlados quando a filtragem manual é aplicada. Quando essa configuração é definida como <b>False</b>, os itens incluídos são controlados quando a filtragem manual é aplicada.</para>
+          <para>Quando <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> estiver definida como <b>False</b>, as coleções <b>HiddenItemsList</b> e <b>HiddenItems</b> estão vazias e itens não podem ser adicionados a eles.</para>
+          <para>Quando <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> estiver definida como <b>True</b>, as coleções <b>VisibleItemsList</b> e <b>VisibleItems</b> estão vazias e itens não podem ser adicionados a eles.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -955,12 +962,12 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutFormType" />pode ser uma destas constantes <b>XlLayoutFormType</b> :</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutFormType" />pode ser uma das constantes <b>XlLayoutFormType a seguir</b> :</para>
           <para>
-            <b>xlTabular</b> padrão.</para>
+            <b>xlTabular</b> Padrão.</para>
           <para>
-            <b>xlOutline</b> o <see cref="P:Microsoft.Office.Interop.Excel.CubeField.LayoutSubtotalLocation" /> propriedade especifica onde o subtotal será exibido no relatório de tabela dinâmica.</para>
-          <para>, Você pode definir essa propriedade para qualquer campo de tabela dinâmica; no entanto, a formatação será exibida apenas se o campo especificado não for um campo de linha diferente do campo de linha mais interno de (nível mais baixo). Para fontes de dados não-OLAP, o valor dessa propriedade não é alterado quando o campo é reorganizado ou quando ele é adicionado à ou removido do relatório de tabela dinâmica.</para>
+            <b>xlOutline</b> O <see cref="P:Microsoft.Office.Interop.Excel.CubeField.LayoutSubtotalLocation" /> propriedade especifica onde o subtotal será exibido no relatório de tabela dinâmica.</para>
+          <para>Você pode definir esta propriedade para qualquer campo de tabela dinâmica. No entanto, a formatação será exibida somente se o campo de linha especificado não for o mais interno (o de nível mais baixo). Para fontes de dados que não sejam OLAP, o valor da propriedade não é alterado quando o campo é reorganizado, adicionado ou removido do relatório de tabela dinâmica.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1000,9 +1007,9 @@
             <b>xlAtTop</b>
           </para>
           <para>
-            <b>xlAtBottom</b> padrão</para>
-          <para>você pode definir essa propriedade para qualquer tabela dinâmica de campo no formato de estrutura de tópicos; no entanto, a formatação aparecerá somente se especificado campo não for um campo de linha mais interno (o mais baixo nível). Para fontes de dados não-OLAP, o valor dessa propriedade não é alterado quando o campo é reorganizado ou quando ele é adicionado à ou removido do relatório.</para>
-          <para>o <see cref="P:Microsoft.Office.Interop.Excel.CubeField.LayoutForm" /> propriedade determina se o relatório será exibido no formato de tabela ou no formato de estrutura de tópicos.</para>
+            <b>xlAtBottom</b> Padrão</para>
+          <para>Você pode definir essa propriedade para qualquer campo de tabela dinâmica no formato de estrutura de tópicos; No entanto, a formatação aparecerá somente se o campo especificado não for um campo de linha mais interno (o mais baixo nível). Para fontes de dados não-OLAP, o valor dessa propriedade não é alterado quando o campo é reorganizado ou quando ele é adicionado à ou removido do relatório.</para>
+          <para>O <see cref="P:Microsoft.Office.Interop.Excel.CubeField.LayoutForm" /> propriedade determina se o relatório será exibido no formato de tabela ou no formato de estrutura de tópicos.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1081,7 +1088,7 @@
           <para>
             <b>xlRowField</b>
           </para>
-          <para>para fontes de dados OLAP, a definição dessa propriedade para um campo em um hierarquia define a orientação para os outros campos na mesma hierarquia. Campos de dimensão só podem ser orientados na linha, coluna e áreas de campo de página do relatório de tabela dinâmica. Campos de medida só podem ser orientados na área de dados. A definição de um campo de hierarquia ou dados como <b>xlHidden</b> remove o campo ou a hierarquia do relatório de tabela dinâmica.</para>
+          <para>Para fontes de dados OLAP, a definição desta propriedade para um campo em uma hierarquia define a orientação para os outros campos na mesma hierarquia. Campos de dimensão só podem ser orientados nas áreas de campo de linha, de coluna e de página do relatório de tabela dinâmica. Campos de medida só podem ser orientados na área de dados. A definição de uma hierarquia ou de um campo de dados como <b>xlHidden</b> remove a hierarquia ou o campo do relatório de tabela dinâmica.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1140,7 +1147,7 @@
         <summary>Retorna o <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> conjunto. Essa coleção contém todos os campos de tabela dinâmica, incluindo aqueles que não estão atualmente visíveis na tela.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Fontes de dados para Online Analytical Processing (OLAP), não existem campos ocultos, e o objeto ou a coleção retornada reflete o que está visível no momento.</para>
+          <para>Para fontes de dados OLAP (Online Analytical Processing), não existem campos ocultos, e o objeto ou a coleção retornada reflete o que está visível no momento.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1233,7 +1240,7 @@
         <summary>Retorna o <see cref="T:Microsoft.Office.Interop.Excel.TreeviewControl" /> object, que representa o controle de manipulação de cubo de um relatório de tabela dinâmica baseado em OLAP.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Essa propriedade está disponível somente quando o controle está visível.</para>
+          <para>Essa propriedade estará disponível somente quando o controle estiver visível.</para>
           <para></para>
         </remarks>
       </Docs>

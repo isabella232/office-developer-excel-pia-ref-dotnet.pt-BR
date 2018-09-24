@@ -1,10 +1,10 @@
 <Type Name="Panes" FullName="Microsoft.Office.Interop.Excel.Panes">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="366e9975d23f2f4766d04e9edb84c85c24c04024" />
+    <Meta Name="ms.openlocfilehash" Value="7d60437390854068b5400256a6be386c545e5280" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578089" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Panes" />
@@ -31,10 +31,10 @@
   <Docs>
     <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> objetos mostrados na janela especificada.</summary>
     <remarks>
-      <para>Objetos 
+      <para>Os objetos 
         <b>Pane</b> só existem para planilhas e folhas de macro do Microsoft Excel 4.0.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Excel.Window.Panes" /> propriedade para retornar a coleção <b>Panes</b> .</para>
-      <para>Usar <b>painéis</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do painel, para retornar um único objeto <b>Pane</b> .</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.Window.Panes" /> propriedade para retornar a coleção <b>Panes</b> .</para>
+      <para>Use <b>Panes</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do painel, para retornar um único objeto <b>Pane</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -156,8 +156,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">

@@ -1,10 +1,10 @@
 <Type Name="HPageBreaks" FullName="Microsoft.Office.Interop.Excel.HPageBreaks">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="67108f19eb2bdfc41fd93ef30c28377a61a1667c" />
+    <Meta Name="ms.openlocfilehash" Value="0624b974810397b893a61eed52c425b38d116dad" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585726" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface HPageBreaks : System.Collections.IEnumerable" />
@@ -36,18 +36,18 @@
     <summary>A coleção de quebras de página horizontais dentro da área de impressão. Cada quebra de página horizontal é representada por um <see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" /> objeto.</summary>
     <remarks>
       <para>Use a propriedade <b>HPageBreaks</b> para retornar a coleção <b>HPageBreaks</b> . Use o <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> método para adicionar uma quebra de página horizontal.</para>
-      <para>Se você adicionar uma quebra de página que não fizerem interseção da área de impressão, então o objeto <b>HPageBreak</b> recém-adicionado não aparecerá na coleção <b>HPageBreaks</b> da área de impressão.</para>
+      <para>Se você adicionar uma quebra de página que não fizerem interseção da área de impressão, o objeto <b>HPageBreak</b> recém-adicionado não aparecerá na coleção <b>HPageBreaks</b> da área de impressão.</para>
       <para>Quando o <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Application" /> propriedade, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Count" /> propriedade, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Creator" /> propriedade, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Item(System.Int32)" /> propriedade, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Parent" /> propriedade, ou <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> método é usado em conjunto com a propriedade <b>HPageBreaks</b> :</para>
       <list type="bullet">
         <item>
-          <description>Para uma área de impressão automática, a propriedade <b>HPageBreaks</b> se aplica apenas às quebras de página dentro da área de impressão.</description>
+          <description>Para obter uma área de impressão automática, a propriedade <b>HPageBreaks</b> se aplica somente às quebras de página que estão nos limites da área de impressão.</description>
         </item>
         <item>
-          <description>Para uma área de impressão definida pelo usuário do mesmo intervalo, a propriedade <b>HPageBreaks</b> se aplica a todas as quebras de página.</description>
+          <description>Para obter uma área de impressão definida pelo usuário que esteja no mesmo intervalo, a propriedade <b>HPageBreaks</b> se aplica a todas as quebras de página.</description>
         </item>
       </list>
       <para>
-        <b>Observação</b> lá é um limite de 1,026 quebras de página horizontais por planilha.</para>
+        <b>Observação</b>  Não há um limite de 1,026 quebras de página horizontais por planilha.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -199,8 +199,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

@@ -1,10 +1,10 @@
 <Type Name="ColorScale" FullName="Microsoft.Office.Interop.Excel.ColorScale">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="06c205813dcccacb04e48254943037851cce5de7" />
+    <Meta Name="ms.openlocfilehash" Value="1f67e87764cc01fd4ea79e3073b361913e5007f2" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585586" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ColorScale" />
@@ -31,10 +31,13 @@
   <Docs>
     <summary>Representa uma regra de formatação condicional de escala de cores.</summary>
     <remarks>
-      <para>Todos os objetos de formatação condicionais estão contidos dentro de um <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> objeto da coleção, que é um filho de um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> conjunto. Você pode criar uma regra de formatação por meio de um de escala de cores a <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddColorScale(System.Int32)" /> método da coleção <b>FormatConditions</b> .</para> Dimensiona 
-      <para>cor é visual guias que ajudarão a entender a distribuição de dados e variação. Você pode aplicar um duas cores ou uma escala de três cores a um intervalo de dados, os dados em uma tabela ou dados em um relatório de tabela dinâmica. Para uma formatação condicional da escala de duas cores, você atribui o valor, tipo e cor aos limites mínimos e máximo de um intervalo. Uma escala de três cores também tem um limite de ponto médio.</para><para>Cada um desses limites é determinado pela definição das propriedades do <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> objeto. O objeto <b>ColorScaleCriteria</b> , que é um filho do objeto <b>ColorScale</b> , é uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objetos da escala de cores.</para><para></para></remarks>
+      <para>Todos os objetos de formatação condicionais estão contidos dentro de um <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> objeto da coleção, que é um filho de um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> conjunto. Você pode criar uma regra de formatação por meio de um de escala de cores a <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddColorScale(System.Int32)" /> método da coleção <b>FormatConditions</b> .</para>
+      <para>As escalas de cores são guias visuais que ajudam você a compreender a distribuição e a variação de dados. Você pode aplicar uma escala de duas cores ou de três cores a um intervalo de dados, dados em uma tabela, ou dados um relatório de tabela dinâmica. Para uma formatação condicional de escala de duas cores, você pode atribuir o valor, tipo e cor aos limites mínimo e máximo de um intervalo. Uma escala de três cores também possui um limite médio.</para>
+      <para>Cada um desses limites é determinado pela definição das propriedades do <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> objeto. O objeto <b>ColorScaleCriteria</b> , que é um filho do objeto <b>ColorScale</b> , é uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objetos da escala de cores.</para>
+      <para></para>
+    </remarks>
     <example>
-      <para>O exemplo de código a seguir cria um intervalo de números e aplica uma regra de formatação condicional da escala de duas cores para aquele intervalo. A cor para o limite mínimo, em seguida, é atribuída para vermelho e o limite máximo como azul.</para>
+      <para>O exemplo de código a seguir cria um intervalo de números e aplica uma regra de formatação de escala de duas cores a esse intervalo. A cor do limite mínimo é vermelha e o limite máximo é azul.</para>
       <code>&lt;span class="label"&gt;Sub CreateColorScaleCF() 
 
 
@@ -324,7 +327,7 @@
         <value>
           <b>Aplicativo</b> (consulte acima)</value>
         <remarks>
-          <para>Você pode usar essa propriedade com um objeto de automação OLE para retornar o aplicativo desse objeto.</para>
+          <para>Você pode usar essa propriedade com um objeto de Automação OLE para retornar o aplicativo desse objeto.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -478,7 +481,7 @@
           <b>String</b>
         </value>
         <remarks>
-          <para>Essa propriedade é útil para limitar o intervalo de valores que exibirá o formato condicional. Um cenário típico é quando você tem um intervalo de números que contém valores positivos e negativos. Convém criar mais de um formato condicional para esse intervalo de números — um para valores positivos e outro para valores negativos.</para>
+          <para>Essa propriedade é útil para limitar o intervalo de valores que exibirão o formato condicional. Um cenário típico é quando você possui um intervalo de números que contém valores positivos e negativos. Você talvez queira criar mais de um formato condicional para esse intervalo de números—um para valores positivos e outro para valores negativos.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -508,7 +511,7 @@
         <param name="Range">O intervalo ao qual esta regra de formatação será aplicada.</param>
         <summary>Define o intervalo de células ao qual esta regra de formatação se aplicará.</summary>
         <remarks>
-          <para>O intervalo deve estar no estilo de referência A1 e estar totalmente contido dentro da folha que é o pai do <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> conjunto. Ele pode incluir o operador de intervalo (dois-pontos), o operador de interseção (um espaço) ou o operador union (uma vírgula). Os sinais de dólar também pode ser usados, mas eles serão ignorados.</para>
+          <para>O intervalo deve estar no estilo de referência A1 e estar totalmente contido dentro da folha que é o pai do <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> conjunto. Ele pode incluir o operador de intervalo (dois-pontos), o operador de interseção (um espaço) ou o operador union (uma vírgula). Os sinais de dólar também pode ser usados, mas eles são ignorados.</para>
           <para>Você também pode usar um nome definido de local em qualquer parte do intervalo, mas o nome deve estar no idioma da macro.</para>
           <para></para>
         </remarks>
@@ -575,7 +578,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Ao definir a prioridade, o valor deve ser um inteiro positivo entre 1 e o número total de regras de formatação condicional na planilha. A prioridade deve ser um valor exclusivo para todas as regras na planilha, portanto, alterando a prioridade para a regra de formatação condicional especificada pode causar o valor de prioridade das regras de na planilha deslocamento.</para>
+          <para>Ao definir a propriedade, o valor deve ser um número inteiro positivo entre 1 e o número total de regras de formatação condicional na planilha. A prioridade deve ser um valor exclusivo para todas as regras na planilha, de forma que a alteração da prioridade da regra de formatação condicional especificada irá deslocar o valor de prioridade de todas as outras regras na planilha.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -641,7 +644,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
         </value>
         <remarks>
-          <para>o valor padrão é <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, que define o escopo usando o <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.AppliesTo" />propriedade.</para>
+          <para>O valor padrão é <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, que define o escopo usando o <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.AppliesTo" />propriedade.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -669,7 +672,7 @@
       <Docs>
         <summary>Define o valor de prioridade para esta regra de formatação condicional como "1", de forma que esta regra seja avaliada antes das outras regras na planilha.</summary>
         <remarks>
-          <para>Quando você tem várias regras de formatação condicionais em uma planilha, se a regra não foi definida anteriormente para prioridade mais alta "1", esse método fará com que a prioridade de todas as outras regras existentes na planilha seja aumentada por uma.</para>
+          <para>Quando você tiver várias regras de formatação condicional em uma planilha, se a prioridade dessa regra não tiver sido definida previamente como "1", este método aumentará a prioridade em um nível em todas as outras regras existentes na planilha.</para>
           <para>
             <b>Observação</b>: os níveis de prioridade de regras de formatação condicional são aplicados em uma base de nível de planilha.</para>
           <para></para>
@@ -699,7 +702,7 @@
       <Docs>
         <summary>Define a ordem de avaliação para esta regra de formatação condicional, de forma que seja avaliada após todas as outras regras da planilha.</summary>
         <remarks>
-          <para>A Value real da prioridade será igual ao número total de regras de formatação condicional na planilha. Quando você tem várias regras de formatação condicionais em uma planilha, esse método fará com que a prioridade de regras que tinha um valor de prioridade maior do que esta regra seja aumentada por uma.</para>
+          <para>O valor real da prioridade será igual ao número total de regras de formatação condicional na planilha. Quando você tiver várias regras de formatação em uma planilha, este método aumentará em um nível a prioridade das regras que tenham um valor de prioridade maior do que o desta regra.</para>
           <para>
             <b>Observação</b>: os níveis de prioridade de regras de formatação condicional são aplicados em uma base de nível de planilha.</para>
           <para></para>
@@ -734,7 +737,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Para oferecer suporte a compatibilidade com versões anteriores, o valor padrão para essa propriedade é <b>True</b>, o que é o oposto de uma formatação a regra criada na interface do usuário.</para>
+          <para>Para que haja compatibilidade com versões anteriores, o valor padrão para essa propriedade é <b>True</b>, que é o oposto de uma regra de formatação criada na interface do usuário.</para>
           <para></para>
         </remarks>
       </Docs>

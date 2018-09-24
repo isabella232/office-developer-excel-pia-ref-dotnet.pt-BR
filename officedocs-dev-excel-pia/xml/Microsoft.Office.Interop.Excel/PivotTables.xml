@@ -1,10 +1,10 @@
 <Type Name="PivotTables" FullName="Microsoft.Office.Interop.Excel.PivotTables">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fec2de78dcf640219cb44f66becd0a0dbc77878e" />
+    <Meta Name="ms.openlocfilehash" Value="b1b870f7e0d404abd82b95ed4e0d3df8f815f25c" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578019" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotTables : System.Collections.IEnumerable" />
@@ -36,9 +36,11 @@
     <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objetos na planilha especificada.</summary>
     <remarks>
       <para>Use o <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTables(System.Object)" /> método para retornar a coleção de <b>tabelas dinâmicas</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTableWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para criar um novo relatório de tabela dinâmica e adicioná-lo à coleção.</para>
-      <para>Uso de <b>tabelas dinâmicas</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice da tabela dinâmica ou nome, para retornar um único objeto <b>PivotTable</b> .</para> Programação de relatórios de 
-      <para>tabela dinâmica porque pode ser complexa, ele geralmente é mais fácil gravar as ações de relatório de tabela dinâmica e posteriormente revisar o código gravado. Para gravar uma macro, aponte para Macro no menu Ferramentas e clique em Gravar Nova Macro.</para><para></para></remarks>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTableWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para criar um novo relatório de tabela dinâmica e adicioná-lo à coleção.</para>
+      <para>Use as <b>tabelas dinâmicas</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice da tabela dinâmica ou nome, para retornar um único objeto <b>PivotTable</b> .</para>
+      <para>Como a programação de relatório de Tabela Dinâmica pode ser complexa, geralmente é mais fácil registrar ações de relatório de Tabela Dinâmica e examinar o código gravado. Para gravar uma macro, aponte para Macro no menu Ferramentas e clique em Gravar Nova Macro.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -161,7 +163,10 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriedade <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

@@ -1,10 +1,10 @@
 <Type Name="CalculatedMember" FullName="Microsoft.Office.Interop.Excel.CalculatedMember">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b21af6737ba0963f5684b7823b01d8e7626b56bb" />
+    <Meta Name="ms.openlocfilehash" Value="7dbe58948b0a319d6163ef1a376e3134b0cce7cd" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576787" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CalculatedMember" />
@@ -34,7 +34,7 @@
       <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.CalculatedMembers.Add(System.String,System.String,System.Object,System.Object)" /> método ou o <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMembers.Item(System.Object)" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> coleção, para retornar um objeto <b>CalculatedMember</b> .</para>
       <para>Com um objeto <b>CalculatedMember</b> , é possível verificar a validade de um campo ou item calculado em uma tabela dinâmica usando o <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.IsValid" /> propriedade.</para>
       <para>
-        <b>Observação</b> a propriedade <b>IsValid</b> retornará <b>True</b> se a tabela dinâmica não está conectada à fonte de dados. Use o <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.MakeConnection" /> método antes de testar a propriedade <b>IsValid</b> .</para>
+        <b>Observação</b>  A propriedade <b>IsValid</b> retornará <b>True</b> se a tabela dinâmica não está conectada à fonte de dados. Use o <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.MakeConnection" /> método antes de testar a propriedade <b>IsValid</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -124,8 +124,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Excel, essa propriedade retornará a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usado no Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -183,8 +185,8 @@
         <value>O nome da pasta de exibição para um conjunto nomeado.</value>
         <remarks>
           <para>Somente leitura.</para>
-          <para>o valor dessa propriedade corresponde ao valor opcional que pode ser inserido na caixa de texto de pasta de exibição, da caixa de diálogo Definir novo/modificar quando um conjunto nomeado é criado ou editado. Para criar um novo conjunto de dados em uma tabela dinâmica com base em uma fonte de dados OLAP nomeado, clique em tabela dinâmica, clique em campo, itens, &amp; conjuntos de opções de ferramentas de tabela dinâmica de guia na faixa de opções, clique em gerenciar conjuntos, clique em novo na caixa de diálogo Set Manager e, em seguida, clique em criar Se t usando MDX. Isso exibirá a caixa de diálogo Definir novo, que contém a caixa de texto da pasta de exibição. Da mesma forma, se você selecionar um conjunto nomeado existente na caixa de diálogo Set Manager e clique em Editar, é exibida a caixa de diálogo Modificar definida.</para>
-          <para>Essa propriedade junto com o <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Dynamic" /> e <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.HierarchizeDistinct" /> propriedades só podem ser lido para conjuntos nomeados (que são representados por <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objetos onde o <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> é igual a propriedade <paramref name="xlCalculatedSet" />). Essas propriedades para não podem ser lidas por membros ou medidas calculados (que são representados por <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objetos onde o <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> é igual a propriedade <paramref name="xlCalculatedMember" />). Se você tentar ler essas propriedades para membros ou medidas calculados, um erro em tempo de execução é disparado.</para>
+          <para>O valor dessa propriedade corresponde ao valor opcional que pode ser inserido na caixa de texto de pasta de exibição, da caixa de diálogo Definir novo/modificar quando um conjunto nomeado é criado ou editado. Para criar um novo conjunto de dados em uma tabela dinâmica com base em uma fonte de dados OLAP nomeado, clique em tabela dinâmica, clique em campo, itens, &amp; conjuntos de opções de ferramentas de tabela dinâmica de guia na faixa de opções, clique em gerenciar conjuntos, clique em novo na caixa de diálogo Set Manager e, em seguida, clique em criar Se t usando MDX. Isso exibirá a caixa de diálogo Definir novo, que contém a caixa de texto da pasta de exibição. Da mesma forma, se você selecionar um conjunto nomeado existente na caixa de diálogo Set Manager e clique em Editar, modifique conjunto de caixa de diálogo é exibida.</para>
+          <para>Essa propriedade junto com o <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Dynamic" /> e <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.HierarchizeDistinct" /> propriedades só podem ser lido para conjuntos nomeados (que são representados por <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objetos onde o <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> é igual a propriedade <paramref name="xlCalculatedSet" />). Essas propriedades para não podem ser lidas por membros ou medidas calculados (que são representados por <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objetos onde o <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> é igual a propriedade <paramref name="xlCalculatedMember" />). Se você tentar ler essas propriedades para membros ou medidas calculados, um erro em tempo de execução será gerado.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -218,9 +220,9 @@
         <remarks>
           <para>Somente leitura.</para>
           <para>
-            <b>true</b> se o conjunto nomeado for recalculado a cada atualização; caso contrário <b>false</b>.</para>
-          <para>o valor dessa propriedade corresponde à configuração da recalcular definidas com cada caixa de seleção de atualização na caixa de diálogo Definir novo/modificar que está disponível quando um conjunto nomeado é criado ou editado. Para criar um novo conjunto de dados em uma tabela dinâmica com base em uma fonte de dados OLAP nomeado, clique em tabela dinâmica, clique em campo, itens, &amp; conjuntos de opções de ferramentas de tabela dinâmica de guia na faixa de opções, clique em gerenciar conjuntos, clique em novo na caixa de diálogo Set Manager e, em seguida, clique em criar Se t usando MDX. Isso exibirá a caixa de diálogo Definir novo, que contém o recalcular definidas com cada caixa de seleção de atualização. Da mesma forma, se você selecionar um conjunto nomeado existente na caixa de diálogo Set Manager e clique em Editar, é exibida a caixa de diálogo Modificar definida.</para>
-          <para>Essa propriedade junto com o <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.DisplayFolder" /> e <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.HierarchizeDistinct" /> propriedades só podem ser lido para conjuntos nomeados (que são representados por <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objetos onde o <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> é igual a propriedade <paramref name="xlCalculatedSet" />). Essas propriedades para não podem ser lidas por membros ou medidas calculados (que são representados por <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objetos onde o <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> é igual a propriedade <paramref name="xlCalculatedMember" />). Se você tentar ler essas propriedades para membros ou medidas calculados, um erro em tempo de execução é disparado.</para>
+            <b>true</b> se o conjunto nomeado for recalculado a cada atualização; Caso contrário <b>false</b>.</para>
+          <para>O valor dessa propriedade corresponde à configuração da recalcular definidas com cada caixa de seleção de atualização na caixa de diálogo Definir novo/modificar que está disponível quando um conjunto nomeado é criado ou editado. Para criar um novo conjunto de dados em uma tabela dinâmica com base em uma fonte de dados OLAP nomeado, clique em tabela dinâmica, clique em campo, itens, &amp; conjuntos de opções de ferramentas de tabela dinâmica de guia na faixa de opções, clique em gerenciar conjuntos, clique em novo na caixa de diálogo Set Manager e, em seguida, clique em criar Se t usando MDX. Isso exibirá a caixa de diálogo Definir novo, que contém o recalcular definidas com cada caixa de seleção de atualização. Da mesma forma, se você selecionar um conjunto nomeado existente na caixa de diálogo Set Manager e clique em Editar, modifique conjunto de caixa de diálogo é exibida.</para>
+          <para>Essa propriedade junto com o <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.DisplayFolder" /> e <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.HierarchizeDistinct" /> propriedades só podem ser lido para conjuntos nomeados (que são representados por <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objetos onde o <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> é igual a propriedade <paramref name="xlCalculatedSet" />). Essas propriedades para não podem ser lidas por membros ou medidas calculados (que são representados por <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objetos onde o <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> é igual a propriedade <paramref name="xlCalculatedMember" />). Se você tentar ler essas propriedades para membros ou medidas calculados, um erro em tempo de execução será gerado.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -257,8 +259,8 @@
         <remarks>
           <para>Leitura/gravação.</para>
           <para>
-            <b>true</b> se itens de todos os níveis da hierarquia do conjunto nomeado forem exibidos no mesmo campo; caso contrário <b>false</b>.</para>
-          <para>o valor dessa propriedade corresponde à configuração dos itens da exibição de níveis diferentes em campos separados de caixa de seleção na caixa de diálogo Definir novo/modificar quando um conjunto nomeado é criado ou editado. Para criar um novo conjunto de dados em uma tabela dinâmica com base em uma fonte de dados OLAP nomeado, clique em tabela dinâmica, clique em campo, itens, &amp; conjuntos de opções de ferramentas de tabela dinâmica de guia na faixa de opções, clique em gerenciar conjuntos, clique em novo na caixa de diálogo Set Manager e, em seguida, clique em criar Se t usando MDX. Isso exibirá a caixa de diálogo Definir novo, que contém os itens da exibição de níveis diferentes na caixa de seleção de campos separados. Da mesma forma, se você selecionar um conjunto nomeado existente na caixa de diálogo Set Manager e clique em Editar, é exibida a caixa de diálogo Modificar definida.</para>
+            <b>true</b> se itens de todos os níveis da hierarquia do conjunto nomeado forem exibidos no mesmo campo; Caso contrário <b>false</b>.</para>
+          <para>O valor dessa propriedade corresponde à configuração dos itens da exibição de níveis diferentes em campos separados de caixa de seleção na caixa de diálogo Definir novo/modificar quando um conjunto nomeado é criado ou editado. Para criar um novo conjunto de dados em uma tabela dinâmica com base em uma fonte de dados OLAP nomeado, clique em tabela dinâmica, clique em campo, itens, &amp; conjuntos de opções de ferramentas de tabela dinâmica de guia na faixa de opções, clique em gerenciar conjuntos, clique em novo na caixa de diálogo Set Manager e, em seguida, clique em criar Se t usando MDX. Isso exibirá a caixa de diálogo Definir novo, que contém os itens da exibição de níveis diferentes na caixa de seleção de campos separados. Da mesma forma, se você selecionar um conjunto nomeado existente na caixa de diálogo Set Manager e clique em Editar, modifique conjunto de caixa de diálogo é exibida.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -289,11 +291,11 @@
         <summary>Retorna a fórmula do membro em expressões multidimensionais sintaxe (MDX).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Essa propriedade não está disponível para fontes de dados OLAP.</para>
-          <para>Se a célula contiver uma constante, essa propriedade retornará a constante. Se a célula estiver vazia, <b>a propriedade</b> retornará uma sequência vazia. Se a célula contiver uma fórmula, a propriedade <b>Formula</b> retorna a fórmula como uma cadeia de caracteres no mesmo formato que seria exibido na barra de fórmulas (incluindo o sinal de igualdade).</para>
-          <para>Se você definir o valor ou fórmula de uma célula como uma data, o Microsoft Excel verifica se essa célula já está formatada com um dos formatos de número de data ou hora. Se não, o Microsoft Excel altera o formato de número para o formato de número de data curta padrão.</para>
-          <para>Se o intervalo for um intervalo one - ou bidimensional, você pode definir a fórmula em uma matriz das mesmas dimensões. Da mesma forma, você pode colocar a fórmula em uma matriz.</para>
-          <para>a definição da fórmula para um intervalo de múltiplas células preenche todas as células do intervalo com a fórmula.</para>
+          <para>Esta propriedade não está disponível para fontes de dados OLAP.</para>
+          <para>Se a célula contiver uma constante, essa propriedade retornará essa constante. Se a célula estiver vazia, <b>a propriedade</b> retornará uma sequência vazia. Se a célula contiver uma fórmula, a propriedade <b>Formula</b> retorna a fórmula como uma cadeia de caracteres no mesmo formato que seria exibido na barra de fórmulas (incluindo o sinal de igualdade).</para>
+          <para>Quando você define o valor ou a fórmula de uma célula como uma data, o Microsoft Excel verifica se a célula já está formatada com um dos formatos numéricos de data ou hora. Se não estiver, o Microsoft Excel altera o formato numérico para o formato padrão de data abreviada.</para>
+          <para>Se o intervalo for um intervalo one - ou bidimensional, você poderá definir a fórmula em uma matriz das mesmas dimensões. Da mesma forma, você pode colocar a fórmula em uma matriz.</para>
+          <para>A configuração da fórmula para um intervalo de várias células preenche todas as células do intervalo com a fórmula.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -330,9 +332,9 @@
         <remarks>
           <para>Leitura/gravação.</para>
           <para>
-            <b>true</b> se a hierarquia do conjunto nomeado for exibida conforme ordenado com as duplicatas removidas; caso contrário <b>false</b>.</para>
-          <para>o valor dessa propriedade corresponde à ordem automaticamente e remover duplicatas da caixa de seleção set na caixa de diálogo Definir novo/modificar quando um conjunto nomeado é criado ou editado. Para criar um novo conjunto de dados em uma tabela dinâmica com base em uma fonte de dados OLAP nomeado, clique em tabela dinâmica, clique em campo, itens, &amp; conjuntos de opções de ferramentas de tabela dinâmica de guia na faixa de opções, clique em gerenciar conjuntos, clique em novo na caixa de diálogo Set Manager e, em seguida, clique em criar Se t usando MDX. Isso exibirá a caixa de diálogo Definir novo, que contém o ordem automaticamente e remover duplicatas da caixa de seleção do conjunto. Da mesma forma, se você selecionar um conjunto nomeado existente na caixa de diálogo Set Manager e clique em Editar, é exibida a caixa de diálogo Modificar definida.</para>
-          <para>Essa propriedade junto com o <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.DisplayFolder" /> e <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Dynamic" /> propriedades só podem ser lido para conjuntos nomeados (que são representados por <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objetos onde o <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> é igual a propriedade <paramref name="xlCalculatedSet" />). Essas propriedades para não podem ser lidas por membros ou medidas calculados (que são representados por <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objetos onde o <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> é igual a propriedade <paramref name="xlCalculatedMember" />). Se você tentar ler essas propriedades para membros ou medidas calculados, um erro em tempo de execução é disparado.</para>
+            <b>true</b> se a hierarquia do conjunto nomeado for exibida conforme ordenado com as duplicatas removidas; Caso contrário <b>false</b>.</para>
+          <para>O valor dessa propriedade corresponde à ordem automaticamente e remover duplicatas da caixa de seleção set na caixa de diálogo Definir novo/modificar quando um conjunto nomeado é criado ou editado. Para criar um novo conjunto de dados em uma tabela dinâmica com base em uma fonte de dados OLAP nomeado, clique em tabela dinâmica, clique em campo, itens, &amp; conjuntos de opções de ferramentas de tabela dinâmica de guia na faixa de opções, clique em gerenciar conjuntos, clique em novo na caixa de diálogo Set Manager e, em seguida, clique em criar Se t usando MDX. Isso exibirá a caixa de diálogo Definir novo, que contém o ordem automaticamente e remover duplicatas da caixa de seleção do conjunto. Da mesma forma, se você selecionar um conjunto nomeado existente na caixa de diálogo Set Manager e clique em Editar, modifique conjunto de caixa de diálogo é exibida.</para>
+          <para>Essa propriedade junto com o <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.DisplayFolder" /> e <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Dynamic" /> propriedades só podem ser lido para conjuntos nomeados (que são representados por <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objetos onde o <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> é igual a propriedade <paramref name="xlCalculatedSet" />). Essas propriedades para não podem ser lidas por membros ou medidas calculados (que são representados por <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objetos onde o <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> é igual a propriedade <paramref name="xlCalculatedMember" />). Se você tentar ler essas propriedades para membros ou medidas calculados, um erro em tempo de execução será gerado.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -363,7 +365,7 @@
         <summary>Retorna um <b>Boolean</b> que indica se o membro calculado especificado tiver sido bem-sucedida com o provedor OLAP durante a sessão atual.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Essa propriedade retorna <b>True</b> , mesmo se a tabela dinâmica não estiver conectada à sua fonte de dados. Certifique-se de que a tabela dinâmica está conectada antes de consultar o valor da propriedade <b>IsValid</b> .</para>
+          <para>Esta propriedade retorna <b>True</b> mesmo se a tabela dinâmica não estiver conectada a sua fonte de dados. Verifique se a tabela dinâmica está conectada antes de consultar o valor da propriedade <b>IsValid</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -534,8 +536,8 @@
         <summary>Retorna o nome do membro pai para a hierarquia de pai. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Membro pai padrão é determinado pelo qualquer item tiver sido definido pelo criador do cubo ou Analysis Services como o membro padrão da hierarquia selecionada. Por exemplo, se houver um membro "All" para a hierarquia selecionada, em seguida, isso é normalmente o pai membro padrão no cubo.</para>
-          <para>Se a hierarquia pai selecionado não tem um "All" membro pai, outro membro de pai padrão é definida pelo criador do cubo ou programaticamente pelo Analysis Services. (Se o membro padrão não for especificado pelo designer do cubo, o mecanismo do Analysis Services automaticamente define uma.)</para>
+          <para>O membro pai padrão é determinado pelo qualquer item tiver sido definido pelo criador do cubo ou Analysis Services como o membro padrão da hierarquia selecionada. Por exemplo, se houver um membro "All" para a hierarquia selecionada, em seguida, isso é geralmente membro pai padrão no cubo.</para>
+          <para>Se a hierarquia pai selecionado não tiver um membro pai "All", outro membro de pai padrão está definido pelo criador do cubo ou programaticamente pelo Analysis Services. (Se o membro padrão não for especificado pelo designer do cubo, o mecanismo do Analysis Services automaticamente define uma.)</para>
           <para></para>
         </remarks>
       </Docs>
@@ -594,7 +596,7 @@
         <summary>Retorna o nome do objeto especificado como ele aparece nos dados de origem para o relatório de tabela dinâmica especificado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Propriedade <b>SourceName</b> pode ser diferente do nome do item atual se o usuário tiver renomeado o item após a criação do relatório de tabela dinâmica.</para>
+          <para>Propriedade <b>SourceName</b> pode ser diferente do nome do item atual, se o usuário tiver renomeado o item após a criação do relatório de tabela dinâmica.</para>
           <para>A tabela a seguir mostra os valores de exemplo da propriedade <b>SourceName</b> e propriedades relacionadas, recebe um <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproSourceName1.htm">OLAP</a></para>
           <list type="table">
             <item>
@@ -606,28 +608,42 @@
             </item>
             <item>
               <term>
-                <b>nome</b>
+                <b>Nome</b>
               </term>
-              <description>[Europe]. [ França]. [Paris] (somente leitura)</description>
+              <description>[Europe].[France].[Paris] (somente leitura)</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]. [ França]. [Paris] (somente leitura)</description>
-              <description>(igual ao valor da propriedade SQL, somente leitura)</description>
+              <description>[Europe].[France].[Paris] (somente leitura)</description>
+              <description>(igual ao valor da propriedade SQL; somente leitura)</description>
             </item>
             <item>
               <term>
                 <b>Valor</b>
               </term>
-              <description>[Europe]. [ França]. [Paris] (somente leitura)</description>
+              <description>[Europe].[France].[Paris] (somente leitura)</description>
               <description>Paris</description>
             </item>
           </list>
-          <para>Ao se especificar um índice para o <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> coleção, você pode usar a sintaxe mostrada na tabela a seguir.</para> expressão 
-          <list type="table"><item><term>. PivotItems ("[Europe]. [ França]. [Paris] ")</term><description>expressão. PivotItems("Paris")</description></item></list><para>ao usar o <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMembers.Item(System.Object)" /> propriedade referência um determinado membro de uma coleção, você pode usar os nomes de índice de texto, conforme mostrado na tabela a seguir.</para><list type="table"><item><term>[Europe]. [ França]. [Paris]</term><description>Paris</description></item></list><para></para></remarks>
+          <para>Ao especificar um índice para o <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> coleção, você pode usar a sintaxe mostrada na tabela a seguir.</para>
+          <list type="table">
+            <item>
+              <term>expressão. PivotItems ("[Europe]. [ França]. [Paris] ")</term>
+              <description>expressão. PivotItems("Paris")</description>
+            </item>
+          </list>
+          <para>Ao usar o <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMembers.Item(System.Object)" /> propriedade referência um determinado membro de uma coleção, você pode usar os nomes de índice de texto, conforme mostrado na tabela a seguir.</para>
+          <list type="table">
+            <item>
+              <term>[Europe]. [France]. [Paris]</term>
+              <description>Paris</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">

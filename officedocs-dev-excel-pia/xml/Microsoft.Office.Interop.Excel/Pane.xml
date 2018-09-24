@@ -1,10 +1,10 @@
 <Type Name="Pane" FullName="Microsoft.Office.Interop.Excel.Pane">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="52961e7c7c0430d4ed8f7d76b64787b55ef124c0" />
+    <Meta Name="ms.openlocfilehash" Value="88411cce6007dd3bdb19bfe1fbfa29a798d89eed" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586902" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Pane" />
@@ -62,7 +62,7 @@
         <summary>Ativa o painel.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Se o painel não estiver na janela ativa, a janela que esse painel pertence também será ativado. Você não pode ativar um painel congelado.</para>
+          <para>Se o painel não estiver na janela ativa, a janela à qual ele pertence também será ativada. Não é possível ativar um painel congelado.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -121,8 +121,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -191,7 +193,7 @@
         <remarks>
           <para>Se <paramref name="Down" /> e <paramref name="Up" /> forem especificados, o conteúdo da janela será rolado pela diferença dos argumentos. Por exemplo, se <paramref name="Down" /> é 3 e <paramref name="Up" /> é 6, o conteúdo será rolado para cima três páginas.</para>
           <para>Se <paramref name="ToLeft" /> e <paramref name="ToRight" /> forem especificados, o conteúdo da janela será rolado pela diferença dos argumentos. Por exemplo, se <paramref name="ToLeft" /> é 3 e <paramref name="ToRight" /> é 6, o conteúdo será rolado para a direita três páginas.</para>
-          <para>Qualquer um dos argumentos pode ser um número negativo.</para>
+          <para>Qualquer dos argumentos pode ser um número negativo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -355,7 +357,7 @@
           <b>Objeto</b>de opcional. <b>True</b> para que o canto superior esquerdo do retângulo aparecem no canto superior esquerdo do painel. <b>False</b> para que o canto inferior direito do retângulo aparecem no canto inferior direito do painel. O valor padrão é <b>True</b>.</param>
         <summary>Rola o painel de forma que o conteúdo de uma área retangular específica sejam exibido no canto superior esquerdo ou inferior direito do painel.</summary>
         <remarks>
-          <para>o <paramref name="Start" /> argumento é útil para orientar a exibição da tela quando o retângulo é maior do que o painel.</para>
+          <para>O <paramref name="Start" /> argumento é útil para orientar a exibição da tela quando o retângulo é maior do que o painel.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -429,7 +431,7 @@
         <remarks>
           <para>Se <paramref name="Down" /> e <paramref name="Up" /> forem especificados, o conteúdo da janela será rolado pela diferença dos argumentos. Por exemplo, se <paramref name="Down" /> é 3 e <paramref name="Up" /> é 6, o conteúdo será rolado para cima três linhas.</para>
           <para>Se <paramref name="ToLeft" /> e <paramref name="ToRight" /> forem especificados, o conteúdo da janela será rolado pela diferença dos argumentos. Por exemplo, se <paramref name="ToLeft" /> é 3 e <paramref name="ToRight" /> é 6, o conteúdo será rolado para a direita três colunas.</para>
-          <para>Qualquer desses argumentos pode ser um número negativo.</para>
+          <para>Qualquer um desses argumentos pode ser um número negativo.</para>
           <para></para>
         </remarks>
       </Docs>

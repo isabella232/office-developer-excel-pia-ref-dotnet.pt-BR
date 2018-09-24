@@ -1,10 +1,10 @@
 <Type Name="FreeformBuilder" FullName="Microsoft.Office.Interop.Excel.FreeformBuilder">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9e6022e2a6980f7f4d0f4351bf6f7fad328d8c16" />
+    <Meta Name="ms.openlocfilehash" Value="49bbc8d21ea36b32da44ca3a92e3697a77f26497" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582646" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FreeformBuilder" />
@@ -30,7 +30,10 @@
   </Attributes>
   <Docs>
     <summary>Representa a geometria de uma forma livre enquanto esta está sendo construída.</summary>
-    <remarks>Uso de <para>o <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> método para retornar um objeto <b>FreeformBuilder</b> . Use o <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> método para adicionar nós à forma livre. Use o <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> método para criar a forma definida no objeto <b>FreeformBuilder</b> e adicioná-lo para o <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> conjunto.</para><para></para></remarks>
+    <remarks>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> método para retornar um objeto <b>FreeformBuilder</b> . Use o <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> método para adicionar nós à forma livre. Use o <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> método para criar a forma definida no objeto <b>FreeformBuilder</b> e adicioná-lo para o <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> conjunto.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNodes">
@@ -133,7 +136,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>
-            <b>Observação</b> você deve aplicar o <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> método para um <b>FreeformBuilder</b> do objeto pelo menos uma vez antes de usar o método <b>ConvertToShape</b> .</para>
+            <b>Observação</b>   Você deve aplicar o <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> método para um <b>FreeformBuilder</b> do objeto pelo menos uma vez antes de usar o método <b>ConvertToShape</b> .</para>
           <para></para>
         </remarks>
       </Docs>
@@ -164,8 +167,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

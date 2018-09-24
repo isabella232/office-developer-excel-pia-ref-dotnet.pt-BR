@@ -1,10 +1,10 @@
 <Type Name="Scenario" FullName="Microsoft.Office.Interop.Excel.Scenario">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1c33d8a6332b27a6cdd7779fffe2b51eb2eef6c2" />
+    <Meta Name="ms.openlocfilehash" Value="86d8d02ae441f3ac07255a45ae9cd0cf278fe5fe" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575219" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Scenario" />
@@ -32,8 +32,7 @@
     <summary>Representa um cenário em uma planilha. Um cenário é um grupo de valores de entrada (chamado <paramref name="changing cells" />) que recebe um nome e salvo.</summary>
     <remarks>
       <para>O objeto <b>Scenario</b> é um membro do <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> conjunto. A coleção de <b>cenários</b> contém todos os cenários definidos para uma planilha.</para>
-      <para>
-        <b>Cenários</b>de uso (<paramref name="index" />), onde <paramref name="index" /> é o nome de cenário ou o número de índice, para retornar um único objeto <b>Scenario</b> .</para>
+      <para>Usar <b>cenários</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome de cenário ou o número de índice, para retornar um único objeto <b>Scenario</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -96,7 +95,7 @@
         <summary>Altera o cenário para ter um novo conjunto de células variáveis e (opcionalmente) valores de cenário.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Se você especificar v<paramref name="alues" />, a matriz precisará conter um elemento para cada célula do <paramref name="ChangingCells" /> intervalo; caso contrário, o Microsoft Excel gerará um erro.</para>
+          <para>Se você especificar v<paramref name="alues" />, a matriz precisará conter um elemento para cada célula do <paramref name="ChangingCells" /> intervalo; Caso contrário, o Microsoft Excel gerará um erro.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -186,8 +185,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">

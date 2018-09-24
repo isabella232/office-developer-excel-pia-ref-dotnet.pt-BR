@@ -1,10 +1,10 @@
 <Type Name="ChartArea" FullName="Microsoft.Office.Interop.Excel.ChartArea">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7f6a03655956cbc8e577e22d879e9b866891a1ab" />
+    <Meta Name="ms.openlocfilehash" Value="8707be5e24dec82e4b5526b2fd741c4c8a846d77" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582373" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartArea" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Representa a área de gráfico de um gráfico. A área do gráfico em um gráfico 2D contém os eixos, o título do gráfico, os títulos de eixo e a legenda. Área do gráfico em um gráfico 3D contém o título do gráfico e a legenda; ele não inclui a área de plotagem (a área dentro da área do gráfico onde os dados são plotados). Para obter informações sobre como formatar a área de plotagem, consulte o <see cref="T:Microsoft.Office.Interop.Excel.PlotArea" /> objeto.</summary>
     <remarks>
-      <para>Usar o arredondado<see cref="P:Microsoft.Office.Interop.Excel._Chart.ChartArea" /> propriedade para retornar o objeto <b>ChartArea</b> .</para>
+      <para>Use o arredondado<see cref="P:Microsoft.Office.Interop.Excel._Chart.ChartArea" /> propriedade para retornar o objeto <b>ChartArea</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -263,8 +263,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -357,7 +359,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
         </value>
         <remarks>
-          <para>o <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objeto contém a linha, preenchimento e efeito da formatação da área do gráfico.</para>
+          <para>O <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objeto contém a linha, preenchimento e efeito da formatação da área do gráfico.</para>
           <para></para>
         </remarks>
       </Docs>

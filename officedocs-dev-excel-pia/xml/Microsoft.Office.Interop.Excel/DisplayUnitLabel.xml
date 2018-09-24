@@ -1,10 +1,10 @@
 <Type Name="DisplayUnitLabel" FullName="Microsoft.Office.Interop.Excel.DisplayUnitLabel">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f42cc953ea800c389ad99a80bdcabb741008c694" />
+    <Meta Name="ms.openlocfilehash" Value="307ac8532d5ba9d3d696802a345173a9dece29b5" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584522" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DisplayUnitLabel" />
@@ -30,7 +30,11 @@
   </Attributes>
   <Docs>
     <summary>Representa um rótulo de unidade em um eixo no gráfico especificado.</summary>
-    <remarks>Rótulos de unidade de <para>são úteis para gráficos grandes valores — por exemplo, em milhões ou bilhões. Você pode tornar o gráfico mais legíveis usando um único rótulo de unidade em vez de números grandes em cada marca de escala.</para><para>Uso o <see cref="P:Microsoft.Office.Interop.Excel.Axis.DisplayUnitLabel" /> propriedade para retornar o <see cref="T:Microsoft.Office.Interop.Excel.DisplayUnitLabel" /> objeto.</para><para></para></remarks>
+    <remarks>
+      <para>Rótulos de unidade são úteis para gráficos grandes valores — por exemplo, em milhões ou bilhões. Você pode tornar o gráfico mais legível usando um único rótulo de unidade em vez de números grandes em cada marca de escala.</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.Axis.DisplayUnitLabel" /> propriedade para retornar o <see cref="T:Microsoft.Office.Interop.Excel.DisplayUnitLabel" /> objeto.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Dummy21">
@@ -255,8 +259,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -589,7 +595,7 @@
           <para>
             <b>xlRight</b>
           </para>
-          <para>Algumas dessas constantes podem não estar disponíveis para você, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou.</para>
+          <para>[!OBSERVAçãO] Alguma dessas constantes podem não estar disponíveis para você, dependendo do suporte de idioma (inglês dos EUA, por exemplo) que você selecionou ou instalou.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -713,7 +719,7 @@
         <summary>A orientação do texto. Pode ser um valor inteiro de – 90 a 90 graus.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Propriedade Orientation o pode ser uma das seguintes constantes:</para>
+          <para>A propriedade Orientation pode ser uma das seguintes constantes:</para>
           <para>
             <b>xlDownward</b>
           </para>
@@ -725,8 +731,10 @@
           </para>
           <para>
             <b>xlVertical</b>
-          </para> Fontes de dados de 
-          <para>para OLAP, a definição dessa propriedade para um campo em uma hierarquia define a orientação para os outros campos na mesma hierarquia. Campos de dimensão só podem ser orientados na linha, coluna e áreas de campo de página do relatório de tabela dinâmica. Campos de medida só podem ser orientados na área de dados. A definição de um campo de hierarquia ou dados como <b>xlHidden</b> remove o campo ou a hierarquia do relatório de tabela dinâmica.</para><para></para></remarks>
+          </para>
+          <para>Para fontes de dados OLAP, a definição desta propriedade para um campo em uma hierarquia define a orientação para os outros campos na mesma hierarquia. Campos de dimensão só podem ser orientados nas áreas de campo de linha, de coluna e de página do relatório de tabela dinâmica. Campos de medida só podem ser orientados na área de dados. A definição de uma hierarquia ou de um campo de dados como <b>xlHidden</b> remove a hierarquia ou o campo do relatório de tabela dinâmica.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -819,7 +827,7 @@
         <summary>Retorna ou define o sentido de leitura para o objeto especificado. Pode ser uma das seguintes constantes: <b>xlContext</b>, <b>xlLTR</b> (esquerda para direita) ou <b>xlRTL</b> (direita para esquerda).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Algumas dessas constantes podem não estar disponíveis para você, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou.</para>
+          <para>[!OBSERVAçãO] Alguma dessas constantes podem não estar disponíveis para você, dependendo do suporte de idioma (inglês dos EUA, por exemplo) que você selecionou ou instalou.</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="FullSeriesCollection" FullName="Microsoft.Office.Interop.Excel.FullSeriesCollection">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0bc0b8cb8d0e89ab9516430dfac9111d655083d9" />
+    <Meta Name="ms.openlocfilehash" Value="dbf91769667eadbda6ee7df78219248217f94800" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586188" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FullSeriesCollection : System.Collections.IEnumerable" />
@@ -34,7 +34,10 @@
   </Attributes>
   <Docs>
     <summary>Representa o conjunto completo de <see cref="T:Microsoft.Office.Interop.Excel.Series" /> objetos em um gráfico.</summary>
-    <remarks>Objeto <para>o <b>FullSeriesCollection</b> permite que você obtenha um filtrada check-out do objeto <b>Series</b> e filtro-lo novamente. Ele também permite iterar sobre o conjunto completo de objetos de <b>série</b> , filtrada check-out ou visível, programaticamente. Estabelecendo existentes <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> objeto conter somente a série visível programaticamente, você pode executar operações em somente a série visível. Ele também impede Excel quebrar as soluções existentes do gráfico em gráficos de dados filtrados check-out.</para><para></para></remarks>
+    <remarks>
+      <para>O objeto <b>FullSeriesCollection</b> permite que você obtenha um filtrada check-out do objeto <b>Series</b> e filtro-lo novamente. Ele também permite iterar sobre o conjunto completo de objetos de <b>série</b> , filtrada check-out ou visível, programaticamente. Estabelecendo existentes <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> objeto conter somente a série visível programaticamente, você pode executar operações em somente a série visível. Ele também impede que Excel quebrando filtradas soluções em gráficos com dados de gráfico existente.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -243,7 +246,7 @@
         <summary>Retorna um <b>objeto</b> que representa o objeto pai do objeto <b>FullSeriesCollection</b> especificado. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Normalmente o gráfico à qual pertence este objeto <b>FullSeriesCollection</b> é exibido como o pai.</para>
+          <para>Normalmente, o gráfico à qual pertence este objeto <b>FullSeriesCollection</b> é retornado como o pai.</para>
           <para></para>
         </remarks>
       </Docs>

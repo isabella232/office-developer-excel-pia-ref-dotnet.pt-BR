@@ -1,10 +1,10 @@
 <Type Name="SmartTagOptions" FullName="Microsoft.Office.Interop.Excel.SmartTagOptions">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c56b52fc5575c4410dbfda5ac1c7f7b98b1d6b52" />
+    <Meta Name="ms.openlocfilehash" Value="08e6c64d1c42348903ffb92e85b1dbbff6eb03f3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581792" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SmartTagOptions" />
@@ -32,11 +32,16 @@
     <summary>Representa as opções que podem ser executadas com rótulos inteligentes.</summary>
     <remarks>
       <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.SmartTagOptions" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto para retornar um objeto <b>SmartTagOptions</b> .</para>
-      <para>Depois que um objeto <b>SmartTagOptions</b> é retornado, você pode usar as propriedades a seguir para determinar as opções de exibição de marcas inteligentes e se deseja ou não tem marcas inteligentes incorporadas na planilha ativa.</para>
+      <para>Depois que um objeto <b>SmartTagOptions</b> é retornado, você pode usar as propriedades a seguir para determinar as opções de exibição de marcas inteligentes e se deseja ou não ter marcas inteligentes incorporadas na planilha ativa.</para>
       <list type="bullet">
         <item>
           <description>
             <see cref="P:Microsoft.Office.Interop.Excel.SmartTagOptions.EmbedSmartTags" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.SmartTagOptions.DisplaySmartTags" />
           </description>
         </item>
       </list>
@@ -98,8 +103,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplaySmartTags">
@@ -134,11 +141,11 @@
           <para>
             <b>XlSmartTagDisplayMode</b> pode ser uma das seguintes constantes:</para>
           <para>
-            <b>xlButtonOnly</b> exibe somente o botão de rótulos inteligentes.</para>
+            <b>xlButtonOnly</b> Exibe somente o botão de marcas inteligentes.</para>
           <para>
-            <b>xlDisplayNone</b> nada é exibido para as marcas inteligentes.</para>
+            <b>xlDisplayNone</b> Nada é exibido para as marcas inteligentes.</para>
           <para>
-            <b>xlIndicatorAndButton</b> exibe o indicador e o botão de rótulos inteligentes.</para>
+            <b>xlIndicatorAndButton</b> Exibe o indicador e o botão de marcas inteligentes.</para>
           <para></para>
         </remarks>
       </Docs>

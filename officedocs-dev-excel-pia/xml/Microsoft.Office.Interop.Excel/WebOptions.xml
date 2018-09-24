@@ -1,10 +1,10 @@
 <Type Name="WebOptions" FullName="Microsoft.Office.Interop.Excel.WebOptions">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1bb92fb327f4b105c6f89b685f7776df03148a7f" />
+    <Meta Name="ms.openlocfilehash" Value="daab179c046c8ae3d7a70032ace37b8eb5d45e81" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579832" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface WebOptions" />
@@ -29,7 +29,7 @@
     <summary>Contém os atributos em nível de pasta de trabalho usados pelo Microsoft Excel quando você salva um documento como uma página da Web ou abre uma dessas páginas.</summary>
     <remarks>
       <para>Você pode retornar ou definir atributos no nível do aplicativo (global) ou no nível de pasta de trabalho. (Observe que os valores de atributos podem ser diferentes de uma planilha para outra, dependendo do valor do atributo no momento em que a pasta de trabalho foi salva.) Definições de atributo de nível de pasta de trabalho substituem as definições de atributo de nível de aplicativo. Atributos de nível de aplicativo estão contidos no <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> objeto.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.WebOptions" /> propriedade para retornar o objeto <b>WebOptions</b> .</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.WebOptions" /> propriedade para retornar o objeto <b>WebOptions</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -64,7 +64,7 @@
           <b>True</b> se o formato PNG (Portable Network Graphics) é permitido como um formato de imagem quando você salvar documentos como uma página da Web. <b>False</b> se o PNG não é permitido como um formato de saída. O valor padrão é <b>False</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se você salvar imagens no formato PNG em vez de qualquer outro formato de arquivo, você pode melhorar a qualidade da imagem ou reduzir o tamanho dos arquivos de imagem e, portanto, diminuir o tempo de download, supondo que os navegadores da Web que você está direcionando suportam ao formato PNG.</para>
+          <para>Se você salvar imagens no formato PNG em vez de em qualquer outro formato de arquivo, pode ser que a qualidade da imagem melhore ou o tamanho desses arquivos de imagens seja reduzido. Isso diminuiria o tempo de download, supondo que os navegadores da Web que você pretende utilizar oferecem suporte ao formato PNG.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -123,8 +123,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DownloadComponents">
@@ -157,8 +159,8 @@
           <b>True</b> se os componentes necessários do Microsoft Office Web são baixados quando você exibe o documento salvo em um navegador da Web, mas somente se os componentes ainda não estiverem instalados. <b>False</b> se os componentes não são baixados. O valor padrão é <b>False</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Você pode definir o <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.LocationOfComponents" /> propriedade como uma URL central (na intranet ou Web) ou caminho (local ou rede) para um local de onde os usuários autorizados podem baixar componentes quando exibirem seu documento salvo. O caminho deve ser válido e deve apontar para um local que contém os componentes necessários, o usuário deve ter uma licença válida do Microsoft Office.</para>
-          <para>Office Web components adicionam interatividade aos documentos salvos como páginas da Web. Se você exibir uma página da Web em um navegador em um computador que não tenha os componentes instalados, as partes interativas da página ficarão estáticas.</para>
+          <para>Você pode definir o <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.LocationOfComponents" /> propriedade como uma URL central (na intranet ou Web) ou caminho (local ou rede) para um local de onde os usuários autorizados podem baixar componentes quando exibirem seu documento salvo. O caminho deve ser válido e deve apontar para um local que contenha os componentes necessários e o usuário deve ter uma licença válida do Microsoft Office.</para>
+          <para>Os componentes do Office Web Components adicionam interatividade a documentos salvos como páginas da Web. Se você exibir uma página da Web no navegador de um computador que não tenha os componentes instalados, as partes interativas da página ficarão estáticas.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -191,7 +193,10 @@
       <Docs>
         <summary>Retorna ou define o codificação do documento (conjunto de caracteres ou páginas de código) a ser usada pelo navegador da Web quando você exibe o documento salvo. O padrão é a página de código do sistema.</summary>
         <value>To be added.</value>
-        <remarks>Você não pode usar qualquer uma das constantes que <b>ReloadAs</b>de <para>. Essas constantes são usadas pelo <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ReloadAs(Microsoft.Office.Core.MsoEncoding)" /> método.</para><para></para></remarks>
+        <remarks>
+          <para>Você não pode usar qualquer uma das constantes que <b>ReloadAs</b>. Essas constantes são usadas pelo <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ReloadAs(Microsoft.Office.Core.MsoEncoding)" /> método.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FolderSuffix">
@@ -221,8 +226,8 @@
         <value>To be added.</value>
         <remarks>
           <para>Documentos criados recentemente usam o sufixo retornado pelo <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> objeto. O valor da propriedade <b>FolderSuffix</b> do <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> objeto pode ser diferente do objeto <b>DefaultWebOptions</b> se o documento foi editado anteriormente em uma versão de idioma diferente do Microsoft Excel. Você pode usar o <see cref="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" /> método para alterar o sufixo para o idioma que você está usando no Microsoft Office.</para>
-          <para>Por padrão, o nome da pasta de suporte é o nome de página da Web mais um sublinhado (_), um ponto (.) ou um hífen (-) e a palavra "files" (aparecendo no idioma da versão do Excel na qual o arquivo foi salvo como página da Web). Por exemplo, suponha que você use a versão do idioma holandês do Excel para salvar um arquivo chamado "Page1" como uma página da Web. O nome padrão da pasta de suporte é Page1_bestanden.</para>
-          <para>a seguinte tabela lista cada versão de idioma do Office e dá correspondente <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> sufixo de pasta e o valor da propriedade. Para os idiomas que não estejam listados na tabela, o sufixo "Files" é usado.</para>
+          <para>Por padrão, o nome da pasta de suporte é o nome da página da Web mais um sublinhado (_), um ponto (.) ou um hífen (-) e a palavra "files" (exibida no idioma da versão do Excel na qual o arquivo foi salvo como página da Web). Por exemplo, suponha que você use a versão do idioma holandês do Excel para salvar um arquivo chamado "Page1" como página da Web. O nome padrão da pasta de suporte será Page1_bestanden.</para>
+          <para>A tabela a seguir lista cada versão de idioma do Office e dá correspondente <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> sufixo de pasta e o valor da propriedade. Para os idiomas que não estejam listados na tabela, o sufixo "Files" é usado.</para>
           <list type="table">
             <item>
               <term>Árabe</term>
@@ -230,15 +235,17 @@
               <description>. Files</description>
             </item>
             <item>
-              <term>basco</term>
+              <term>Basco</term>
               <description>1069</description>
               <description>_fitxategiak</description>
             </item>
             <item>
-              <term>brasileiro</term>de
-              <description>1046</description><description>_arquivos</description></item>
+              <term>Português (Brasil)</term>
+              <description>1046</description>
+              <description>_arquivos</description>
+            </item>
             <item>
-              <term>búlgaro</term>
+              <term>Búlgaro</term>
               <description>1026</description>
               <description>. Files</description>
             </item>
@@ -248,18 +255,20 @@
               <description>_fitxers</description>
             </item>
             <item>
-              <term>Chinês - simplificado</term>
+              <term>Chinês - Simplificado</term>
               <description>2052</description>
               <description>. Files</description>
             </item>
             <item>
-              <term>Chinês - tradicional</term>
+              <term>Chinês - Tradicional</term>
               <description>1028</description>
               <description>. Files</description>
             </item>
             <item>
-              <term>Croata</term>de
-              <description>1050</description><description>_datoteke</description></item>
+              <term>Croata</term>
+              <description>1050</description>
+              <description>_datoteke</description>
+            </item>
             <item>
               <term>Tcheco</term>
               <description>1029</description>
@@ -268,20 +277,28 @@
             <item>
               <term>Dinamarquês</term>
               <description>1030</description>
-              <description>-arquivador</description>
+              <description>-filer</description>
             </item>
             <item>
-              <term>Holandês</term>de
-              <description>1043</description><description>_bestanden</description></item>
+              <term>Holandês</term>
+              <description>1043</description>
+              <description>_bestanden</description>
+            </item>
             <item>
-              <term>Inglês</term>de
-              <description>1033</description><description>_files</description></item>
+              <term>Inglês</term>
+              <description>1033</description>
+              <description>_files</description>
+            </item>
             <item>
-              <term>Estoniano</term>de
-              <description>1061</description><description>_failid</description></item>
+              <term>Estoniano</term>
+              <description>1061</description>
+              <description>_failid</description>
+            </item>
             <item>
-              <term>Finlandês</term>de
-              <description>1035</description><description>_tiedostot</description></item>
+              <term>Finlandês</term>
+              <description>1035</description>
+              <description>_tiedostot</description>
+            </item>
             <item>
               <term>Francês</term>
               <description>1036</description>
@@ -303,48 +320,62 @@
               <description>. Files</description>
             </item>
             <item>
-              <term>Húngaro</term>de
-              <description>1038</description><description>_elemei</description></item>
+              <term>Húngaro</term>
+              <description>1038</description>
+              <description>_elemei</description>
+            </item>
             <item>
               <term>Italiano</term>
               <description>1040</description>
-              <description>-arquivo</description>
+              <description>-file</description>
             </item>
             <item>
-              <term>Japonês</term>de
-              <description>1041</description><description>. Files</description></item>
+              <term>Japonês</term>
+              <description>1041</description>
+              <description>. Files</description>
+            </item>
             <item>
               <term>Coreano</term>
               <description>1042</description>
               <description>. Files</description>
             </item>
             <item>
-              <term>Letão</term>de
-              <description>1062</description><description>_fails</description></item>
+              <term>Letão</term>
+              <description>1062</description>
+              <description>_fails</description>
+            </item>
             <item>
-              <term>Lituano</term>de
-              <description>1063</description><description>_bylos</description></item>
+              <term>Lituano</term>
+              <description>1063</description>
+              <description>_bylos</description>
+            </item>
             <item>
               <term>Norueguês</term>
               <description>1044</description>
-              <description>-arquivador</description>
+              <description>-filer</description>
             </item>
             <item>
-              <term>Polonês</term>de
-              <description>1045</description><description>_pliki</description></item>
+              <term>Polonês</term>
+              <description>1045</description>
+              <description>_pliki</description>
+            </item>
             <item>
-              <term>Português</term>
+              <term>Português (Portugal)</term>
               <description>2070</description>
               <description>_ficheiros</description>
             </item>
             <item>
-              <term>Romeno</term>de
-              <description>1048</description><description>. Files</description></item>
+              <term>Romeno</term>
+              <description>1048</description>
+              <description>. Files</description>
+            </item>
             <item>
-              <term>Russo</term>de
-              <description>1049</description><description>. Files</description></item>
+              <term>Russo</term>
+              <description>1049</description>
+              <description>. Files</description>
+            </item>
             <item>
-              <term>Sérvio (cirílico)</term>
+              <term>Sérvio (Cirílico)</term>
               <description>3098</description>
               <description>. Files</description>
             </item>
@@ -359,7 +390,7 @@
               <description>. Files</description>
             </item>
             <item>
-              <term>Esloveno</term>
+              <term>Eslovênio</term>
               <description>1060</description>
               <description>_datoteke</description>
             </item>
@@ -371,22 +402,28 @@
             <item>
               <term>Sueco</term>
               <description>1053</description>
-              <description>-arquivador</description>
+              <description>-filer</description>
             </item>
             <item>
-              <term>Tailandês</term>de
-              <description>1054</description><description>. Files</description></item>
+              <term>Tailandês</term>
+              <description>1054</description>
+              <description>. Files</description>
+            </item>
             <item>
-              <term>Turco</term>de
-              <description>1055</description><description>_dosyalar</description></item>
+              <term>Turco</term>
+              <description>1055</description>
+              <description>_dosyalar</description>
+            </item>
             <item>
               <term>Ucraniano</term>
               <description>1058</description>
               <description>. Files</description>
             </item>
             <item>
-              <term>Vietnamita</term>de
-              <description>1066</description><description>. Files</description></item>
+              <term>Vietnamita</term>
+              <description>1066</description>
+              <description>. Files</description>
+            </item>
           </list>
           <para></para>
         </remarks>
@@ -421,7 +458,7 @@
         <summary>Retorna ou define o URL central (na intranet ou Web) ou o caminho (local ou rede) para o local de onde os usuários autorizados podem baixar Microsoft Office Web components quando exibirem seu documento salvo. O valor padrão é o local ou caminho de instalação de rede para o Microsoft Office.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Office Web components são baixadas automaticamente com a página da Web especificada se o <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.DownloadComponents" /> propriedade estiver definida como <b>True</b>, os componentes ainda não estiverem instalados, o caminho é válido e aponta para um local que contenha os componentes necessários, e o usuário tem uma licença válida do Microsoft Office.</para>
+          <para>Office Web components automaticamente são baixados com a página da Web especificada, se o <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.DownloadComponents" /> propriedade estiver definida como <b>True</b>, os componentes ainda não estiverem instalados, o caminho é válido e aponta para um local que contenha os componentes necessários e o o usuário tem uma licença válida do Microsoft Office.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -456,8 +493,8 @@
           <b>True</b> se todos os arquivos de suportados, como texturas de plano de fundo e gráficos, são organizados em uma pasta separada quando você salva o documento especificado como uma página da Web. <b>False</b> se os arquivos de suporte são salvos na mesma pasta da página da Web. O valor padrão é <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>A nova pasta é criada na pasta onde você salvou a página da Web e é nomeada conforme o documento. Se os nomes de arquivo longos forem usados, um sufixo é adicionado ao nome da pasta. O <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> propriedade retorna o sufixo de pasta padrão ou o sufixo de pasta do suporte a idioma que você selecionou ou instalou.</para>
-          <para>Se você salvar um documento que foi salvo anteriormente com a propriedade <b>OrganizeInFolder</b> definida como um valor diferente, o Microsoft Excel move automaticamente o suporte arquivos dentro ou fora da pasta, conforme apropriado.</para>
+          <para>A nova pasta é criada na pasta onde você salvou a página da Web e é nomeada conforme o documento. Se os nomes de arquivo longos forem usados, um sufixo é adicionado ao nome da pasta. O <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> propriedade retorna o sufixo de pasta do suporte a idioma selecionado ou instalado ou o sufixo de pasta padrão.</para>
+          <para>Se você salvar um documento que já tenha sido salvo anteriormente com a propriedade <b>OrganizeInFolder</b> definida com um valor diferente, o Microsoft Excel moverá automaticamente os arquivos de suporte para dentro ou para fora da pasta, conforme apropriado.</para>
           <para>Se você não usar nomes de arquivo longos (ou seja, se o <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> propriedade estiver definida como <b>False</b>), o Microsoft Excel salva automaticamente quaisquer arquivos de suporte em uma pasta separada. Os arquivos não podem ser salvos na mesma pasta da página da Web.</para>
           <para></para>
         </remarks>
@@ -520,8 +557,8 @@
         <summary>Retorna ou define a densidade (pixels por polegada) das imagens gráficas e células da tabela em uma página da Web. O intervalo de configurações é geralmente de 19 a 480, e as configurações comuns para tamanhos de tela populares são 72, 96 e 120. A configuração padrão é 96.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Dessa propriedade determina o tamanho das imagens e células na página da Web especificada relativa ao tamanho do texto sempre que você exibe o documento salvo em um navegador da Web. As dimensões físicas da imagem resultante ou célula são o resultado das dimensões originais (em polegadas) multiplicado pelo número de pixels por polegada.</para>
-          <para>Você usar o <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.ScreenSize" /> propriedade para definir o tamanho de tela ideal para os navegadores da Web desejados.</para>
+          <para>Essa propriedade determina o tamanho das imagens e células da página da Web especificada em relação ao tamanho do texto sempre que você exibe o documento salvo em um navegador da Web. As dimensões físicas da imagem ou da célula resultante são o resultado das dimensões originais (em polegadas) multiplicadas pelo número de pixels por polegada.</para>
+          <para>Você usa o <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.ScreenSize" /> propriedade para definir o tamanho de tela ideal para os navegadores da Web de destino.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -557,7 +594,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Microsoft Excel cria um arquivo de folha de estilo em cascata e o salva na pasta especificada ou para a mesma pasta da página da Web, dependendo do valor do <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> propriedade.</para>
-          <para>Você deve definir essa propriedade como <b>True</b> se o seu navegador da Web oferece suporte a folhas de estilo em cascata, conforme será proporcionam layout mais preciso e controle de formatação na página da Web e torná-lo a se parecem mais seu documento (como é exibido no Microsoft Excel).</para>
+          <para>Você deve definir esta propriedade como <b>True</b> se o navegador da Web oferecer suporte a folhas de estilos em cascata, pois isso oferecerá um controle de formatação e um layout mais preciso na página da Web, fazendo com que se pareça mais com o seu documento (como ele aparece no Microsoft Excel).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -592,8 +629,8 @@
           <b>True</b> se os arquivos de imagem não são gerados a partir de objetos desenhados quando você salva um documento como uma página da Web. <b>False</b> se forem geradas imagens. O valor padrão é <b>False</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Você pode reduzir o tamanho dos arquivos não gerando imagens para objetos de desenho, se o seu navegador da Web suporta vetor VML (Markup Language). Você deve definir a propriedade <b>RelyOnVML</b> como <b>True</b> , se você está direcionando um navegador que ofereça suporte a VML. Para navegadores que não suportam VML, a imagem não aparecerá quando você exibir uma página da Web salva com essa propriedade habilitada.</para>
-          <para>Por exemplo, você deve não gerar imagens se a sua página da Web usa arquivos de imagem gerados anteriormente e se o local onde você salva o documento for diferente do local final da página no servidor Web.</para>
+          <para>Você pode reduzir o tamanho dos arquivos não gerando imagens para objetos de desenho, se o seu navegador da Web suporta vetor VML (Markup Language). Você deve definir a propriedade <b>RelyOnVML</b> como <b>True</b> , se você está direcionando um navegador que ofereça suporte a VML. Para navegadores que não suportam VML, a imagem não aparecerá quando você visualiza uma página da Web salva com essa propriedade habilitada.</para>
+          <para>Por exemplo, você não deve gerar imagens se a página da Web usar arquivos de imagem gerados anteriormente e se o local em que o documento foi salvo for diferente do local final da página no servidor Web.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -684,7 +721,7 @@
         <summary>Define o sufixo de pasta para o documento especificado com o sufixo padrão do suporte a idioma selecionado ou instalado.</summary>
         <remarks>
           <para>Microsoft Excel usa o sufixo de pasta quando você salva um documento como uma página da Web, use nomes longos de arquivos e opta por salvar os arquivos de suporte em uma pasta separada (ou seja, se o <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> e <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> propriedades são definidas como <b>True</b>).</para>
-          <para>o sufixo aparece no nome da pasta após o nome do documento. Por exemplo, se o documento for denominado "Book1" e o idioma for inglês, o nome da pasta é Book1_files. Os sufixos de pasta disponíveis estão listados no <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> tópico da propriedade.</para>
+          <para>O sufixo aparece no nome da pasta após o nome do documento. Por exemplo, se o documento for denominado "Book1" e o idioma for inglês, o nome da pasta é Book1_files. Os sufixos de pasta disponíveis estão listados no <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> tópico da propriedade.</para>
           <para></para>
         </remarks>
       </Docs>

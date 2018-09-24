@@ -1,10 +1,10 @@
 <Type Name="PublishObject" FullName="Microsoft.Office.Interop.Excel.PublishObject">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b96f660c297a7de8cbf9fee33cb4e9de84d52863" />
+    <Meta Name="ms.openlocfilehash" Value="fcc61ded7b33a1797bd24a5447641b388b7f9f14" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574743" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PublishObject" />
@@ -29,7 +29,7 @@
     <summary>Representa um item em uma pasta de trabalho que foi salva em uma página da Web e pode ser atualizada de acordo com os valores especificados pelas propriedades e métodos do objeto <b>PublishObject</b>.</summary>
     <remarks>
       <para>O objeto <b>PublishObject</b> é membro do <see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" /> conjunto.</para>
-      <para>Uso <b>PublishObjects</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do item especificado na pasta de trabalho, para retornar um único objeto <b>PublishObject</b> .</para>
+      <para>Use <b>PublishObjects</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do item especificado na pasta de trabalho, para retornar um único objeto <b>PublishObject</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -119,8 +119,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -174,7 +176,7 @@
         <summary>Retorna o identificador exclusivo usado para identificar um HTML &lt;DIV&gt; marcar uma página da Web.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>a marca é associada um item em um documento que você salvou em uma página da Web. Um item pode ser uma pasta de trabalho inteira, uma planilha, um intervalo de impressão selecionado, um intervalo AutoFiltro, um intervalo de células, um gráfico, um relatório de tabela dinâmica ou uma tabela de consulta.</para>
+          <para>A marca é associada um item em um documento que você salvou em uma página da Web. Um item pode ser uma pasta de trabalho inteira, uma planilha, um intervalo de impressão selecionado, um intervalo AutoFiltro, um intervalo de células, um gráfico, um relatório de tabela dinâmica ou uma tabela de consulta.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -208,7 +210,7 @@
         <summary>Retorna ou define a URL (na intranet ou Web) ou caminho (local ou rede) para o local onde o objeto de origem especificado foi salvo.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>a propriedade <b>Filename</b> gera um erro se uma pasta no caminho especificado não existir.</para>
+          <para>A propriedade <b>Filename</b> gera um erro se uma pasta no caminho especificado não existir.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -241,7 +243,10 @@
       <Docs>
         <summary>Retorna ou define o tipo de HTML gerado pelo Microsoft Excel quando você salva o item especificado em uma página da Web.</summary>
         <value>To be added.</value>
-        <remarks>Propriedade <para>o <b>HtmlType</b> pode ser uma do <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> constantes que especificam se o item é estático ou interativo na página da Web. O valor padrão é <b>xlHtmlStatic</b>.</para><para></para></remarks>
+        <remarks>
+          <para>A propriedade <b>HtmlType</b> pode ser uma do <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> constantes que especificam se o item é estático ou interativo na página da Web. O valor padrão é <b>xlHtmlStatic</b>.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -298,7 +303,7 @@
           <b>Objeto</b>de opcional. Se o arquivo HTML existe, definir este argumento como <b>True</b> substitui o arquivo, e definir este argumento como <b>False</b> insere o item ou itens no final do arquivo. Se o arquivo não existir, o arquivo é criado, independente do valor do <paramref name="Create" /> argumento.</param>
         <summary>Salva um item ou uma coleção de itens de um documento em uma página da Web.</summary>
         <remarks>
-          <para>o <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.Filename" /> propriedade retorna ou define o local e o nome do arquivo HTML.</para>
+          <para>O <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.Filename" /> propriedade retorna ou define o local e o nome do arquivo HTML.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -357,7 +362,7 @@
         <summary>Retorna o nome exclusivo que identifica itens que possuem um <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.SourceType" /> valor da propriedade de <b>xlSourceRange</b>, <b>xlSourceChart</b>, <b>xlSourcePrintArea</b>, <b>xlSourceAutoFilter</b>, <b>xlSourcePivotTable</b>ou <b>xlSourceQuery</b> .</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se a propriedade <b>SourceType</b> estiver definida como <b>xlSourceRange</b>, essa propriedade retorna um intervalo, que pode ser um nome definido. Se a propriedade <b>SourceType</b> é definida como <b>xlSourceChart</b>, <b>xlSourcePivotTable</b>ou <b>xlSourceQuery</b>, essa propriedade retorna o nome do objeto, como um nome de gráfico, um nome de relatório de tabela dinâmica ou um nome de tabela de consulta.</para>
+          <para>Se a propriedade <b>SourceType</b> estiver definida como <b>xlSourceRange</b>, ela retornará um intervalo, que pode ser um nome definido. Se a propriedade <b>SourceType</b> estiver definida como <b>xlSourceChart</b>, <b>xlSourcePivotTable</b> ou <b>xlSourceQuery</b>, ela retornará o nome do objeto, como um nome de gráfico, de tabela de consulta ou de relatório de tabela dinâmica.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -419,7 +424,7 @@
         <summary>Retorna ou define o título da página da Web quando o documento for salvo como uma página da Web.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>o título é geralmente exibido no título da janela da barra quando o documento é visualizado no navegador da Web.</para>
+          <para>Geralmente, o título é exibido na barra de título da janela quando o documento é visualizado no navegador da Web.</para>
           <para></para>
         </remarks>
       </Docs>

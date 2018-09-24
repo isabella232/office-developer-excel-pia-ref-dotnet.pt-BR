@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20583129" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _Worksheet" />
@@ -596,16 +596,16 @@
         <remarks>
           <list type="table">
             <item>
-              <term>Todas as pastas de trabalho em aberto</term>
+              <term>Todas as pastas de trabalho abertas</term>
               <description>Application. Calculate</description>
             </item>
             <item>
-              <description>Worksheets(1) de
-              <term>uma planilha específica</term>. Calcular</description>
+              <term>Uma planilha específica</term>
+              <description>Worksheets(1). Calcular</description>
             </item>
             <item>
-              <description>Worksheets(1) de
-              <term>um intervalo especificado</term>. Rows(2). Calcular</description>
+              <term>Um intervalo especificado</term>
+              <description>Worksheets(1). Rows(2). Calcular</description>
             </item>
           </list>
           <para></para>
@@ -639,7 +639,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Porque o <see cref="P:Microsoft.Office.Interop.Excel.Worksheets.Item(System.Object)" /> propriedade é a propriedade padrão do objeto <b>Range</b> , você pode especificar o índice de linha e coluna imediatamente após a palavra-chave de <b>células</b> . Para obter mais informações, consulte a propriedade <b>Item</b> .</para>
-          <para>Uso dessa propriedade sem um qualificador de objeto retorna um objeto <b>Range</b> que representa todas as células na planilha ativa.</para>
+          <para>O uso desta propriedade sem um qualificador de objeto retorna um objeto <b>Range</b> que representa todas as células na planilha ativa.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -750,7 +750,7 @@
           <b>Objeto</b>de opcional. O idioma do dicionário que está sendo usado. Pode ser um dos valores <b>MsoLanguageID</b> usados pelo <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> propriedade.</param>
         <summary>Verifica a ortografia de um objeto. Este formulário não tem nenhum valor de retorno; Microsoft Excel exibe a caixa de diálogo ortografia.</summary>
         <remarks>
-          <para>Use esse método para verificar cabeçalhos, rodapés e objetos em uma planilha.</para>
+          <para>Use este método para verificar cabeçalhos, rodapés e objetos em uma planilha.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -862,7 +862,7 @@
       <Docs>
         <summary>Retira os círculos das entradas inválidas na planilha.</summary>
         <remarks>
-          <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.CircleInvalid" /> método para circundar células que contêm dados inválidos.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.CircleInvalid" /> método para circundar células que contêm dados inválidos.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -893,9 +893,9 @@
         <summary>Retorna o nome de código do objeto. <b>String</b> somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>O valor que você vê na célula à direita do <b>(Name)</b> na janela Propriedades é o nome de código do objeto selecionado. Em tempo de design, você pode alterar o nome de código de um objeto alterando este valor. Você não pode alterar essa propriedade programaticamente em tempo de execução.</para>
-          <para>o nome de código para um objeto pode ser usado no lugar de uma expressão que retorna o objeto.</para>
-          <para>, É possível que o nome da planilha seja diferente do nome de código. Quando você cria uma planilha, o nome da planilha e o nome de código são os mesmos, mas alterar o nome da planilha não altera o nome de código e alterar o nome de código (usando a janela Propriedades no Editor do Visual Basic) não altera o nome da planilha.</para>
+          <para>O valor que você vê na célula à direita de <b>(Nome)</b> na janela Propriedades é o nome de código do objeto selecionado. Você pode alterar o nome de código de um objeto em tempo de design alterando este valor, mas não pode alterar esta propriedade por programação em tempo de execução.</para>
+          <para>O nome de código para um objeto pode ser usado no lugar de uma expressão que retorna o objeto.</para>
+          <para>É possível que o nome da planilha seja diferente do nome de código. Quando você cria uma planilha, o nome de planilha e nome de código são iguais, mas a alteração do nome da planilha não altera o nome de código, assim como a alteração do nome de código (usando a janela Propriedades no Editor do Visual Basic) não altera o nome da planilha.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1022,15 +1022,15 @@
           <list type="table">
             <item>
               <term>1</term>
-              <description>usa rótulos na linha superior.</description>
+              <description>Usa rótulos na linha superior.</description>
             </item>
             <item>
               <term>2</term>
-              <description>usa rótulos na coluna esquerda.</description>
+              <description>Usa rótulos na coluna esquerda.</description>
             </item>
             <item>
               <term>3</term>
-              <description>cria vínculos para os dados de origem.</description>
+              <description>Crie links de fonte de dados.</description>
             </item>
           </list>
           <para></para>
@@ -1132,7 +1132,10 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
-        <remarks>Propriedade <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomProperties">
@@ -1161,7 +1164,7 @@
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.CustomProperties" /> objeto que representa as informações do identificador associadas a uma planilha.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Para a propriedade <b>CustomProperties</b> , as informações de identificador para uma planilha podem representar metadados para XML.</para>
+          <para>Na propriedade <b>CustomProperties</b>, as informações do identificador em uma planilha podem representar metadados para XML.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1270,7 +1273,7 @@
           <b>True</b> se as quebras de página (automática e manual) na planilha especificada estiverem ativadas. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Você não pode definir essa propriedade se você não tiver uma impressora instalada.</para>
+          <para>Você não pode definir essa propriedade se não tiver uma impressora instalada.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1451,7 +1454,7 @@
           <b>True</b> se as setas do AutoFiltro estiverem habilitadas quando a proteção somente da interface do usuário estiver ativada. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Essa propriedade se aplica a cada planilha e não serão salvas com a planilha ou sessão.</para>
+          <para>Essa propriedade se aplica a cada planilha, não sendo salva com a planilha ou sessão.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1486,7 +1489,7 @@
           <b>True</b> se o Microsoft Excel recalcular automaticamente a planilha quando necessário. <b>False</b> se o Excel não recalcular a planilha. <b>Boolean</b> de leitura/gravação</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Quando o valor dessa propriedade é <b>False</b>, você não pode solicitar um recálculo. Quando você altera o valor de <b>False</b> para <b>True</b>, o Excel recalcula a planilha.</para>
+          <para>Quando o valor dessa propriedade é <b>False</b>, não é possível solicitar um novo cálculo. Ao alterar o valor de <b>False</b> para <b>True</b>, o Excel calcula novamente a planilha.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1523,7 +1526,7 @@
         </value>
         <remarks>
           <para>Quando definido como <b>True</b> (padrão), avaliação de formatos condicionais ocorrerá automaticamente conforme necessário.  Quando definido como <b>False</b>, formatos condicionais não serão reavaliados.  Qualquer formatação condicional aplicada anteriormente ainda estarão visível, mas não atualizará como valores de célula ou <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" /> intervalos são alterados.  </para>
-          <para>a finalidade deste sinalizador é permitir programadores configurar uma regra completamente antes avaliando a ele.  Isso é particularmente útil quando a condição é aplicada ao longo de um intervalo grande conforme o desempenho pode ser lento nesses casos.</para>
+          <para>A finalidade deste sinalizador é permitir que programadores configurar uma regra completamente antes avaliando a ele.  Isso é particularmente útil quando a condição é aplicada ao longo de um intervalo grande conforme o desempenho pode ser lento nesses casos.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1564,7 +1567,7 @@
           <b>True</b> se os símbolos de tópicos estiverem habilitados quando a proteção somente da interface do usuário estiver ativada. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Essa propriedade se aplica a cada planilha e não serão salvas com a planilha ou sessão.</para>
+          <para>Essa propriedade se aplica a cada planilha, não sendo salva com a planilha ou sessão.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1605,8 +1608,8 @@
           <b>True</b> se os controles e ações de Tabela Dinâmica estiverem habilitados quando a proteção somente da interface do usuário estiver ativada. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Essa propriedade se aplica a cada planilha e não serão salvas com a planilha ou sessão.</para>
-          <para>Deve haver um número suficiente de células desprotegidas abaixo e à direita do relatório de tabela dinâmica para o Microsoft Excel recalcule e exiba o relatório de tabela dinâmica.</para>
+          <para>Essa propriedade se aplica a cada planilha, não sendo salva com a planilha ou sessão.</para>
+          <para>Precisa haver um número suficiente de células desprotegidas abaixo e à direita do relatório de tabela dinâmica para que o Microsoft Excel recalcule e exiba o relatório de tabela dinâmica.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1640,7 +1643,7 @@
         <summary>Retorna ou define o que pode ser selecionado na planilha. Leitura/gravação <see cref="T:Microsoft.Office.Interop.Excel.XlEnableSelection" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Dessa propriedade entrará em vigor somente quando a planilha for protegida: <b>xlNoSelection</b> impede qualquer seleção na planilha, <b>xlUnlockedCells</b> permite que apenas as células cuja propriedade <b>Locked</b> for <b>False</b> , a serem selecionados e <b> xlNoRestrictions</b> permite que qualquer célula sejam selecionados.</para>
+          <para>Essa propriedade tem efeito apenas quando a planilha está protegida: <b>xlNoSelection</b> impede qualquer seleção na planilha, <b>xlUnlockedCells</b>permite apenas a seleção das células das quais a propriedade <b>Locked</b> é <b>False</b> e <b>xlNoRestrictions</b> permite que qualquer célula seja selecionada.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1676,9 +1679,17 @@
         <summary>Converte um nome do Microsoft Excel em um objeto ou em um valor.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Os seguintes tipos de nomes no Microsoft Excel podem ser usados com este método:</para> Nomes de 
-          <list type="bullet"><item><description>definido. Você pode especificar qualquer nome.</description></item> Referências de 
-            <item><description>externo. Você pode usar o! para referir-se a uma planilha definida em outra pasta de trabalho.</description></item></list><para></para></remarks>
+          <para>Os tipos de nomes a seguir no Microsoft Excel podem ser usados com este método:</para>
+          <list type="bullet">
+            <item>
+              <description>Nomes definidos. Você pode especificar qualquer nome.</description>
+            </item>
+            <item>
+              <description>Referências externas. Você pode usar o! operador para se referir a uma planilha definida em outra pasta de trabalho.</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportAsFixedFormat">
@@ -1725,7 +1736,7 @@
         <param name="FixedFormatExtClassPtr">Ponteiro para a classe <b>FixedFormatExt</b> .</param>
         <summary>Exporta para um arquivo do formato especificado.</summary>
         <remarks>
-          <para>Este método também oferece suporte ao inicializar um suplemento para exportar um arquivo para um arquivo de formato fixo. Por exemplo, o Excel executará conversão de formato de arquivo se os conversores estão presentes. A conversão geralmente é iniciada pelo usuário.</para>
+          <para>Esse método também oferece suporte à inicialização de um suplemento para exportar um arquivo para um arquivo de formato fixo. Por exemplo, o Excel realizará a conversão do formato de arquivo, se houver conversores. A conversão é geralmente iniciada pelo usuário.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1859,7 +1870,7 @@
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> coleção que representa a página horizontal quebras na planilha. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Há um limite de 1,026 quebras de página horizontais por planilha.</para>
+          <para>Não há um limite de 1,026 quebras de página horizontais por planilha.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2203,8 +2214,8 @@
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Chart" />, <see cref="T:Microsoft.Office.Interop.Excel.Range" />, ou <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> object que representa a próxima planilha ou célula. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto for um intervalo, esta propriedade emulará a tecla TAB, embora a propriedade retorne a próxima célula sem selecioná proprietário.</para>
-          <para>Em uma planilha protegida, essa propriedade retorna a próxima célula desbloqueada. Em uma planilha desprotegida, essa propriedade sempre retorna a célula imediatamente à direita da célula especificada.</para>
+          <para>Se o objeto for um intervalo, esta propriedade emulará a tecla TAB, embora a propriedade retorne a próxima célula sem selecioná-la.</para>
+          <para>Em uma planilha protegida, essa propriedade retorna a próxima célula desprotegida. Em uma planilha desprotegida, a propriedade sempre retorna a célula imediatamente à direita da célula especificada.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2684,7 +2695,7 @@
         <summary>Cola o conteúdo da Área de Transferência na planilha.</summary>
         <remarks>
           <para>Se você não especificar o <paramref name="Destination" /> argumento, você deve selecionar o intervalo de destino antes de usar esse método.</para>
-          <para>Esse método pode modificar a seleção da planilha, dependendo do conteúdo da área de transferência.</para>
+          <para>Esse método pode modificar a seleção da planilha, dependendo do conteúdo da Área de Transferência.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2738,8 +2749,8 @@
         <remarks>
           <para>
             <paramref name="NoHTMLFormatting" />será apenas questão quando <paramref name="Format" /> = "HTML". Em todos os outros casos, <paramref name="NoHTMLFormatting" /> será ignorado.</para>
-          <para>Você deve selecionar o intervalo de destino antes de usar esse método.</para>
-          <para>Esse método pode modificar a seleção da planilha, dependendo do conteúdo da área de transferência.</para>
+          <para>Você precisa selecionar o intervalo de destino antes de usar esse método.</para>
+          <para>Esse método pode modificar a seleção da planilha, dependendo do conteúdo da Área de Transferência.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2913,8 +2924,8 @@
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Chart" />, <see cref="T:Microsoft.Office.Interop.Excel.Range" />, ou <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> object que representa a célula ou planilha anterior. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto for um intervalo, esta propriedade emulará a pressionar SHIFT + TAB; diferentemente a combinação de teclas, no entanto, a propriedade retorna a célula anterior sem selecioná proprietário.</para>
-          <para>Em uma planilha protegida, essa propriedade retorna a célula desbloqueada anterior. Em uma planilha desprotegida, essa propriedade sempre retorna a célula imediatamente à esquerda da célula especificada.</para>
+          <para>Quando o objeto é um intervalo, esta propriedade emula o pressionamento de SHIFT+TAB. Entretanto, ao contrário da combinação de teclas, a propriedade retorna a célula anterior sem selecioná-la.</para>
+          <para>Em uma planilha protegida, essa propriedade retorna a célula desprotegida anterior. Em uma planilha desprotegida, ela sempre retorna a célula imediatamente à esquerda da célula especificada.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2946,7 +2957,7 @@
         <value>O número de páginas de comentários serão impressos para a planilha atual.</value>
         <remarks>
           <para>Somente leitura.</para>
-          <para>o <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.PrintedCommentPages" /> propriedade retornará apenas um número maior que zero se os comentários a definição na guia Folha da página Configuração de caixa de diálogo estiver definida como no final da planilha. Esta propriedade retornará zero se a planilha for uma planilha de gráfico ou uma planilha de diálogo do MS Excel 5.0.</para>
+          <para>O <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.PrintedCommentPages" /> propriedade retornará apenas um número maior que zero se os comentários a definição na guia Folha da página Configuração de caixa de diálogo estiver definida como no final da planilha. Esta propriedade retornará zero se a planilha for uma planilha de gráfico ou uma planilha de diálogo do MS Excel 5.0.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3622,7 +3633,7 @@
         <summary>Retorna ou define o intervalo ao qual a rolagem é permitida como uma referência de intervalo de estilo A1. Células fora da área de rolagem não podem ser selecionadas. <b>String</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Definir essa propriedade como a cadeia de caracteres vazia ("") para permitir a seleção de célula para toda a planilha.</para>
+          <para>Defina essa propriedade como a sequência de caracteres vazia ("") para permitir a seleção de células em toda a planilha.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3806,8 +3817,8 @@
       <Docs>
         <summary>Exibe o formulário de dados associado à planilha.</summary>
         <remarks>
-          <para>Pausa a execução enquanto você estiver usando o formulário de dados. Quando você fechar o formulário de dados, execução reiniciada na linha seguinte ao método <b>ShowDataForm</b> .</para>
-          <para>Esse método executa o formulário de dados personalizados, se houver uma.</para>
+          <para>Pausa a execução enquanto você estiver usando o formulário de dados. Quando você fechar o formulário de dados, a execução reinicia na linha seguinte o método <b>ShowDataForm</b> .</para>
+          <para>Esse método executa o formulário de dados personalizado, se existir um.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3973,7 +3984,7 @@
         <summary>Retorna ou define a largura (padrão) de todas as colunas da planilha. <b>Double</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Uma unidade de largura de coluna equivale à largura de um caractere no estilo Normal. Para fontes proporcionais, a largura do caractere 0 (zero) é usada.</para>
+          <para>Uma unidade de largura de coluna equivale à largura de um caractere no estilo Normal. Para fontes proporcionais, será usada a largura do caractere 0 (zero).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4188,7 +4199,7 @@
           <b>Objeto</b>de opcional. Uma string que indica a senha diferencia maiusculas de minúsculas usar para unprotect a planilha ou pasta de trabalho. Se a planilha ou pasta de trabalho não está protegida por senha, esse argumento será ignorado. Se você omitir esse argumento para uma planilha protegida com uma senha, você será solicitado para a senha. Se você omitir esse argumento para uma pasta de trabalho for protegida por uma senha, o método falhará.</param>
         <summary>Remove a proteção de uma planilha ou de uma pasta de trabalho. Esse método não terá efeito caso a planilha ou a pasta de trabalho não esteja protegida.</summary>
         <remarks>
-          <para>Se você esquecer a senha, você não pode ser unprotect a planilha ou pasta de trabalho. É uma boa ideia manter uma lista de suas senhas e seus respectivos nomes de documentos em um local seguro.</para>
+          <para>Se você esquecer a senha, não poderá desproteger a planilha ou a pasta de trabalho. É uma boa ideia manter uma lista de suas senhas e dos nomes dos documentos correspondentes em um local seguro.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4259,8 +4270,8 @@
         <summary>Determina se o objeto está visível. Leitura/gravação <see cref="T:Microsoft.Office.Interop.Excel.XlSheetVisibility" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>A propriedade <b>Visible</b> para um item de tabela dinâmica é <b>True</b> se o item estiver visível no momento na tabela.</para>
-          <para>Se você definir a propriedade <b>Visible</b> para um nome como <b>False</b>, o nome não aparecerá na caixa de diálogo Definir nome.</para>
+          <para>A propriedade <b>Visible</b> para um item de tabela dinâmica será <b>True</b> quando o item estiver visível no momento na tabela.</para>
+          <para>Se você definir a propriedade <b>Visible</b> de um nome como <b>False</b>, o nome não aparecerá na caixa de diálogo Definir Nome.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4325,7 +4336,7 @@
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa as células mapeadas para um XPath específico. Retorna <b>Nothing</b> se o XPath especificado não tiver sido mapeado para a planilha ou se o intervalo mapeado estiver vazio.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Recursos XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
+          <para>Recursos de XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
           <para>Se o XPath existir dentro de uma coluna em uma lista XML, o objeto <b>Range</b> retornado não inclui a linha de cabeçalho ou a linha de inserção.</para>
           <para></para>
         </remarks>
@@ -4363,8 +4374,8 @@
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa as células mapeadas para um XPath específico. Retorna <b>Nothing</b> se o XPath especificado não tiver sido mapeado para a planilha.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Recursos XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
-          <para>Diferentemente o <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.XmlDataQuery(System.String,System.Object,System.Object)" /> método, o método <b>XmlMapQuery</b> retorna toda a coluna de uma lista XML, incluindo a linha de cabeçalho e a linha de inserção.</para>
+          <para>Recursos de XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
+          <para>Ao contrário do <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.XmlDataQuery(System.String,System.Object,System.Object)" /> método, o método <b>XmlMapQuery</b> retorna toda a coluna de uma lista XML, incluindo a linha de cabeçalho e a linha de inserção.</para>
           <para></para>
         </remarks>
       </Docs>

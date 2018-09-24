@@ -1,10 +1,10 @@
 <Type Name="ColorFormat" FullName="Microsoft.Office.Interop.Excel.ColorFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="94eccbe19d3d32c07fd1936d4fcbe2799d83801e" />
+    <Meta Name="ms.openlocfilehash" Value="3d031f52b238ec46211ddb6bca7295480f58f00f" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584473" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ColorFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -33,7 +33,7 @@
     <summary>Representa a cor de um objeto de uma só cor, a cor do ponteiro ou a cor de primeiro plano ou de plano de fundo de um objeto com um preenchimento gradual ou padronizado.</summary>
     <remarks>
       <para>Você pode definir as cores com um valor vermelho-verde-azul explícito (usando o <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" /> propriedade) ou com uma cor no esquema de cores (usando o <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" /> propriedade).</para>
-      <para>Uso das propriedades listadas na tabela a seguir para retornar um objeto <b>ColorFormat</b> .</para>
+      <para>Use uma das propriedades listadas na tabela a seguir para retornar um objeto <b>ColorFormat</b>.</para>
       <list type="table">
         <item>
           <term>
@@ -42,7 +42,7 @@
           <description>
             <b>FillFormat</b>
           </description>
-          <description>a cor de preenchimento de plano de fundo (usada em um preenchimento sombreado ou padronizado)</description>
+          <description>A cor de preenchimento de plano de fundo (usada em um preenchimento sombreado ou padronizado)</description>
         </item>
         <item>
           <term>
@@ -51,7 +51,7 @@
           <description>
             <b>FillFormat</b>
           </description>
-          <description>a cor de preenchimento de primeiro plano (ou simplesmente a cor de preenchimento de um preenchimento sólido)</description>
+          <description>A cor de preenchimento de primeiro plano (ou simplesmente a cor de preenchimento em um preenchimento sólido)</description>
         </item>
         <item>
           <term>
@@ -60,7 +60,7 @@
           <description>
             <b>LineFormat</b>
           </description>
-          <description>a cor da linha de plano de fundo (usada em uma linha padronizada)</description>
+          <description>A cor da linha de plano de fundo (usada em uma linha padronizada)</description>
         </item>
         <item>
           <term>
@@ -69,16 +69,16 @@
           <description>
             <b>LineFormat</b>
           </description>
-          <description>a cor da linha de primeiro plano (ou simplesmente a cor da linha em uma linha sólida)</description>
+          <description>A cor da linha de primeiro plano (ou simplesmente a cor da linha em uma linha sólida)</description>
         </item>
         <item>
           <term>
             <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.ForeColor" />
           </term>
           <description>
-            <b> ShadowFormat</b>
+            <b>ShadowFormat</b>
           </description>
-          <description>a cor da sombra</description>
+          <description>A cor da sombra</description>
         </item>
         <item>
           <term>
@@ -87,7 +87,7 @@
           <description>
             <b>ThreeDFormat</b>
           </description>
-          <description>a cor dos lados de um objeto extrudado</description>
+          <description>A cor dos lados de um objeto extrudado</description>
         </item>
       </list>
       <para></para>
@@ -155,7 +155,7 @@
         <value>A luminosidade do objeto especificado.</value>
         <remarks>
           <para>Leitura/gravação.</para>
-          <para>o valor dessa propriedade deve ser um número de 0,0 (mais esmaecido) a 1,0 (mais brilhante).</para>
+          <para>O valor dessa propriedade deve ser um número de 0,0 (mais esmaecido) a 1,0 (mais brilhante).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -191,8 +191,8 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para>
-          <para>o <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" /> propriedade foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL. Consulte também <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</para>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>O <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" /> propriedade foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL. Consulte também <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -354,7 +354,7 @@
         <summary>Retorna ou define um valor <b>Single</b> que clareia ou escurece a cor de uma forma especificada.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Você pode inserir um número de -1 (mais escuro) até 1 (mais claro) para a propriedade <b>TintAndShade</b> , 0 (zero) é neutro.</para>
+          <para>Você pode inserir um número de -1 (mais escuro) até 1 (mais claro) para a propriedade <b>TintAndShade</b>, 0 (zero) é neutro.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -386,7 +386,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>MsoCalloutType</b> pode ser uma destas constantes <b>MsoCalloutType</b> .</para>
+            <b>MsoCalloutType</b> pode ser uma dessas constantes <b>MsoCalloutType</b>.</para>
           <para>
             <b>msoCalloutFour</b>
           </para>

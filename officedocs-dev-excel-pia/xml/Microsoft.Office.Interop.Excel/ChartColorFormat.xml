@@ -1,10 +1,10 @@
 <Type Name="ChartColorFormat" FullName="Microsoft.Office.Interop.Excel.ChartColorFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2fc25a7018dd0e9e1de00d846f891570157c61e7" />
+    <Meta Name="ms.openlocfilehash" Value="deb6994bf1703cd29b935ef38c58228a26d6f7d9" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582303" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartColorFormat" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Usado somente com gráficos. Representa a cor de primeiro plano ou de um objeto de uma cor ou a cor de plano de fundo de um objeto com um preenchimento gradual ou padronizado.</summary>
     <remarks>
-      <para>Use uma das propriedades listadas na tabela a seguir para retornar um objeto <b>ChartColorFormat</b> .</para>
+      <para>Use uma das propriedades listadas na tabela a seguir para retornar um objeto <b>ChartColorFormat</b>.</para>
       <list type="table">
         <item>
           <term>
@@ -39,16 +39,18 @@
           </term>
           <description>
             <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" />
-          </description>Cor de preenchimento de plano de fundo (usada em um preenchimento sombreado ou padronizado)
+          </description>
+          <description>A cor de preenchimento de plano de fundo (usada em um preenchimento padronizado ou sombreado)</description>
         </item>
         <item>
           <term>
             <see cref="P:Microsoft.Office.Interop.Excel.ChartFillFormat.ForeColor" />
           </term>
           <description>
-            <b>ChartFillFormat </b>
-          </description>de 
-          <description>preenchimento de primeiro plano, cor (ou simplesmente a cor de preenchimento de um preenchimento sólido)</description></item>
+            <b>ChartFillFormat</b>
+          </description>
+          <description>Cor de preenchimento de primeiro plano (ou simplesmente a cor de preenchimento em um preenchimento sólido)</description>
+        </item>
       </list>
       <para></para>
     </remarks>
@@ -139,8 +141,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -256,7 +260,7 @@
         <summary>Retorna se a cor é um tipo RGB ou esquema.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>a propriedade <b>ChartColorFormat</b> pode ser uma das seguintes opções<b /><see cref="T:Microsoft.Office.Core.MsoColorType" /> constantes: <b>msoColorTypeRGB</b> ou <b>msoColorTypeScheme</b>.</para>
+          <para>A propriedade <b>ChartColorFormat</b> pode ser uma das seguintes opções<b /><see cref="T:Microsoft.Office.Core.MsoColorType" /> constantes: <b>msoColorTypeRGB</b> ou <b>leitura</b>.</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="DataLabel" FullName="Microsoft.Office.Interop.Excel.DataLabel">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2b832d255d01c5c5b7e9ed01b46690aca71f5da4" />
+    <Meta Name="ms.openlocfilehash" Value="2636427ad9e2bda4aa31e39589f7777b7ffdf22f" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586755" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DataLabel" />
@@ -31,10 +31,10 @@
   <Docs>
     <summary>Representa o rótulo de dados em um ponto de gráfico ou linha de tendência.</summary>
     <remarks>
-      <para>Em uma série, o objeto <b>DataLabel</b> é membro do <see cref="T:Microsoft.Office.Interop.Excel.DataLabels" /> conjunto. A coleção <b>DataLabels</b> contém um objeto <b>DataLabel</b> para cada ponto. Para uma série sem pontos definíveis (por exemplo, uma série de área), a coleção <b>DataLabels</b> contém um único objeto <b>DataLabel</b> .</para>
-      <para>Uso <b>DataLabels</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do rótulo de dados, para retornar um único objeto <b>DataLabel</b> .</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Excel.Point.DataLabel" /> propriedade para retornar o objeto <b>DataLabel</b> para um único ponto.</para>
-      <para>Em uma linha de tendência, o <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DataLabel" /> propriedade retorna o texto exibido com a linha de tendência. Isso pode ser a equação, o valor de R-quadrado ou ambos (se ambos estiverem sendo mostrados).</para>
+      <para>Em uma série, o objeto <b>DataLabel</b> é membro do <see cref="T:Microsoft.Office.Interop.Excel.DataLabels" /> conjunto. A coleção <b>DataLabels</b> contém um objeto <b>DataLabel</b> para cada ponto. Para uma série sem pontos definíveis (por exemplo, uma série de área), a coleção <b>DataLabels</b> contém um único objeto <b>DataLabel</b>.</para>
+      <para>Use <b>DataLabels</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do rótulo de dados, para retornar um único objeto <b>DataLabel</b> .</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.Point.DataLabel" /> propriedade para retornar o objeto <b>DataLabel</b> para um único ponto.</para>
+      <para>Em uma linha de tendência, o <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DataLabel" /> propriedade retorna o texto exibido com a linha de tendência. Esse texto pode ser a equação, o valor R-quadrado ou ambos (se ambos estiverem sendo mostrados).</para>
       <para></para>
     </remarks>
   </Docs>
@@ -299,7 +299,7 @@
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> object que representa um intervalo de caracteres dentro do texto do objeto. Você pode usar o objeto <b>Characters</b> para formatar caracteres dentro de uma cadeia de caracteres de texto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>o objeto <b>Characters</b> não é uma coleção.</para>
+          <para>O objeto <b>Characters</b> não é uma coleção.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -329,7 +329,10 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriedade <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -669,7 +672,7 @@
           <para>
             <b>xlRight</b>
           </para>
-          <para>Algumas dessas constantes podem não estar disponíveis para você, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou.</para>
+          <para>[!OBSERVAçãO] Alguma dessas constantes podem não estar disponíveis para você, dependendo do suporte de idioma (inglês dos EUA, por exemplo) que você selecionou ou instalou.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -797,7 +800,10 @@
       <Docs>
         <summary>Retorna ou define o código de formatação para o objeto. <b>Cadeia de caracteres</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>Código de <para>o formato é a mesma cadeia de caracteres da opção códigos de formato da caixa de diálogo Formatar células. A função <b>Format</b> usa cadeias de caracteres de código de formatação diferentes a <b>NumberFormat</b> e <see cref="P:Microsoft.Office.Interop.Excel.DataLabel.NumberFormatLocal" /> propriedades.</para><para></para></remarks>
+        <remarks>
+          <para>O código de formatação é a mesma cadeia de caracteres da opção Códigos de formato da caixa de diálogo Formatar células. A função <b>Format</b> usa cadeias de caracteres de código de formatação diferentes a <b>NumberFormat</b> e <see cref="P:Microsoft.Office.Interop.Excel.DataLabel.NumberFormatLocal" /> propriedades.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLinked">
@@ -861,7 +867,7 @@
         <summary>Retorna ou define o código de formatação para o objeto como uma cadeia de caracteres no idioma do usuário. <b>Objeto</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>a função <b>Format</b> usa cadeias de caracteres de código de formatação diferentes a <see cref="P:Microsoft.Office.Interop.Excel.DataLabel.NumberFormat" /> e propriedades <b>NumberFormatLocal</b> .</para>
+          <para>A função <b>Format</b> usa cadeias de caracteres de código de formatação diferentes a <see cref="P:Microsoft.Office.Interop.Excel.DataLabel.NumberFormat" /> e propriedades <b>NumberFormatLocal</b> .</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1000,7 +1006,7 @@
         <summary>Retorna ou define o sentido de leitura para o objeto especificado. Pode ser uma das seguintes constantes: <b>xlContext</b>, <b>xlLTR</b> (esquerda para direita) ou <b>xlRTL</b> (direita para esquerda). <b>Integer</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Algumas dessas constantes podem não estar disponíveis para você, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou.</para>
+          <para>[!OBSERVAçãO] Alguma dessas constantes podem não estar disponíveis para você, dependendo do suporte de idioma (inglês dos EUA, por exemplo) que você selecionou ou instalou.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1060,7 +1066,7 @@
         <summary>Define ou retorna um <b>objeto</b> que representa o separador usado para os rótulos de dados em um gráfico. Leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>o gráfico deve estar ativo antes que você possa acessar os rótulos de dados por programação; caso contrário, um erro em tempo de execução ocorrerá.</para>
+          <para>o gráfico deve estar ativo antes que você possa acessar os rótulos de dados por programação; Caso contrário, ocorrerá um erro de tempo de execução.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1127,7 +1133,7 @@
           <b>True</b> para mostrar o tamanho da bolha dos rótulos de dados em um gráfico. <b>False</b> para ocultá-lo. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>o gráfico deve estar ativo antes que você possa acessar os rótulos de dados por programação ou ocorrerá um erro de tempo de execução.</para>
+          <para>O gráfico deve estar ativo para que você possa acessar os rótulos de dados por programação; caso contrário, ocorrerá um erro em tempo de execução.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1162,7 +1168,7 @@
           <b>True</b> para exibir o nome da categoria dos rótulos de dados em um gráfico. <b>False</b> para ocultá-lo. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>o gráfico deve estar ativo antes que você possa acessar os rótulos de dados por programação ou ocorrerá um erro de tempo de execução.</para>
+          <para>O gráfico deve estar ativo para que você possa acessar os rótulos de dados por programação; caso contrário, ocorrerá um erro em tempo de execução.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1229,7 +1235,7 @@
           <b>True</b> para exibir o valor de porcentagem dos rótulos de dados em um gráfico. <b>False</b> para ocultá-lo. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>o gráfico deve estar ativo antes que você possa acessar os rótulos de dados por programação ou ocorrerá um erro de tempo de execução.</para>
+          <para>O gráfico deve estar ativo para que você possa acessar os rótulos de dados por programação; caso contrário, ocorrerá um erro em tempo de execução.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1263,7 +1269,7 @@
         <summary>Usado para alternar o campo <b>intervalo</b> se ele já existir no intervalo de rótulo de dados. <b>Boolean</b> (<b>bool</b> em c#) Leitura/gravação</summary>
         <value>To be added.</value>
         <remarks>
-          <para>o objeto <b>Range</b> mapeia um arbitrário intervalo de células em um intervalo de rótulos de dados, de modo que cada rótulo de dados corresponde a uma das células no intervalo.</para>
+          <para>O objeto de <b>intervalo</b> mapeia um intervalo de células de arbitrário a um intervalo de rótulos de dados, de modo que cada rótulo de dados corresponde a uma das células no intervalo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1297,7 +1303,7 @@
         <summary>Retorna ou define um <b>Boolean</b> para indicar o comportamento de exibição do nome da série dos rótulos de dados em um gráfico. <b>True</b> para exibir o nome da série. <b>False</b> para ocultá-lo. Leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>o gráfico deve estar ativo antes que você possa acessar os rótulos de dados por programação ou ocorrerá um erro de tempo de execução.</para>
+          <para>O gráfico deve estar ativo para que você possa acessar os rótulos de dados por programação; caso contrário, ocorrerá um erro em tempo de execução.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1331,7 +1337,7 @@
         <summary>Retorna ou define um <b>Boolean</b> que corresponde a um determinado comportamento de exibição de valores do rótulo de dados do gráfico. <b>True</b> para exibir os valores. <b>False</b> para ocultá-los. Leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Do gráfico especificado deve estar ativo antes que você possa acessar os rótulos de dados por programação ou ocorrerá um erro de tempo de execução.</para>
+          <para>O gráfico especificado deve estar ativo para que você possa acessar os rótulos de dados por programação; caso contrário, ocorrerá um erro em tempo de execução.</para>
           <para></para>
         </remarks>
       </Docs>

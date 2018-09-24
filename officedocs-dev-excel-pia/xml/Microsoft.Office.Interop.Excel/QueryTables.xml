@@ -1,10 +1,10 @@
 <Type Name="QueryTables" FullName="Microsoft.Office.Interop.Excel.QueryTables">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dca19c730db3c359bc26e265f3af266c406db4a5" />
+    <Meta Name="ms.openlocfilehash" Value="243a843ba48be5881f9e62bc2223ea6860624c17" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586937" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface QueryTables : System.Collections.IEnumerable" />
@@ -36,7 +36,7 @@
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> objetos. Cada objeto <b>QueryTable</b> representa uma tabela de planilha construída com base em dados retornados de uma fonte de dados externa.</summary>
     <remarks>
       <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.QueryTables" /> propriedade para retornar a coleção <b>QueryTables</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" /> método para criar uma nova tabela de consulta e adicioná-lo à coleção <b>QueryTables</b> .</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" /> método para criar uma nova tabela de consulta e adicioná-lo à coleção <b>QueryTables</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -194,7 +194,10 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriedade <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -257,7 +260,7 @@
         <summary>Retorna um único objeto de uma coleção.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>o nome de texto do objeto é o valor do <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Name" /> propriedade.</para>
+          <para>O nome de texto do objeto é o valor do <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Name" /> propriedade.</para>
           <para></para>
         </remarks>
       </Docs>

@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579972" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _OLEObject" />
@@ -154,8 +154,8 @@
           <b>True</b> se o objeto OLE for carregado automaticamente quando a pasta de trabalho que o contém for aberta. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propriedade é ignorada por controles ActiveX. Controles ActiveX são sempre carregados quando uma pasta de trabalho é aberta.</para>
-          <para>Para a maioria dos tipos de objeto OLE, essa propriedade não deve ser definida como <b>True</b>. Por padrão, a propriedade <b>AutoLoad</b> é definida como <b>False</b> para objetos OLE novos; Isto salva o tempo e memória quando o Microsoft Excel está carregando pastas de trabalho. A vantagem do carregamento automaticamente OLE objetos é que, para objetos representando dados voláteis, links para a fonte de dados pode ser restabelecidas imediatamente e os objetos podem ser renderizados novamente, se necessário.</para>
+          <para>Esta propriedade é ignorada pelos controles ActiveX. Esses controles são carregados sempre que uma pasta de trabalho é aberta.</para>
+          <para>Para a maioria dos tipos de objeto OLE, essa propriedade não deve ser definida como <b>True</b>. Por padrão, a propriedade <b>AutoLoad</b> é definida como <b>False</b> para objetos OLE novos; Isto salva o tempo e memória quando o Microsoft Excel está carregando pastas de trabalho. A vantagem do carregamento automático de objetos OLE é que, para objetos representando dados voláteis, links para a fonte de dados pode ser restabelecidas imediatamente e os objetos podem ser renderizados novamente, se necessário.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -355,7 +355,10 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <b>xlCreatorCode</b>.</summary>
         <value>To be added.</value>
-        <remarks>Propriedade <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -621,7 +624,7 @@
         <summary>Retorna ou define o intervalo de planilha vinculado ao valor do controle. Se você colocar um valor na célula, o controle assumirá esse valor. Da mesma forma, se você alterar o valor do controle, esse valor também será colocado na célula. <b>String</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Você não pode usar essa propriedade com as caixas de listagem de várias seleções.</para>
+          <para>Você não pode usar esta propriedade em caixas de listagem de seleções múltiplas.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -655,7 +658,7 @@
         <summary>Retorna ou define o intervalo de planilha usado para preencher a caixa de listagem especificada. A definição dessa propriedade destrói qualquer lista existente na caixa de listagem. <b>String</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Microsoft Excel lê o conteúdo de cada célula do intervalo e insere os valores de célula na caixa de listagem. A lista registra alterações nas células do intervalo.</para>
+          <para>O Microsoft Excel lê o conteúdo de cada célula do intervalo e insere os valores da célula na caixa de listagem. A lista registra as alterações nas células do intervalo.</para>
           <para>Se a lista da caixa de listagem tiver sido criada com o <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" /> método, essa propriedade retorna uma sequência vazia ("").</para>
           <para></para>
         </remarks>
@@ -815,7 +818,7 @@
         <summary>Retorna ou define o nome de uma macro executada quando o objeto especificado é clicado. <b>String</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>a definição dessa propriedade para um item de menu substitui qualquer ajuda personalizada configurada para o item de menu com as informações de informações configuradas para a macro atribuída.</para>
+          <para>A definição dessa propriedade para um item de menu substitui qualquer informação de ajuda personalizada definida para esse item pela informação definida para a macro atribuída.</para>
           <para></para>
         </remarks>
         <example>

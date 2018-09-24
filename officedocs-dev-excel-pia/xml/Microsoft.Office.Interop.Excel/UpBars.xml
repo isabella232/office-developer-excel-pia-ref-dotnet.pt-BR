@@ -1,10 +1,10 @@
 <Type Name="UpBars" FullName="Microsoft.Office.Interop.Excel.UpBars">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2102b0c94092cbe2a371d9f9d39bd08ab9098932" />
+    <Meta Name="ms.openlocfilehash" Value="1799535564fd8f2becbda2fb64ca5ee08b7a5a44" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577585" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface UpBars" />
@@ -30,7 +30,12 @@
   </Attributes>
   <Docs>
     <summary>Representa as barras superiores em um grupo de gráficos. As barras superiores conectam pontos da série um com os valores mais altos da última série no grupo de gráficos (as linhas ascendem da série um).</summary>
-    <remarks>Grupos de <para>somente a linha 2-D que contêm pelo menos duas séries podem ter barras superiores. Este objeto não é uma coleção. Não há nenhum objeto que representa uma única up de barra; qualquer um tenha barras superiores ativado para todos os pontos em um grupo de gráficos ou você as desativados.</para><para>Uso o <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.UpBars" /> propriedade para retornar o objeto <b>UpBars</b> .</para><para>Se o <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.HasUpDownBars" /> propriedade for <b>False</b>, a maioria das propriedades do objeto <b>UpBars</b> será desabilitada.</para><para></para></remarks>
+    <remarks>
+      <para>Somente grupos de linhas 2D que contenham pelo menos duas série podem ter barras superiores. Este objeto não é uma coleção. Não há nenhum objeto que representa uma única up de barra; qualquer um tenha barras superiores ativado para todos os pontos em um grupo de gráficos ou você os tiver desativado.</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.UpBars" /> propriedade para retornar o objeto <b>UpBars</b> .</para>
+      <para>Se o <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.HasUpDownBars" /> propriedade for <b>False</b>, a maioria das propriedades do objeto <b>UpBars</b> será desabilitada.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -118,8 +123,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">

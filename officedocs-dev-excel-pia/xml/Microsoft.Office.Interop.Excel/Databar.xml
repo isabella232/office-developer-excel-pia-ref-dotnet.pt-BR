@@ -1,10 +1,10 @@
 <Type Name="Databar" FullName="Microsoft.Office.Interop.Excel.Databar">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1299f035e734d223e0829374140c99bc36cf85ae" />
+    <Meta Name="ms.openlocfilehash" Value="5af0ef6023d3a14611c655e4cb96ffc4b3bf17c5" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587413" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Databar" />
@@ -32,7 +32,7 @@
     <summary>Representa uma regra de formatação condicional da barra de dados. Aplicar uma barra de dados a um intervalo ajuda você a ver o valor de uma célula em relação a outras células.</summary>
     <remarks>
       <para>Todos os objetos de formatação condicionais estão contidos dentro de um <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> objeto da coleção, que é um filho de um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> conjunto. Você pode criar um regra de formatação por meio de um de barra de dados a <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddDatabar" /> método do <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> conjunto.</para>
-      <para>Você usar o <see cref="P:Microsoft.Office.Interop.Excel.Databar.MinPoint" /> e <see cref="P:Microsoft.Office.Interop.Excel.Databar.MaxPoint" /> propriedades do <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> objeto para definir os valores da barra mais curta e a barra mais longa de um intervalo de dados. Essas propriedades retornam um <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> objeto, no qual você pode especificar como os limites são avaliados.</para>
+      <para>Você usa o <see cref="P:Microsoft.Office.Interop.Excel.Databar.MinPoint" /> e <see cref="P:Microsoft.Office.Interop.Excel.Databar.MaxPoint" /> propriedades do <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> objeto para definir os valores da barra mais curta e a barra mais longa de um intervalo de dados. Essas propriedades retornam um <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> objeto, no qual você pode especificar como os limites são avaliados.</para>
       <para></para>
     </remarks>
     <example>
@@ -67,7 +67,7 @@
         <value>
           <b>Aplicativo</b> (consulte acima)</value>
         <remarks>
-          <para>Você pode usar essa propriedade com um objeto de automação OLE para retornar o aplicativo desse objeto.</para>
+          <para>Você pode usar essa propriedade com um objeto de Automação OLE para retornar o aplicativo desse objeto.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -163,7 +163,7 @@
         <value>A posição do eixo das barras de dados especificada por uma regra de formatação condicional.</value>
         <remarks>
           <para>Leitura/gravação.</para>
-          <para>Do eixo para barras de dados é exibida somente quando o <see cref="P:Microsoft.Office.Interop.Excel.Databar.AxisPosition" /> propriedade é <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisAutomatic" /> ou <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisMidpoint" />, e quando há valores negativos no intervalo de valores especificado com um regra de formatação condicional de barra de dados. O valor padrão para o <see cref="P:Microsoft.Office.Interop.Excel.Databar.AxisPosition" /> propriedadeé <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisAutomatic" />.</para>
+          <para>O eixo para barras de dados é exibido somente quando o <see cref="P:Microsoft.Office.Interop.Excel.Databar.AxisPosition" /> propriedade é <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisAutomatic" /> ou <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisMidpoint" />, e quando há valores negativos no intervalo de valores especificado com um regra de formatação condicional de barra de dados. O valor padrão para o <see cref="P:Microsoft.Office.Interop.Excel.Databar.AxisPosition" /> propriedadeé <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisAutomatic" />.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -259,7 +259,7 @@
         <value>Especifica como uma barra de dados é preenchida com cores.</value>
         <remarks>
           <para>Leitura/gravação.</para>
-          <para>o valor padrão do <see cref="P:Microsoft.Office.Interop.Excel.Databar.BarFillType" /> propriedadeé <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarFillType.xlDataBarFillGradient" />.</para>
+          <para>O valor padrão do <see cref="P:Microsoft.Office.Interop.Excel.Databar.BarFillType" /> propriedadeé <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarFillType.xlDataBarFillGradient" />.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -388,7 +388,7 @@
           <b>String</b>
         </value>
         <remarks>
-          <para>Essa propriedade é útil para limitar o intervalo de valores que exibirá o formato condicional. Um cenário típico é quando você tem um intervalo de números que contém valores positivos e negativos. Convém criar mais de um formato condicional para esse intervalo de números — um para valores positivos e outro para valores negativos.</para>
+          <para>Essa propriedade é útil para limitar o intervalo de valores que exibirão o formato condicional. Um cenário típico é quando você possui um intervalo de números que contém valores positivos e negativos. Você talvez queira criar mais de um formato condicional para esse intervalo de números—um para valores positivos e outro para valores negativos.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -484,7 +484,7 @@
         <param name="Range">O intervalo ao qual esta regra de formatação será aplicada.</param>
         <summary>Define o intervalo de células ao qual esta regra de formatação se aplicará.</summary>
         <remarks>
-          <para>O intervalo deve estar no estilo de referência A1 e estar totalmente contido dentro da folha que é o pai do <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> conjunto. Ele pode incluir o operador de intervalo (dois-pontos), o operador de interseção (um espaço) ou o operador union (uma vírgula). Os sinais de dólar também pode ser usados, mas eles serão ignorados.</para>
+          <para>O intervalo deve estar no estilo de referência A1 e estar totalmente contido dentro da folha que é o pai do <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> conjunto. Ele pode incluir o operador de intervalo (dois-pontos), o operador de interseção (um espaço) ou o operador union (uma vírgula). Os sinais de dólar também pode ser usados, mas eles são ignorados.</para>
           <para>Você também pode usar um nome definido de local em qualquer parte do intervalo, mas o nome deve estar no idioma da macro.</para>
           <para></para>
         </remarks>
@@ -582,7 +582,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>o valor deve ser um número inteiro entre 0 e 100.</para>
+          <para>O valor deve ser um número inteiro entre 0 e 100.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -618,7 +618,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>o valor deve ser um número inteiro entre 0 e 100.</para>
+          <para>O valor deve ser um número inteiro entre 0 e 100.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -654,7 +654,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Ao definir a prioridade, o valor deve ser um inteiro positivo entre 1 e o número total de regras de formatação condicional na planilha. A prioridade deve ser um valor exclusivo para todas as regras na planilha, portanto, alterando a prioridade para a regra de formatação condicional especificada pode causar o valor de prioridade das regras de na planilha deslocamento.</para>
+          <para>Ao definir a propriedade, o valor deve ser um número inteiro positivo entre 1 e o número total de regras de formatação condicional na planilha. A prioridade deve ser um valor exclusivo para todas as regras na planilha, de forma que a alteração da prioridade da regra de formatação condicional especificada irá deslocar o valor de prioridade de todas as outras regras na planilha.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -720,7 +720,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
         </value>
         <remarks>
-          <para>o valor padrão é <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, que define o escopo usando o <see cref="P:Microsoft.Office.Interop.Excel.Databar.AppliesTo" />propriedade.</para>
+          <para>O valor padrão é <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, que define o escopo usando o <see cref="P:Microsoft.Office.Interop.Excel.Databar.AppliesTo" />propriedade.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -748,7 +748,7 @@
       <Docs>
         <summary>Define o valor de prioridade para esta regra de formatação condicional como "1", de forma que esta regra seja avaliada antes das outras regras na planilha.</summary>
         <remarks>
-          <para>Quando você tem várias regras de formatação condicionais em uma planilha, se a regra não foi definida anteriormente para prioridade mais alta "1", esse método fará com que a prioridade de todas as outras regras existentes na planilha seja aumentada por uma.</para>
+          <para>Quando você tiver várias regras de formatação condicional em uma planilha, se a prioridade dessa regra não tiver sido definida previamente como "1", este método aumentará a prioridade em um nível em todas as outras regras existentes na planilha.</para>
           <para>
             <b>Observação</b>: os níveis de prioridade de regras de formatação condicional são aplicados em uma base de nível de planilha.</para>
           <para></para>
@@ -777,7 +777,12 @@
       <Parameters />
       <Docs>
         <summary>Define a ordem de avaliação para esta regra de formatação condicional, de forma que seja avaliada após todas as outras regras da planilha.</summary>
-        <remarks>O valor real da prioridade do <para>será igual ao número total de regras de formatação condicional na planilha. Quando você tem várias regras de formatação condicionais em uma planilha, esse método fará com que a prioridade de regras que tinha um valor de prioridade maior do que esta regra seja aumentada por uma.</para><para><b>Observação</b>: os níveis de prioridade de regras de formatação condicional são aplicados em uma base de nível de planilha.</para><para></para></remarks>
+        <remarks>
+          <para>O valor real da prioridade será igual ao número total de regras de formatação condicional na planilha. Quando você tem várias regras de formatação condicionais em uma planilha, esse método fará com que a prioridade de regras que tinha um valor de prioridade maior do que esta regra seja aumentada por um.</para>
+          <para>
+            <b>Observação</b>: os níveis de prioridade de regras de formatação condicional são aplicados em uma base de nível de planilha.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowValue">
@@ -841,7 +846,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Para oferecer suporte a compatibilidade com versões anteriores, o valor padrão para essa propriedade é <b>False</b>, que é o oposto de uma formatação regra criada na interface do usuário.</para>
+          <para>Para que haja compatibilidade com versões anteriores, o valor padrão para essa propriedade é <b>False</b>, que é o oposto de uma regra de formatação criada na interface do usuário.</para>
           <para></para>
         </remarks>
       </Docs>

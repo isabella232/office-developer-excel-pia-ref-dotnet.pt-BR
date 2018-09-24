@@ -1,10 +1,10 @@
 <Type Name="Charts" FullName="Microsoft.Office.Interop.Excel.Charts">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f0e75c27ff1370b7c1737585a6a29f589fcd20eb" />
+    <Meta Name="ms.openlocfilehash" Value="21bb7adb80852e2d82d5897dcd0ffec87dcefadd" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581736" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Charts : System.Collections.IEnumerable" />
@@ -37,8 +37,8 @@
     <remarks>
       <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> propriedade para retornar a coleção <b>Charts</b> . Use o <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> método para criar uma nova planilha de gráfico e adicioná-lo à pasta de trabalho.</para>
       <para>Você pode combinar os <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> método com o <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para adicionar um novo gráfico que contém dados de uma planilha.</para>
-      <para>Uso <b>gráficos</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice de folha de gráfico ou o nome, para retornar um único objeto <b>Chart</b> .</para>
-      <para>o <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> conjunto contém todas as planilhas na pasta de trabalho (tanto planilhas e folhas de gráfico). Use <b>folhas</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome da planilha ou um número, para retornar uma única folha.</para>
+      <para>Use <b>gráficos</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome, para retornar um único objeto <b>Chart</b> ou número de índice de folha de gráfico.</para>
+      <para>O <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> conjunto contém todas as planilhas na pasta de trabalho (tanto planilhas e folhas de gráfico). Use <b>folhas</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome da planilha ou um número, para retornar uma única planilha.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -332,7 +332,10 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriedade <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -418,7 +421,7 @@
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> coleção que representa a página horizontal quebras na planilha. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Há um limite de quebras de página horizontais de 1026 por folha.</para>
+          <para>Há um limite de 1026 quebras de página horizontais por planilha.</para>
           <para></para>
         </remarks>
       </Docs>

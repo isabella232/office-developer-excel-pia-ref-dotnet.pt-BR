@@ -1,10 +1,10 @@
 <Type Name="Trendline" FullName="Microsoft.Office.Interop.Excel.Trendline">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c9024644c20463eaf6b1c272ed45234658b8e5de" />
+    <Meta Name="ms.openlocfilehash" Value="43cabd68ae83576c2d2f307683fffd5d099fc7d7" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575730" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Trendline" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>O objeto <b>Trendline</b> é membro do <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> conjunto. A coleção <b>Trendlines</b> contém todos os objetos <b>Trendline</b> para uma única série.</para>
       <para>Use <b>Trendlines</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice de linha de tendência, para retornar um único objeto <b>Trendline</b> .</para>
-      <para>o número de índice denota a ordem na qual as linhas de tendência foram adicionadas à série. Trendlines(1) é a primeira linha de tendência adicionada à série e Trendlines(Trendlines.Count) é a última adicionada.</para>
+      <para>O número de índice denota a ordem em que as linhas de tendência foram adicionadas à série. Trendlines(1) é a primeira e Trendlines(Trendlines.Count) é a última.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -216,8 +216,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabel">

@@ -1,10 +1,10 @@
 <Type Name="WorkbookConnection" FullName="Microsoft.Office.Interop.Excel.WorkbookConnection">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0412302ec11fc558839570922b03112869bc8d74" />
+    <Meta Name="ms.openlocfilehash" Value="a6d1fef0add7e32139d0f7d1970c0354fbd328c7" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581064" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface WorkbookConnection" />
@@ -30,8 +30,14 @@
   </Attributes>
   <Docs>
     <summary>Uma conexão é um conjunto de informações necessárias para obter dados de uma fonte de dados externos que não seja uma pasta de trabalho do 1st_Excel12.</summary>
-    <remarks>Conexões <para>podem ser armazenados em uma pasta de trabalho do Excel.  Quando a pasta de trabalho for aberta, o Excel criará uma cópia de na memória da conexão que é referenciado como o objeto de conexão.  Um objeto de conexão contém informações como o nome do servidor e o nome do objeto a ser aberto nesse servidor.  Opcionalmente, o objeto de conexão também pode incluir as credenciais de autenticação e/ou em um comando que deve ser passado para o servidor e executado (exemplo: uma instrução SELECT a ser executada pelo SQL Server.)  </para><para><b>Observação</b>: A forma exata da conexão depende do mecanismo que está sendo usado para recuperar dados – conexões ODBC, conexões OLEDB e consultas Web conterão informações diferentes.</para><para>Uma conexão também pode ser armazenado em um arquivo de conexão separados.  A maioria das conexões em uma pasta de trabalho do Excel incluem um ponteiro para um arquivo de conexão externo.  Arquivos de Conexão têm extensões que claramente rotulam-los como arquivos de conexão (*. ODC, *. IQY, etc.) e pode estar localizado na máquina local do usuário ou em outros locais bem conhecidos ou confiáveis como WSS (biblioteca de Conexão de dados) ou outros servidores corporativos.  Arquivos de Conexão permitem que vários usuários dentro da mesma organização reutilizar conexões.  Os administradores de rede são capazes de alterar o modo de que toda a organização se conecta a uma fonte de dados back-end, alterando a um arquivo de conexão único.  Um arquivo de conexão não é sempre necessário ao se conectar a uma fonte de dados externa.</para> Nomes de Conexão 
-      <para>são cadeias de caracteres que identificam exclusivamente conexões na pasta de trabalho em que eles são usados.     Existem outras propriedades de uma conexão que não são exclusivas.  Sempre que uma fórmula no Excel usa um argumento que é uma conexão, ele será suficiente para se referir ao nome dessa conexão, diretamente (como uma cadeia de caracteres) ou indiretamente (fazendo referência a uma célula que contém o nome de conexão como uma string.)</para><para></para></remarks>
+    <remarks>
+      <para>As conexões podem ser armazenadas em uma pasta de trabalho do Excel. Quando a pasta de trabalho é aberta, o Excel cria na memória uma cópia da conexão, à qual se faz referência como o objeto da conexão. Um objeto de conexão contém informações como o nome do servidor e o nome do objeto a ser aberto nesse servidor. Como opção, o objeto da conexão também pode incluir credenciais de autenticação e/ou um comando a ser passado ao servidor e executado (exemplo: uma instrução SELECT a ser executada pelo SQL Server).</para>
+      <para>
+        <b>Observação</b>: A forma exata da conexão depende do mecanismo que está sendo usado para recuperar dados – conexões ODBC, conexões OLEDB e consultas Web conterão informações diferentes.</para>
+      <para>Uma conexão também pode ser armazenada em um arquivo de conexão separado. A maioria das conexões em uma pasta de trabalho do Excel incluem um ponteiro para um arquivo de conexão externo. Os arquivos de conexão possuem extensões que claramente os rotulam como arquivos de conexão (*.ODC, *.IQY etc.) e podem estar localizados na máquina local do usuário ou em outros locais conhecidos ou confiáveis tais como o WSS (Biblioteca de Conexões de Dados) ou outros servidores corporativos. Os arquivos de conexão permitem que vários usuários na mesma organização reutilizem conexões. Os administradores de rede podem alterar a forma como toda a organização se conecta a uma fonte de dados back-end alterando um único arquivo de conexão. Um arquivo de conexão não é obrigatório ao conectar-se a uma fonte de dados externa.</para>
+      <para>Os nomes de conexão são sequências que identificam exclusivamente conexões na pasta de trabalho em que são usadas. Há outras propriedades de uma conexão que não são exclusivas. Sempre que uma fórmula no Excel pegar um argumento que seja uma conexão, ele será suficiente para fazer referência ao nome dessa conexão, seja diretamente (como uma sequência) ou indiretamente (fazendo referência a uma célula que contém o nome de conexão como sequência).</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -97,7 +103,7 @@
         <summary>Quando usado sem um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object que representa o aplicativo Microsoft Office Excel. Quando usado com um qualificador de objeto, essa propriedade retorna um objeto <b>Application</b> que representa o criador do objeto especificado. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Você pode usar essa propriedade com um objeto de automação OLE para retornar o aplicativo desse objeto.</para>
+          <para>Você pode usar essa propriedade com um objeto de Automação OLE para retornar o aplicativo desse objeto.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -128,7 +134,7 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. <b>Integer</b> somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.  A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.  A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -184,9 +190,11 @@
       <Docs>
         <summary>Exclui a conexão de uma pasta de trabalho.</summary>
         <remarks>
-          <para>Use esse método para excluir uma conexão de dados externos. Esse método não se aplica aos links para outras pastas de trabalho. </para>
-          <para>a exclusão de uma conexão não excluir ou remover todos os objetos que estavam usando essa conexão.  Excluir uma conexão não causará qualquer um dos arquivos de conexão a ser excluído do sistema de arquivos.  Se você editar qualquer um desses objetos para usar outra conexão, tudo vai começar a trabalhar novamente.</para>
-          <para>Objetos que usam uma conexão excluída se comportam como se a conexão não pôde ser estabelecida.  </para>
+          <para>Use esse método para excluir uma conexão de dados externa. Esse método não se aplica a links para outras pastas de trabalho. </para>
+          <para>Excluir uma conexão não excluir ou remover todos os objetos que estavam usando essa conexão.
+
+Excluir uma conexão não causará qualquer um dos arquivos de conexão a ser excluído do sistema de arquivos.  Se você editar qualquer um desses objetos para usar outra conexão, tudo vai começar a trabalhar novamente.</para>
+          <para>Os objetos que usam uma conexão excluída se comportam como se a conexão não pudesse ser estabelecida.  </para>
           <para></para>
         </remarks>
       </Docs>
@@ -220,8 +228,10 @@
         <summary>Retorna ou define uma breve descrição para um <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto. <b>String</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Em Propriedades de Conexão a caixa de diálogo, o usuário pode editar o nome da conexão e/ou a descrição.  Alterar o nome e descrição nessa caixa de diálogo altera aos campos somente dentro do objeto de conexão do Excel.</para> O tamanho máximo de uma descrição de 
-          <para>é 255 caracteres.  Se o usuário Especifica uma descrição dentro de um arquivo de conexão que tenha mais de 255 caracteres, a descrição é truncar para ajustar o limite de 255 caracteres.</para><para></para></remarks>
+          <para>Na caixa de diálogo Propriedades da Conexão, o usuário pode editar o nome da conexão e/ou descrição. A alteração do nome e da descrição nesta caixa de diálogo altera os campos somente no objeto de conexão do Excel.</para>
+          <para>O tamanho máximo de uma descrição é 255 caracteres. Se o usuário especificar uma descrição em um arquivo de conexão que tenha mais de 255 caracteres, a descrição ficará truncada para caber no limite de 255 caracteres.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InModel">
@@ -478,7 +488,8 @@
         <summary>Atualiza a conexão de uma pasta de trabalho.</summary>
         <remarks>
           <para>Se o <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> propriedade for <b>False</b>, as caixas de diálogo não são exibidas e o método <b>Refresh</b> falhará com a exceção informações de Conexão insuficientes.</para>
-          <para>Uma falha na atualização para uma conexão não terá impacto nas operações de atualização para as outras conexões.</para>
+          <para>Uma falha na atualização de uma conexão não terá impacto nas operações de atualização das outras conexões. 
+</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="PlotArea" FullName="Microsoft.Office.Interop.Excel.PlotArea">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="bb1049061bbf006d23a68d870ddfb1d3042027a2" />
+    <Meta Name="ms.openlocfilehash" Value="5a540fca333680ff420954f4c897f1253f3abc3a" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574729" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PlotArea" />
@@ -31,8 +31,8 @@
   <Docs>
     <summary>Representa a área de plotagem de um gráfico. É a área onde os seus dados de gráfico são plotados.</summary>
     <remarks>
-      <para>A área de plotagem em um gráfico 2D contém os marcadores de dados, linhas de grade, rótulos de dados, linhas de tendência e itens de gráfico opcionais colocados na área do gráfico. A área de plotagem em um gráfico 3D contém todos os itens acima plus as paredes, andar, eixos, títulos aos eixos e rótulos de marca de escala no gráfico. A área de plotagem está rodeada por da área do gráfico. A área do gráfico em um gráfico 2D contém os eixos, o título do gráfico, os títulos do eixo e a legenda. Área do gráfico em um gráfico 3D contém o título do gráfico e a legenda. Para obter informações sobre a formatação da área do gráfico, consulte o <see cref="T:Microsoft.Office.Interop.Excel.ChartArea" /> objeto.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Excel._Chart.PlotArea" /> propriedade para retornar um objeto <b>PlotArea</b> .</para>
+      <para>A área de plotagem em um gráfico 2D contém os marcadores de dados, as linhas de grade, os rótulos de dados, as linhas de tendência e os itens opcionais de gráficos colocados na área de gráfico. A área de plotagem em um gráfico 3D contém todos os itens acima mais as paredes, o piso, os eixos, os títulos de eixo e os rótulos de marcas de escala no gráfico. A área de plotagem é envolta pela área do gráfico. A área do gráfico em um gráfico 2D contém os eixos, o título do gráfico, os títulos de eixo e a legenda. A área do gráfico em um gráfico 3D contém o título do gráfico e a legenda. Para obter informações sobre a formatação da área do gráfico, consulte o <see cref="T:Microsoft.Office.Interop.Excel.ChartArea" /> objeto.</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Chart.PlotArea" /> propriedade para retornar um objeto <b>PlotArea</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -272,8 +272,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -397,7 +399,7 @@
         <summary>Retorna o interior altura da área de plotagem, em pontos.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Da área de plotagem usada para essa medição não inclui os rótulos do eixo. O <see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Height" /> propriedade da área de plotagem utiliza o retângulo delimitador que inclui os rótulos do eixo.</para>
+          <para>A área de plotagem usada para essa medição não inclui os rótulos do eixo. O <see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Height" /> propriedade da área de plotagem utiliza o retângulo delimitador que inclui os rótulos do eixo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -431,7 +433,7 @@
         <summary>Retorna a distância do gráfico de borda para dentro extremidade esquerda da área de plotagem, em pontos.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Da área de plotagem usada para essa medição não inclui os rótulos do eixo. O <see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Left" /> propriedade da área de plotagem utiliza o retângulo delimitador que inclui os rótulos do eixo.</para>
+          <para>A área de plotagem usada para essa medição não inclui os rótulos do eixo. O <see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Left" /> propriedade da área de plotagem utiliza o retângulo delimitador que inclui os rótulos do eixo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -465,7 +467,7 @@
         <summary>Retorna a distância em pontos do gráfico de borda para o interior superior a borda da área de plotagem.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Da área de plotagem usada para essa medição não inclui os rótulos do eixo. O <see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Top" /> propriedade da área de plotagem utiliza o retângulo delimitador que inclui os rótulos do eixo.</para>
+          <para>A área de plotagem usada para essa medição não inclui os rótulos do eixo. O <see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Top" /> propriedade da área de plotagem utiliza o retângulo delimitador que inclui os rótulos do eixo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -499,7 +501,7 @@
         <summary>Retorna o interior largura da área de plotagem, em pontos.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Da área de plotagem usada para essa medição não inclui os rótulos do eixo. O <see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Width" /> propriedade da área de plotagem utiliza o retângulo delimitador que inclui os rótulos do eixo.</para>
+          <para>A área de plotagem usada para essa medição não inclui os rótulos do eixo. O <see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Width" /> propriedade da área de plotagem utiliza o retângulo delimitador que inclui os rótulos do eixo.</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="ListObject" FullName="Microsoft.Office.Interop.Excel.ListObject">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e5db05498474766473e84216636995014a7a4d11" />
+    <Meta Name="ms.openlocfilehash" Value="1bb3f266b1d484c480fc364acfdb40b99ff98c94" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20583017" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ListObject" />
@@ -32,7 +32,7 @@
     <summary>Representa um objeto de lista em uma planilha.</summary>
     <remarks>
       <para>O <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto é um membro do <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> conjunto. O <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> coleção contém todos os objetos de lista em uma planilha.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.ListObjects" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> para retornar um <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> conjunto.</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.ListObjects" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> para retornar um <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> conjunto.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -94,7 +94,7 @@
         <summary>Retorna um valor <b>Boolean</b> que indica se um <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto em uma planilha está ativo — isto é, se a célula ativa está dentro do intervalo do objeto <b>ListObject</b> .</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Porque não há nenhum método <b>Activate</b> para o objeto <b>ListObject</b> , você pode ativar um objeto <b>ListObject</b> ativando um intervalo de células dentro da lista.</para>
+          <para>Como não há nenhum método <b>Activate</b> para o objeto <b>ListObject</b> , você pode ativar um objeto <b>ListObject</b> ativando um intervalo de células dentro da lista.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -129,7 +129,7 @@
         <value>A cadeia de caracteres de texto descritiva (alternativa) da tabela especificada.</value>
         <remarks>
           <para>Leitura/gravação.</para>
-          <para>o valor do <see cref="P:Microsoft.Office.Interop.Excel.ListObject.AlternativeText" /> propriedade corresponde à configuração da caixa Título na caixa de diálogo texto alternativo, que é exibida clicando em uma tabela, apontando para a tabela e clicando em texto alternativa.</para>
+          <para>O valor do <see cref="P:Microsoft.Office.Interop.Excel.ListObject.AlternativeText" /> propriedade corresponde à configuração da caixa Título na caixa de diálogo texto alternativo, que é exibida clicando em uma tabela, apontando para a tabela e clicando em texto alternativo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -225,7 +225,7 @@
           <b>String</b>
         </value>
         <remarks>
-          <para>o texto do comentário não pode exceder 255 caracteres.</para>
+          <para>O texto do comentário não pode exceder 255 caracteres.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -256,8 +256,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataBodyRange">
@@ -311,7 +313,7 @@
       <Docs>
         <summary>Exclui o <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> object e limpa os dados de célula da planilha.</summary>
         <remarks>
-          <para>Se a lista estiver vinculada a um site do SharePoint, excluí-lo não afeta os dados no servidor que está executando o Windows SharePoint Services. Quaisquer alterações não confirmadas feitas na lista local não são enviadas à lista do SharePoint. (Não há nenhum aviso que essas alterações não confirmadas são perdidas.)</para>
+          <para>Se a lista é vinculada a um site do SharePoint, excluí-lo não afetará os dados no servidor que está executando o Windows SharePoint Services. Quaisquer alterações não confirmadas feitas na lista local não são enviadas à lista do SharePoint. (Não há nenhum aviso que essas alterações não confirmadas são perdidas.)</para>
           <para></para>
         </remarks>
       </Docs>
@@ -375,7 +377,7 @@
         <summary>Determina se a janela especificada, a planilha ou <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto é exibido da direita para a esquerda em vez da esquerda para a direita.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propriedade retorna <b>True</b> se a janela especificada, planilha ou <b>ListObject</b> é exibida da direita para a esquerda em vez da esquerda para a direita e <b>False</b> se o objeto for exibido da parte esquerda para direita.</para>
+          <para>Essa propriedade retorna <b>True</b> se a janela especificada, planilha ou <b>ListObject</b> é exibida da direita para a esquerda em vez da esquerda para a direita e <b>False</b> se o objeto for exibido da parte esquerda para direita.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -518,7 +520,7 @@
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.ListRows" /> object que representa todas as linhas de dados no <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>o objeto <b>ListRows</b> retornado não inclui o cabeçalho, total ou inserir linhas.</para>
+          <para>O objeto <b>ListRows</b> retornado não inclui o cabeçalho, o total ou Inserir linhas.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -761,7 +763,7 @@
         <summary>Retorna um<b>String</b> que representa a URL da lista do SharePoint para um determinado <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Acessar essa propriedade gerará um erro em tempo de execução se a lista não estiver vinculada a um site do SharePoint.</para>
+          <para>Acessar essa propriedade gera um erro de tempo de execução se a lista não estiver vinculada a um site do SharePoint.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -795,7 +797,7 @@
         <summary>Retorna um valor <b>Boolean</b> que indica se o AutoFiltro será exibido.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>a propriedade <b>ShowAutoFilter</b> usa como padrão <b>True</b> para um novo <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto.</para>
+          <para>Propriedade <b>ShowAutoFilter</b> usa como padrão <b>True</b> para um novo <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1054,7 +1056,7 @@
         <summary>Retorna uma lista das segmentações de dados de tabela associados a um <b>objeto ListObject</b>. Somente leitura</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Um <b>ListObject</b> é essencialmente uma tabela.</para>
+          <para>Um <b>objeto ListObject</b> é essencialmente uma tabela.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1147,7 +1149,7 @@
         <value>A descrição associada com a cadeia de caracteres de texto alternativo para a tabela especificada.</value>
         <remarks>
           <para>Leitura/gravação.</para>
-          <para>o valor do <see cref="P:Microsoft.Office.Interop.Excel.ListObject.Summary" /> propriedade corresponde à configuração da caixa Descrição na caixa de diálogo texto alternativo, que é exibida clicando em uma tabela, apontando para a tabela e clicando em texto alternativa.</para>
+          <para>O valor do <see cref="P:Microsoft.Office.Interop.Excel.ListObject.Summary" /> propriedade corresponde à configuração da caixa Descrição na caixa de diálogo texto alternativo, que é exibida clicando em uma tabela, apontando para a tabela e clicando em texto alternativo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1178,7 +1180,7 @@
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.TableObject" /> objeto. Somente leitura</summary>
         <value>To be added.</value>
         <remarks>
-          <para>o objeto de <b>TableObject</b> é uma tabela de planilha construída a partir de dados retornados a partir de um modelo do PowerPivot.</para>
+          <para>O objeto <b>TableObject</b> é uma tabela de planilha construída a partir de dados retornados a partir de um modelo do PowerPivot.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1268,7 +1270,7 @@
         <summary>Remove o link a um site do Microsoft Windows SharePoint Services em uma lista.</summary>
         <remarks>
           <para>Essa propriedade retornará <b>Nothing</b>.</para>
-          <para>Após este método é chamado e a lista está desvinculada, ela não poderá ser revertida.</para>
+          <para>Uma vez chamado esse método e desvinculada a lista, não é possível revertê-lo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1298,7 +1300,7 @@
         <remarks>
           <para>Depois de usar esse método, o intervalo de células que compõem a lista será um intervalo de dados regular.</para>
           <para>Essa propriedade retornará <b>Nothing</b>.</para>
-          <para>Execução desse método mantém os dados da célula, formatação e fórmulas na planilha. A linha de Total também permanece intacta. Esse método remove qualquer link para um site do Microsoft Windows SharePoint Services. AutoFiltro e Inserir linha também são removidas da lista.</para>
+          <para>A execução desse método deixa os dados da célula, formatação e fórmulas na planilha. A linha de Total também permanece intacta. Esse método remove qualquer link para um site do Microsoft Windows SharePoint Services. O AutoFiltro e Inserir linha também são removidas da lista.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1332,7 +1334,7 @@
         <summary>Atualiza a lista em um site do Microsoft Windows SharePoint Services com as alterações feitas na lista na planilha.</summary>
         <remarks>
           <para>Essa propriedade retornará <b>Nothing</b>.</para>
-          <para>Este método se aplica apenas às listas vinculadas a um site do SharePoint. Se o site do SharePoint não estiver disponível, um erro será gerado.</para>
+          <para>Esse método se aplica apenas às listas vinculadas a um site do SharePoint. Se o site do SharePoint não estiver disponível, um erro será gerado.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1363,7 +1365,7 @@
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> object que representa o mapa de esquema usado para a lista especificada.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Recursos XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
+          <para>Recursos de XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
       </Docs>

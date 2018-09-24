@@ -1,10 +1,10 @@
 <Type Name="Legend" FullName="Microsoft.Office.Interop.Excel.Legend">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a1be48c9d0d19cc48ee0a2813dac8b8828be4fbf" />
+    <Meta Name="ms.openlocfilehash" Value="67108bf0496a38e9f989b18082d38d2c41e4a563" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587616" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Legend" />
@@ -31,9 +31,9 @@
   <Docs>
     <summary>Representa a legenda em um gráfico.</summary>
     <remarks>
-      <para>Cada gráfico pode ter somente uma legenda. O objeto <b>Legend</b> contém um ou mais <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> objetos; cada <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> objeto contém um <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> objeto.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Excel._Chart.Legend" /> propriedade para retornar o objeto <b>Legend</b> .</para>
-      <para>a legenda do gráfico não estiver visível, a menos que o <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" /> propriedade é <b>True</b>. Se essa propriedade for <b>False</b>, propriedades e métodos do objeto <b>Legend</b> falhará.</para>
+      <para>Cada gráfico pode ter apenas uma legenda. O objeto <b>Legend</b> contém um ou mais <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> objetos; cada <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> objeto contém um <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> objeto.</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Chart.Legend" /> propriedade para retornar o objeto <b>Legend</b> .</para>
+      <para>A legenda do gráfico não estiver visível, a menos que o <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" /> propriedade é <b>True</b>. Se essa propriedade for <b>False</b>, as propriedades e métodos do objeto <b>Legend</b> falhará.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -187,8 +187,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -372,7 +374,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Essa propriedade não afeta se um gráfico está no modo de autolayout ou não.  Se o usuário adiciona um título usando o comando acima do gráfico, o gráfico será redimensionada menor, como no Microsoft Office Excel 2003.  Se o usuário, em seguida, remove o título ou seleciona uma das opções de sobreposição de título, o gráfico será redimensionada maior, como se não estivesse o título do gráfico.</para>
+          <para>Essa propriedade não afeta se um gráfico está ou não em modo autolayout.  Se o usuário adiciona um título usando o comando acima do gráfico, o gráfico será redimensionada menor, como no Microsoft Office Excel 2003.  Se o usuário remover o título ou selecionar uma das opções de título sobrepostas, o gráfico será redimensionado maior, como se o título não estivesse no gráfico.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -498,35 +500,42 @@
           <list type="table">
             <item>
               <term>
-                <b>legenda</b>
+                <b>Legenda</b>
               </term>
               <description>Paris</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
-                <b>nome</b>
+                <b>Nome</b>
               </term>
-              <description>[Europe]. [ França]. [Paris] (somente leitura)</description>
+              <description>[Europe].[France].[Paris] (somente leitura)</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]. [ França]. [Paris] (somente leitura)</description>
-              <description>(Igual ao valor da propriedade SQL, somente leitura)</description>
+              <description>[Europe].[France].[Paris] (somente leitura)</description>
+              <description>(Igual ao da propriedade SQL, somente leitura)</description>
             </item>
             <item>
               <term>
                 <b>Valor</b>
               </term>
-              <description>[Europe]. [ França]. [Paris] (somente leitura)</description>
+              <description>[Europe].[France].[Paris] (somente leitura)</description>
               <description>Paris</description>
             </item>
           </list>
-          <para>Ao se especificar um índice para o <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> coleção, você pode usar a sintaxe mostrada na tabela a seguir.</para> expressão 
-          <list type="table"><item><term>. PivotItems ("[Europe]. [ França]. [Paris] ")</term><description>expressão. PivotItems("Paris")</description></item></list><para></para></remarks>
+          <para>Ao especificar um índice para o <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> coleção, você pode usar a sintaxe mostrada na tabela a seguir.</para>
+          <list type="table">
+            <item>
+              <term>expressão. PivotItems ("[Europe]. [ França]. [Paris] ")</term>
+              <description>expressão. PivotItems("Paris")</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

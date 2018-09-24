@@ -1,10 +1,10 @@
 <Type Name="ChartGroup" FullName="Microsoft.Office.Interop.Excel.ChartGroup">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="91aeed6a7dfc46c2d925ce34ca5aa8b7e1be919f" />
+    <Meta Name="ms.openlocfilehash" Value="d867c9c484716da4b2528f8d662af2030b791599" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578243" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartGroup" />
@@ -31,33 +31,33 @@
   <Docs>
     <summary>Representa uma ou mais séries plotadas em um gráfico com o mesmo formato. O objeto <b>ChartGroup</b> é um membro do <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> conjunto.</summary>
     <remarks>
-      <para>Um gráfico contém um ou mais grupos de gráficos, cada grupo gráfico contém uma ou mais séries e cada sequência contém um ou mais pontos. Por exemplo, um único gráfico pode conter um grupo de gráficos de linha, que contém todas as séries plotadas com o formato de gráfico de linhas e um grupo de gráficos de barras, contendo todas as séries plotadas com o formato de gráfico de barras.</para>
+      <para>Um gráfico contém um ou mais grupos de gráficos, cada grupo gráfico contém uma ou mais séries e cada seqüência contém um ou mais pontos. Por exemplo, um único gráfico pode conter um grupo de gráficos de linha, que contém todas as séries plotadas com o formato de gráfico de linhas e um grupo de gráficos de barras, contendo todas as séries plotadas com o formato de gráfico de barras.</para>
       <para>Use <b>ChartGroups</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do grupo gráfico, para retornar um único objeto <b>ChartGroup</b> . Se o gráfico tiver sido ativado, você pode usar o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" /> propriedade.</para>
       <para>Como o número de índice para um determinado grupo gráfico pode ser alterado se o formato de gráfico usado para esse grupo for alterado, talvez seja mais fácil usar um dos métodos de atalho de grupo gráfico nomeados para retornar um determinado grupo gráfico. O <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> método retorna a coleção dos grupos de gráficos de pizza em um gráfico, o <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> método retorna a coleção de grupos de gráficos de linha e assim por diante. Cada um desses métodos pode ser usado com um número de índice para retornar um único objeto <b>ChartGroup</b> , ou sem um número de índice para retornar uma coleção <b>ChartGroups</b> . Os seguintes métodos de grupo gráfico estão disponíveis:</para>
       <list type="bullet">
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" /> método</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" />método</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" /> método</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" />método</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" /> método</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" />método</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" /> método</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" />método</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> método</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />método</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> método</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />método</description>
         </item>
       </list>
       <para></para>
@@ -121,7 +121,7 @@
         <summary>Retorna o grupo para a série ou grupo de gráficos especificado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Para 3D charts apenas <b>xlPrimary</b> é válida.</para>
+          <para>Para gráficos 3D, apenas <b>xlPrimary</b> é válida.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -210,7 +210,10 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</summary>
         <value>To be added.</value>
-        <remarks>Propriedade <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DoughnutHoleSize">
@@ -388,7 +391,7 @@
         <summary>Gráficos de barras e coluna: Retorna ou define o espaço entre barra ou coluna clusters como um percentual da barra ou coluna largura. Pizza de pizza ou barra de gráficos de pizza: Retorna ou define o espaço entre as seções principais e secundárias do gráfico.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>o valor dessa propriedade deve estar entre 0 e 500.</para>
+          <para>O valor dessa propriedade precisa estar entre 0 e 500.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -669,7 +672,7 @@
         <summary>Especifica como as barras e colunas são posicionadas. Pode ser um valor entre – 100 e 100. Aplica-se somente a gráficos de colunas 2D e de barras 2D.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se essa propriedade for definida como – 100, barras posicionadas para que haja uma barra largura entre elas. Se a sobreposição for 0 (zero), não existe espaço entre barras (uma barra começando imediatamente após a barra precedente). Se a sobreposição for 100, barras posicionadas na parte superior de umas às outras.</para>
+          <para>Se essa propriedade for definida como – 100, barras serão posicionadas para que haja uma barra largura entre elas. Se a sobreposição for 0 (zero), não existe espaço entre barras (uma barra começando imediatamente após a barra precedente). Se a sobreposição for 100, as barras serão posicionadas umas sobre as outras.</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="Border" FullName="Microsoft.Office.Interop.Excel.Border">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="30183a3a980c964f6c89cba76995fed1732880ce" />
+    <Meta Name="ms.openlocfilehash" Value="615b6d793dd88e23d55febf94b9549b59f9d20c5" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576780" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Border" />
@@ -31,9 +31,14 @@
   <Docs>
     <summary>Representa a borda de um objeto.</summary>
     <remarks>
-      <para>Com mais de objetos (all, exceto para o <see cref="T:Microsoft.Office.Interop.Excel.Range" /> e <see cref="T:Microsoft.Office.Interop.Excel.Style" /> objetos) têm uma borda que é tratada como uma única entidade, independentemente de quantos lados com ele tiver sido definido. A borda inteira deve ser retornada como uma unidade. Use a propriedade <b>Border</b> para retornar o objeto <b>Border</b> para este tipo de objeto.</para> Objetos de 
-        <b>intervalo</b> e o <b>estilo</b> de 
-      <para>possuem quatro bordas distintas — esquerda, direita, superior e inferior — que podem ser retornadas individualmente ou como um grupo. Use a propriedade <b>bordas</b> de um <b>intervalo</b> ou o objeto <b>Style</b> para retornar a coleção <b>Borders</b> , que contém todas as quatro bordas e trata as bordas como uma unidade.</para><para>Uso <b>bordas</b>(<paramref name="index" />), onde <paramref name="index" /> identifica a borda, para retornar um único objeto <b>Border</b> .</para><para><paramref name="Index" /> pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> constantes: <b>xlDiagonalDown</b>, <b>xlDiagonalUp</b>, <b>xlEdgeBottom</b>, <b>xlEdgeLeft</b>, <b>xlEdgeRight</b>, <b>xlEdgeTop</b>, xlInsideHorizontal <b></b>, ou <b>xlInsideVertical</b>.</para><para></para></remarks>
+      <para>Com mais de objetos (all, exceto para o <see cref="T:Microsoft.Office.Interop.Excel.Range" /> e <see cref="T:Microsoft.Office.Interop.Excel.Style" /> objetos) têm uma borda que é tratada como uma única entidade, independentemente de quantos lados com ele tiver sido definido. A borda inteira deve ser retornada como uma unidade. Use a propriedade <b>Border</b> para retornar o objeto <b>Border</b> para este tipo de objeto.</para>
+      <para>Objetos 
+        <b>Range</b> e <b>estilo</b> possuem quatro bordas distintas — esquerda, direita, superior e inferior — que podem ser retornadas individualmente ou como um grupo. Use a propriedade <b>bordas</b> de um objeto <b>Range</b> ou <b>Style</b> para retornar a coleção <b>Borders</b> , que contém todas as quatro bordas e trata as bordas como uma unidade.</para>
+      <para>Use <b>bordas</b>(<paramref name="index" />), onde <paramref name="index" /> identifica a borda, para retornar um único objeto <b>Border</b> .</para>
+      <para>
+        <paramref name="Index" />pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> constantes: <b>xlDiagonalDown</b>, <b>xlDiagonalUp</b>, <b>xlEdgeBottom</b>, <b>xlEdgeLeft</b>, <b>xlEdgeRight</b>, <b>xlEdgeTop</b>, <b>xlInsideHorizontal</b>ou <b>xlInsideVertical</b>.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -164,8 +169,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LineStyle">
@@ -198,7 +205,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" />pode ser uma destas constantes de <b>XlLineStyle</b> :</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" />pode ser uma das <b>seguintes</b> constantes:</para>
           <para>
             <b>xlContinuous</b>
           </para>
@@ -286,7 +293,7 @@
           <b>Object</b>
         </value>
         <remarks>
-          <para>a tentativa de acessar uma cor de tema para um objeto cuja cor não possui tema atualmente resultará em um erro de tempo de execução de solicitação inválida.</para>
+          <para>A tentativa de acessar uma cor de tema para um objeto cuja cor não possui tema atualmente resultará em um erro em tempo de execução de solicitação inválida.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -323,7 +330,7 @@
         </value>
         <remarks>
           <para>Você pode inserir um número de -1 (mais escuro) até 1 (mais claro) para o <see cref="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" /> propriedade. Zero (0) é neutro.</para>
-          <para>Tentar definir essa propriedade como um valor menor que -1 ou mais de 1 resulta em um erro em tempo de execução: "o valor especificado estiver fora do intervalo".  Essa propriedade funciona para cores de tema e cores nontheme.</para>
+          <para>A tentativa de definir esta propriedade como um valor menor que -1 ou maior que 1 resulta em um erro em tempo de execução: "O valor especificado está fora dos limites". Esta propriedade funciona tanto com cores com tema quanto sem tema.</para>
           <para></para>
         </remarks>
       </Docs>

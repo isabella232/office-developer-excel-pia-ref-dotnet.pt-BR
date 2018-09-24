@@ -1,10 +1,10 @@
 <Type Name="PivotCaches" FullName="Microsoft.Office.Interop.Excel.PivotCaches">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="30d8a53aca6b1b693a8acc184b1d71d6cd486ceb" />
+    <Meta Name="ms.openlocfilehash" Value="a96fa5538045c8441266412dcd431b316fe7edd6" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586874" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotCaches : System.Collections.IEnumerable" />
@@ -36,7 +36,7 @@
     <summary>Representa a coleção de caches de memória dos relatórios de tabela dinâmica em uma pasta de trabalho.</summary>
     <remarks>
       <para>Cada cache de memória é representado por um <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> objeto.</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.PivotCaches" /> método para retornar a coleção <b>PivotCaches</b> .</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.PivotCaches" /> método para retornar a coleção <b>PivotCaches</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -202,7 +202,7 @@
         </returns>
         <remarks>
           <para>Os dois seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> constantes não têm suporte quando usar esse método: <b>xlPivotTable</b> e <b>xlScenario</b>. Um erro em tempo de execução será retornado se uma destas dois constantes seja fornecida.</para>
-          <para>o <paramref name="SourceData" /> argumento será obrigatório se <paramref name="SourceType" /> não for xlExternal. Pode ser uma <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto (quando <paramref name="SourceType" /> é xlConsolidation ou xlDatabase) ou um Excel <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto (quando <paramref name="SourceType" /> é xlExternal).</para>
+          <para>O <paramref name="SourceData" /> argumento será obrigatório se <paramref name="SourceType" /> não for xlExternal. Pode ser uma <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto (quando <paramref name="SourceType" /> é xlConsolidation ou xlDatabase) ou um Excel <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto (quando <paramref name="SourceType" /> é xlExternal).</para>
           <para>Quando não fornecido, a versão do <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> será xlPivotTableVersion12.  O uso da constante <b>xlPivotTableVersionCurrent</b> não é permitido e retornará um erro de tempo de execução se ele for fornecido.</para>
           <para></para>
         </remarks>
@@ -234,8 +234,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

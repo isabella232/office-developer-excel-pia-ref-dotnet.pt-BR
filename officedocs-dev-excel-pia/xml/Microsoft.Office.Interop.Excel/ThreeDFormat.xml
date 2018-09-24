@@ -1,10 +1,10 @@
 <Type Name="ThreeDFormat" FullName="Microsoft.Office.Interop.Excel.ThreeDFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4d21b65911fea75417444605a0fe5b47bd944918" />
+    <Meta Name="ms.openlocfilehash" Value="a7446cb76912959213bb4dcc1c28dae6c32fcad1" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585943" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ThreeDFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -33,7 +33,7 @@
     <summary>Representa a formatação tridimensional de uma forma.</summary>
     <remarks>
       <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.Shape.ThreeD" /> propriedade para retornar um objeto <b>ThreeDFormat</b> .</para>
-      <para>Não é possível aplicar formatação tridimensional a alguns tipos de formas, como formas com bisel ou não contíguos vários caminhos. A maioria das propriedades e métodos do <b>ThreeDFormat</b> do objeto de tal forma irá falhar.</para>
+      <para>Você não pode aplicar formatação tridimensional a alguns tipos de formas, como formas com bisel ou não contíguos vários caminhos. A maioria das propriedades e métodos do objeto <b>ThreeDFormat</b> de tal forma irá falhar.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -359,8 +359,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Depth">
@@ -392,7 +394,7 @@
         <summary>Retorna ou define a profundidade da extrusão da forma.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>a propriedade <b>Depth</b> pode ser um valor de –600 a 9600 (valores positivos produzem uma extrusão cuja face frontal é a forma original; valores negativos produzem uma extrusão cuja face traseira é a forma original).</para>
+          <para>A propriedade <b>Depth</b> pode ser um valor de –600 a 9600 (valores positivos produzem uma extrusão cuja face frontal é a forma original; valores negativos produzem uma extrusão cuja face traseira é a forma original).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -573,7 +575,7 @@
         <summary>Altera a rotação da forma especificada em torno do eixo x pelo número especificado de graus.</summary>
         <remarks>
           <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> propriedade para definir a rotação absoluta da forma em torno do eixo x.</para>
-          <para>Não será possível ajustar a rotação da forma especificada ao redor do eixo x além do limite superior ou inferior para a propriedade <b>RotationX</b> (90 graus até-90 graus). Por exemplo, se a propriedade <b>RotationX</b> é definida inicialmente como 80 e você especificar 40 para o <paramref name="Increment" /> argumento, a rotação resultante será 90 (o limite superior para a propriedade <b>RotationX</b> ) em vez de 120.</para>
+          <para>Você não pode ajustar a rotação da forma especificada ao redor do eixo x além do limite superior ou inferior para a propriedade <b>RotationX</b> (90 graus até-90 graus). Por exemplo, se a propriedade <b>RotationX</b> é definida inicialmente como 80 e você especificar 40 para o <paramref name="Increment" /> argumento, a rotação resultante será 90 (o limite superior para a propriedade <b>RotationX</b> ) em vez de 120.</para>
           <para>Para alterar a rotação de uma forma em torno do eixo y, use o <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> método. Para alterar a rotação ao redor do eixo z, use o <see cref="M:Microsoft.Office.Interop.Excel.Shape.IncrementRotation(System.Single)" /> método.</para>
           <para></para>
         </remarks>
@@ -608,7 +610,7 @@
         <remarks>
           <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> propriedade para definir a rotação absoluta da forma em torno do eixo y.</para>
           <para>Para alterar a rotação de uma forma em torno do eixo x, use o <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> método. Para alterar a rotação ao redor do eixo z, use o <see cref="M:Microsoft.Office.Interop.Excel.Shape.IncrementRotation(System.Single)" /> método.</para>
-          <para>Não será possível ajustar a rotação da forma especificada ao redor da forma do eixo y além do limite superior ou inferior para a propriedade <b>RotationY</b> (90 graus até-90 graus). Por exemplo, se a propriedade <b>RotationY</b> é definida inicialmente como 80 e você especificar 40 para o <paramref name="Increment" /> argumento, a rotação resultante será 90 (o limite superior para a propriedade <b>RotationY</b> ) em vez de 120.</para>
+          <para>Você não pode ajustar a rotação da forma especificada ao redor da forma do eixo y além do limite superior ou inferior para a propriedade <b>RotationY</b> (90 graus até-90 graus). Por exemplo, se a propriedade <b>RotationY</b> é definida inicialmente como 80 e você especificar 40 para o <paramref name="Increment" /> argumento, a rotação resultante será 90 (o limite superior para a propriedade <b>RotationY</b> ) em vez de 120.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -641,7 +643,7 @@
         <remarks>
           <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationZ" /> propriedade para definir a rotação absoluta da forma em torno do eixo z.</para>
           <para>Para alterar a rotação de uma forma em torno do eixo z, use o <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationZ(System.Single)" /> método.</para>
-          <para>Não será possível ajustar a rotação ao redor do eixo z da forma especificada além do limite superior ou inferior para a propriedade <b>RotationZ</b> (90 graus a – 90 graus). Por exemplo, se a propriedade <b>RotationZ</b> é definida inicialmente como 80 e você especificar 40 para o <paramref name="Increment" /> argumento, a rotação resultante será 90 (o limite superior para a propriedade <b>RotationZ</b> ) em vez de 120.</para>
+          <para>Você não pode ajustar a rotação ao redor do eixo z da forma especificada além do limite superior ou inferior para a propriedade <b>RotationZ</b> (90 graus a – 90 graus). Por exemplo, se a propriedade <b>RotationZ</b> é definida inicialmente como 80 e você especificar 40 para o <paramref name="Increment" /> argumento, a rotação resultante será 90 (o limite superior para a propriedade <b>RotationZ</b> ) em vez de 120.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -863,7 +865,7 @@
           <see cref="T:Microsoft.Office.Core.MsoLightRigType" />
         </value>
         <remarks>
-          <para>Você não verá os efeitos luminosos que você defina se a extrusão tiver uma superfície de esboço.</para>
+          <para>Você não verá os efeitos de luminosidade que definiu se a extrusão tiver uma superfície de esboço.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -956,7 +958,7 @@
         <summary>Retorna o formato de extrusão predefinido.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cada formato de extrusão predefinido contém um conjunto de valores predefinidos para as diversas propriedades da extrusão. Se a extrusão tiver um formato personalizado em vez de um formato predefinido, essa propriedade retorna <see cref="F:Microsoft.Office.Core.MsoPresetThreeDFormat.msoPresetThreeDFormatMixed" />. Os valores dessa propriedade correspondem às opções (numeradas da esquerda para direita, de cima para baixo) exibidas quando você clica no botão 3D na barra de ferramentas Desenho.</para>
+          <para>Cada formato de extrusão predefinido contém um conjunto de valores predefinidos para as diversas propriedades da extrusão. Se a extrusão tiver um formato personalizado em vez de um formato predefinido, essa propriedade retorna <see cref="F:Microsoft.Office.Core.MsoPresetThreeDFormat.msoPresetThreeDFormatMixed" />. Os valores dessa propriedade correspondem às opções (numeradas da esquerda para a direita, de cima para baixo) exibidas quando você clica no botão 3D da barra de ferramentas Desenho.</para>
           <para>Para definir o formato de extrusão predefinido, use o <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetThreeDFormat(Microsoft.Office.Core.MsoPresetThreeDFormat)" /> método.</para>
           <para></para>
         </remarks>
@@ -1019,7 +1021,7 @@
         <summary>Restaura a rotação de extrusão em torno do eixo-x e do eixo-y para 0 (zero) de forma que a parte frontal da extrusão (saliência) se volte para frente.</summary>
         <remarks>
           <para>Este método não redefine a rotação ao redor do eixo z.</para>
-          <para>Para definir a rotação da extrusão ao redor do eixo x e y como qualquer coisa diferente de 0 (zero), use o <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> e <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> propriedades do <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objeto. Para definir a rotação da extrusão ao redor do eixo z, use o <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object que representa a forma extrudada.</para>
+          <para>Para definir a rotação da extrusão ao redor do eixo x e y como algo diferente de 0 (zero), use o <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> e <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> propriedades do <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objeto. Para definir a rotação da extrusão ao redor do eixo z, use o <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object que representa a forma extrudada.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1088,7 +1090,7 @@
         <summary>Retorna ou define a rotação da forma submetida a extrusão ao redor do eixo y, em graus.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>A propriedade <b>RotationY</b> pode ser um valor de – 90 a 90. Um valor positivo indica rotação à esquerda; um valor negativo indica rotação à direita.</para>
+          <para>A propriedade <b>RotationY</b> pode ser um valor de – 90 a 90. Um valor positivo indica rotação para a esquerda; um valor negativo indica rotação para a direita.</para>
           <para>Para definir a rotação da forma submetida a extrusão ao redor do eixo x, use o <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objeto. Para definir a rotação da forma submetida a extrusão ao redor do eixo z, use a propriedade Rotation do <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto. Para alterar a direção do caminho de varredura da extrusão sem girar a face frontal da extrusão, use o <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" /> método.</para>
           <para></para>
         </remarks>
@@ -1125,7 +1127,7 @@
           <b>Simples</b>
         </value>
         <remarks>
-          <para>A propriedade <b>RotationZ</b> pode ser um valor entre – 90 a 90. Um valor positivo indica rotação para cima; um valor negativo indica rotação para baixo.</para>
+          <para>A propriedade <b>RotationZ</b> pode ter um valor de – 90 a 90. Um valor positivo indica rotação para cima; um valor negativo indica rotação para baixo.</para>
           <para>Para definir a rotação da forma submetida a extrusão ao redor do eixo y, use o <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objeto. Para definir a rotação da forma submetida a extrusão ao redor do eixo x, use o <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> propriedade do objeto <b>ThreeDFormat</b> . Para alterar a direção do caminho de varredura da extrusão sem girar a face frontal da extrusão, use o <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" /> método.</para>
           <para></para>
         </remarks>

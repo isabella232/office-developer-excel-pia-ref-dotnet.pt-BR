@@ -1,10 +1,10 @@
 <Type Name="SlicerCacheLevel" FullName="Microsoft.Office.Interop.Excel.SlicerCacheLevel">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="43900a2e801ac6164f29d0632611e43dbce1a178" />
+    <Meta Name="ms.openlocfilehash" Value="3e50741c9a2b1462398bc2cd7a9e64c639d93725" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587266" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SlicerCacheLevel" />
@@ -160,9 +160,11 @@
         <value>Especifica se uma segmentação de dados estiver participando de filtragem cruzada com outras segmentações de dados que compartilham o mesmo cache de segmentação de dados e como cruze filtragem é exibido.</value>
         <remarks>
           <para>Leitura/gravação.</para>
-          <para>Se mais de uma segmentação de dados estiver associada a mesma tabela dinâmica, por padrão, se o item ou itens que você filtra por em uma segmentação de dados não tem nenhum dado correspondente em outra segmentação de dados, esses itens serão esmaecidos. Por exemplo, se você tiver uma segmentação de dados de estado e de segmentação de dados Country e você clicar em um país em que a segmentação de dados do país, todos os estados na segmentação de dados de estado que não são nesse país serão esmaecido. Esse recurso é conhecido como "cruze filtragem."</para> Configurações de 
-          <para>a interface do usuário que correspondem à configuração do <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> são de propriedade a indicar visualmente os itens sem dados e Mostrar itens sem dados último caixas de seleção na caixa de diálogo Configurações de segmentação de dados. Definindo o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> propriedade a ser <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithDataAtTop" /> corresponde à seleção de ambos os indicar visualmente os itens sem dados e Mostrar itens sem dados última caixas de seleção. Definindo o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> propriedade <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithNoData" /> corresponde à seleção de somente a indicar visualmente os itens cujo nenhuma caixa de seleção de dados. Desmarcar ambas as caixas de seleção corresponde à configuração de <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> propriedade <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerNoCrossFilter" />.</para> Segmentações de dados 
-          <para>a filtragem de fontes de dados não-OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>false</b>) não são compatíveis com o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objeto. Para segmentações de dados a filtragem de tabelas dinâmicas com base em intervalos, listas e fontes de dados relacionais de não-OLAP, use o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> do objeto, em vez disso.</para><para></para></remarks>
+          <para>Se mais de uma segmentação de dados estiver associada à mesma Tabela Dinâmica, por padrão, se os itens usados para filtragem em uma segmentação de dados não tiverem dados correspondentes em outra segmentação de dados, esses itens ficarão esmaecidos. Por exemplo, se você tiver a segmentação de dados Country e uma segmentação de dados State, e clicar em um país na segmentação de dados Country, todos os estados da segmentação de dados State que não estiverem nesse país ficarão esmaecidos. Esse recurso é chamado de "filtragem cruzada".</para>
+          <para>As configurações de interface do usuário que correspondem à configuração do <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> são de propriedade a indicar visualmente os itens sem dados e Mostrar itens sem dados último caixas de seleção na caixa de diálogo Configurações de segmentação de dados. Definindo o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> propriedade a ser <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithDataAtTop" /> corresponde à seleção de ambos os indicar visualmente os itens sem dados e Mostrar itens sem dados última caixas de seleção. Definindo o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> propriedade <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithNoData" /> corresponde à seleção de somente a indicar visualmente os itens cujo nenhuma caixa de seleção de dados. Desmarcar ambas as caixas de seleção corresponde à configuração de <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> propriedade <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerNoCrossFilter" />.</para>
+          <para>Segmentação de dados a filtragem de fontes de dados não-OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>Falso</b>) não são compatíveis com o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objeto. Para segmentações de dados a filtragem de tabelas dinâmicas com base em intervalos, listas e fontes de dados relacionais de não-OLAP, use o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> do objeto, em vez disso.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -316,7 +318,7 @@
         <value>Especifica se os itens na segmentação de dados são classificados.</value>
         <remarks>
           <para>Leitura/gravação.</para>
-          <para>a configuração padrão dessa propriedade é <b>xlDataSourceOrder</b> (1).</para>
+          <para>A configuração padrão desta propriedade é <b>xlDataSourceOrder</b> (1).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -348,7 +350,7 @@
         <value>A lista de itens de segmentação de dados que estejam atualmente incluídos no filtro de segmentação de dados.</value>
         <remarks>
           <para>Somente leitura.</para>
-          <para>a lista de itens de segmentação de dados são retornados como sequências de caracteres de nome exclusivo MDX. Se esta lista estiver vazia, a segmentação de dados não está filtrando a fonte de dados e a segmentação de dados todos os blocos são exibidos como selecionada.</para>
+          <para>A lista de itens de segmentação de dados que são retornados como cadeias de caracteres de nomes exclusivos MDX. Se essa lista estiver vazia, isso significará que a segmentação de dados não está filtrando a fonte de dados e todos os elementos de segmentação de dados serão exibidos conforme selecionados.</para>
           <para></para>
         </remarks>
       </Docs>

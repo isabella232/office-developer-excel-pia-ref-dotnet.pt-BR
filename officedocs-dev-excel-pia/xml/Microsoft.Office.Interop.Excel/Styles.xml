@@ -1,10 +1,10 @@
 <Type Name="Styles" FullName="Microsoft.Office.Interop.Excel.Styles">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d5b16d0cbfdec51d146c93cd55fc38ef3293d37f" />
+    <Meta Name="ms.openlocfilehash" Value="e553a7598a3f9ae8e05db8f343f51fd6b194d460" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587245" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Styles : System.Collections.IEnumerable" />
@@ -36,9 +36,9 @@
     <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.Style" /> objetos na pasta de trabalho ativa ou especificada.</summary>
     <remarks>
       <para>Cada objeto de <b>estilo</b> representa uma descrição de estilo para um intervalo. O objeto <b>Style</b> contém todos os atributos de estilo (fonte, formato de número, alinhamento e assim por diante) como propriedades. Existem vários estilos internos — incluindo Normal, moeda e porcentagem — que são listados na caixa Nome do estilo na caixa de diálogo estilo (menu Formatar).</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Styles" /> propriedade para retornar a coleção <b>Styles</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel.Styles.Add(System.String,System.Object)" /> método para criar um novo estilo e adicioná-lo à coleção.</para>
-      <para>Usam <b>estilos</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do estilo ou um nome, para retornar um único objeto <b>Style</b> da pasta de trabalho coleção <b>Styles</b> .</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Styles" /> propriedade para retornar a coleção <b>Styles</b> .</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Styles.Add(System.String,System.Object)" /> método para criar um novo estilo e adicioná-lo à coleção.</para>
+      <para>Usar <b>estilos</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do estilo ou um nome, para retornar um único objeto <b>Style</b> da pasta de trabalho coleção <b>Styles</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -195,8 +195,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -292,7 +294,7 @@
         <summary>Mescla os estilos de outra pasta de trabalho para o <see cref="T:Microsoft.Office.Interop.Excel.Styles" /> conjunto.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>o valor de um intervalo mesclado é especificado na célula do canto superior esquerdo do intervalo.</para>
+          <para>O valor de um intervalo mesclado é especificado na célula do canto superior esquerdo do intervalo.</para>
           <para></para>
         </remarks>
       </Docs>

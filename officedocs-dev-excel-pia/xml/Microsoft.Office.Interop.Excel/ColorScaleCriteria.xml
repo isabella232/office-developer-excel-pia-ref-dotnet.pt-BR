@@ -1,10 +1,10 @@
 <Type Name="ColorScaleCriteria" FullName="Microsoft.Office.Interop.Excel.ColorScaleCriteria">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c8c5c4bd0f115d5f46e3f8b194a4b36d82012e7f" />
+    <Meta Name="ms.openlocfilehash" Value="589e9e7df115b961e73fd7901c8f7f0502669047" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587434" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ColorScaleCriteria : System.Collections.IEnumerable" />
@@ -39,7 +39,7 @@
       <para></para>
     </remarks>
     <example>
-      <para>O exemplo de código a seguir cria um intervalo de números e aplica uma regra de formatação condicional da escala de duas cores para aquele intervalo. A cor para o limite mínimo, em seguida, é atribuída para vermelho e o limite máximo como azul por indexado na coleção <b>ColorScaleCriteria</b> para definir critérios individuais.</para>
+      <para>O exemplo de código a seguir cria um intervalo de números e aplica uma regra de formatação condicional de escala de duas cores a esse intervalo. A cor do limite mínimo é vermelho e o limite máximo é azul indexando na coleção <b>ColorScaleCriteria</b> para definir critérios individuais.</para>
       <code>&lt;span class="label"&gt;Sub CreateColorScaleCF()  
 
 
@@ -4463,7 +4463,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>o número de critérios é equivalente ao número de valores limite atribuído uma escala de cores. Isso será dois ou três, dependendo do tipo usar uma escala de cores de dois ou três cores escala para a regra de formatação condicional.</para>
+          <para>O número de critérios é equivalente ao número de valores limite atribuído a uma escala de cores. Esse número pode ser dois ou três, dependendo se você usa uma escala de duas cores ou uma escala de três cores para a regra de formatação condicional.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4531,7 +4531,10 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />
         </value>
-        <remarks>O valor de <para>do <paramref name="Index" /> parâmetro não pode ser maior que o número de conjuntos de critérios para um formato condicional de escala de cores. Os critérios são equivalentes aos valores limite atribuídos da escala de cores. Para localizar o número de valores de limite, use o <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriteria.Count" /> propriedade.</para><para></para></remarks>
+        <remarks>
+          <para>O valor do <paramref name="Index" /> parâmetro não pode ser maior que o número de conjuntos de critérios para um formato condicional de escala de cores. Os critérios são equivalentes aos valores limite atribuídos da escala de cores. Para localizar o número de valores de limite, use o <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriteria.Count" /> propriedade.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,10 +1,10 @@
 <Type Name="PivotTable" FullName="Microsoft.Office.Interop.Excel.PivotTable">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="712758e7feaa480772d8b4950b401c1829bedb75" />
+    <Meta Name="ms.openlocfilehash" Value="364b8d02df1ff32fe7432d4ed2dd804098003fda" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587707" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotTable" />
@@ -31,8 +31,10 @@
   <Docs>
     <summary>Representa um relatório de tabela dinâmica em uma planilha. O objeto de <b>tabela dinâmica</b> é um membro do <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> conjunto. A coleção de <b>tabelas dinâmicas</b> contém todos os objetos de <b>tabela dinâmica</b> em uma única planilha.</summary>
     <remarks>
-      <para>Use as <b>tabelas dinâmicas</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice da tabela dinâmica ou nome, para retornar um único objeto <b>PivotTable</b> .</para> Programação de relatórios de 
-      <para>tabela dinâmica porque pode ser complexa, ele geralmente é mais fácil gravar as ações de relatório de tabela dinâmica e posteriormente revisar o código gravado. Para gravar uma macro, aponte para Macro no menu Ferramentas e clique em Gravar Nova Macro.</para><para></para></remarks>
+      <para>Use as <b>tabelas dinâmicas</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice da tabela dinâmica ou nome, para retornar um único objeto <b>PivotTable</b> .</para>
+      <para>Como a programação de relatório de Tabela Dinâmica pode ser complexa, geralmente é mais fácil registrar ações de relatório de Tabela Dinâmica e examinar o código gravado. Para gravar uma macro, aponte para Macro no menu Ferramentas e clique em Gravar Nova Macro.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -205,7 +207,7 @@
         <summary>Adiciona campos de linha, de coluna e de página a um relatório de tabela dinâmica ou de gráfico dinâmico.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Você deve especificar um dos argumentos de campo.</para>
+          <para>Você precisa especificar um dos argumentos de campo.</para>
           <para>Nomes de campo especificam o nome exclusivo retornado pelo <see cref="P:Microsoft.Office.Interop.Excel.PivotField.SourceName" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto.</para>
           <para>Esse método não está disponível para fontes de dados OLAP.</para>
           <para></para>
@@ -235,7 +237,7 @@
       <Docs>
         <summary>Executa uma operação de write-back para todas as células editadas em um relatório de Tabela Dinâmica com base em uma fonte de dados OLAP.</summary>
         <remarks>
-          <para>o <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.AllocateChanges" /> método executará uma instrução UPDATE cubo para todas as alterações feitas na área de valores da tabela dinâmica, desde que a última operação de aplicar alterações foi comprometida, ou desde que a tabela dinâmica foi criada se confirmar aplicar alterações nunca foi realizado. Esse método gerará um erro em tempo de execução se ele é executado em um relatório de tabela dinâmica com base em uma fonte de dados não-OLAP.</para>
+          <para>O <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.AllocateChanges" /> método executará uma instrução UPDATE cubo para todas as alterações feitas na área de valores da tabela dinâmica, desde que a última operação de aplicar alterações foi comprometida, ou desde que a tabela dinâmica foi criada se confirmar aplicar alterações nunca foi realizado. Este método gera um erro de tempo de execução se ele é executado em um relatório de tabela dinâmica com base em uma fonte de dados não-OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -270,7 +272,7 @@
         <value>Um <see cref="T:Microsoft.Office.Interop.Excel.XlAllocation" /> objeto.</value>
         <remarks>
           <para>Leitura/gravação.</para>
-          <para>o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Allocation" /> propriedade corresponde à calcular com alterações de configuração na caixa de diálogo Configurações de análise de teste de hipóteses. A configuração padrão é <see cref="F:Microsoft.Office.Interop.Excel.XlAllocation.xlManualAllocation" />, que corresponde ao manualmente (ao selecionar calcular tabela dinâmica com alterações) configuração.</para>
+          <para>O <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Allocation" /> propriedade corresponde à calcular com alterações de configuração na caixa de diálogo Configurações de análise de teste de hipóteses. A configuração padrão é <see cref="F:Microsoft.Office.Interop.Excel.XlAllocation.xlManualAllocation" />, que corresponde ao manualmente (ao selecionar calcular tabela dinâmica com alterações) configuração.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -305,7 +307,7 @@
         <value>Um <see cref="T:Microsoft.Office.Interop.Excel.XlAllocationMethod" /> objeto.</value>
         <remarks>
           <para>Leitura/gravação.</para>
-          <para>o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> propriedade corresponde à configuração de método de alocação na caixa de diálogo Configurações de análise de teste de hipóteses. A configuração padrão é <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlEqualAllocation" />, que corresponde à configuração de alocação igual. Se o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> propriedade estiver definida como <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" />, que corresponde à configuração de alocação ponderada, opcionalmente, você pode especificar a expressão de peso usada definindo a <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> propriedade. Se você não especificar uma expressão de peso, uma expressão de peso equivalente a &lt;folha o valor da célula&gt; / &lt;valor existente&gt; é usado.</para>
+          <para>O <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> propriedade corresponde à configuração de método de alocação na caixa de diálogo Configurações de análise de teste de hipóteses. A configuração padrão é <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlEqualAllocation" />, que corresponde à configuração de alocação igual. Se o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> propriedade estiver definida como <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" />, que corresponde à configuração de alocação ponderada, opcionalmente, você pode especificar a expressão de peso usada definindo a <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> propriedade. Se você não especificar uma expressão de peso, uma expressão de peso equivalente a &lt;folha o valor da célula&gt; / &lt;valor existente&gt; é usado.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -340,7 +342,7 @@
         <value>Um <see cref="T:Microsoft.Office.Interop.Excel.XlAllocationValue" /> objeto.</value>
         <remarks>
           <para>Leitura/gravação.</para>
-          <para>o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationValue" /> propriedade corresponde ao valor à configuração de alocação na caixa de diálogo Configurações de análise de teste de hipóteses. A configuração padrão é <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationValue.xlAllocateValue" />, que corresponde ao valor inserido dividido pelo número de alocações definindo.</para>
+          <para>O <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationValue" /> propriedade corresponde ao valor à configuração de alocação na caixa de diálogo Configurações de análise de teste de hipóteses. A configuração padrão é <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationValue.xlAllocateValue" />, que corresponde ao valor inserido dividido pelo número de alocações de configuração.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -375,7 +377,7 @@
         <value>A expressão de peso MDX para usar ao executar teste de hipóteses em um relatório de tabela dinâmica com base em uma fonte de dados OLAP.</value>
         <remarks>
           <para>Leitura/gravação.</para>
-          <para>o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> propriedade corresponde à configuração da expressão de peso na caixa de diálogo Configurações de análise de teste de hipóteses. Antes do <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> propriedade pode ser definida, você deve definir o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> propriedade <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" />.</para>
+          <para>O <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> propriedade corresponde à configuração da expressão de peso na caixa de diálogo Configurações de análise de teste de hipóteses. Antes do <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> propriedade pode ser definida, você deve definir o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> propriedade <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" />.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -413,7 +415,9 @@ Leitura/gravação.</summary>
         </value>
         <remarks>
           <para>Valor padrão é <b>False</b>.</para>
-          <para>Quando essa propriedade é definida como <b>True</b>, vários filtros podem ser aplicados a uma única <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />. Quando ela é definida como <b>False</b>, aplicando um filtro a um <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> que já é filtrada serão remover o filtro existente e aplicar uma nova.  A definição dessa propriedade como <b>False</b> quando o <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> tem campos com mais de um serão de filtro aplicado silenciosamente remover todos os filtros no <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> sem exibir qualquer alerta. No entanto, há um alerta quando isso é feito por meio da interface do usuário.</para>
+          <para>Quando essa propriedade é definida como <b>True</b>, vários filtros podem ser aplicados a uma única <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />. Quando ela é definida como <b>False</b>, aplicando um filtro a um <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> que já é filtrada serão remover o filtro existente e aplicar uma nova.
+
+A definição dessa propriedade como <b>False</b> quando o <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> tem campos com mais de um serão de filtro aplicado silenciosamente remover todos os filtros no <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> sem exibir qualquer alerta. No entanto, há um alerta quando isso é feito por meio da interface do usuário.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -448,7 +452,7 @@ Leitura/gravação.</summary>
         <value>A cadeia de caracteres de texto descritiva (alternativa) para a tabela dinâmica especificada.</value>
         <remarks>
           <para>Leitura/gravação.</para>
-          <para>o valor do <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AlternativeText" /> propriedade corresponde ao valor na caixa Título na guia texto Alt da caixa de diálogo Opções da tabela dinâmica.</para>
+          <para>O valor do <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AlternativeText" /> propriedade corresponde ao valor na caixa Título na guia texto Alt da caixa de diálogo Opções da tabela dinâmica.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -510,7 +514,7 @@ Leitura/gravação.</summary>
         <summary>Retorna ou define o número de índice do cache da tabela dinâmica. <b>Integer</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se você definir a propriedade <b>CacheIndex</b> para que um relatório de tabela dinâmica usa o cache para um segundo relatório de tabela dinâmica, os campos do primeiro relatório devem ser um subconjunto válido dos campos no segundo relatório.</para>
+          <para>Se você definir a propriedade <b>CacheIndex</b> de modo que um relatório de tabela dinâmica use o cache de um segundo relatório de tabela dinâmica, os primeiros campos do relatório terão que ser um subconjunto válido dos campos do segundo relatório.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -567,7 +571,7 @@ Leitura/gravação.</summary>
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> coleção que representa todos os membros calculados e medidas calculadas para uma tabela dinâmica OLAP.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Essa propriedade é usada para fontes Online Analytical Processing (OLAP); uma fonte não-OLAP retornará um erro de tempo de execução.</para>
+          <para>Essa propriedade é usada para fontes OLAP (Online Analytical Processing); uma fonte não-OLAP retornará um erro em tempo de execução.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -604,8 +608,8 @@ Leitura/gravação.</summary>
         <remarks>
           <para>Leitura/gravação.</para>
           <para>
-            <b>true</b> se calculado membros são avaliados nos filtros; caso contrário <b>false</b>.</para>
-          <para>o valor dessa propriedade corresponde à configuração dos membros Evaluate calculado de servidores OLAP na caixa de seleção de filtros nos totais apresentados &amp; guia filtros da caixa de diálogo Opções da tabela dinâmica para um relatório de tabela dinâmica com base em uma fonte de dados OLAP.</para>
+            <b>true</b> se os membros calculados são avaliados nos filtros; Caso contrário <b>false</b>.</para>
+          <para>O valor dessa propriedade corresponde à configuração dos membros Evaluate calculado de servidores OLAP na caixa de seleção de filtros nos totais apresentados &amp; guia filtros da caixa de diálogo Opções da tabela dinâmica para um relatório de tabela dinâmica com base em uma fonte de dados OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -636,7 +640,7 @@ Leitura/gravação.</summary>
         <param name="conn">Necessário <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object que representa a nova conexão para o <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</param>
         <summary>Altera a conexão de especificado <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</summary>
         <remarks>
-          <para>o <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangeConnection(Microsoft.Office.Interop.Excel.WorkbookConnection)" /> método só pode ser usado com um <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> que está conectada a uma fonte de dados externos. Ocorrerá um erro de tempo de execução se o <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangeConnection(Microsoft.Office.Interop.Excel.WorkbookConnection)" /> método é usado com um <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> que usa dados armazenados em uma planilha como sua fonte de dados.</para>
+          <para>O <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangeConnection(Microsoft.Office.Interop.Excel.WorkbookConnection)" /> método só pode ser usado com um <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> que está conectada a uma fonte de dados externos. Ocorrerá um erro de tempo de execução se o <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangeConnection(Microsoft.Office.Interop.Excel.WorkbookConnection)" /> método é usado com um <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> que usa dados armazenados em uma planilha como sua fonte de dados.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -699,7 +703,7 @@ Leitura/gravação.</summary>
           <b>String</b> necessário um <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> ou <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> que representa o novo objeto <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> para especificado <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</param>
         <summary>Alterações de <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> de especificado <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</summary>
         <remarks>
-          <para>o <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangePivotCache(System.Object)" /> método só pode ser usado com um <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> que usa dados armazenados em uma planilha como sua fonte de dados. Ocorrerá um erro de tempo de execução se o <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangePivotCache(System.Object)" /> método é usado com um <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> que está conectada a uma fonte de dados externos.</para>
+          <para>O <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangePivotCache(System.Object)" /> método só pode ser usado com um <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> que usa dados armazenados em uma planilha como sua fonte de dados. Ocorrerá um erro de tempo de execução se o <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangePivotCache(System.Object)" /> método é usado com um <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> que está conectada a uma fonte de dados externos.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -755,7 +759,7 @@ Leitura/gravação.</summary>
       <Docs>
         <summary>O <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearTable" /> método é usado para compensação um <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Desmarcar <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s inclui remover todos os campos e a exclusão de filtragem e classificação aplicados a todos os os <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />. Este método redefine o <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> para o estado que tinha logo após ele foi criado, antes de quaisquer campos foram adicionados a ela.</summary>
         <remarks>
-          <para>o <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearTable" /> função não assumir nenhum argumento e está disponível para relacionais e OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s.</para>
+          <para>O <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearTable" /> função não assumir nenhum argumento e está disponível para relacionais e OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s. </para>
           <para></para>
         </remarks>
       </Docs>
@@ -876,7 +880,7 @@ Leitura/gravação.</summary>
       <Docs>
         <summary>Executa uma operação de confirmação na fonte de dados de um relatório de tabela dinâmica com base em uma fonte de dados OLAP.</summary>
         <remarks>
-          <para>o <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CommitChanges" /> método envia uma instrução COMMIT TRANSACTION com o servidor OLAP e limpa todas as células que foram editadas inserindo um valor, mas não limpará fórmulas nas células de valor. Esse método gerará um erro em tempo de execução se ele é executado em um relatório de tabela dinâmica com base em uma fonte de dados não-OLAP.</para>
+          <para>O <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CommitChanges" /> método envia uma instrução COMMIT TRANSACTION com o servidor OLAP e limpa todas as células que foram editadas inserindo um valor, mas não limpará fórmulas nas células de valor. Este método gera um erro de tempo de execução se ele é executado em um relatório de tabela dinâmica com base em uma fonte de dados não-OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -981,7 +985,10 @@ Leitura/gravação.</summary>
         <value>
           <b>Integer</b>
         </value>
-        <remarks>O valor de <para>o padrão é 1. Os valores válidos para essa configuração vão de 0 ao recuo máximo especificado no Microsoft Excel.</para><para></para></remarks>
+        <remarks>
+          <para>O valor padrão é 1. Os valores válidos para essa configuração são 0 para o recuo máximo especificado no Microsoft Excel.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertToFormulas">
@@ -1010,7 +1017,7 @@ Leitura/gravação.</summary>
         <param name="ConvertFilters">Necessário <b>booleano</b> contém <b>True</b> ou <b>False</b> indicar o estado da área ReportFilter.</param>
         <summary>O <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ConvertToFormulas(System.Boolean)" /> método é novo no 1st_Excel12 e é usado para converter um <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> das fórmulas de cubo.</summary>
         <remarks>
-          <para>o argumento controla se deseja ou não converter a área ReportFilter do <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</para>
+          <para>O argumento controla se deseja ou não converter a área ReportFilter do <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. </para>
           <para></para>
         </remarks>
       </Docs>
@@ -1080,7 +1087,10 @@ Leitura/gravação.</summary>
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriedade <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CubeFields">
@@ -1250,7 +1260,11 @@ Leitura/gravação.</summary>
       <Parameters />
       <Docs>
         <summary>Descarta todas as alterações nas células editadas de um relatório de Tabela Dinâmica com base em uma fonte de dados OLAP.</summary>
-        <remarks>Relatório de <para>para um da tabela dinâmica com base em uma fonte de dados OLAP, o método Remove todos os valores e as fórmulas inseridas nas células de valor e, em seguida, executa uma operação de atualização de tabela dinâmica para recuperar os valores mais recentes da fonte de dados. Define o valor da fonte de dados como uma referência nula (Nothing no Visual Basic) para todas as células de valor que são editados e também executa uma instrução ROLLBACK TRANSACTION com base no servidor OLAP.</para><para>Se você tentar executar esse método para um relatório de tabela dinâmica com base em uma fonte de dados não-OLAP, esse método gerará um erro em tempo de execução.</para><para></para></remarks>
+        <remarks>
+          <para>Para um relatório de tabela dinâmica com base em uma fonte de dados OLAP, o método Remove todos os valores e as fórmulas inseridas nas células de valor e, em seguida, executa uma operação de atualização de tabela dinâmica para recuperar os valores mais recentes da fonte de dados. Ele define o valor da fonte de dados como uma referência nula (Nothing no Visual Basic) para todas as células de valor que são editados e também executa uma instrução ROLLBACK TRANSACTION com base no servidor OLAP.</para>
+          <para>Se você tentar executar esse método para um relatório de Tabela Dinâmica com base em uma fonte de dados não OLAP, esse método gerará um erro de tempo de execução.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayContextTooltips">
@@ -1318,7 +1332,7 @@ Leitura/gravação.</summary>
         <summary>Retorna <b>True</b> quando a palavra-chave MDX não vazia é incluída na consulta ao provedor OLAP para o eixo de valores. O provedor OLAP não retornará colunas vazias no conjunto de resultados. Retorna <b>False</b> quando a palavra-chave não vazia é omitida. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>O PivotTable deve estar conectada a uma fonte de dados Online Analytical Processing (OLAP) para evitar um erro em tempo de execução.</para>
+          <para>A tabela dinâmica deve estar conectada a uma fonte de dados  OLAP (Online Analytical Processing ) para evitar um erro em tempo de execução.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1352,7 +1366,7 @@ Leitura/gravação.</summary>
         <summary>Retorna <b>True</b> quando a palavra-chave MDX não vazia é incluída na consulta ao provedor OLAP pelo eixo de categoria. O provedor OLAP não retornará linhas vazias no conjunto de resultados. Retorna <b>False</b> quando a palavra-chave não vazia é omitida. <b>Boolean</b> de leitura/gravação</summary>
         <value>To be added.</value>
         <remarks>
-          <para>O PivotTable deve estar conectada a uma fonte de dados Online Analytical Processing (OLAP) para evitar um erro em tempo de execução.</para>
+          <para>A tabela dinâmica deve estar conectada a uma fonte de dados  OLAP (Online Analytical Processing ) para evitar um erro em tempo de execução.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1424,7 +1438,7 @@ Leitura/gravação.</summary>
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>o valor padrão é <b>True</b>.</para>
+          <para>O valor padrão é <b>True</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1526,7 +1540,7 @@ Leitura/gravação.</summary>
           <b>True</b> se o relatório de tabela dinâmica exibir uma sequência personalizada em células que contém valores nulos. O valor padrão é <b>True</b>. <b>Boolean</b> de leitura/gravação</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Uso o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.NullString" /> propriedade para definir a sequência personalizada de nula.</para>
+          <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.NullString" /> propriedade para definir a sequência personalizada de nula.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1810,7 +1824,7 @@ Leitura/gravação.</summary>
           <b>True</b> se o drilldown for ativado. O valor padrão é <b>True</b>. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>a definição dessa propriedade para um relatório de tabela dinâmica defini-la para todos os campos desse relatório.</para>
+          <para>Definir essa propriedade para um relatório de tabela dinâmica equivale a defini-la para todos os campos desse relatório.</para>
           <para>Para fontes de dados OLAP, o valor é sempre <b>True</b>.</para>
           <para></para>
         </remarks>
@@ -1846,7 +1860,7 @@ Leitura/gravação.</summary>
           <b>True</b> Se a caixa de diálogo <b>Campo da Tabela dinâmica</b> estiver disponível quando o usuário clicar duas vezes no Campo da Tabela dinâmica. O valor padrão é <b>True</b>. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>a definição dessa propriedade para um relatório de tabela dinâmica defini-la para todos os campos desse relatório.</para>
+          <para>Definir essa propriedade para um relatório de tabela dinâmica equivale a defini-la para todos os campos desse relatório.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1913,7 +1927,7 @@ Leitura/gravação.</summary>
           <b>True</b> se o Assistente de tabela dinâmica estiver disponível. O valor padrão é <b>True</b>. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Quando essa propriedade é definida, as células de campo não são exibidas na planilha.</para>
+          <para>Quando essa propriedade está definida, as células de campo não são definidos na planilha.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1948,8 +1962,14 @@ Leitura/gravação.</summary>
         <value>
           <b>true</b> se a gravação de volta à fonte de dados está habilitado para a tabela dinâmica especificada; Caso contrário, <b>false</b>. O valor padrão é <b>false</b>.</value>
         <remarks>
-          <para>Leitura/gravação.</para> Fontes de 
-          <para>dados for OLAP, definindo como o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> propriedade como <b>true</b> para write-back de habilita e desabilita o alerta para quando o usuário sobrescreve valores na área de dados da tabela dinâmica. Para fontes de dados não-OLAP, definindo o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> propriedade como <b>true</b> habilita write-back em código e também permite que o usuário altere os valores de dados que anteriormente não pôde ser alterados.</para><para>o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> e <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> propriedades do <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objeto não pode ser definido como <b>true</b> ao mesmo tempo.</para><para>Se o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> propriedade estiver definida como <b>true</b> e o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> propriedade estiver definida como <b>true</b>, o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> propriedade é definida automaticamente como <b>false</b> , a tabela dinâmica é atualizada e qualquer edição nos valores de dados é perdidos.</para><para>Se o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> propriedade estiver definida como <b>true</b> e o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> propriedade estiver definida como <b>true</b>, o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />propriedade é definida automaticamente como <b>false</b> , a tabela dinâmica não é atualizada e os valores de fonte de dados são restaurados.</para><para>Para fontes de dados não-OLAP, a definição dessa propriedade gera um erro em tempo de execução.</para><para></para></remarks>
+          <para>Leitura/gravação.</para>
+          <para>Para fontes de dados OLAP, definindo como o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> propriedade como <b>true</b> para write-back de habilita e desabilita o alerta para quando o usuário sobrescreve valores na área de dados da tabela dinâmica. Para fontes de dados não-OLAP, definindo o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> propriedade como <b>true</b> habilita write-back em código e também permite que o usuário altere os valores de dados que anteriormente não pôde ser alterados.</para>
+          <para>O <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> e <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> propriedades do <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objeto não pode ser definido como <b>true</b> ao mesmo tempo.</para>
+          <para>Se o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> propriedade estiver definida como <b>true</b> e o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> propriedade estiver definida como <b>true</b>, o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> propriedade é definida automaticamente como <b>false</b> , a tabela dinâmica é atualizada e qualquer edição nos valores de dados é perdida.</para>
+          <para>Se o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> propriedade estiver definida como <b>true</b> e o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> propriedade estiver definida como <b>true</b>, o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />propriedade é definida automaticamente como <b>false</b> , a tabela dinâmica não é atualizada e os valores de fonte de dados são restaurados.</para>
+          <para>Para fontes de dados não OLAP, a configuração dessa propriedade gera um erro de tempo de execução.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorString">
@@ -2283,7 +2303,7 @@ Leitura/gravação.</summary>
         <summary>Verifica se a tabela dinâmica existe no nível da planilha. <b>Boolean</b> (<b>bool</b> em c#). Somente leitura</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Quando a propriedade <b>Hidden</b> estiver definida como <b>True</b>, o objeto de <b>tabela dinâmica</b> é ocultada do nível da planilha. Quando a propriedade é definida como <b>False</b>, a tabela dinâmica existe em uma planilha.</para>
+          <para>Quando a propriedade <b>Hidden</b> é definida como <b>True</b>, o objeto de <b>tabela dinâmica</b> é ocultado do nível da planilha. Quando a propriedade é definida como <b>False</b>, a tabela dinâmica existe em uma planilha.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2319,7 +2339,7 @@ Leitura/gravação.</summary>
         <summary>Retorna um objeto representando um único campo de tabela dinâmica (um <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto) ou uma coleção de todos os campos (um <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> objeto) que atualmente não estão exibidos como campos de linha, coluna, página ou dados. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Fontes de dados for OLAP, essa propriedade sempre retorna uma coleção vazia.</para>
+          <para>Para fontes de dados OLAP, essa propriedade sempre retorna uma coleção vazia.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2389,7 +2409,7 @@ Leitura/gravação.</summary>
         <summary>Retorna ou define o nome do campo que será exibido como detalhe quando a <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.ShowDetail" /> propriedade for <b>True</b> para o campo de linha ou coluna mais interno. <b>String</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Essa propriedade não está disponível para fontes de dados OLAP.</para>
+          <para>Esta propriedade não está disponível para fontes de dados OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2426,7 +2446,7 @@ Leitura/gravação.</summary>
         </value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutRowType" /> pode ser xlCompactRow, xlTabularRow ou xlOutlineRow.</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutRowType" />pode ser xlCompactRow, xlTabularRow ou xlOutlineRow.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2454,7 +2474,7 @@ Leitura/gravação.</summary>
       <Docs>
         <summary>Cria uma lista dos itens e campos calculados da tabela dinâmica em uma planilha separada.</summary>
         <remarks>
-          <para>Esse método não está disponível para fontes de dados OLAP.</para>
+          <para>Este método não está disponível para fontes de dados OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2522,7 +2542,7 @@ Leitura/gravação.</summary>
           <b>True</b> se o relatório de tabela dinâmica só for recalculado a pedido do usuário. O valor padrão é <b>False</b>. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Essa propriedade for definida como <b>False</b> imediatamente após o programa ser terminado.</para>
+          <para>Essa propriedade é definida como <b>False</b> imediatamente após o programa ser terminado.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2553,7 +2573,7 @@ Leitura/gravação.</summary>
         <summary>Retorna uma <b>cadeia de caracteres</b> indicando o MDX (Multidimensional Expression) que seria enviado ao provedor para preencher o modo de exibição de tabela dinâmica atual. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Consultar este valor de uma tabela dinâmica de não - OLAP Online Analytical Processing, ou quando não há nenhum modo de exibição de tabela dinâmica (não há itens de dados), retornará um erro de tempo de execução.</para>
+          <para>Consultar este valor de uma tabela dinâmica de não - OLAP Online Analytical Processing, ou quando não há nenhum modo de exibição de tabela dinâmica (não há itens de dados), retornará um erro em tempo de execução.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2715,7 +2735,7 @@ Leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Uma hierarquia pode conter somente um campo de página.</para>
-          <para>Para um relatório de tabela dinâmica baseado em um cache de tabela dinâmica, a coleção de campos de tabela dinâmica retornada reflete o que está atualmente no cache.</para>
+          <para>Para um relatório de tabela dinâmica baseado em um cache de tabela dinâmica, a coleção de campos de tabela dinâmica retornada reflete o que está no cache no momento.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2749,7 +2769,7 @@ Leitura/gravação.</summary>
         <summary>Retorna ou define o estilo usado na área de campo de página acoplada. O valor padrão é uma cadeia de caracteres nula (nenhum estilo é aplicado por padrão). <b>String</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Este estilo é usado como o estilo padrão para a área de plano de fundo e é aplicada antes de qualquer formatação do usuário. Células tornadas vagas quando um campo é dinamizado da área de campo de página para outro local retêm esse estilo.</para>
+          <para>Esse estilo é usado como padrão para a área de plano de fundo e aplicado antes de qualquer formatação do usuário. Quando um campo é usado como pivô de uma área de campo de página para um outro lugar, as células tornadas vagas retêm esse estilo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2980,7 +3000,7 @@ Leitura/gravação.</summary>
         <summary>Retorna um objeto representando um único campo de tabela dinâmica (um <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto) ou uma coleção de campos visíveis e ocultos (um <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> objeto) no relatório de tabela dinâmica. Somente leitura.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Fontes de dados OLAP para lá estão sem campos ocultos e o objeto ou a coleção retornada reflete o que está visível no momento.</para>
+          <para>Para fontes de dados OLAP há nenhum campos ocultos e o objeto ou a coleção retornada refletem o que está visível no momento.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3011,7 +3031,7 @@ Leitura/gravação.</summary>
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.PivotFormulas" /> object que representa a coleção de fórmulas para especificado <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> relatório. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Fontes de dados for OLAP, essa propriedade retornará uma coleção vazia.</para>
+          <para>Para fontes de dados OLAP, essa propriedade retorna uma coleção vazia.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3077,7 +3097,7 @@ Leitura/gravação.</summary>
           <b>Objeto</b>de opcional. <b>True</b> para macros registradas que serão reproduzidas em outras localidades.</param>
         <summary>Seleciona parte de um relatório de tabela dinâmica.</summary>
         <remarks>
-          <para>Você pode usar o modo especificado somente para selecionar o item correspondente no relatório de tabela dinâmica. Por exemplo, você não pode selecionar dados e rótulos usando o modo de <b>xlButton</b> ; da mesma forma, você não pode selecionar botões usando o modo de <b>xlDataOnly</b> .</para>
+          <para>Você pode usar o modo especificado somente para selecionar o item correspondente no relatório de tabela dinâmica. Por exemplo, não é possível selecionar dados e rótulos usando o modo <b>xlButton</b>; da mesma forma, não é possível selecionar botões usando o modo <b>xlDataOnly</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3111,7 +3131,7 @@ Leitura/gravação.</summary>
         <summary>Retorna ou define a seleção da tabela dinâmica no formato padão de seleção de relatório de tabela dinâmica. <b>String</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>a definição dessa propriedade é equivalente a chamar o <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotSelect(System.String,Microsoft.Office.Interop.Excel.XlPTSelectionMode,System.Object)" /> método com o <paramref name="Mode" /> argumento definido como <b>xlDataAndLabel</b>.</para>
+          <para>A definição dessa propriedade é equivalente a chamar o <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotSelect(System.String,Microsoft.Office.Interop.Excel.XlPTSelectionMode,System.Object)" /> método com o <paramref name="Mode" /> argumento definido como <b>xlDataAndLabel</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3145,7 +3165,7 @@ Leitura/gravação.</summary>
         <summary>Retorna ou define um <b>String</b> que indica a seleção da tabela dinâmica em um formato de relatório de tabela dinâmica padrão usando as definições Inglês (Estados Unidos). Leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>a propriedade <b>PivotSelectionStandard</b> é "internacional" enquanto o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PivotSelection" /> propriedade não é.</para>
+          <para>A propriedade <b>PivotSelectionStandard</b> é "internacional" enquanto o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PivotSelection" /> propriedade não está.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3349,7 +3369,11 @@ Leitura/gravação.</summary>
         <summary>
           <b>True</b> se os títulos de impressão para a planilha forem definidos com base no relatório de tabela dinâmica. <b>False</b> se os títulos de impressão para a planilha forem usados. O valor padrão é <b>False</b>. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>Títulos de impressão <para>da linha são definidos para as linhas que contêm os itens de campo de coluna do relatório de tabela dinâmica. Os títulos de impressão de coluna estão definidos para as colunas que contêm os itens de linha.</para><para>Tabela dinâmica o relatório deve ser a única pessoa na área de impressão. Para definir um formato recuado para um relatório de tabela dinâmica, use o <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.Format(Microsoft.Office.Interop.Excel.XlPivotFormatType)" /> método.</para><para></para></remarks>
+        <remarks>
+          <para>Os títulos de impressão de linha são definidos como as linhas que contêm os itens de campo de coluna do relatório de tabela dinâmica. Os títulos de impressão de coluna são definidos como as colunas que contêm os itens de linha.</para>
+          <para>Relatório de tabela dinâmica deve ser a única pessoa na área de impressão. Para definir um formato recuado para um relatório de tabela dinâmica, use o <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.Format(Microsoft.Office.Interop.Excel.XlPivotFormatType)" /> método.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshDataSourceValues">
@@ -3375,9 +3399,9 @@ Leitura/gravação.</summary>
       <Docs>
         <summary>Recupera os valores atuais da fonte de dados para todas as células editadas em um relatório de Tabela Dinâmica que está em modo de write-back.</summary>
         <remarks>
-          <para>Para determinar se um relatório de tabela dinâmica está no modo de write-back, verifique o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> ou <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> propriedades do <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object, que ambos retornará True. Para relatórios de tabela dinâmica que não estão no modo de write-back, tentando executar este método gera um erro em tempo de execução.</para>
-          <para>Para relatórios de tabela dinâmica com fontes de dados OLAP, executá-lo a <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RefreshDataSourceValues" /> método cria uma conexão separada para o servidor OLAP e executa a consulta MDX completa (o valor do <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.MDX" /> propriedade) que é usado para executar uma operação de atualização Preencha o relatório de tabela dinâmica. Excel extrai os valores retornados para todas as células que foram editadas no modo de exibição de tabela dinâmica e, em seguida, armazenando-as no <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> propriedade para essas células.</para>
-          <para>Este método se aplica apenas aos relatórios de tabela dinâmica com fontes de dados OLAP. Tentando executar este método ou relatórios de tabelas dinâmicas com fontes de dados não OLAP gera um erro em tempo de execução.</para>
+          <para>Para determinar se um relatório de tabela dinâmica está no modo de write-back, verifique o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> ou <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> propriedades do <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object, que ambos retornará True. Para relatórios de tabela dinâmica que não estão no modo de write-back, tentando executar esse método gerará um erro em tempo de execução.</para>
+          <para>Relatórios de tabelas dinâmicas com fontes de dados OLAP, executá-lo a <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RefreshDataSourceValues" /> método cria uma conexão separada para o servidor OLAP e executa a consulta MDX completa (o valor do <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.MDX" /> propriedade) que é usado para executar uma operação de atualização para popular o relatório de tabela dinâmica. Excel extrai os valores retornados para todas as células que foram editadas no modo de exibição de tabela dinâmica e, em seguida, armazenando-as no <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> propriedade para essas células.</para>
+          <para>Esse método apenas se aplica a relatórios de Tabela Dinâmica com fontes de dados OLAP. Um erro de tempo de execução será gerado se você tentar executar esse método ou relatórios de Tabela Dinâmica com fontes de dados não OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3408,7 +3432,7 @@ Leitura/gravação.</summary>
         <summary>Retorna a data em que o relatório de tabela dinâmica foi atualizado pela última vez. Somente leitura <b>DateTime</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Para fontes de dados OLAP, esta propriedade é atualizada após cada consulta.</para>
+          <para>Em fontes de dados OLAP, esta propriedade é atualizada após cada consulta.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3439,7 +3463,7 @@ Leitura/gravação.</summary>
         <summary>Retorna o nome da pessoa que atualizou pela última vez os dados do relatório de tabela dinâmica ou o cache de tabela dinâmica. <b>String</b> somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Para fontes de dados OLAP, esta propriedade é atualizada após cada consulta.</para>
+          <para>Em fontes de dados OLAP, esta propriedade é atualizada após cada consulta.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3496,7 +3520,7 @@ Leitura/gravação.</summary>
         <param name="Repeat">Especifica se é necessário repetir os rótulos de item para todos os Campos Dinâmicos na Tabela Dinâmica especificada.</param>
         <summary>Define se devem ser repetidos rótulos de item para todos os campos dinâmicos na tabela dinâmica especificada.</summary>
         <remarks>
-          <para>Usando o <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RepeatAllLabels(Microsoft.Office.Interop.Excel.XlPivotFieldRepeatLabels)" /> método corresponde aos comandos repetir todos os rótulos de Item e faça repetir rótulos de Item na lista suspensa Layout do relatório da guia Design de ferramentas de tabela dinâmica</para>
+          <para>Usando o <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RepeatAllLabels(Microsoft.Office.Interop.Excel.XlPivotFieldRepeatLabels)" /> método corresponde aos comandos repetir todos os rótulos de Item e faça repetir rótulos de Item na lista suspensa Layout do relatório da guia Design de ferramentas de tabela dinâmica.</para>
           <para>Para especificar se deseja repetir rótulos de itens para uma única tabela dinâmica, use o <see cref="P:Microsoft.Office.Interop.Excel.PivotField.RepeatLabels" /> propriedade.</para>
           <para></para>
         </remarks>
@@ -3692,7 +3716,7 @@ Leitura/gravação.</summary>
           <b>True</b> se os dados do relatório de tabela dinâmica forem salvos com a pasta de trabalho. <b>False</b> se somente a definição de relatório for salva. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Fontes de dados for OLAP, esta propriedade é sempre definida como <b>False</b>.</para>
+          <para>Para fontes de dados OLAP, esta propriedade é sempre definida como <b>False</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3726,7 +3750,7 @@ Leitura/gravação.</summary>
         <summary>Retorna ou define o modo de seleção estruturada do relatório de tabela dinâmica. Leitura/gravação <see cref="T:Microsoft.Office.Interop.Excel.XlPTSelectionMode" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o campo de tabela dinâmica não estiver no formulário de tópicos, a especificação da soma de qualquer uma das constantes e de <b>xlFirstRow</b> será equivalente à especificação apenas da constante.</para>
+          <para>Se o campo de tabela dinâmica não estiver no formulário de tópicos, a especificação da soma de uma dessas constantes e de <b>xlFirstRow</b> será equivalente à especificação apenas da constante.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3767,7 +3791,7 @@ Leitura/gravação.</summary>
           <b>True</b> se o MDX (Multidimensional Expression) que o Microsoft Excel envia para o servidor inclui o <see cref="P:Microsoft.Office.Interop.Excel.ChartFillFormat.BackColor" /> propriedade para cada célula na área de dados que corresponde a uma célula no conjunto de dados Online Analytical Processing (OLAP). O valor padrão é <b>False</b>. Leitura/gravação <b>booleano</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o conjunto de dados OLAP retornará um valor de propriedade <b>BackColor</b> , a cor de preenchimento da célula será definida para a cor mais próxima na paleta do Microsoft Excel para essa planilha. Se o usuário se aplica a formatação para a célula manualmente padrão da célula, que substituirá qualquer formatação no conjunto de dados OLAP.</para>
+          <para>Se o conjunto de dados OLAP retornará um valor da propriedade <b>BackColor</b> , a cor de preenchimento da célula é definida para a cor mais próxima na paleta do Microsoft Excel para essa planilha. Se o usuário se aplica a formatação para a célula manualmente padrão da célula, que substituirá qualquer formatação no conjunto de dados OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3803,7 +3827,7 @@ Leitura/gravação.</summary>
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Retorna <b>True</b> se os indicadores de análise são exibidos na <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> e retorna <b>False</b> se os indicadores de análise não são exibidos no <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</para>
+          <para>Retorna <b>True</b> se os indicadores de análise são exibidos na <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> e retorna <b>False</b> se os indicadores de análise não são exibidos no <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. </para>
           <para></para>
         </remarks>
       </Docs>
@@ -3866,7 +3890,7 @@ Leitura/gravação.</summary>
         <summary>Cria um novo relatório de tabela dinâmica para cada item do campo de página. Cada novo relatório é criado em uma nova planilha.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Esse método não está disponível para fontes de dados OLAP.</para>
+          <para>Este método não está disponível para fontes de dados OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4057,7 +4081,7 @@ Leitura/gravação.</summary>
           <b>true</b> se a linha de valores é exibida; Caso contrário, <b>false</b>.</value>
         <remarks>
           <para>Leitura/gravação.</para>
-          <para>Essa propriedade corresponde à configuração da apresentação a caixa de seleção de linha de valores na guia Exibir da caixa de diálogo Opções da tabela dinâmica.</para>
+          <para>Esta propriedade corresponde à configuração da caixa de seleção Mostrar a linha Valores na guia Exibir da caixa de diálogo Opções da Tabela Dinâmica.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4124,7 +4148,7 @@ Leitura/gravação.</summary>
           <b>True</b> se o Microsoft Excel usar uma grade que tenha duas células de largura e duas células de profundidade para um relatório de tabela dinâmica criado recentemente. <b>False</b> se o Excel usar um contorno estêncil em branco. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Você deve usar o contorno estêncil. A grade é fornecida somente porque ativa a compatibilidade com versões anteriores do Excel.</para>
+          <para>Você deve usar o contorno estêncil. A grade é fornecida somente porque ativa a compatibilidade com as versões anteriores do Excel.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4160,7 +4184,7 @@ Leitura/gravação.</summary>
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>A definição dessa propriedade como <b>False</b> pode otimizar o desempenho de campos com muitos itens, e também permite que os usuários que não quiserem personalizado classificação baseada em lista para evitar o proprietário.</para>
+          <para>A definição dessa propriedade como <b>False</b> pode otimizar o desempenho de campos com muitos itens, e também permite que os usuários que não queiram classificação baseada em lista personalizada não a utilizem.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4194,26 +4218,26 @@ Leitura/gravação.</summary>
         <summary>Retorna a fonte de dados para o relatório de tabela dinâmica. <b>Objeto</b>de leitura / gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>o valor retornado depende da fonte de dados, da seguinte maneira:</para>
+          <para>O valor retornado depende de fonte de dados, da seguinte maneira:</para>
           <list type="table">
             <item>
               <term>Banco de dados ou lista do Microsoft Excel</term>
-              <description>a referência de célula como texto.</description>
+              <description>A referência da célula, como texto.</description>
             </item>
             <item>
-              <description>Uma matriz de 
-              <term>fonte de dados externa</term>. Cada linha consiste em uma cadeia de caracteres da conexão SQL com os elementos restantes como a cadeia de caracteres de consulta, dividida em segmentos de 255 caracteres.</description>
+              <term>Fonte de dados externa</term>
+              <description>Uma matriz. Cada linha consiste em uma cadeia de caracteres da conexão SQL com os elementos restantes como a cadeia de caracteres de consulta, dividida em segmentos de 255 caracteres.</description>
             </item>
             <item>
               <term>Vários intervalos de consolidação</term>
-              <description>uma matriz bidimensional. Cada linha consiste em uma referência e seus itens de campo de página associada.</description>
+              <description>Uma matriz bidimensional. Cada linha consiste em uma referência e seus itens de campo de página associados.</description>
             </item>
             <item>
-              <term>Relatório de tabela dinâmica outra</term>
-              <description>um dos três tipos acima das informações.</description>
+              <term>Outro relatório de tabela dinâmica</term>
+              <description>Um dos três tipos de informação acima.</description>
             </item>
           </list>
-          <para>Essa propriedade não está disponível para fontes de dados OLE DB.</para>
+          <para>Esta propriedade não está disponível para fontes de dados OLE DB.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4279,7 +4303,7 @@ Leitura/gravação.</summary>
         <param name="Location">Necessário <see cref="T:Microsoft.Office.Interop.Excel.XlSubtototalLocationType" /> pode ser <b>xlAtTop</b> ou <b>xlAtBottom</b>.</param>
         <summary>Esse método transformará o subtotal local para todos os existentes <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />. Alterando o local de subtotal tem um efeito visual imediato apenas para os campos no formulário de tópicos, mas ela será definida para os campos no formulário tabular também.</summary>
         <remarks>
-          <para>o <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.SubtotalLocation(Microsoft.Office.Interop.Excel.XlSubtototalLocationType)" /> método define a <see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutSubtotalLocation" /> propriedade para todos os existentes <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s automaticamente.</para>
+          <para>O <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.SubtotalLocation(Microsoft.Office.Interop.Excel.XlSubtototalLocationType)" /> método define a <see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutSubtotalLocation" /> propriedade para todos os existentes <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s automaticamente.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4314,7 +4338,7 @@ Leitura/gravação.</summary>
         <value>A descrição associada com a cadeia de caracteres de texto alternativo para a tabela dinâmica especificada.</value>
         <remarks>
           <para>Leitura/gravação.</para>
-          <para>o valor do <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Summary" /> propriedade corresponde ao valor na caixa Descrição na guia texto Alt da caixa de diálogo Opções da tabela dinâmica.</para>
+          <para>O valor do <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Summary" /> propriedade corresponde ao valor na caixa Descrição na guia texto Alt da caixa de diálogo Opções da tabela dinâmica.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4345,7 +4369,7 @@ Leitura/gravação.</summary>
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa o intervalo que contém todo o relatório de tabela dinâmica, mas não inclui campos de página. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableRange2" /> propriedade inclui campos de página.</para>
+          <para>O <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableRange2" /> propriedade inclui campos de página.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4376,7 +4400,7 @@ Leitura/gravação.</summary>
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa o intervalo que contém todo o relatório de tabela dinâmica, incluindo campos de página. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableRange1" /> propriedade não inclui campos de página.</para>
+          <para>O <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableRange1" /> propriedade não inclui campos de página.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4452,7 +4476,7 @@ Leitura/gravação.</summary>
           <b>Object</b>
         </value>
         <remarks>
-          <para>a propriedade é chamada <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableStyle2" /> porque há uma propriedade existente chamada <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableStyle" />.</para>
+          <para>A propriedade é chamada <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableStyle2" /> porque há uma propriedade existente chamada <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableStyle" />.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4518,8 +4542,8 @@ Leitura/gravação.</summary>
           <b>True</b> se um asterisco (*) for exibido próximo de cada subtotal e total geral no relatório de tabela dinâmica especificado caso o relatório seja baseado em uma fonte de dados OLAP. O valor padrão é <b>True</b>. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Quando essa propriedade é definida como <b>True</b>, o asterisco indica se os itens ocultos estão incluídos no total. O asterisco aparece independentemente se todos os itens no relatório tenham sido ocultados.</para>
-          <para>Para fontes de dados não-OLAP, o valor dessa propriedade é sempre <b>False</b>.</para>
+          <para>Quando essa propriedade é definida como <b>True</b>, o asterisco indica que itens ocultos estão incluídos no total. O asterisco aparece independentemente de itens no relatório terem sido ocultos.</para>
+          <para>Para fontes de dados não OLAP, o valor dessa propriedade é sempre <b>False</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4701,7 +4725,7 @@ Leitura/gravação.</summary>
         <summary>Retorna um objeto representando um único campo em um relatório de tabela dinâmica (um <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto) ou uma coleção de todos os campos visíveis (um <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> objeto). Campos visíveis serão exibidos como linha, coluna, página ou campos de dados. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Fontes de dados OLAP para lá estão sem campos ocultos e essa propriedade retorna todos os campos no cache de tabela dinâmica.</para>
+          <para>Para OLAP lá fontes de dados são sem campos ocultos e essa propriedade retorna todos os campos no cache de tabela dinâmica.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4736,9 +4760,9 @@ Leitura/gravação.</summary>
           <b>True</b> (padrão) para ativar as tabelas dinâmicas Online Analytical Processing (OLAP) recalcular o total depois que um item foi ocultado. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Em - tabelas dinâmicas não OLAP, se você ocultar um item, o total será recalculado para refletir somente os itens permanecem visíveis na tabela dinâmica. Em uma tabela dinâmica OLAP, o total é calculado no servidor e, portanto, é afetado por outros itens ocultos no modo de exibição de tabela dinâmica. No entanto, se a propriedade <b>VisualTotals</b> será definida como <b>False</b> para uma tabela dinâmica OLAP, em seguida, os resultados da tabela dinâmica OLAP corresponderão a aqueles de não - OLAP tabela dinâmica.</para>
-          <para>Para tabelas dinâmicas OLAP, uma configuração de propriedade <b>VisualTotals</b><b>True</b> (padrão) funciona da mesma maneira como descrito para OLAP tabelas dinâmicas não-.</para>
-          <para>a propriedade <b>VisualTotals</b> retorna <b>True</b> para todas as tabelas dinâmicas novas. No entanto, se você abrir uma pasta de trabalho na versão atual do Microsoft Excel e a tabela dinâmica tiver sido criada em uma versão anterior do Excel, a propriedade <b>VisualTotals</b> retornará <b>False</b>.</para>
+          <para>Nas tabelas dinâmicas não-OLAP, se você ocultar um item, o total será recalculado para refletir somente os itens que permanecerem visíveis na tabela dinâmica. Em uma tabela dinâmica OLAP, o total é calculado no servidor e por isso não é afetado por outros itens ocultos no modo de tabela dinâmica. Entretanto, se a propriedade <b>VisualTotals</b> for definida como <b>False</b> para uma tabela dinâmica OLAP, os resultados dessa tabela coincidirão com os da tabela dinâmica não-OLAP.</para>
+          <para>Nas tabelas dinâmicas OLAP, uma definição de propriedade <b>VisualTotals</b> como <b>True</b> (padrão) funciona da mesma forma descrita para tabelas dinâmicas não-OLAP.</para>
+          <para>A propriedade <b>VisualTotals</b> retorna <b>True</b> para todas as tabelas dinâmicas novas. No entanto, se você abrir uma pasta de trabalho na versão atual do Microsoft Excel e a tabela dinâmica tiver sido criada em uma versão anterior do Excel, a propriedade <b>VisualTotals</b> retornará <b>False</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4775,7 +4799,7 @@ Leitura/gravação.</summary>
         <remarks>
           <para>Leitura/gravação.</para>
           <para>
-            <b>true</b> se os itens filtrados são incluídos nos totais para conjuntos nomeados; caso contrário <b>false</b>. O valor padrão dessa propriedade é <b>false</b>.</para>
+            <b>true</b> se itens filtrados são incluídos nos totais para conjuntos nomeados; Caso contrário <b>false</b>. O valor padrão dessa propriedade é <b>false</b>.</para>
           <para>Em uma tabela dinâmica com base em uma fonte de dados OLAP, você pode configurar se os totais de conjuntos nomeados na tabela dinâmica incluirá itens que foram filtrados. A configuração do <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.VisualTotalsForSets" /> propriedade corresponde aos itens filtrado de incluir na caixa de seleção de totais de set nos totais &amp; guia filtros da caixa de diálogo Opções da tabela dinâmica.</para>
           <para></para>
         </remarks>

@@ -1,10 +1,10 @@
 <Type Name="Graphic" FullName="Microsoft.Office.Interop.Excel.Graphic">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f71cc399b82a45b3ea700b16adc69b6140e7585c" />
+    <Meta Name="ms.openlocfilehash" Value="557d2313e5eee89f3ea3d42e9d0eca09addf2bb5" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585649" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Graphic" />
@@ -32,7 +32,7 @@
     <summary>Contém propriedades que se aplicam a objetos de imagem de cabeçalho e rodapé.</summary>
     <remarks>
       <para>Existem várias propriedades do <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> objeto que retornam o objeto <b>Graphic</b> .</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.CenterFooterPicture" />, <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.CenterHeaderPicture" />, <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.LeftFooterPicture" />, <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.LeftHeaderPicture" />, <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.RightFooterPicture" />, ou <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.RightHeaderPicture" /> propriedades para retornar um objeto <b>Graphic</b> .</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.CenterFooterPicture" />, <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.CenterHeaderPicture" />, <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.LeftFooterPicture" />, <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.LeftHeaderPicture" />, <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.RightFooterPicture" />, ou <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.RightHeaderPicture" /> propriedades para retornar um objeto <b>Graphic</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -94,7 +94,7 @@
         <summary>Retorna ou define o brilho da imagem especificada ou objeto OLE.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>a propriedade <b>Brightness</b> deve ser um número de 0,0 (mais esmaecido) a 1,0 (mais brilhante).</para>
+          <para>A propriedade <b>Brightness</b> deve ser um número de 0,0 (mais esmaecido) a 1,0 (mais brilhante).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -178,7 +178,7 @@
         <summary>Retorna ou define o contraste da imagem especificada ou objeto OLE.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>a propriedade <b>Contrast</b> deve ser um número de 0,0 (o menor contraste) a 1,0 (o maior contraste).</para>
+          <para>A propriedade <b>Contrast</b> deve ser um número de 0,0 (o menor contraste) a 1,0 (o maior contraste).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -209,8 +209,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CropBottom">
@@ -242,7 +244,7 @@
         <summary>Retorna ou define o número de pontos cortados da parte inferior da imagem ou do objeto OLE especificado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você inserir uma imagem que é originalmente 100 pontos de altura, redimensioná-la para que tenha 200 pontos de altura e, em seguida, defina a propriedade <b>CropBottom</b> como 50, 100 pontos (e não 50) será cortada da parte inferior da sua imagem.</para>
+          <para>O corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você inserir uma imagem que originalmente possui 100 pontos de altura, redimensioná-la para que tenha 200 pontos de altura e, em seguida, definir a propriedade <b>CropBottom</b> como 50, 100 pontos (e não 50) serão cortados da parte inferior de sua imagem.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -276,7 +278,7 @@
         <summary>Retorna ou define o número de pontos que são cortadas do lado esquerdo da imagem especificada ou objeto OLE.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você inserir uma imagem que é originalmente 100 pontos de largura, redimensioná-la para que tenha 200 pontos de largura e, em seguida, defina a propriedade <b>CropLeft</b> como 50, 100 pontos (e não 50) será cortada do lado esquerdo da sua imagem.</para>
+          <para>O corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você inserir uma imagem que originalmente tenha 100 pontos de largura, redimensioná-la para que ela tenha 200 pontos de largura e, em seguida, definir a propriedade <b>CropLeft</b> como 50, 100 pontos (e não 50) serão cortados do lado esquerdo de sua imagem.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -310,7 +312,7 @@
         <summary>Retorna ou define o número de pontos que são cortadas do lado direito da imagem especificada ou objeto OLE.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você inserir uma imagem que é originalmente 100 pontos de largura, redimensioná-la para que tenha 200 pontos de largura e, em seguida, defina a propriedade <b>CropRight</b> como 50, 100 pontos (e não 50) será cortada do lado direito da sua imagem.</para>
+          <para>O corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você inserir uma imagem que originalmente tenha 100 pontos de largura, redimensioná-la para que ela tenha 200 pontos de largura e, em seguida, definir a propriedade <b>CropRight</b> como 50, 100 pontos (e não 50) serão cortados do lado direito de sua imagem.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -344,7 +346,7 @@
         <summary>Retorna ou define o número de pontos que são cortadas da parte superior da imagem especificada ou objeto OLE.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você inserir uma imagem que é originalmente 100 pontos de altura, redimensioná-la para que tenha 200 pontos de altura e, em seguida, defina a propriedade <b>CropTop</b> para 50, 100 pontos (e não 50) será cortada da parte superior da sua imagem.</para>
+          <para>O corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você inserir uma imagem que originalmente possui 100 pontos de altura, redimensioná-la para que tenha 200 pontos de altura e definir a propriedade <b>CropTop</b> como 50, serão cortados 100 pontos (e não 50) da parte superior da sua imagem.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -378,7 +380,7 @@
         <summary>Retorna ou define a URL (na intranet ou Web) ou caminho (local ou rede) para o local onde o objeto de origem especificado foi salvo.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>a propriedade <b>FileName</b> gera um erro se uma pasta no caminho especificado não existir.</para>
+          <para>A propriedade <b>FileName</b> gera um erro se não existe uma pasta no caminho especificado.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -450,7 +452,7 @@
             <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse</b> , você pode alterar a altura e largura da forma independentemente uma da outra quando você redimensiona proprietário.</para>
+            <b>msoFalse</b> Você pode alterar a altura e largura da forma independentemente uma da outra quando você a redimensiona.</para>
           <para>
             <b>msoTriStateMixed</b>
           </para>
@@ -458,7 +460,7 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> a forma especificada mantém as proporções originais quando você redimensiona proprietário.</para>
+            <b>msoTrue</b> A forma especificada retém suas proporções originais quando você a redimensiona.</para>
           <para></para>
         </remarks>
       </Docs>

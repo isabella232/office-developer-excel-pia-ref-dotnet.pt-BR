@@ -1,10 +1,10 @@
 <Type Name="Comments" FullName="Microsoft.Office.Interop.Excel.Comments">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1cb449ac87a810a5856dec13cf174c78e74abf96" />
+    <Meta Name="ms.openlocfilehash" Value="53a0a01123cb73fe971527fcb47fe1d9e130a582" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20583409" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Comments : System.Collections.IEnumerable" />
@@ -35,9 +35,9 @@
   <Docs>
     <summary>Uma coleção de comentários de célula. Cada comentário é representado por um <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> objeto.</summary>
     <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Comments" /> propriedade para retornar a coleção <b>Comments</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel.Range.AddComment(System.Object)" /> método para adicionar um comentário a um intervalo.</para>
-      <para>Uso <b>comentários</b>(<paramref name="index" />), onde <paramref name="index" /> é o número do comentário, para retornar um único comentário da coleção <b>Comments</b> .</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Comments" /> propriedade para retornar a coleção de <b>comentários</b> .</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Range.AddComment(System.Object)" /> método para adicionar um comentário a um intervalo.</para>
+      <para>Usar os <b>comentários</b>(<paramref name="index" />), onde <paramref name="index" /> é o número do comentário, para retornar um único comentário da coleção <b>Comments</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -159,8 +159,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

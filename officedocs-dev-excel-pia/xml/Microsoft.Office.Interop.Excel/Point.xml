@@ -1,10 +1,10 @@
 <Type Name="Point" FullName="Microsoft.Office.Interop.Excel.Point">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7e25b0218180f3970a9efba6f581a14516fdea82" />
+    <Meta Name="ms.openlocfilehash" Value="41d76d059050993a028c8b26b1795b64c3e70e33" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587679" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Point" />
@@ -32,7 +32,7 @@
     <summary>Representa um único ponto de uma série em um gráfico.</summary>
     <remarks>
       <para>O objeto <b>Point</b> é um membro do <see cref="T:Microsoft.Office.Interop.Excel.Points" /> conjunto. A coleção <b>Points</b> contém todos os pontos da um série.</para>
-      <para>Usar <b>pontos</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do ponto, para retornar um único objeto <b>Point</b> . Pontos são numerados da esquerda para direita na série. Points(1) é o ponto mais à esquerda e Points(Points.Count) é o ponto mais à direita.</para>
+      <para>Use <b>pontos</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do ponto, para retornar um único objeto <b>Point</b> . Pontos são numerados da esquerda para direita na série. Points(1) é o ponto mais à esquerda e Points(Points.Count) é o ponto mais à direita.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -371,8 +371,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabel">
@@ -556,8 +558,8 @@
         <summary>Retorna e define um valor indicando se um ponto terá uma aparência tridimensional. Leitura/gravação.</summary>
         <value>Boolean</value>
         <remarks>
-          <para>Retorna True se um ponto tem uma aparência tridimensional.</para>
-          <para>Essa propriedade se aplica somente a gráficos de bolha.</para>
+          <para>Retorna True se um ponto tem uma aparência tridimensional. </para>
+          <para>Essa propriedade só se aplica aos gráficos de bolha.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -912,7 +914,7 @@
           <para>
             <b>xlMarkerStyleDash</b>. Marcadores de barra longa</para>
           <para>
-            <b>xlMarkerStyleDiamond</b>. Marcadores em formato de losango</para>
+            <b>xlMarkerStyleDiamond</b>. Marcadores em forma de losango</para>
           <para>
             <b>xlMarkerStyleDot</b>. Marcadores de barra curta</para>
           <para>
@@ -920,7 +922,7 @@
           <para>
             <b>xlMarkerStylePicture</b>. Marcadores de imagem</para>
           <para>
-            <b>xlMarkerStylePlus</b>. Marcadores quadrados com um sinal de adição</para>
+            <b>xlMarkerStylePlus</b>. Marcadores quadrados com um sinal de mais</para>
           <para>
             <b>xlMarkerStyleSquare</b>. Marcadores quadrados</para>
           <para>
@@ -960,7 +962,7 @@
         <value>O nome do objeto.</value>
         <remarks>
           <para>Somente leitura.</para>
-          <para>Essa propriedade corresponde ao nome de um ponto de dados em um gráfico. O nome é representado usando o seguinte formato: S&lt;o número de série&gt;P&lt;número de ponto&gt;.</para>
+          <para>Esta propriedade corresponde ao nome de um ponto de dados em um gráfico. O nome é representado usando o seguinte formato: S&lt;o número de série&gt;P&lt;número de ponto&gt;.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1017,7 +1019,7 @@
         <summary>Cola uma imagem da Área de Transferência como marcador no ponto selecionado.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>o método <b>Paste</b> pode ser usado em gráficos de radar, barra, linha ou coluna e define o <see cref="P:Microsoft.Office.Interop.Excel.Point.MarkerStyle" /> propriedade como <b>xlMarkerStylePicture</b>.</para>
+          <para>O método <b>Paste</b> pode ser usado em gráficos de radar, barra, linha ou coluna e define o <see cref="P:Microsoft.Office.Interop.Excel.Point.MarkerStyle" /> propriedade como <b>xlMarkerStylePicture</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1164,7 +1166,7 @@
         <summary>Retorna a posição, em pontos, vertical ou horizontal de um ponto em um item de gráfico da borda esquerda ou superior do objeto à borda superior ou esquerda da área do gráfico.</summary>
         <returns>A vertical ou horizontal posição de um ponto em um item de gráfico, em pontos, da borda esquerda ou superior do objeto até a borda esquerda ou superior da área do gráfico.</returns>
         <remarks>
-          <para>Essa propriedade só se aplica a tipos de gráfico de pizza e de rosca.</para>
+          <para>Esta propriedade só se aplica a tipos de gráfico de pizza e de rosca.</para>
           <para></para>
         </remarks>
       </Docs>

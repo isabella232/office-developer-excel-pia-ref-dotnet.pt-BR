@@ -1,10 +1,10 @@
 <Type Name="Hyperlinks" FullName="Microsoft.Office.Interop.Excel.Hyperlinks">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="27fecad494ad27af9b9fdd164f87e7ed8a458874" />
+    <Meta Name="ms.openlocfilehash" Value="384731b744bc8d5ac5fc450f7f7db1aaeb7f87e6" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582702" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Hyperlinks : System.Collections.IEnumerable" />
@@ -35,8 +35,8 @@
   <Docs>
     <summary>Representa a coleção de hiperlinks para uma planilha ou um intervalo. Cada hiperlink é representado por um <see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" /> objeto.</summary>
     <remarks>
-      <para>Use a propriedade <b>Hyperlinks</b> para retornar a coleção de <b>hiperlinks</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel.Hyperlinks.Add(System.Object,System.String,System.Object,System.Object,System.Object)" /> método para criar um hiperlink e adicioná-lo à coleção <b>Hyperlinks</b> .</para>
+      <para>Use a propriedade <b>Hyperlinks</b> para retornar a coleção <b>Hyperlinks</b>.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Hyperlinks.Add(System.Object,System.String,System.Object,System.Object,System.Object)" /> método para criar um hiperlink e adicioná-lo à coleção <b>Hyperlinks</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -115,7 +115,7 @@
         <summary>Adiciona um hiperlink ao intervalo ou à forma especificado. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" /> objeto.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Ao especificar o <paramref name="TextToDisplay" /> argumento, o texto deve ser uma cadeia.</para>
+          <para>Ao especificar o <paramref name="TextToDisplay" /> argumento, o texto deve ser uma cadeia de caracteres.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -202,8 +202,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">

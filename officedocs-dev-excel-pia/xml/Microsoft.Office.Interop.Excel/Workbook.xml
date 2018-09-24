@@ -1,10 +1,10 @@
 <Type Name="Workbook" FullName="Microsoft.Office.Interop.Excel.Workbook">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="92ffce8b5e62ce88e392a62537bf1cc2d3a58d10" />
+    <Meta Name="ms.openlocfilehash" Value="38fbc25ab1d7bdcab1f5c79b80d9c636b7fd7389" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587350" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Workbook : Microsoft.Office.Interop.Excel._Workbook, Microsoft.Office.Interop.Excel.WorkbookEvents_Event" />
@@ -36,30 +36,33 @@
     <summary>Representa uma pasta de trabalho do Microsoft Excel.</summary>
     <remarks>
       <para>Esta é uma interface .NET derivada uma co-classe COM exigidos pelo código gerenciado para a interoperabilidade com o objeto COM correspondente. Use esta interface derivada para acessar todos os membros de evento, propriedade e método do objeto COM. Entretanto, se um método ou evento que você deseja usar compartilhar o mesmo nome sob o mesmo objeto de COM, cast à interface principal correspondente para chamar o método e convertido para a interface de eventos mais recente para se conectar ao evento. Consulte este tópico para obter informações sobre o objeto COM. Para obter informações sobre os método e a propriedade membros do objeto COM, consulte <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.</para>
-      <para>o <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto é um membro do <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> conjunto. A coleção de <b>pastas de trabalho</b> contém todos os objetos de <b>pasta de trabalho</b> abertas no momento no Microsoft Excel.</para>
+      <para>O <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto é um membro do <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> conjunto. A coleção de <b>pastas de trabalho</b> contém todos os objetos de <b>pasta de trabalho</b> abertas no momento no Microsoft Excel.</para>
       <para>As seguintes propriedades para retornar um objeto de <b>pasta de trabalho</b> são descritas nesta seção:</para>
       <list type="bullet">
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /> propriedade</description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" />propriedade</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" /> propriedade</description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" />propriedade</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel._Application.ThisWorkbook" /> propriedade</description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Application.ThisWorkbook" />propriedade</description>
         </item>
       </list>
       <para>Propriedade Workbooks</para>
       <para>Usar <b>pastas de trabalho</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome da pasta de trabalho ou o número de índice, para retornar um único objeto <b>Workbook</b> .</para>
-      <para>o número de índice denota a ordem na qual as pastas de trabalho foram abertas ou criadas. Workbooks(1) é a primeira pasta de trabalho criada e Workbooks(Workbooks.Count) é a última criada. Ativar uma pasta de trabalho não altera seu número de índice. Todas as pastas de trabalho estão incluídas na contagem do índice, mesmo que elas estejam ocultas.</para>
-      <para>o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" /> propriedade retorna o nome da pasta de trabalho. Você não pode definir o nome usando essa propriedade; Se você precisar alterar o nome, use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para salvar a pasta de trabalho com um nome diferente.</para>
+      <para>O número do índice denota a ordem na qual as pastas de trabalho foram abertas ou criadas. Workbooks(1) é a primeira pasta de trabalho criada e Workbooks(Workbooks.Count) é a última. A ativação de uma pasta de trabalho não altera seu número do índice. Todas as pastas de trabalho serão incluídas na contagem do índice, mesmo se estiverem ocultas.</para>
+      <para>O <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" /> propriedade retorna o nome da pasta de trabalho. Você não pode definir o nome usando essa propriedade; Se você precisar alterar o nome, use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para salvar a pasta de trabalho com um nome diferente.</para>
       <para>Propriedade ActiveWorkbook</para>
-      <para>a propriedade <b>ActiveWorkbook</b> retorna a pasta de trabalho ativa no momento.</para>
-      <para>Propriedade ThisWorkbook</para> Propriedade 
-      <para>o <b>ThisWorkbook</b> retorna a pasta de trabalho onde o código do Visual Basic está sendo executado. Na maioria dos casos, isso é o mesmo que a pasta de trabalho ativa. No entanto, se o código do Visual Basic for parte de um suplemento, a propriedade <b>ThisWorkbook</b> não devolvem a pasta de trabalho ativa. Nesse caso, a pasta de trabalho ativa é a pasta de trabalho chamando o suplemento, portanto, a propriedade <b>ThisWorkbook</b> retorna a pasta de trabalho do suplemento. </para><para>Se você vai ser criando um suplemento de código do Visual Basic, você deve usar a propriedade <b>ThisWorkbook</b> para se qualificar qualquer instrução que deve ser executada na pasta de trabalho que você compila em add-in.</para><para></para></remarks>
+      <para>A propriedade <b>ActiveWorkbook</b> retorna a pasta de trabalho ativa no momento.</para>
+      <para>Propriedade ThisWorkbook</para>
+      <para>A propriedade <b>ThisWorkbook</b> retorna a pasta de trabalho onde o código do Visual Basic está sendo executado. Na maioria dos casos, isso é o mesmo que a pasta de trabalho ativa. No entanto, se o código do Visual Basic for parte de um suplemento, a propriedade <b>ThisWorkbook</b> não devolvem a pasta de trabalho ativa. Nesse caso, a pasta de trabalho ativa é a pasta de trabalho chamando o suplemento, portanto, a propriedade <b>ThisWorkbook</b> retorna a pasta de trabalho do suplemento. </para>
+      <para>Se você vai ser criando um suplemento de código do Visual Basic, você deve usar a propriedade <b>ThisWorkbook</b> para se qualificar qualquer instrução que deve ser executada na pasta de trabalho que você compila para o add-in.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members />
 </Type>

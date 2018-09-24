@@ -1,10 +1,10 @@
 <Type Name="WorkbookEvents_Event" FullName="Microsoft.Office.Interop.Excel.WorkbookEvents_Event">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a6f0025a298b025acdc36577d72a1f6f03353008" />
+    <Meta Name="ms.openlocfilehash" Value="2c6690aaaabf5f77b79d72b8fb4094774b86969d" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586258" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface WorkbookEvents_Event" />
@@ -50,7 +50,7 @@
       <Docs>
         <summary>Ocorre quando uma pasta de trabalho é ativada.</summary>
         <remarks>
-          <para>Quando você alterna entre duas janelas que mostram a mesma pasta de trabalho, o evento <b>WindowActivate</b> ocorre, mas o evento <b>Activate</b> da pasta de trabalho não ocorrerá.</para>
+          <para>Quando você alterna entre duas janelas que mostram a mesma pasta de trabalho, o evento <b>WindowActivate</b> ocorre, mas o evento <b>Activate</b> da pasta de trabalho não ocorre.</para>
           <para>Esse evento não ocorre quando você cria uma nova janela.</para>
           <para></para>
         </remarks>
@@ -92,7 +92,7 @@
       <Docs>
         <summary>Ocorre quando a pasta de trabalho é desinstalada como um suplemento.</summary>
         <remarks>
-          <para>o suplemento não fecha automaticamente quando é desinstalado.</para>
+          <para>O suplemento não fecha automaticamente quando é desinstalado.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -133,7 +133,7 @@
       <Docs>
         <summary>Ocorre depois que o Excel salvar ou exportar dados da pasta de trabalho especificada para um arquivo de dados XML.</summary>
         <remarks>
-          <para>Recursos XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
+          <para>Recursos de XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -155,7 +155,7 @@
       <Docs>
         <summary>Ocorre após uma conexão de dados XML existente é atualizada ou novos dados XML são importados para a pasta de trabalho especificada.</summary>
         <remarks>
-          <para>Recursos XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
+          <para>Recursos de XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -234,7 +234,7 @@
       <Docs>
         <summary>Ocorre antes que o Excel salvar ou exportar dados da pasta de trabalho especificada para um arquivo de dados XML.</summary>
         <remarks>
-          <para>Recursos XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
+          <para>Recursos de XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -256,7 +256,7 @@
       <Docs>
         <summary>Ocorre antes que uma conexão de dados XML existente é atualizada ou antes de XML novo dados são importados para uma pasta de trabalho do Excel.</summary>
         <remarks>
-          <para>Recursos XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
+          <para>Recursos de XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -316,8 +316,8 @@
       <Docs>
         <summary>Ocorre quando um novo gráfico é criado na pasta de trabalho.</summary>
         <remarks>
-          <para>O <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /> evento ocorre sempre que um novo gráfico é inserido ou colado em uma planilha, uma planilha de gráfico ou outros tipos de planilha. Se vários gráficos são inseridos ou colados, o evento ocorrerá para cada gráfico na ordem que eles são inseridos ou colados. Se um objeto chart ou a planilha de gráfico é movida de um local para outro, o evento não ocorrerá. No entanto, se o gráfico é movido entre um objeto de gráfico e uma planilha de gráfico, o evento ocorrerá porque um novo gráfico deve ser criado.</para>
-          <para>o <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /> evento não ocorrerá nos seguintes cenários: copiar ou colar uma planilha de gráfico, alterando a um tipo de gráfico, alterando a uma fonte de dados do gráfico, desfazer ou Refazer Inserir ou colar um gráfico e carregamento de uma pasta de trabalho que contém um quadro.</para>
+          <para>O <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /> evento ocorre sempre que um novo gráfico é inserido ou colado em uma planilha, uma planilha de gráfico ou outros tipos de planilha. Se vários gráficos são inseridos ou colados, o evento ocorrerá para cada gráfico na ordem que eles são inseridos ou colados. Se um objeto chart ou a planilha de gráfico é movida de um local para outro, o evento não ocorrerá. No entanto, se o gráfico for movido entre um objeto de gráfico e uma planilha de gráfico, o evento ocorrerá porque um novo gráfico deve ser criado.</para>
+          <para>O <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /> evento não ocorrerá nos seguintes cenários: copiar ou colar uma planilha de gráfico, alterando a um tipo de gráfico, alterando a uma fonte de dados do gráfico, desfazer ou Refazer Inserir ou colar um gráfico e carregamento de uma pasta de trabalho que contém um gráfico.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -415,7 +415,7 @@
       <Docs>
         <summary>O evento é acionado quando o usuário analisa o conjunto de registros ou invoca a ação do conjunto de linhas em uma tabela dinâmica OLAP.</summary>
         <remarks>
-          <para>Como o recordset é criado de maneira assíncrona, o evento permite a automação determinar quando a ação foi concluída. Além disso, como o conjunto de registros é criado em uma planilha separada, o evento deve estar no nível de pasta de trabalho.</para>
+          <para>Como o conjunto de registros é criado de forma assíncrona, o evento permite que a automação determine quando a ação estiver concluída. Além disso, como o conjunto de registros é criado em uma planilha separada, o evento precisa estar no nível da pasta de trabalho.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -494,7 +494,7 @@
       <Docs>
         <summary>Ocorre quando uma planilha é clicada com o botão direito, antes da ação padrão de clique com o botão direito.</summary>
         <remarks>
-          <para>Esse evento não ocorre em planilhas de gráfico.</para>
+          <para>Este evento não ocorre em planilhas de gráfico.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -535,7 +535,7 @@
       <Docs>
         <summary>Ocorre quando células de uma planilha são alteradas pelo usuário ou por um vínculo externo.</summary>
         <remarks>
-          <para>Esse evento não ocorre em planilhas de gráfico.</para>
+          <para>Este evento não ocorre em planilhas de gráfico.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -617,7 +617,7 @@
       <Docs>
         <summary>Ocorre depois que uma célula ou intervalo de células dentro de uma Tabela Dinâmica é editado ou recalculado (para células que contêm fórmulas).</summary>
         <remarks>
-          <para>o <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableAfterValueChange" /> evento não ocorre sob quaisquer condições que não seja de edição ou recalcular células. Por exemplo, ele não ocorrerá quando a tabela dinâmica é atualizada, classificada, filtrada ou aprofundada, embora essas operações mover células e potencialmente recuperam novos valores da fonte de dados OLAP.</para>
+          <para>O <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableAfterValueChange" /> evento não ocorre sob quaisquer condições que não seja de edição ou recalcular células. Por exemplo, ele não ocorrerá quando a tabela dinâmica é atualizada, classificada, filtrada ou aprofundada, embora essas operações mover células e potencialmente recuperam novos valores da fonte de dados OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -639,7 +639,7 @@
       <Docs>
         <summary>Ocorre antes que as alterações sejam aplicadas a uma Tabela Dinâmica.</summary>
         <remarks>
-          <para>o <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" /> evento ocorre imediatamente antes do Excel executa uma instrução UPDATE cubo para aplicar todas as alterações à fonte de dados OLAP da tabela dinâmica e imediatamente após o usuário ter optado aplicar as alterações na interface do usuário.</para>
+          <para>O <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" /> evento ocorre imediatamente antes do Excel executa uma instrução UPDATE cubo para aplicar todas as alterações à fonte de dados OLAP da tabela dinâmica e imediatamente após o usuário ter optado aplicar as alterações na interface do usuário.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -661,7 +661,7 @@
       <Docs>
         <summary>Ocorre antes que as alterações sejam confirmadas com base em uma fonte de dados OLAP de uma Tabela Dinâmica.</summary>
         <remarks>
-          <para>o <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeCommitChanges" /> evento ocorre imediatamente antes que o Excel executa uma COMMIT TRANSACTION em relação a fonte de dados OLAP da tabela dinâmica e imediatamente após o usuário ter optado por salvar as alterações para a tabela dinâmica inteira.</para>
+          <para>O <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeCommitChanges" /> evento ocorre imediatamente antes que o Excel executa uma COMMIT TRANSACTION em relação a fonte de dados OLAP da tabela dinâmica e imediatamente após o usuário ter optado por salvar as alterações para a tabela dinâmica inteira.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -683,7 +683,7 @@
       <Docs>
         <summary>Ocorre antes que as alterações em uma tabela dinâmica sejam descartadas.</summary>
         <remarks>
-          <para>Ocorre imediatamente antes do Excel executa uma instrução de transação de REVERSÃO em relação a fonte de dados OLAP, se uma transação ainda está ativa e, em seguida, descarta todos os valores editados na tabela dinâmica, após o usuário ter optado descartar as alterações.</para>
+          <para>Ocorre imediatamente antes que o Excel executar uma instrução de transação de REVERSÃO em relação a fonte de dados OLAP, se uma transação ainda está ativa e, em seguida, descarta todos os valores editados na tabela dinâmica, após o usuário ter optado descartar as alterações.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -705,7 +705,7 @@
       <Docs>
         <summary>Ocorre depois que são feitas alterações em uma Tabela Dinâmica.</summary>
         <remarks>
-          <para>o <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableChangeSync" />ocorre durante a maioria das alterações em uma tabela dinâmica, para que você pode escrever código para responder a ações do usuário, como limpar, agrupar ou atualizar itens na tabela dinâmica.</para>
+          <para>O <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableChangeSync" />ocorre durante a maioria das alterações em uma tabela dinâmica, para que você pode escrever código para responder a ações do usuário, como limpar, agrupar ou atualizar itens na tabela dinâmica.</para>
           <para></para>
         </remarks>
       </Docs>

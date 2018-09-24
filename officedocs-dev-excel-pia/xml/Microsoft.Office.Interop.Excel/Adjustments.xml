@@ -1,10 +1,10 @@
 <Type Name="Adjustments" FullName="Microsoft.Office.Interop.Excel.Adjustments">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="55c03b5083f29e8896f86dd16915d59d3c798ec9" />
+    <Meta Name="ms.openlocfilehash" Value="5fbb3122486169cf5cb93352c3646bc1cdd1c0b4" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584137" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Adjustments : Microsoft.Office.Core._IMsoDispObj" />
@@ -32,9 +32,26 @@
   <Docs>
     <summary>Contém uma coleção de valores de ajuste para a AutoForma, o objeto WordArt ou o conector especificado.</summary>
     <remarks>
-      <para>Cada valor de ajuste representa uma maneira de que uma alça de ajuste pode ser ajustada. Como alguns manipulações de ajustes podem ser ajustadas de duas maneiras — por exemplo, algumas alças podem ser ajustadas horizontal e verticalmente — uma forma pode ter mais valores de ajuste de alças de ajuste. Uma forma pode ter até oito ajustes.</para> Uso de 
-      <para>o <see cref="P:Microsoft.Office.Interop.Excel.Shape.Adjustments" /> propriedade para retornar um objeto <b>Adjustments</b> . Use os <b>ajustes</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do valor de ajuste, para retornar um único valor de ajuste.</para><para>Formas diferentes tiverem números diferentes de valores de ajuste, tipos diferentes de ajustes alteram a geometria de uma forma de maneiras diferentes e tipos diferentes de ajustes têm intervalos diferentes de valores válidos.</para><para>a tabela a seguir resume os intervalos de valores de ajuste válidos para diferentes tipos de ajustes. Na maioria dos casos, se você especificar um valor que está além do intervalo de valores válidos, o valor válido mais próximo vai ser atribuído ao ajuste.</para><list type="table"><item><term>Linear (horizontal ou vertical)</term><description>geralmente é o valor 0,0 representa a borda esquerda ou superior da forma e o valor 1.0 representa a borda direita ou inferior da forma. Os valores válidos correspondem aos ajustes válidos que você pode fazer manualmente à forma. Por exemplo, se você só pode extrair manualmente uma alça de ajuste metade do caminho através da forma, o valor máximo para o ajuste correspondente será 0,5. Para formas como conectores e textos explicativos, onde os valores 0,0 e 1,0 representam os limites do retângulo definido pelos pontos inicial e final do conector ou linha do texto explicativo, números negativos são números e números maiores que 1.0 são valores válidos.</description></item><item><term>Radial</term><description>um valor de ajuste de 1.0 corresponde à largura da forma. O valor máximo é 0,5, ou meio caminho através da forma.</description></item> Os valores de 
-        <item><term>ângulo</term><description>são expressos em graus. Se você especificar um valor fora do intervalo de – 180 a 180, ele será normalizado para ficar dentro do intervalo.</description></item></list><para></para></remarks>
+      <para>Cada valor de ajuste representa uma maneira pela qual uma alça de ajuste pode ser ajustada. Como algumas dessas alças podem ser ajustadas de duas maneiras (por exemplo, tanto horizontal quanto verticalmente), é possível que uma forma tenha mais valores de ajuste do que alças de ajuste. Uma forma pode ter até oito ajustes.</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.Shape.Adjustments" /> propriedade para retornar um objeto <b>Adjustments</b> . Use os <b>ajustes</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do valor de ajuste, para retornar um único valor de ajuste.</para>
+      <para>As diferentes formas têm números diferentes de valores de ajuste, tipos de ajustes diferentes alteram a geometria de uma forma em formas diferentes, e diferentes tipos de ajuste têm intervalos diferentes de valores válidos.</para>
+      <para>A tabela a seguir resume os intervalos de valores de ajuste válidos para diferentes tipos de ajustes. Na maioria dos casos, quando você especifica um valor além do intervalo de valores válidos, o valor válido mais próximo é atribuído ao ajuste.</para>
+      <list type="table">
+        <item>
+          <term>Linear (horizontal ou vertical)</term>
+          <description>Geralmente, o valor 0,0 representa a borda esquerda ou superior da forma e o valor 1.0 representa a borda direita ou inferior da forma. Os valores válidos correspondem aos ajustes válidos que podem ser feitos na forma manualmente. Por exemplo, se você só pode puxar manualmente uma alça de ajuste a meio caminho através da forma, o valor máximo do ajuste correspondente será 0,5. Para formas como conectores e textos explicativos, onde os valores 0,0 e 1,0 representam os limites do retângulo definido pelos pontos inicial e final do conector ou da linha de texto explicativo, números negativos e números maiores que 1,0 são valores válidos.</description>
+        </item>
+        <item>
+          <term>Radial</term>
+          <description>Um valor de ajuste de 1,0 corresponde à largura da forma. O valor máximo é 0,5, ou meio caminho através da forma.</description>
+        </item>
+        <item>
+          <term>Ângulo</term>
+          <description>Valores são expressos em graus. Se você especificar um valor fora do intervalo de – 180 a 180, ele será normalizado para ficar dentro do intervalo.</description>
+        </item>
+      </list>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -125,8 +142,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -164,7 +183,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Para ajustes lineares, um valor de ajuste de 0,0 geralmente corresponde à borda esquerda ou superior da forma e um valor de 1.0 geralmente corresponde à borda direita ou inferior da forma. No entanto, os ajustes podem ultrapassar os limites da forma para algumas formas. Para ajustes radiais, um valor de ajuste de 1.0 corresponde à largura da forma. Para ajustes angulares, o valor de ajuste é especificado em graus. A propriedade <b>Item</b> se aplica somente a formas que têm ajustes.</para>
-          <para>Objetos AutoFormas, conectores e WordArt podem ter até oito ajustes.</para>
+          <para>As AutoFormas, conectores, e objetos do WordArt podem ter até oito ajustes.</para>
           <para></para>
         </remarks>
       </Docs>

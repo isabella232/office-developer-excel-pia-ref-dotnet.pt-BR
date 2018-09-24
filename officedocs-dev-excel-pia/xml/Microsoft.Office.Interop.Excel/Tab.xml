@@ -1,10 +1,10 @@
 <Type Name="Tab" FullName="Microsoft.Office.Interop.Excel.Tab">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f556887ccfbbf416d3399219f2df31285e1376b3" />
+    <Meta Name="ms.openlocfilehash" Value="71eb536a457812dc4d61b8e60fbc32743a3a5406" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585817" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Tab" />
@@ -125,7 +125,7 @@
         <summary>Retorna ou define a cor da guia gráfico especificado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>a cor é especificada como um do <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constantes.</para>
+          <para>A cor é especificada como um do <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constantes.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -156,8 +156,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -219,7 +221,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlThemeColor" />
         </value>
         <remarks>
-          <para>a tentativa de acessar uma cor de tema para um objeto cuja cor não possui tema atualmente resultará em um erro de tempo de execução de solicitação inválida.</para>
+          <para>A tentativa de acessar uma cor de tema para um objeto cuja cor não possui tema atualmente resultará em um erro em tempo de execução de solicitação inválida.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -256,7 +258,7 @@
         </value>
         <remarks>
           <para>Você pode inserir um número de -1 (mais escuro) até 1 (mais claro) para o <see cref="P:Microsoft.Office.Interop.Excel.Tab.TintAndShade" /> propriedade. Zero (0) é neutro.</para>
-          <para>Tentar definir essa propriedade como um valor menor que -1 ou mais de 1 resulta em um erro em tempo de execução: "o valor especificado estiver fora do intervalo".  Essa propriedade funciona para cores de tema e cores nontheme.</para>
+          <para>A tentativa de definir esta propriedade como um valor menor que -1 ou maior que 1 resulta em um erro em tempo de execução: "O valor especificado está fora dos limites". Esta propriedade funciona tanto com cores com tema quanto sem tema.</para>
           <para></para>
         </remarks>
       </Docs>
