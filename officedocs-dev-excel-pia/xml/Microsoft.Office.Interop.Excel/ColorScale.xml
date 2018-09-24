@@ -1,10 +1,10 @@
 <Type Name="ColorScale" FullName="Microsoft.Office.Interop.Excel.ColorScale">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="06c205813dcccacb04e48254943037851cce5de7" />
+    <Meta Name="ms.openlocfilehash" Value="1f67e87764cc01fd4ea79e3073b361913e5007f2" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585586" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ColorScale" />
@@ -30,551 +30,306 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="7f623-101">Representa uma regra de formatação condicional de escala de cores.</span>
+      <span data-ttu-id="b795b-101">Representa uma regra de formatação condicional de escala de cores.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="7f623-101">Represents a color scale conditional formatting rule.</span>
+        <span data-stu-id="b795b-101">Represents a color scale conditional formatting rule.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="7f623-102">
-        <para>Todos os objetos de formatação condicionais estão contidos dentro de um <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> objeto da coleção, que é um filho de um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> conjunto. Você pode criar uma regra de formatação por meio de um de escala de cores a <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddColorScale(System.Int32)" /> método da coleção <b>FormatConditions</b> .</para> Dimensiona 
-      <para>cor é visual guias que ajudarão a entender a distribuição de dados e variação. Você pode aplicar um duas cores ou uma escala de três cores a um intervalo de dados, os dados em uma tabela ou dados em um relatório de tabela dinâmica. Para uma formatação condicional da escala de duas cores, você atribui o valor, tipo e cor aos limites mínimos e máximo de um intervalo. Uma escala de três cores também tem um limite de ponto médio.</para><para>Cada um desses limites é determinado pela definição das propriedades do <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> objeto. O objeto <b>ColorScaleCriteria</b> , que é um filho do objeto <b>ColorScale</b> , é uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objetos da escala de cores.</para><para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="7f623-102">
-          <para>All conditional formatting objects are contained within a <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection object, which is a child of a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> collection. You can create a color scale formatting rule by using either the <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> or <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddColorScale(System.Int32)" /> method of the <b>FormatConditions</b> collection.</para>
-          <para>Color scales are visual guides that help you understand data distribution and variation. You can apply either a two-color or a three-color scale to a range of data, data in a table, or data in a PivotTable report. For a two-color scale conditional format, you assign the value, type, and color to the minimum and maximum thresholds of a range. A three-color scale also has a midpoint threshold.</para>
-          <para>Each of these thresholds is determined by setting the properties of the <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> object. The <b>ColorScaleCriteria</b> object, which is a child of the <b>ColorScale</b> object, is a collection of all of the <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objects for the color scale.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="b795b-102">Todos os objetos de formatação condicionais estão contidos dentro de um <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> objeto da coleção, que é um filho de um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> conjunto.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="b795b-102">All conditional formatting objects are contained within a <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection object, which is a child of a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> collection.</span>
         </span>
-      </span>
+        <span data-ttu-id="b795b-103">Você pode criar uma regra de formatação por meio de um de escala de cores a <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddColorScale(System.Int32)" /> método da coleção <b>FormatConditions</b> .</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="b795b-103">You can create a color scale formatting rule by using either the <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> or <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddColorScale(System.Int32)" /> method of the <b>FormatConditions</b> collection.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="b795b-p102">As escalas de cores são guias visuais que ajudam você a compreender a distribuição e a variação de dados. Você pode aplicar uma escala de duas cores ou de três cores a um intervalo de dados, dados em uma tabela, ou dados um relatório de tabela dinâmica. Para uma formatação condicional de escala de duas cores, você pode atribuir o valor, tipo e cor aos limites mínimo e máximo de um intervalo. Uma escala de três cores também possui um limite médio.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="b795b-p102">Color scales are visual guides that help you understand data distribution and variation. You can apply either a two-color or a three-color scale to a range of data, data in a table, or data in a PivotTable report. For a two-color scale conditional format, you assign the value, type, and color to the minimum and maximum thresholds of a range. A three-color scale also has a midpoint threshold.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="b795b-108">Cada um desses limites é determinado pela definição das propriedades do <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> objeto.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="b795b-108">Each of these thresholds is determined by setting the properties of the <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> object.</span>
+        </span>
+        <span data-ttu-id="b795b-109">O objeto <b>ColorScaleCriteria</b> , que é um filho do objeto <b>ColorScale</b> , é uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objetos da escala de cores.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="b795b-109">The <b>ColorScaleCriteria</b> object, which is a child of the <b>ColorScale</b> object, is a collection of all of the <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objects for the color scale.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
     <example>
-      <span data-ttu-id="7f623-103">
-        <para>O exemplo de código a seguir cria um intervalo de números e aplica uma regra de formatação condicional da escala de duas cores para aquele intervalo. A cor para o limite mínimo, em seguida, é atribuída para vermelho e o limite máximo como azul.</para>
-        <code>&lt;span class="label"&gt;Sub CreateColorScaleCF() 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    Dim cfColorScale As &lt;/span&gt;
-&lt;i&gt;ColorScale&lt;/i&gt;
-&lt;span class="label"&gt;'Fill cells with sample data from 1 to 10     With ActiveSheet         .Range("C1") = 1         .Range("C2") = 2         .Range("C1:C2").AutoFill Destination:=Range("C1:C10")     End With          Range("C1:C10").Select          'Create a two-color ColorScale object for the created sample data range     Set cfColorScale = Selection.FormatConditions.AddColorScale(ColorScaleType:=2)          'Set the minimum threshold to red and maximum threshold to blue     cfColorScale.ColorScaleCriteria(1).FormatColor.Color = RGB(255, 0, 0)     cfColorScale.ColorScaleCriteria(2).FormatColor.Color = RGB(0, 0, 255)          End Sub&lt;/span&gt;</code>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="7f623-103">
-          <para>The following code example creates a range of numbers and then applies a two-color scale conditional formatting rule to that range. The color for the minimum threshold is then assigned to red and the maximum threshold to blue.</para>
-          <code>&lt;span class="label"&gt;Sub CreateColorScaleCF() 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    Dim cfColorScale As &lt;/span&gt;
-&lt;i&gt;ColorScale&lt;/i&gt;
-&lt;span class="label"&gt;'Fill cells with sample data from 1 to 10     With ActiveSheet         .Range("C1") = 1         .Range("C2") = 2         .Range("C1:C2").AutoFill Destination:=Range("C1:C10")     End With          Range("C1:C10").Select          'Create a two-color ColorScale object for the created sample data range     Set cfColorScale = Selection.FormatConditions.AddColorScale(ColorScaleType:=2)          'Set the minimum threshold to red and maximum threshold to blue     cfColorScale.ColorScaleCriteria(1).FormatColor.Color = RGB(255, 0, 0)     cfColorScale.ColorScaleCriteria(2).FormatColor.Color = RGB(0, 0, 255)          End Sub&lt;/span&gt;</code>
+      <para>
+        <span data-ttu-id="b795b-p104">O exemplo de código a seguir cria um intervalo de números e aplica uma regra de formatação de escala de duas cores a esse intervalo. A cor do limite mínimo é vermelha e o limite máximo é azul.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="b795b-p104">The following code example creates a range of numbers and then applies a two-color scale conditional formatting rule to that range. The color for the minimum threshold is then assigned to red and the maximum threshold to blue.</span>
         </span>
-      </span>
+      </para>
+      <code>&lt;span class="label"&gt;Sub CreateColorScaleCF() 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Dim cfColorScale As &lt;/span&gt;
+&lt;i&gt;ColorScale&lt;/i&gt;
+&lt;span class="label"&gt;'Fill cells with sample data from 1 to 10     With ActiveSheet         .Range("C1") = 1         .Range("C2") = 2         .Range("C1:C2").AutoFill Destination:=Range("C1:C10")     End With          Range("C1:C10").Select          'Create a two-color ColorScale object for the created sample data range     Set cfColorScale = Selection.FormatConditions.AddColorScale(ColorScaleType:=2)          'Set the minimum threshold to red and maximum threshold to blue     cfColorScale.ColorScaleCriteria(1).FormatColor.Color = RGB(255, 0, 0)     cfColorScale.ColorScaleCriteria(2).FormatColor.Color = RGB(0, 0, 255)          End Sub&lt;/span&gt;</code>
     </example>
   </Docs>
   <Members>
@@ -602,38 +357,35 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="7f623-104">Quando usado sem um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object que representa o aplicativo Microsoft Office Excel.</span>
+          <span data-ttu-id="b795b-112">Quando usado sem um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object que representa o aplicativo Microsoft Office Excel.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-104">When used without an object qualifier, this property returns an  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object that represents the Microsoft Office Excel  application.</span>
+            <span data-stu-id="b795b-112">When used without an object qualifier, this property returns an  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object that represents the Microsoft Office Excel  application.</span>
           </span>
-          <span data-ttu-id="7f623-105">Quando usado com um qualificador de objeto, essa propriedade retorna um objeto <b>Application</b> que representa o criador do objeto especificado.</span>
+          <span data-ttu-id="b795b-113">Quando usado com um qualificador de objeto, essa propriedade retorna um objeto <b>Application</b> que representa o criador do objeto especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-105">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object.</span>
+            <span data-stu-id="b795b-113">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object.</span>
           </span>
-          <span data-ttu-id="7f623-106">Somente leitura.</span>
+          <span data-ttu-id="b795b-114">Somente leitura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-106">Read-only.</span>
+            <span data-stu-id="b795b-114">Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="7f623-107">
+          <span data-ttu-id="b795b-115">
             <b>Aplicativo</b> (consulte acima)</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-107">
+            <span data-stu-id="b795b-115">
               <b>Application</b> (see above)</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="7f623-108">
-            <para>Você pode usar essa propriedade com um objeto de automação OLE para retornar o aplicativo desse objeto.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7f623-108">
-              <para>You can use this property with an OLE Automation object to return the application of that object.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="b795b-116">Você pode usar essa propriedade com um objeto de Automação OLE para retornar o aplicativo desse objeto.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b795b-116">You can use this property with an OLE Automation object to return the application of that object.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -661,9 +413,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="7f623-109">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto especificando o intervalo de células ao qual a regra de formatação é aplicada.</span>
+          <span data-ttu-id="b795b-117">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto especificando o intervalo de células ao qual a regra de formatação é aplicada.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-109">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object specifying the cell range to which the formatting rule is applied.</span>
+            <span data-stu-id="b795b-117">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object specifying the cell range to which the formatting rule is applied.</span>
           </span>
         </summary>
         <value>
@@ -696,17 +448,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="7f623-110">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> object, que é uma coleção de um indivíduo <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objetos.</span>
+          <span data-ttu-id="b795b-118">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> object, que é uma coleção de um indivíduo <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objetos.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-110">Returns a   <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> object, which is a collection of individual <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objects.</span>
+            <span data-stu-id="b795b-118">Returns a   <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> object, which is a collection of individual <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objects.</span>
           </span>
-          <span data-ttu-id="7f623-111">O <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objeto Especifica o tipo, o valor e a cor dos critérios de limite usado na formatação condicional da escala de cores.</span>
+          <span data-ttu-id="b795b-119">O <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objeto Especifica o tipo, o valor e a cor dos critérios de limite usado na formatação condicional da escala de cores.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-111">The <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> object specifies the type, value, and color  of threshold criteria used in the color scale conditional format.</span>
+            <span data-stu-id="b795b-119">The <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> object specifies the type, value, and color  of threshold criteria used in the color scale conditional format.</span>
           </span>
-          <span data-ttu-id="7f623-112">Somente leitura.</span>
+          <span data-ttu-id="b795b-120">Somente leitura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-112">Read-only.</span>
+            <span data-stu-id="b795b-120">Read-only.</span>
           </span>
         </summary>
         <value>
@@ -739,29 +491,34 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="7f623-113">Retorna uma constante no <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeração que indica o aplicativo no qual esse objeto foi criado.</span>
+          <span data-ttu-id="b795b-121">Retorna uma constante no <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeração que indica o aplicativo no qual esse objeto foi criado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-113">Returns a constant in the <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeration that indicates the application in which this object was created.</span>
+            <span data-stu-id="b795b-121">Returns a constant in the <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeration that indicates the application in which this object was created.</span>
           </span>
-          <span data-ttu-id="7f623-114">Somente leitura.</span>
+          <span data-ttu-id="b795b-122">Somente leitura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-114">Read-only.</span>
+            <span data-stu-id="b795b-122">Read-only.</span>
           </span>
         </summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <span data-ttu-id="7f623-115">
-            <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.  O <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.Creator" /> propriedade foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7f623-115">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.  The <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="b795b-123">Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b795b-123">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+            <span data-ttu-id="b795b-124">O <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.Creator" /> propriedade foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b795b-124">The <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="b795b-125">Por exemplo, o Microsoft Excel tem o código de criador XCEL.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b795b-125">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -787,9 +544,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="7f623-116">Exclui o objeto de regra da formatação condicional especificado.</span>
+          <span data-ttu-id="b795b-126">Exclui o objeto de regra da formatação condicional especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-116">Deletes the specified conditional formatting rule object.</span>
+            <span data-stu-id="b795b-126">Deletes the specified conditional formatting rule object.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -822,32 +579,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="7f623-117">Retorna ou define um valor <b>String</b> representando uma fórmula que determina os valores em que o conjunto de ícones será aplicado.</span>
+          <span data-ttu-id="b795b-127">Retorna ou define um valor <b>String</b> representando uma fórmula que determina os valores em que o conjunto de ícones será aplicado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-117">Returns or sets a <b>String</b> representing a formula that determines the values to which the icon set will be applied.</span>
+            <span data-stu-id="b795b-127">Returns or sets a <b>String</b> representing a formula that determines the values to which the icon set will be applied.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="7f623-118">
+          <span data-ttu-id="b795b-128">
             <b>String</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-118">
+            <span data-stu-id="b795b-128">
               <b>String</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="7f623-119">
-            <para>Essa propriedade é útil para limitar o intervalo de valores que exibirá o formato condicional. Um cenário típico é quando você tem um intervalo de números que contém valores positivos e negativos. Convém criar mais de um formato condicional para esse intervalo de números — um para valores positivos e outro para valores negativos.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7f623-119">
-              <para>This property is useful to limit the range of values that will display the conditional format. A typical scenario is when you have a range of numbers containing both positive and negative values. You may want to create more than one conditional format for this range of numbers—one for positive values and another for negative values.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="b795b-p109">Essa propriedade é útil para limitar o intervalo de valores que exibirão o formato condicional. Um cenário típico é quando você possui um intervalo de números que contém valores positivos e negativos. Você talvez queira criar mais de um formato condicional para esse intervalo de números—um para valores positivos e outro para valores negativos.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b795b-p109">This property is useful to limit the range of values that will display the conditional format. A typical scenario is when you have a range of numbers containing both positive and negative values. You may want to create more than one conditional format for this range of numbers—one for positive values and another for negative values.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -874,30 +628,39 @@
       </Parameters>
       <Docs>
         <param name="Range">
-          <span data-ttu-id="7f623-120">O intervalo ao qual esta regra de formatação será aplicada.</span>
+          <span data-ttu-id="b795b-132">O intervalo ao qual esta regra de formatação será aplicada.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-120">The range to which this formatting rule will be applied.</span>
+            <span data-stu-id="b795b-132">The range to which this formatting rule will be applied.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="7f623-121">Define o intervalo de células ao qual esta regra de formatação se aplicará.</span>
+          <span data-ttu-id="b795b-133">Define o intervalo de células ao qual esta regra de formatação se aplicará.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-121">Sets the cell range to which this formatting rule applies.</span>
+            <span data-stu-id="b795b-133">Sets the cell range to which this formatting rule applies.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="7f623-122">
-            <para>O intervalo deve estar no estilo de referência A1 e estar totalmente contido dentro da folha que é o pai do <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> conjunto. Ele pode incluir o operador de intervalo (dois-pontos), o operador de interseção (um espaço) ou o operador union (uma vírgula). Os sinais de dólar também pode ser usados, mas eles serão ignorados.</para>
-            <para>Você também pode usar um nome definido de local em qualquer parte do intervalo, mas o nome deve estar no idioma da macro.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7f623-122">
-              <para>The range must be in the A1 reference style and be entirely contained within the sheet that is the parent of the <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. It can include the range operator (a colon), the intersection operator (a space), or the union operator (a comma). Dollar signs can also be used but they are ignored.</para>
-              <para>You can also use a local defined name in any part of the range, but the name must be in the language of the macro.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="b795b-134">O intervalo deve estar no estilo de referência A1 e estar totalmente contido dentro da folha que é o pai do <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> conjunto.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b795b-134">The range must be in the A1 reference style and be entirely contained within the sheet that is the parent of the <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection.</span>
             </span>
-          </span>
+            <span data-ttu-id="b795b-135">Ele pode incluir o operador de intervalo (dois-pontos), o operador de interseção (um espaço) ou o operador union (uma vírgula).</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b795b-135">It can include the range operator (a colon), the intersection operator (a space), or the union operator (a comma).</span>
+            </span>
+            <span data-ttu-id="b795b-136">Os sinais de dólar também pode ser usados, mas eles são ignorados.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b795b-136">Dollar signs can also be used but they are ignored.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="b795b-137">Você também pode usar um nome definido de local em qualquer parte do intervalo, mas o nome deve estar no idioma da macro.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b795b-137">You can also use a local defined name in any part of the range, but the name must be in the language of the macro.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -925,17 +688,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="7f623-p104">Retorna o objeto pai para o objeto especificado. Somente leitura.</span>
+          <span data-ttu-id="b795b-p111">Retorna o objeto pai para o objeto especificado. Somente leitura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-p104">Returns the parent object for the specified object. Read-only.</span>
+            <span data-stu-id="b795b-p111">Returns the parent object for the specified object. Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="7f623-125">
+          <span data-ttu-id="b795b-140">
             <b>Object</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-125">
+            <span data-stu-id="b795b-140">
               <b>Object</b>
             </span>
           </span>
@@ -970,32 +733,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="7f623-p105">Retorna ou define um valor de prioridade da regra de formatação condicional. A prioridade determina a ordem da avaliação quando houver várias regras de formatação condicional em uma planilha.</span>
+          <span data-ttu-id="b795b-p112">Retorna ou define um valor de prioridade da regra de formatação condicional. A prioridade determina a ordem da avaliação quando houver várias regras de formatação condicional em uma planilha.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-p105">Returns or sets the priority value of the conditional formatting rule. The priority determines the order of evaluation when multiple conditional formatting rules exist in a worksheet.</span>
+            <span data-stu-id="b795b-p112">Returns or sets the priority value of the conditional formatting rule. The priority determines the order of evaluation when multiple conditional formatting rules exist in a worksheet.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="7f623-128">
+          <span data-ttu-id="b795b-143">
             <b>Integer</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-128">
+            <span data-stu-id="b795b-143">
               <b>Integer</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="7f623-129">
-            <para>Ao definir a prioridade, o valor deve ser um inteiro positivo entre 1 e o número total de regras de formatação condicional na planilha. A prioridade deve ser um valor exclusivo para todas as regras na planilha, portanto, alterando a prioridade para a regra de formatação condicional especificada pode causar o valor de prioridade das regras de na planilha deslocamento.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7f623-129">
-              <para>When setting the priority, the value must be a positive integer between 1 and the total number of conditional formatting rules on the worksheet. The priority must be a unique value for all rules on the worksheet, so changing the priority for the specified conditional formatting rule may cause the priority value of the other rules on the worksheet to be shifted.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="b795b-p113">Ao definir a propriedade, o valor deve ser um número inteiro positivo entre 1 e o número total de regras de formatação condicional na planilha. A prioridade deve ser um valor exclusivo para todas as regras na planilha, de forma que a alteração da prioridade da regra de formatação condicional especificada irá deslocar o valor de prioridade de todas as outras regras na planilha.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b795b-p113">When setting the priority, the value must be a positive integer between 1 and the total number of conditional formatting rules on the worksheet. The priority must be a unique value for all rules on the worksheet, so changing the priority for the specified conditional formatting rule may cause the priority value of the other rules on the worksheet to be shifted.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1023,21 +783,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="7f623-130">Retorna um valor <b>Boolean</b> que indica se o formato condicional está sendo aplicado a um <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> gráfico.</span>
+          <span data-ttu-id="b795b-146">Retorna um valor <b>Boolean</b> que indica se o formato condicional está sendo aplicado a um <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> gráfico.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-130">Returns a <b>Boolean</b> value indicating if the conditional format is being applied to a <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> chart.</span>
+            <span data-stu-id="b795b-146">Returns a <b>Boolean</b> value indicating if the conditional format is being applied to a <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> chart.</span>
           </span>
-          <span data-ttu-id="7f623-131">Somente leitura.</span>
+          <span data-ttu-id="b795b-147">Somente leitura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-131">Read-only.</span>
+            <span data-stu-id="b795b-147">Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="7f623-132">
+          <span data-ttu-id="b795b-148">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-132">
+            <span data-stu-id="b795b-148">
               <b>Boolean</b>
             </span>
           </span>
@@ -1072,25 +832,22 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="7f623-133">Retorna ou define uma das constantes do <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> enumeração, que determina a abrangência do formato condicional quando aplicado a um gráfico de tabela dinâmica.</span>
+          <span data-ttu-id="b795b-149">Retorna ou define uma das constantes do <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> enumeração, que determina a abrangência do formato condicional quando aplicado a um gráfico de tabela dinâmica.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-133">Returns or sets one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> enumeration, which determines the scope of the conditional format when it is applied to a PivotTable chart.</span>
+            <span data-stu-id="b795b-149">Returns or sets one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> enumeration, which determines the scope of the conditional format when it is applied to a PivotTable chart.</span>
           </span>
         </summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
         </value>
         <remarks>
-          <span data-ttu-id="7f623-134">
-            <para>o valor padrão é <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, que define o escopo usando o <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.AppliesTo" />propriedade.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7f623-134">
-              <para>The default value is <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, which sets the scope using the <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.AppliesTo" />property.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="b795b-150">O valor padrão é <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, que define o escopo usando o <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.AppliesTo" />propriedade.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b795b-150">The default value is <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, which sets the scope using the <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.AppliesTo" />property.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1116,26 +873,27 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="7f623-135">Define o valor de prioridade para esta regra de formatação condicional como "1", de forma que esta regra seja avaliada antes das outras regras na planilha.</span>
+          <span data-ttu-id="b795b-151">Define o valor de prioridade para esta regra de formatação condicional como "1", de forma que esta regra seja avaliada antes das outras regras na planilha.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-135">Sets the priority value for this conditional formatting rule to "1" so that it will be evaluated before all other rules on the worksheet.</span>
+            <span data-stu-id="b795b-151">Sets the priority value for this conditional formatting rule to "1" so that it will be evaluated before all other rules on the worksheet.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="7f623-136">
-            <para>Quando você tem várias regras de formatação condicionais em uma planilha, se a regra não foi definida anteriormente para prioridade mais alta "1", esse método fará com que a prioridade de todas as outras regras existentes na planilha seja aumentada por uma.</para>
-            <para>
-              <b>Observação</b>: os níveis de prioridade de regras de formatação condicional são aplicados em uma base de nível de planilha.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7f623-136">
-              <para>When you have multiple conditional formatting rules  in a worksheet, if the rule was not previously set to priority "1", this method will cause the priority of all other existing rules on the worksheet to be increased by one.</para>
-              <para>
-                <b>Note</b>: Priority levels for conditional formatting rules are applied on a worksheet-level basis.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="b795b-152">Quando você tiver várias regras de formatação condicional em uma planilha, se a prioridade dessa regra não tiver sido definida previamente como "1", este método aumentará a prioridade em um nível em todas as outras regras existentes na planilha.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b795b-152">When you have multiple conditional formatting rules  in a worksheet, if the rule was not previously set to priority "1", this method will cause the priority of all other existing rules on the worksheet to be increased by one.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="b795b-153">
+              <b>Observação</b>: os níveis de prioridade de regras de formatação condicional são aplicados em uma base de nível de planilha.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b795b-153">
+                <b>Note</b>: Priority levels for conditional formatting rules are applied on a worksheet-level basis.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1161,26 +919,27 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="7f623-137">Define a ordem de avaliação para esta regra de formatação condicional, de forma que seja avaliada após todas as outras regras da planilha.</span>
+          <span data-ttu-id="b795b-154">Define a ordem de avaliação para esta regra de formatação condicional, de forma que seja avaliada após todas as outras regras da planilha.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-137">Sets the evaluation order for this conditional formatting rule so it is evaluated after all other rules on the worksheet.</span>
+            <span data-stu-id="b795b-154">Sets the evaluation order for this conditional formatting rule so it is evaluated after all other rules on the worksheet.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="7f623-138">
-            <para>A Value real da prioridade será igual ao número total de regras de formatação condicional na planilha. Quando você tem várias regras de formatação condicionais em uma planilha, esse método fará com que a prioridade de regras que tinha um valor de prioridade maior do que esta regra seja aumentada por uma.</para>
-            <para>
-              <b>Observação</b>: os níveis de prioridade de regras de formatação condicional são aplicados em uma base de nível de planilha.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7f623-138">
-              <para>The actual vaule of the priority will be equal to the total number of conditional formatting rules on the worksheet. When you have multiple conditional formatting rules  in a worksheet, this method will cause the priority of rules that had a priority value greater than this rule to be increased by one.</para>
-              <para>
-                <b>Note</b>: Priority levels for conditional formatting rules are applied on a worksheet-level basis.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="b795b-p115">O valor real da prioridade será igual ao número total de regras de formatação condicional na planilha. Quando você tiver várias regras de formatação em uma planilha, este método aumentará em um nível a prioridade das regras que tenham um valor de prioridade maior do que o desta regra.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b795b-p115">The actual vaule of the priority will be equal to the total number of conditional formatting rules on the worksheet. When you have multiple conditional formatting rules  in a worksheet, this method will cause the priority of rules that had a priority value greater than this rule to be increased by one.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="b795b-157">
+              <b>Observação</b>: os níveis de prioridade de regras de formatação condicional são aplicados em uma base de nível de planilha.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b795b-157">
+                <b>Note</b>: Priority levels for conditional formatting rules are applied on a worksheet-level basis.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1208,32 +967,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="7f623-139">Retorna ou define um valor <b>Boolean</b> que determina se as regras de formatação adicionais na célula devem ser avaliadas se a regra atual for avaliar como <b>True</b>.</span>
+          <span data-ttu-id="b795b-158">Retorna ou define um valor <b>Boolean</b> que determina se as regras de formatação adicionais na célula devem ser avaliadas se a regra atual for avaliar como <b>True</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-139">Returns or sets a <b>Boolean</b> value that determines if additional formatting rules on the cell should be evaluated if the current rule evaluates to <b>True</b>.</span>
+            <span data-stu-id="b795b-158">Returns or sets a <b>Boolean</b> value that determines if additional formatting rules on the cell should be evaluated if the current rule evaluates to <b>True</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="7f623-140">
+          <span data-ttu-id="b795b-159">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-140">
+            <span data-stu-id="b795b-159">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="7f623-141">
-            <para>Para oferecer suporte a compatibilidade com versões anteriores, o valor padrão para essa propriedade é <b>True</b>, o que é o oposto de uma formatação a regra criada na interface do usuário.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7f623-141">
-              <para>To support backward compatibility, the default value for this property is <b>True</b>, which is the opposite behavior of a formatting rule created in the user interface.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="b795b-160">Para que haja compatibilidade com versões anteriores, o valor padrão para essa propriedade é <b>True</b>, que é o oposto de uma regra de formatação criada na interface do usuário.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b795b-160">To support backward compatibility, the default value for this property is <b>True</b>, which is the opposite behavior of a formatting rule created in the user interface.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1261,36 +1017,33 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="7f623-142">Retorna uma das constantes do <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> enumeração, que especifica o tipo de formatação condicional.</span>
+          <span data-ttu-id="b795b-161">Retorna uma das constantes do <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> enumeração, que especifica o tipo de formatação condicional.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-142">Returns one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> enumeration, which specifies the type of conditional format.</span>
+            <span data-stu-id="b795b-161">Returns one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> enumeration, which specifies the type of conditional format.</span>
           </span>
-          <span data-ttu-id="7f623-143">Somente leitura.</span>
+          <span data-ttu-id="b795b-162">Somente leitura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-143">Read-only.</span>
+            <span data-stu-id="b795b-162">Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="7f623-144">
+          <span data-ttu-id="b795b-163">
             <b>Integer</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="7f623-144">
+            <span data-stu-id="b795b-163">
               <b>Integer</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="7f623-145">
-            <para>Essa propriedade sempre retornará um valor <b>inteiro</b> de "3", que é equivalente a <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlColorScale" />.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7f623-145">
-              <para>This property will always return a <b>Integer</b> value of "3", which is equivalent to <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlColorScale" />.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="b795b-164">Essa propriedade sempre retornará um valor <b>inteiro</b> de "3", que é equivalente a <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlColorScale" />.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b795b-164">This property will always return a <b>Integer</b> value of "3", which is equivalent to <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlColorScale" />.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

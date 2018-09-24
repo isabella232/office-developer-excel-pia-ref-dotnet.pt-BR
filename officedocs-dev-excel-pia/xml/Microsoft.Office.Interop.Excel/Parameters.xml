@@ -1,10 +1,10 @@
 <Type Name="Parameters" FullName="Microsoft.Office.Interop.Excel.Parameters">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="23a1adc381a42531ec3916120000e82dec4029e9" />
+    <Meta Name="ms.openlocfilehash" Value="6941b2d7f4dfb9eda0f671667102e7c868310e4e" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586818" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Parameters : System.Collections.IEnumerable" />
@@ -34,32 +34,43 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="23222-101">Uma coleção de <see cref="T:Microsoft.Office.Interop.Excel.Parameter" /> objetos para a tabela de consulta especificada.</span>
+      <span data-ttu-id="095bf-101">Uma coleção de <see cref="T:Microsoft.Office.Interop.Excel.Parameter" /> objetos para a tabela de consulta especificada.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="23222-101">A collection of <see cref="T:Microsoft.Office.Interop.Excel.Parameter" /> objects for the specified query table.</span>
+        <span data-stu-id="095bf-101">A collection of <see cref="T:Microsoft.Office.Interop.Excel.Parameter" /> objects for the specified query table.</span>
       </span>
-      <span data-ttu-id="23222-102">Cada objeto <b>Parameter</b> representa um único parâmetro de consulta.</span>
+      <span data-ttu-id="095bf-102">Cada objeto <b>Parameter</b> representa um único parâmetro de consulta.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="23222-102">Each <b>Parameter</b> object represents a single query parameter.</span>
+        <span data-stu-id="095bf-102">Each <b>Parameter</b> object represents a single query parameter.</span>
       </span>
-      <span data-ttu-id="23222-103">Cada tabela de consulta contém uma coleção de <b>parâmetros</b> , mas a coleção está vazia, a menos que a tabela de consulta está usando uma consulta de parâmetro.</span>
+      <span data-ttu-id="095bf-103">Cada tabela de consulta contém uma coleção de <b>parâmetros</b> , mas a coleção está vazia, a menos que a tabela de consulta está usando uma consulta de parâmetro.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="23222-103">Every query table contains a <b>Parameters</b> collection, but the collection is empty unless the query table is using a parameter query.</span>
+        <span data-stu-id="095bf-103">Every query table contains a <b>Parameters</b> collection, but the collection is empty unless the query table is using a parameter query.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="23222-104">
-        <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Parameters" /> propriedade para retornar a coleção <b>Parameters</b> .</para>
-        <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel.Parameters.Add(System.String,System.Object)" /> método para criar um novo parâmetro para uma tabela de consulta.</para> Você não pode usar o método <b>Add</b> em uma tabela de consulta de conexão de URL de 
-      <para>. Para tabelas de consulta de conexão de URL, o Microsoft Excel cria os parâmetros com base no <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> e <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.PostText" /> propriedades.</para><para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="23222-104">
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Parameters" /> property to return the <b>Parameters</b> collection.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.Parameters.Add(System.String,System.Object)" /> method to create a new parameter for a query table.</para>
-          <para>You cannot use the <b>Add</b> method on a URL connection query table. For URL connection query tables, Microsoft Excel creates the parameters based on the <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> and <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.PostText" /> properties.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="095bf-104">Use o <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Parameters" /> propriedade para retornar a coleção <b>Parameters</b> .</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="095bf-104">Use the <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Parameters" /> property to return the <b>Parameters</b> collection.</span>
         </span>
-      </span>
+      </para>
+      <para>
+        <span data-ttu-id="095bf-105">Use o <see cref="M:Microsoft.Office.Interop.Excel.Parameters.Add(System.String,System.Object)" /> método para criar um novo parâmetro para uma tabela de consulta.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="095bf-105">Use the <see cref="M:Microsoft.Office.Interop.Excel.Parameters.Add(System.String,System.Object)" /> method to create a new parameter for a query table.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="095bf-106">Você não pode usar o método <b>Add</b> em uma tabela de consulta de conexão de URL.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="095bf-106">You cannot use the <b>Add</b> method on a URL connection query table.</span>
+        </span>
+        <span data-ttu-id="095bf-107">Para tabelas de consulta de conexão de URL, o Microsoft Excel cria os parâmetros com base no <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> e <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.PostText" /> propriedades.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="095bf-107">For URL connection query tables, Microsoft Excel creates the parameters based on the <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> and <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.PostText" /> properties.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -94,9 +105,9 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>
-          <span data-ttu-id="23222-105">Reservado para uso interno.</span>
+          <span data-ttu-id="095bf-108">Reservado para uso interno.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="23222-105">Reserved for internal use.</span>
+            <span data-stu-id="095bf-108">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -127,42 +138,42 @@
       </Parameters>
       <Docs>
         <param name="Name">
-          <span data-ttu-id="23222-106">String necessário.</span>
+          <span data-ttu-id="095bf-109">String necessário.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="23222-106">Required String.</span>
+            <span data-stu-id="095bf-109">Required String.</span>
           </span>
-          <span data-ttu-id="23222-107">O nome do parâmetro especificado.</span>
+          <span data-ttu-id="095bf-110">O nome do parâmetro especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="23222-107">The name of the specified parameter.</span>
+            <span data-stu-id="095bf-110">The name of the specified parameter.</span>
           </span>
-          <span data-ttu-id="23222-108">O nome do parâmetro deve corresponder a cláusula de parâmetro na instrução SQL.</span>
+          <span data-ttu-id="095bf-111">O nome do parâmetro deve corresponder a cláusula de parâmetro na instrução SQL.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="23222-108">The parameter name should match the parameter clause in the SQL statement.</span>
+            <span data-stu-id="095bf-111">The parameter name should match the parameter clause in the SQL statement.</span>
           </span>
         </param>
         <param name="iDataType">
-          <span data-ttu-id="23222-109">
+          <span data-ttu-id="095bf-112">
             <b>Objeto</b>de opcional.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="23222-109">Optional <b>Object</b>.</span>
+            <span data-stu-id="095bf-112">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="23222-110">O tipo de dados do parâmetro.</span>
+          <span data-ttu-id="095bf-113">O tipo de dados do parâmetro.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="23222-110">The data type of the parameter.</span>
+            <span data-stu-id="095bf-113">The data type of the parameter.</span>
           </span>
-          <span data-ttu-id="23222-111">Pode ser qualquer <see cref="T:Microsoft.Office.Interop.Excel.XlParameterDataType" /> constante.</span>
+          <span data-ttu-id="095bf-114">Pode ser qualquer <see cref="T:Microsoft.Office.Interop.Excel.XlParameterDataType" /> constante.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="23222-111">Can be any <see cref="T:Microsoft.Office.Interop.Excel.XlParameterDataType" /> constant.</span>
+            <span data-stu-id="095bf-114">Can be any <see cref="T:Microsoft.Office.Interop.Excel.XlParameterDataType" /> constant.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="23222-112">Cria um novo parâmetro de consulta.</span>
+          <span data-ttu-id="095bf-115">Cria um novo parâmetro de consulta.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="23222-112">Creates a new query parameter.</span>
+            <span data-stu-id="095bf-115">Creates a new query parameter.</span>
           </span>
-          <span data-ttu-id="23222-113">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Parameter" /> objeto.</span>
+          <span data-ttu-id="095bf-116">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Parameter" /> objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="23222-113">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Parameter" /> object.</span>
+            <span data-stu-id="095bf-116">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Parameter" /> object.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -193,13 +204,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="23222-114">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</span>
+          <span data-ttu-id="095bf-117">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="23222-114">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="095bf-117">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
-          <span data-ttu-id="23222-115">Somente leitura.</span>
+          <span data-ttu-id="095bf-118">Somente leitura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="23222-115">Read-only.</span>
+            <span data-stu-id="095bf-118">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -230,14 +241,14 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="23222-116">Retorna o número de objetos na coleção.</span>
+          <span data-ttu-id="095bf-119">Retorna o número de objetos na coleção.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="23222-116">Returns the number of objects in the collection.</span>
+            <span data-stu-id="095bf-119">Returns the number of objects in the collection.</span>
           </span>
-          <span data-ttu-id="23222-117">
+          <span data-ttu-id="095bf-120">
             <b>Integer</b> somente leitura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="23222-117">Read-only <b>Integer</b>.</span>
+            <span data-stu-id="095bf-120">Read-only <b>Integer</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -268,28 +279,32 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="23222-118">Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</span>
+          <span data-ttu-id="095bf-121">Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="23222-118">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="095bf-121">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
-          <span data-ttu-id="23222-119">Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</span>
+          <span data-ttu-id="095bf-122">Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="23222-119">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
+            <span data-stu-id="095bf-122">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
           </span>
-          <span data-ttu-id="23222-120">Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+          <span data-ttu-id="095bf-123">Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="23222-120">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+            <span data-stu-id="095bf-123">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="23222-121">Propriedade <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="23222-121">
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="095bf-124">A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="095bf-124">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
             </span>
-          </span>
+            <span data-ttu-id="095bf-125">Por exemplo, o Microsoft Excel tem o código de criador XCEL.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="095bf-125">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -315,9 +330,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="23222-122">Exclui o objeto.</span>
+          <span data-ttu-id="095bf-126">Exclui o objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="23222-122">Deletes the object.</span>
+            <span data-stu-id="095bf-126">Deletes the object.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -379,20 +394,20 @@
       </Parameters>
       <Docs>
         <param name="Index">
-          <span data-ttu-id="23222-123">
+          <span data-ttu-id="095bf-127">
             <b>Objeto</b>necessário.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="23222-123">Required <b>Object</b>.</span>
+            <span data-stu-id="095bf-127">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="23222-124">O nome ou número de índice do objeto.</span>
+          <span data-ttu-id="095bf-128">O nome ou número de índice do objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="23222-124">The name or index number for the object.</span>
+            <span data-stu-id="095bf-128">The name or index number for the object.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="23222-125">Retorna um único objeto de uma coleção.</span>
+          <span data-ttu-id="095bf-129">Retorna um único objeto de uma coleção.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="23222-125">Returns a single object from a collection.</span>
+            <span data-stu-id="095bf-129">Returns a single object from a collection.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -423,9 +438,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="23222-p109">Retorna o objeto pai para o objeto especificado. Somente leitura.</span>
+          <span data-ttu-id="095bf-p111">Retorna o objeto pai para o objeto especificado. Somente leitura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="23222-p109">Returns the parent object for the specified object. Read-only.</span>
+            <span data-stu-id="095bf-p111">Returns the parent object for the specified object. Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
