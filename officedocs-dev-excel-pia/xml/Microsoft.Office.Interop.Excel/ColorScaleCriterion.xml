@@ -1,10 +1,10 @@
 <Type Name="ColorScaleCriterion" FullName="Microsoft.Office.Interop.Excel.ColorScaleCriterion">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="24fc2abe615803db23b08c339fdd812ffa384856" />
+    <Meta Name="ms.openlocfilehash" Value="71a5a3fdaa7d1393ccedac6ff867343c7fd8ae11" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580539" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ColorScaleCriterion" />
@@ -101,7 +101,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Para uma regra de formatação condicional da escala de duas cores, esta propriedade retornará um valor de "1" para o limite mínimo e "2" para o limite máximo. Ao usar uma regra de três cores de escala, os valores serão "1" no mínimo, "2" para "3" para os limites máximo e o ponto médio.</para>
+          <para>Para uma regra de formatação condicional de escala de duas cores, essa propriedade retornará um valor "1" para o limite mínimo e "2" para o limite máximo. No uso de uma regra de escala de três cores, os valores serão "1" para o limite mínimo, "2" para o médio e "3" para o máximo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -137,7 +137,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" />
         </value>
         <remarks>
-          <para>o tipo de valor de limite para uma barra de dados ou a cor de escala pode ser um número, por cento, fórmula ou percentil. Definir o tipo como percentil usará a função percentil no Excel para determinar o valor limite.</para>
+          <para>O tipo do valor de limite para uma barra de dados ou a cor de escala pode ser um número, por cento, fórmula ou percentil. Definir o tipo como percentil usará a função percentil no Excel para determinar o valor limite.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -174,7 +174,7 @@
         </value>
         <remarks>
           <para>Você pode definir o valor apenas se o <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" /> propriedade para o formato condicional for definida como uma das seguintes constantes: <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />, <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />, <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />, ou <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />.</para>
-          <para>Se o tipo de limite é uma fórmula, você pode definir a fórmula como uma <b>cadeia de caracteres</b>. A fórmula deve retornar um único número.</para>
+          <para>Se o tipo de limite for uma fórmula, você poderá definir a fórmula como um valor <b>String</b>. A fórmula deve retornar um único número.</para>
           <para></para>
         </remarks>
       </Docs>

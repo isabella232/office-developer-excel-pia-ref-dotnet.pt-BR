@@ -1,10 +1,10 @@
 <Type Name="CubeFields" FullName="Microsoft.Office.Interop.Excel.CubeFields">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4f88d867148057cb495ff350a393ab29f603f5d5" />
+    <Meta Name="ms.openlocfilehash" Value="b43cd9331b37889c562364401c8dc346d0d623b2" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572748" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CubeFields : System.Collections.IEnumerable" />
@@ -33,8 +33,8 @@
     <summary>Uma coleção de todos <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> objetos em um relatório de tabela dinâmica que se baseia em um cubo OLAP.</summary>
     <remarks>
       <para>Cada objeto <b>CubeField</b> representa um campo de hierarquia ou medidas do cubo.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.CubeFields" /> propriedade para retornar a coleção <b>CubeFields</b> .</para>
-      <para>Uso <b>CubeFields</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do campo de cubo, para retornar um único objeto <b>CubeField</b> .</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.CubeFields" /> propriedade para retornar a coleção <b>CubeFields</b> .</para>
+      <para>Use <b>CubeFields</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do campo de cubo, para retornar um único objeto <b>CubeField</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -105,7 +105,7 @@
         <summary>Adiciona um novo <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> o objeto para o <see cref="T:Microsoft.Office.Interop.Excel.CubeFields" /> conjunto.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>O objeto <b>CubeField</b> corresponde a um conjunto definido no Online Analytical Processing (OLAP) de um provedor para o cubo.</para>
+          <para>O objeto <b>CubeField</b> corresponde a um conjunto definido no Online Analytical Processing (OLAP), um provedor para o cubo.</para>
           <para>Se um conjunto com o nome atribuído no argumento <paramref name="Name" /> não existir, o método <b>AddSet</b> retornará um erro de tempo de execução.</para>
           <para></para>
         </remarks>
@@ -193,8 +193,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

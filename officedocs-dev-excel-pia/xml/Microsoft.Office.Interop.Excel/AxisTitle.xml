@@ -1,10 +1,10 @@
 <Type Name="AxisTitle" FullName="Microsoft.Office.Interop.Excel.AxisTitle">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c9ac598409b33e578c8408b206c866b6c7a47a68" />
+    <Meta Name="ms.openlocfilehash" Value="a15f79446668c559f53e688a0b4742e909d6504f" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578740" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AxisTitle" />
@@ -32,7 +32,7 @@
     <summary>Representa o título do eixo de um gráfico.</summary>
     <remarks>
       <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.Axis.AxisTitle" /> propriedade para retornar um objeto <b>AxisTitle</b> .</para>
-      <para>o objeto <b>AxisTitle</b> não existe e não pode ser usado a menos que o <see cref="P:Microsoft.Office.Interop.Excel.Axis.HasTitle" /> propriedade o eixo seja <b>True</b>.</para>
+      <para>O objeto <b>AxisTitle</b> não existe e não pode ser usado a menos que o <see cref="P:Microsoft.Office.Interop.Excel.Axis.HasTitle" /> propriedade o eixo seja <b>True</b>.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -231,8 +231,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -565,7 +567,7 @@
           <para>
             <b>xlRight</b>
           </para>
-          <para>Algumas dessas constantes podem não estar disponíveis para você, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou.</para>
+          <para>[!OBSERVAçãO] Alguma dessas constantes podem não estar disponíveis para você, dependendo do suporte de idioma (inglês dos EUA, por exemplo) que você selecionou ou instalou.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -602,7 +604,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Essa propriedade não afeta se um gráfico está no modo de autolayout ou não.  Se o usuário adiciona um título usando o comando acima do gráfico, o gráfico será redimensionada menor, como no Microsoft Office Excel 2003.  Se o usuário, em seguida, remove o título ou seleciona uma das opções de sobreposição de título, o gráfico será redimensionada maior, como se não estivesse o título do gráfico.</para>
+          <para>Essa propriedade não afeta se um gráfico está ou não em modo autolayout. Se o usuário adicionar um título usando o comando Acima do Gráfico, o gráfico será redimensionado menor, como no Microsoft Office Excel 2003.  Se o usuário remover o título ou selecionar uma das opções de título sobrepostas, o gráfico será redimensionado maior, como se o título não estivesse no gráfico.
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -739,7 +742,7 @@
           <para>
             <b>xlVertical</b>
           </para>
-          <para>para fontes de dados OLAP, a definição dessa propriedade para um campo em uma hierarquia de conjuntos de orientação para os outros campos na mesma hierarquia. Campos de dimensão só podem ser orientados na linha, coluna e áreas de campo de página do relatório de tabela dinâmica. Campos de medida só podem ser orientados na área de dados. A definição de um campo de hierarquia ou dados como <b>xlHidden</b> remove o campo ou a hierarquia do relatório de tabela dinâmica.</para>
+          <para>Para fontes de dados OLAP, a definição desta propriedade para um campo em uma hierarquia define a orientação para os outros campos na mesma hierarquia. Campos de dimensão só podem ser orientados nas áreas de campo de linha, de coluna e de página do relatório de tabela dinâmica. Campos de medida só podem ser orientados na área de dados. A definição de uma hierarquia ou de um campo de dados como <b>xlHidden</b> remove a hierarquia ou o campo do relatório de tabela dinâmica.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -835,7 +838,7 @@
         <value>To be added.</value>
         <remarks>
           <para>A propriedade <b>ReadingOrder</b> pode ser uma das seguintes constantes: <b>xlContext</b>, <b>xlLTR</b> (esquerda para direita) ou <b>xlRTL</b> (direita para esquerda).</para>
-          <para>Algumas dessas constantes podem não estar disponíveis para você, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou.</para>
+          <para>[!OBSERVAçãO] Alguma dessas constantes podem não estar disponíveis para você, dependendo do suporte de idioma (inglês dos EUA, por exemplo) que você selecionou ou instalou.</para>
           <para></para>
         </remarks>
       </Docs>

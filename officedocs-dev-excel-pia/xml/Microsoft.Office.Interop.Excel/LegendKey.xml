@@ -1,10 +1,10 @@
 <Type Name="LegendKey" FullName="Microsoft.Office.Interop.Excel.LegendKey">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e97e2c6b2812c0c27e94200204837ef948711b2c" />
+    <Meta Name="ms.openlocfilehash" Value="5c0f463a642ccce4a5ea924e670fcd78c73fdfeb" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580728" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface LegendKey" />
@@ -31,8 +31,8 @@
   <Docs>
     <summary>Representa um código de legenda em uma legenda de gráfico.</summary>
     <remarks>
-      <para>Cada código de legenda é um gráfico que vincula visualmente a entrada de legenda à sua série associada ou a linha de tendência no gráfico. O código da legenda é vinculado à sua série associada ou a linha de tendência de tal forma que a alteração da formatação de uma simultaneamente altera a formatação da outra.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Excel.LegendEntry.LegendKey" /> propriedade para retornar o <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> objeto.</para>
+      <para>Cada código da legenda é um gráfico que vincula visualmente uma entrada de legenda à sua linha de tendência ou série associada no gráfico. O código da legenda está vinculado à sua série ou linha de tendência associada de modo que a alteração da formatação de uma delas causa uma alteração simultânea na formatação da outra.</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.LegendEntry.LegendKey" /> propriedade para retornar o <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> objeto.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -148,8 +148,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -554,7 +556,7 @@
           <para>
             <b>xlMarkerStyleDash</b>. Marcadores de barra longa</para>
           <para>
-            <b>xlMarkerStyleDiamond</b>. Marcadores em formato de losango</para>
+            <b>xlMarkerStyleDiamond</b>. Marcadores em forma de losango</para>
           <para>
             <b>xlMarkerStyleDot</b>. Marcadores de barra curta</para>
           <para>
@@ -562,7 +564,7 @@
           <para>
             <b>xlMarkerStylePicture</b>. Marcadores de imagem</para>
           <para>
-            <b>xlMarkerStylePlus</b>. Marcadores quadrados com um sinal de adição</para>
+            <b>xlMarkerStylePlus</b>. Marcadores quadrados com um sinal de mais</para>
           <para>
             <b>xlMarkerStyleSquare</b>. Marcadores quadrados</para>
           <para>

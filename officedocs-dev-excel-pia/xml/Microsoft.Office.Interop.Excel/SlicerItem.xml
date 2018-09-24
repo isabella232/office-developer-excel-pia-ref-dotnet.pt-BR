@@ -1,10 +1,10 @@
 <Type Name="SlicerItem" FullName="Microsoft.Office.Interop.Excel.SlicerItem">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c437a5df8c218a73a221a359a6d25ce166383fd0" />
+    <Meta Name="ms.openlocfilehash" Value="3c1b11b181cf76e60a0a1ab7e6eab3bce566f124" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575142" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SlicerItem" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Representa um item em uma segmentação de dados.</summary>
     <remarks>
-      <para>Para acessar o <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> object que representa o botão selecionada no momento na segmentação de dados, use o <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto. Access o <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> coleção que representa todos os itens em uma segmentação de dados filtrando uma tabela dinâmica, use o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto que está associado a <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto. Access o <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> coleção que representam os itens em uma segmentação de dados um nível de uma hierarquia OLAP, o uso de filtragem de <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> object que representa esse nível da hierarquia.</para>
+      <para>Para acesso a <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> object que representa o botão selecionada no momento na segmentação de dados, use o <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto. Access o <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> coleção que representa todos os itens em uma segmentação de dados filtrando uma tabela dinâmica, use o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto que está associado a <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto. Access o <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> coleção que representam os itens em uma segmentação de dados um nível de uma hierarquia OLAP, o uso de filtragem de <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> object que representa esse nível da hierarquia.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -158,8 +158,8 @@
         <remarks>
           <para>Somente leitura.</para>
           <para>
-            <b>true</b> se o item da segmentação de dados contiver dados que coincide com o estado atual do filtro manual; caso contrário <b>false</b>.</para>
-          <para>Essa propriedade é suportada apenas quando a filtragem cruzada é ativada e gerará um erro em tempo de execução, caso contrário. Para determinar se a filtragem cruzada é ativada para uma segmentação de dados associada a um relatório de tabela dinâmica, verifique o valor do <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> propriedade de especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> pai do objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto. Para determinar se a filtragem cruzada é ativada para uma segmentação de dados associada a uma fonte de dados OLAP, verifique o valor do <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objeto que corresponde à hierarquia OLAP sendo filtrada.</para>
+            <b>true</b> se o item da segmentação de dados contiver dados que coincide com o estado atual do filtro manual; Caso contrário <b>false</b>.</para>
+          <para>Essa propriedade só é suportada quando a filtragem cruzada é ativada e gerará um erro em tempo de execução, caso contrário. Para determinar se a filtragem cruzada é ativada para uma segmentação de dados associada a um relatório de tabela dinâmica, verifique o valor do <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> propriedade de especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> pai do objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto. Para determinar se a filtragem cruzada é ativada para uma segmentação de dados associada a uma fonte de dados OLAP, verifique o valor do <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objeto que corresponde à hierarquia OLAP sendo filtrada.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -258,7 +258,7 @@
         <remarks>
           <para>Leitura/gravação.</para>
           <para>
-            <b>true</b> se o item da segmentação de dados está selecionado; caso contrário <b>false</b>.</para>
+            <b>true</b> se o item da segmentação de dados está selecionado; Caso contrário <b>false</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -321,7 +321,7 @@
         <value>Nome da fonte do item segmentação de dados nas configurações de formato inglês (Estados Unidos) do padrão.</value>
         <remarks>
           <para>Somente leitura.</para>
-          <para>Esta propriedade é usada quando um item de segmentação de dados tem uma versão localizada e seu <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.SourceNameStandard" /> difere do valor da propriedade o <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.SourceName" /> propriedade valor, assim como acontece com a formatação de data.</para>
+          <para>Essa propriedade é usada quando um item de segmentação de dados tem uma versão localizada e seu <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.SourceNameStandard" /> difere do valor da propriedade o <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.SourceName" /> propriedade valor, assim como acontece com a formatação de data.</para>
           <para></para>
         </remarks>
       </Docs>

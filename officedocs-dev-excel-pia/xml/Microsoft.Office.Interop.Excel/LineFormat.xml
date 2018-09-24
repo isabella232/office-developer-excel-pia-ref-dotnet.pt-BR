@@ -1,10 +1,10 @@
 <Type Name="LineFormat" FullName="Microsoft.Office.Interop.Excel.LineFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="13bc8c12ad34dfd5fd661b85e444b185e1b7b074" />
+    <Meta Name="ms.openlocfilehash" Value="7d64676ab2ca48d349cd8696c6abf4830f0a9f32" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575485" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface LineFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -33,7 +33,7 @@
     <summary>Representa formatação de linha e ponta de seta.</summary>
     <remarks>
       <para>Para uma linha, o objeto <b>LineFormat</b> contém informações de formatação para a própria linha; para uma forma com uma borda, esse objeto contém informações de formatação para a borda da forma.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Excel.Shape.Line" /> propriedade para retornar um objeto <b>LineFormat</b> .</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.Shape.Line" /> propriedade para retornar um objeto <b>LineFormat</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -222,8 +222,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DashStyle">
@@ -536,7 +538,7 @@
         <summary>Retorna ou define o grau de transparência de preenchimento especificado como um valor de 0,0 (opaco) a 1,0 (transparente).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>o valor dessa propriedade afeta a aparência dos preenchimentos sólidos coloridos e linhas somente; ele não tem efeito sobre a aparência das linhas padronizadas ou padronizada, gradiente, imagem ou preenchimento texturizado.</para>
+          <para>O valor dessa propriedade afeta a aparência somente das linhas e preenchimentos que usam cores sólidas; não afetando em nada a aparência das linhas ou preenchimentos padronizados, texturizados, ou que possuam imagem ou gradiente.</para>
           <para></para>
         </remarks>
       </Docs>

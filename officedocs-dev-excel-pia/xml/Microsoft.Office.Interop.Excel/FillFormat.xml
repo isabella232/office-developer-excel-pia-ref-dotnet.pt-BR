@@ -1,10 +1,10 @@
 <Type Name="FillFormat" FullName="Microsoft.Office.Interop.Excel.FillFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="08f56ae45c74cc43f24d342198fea9563bb00d90" />
+    <Meta Name="ms.openlocfilehash" Value="d51378ea225e992f908efc9e6730e1e261e2887c" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577270" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FillFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -30,10 +30,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa formatação de preenchimento para uma forma.</summary>
+    <summary>Representa a formatação de preenchimento de uma forma.</summary>
     <remarks>
-      <para>Uma forma pode ter um sólido, gradiente, textura, padrão, imagem ou semitransparente preenchimento.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Excel.Shape.Fill" /> propriedade para retornar um <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto.</para>
+      <para>Uma forma pode ter um preenchimento sólido, gradual, texturizado, padronizado, de figura ou semitransparente.</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.Shape.Fill" /> propriedade para retornar um <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto.</para>
       <para>Muitas das propriedades do <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto são somente leitura. Para definir uma dessas propriedades, você precisa aplicar o método correspondente.</para>
       <para></para>
     </remarks>
@@ -158,8 +158,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -222,8 +224,10 @@
         <summary>Obtém ou define o ângulo do preenchimento de gradiente para o formato de preenchimento especificado.</summary>
         <value>O ângulo do preenchimento de gradiente para o formato de preenchimento especificado.</value>
         <remarks>
-          <para>Leitura/gravação.</para> Preenchimento de gradiente 
-          <para>uma podem ser especificado na formatação de vários elementos (shapes) em um gráfico. Por exemplo, você pode usar a caixa de diálogo Formatar série de dados para formatar as colunas em um gráfico de coluna para um preenchimento de gradiente. Nesse caso, o <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.GradientAngle" /> propriedade corresponde à configuração da caixa Ângulo na categoria de preenchimento da caixa de diálogo Formatar série de dados. O intervalo válido de valores para o <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.GradientAngle" /> propriedade é de 0 a 359.9.</para><para></para></remarks>
+          <para>Leitura/gravação.</para>
+          <para>Um preenchimento de gradiente podem ser especificado na formatação de vários elementos (shapes) em um gráfico. Por exemplo, você pode usar a caixa de diálogo Formatar série de dados para formatar as colunas em um gráfico de coluna para um preenchimento de gradiente. Nesse caso, o <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.GradientAngle" /> propriedade corresponde à configuração da caixa Ângulo na categoria de preenchimento da caixa de diálogo Formatar série de dados. O intervalo válido de valores para o <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.GradientAngle" /> propriedade é de 0 a 359.9.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GradientColorType">
@@ -267,7 +271,7 @@
             <b>msoGradientTwoColors</b>
           </para>
           <para>
-            <b>MsoGradientColorMixed</b> é um o valor de retorno apenas que indica uma combinação dos outros estados no intervalo especificado. Use o <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />, <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />, ou <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> método para definir o tipo de gradiente para o preenchimento.</para>
+            <b>MsoGradientColorMixed</b> é um valor de retorno apenas que indica uma combinação dos outros estados no intervalo especificado. Use o <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />, <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />, ou <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> método para definir o tipo de gradiente para o preenchimento.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -297,7 +301,10 @@
       <Docs>
         <summary>Retorna o grau do gradiente do preenchimento sombreado uma cor especificado como um valor de ponto flutuante de 0,0 (escuro) a 1,0 (claro).</summary>
         <value>To be added.</value>
-        <remarks>Propriedade <para>o <b>GradiantDegree</b> é somente leitura. Use o <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> método para definir o grau do gradiente para o preenchimento.</para><para></para></remarks>
+        <remarks>
+          <para>A propriedade <b>GradiantDegree</b> é somente leitura. Use o <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> método para definir o grau do gradiente para o preenchimento.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GradientStops">
@@ -374,7 +381,7 @@
             <b>msoGradientFromTitle</b>
           </para>
           <para>
-            <b> msoGradientHorizontal</b>
+            <b>msoGradientHorizontal</b>
           </para>
           <para>
             <b>msoGradientMixed</b>
@@ -412,8 +419,8 @@
         <summary>Retorna a variação de sombreado para o preenchimento especificado como um valor inteiro de 1 a 4.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Os valores dessa propriedade correspondem às variações de gradiente (numeradas da esquerda para a direita e de cima para baixo) na guia gradiente na caixa de diálogo efeitos de preenchimento.</para>
-          <para>Essa propriedade é somente leitura. Use o <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> método para definir a variante de gradiente para o preenchimento.</para>
+          <para>Os valores dessa propriedade correspondem às variações de gradiente (numeradas da esquerda para a direita e de cima para baixo) na guia gradiente da caixa de diálogo Efeitos de preenchimento.</para>
+          <para>Esta propriedade é somente leitura. Use o <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> método para definir a variante de gradiente para o preenchimento.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -507,7 +514,7 @@
         <value>To be added.</value>
         <remarks>
           <para>A propriedade <b>Pattern</b> pode ser uma do <see cref="T:Microsoft.Office.Core.MsoPatternType" /> constantes.</para>
-          <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.Patterned(Microsoft.Office.Core.MsoPatternType)" /> método para definir o tipo de padrão para o preenchimento.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.Patterned(Microsoft.Office.Core.MsoPatternType)" /> método para definir o tipo de padrão para o preenchimento.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -566,8 +573,10 @@
         <summary>Obtém um objeto que representa o preenchimento com imagem ou de textura para o formato de preenchimento especificado.</summary>
         <value>Representa o preenchimento com imagem ou de textura para o formato de preenchimento especificado.</value>
         <remarks>
-          <para>Somente leitura.</para> Preenchimento com imagem ou textura 
-          <para>uma pode ser especificado na formatação de vários elementos (shapes) em um gráfico. Por exemplo, você pode usar a caixa de diálogo Formatar série de dados para formatar as colunas em um gráfico de coluna para um preenchimento com imagem ou textura. Nesse caso, o <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.PictureEffects" /> propriedade retornará uma <see cref="T:Microsoft.Office.Core.PictureEffects" /> coleção que corresponde às configurações associadas com a opção de preenchimento de textura ou imagem na categoria preenchimento da caixa de diálogo Formatar série de dados.</para><para></para></remarks>
+          <para>Somente leitura.</para>
+          <para>Um preenchimento com imagem ou textura pode ser especificado na formatação de vários elementos (shapes) em um gráfico. Por exemplo, você pode usar a caixa de diálogo Formatar série de dados para formatar as colunas em um gráfico de coluna para um preenchimento com imagem ou textura. Nesse caso, o <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.PictureEffects" /> propriedade retornará uma <see cref="T:Microsoft.Office.Core.PictureEffects" /> coleção que corresponde às configurações associadas com a opção de preenchimento de textura ou imagem na categoria preenchimento da caixa de diálogo Formatar série de dados.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PresetGradient">
@@ -630,7 +639,7 @@
         <value>To be added.</value>
         <remarks>
           <para>A propriedade <b>PresetGradiantType</b> pode ser uma do <see cref="T:Microsoft.Office.Core.MsoPresetGradientType" /> constantes.</para>
-          <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" /> método para definir o tipo de gradiente predefinido para o preenchimento.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" /> método para definir o tipo de gradiente predefinido para o preenchimento.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -662,7 +671,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Propriedade <b>PresetTexture</b> pode ser uma do <see cref="T:Microsoft.Office.Core.MsoPresetTexture" /> constantes.</para>
-          <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" /> método para definir a textura predefinida para o preenchimento.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" /> método para definir a textura predefinida para o preenchimento.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -726,7 +735,7 @@
         <remarks>
           <list type="table">
             <item>
-              <term>MsoTriState pode ser uma destas constantes <b>MsoTriState</b> .</term>
+              <term>MsoTriState pode ser uma destas constantes <b>MsoTriState</b>.</term>
             </item>
             <item>
               <term>
@@ -746,6 +755,11 @@
             <item>
               <term>
                 <see cref="F:Microsoft.Office.Core.MsoTriState.msoTriStateToggle" />
+              </term>
+            </item>
+            <item>
+              <term>
+                <see cref="F:Microsoft.Office.Core.MsoTriState.msoTrue" />
               </term>
             </item>
           </list>
@@ -776,7 +790,7 @@
       <Docs>
         <summary>Define o preenchimento especificado como uma cor uniforme.</summary>
         <remarks>
-          <para>Use esse método para converter um preenchimento gradiente, texturizado, padronizado ou plano de fundo em um preenchimento sólido.</para>
+          <para>Use este método para converter um preenchimento gradual, texturizado, padronizado ou de plano de fundo em um preenchimento sólido.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -873,7 +887,7 @@
         <summary>Retorna o nome do arquivo de textura personalizado do preenchimento especificado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Uso a <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserPicture(System.String)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserTextured(System.String)" /> método para definir o arquivo de textura para o preenchimento.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserPicture(System.String)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserTextured(System.String)" /> método para definir o arquivo de textura para o preenchimento.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -975,7 +989,7 @@
         <remarks>
           <list type="table">
             <item>
-              <term>MsoTriState pode ser uma destas constantes <b>MsoTriState</b> .</term>
+              <term>MsoTriState pode ser uma destas constantes <b>MsoTriState</b>.</term>
             </item>
             <item>
               <term>
@@ -995,6 +1009,11 @@
             <item>
               <term>
                 <see cref="F:Microsoft.Office.Core.MsoTriState.msoTriStateToggle" />
+              </term>
+            </item>
+            <item>
+              <term>
+                <see cref="F:Microsoft.Office.Core.MsoTriState.msoTrue" />
               </term>
             </item>
           </list>
@@ -1041,7 +1060,7 @@
           <para>
             <see cref="F:Microsoft.Office.Core.MsoTextureType.msoTextureUserDefined" />
           </para>
-          <para>uso o <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserTextured(System.String)" /> método para definir o tipo de textura para o preenchimento.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserTextured(System.String)" /> método para definir o tipo de textura para o preenchimento.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1108,7 +1127,7 @@
         <summary>Retorna ou define o grau de transparência de preenchimento especificado como um valor de 0,0 (opaco) a 1,0 (transparente).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>o valor dessa propriedade afeta a aparência dos preenchimentos sólidos coloridos e linhas somente; ele não tem efeito sobre a aparência das linhas padronizadas ou padronizada, gradiente, imagem ou preenchimento texturizado.</para>
+          <para>O valor dessa propriedade afeta a aparência somente das linhas e preenchimentos que usam cores sólidas; não afetando em nada a aparência das linhas ou preenchimentos padronizados, texturizados, ou que possuam imagem ou gradiente.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1171,7 +1190,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoFillType" /> pode ser uma das seguintes constantes:</para>
+            <see cref="T:Microsoft.Office.Core.MsoFillType" />pode ser uma das seguintes constantes:</para>
           <para>
             <b>msoFillGradient</b>
           </para>
@@ -1302,12 +1321,12 @@
             <b>msoTriStateMixed</b>
           </para>
           <para>
-            <b>msoTriStateToggle </b>
+            <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> o objeto está visível.</para>
-          <para>a propriedade <b>Visible</b> para um item de tabela dinâmica é <b>True</b> se o item estiver visível no momento na tabela.</para>
-          <para>Se você definir a propriedade <b>Visible</b> para um nome como <b>False</b>, o nome não aparecerá na caixa de diálogo Definir nome.</para>
+            <b>msoTrue</b> O objeto está visível.</para>
+          <para>A propriedade <b>Visible</b> para um item de tabela dinâmica será <b>True</b> quando o item estiver visível no momento na tabela.</para>
+          <para>Se você definir a propriedade <b>Visible</b> de um nome como <b>False</b>, o nome não aparecerá na caixa de diálogo Definir Nome.</para>
           <para></para>
         </remarks>
       </Docs>

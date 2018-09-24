@@ -1,10 +1,10 @@
 <Type Name="CalculatedFields" FullName="Microsoft.Office.Interop.Excel.CalculatedFields">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="322bea970ce4e1d5a0095eafdd21ad263f26ffe7" />
+    <Meta Name="ms.openlocfilehash" Value="551200c74cbef27982489b80758fa22c187b61fe" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572671" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CalculatedFields : System.Collections.IEnumerable" />
@@ -35,9 +35,9 @@
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objetos que representa todos os campos calculados no relatório de tabela dinâmica especificado.</summary>
     <remarks>
-      <para>Por exemplo, um relatório contendo campos Renda e Despesa poderia ter um campo calculado chamado "Lucro" e definido como a quantia do campo Renda menos a quantia do campo despesa.</para>
-      <para>Fontes de dados for OLAP, você não pode definir esta coleção e ela sempre retorna <b>Nothing</b>.</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CalculatedFields" /> método para retornar a coleção <b>CalculatedFields</b> .</para>
+      <para>Por exemplo, um relatório que contenha campos Renda e Despesa poderia ter um campo calculado chamado "Lucro" e definido como a quantia do campo Renda menos a quantia do campo despesa.</para>
+      <para>Não é possível definir essa coleção para fontes de dados OLAP; ela sempre retorna <b>Nothing</b>.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CalculatedFields" /> método para retornar a coleção <b>CalculatedFields</b> .</para>
       <para>Use <b>CalculatedFields</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome do campo especificado ou o número de índice, para retornar um único objeto <b>PivotField</b> da coleção <b>CalculatedFields</b> .</para>
       <para></para>
     </remarks>
@@ -229,8 +229,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

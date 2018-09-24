@@ -1,10 +1,10 @@
 <Type Name="Windows" FullName="Microsoft.Office.Interop.Excel.Windows">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4e22f5c32e648c50b21962a902607fb0d77f69c0" />
+    <Meta Name="ms.openlocfilehash" Value="216071def9d8f4a2c63cf628170e2d5fcd646a71" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574918" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
@@ -38,7 +38,7 @@
       <para>A coleção <b>Windows</b> retornada pelo <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto contém todas as janelas no aplicativo, enquanto a coleção <b>Windows</b> retornado pelo <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto contém somente as janelas na pasta de trabalho especificada.</para>
       <para>Use o método <b>NewWindow</b> de um objeto de <b>janela</b> ou <b>pasta de trabalho</b> para criar uma nova janela e adicioná-lo à coleção.</para>
       <para>Usar o <b>Windows</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome da janela ou número de índice, para retornar um único objeto <b>Window</b> .</para>
-      <para>Observe que a janela ativa é sempre Windows (1).</para>
+      <para>Observe que a janela ativa é sempre Windows(1).</para>
       <para></para>
     </remarks>
   </Docs>
@@ -255,8 +255,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -374,7 +376,10 @@
       <Parameters />
       <Docs>
         <summary>Redefine a posição de duas janelas da planilha que estejam sendo comparadas lado a lado.</summary>
-        <remarks>Método <para>usar o <b>ResetPositionsSideBySide</b> para redefinir a posição de duas planilhas que estejam sendo comparadas lado a lado. Por exemplo, se um usuário minimiza ou maximiza uma das duas janelas planilha comparadas, o método <b>ResetPositionsSideBySide</b> redefine a exibição para que as duas janelas sejam exibidas lado a lado novamente.</para><para></para></remarks>
+        <remarks>
+          <para>Use o método <b>ResetPositionsSideBySide</b> para redefinir a posição de duas planilhas que estejam sendo comparadas lado a lado. Por exemplo, se um usuário minimiza ou maximiza uma das duas janelas planilha comparadas, o método <b>ResetPositionsSideBySide</b> redefine a exibição para que as duas janelas sejam exibidas lado a lado novamente.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncScrollingSideBySide">

@@ -1,10 +1,10 @@
 <Type Name="ChartGroups" FullName="Microsoft.Office.Interop.Excel.ChartGroups">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ed49e202a12a761d2ea1f0fade680591aab69567" />
+    <Meta Name="ms.openlocfilehash" Value="d05b335ff2ac16ca069b154e14a4f4ac9e9eb27d" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582765" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartGroups : System.Collections.IEnumerable" />
@@ -35,8 +35,37 @@
   <Docs>
     <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> objetos no gráfico especificado.</summary>
     <remarks>
-      <para>Cada <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> objeto representa uma ou mais séries plotadas em um gráfico com o mesmo formato. Um gráfico contém um ou mais grupos de gráficos, cada grupo gráfico contém uma ou mais séries e cada sequência contém um ou mais pontos. Por exemplo, um único gráfico pode conter um grupo de gráficos de linha, que contém todas as séries plotadas com o formato de gráfico de linhas e um grupo de gráficos de barras, contendo todas as séries plotadas com o formato de gráfico de barras.</para> Uso de 
-      <para>o <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> método para retornar a coleção <b>ChartGroups</b> . Use <b>ChartGroups</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do grupo gráfico, para retornar um único objeto <b>ChartGroup</b> . Se o gráfico tiver sido ativado, você poderá usar <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />.</para><para>Como o número de índice para um determinado grupo gráfico pode ser alterado se o formato de gráfico usado para esse grupo for alterado, talvez seja mais fácil usar um dos métodos de atalho de grupo gráfico nomeados para retornar um determinado grupo gráfico. O <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> método retorna a coleção dos grupos de gráficos de pizza em um gráfico, o <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> método retorna a coleção de grupos de gráficos de linha e assim por diante. Cada um desses métodos pode ser usado com um número de índice para retornar um único objeto <b>ChartGroup</b> , ou sem um número de índice para retornar uma coleção <b>ChartGroups</b> . Os seguintes métodos de grupo gráfico estão disponíveis:</para><list type="bullet"><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" /> método</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" /> método</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" /> método</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" /> método</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> método</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> método</description></item></list><para></para></remarks>
+      <para>Cada <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> objeto representa uma ou mais séries plotadas em um gráfico com o mesmo formato. Um gráfico contém um ou mais grupos de gráficos, cada grupo gráfico contém uma ou mais séries e cada seqüência contém um ou mais pontos. Por exemplo, um único gráfico pode conter um grupo de gráficos de linha, que contém todas as séries plotadas com o formato de gráfico de linhas e um grupo de gráficos de barras, contendo todas as séries plotadas com o formato de gráfico de barras.</para>
+      <para>Use o <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> método para retornar a coleção <b>ChartGroups</b> . Use <b>ChartGroups</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do grupo gráfico, para retornar um único objeto <b>ChartGroup</b> . Se o gráfico tiver sido ativado, você poderá usar <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />.</para>
+      <para>Como o número de índice para um determinado grupo gráfico pode ser alterado se o formato de gráfico usado para esse grupo for alterado, talvez seja mais fácil usar um dos métodos de atalho de grupo gráfico nomeados para retornar um determinado grupo gráfico. O <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> método retorna a coleção dos grupos de gráficos de pizza em um gráfico, o <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> método retorna a coleção de grupos de gráficos de linha e assim por diante. Cada um desses métodos pode ser usado com um número de índice para retornar um único objeto <b>ChartGroup</b> , ou sem um número de índice para retornar uma coleção <b>ChartGroups</b> . Os seguintes métodos de grupo gráfico estão disponíveis:</para>
+      <list type="bullet">
+        <item>
+          <description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" />método</description>
+        </item>
+        <item>
+          <description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" />método</description>
+        </item>
+        <item>
+          <description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" />método</description>
+        </item>
+        <item>
+          <description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" />método</description>
+        </item>
+        <item>
+          <description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />método</description>
+        </item>
+        <item>
+          <description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />método</description>
+        </item>
+      </list>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -120,7 +149,10 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriedade <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

@@ -1,10 +1,10 @@
 <Type Name="IconSet" FullName="Microsoft.Office.Interop.Excel.IconSet">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="edd1f28ee8b5a4020748a5990476af31b8889717" />
+    <Meta Name="ms.openlocfilehash" Value="62eb85821f62dd352395cbd400597e9412efe980" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577557" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface IconSet : System.Collections.IEnumerable" />
@@ -36,11 +36,11 @@
     <summary>Representa um único conjunto de ícones que são usados na regra de formatação condicional de um conjunto de ícones.</summary>
     <remarks>
       <para>O objeto <b>IconSet</b> é um objeto filho do <see cref="T:Microsoft.Office.Interop.Excel.IconSets" /> conjunto.</para>
-      <para>No ícone definido para o formato condicional é atribuído usando o <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconSet" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> objeto. Você definir essa propriedade para um dos conjuntos de ícone interno, passando-se uma das seguintes constantes do <see cref="T:Microsoft.Office.Interop.Excel.XlIconSet" /> enumeração como um índice do <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> objeto. Consulte o exemplo para obter detalhes. </para>
+      <para>O ícone definido para o formato condicional é atribuído usando o <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconSet" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> objeto. Você definir essa propriedade para um dos conjuntos de ícone interno, passando-se uma das seguintes constantes do <see cref="T:Microsoft.Office.Interop.Excel.XlIconSet" /> enumeração como um índice do <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> objeto. Consulte o exemplo para obter detalhes. </para>
       <para></para>
     </remarks>
     <example>
-      <para>O exemplo de código a seguir cria um intervalo de números que representam as pontuações de teste e aplica uma regra de formatação condicional do conjunto de ícones para aquele intervalo. O tipo de conjunto de ícones, em seguida, é alterado de ícones padrão para um conjunto de ícones de seta 5. Finalmente, o tipo de limite é modificado de percentil para um número codificadas.</para>
+      <para>O exemplo de código a seguir cria um intervalo de números que representam pontuações de teste e aplicam uma regra de formatação condicional do conjunto de ícones ao intervalo. O tipo de conjunto de ícones é alterado dos ícones padrão para um conjunto de ícones de 5 setas. Finalmente, o tipo de limite é modificado do percentil para um número embutido em código.</para>
       <code>&lt;span class="label"&gt;Sub CreateIconSetCF()  
 
 
@@ -14699,7 +14699,7 @@ End Sub&lt;/span&gt;</code>
         <value>
           <b>Aplicativo</b> (consulte acima)</value>
         <remarks>
-          <para>Você pode usar essa propriedade com um objeto de automação OLE para retornar o aplicativo desse objeto.</para>
+          <para>Você pode usar essa propriedade com um objeto de Automação OLE para retornar o aplicativo desse objeto.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -14860,7 +14860,10 @@ End Sub&lt;/span&gt;</code>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Icon" />
         </value>
-        <remarks>O valor de <para>do <paramref name="Index" /> parâmetro não pode ser maior que o número de ícones em um conjunto de ícones. Para localizar o número total de ícones de um conjunto de ícones, use o <see cref="P:Microsoft.Office.Interop.Excel.IconSet.Count" /> propriedade.</para><para></para></remarks>
+        <remarks>
+          <para>O valor do <paramref name="Index" /> parâmetro não pode ser maior que o número de ícones em um conjunto de ícones. Para localizar o número total de ícones de um conjunto de ícones, use o <see cref="P:Microsoft.Office.Interop.Excel.IconSet.Count" /> propriedade.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

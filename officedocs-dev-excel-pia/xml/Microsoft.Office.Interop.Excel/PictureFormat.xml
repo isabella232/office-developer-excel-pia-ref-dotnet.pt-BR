@@ -1,10 +1,10 @@
 <Type Name="PictureFormat" FullName="Microsoft.Office.Interop.Excel.PictureFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="544844d3abf31303982b0f353a2d5d38252de5ca" />
+    <Meta Name="ms.openlocfilehash" Value="87aeae7792de72516fdcdfd36f8f7269365bfbb4" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576227" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PictureFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -33,7 +33,7 @@
     <summary>Contém propriedades e métodos que se aplicam a figuras e objetos OLE.</summary>
     <remarks>
       <para>O <see cref="T:Microsoft.Office.Interop.Excel.LinkFormat" /> objeto contém propriedades e métodos que se aplicam a objetos OLE vinculados somente. O <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> objeto contém propriedades e métodos que se aplicam a objetos OLE, estejam vinculados ou não.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Excel.Shape.PictureFormat" /> propriedade para retornar um objeto <b>PictureFormat</b> .</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.Shape.PictureFormat" /> propriedade para retornar um objeto <b>PictureFormat</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -191,8 +191,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Crop">
@@ -255,7 +257,7 @@
         <summary>Retorna ou define o número de pontos cortados da parte inferior da imagem ou do objeto OLE especificado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você inserir uma imagem que é originalmente 100 pontos de altura, redimensioná-la para que tenha 200 pontos de altura e, em seguida, defina a propriedade <b>CropBottom</b> como 50, 100 pontos (e não 50) será cortada da parte inferior da sua imagem.</para>
+          <para>O corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você inserir uma imagem que originalmente possui 100 pontos de altura, redimensioná-la para que tenha 200 pontos de altura e, em seguida, definir a propriedade <b>CropBottom</b> como 50, 100 pontos (e não 50) serão cortados da parte inferior de sua imagem.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -289,7 +291,7 @@
         <summary>Retorna ou define o número de pontos que são cortadas do lado esquerdo da imagem especificada ou objeto OLE.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você inserir uma imagem que é originalmente 100 pontos de largura, redimensioná-la para que tenha 200 pontos de largura e, em seguida, defina a propriedade <b>CropLeft</b> como 50, 100 pontos (e não 50) será cortada do lado esquerdo da sua imagem.</para>
+          <para>O corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você inserir uma imagem que originalmente tenha 100 pontos de largura, redimensioná-la para que ela tenha 200 pontos de largura e, em seguida, definir a propriedade <b>CropLeft</b> como 50, 100 pontos (e não 50) serão cortados do lado esquerdo de sua imagem.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -323,7 +325,7 @@
         <summary>Retorna ou define o número de pontos que são cortadas do lado direito da imagem especificada ou objeto OLE.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você inserir uma imagem que é originalmente 100 pontos de largura, redimensioná-la para que tenha 200 pontos de largura e, em seguida, defina a propriedade <b>CropRight</b> como 50, 100 pontos (e não 50) será cortada do lado direito da sua imagem.</para>
+          <para>O corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você inserir uma imagem que originalmente tenha 100 pontos de largura, redimensioná-la para que ela tenha 200 pontos de largura e, em seguida, definir a propriedade <b>CropRight</b> como 50, 100 pontos (e não 50) serão cortados do lado direito de sua imagem.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -357,7 +359,7 @@
         <summary>Retorna ou define o número de pontos que são cortadas da parte superior da imagem especificada ou objeto OLE.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você inserir uma imagem que é originalmente 100 pontos de altura, redimensioná-la para que tenha 200 pontos de altura e, em seguida, defina a propriedade <b>CropTop</b> para 50, 100 pontos (e não 50) será cortada da parte superior da sua imagem.</para>
+          <para>O corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você inserir uma imagem que originalmente possui 100 pontos de altura, redimensioná-la para que tenha 200 pontos de altura e definir a propriedade <b>CropTop</b> como 50, serão cortados 100 pontos (e não 50) da parte superior da sua imagem.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -389,8 +391,10 @@
           <b>Single</b>obrigatório. Especifica o quanto para alterar o valor do <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.Brightness" /> propriedade da imagem. Um valor positivo torna a figura mais brilhante; um valor negativo torna a imagem mais escura.</param>
         <summary>Altera o brilho da figura pelo valor especificado.</summary>
         <remarks>
-          <para>Use a propriedade <b>Brightness</b> para definir o brilho absoluto da imagem.</para> Você não pode ajustar o brilho de uma figura além do limite superior ou inferior para a propriedade <b>Brightness</b> de 
-          <para>. Por exemplo, se a propriedade <b>Brightness</b> é inicialmente definida como 0,9 e você especificar 0,3 para o <paramref name="Increment" /> argumento, o nível de brilho resultante será 1,0, que é o limite superior para a propriedade <b>Brightness</b> , em vez de 1,2.</para><para></para></remarks>
+          <para>Use a propriedade <b>Brightness</b> para definir o brilho absoluto da imagem.</para>
+          <para>Você não pode ajustar o brilho de uma figura além do limite superior ou inferior para a propriedade <b>Brightness</b>. Por exemplo, se a propriedade <b>Brightness</b> é inicialmente definida como 0,9 e você especificar 0,3 para o <paramref name="Increment" /> argumento, o nível de brilho resultante será 1,0, que é o limite superior para a propriedade <b>Brightness</b> , em vez de 1,2.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementContrast">
@@ -421,7 +425,7 @@
         <summary>Altera o contraste da figura pelo valor especificado.</summary>
         <remarks>
           <para>Use a propriedade <b>Contrast</b> para definir o contraste absoluto da imagem.</para>
-          <para>Não será possível ajustar o contraste de uma imagem além do limite superior ou inferior para a propriedade <b>Contrast</b> . Por exemplo, se a propriedade <b>Contrast</b> é inicialmente definida como 0,9 e você especificar 0,3 para o <paramref name="Increment" /> argumento, o nível de contraste resultante será 1,0, que é o limite superior para a propriedade <b>Contrast</b> , em vez de 1,2.</para>
+          <para>Você não pode ajustar o contraste de uma imagem além do limite superior ou inferior para a propriedade <b>Contrast</b>. Por exemplo, se a propriedade <b>Contrast</b> é inicialmente definida como 0,9 e você especificar 0,3 para o <paramref name="Increment" /> argumento, o nível de contraste resultante será 1,0, que é o limite superior para a propriedade <b>Contrast</b> , em vez de 1,2.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -487,7 +491,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Para essa propriedade tenha efeito, a <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.TransparentBackground" /> propriedade deve ser definida como <b>True</b>.</para>
-          <para>Se você quiser poderão ver através das partes transparentes da imagem totalmente para os objetos por trás da figura, você deve definir o <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.Visible" /> propriedade da imagem <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto como <b>False</b>. Se sua imagem tiver uma cor transparente e a propriedade <b>Visible</b> do objeto <b>FillFormat</b> da figura é definida como <b>True</b>, o preenchimento da figura será visível através da cor transparente, mas os objetos por trás da figura ficarão obscurecidos.</para>
+          <para>Se você quiser poderão ver através das partes transparentes da imagem totalmente para os objetos por trás da figura, você deve definir o <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.Visible" /> propriedade da imagem <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto como <b>False</b>. Se sua imagem tiver uma cor transparente e a propriedade <b>Visible</b> do objeto <b>FillFormat</b> da figura estiver definida como <b>True</b>, o preenchimento da figura será visível através da cor transparente, mas os objetos por trás da figura ficarão obscurecidos.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -522,7 +526,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.TransparencyColor" /> propriedade para definir a cor transparente. Aplica-se somente a bitmaps.</para>
-          <para>Se você quiser poderão ver através das partes transparentes da imagem totalmente para os objetos por trás da figura, você deve definir o <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.Visible" /> propriedade da imagem <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto como <b>False</b>. Se sua imagem tiver uma cor transparente e a propriedade <b>Visible</b> do objeto <b>FillFormat</b> da figura é definida como <b>True</b>, o preenchimento da figura será visível através da cor transparente, mas os objetos por trás da figura ficarão obscurecidos.</para>
+          <para>Se você quiser poderão ver através das partes transparentes da imagem totalmente para os objetos por trás da figura, você deve definir o <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.Visible" /> propriedade da imagem <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto como <b>False</b>. Se sua imagem tiver uma cor transparente e a propriedade <b>Visible</b> do objeto <b>FillFormat</b> da figura estiver definida como <b>True</b>, o preenchimento da figura será visível através da cor transparente, mas os objetos por trás da figura ficarão obscurecidos.</para>
           <para></para>
         </remarks>
       </Docs>

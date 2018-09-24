@@ -1,10 +1,10 @@
 <Type Name="SeriesCollection" FullName="Microsoft.Office.Interop.Excel.SeriesCollection">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d44d6dd2808248a2c1a9c306f871ed35d2124273" />
+    <Meta Name="ms.openlocfilehash" Value="9b503045ebef3ddb75466923708250f026284484" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578964" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SeriesCollection : System.Collections.IEnumerable" />
@@ -36,8 +36,8 @@
     <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.Series" /> objetos no gráfico especificado ou grupo de gráficos.</summary>
     <remarks>
       <para>Use o <see cref="M:Microsoft.Office.Interop.Excel._Chart.SeriesCollection(System.Object)" /> método para retornar a coleção <b>SeriesCollection</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel.SeriesCollection.Add(System.Object,Microsoft.Office.Interop.Excel.XlRowCol,System.Object,System.Object,System.Object)" /> método para criar uma nova série e adicioná-lo ao gráfico.</para>
-      <para>Uso <b>SeriesCollection</b>(<paramref name="index" />), onde índice é o número de índice da série ou o nome, para retornar um único objeto <b>Series</b> .</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.SeriesCollection.Add(System.Object,Microsoft.Office.Interop.Excel.XlRowCol,System.Object,System.Object,System.Object)" /> método para criar uma nova série e adicioná-lo ao gráfico.</para>
+      <para>Use <b>SeriesCollection</b>(<paramref name="index" />), onde índice é o número de índice da série ou o nome, para retornar um único objeto <b>Series</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -112,7 +112,7 @@
         <summary>Adiciona uma ou mais séries novas para o <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> conjunto.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Esse método não está disponível para relatórios de gráfico dinâmico.</para>
+          <para>Este método não está disponível para relatórios de gráfico dinâmico.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -199,8 +199,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Extend">
@@ -236,7 +238,7 @@
         <summary>Adiciona novos pontos de dados a uma coleção de séries existente.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Esse método não está disponível para relatórios de gráfico dinâmico.</para>
+          <para>Este método não está disponível para relatórios de gráfico dinâmico.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -327,7 +329,7 @@
         <summary>Cria uma nova série. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Series" /> object que representa a nova série.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Esse método não está disponível para relatórios de gráfico dinâmico.</para>
+          <para>Este método não está disponível para relatórios do gráfico dinâmico.</para>
           <para></para>
         </remarks>
       </Docs>

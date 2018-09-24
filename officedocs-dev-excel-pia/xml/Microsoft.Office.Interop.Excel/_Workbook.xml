@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575044" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _Workbook" />
@@ -339,51 +339,51 @@
           <list type="table">
             <item>
               <term>0</term>
-              <description>use os algoritmos mais recentes e mais precisos (padrão)</description>
+              <description>Usa os algoritmos mais recentes e mais precisos (padrão)</description>
             </item>
             <item>
               <term>1</term>
-              <description>os algoritmos de versão anteriores ou usar o Microsoft Office Excel 2007</description>
+              <description>Use os algoritmos de versão anteriores ou Microsoft Office Excel 2007</description>
             </item>
             <item>
               <term>2</term>
-              <description>algoritmos de usar o Microsoft Excel 2010</description>
+              <description>Usa algoritmos do Microsoft Excel 2010</description>
             </item>
           </list>
           <para>
             <b>Cuidado</b>: configuração do <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> propriedade como um valor diferente de 0, 1 ou 2 resultará em um comportamento indefinido.</para>
-          <para>a seguinte tabela resume quais funções são afetadas pela definição do <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> propriedade como 1. As funções que estão listadas na coluna "Funções não afetaram" sempre usarão os algoritmos mais recentes de precisão ou não foram alteradas no Excel 2010. Para nomes de função que incluem um ponto (.) em seus nomes determinar o nome da função correspondente implementadas no VBA como um método do <see cref="T:Microsoft.Office.Interop.Excel.WorksheetFunction" /> do objeto, substitua o caractere de sublinhado (_) para o período. Por exemplo, o método VBA que corresponde à versão BETA. Função DIST é o <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Beta_Dist(System.Double,System.Double,System.Double,System.Boolean,System.Object,System.Object)" /> método.</para>
+          <para>A tabela a seguir resume quais funções são afetadas pela definição do <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> propriedade como 1. As funções que estão listadas na coluna "Funções não afetaram" sempre usarão os algoritmos mais recentes de precisão ou não foram alteradas no Excel 2010. Para nomes de função que incluem um ponto (.) em seus nomes determinar o nome da função correspondente implementadas no VBA como um método do <see cref="T:Microsoft.Office.Interop.Excel.WorksheetFunction" /> do objeto, substitua o caractere de sublinhado (_) para o período. Por exemplo, o método VBA que corresponde à versão BETA. Função DIST é o <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Beta_Dist(System.Double,System.Double,System.Double,System.Boolean,System.Object,System.Object)" /> método.</para>
           <list type="table">
             <item>
-              <description>AGREGADAS</description>
-              <term>DISTBETA</term>
+              <term>DIST.BETA</term>
+              <description>AGREGAR</description>
             </item>
             <item>
-              <term>BETAINV</term>
-              <description>BETA. DIST</description>
+              <term>BETA.ACUM.INV</term>
+              <description>Beta. DIST</description>
             </item>
             <item>
               <term>DISTRBINOM</term>
-              <description>BETA. INV</description>
+              <description>Beta. INV</description>
             </item>
             <item>
-              <term>CHIDIST</term>
+              <term>DIST.QUI</term>
               <description>BINOM. DIST</description>
             </item>
             <item>
-              <term>Inv</term>
+              <term>INV.QUI</term>
               <description>BINOM. INV</description>
             </item>
             <item>
-              <term>CHITEST</term>
-              <description>CEILING</description>
+              <term>TESTE.QUI</term>
+              <description>TETO</description>
             </item>
             <item>
-              <term>confiança</term>
-              <description>teto. PRECISO</description>
+              <term>INT.CONFIANÇA</term>
+              <description>TETO. PRECISAS</description>
             </item>
             <item>
-              <term>crit</term>
+              <term>CRIT.BINOM</term>
               <description>CHISQ. DIST</description>
             </item>
             <item>
@@ -395,20 +395,20 @@
               <description>CHISQ. INV</description>
             </item>
             <item>
-              <term>Funerro</term>
+              <term>FUNERRO</term>
               <description>CHISQ. FATURA RT</description>
             </item>
             <item>
-              <term>Funerrocompl</term>
+              <term>FUNERROCOMPL</term>
               <description>CHISQ. TESTE</description>
             </item>
             <item>
               <term>DISTEXPON</term>
-              <description>confiança. NORM</description>
+              <description>CONFIANÇA. NORM</description>
             </item>
             <item>
               <term>DISTF</term>
-              <description>confiança. T</description>
+              <description>CONFIANÇA. T</description>
             </item>
             <item>
               <term>INVF</term>
@@ -424,14 +424,14 @@
             </item>
             <item>
               <term>LNGAMA</term>
-              <description>Funerro. PRECISO</description>
+              <description>FUNERRO. PRECISAS</description>
             </item>
             <item>
-              <term>GAMMINV</term>
-              <description>ERFC. PRECISO</description>
+              <term>INVGAMA</term>
+              <description>ERFC. PRECISAS</description>
             </item>
             <item>
-              <term>DIST. HIPERGEOM</term>
+              <term>DIST.HIPERGEOM</term>
               <description>EXPON. DIST</description>
             </item>
             <item>
@@ -443,51 +443,51 @@
               <description>DIST. RT</description>
             </item>
             <item>
-              <term>INVLOG</term>
+              <term>NVLOG</term>
               <description>F.INV</description>
             </item>
             <item>
-              <term>DIST. lognormal</term>
+              <term>DIST.LOGNORMAL</term>
               <description>F.INV. RT</description>
             </item>
             <item>
-              <term>DIST.bin.NEG</term>
+              <term>DIST.BIN.NEG</term>
               <description>F.TEST</description>
             </item>
             <item>
-              <term>DIST. NORM</term>
-              <description>FLOOR</description>
+              <term>DIST.NORM</term>
+              <description>ARREDMULTB</description>
             </item>
             <item>
-              <term>Inv. NORM</term>
-              <description>FLOOR. PRECISO</description>
+              <term>NV.NORM</term>
+              <description>FLOOR. PRECISAS</description>
             </item>
             <item>
-              <term>DIST</term>
-              <description>gama. DIST</description>
+              <term>DIST.NORMP</term>
+              <description>GAMA. DIST</description>
             </item>
             <item>
-              <term>NORMSINV</term>
-              <description>gama. INV</description>
+              <term>INV.NORMP</term>
+              <description>GAMA. INV</description>
             </item>
             <item>
               <term>PGTO</term>
-              <description>LNGAMA. PRECISO</description>
+              <description>LNGAMA. PRECISAS</description>
             </item>
             <item>
               <term>POISSON</term>
               <description>HYPGEOM. DIST</description>
             </item>
             <item>
-              <term>PPgto</term>
+              <term>PPGTO</term>
               <description>ISO. TETO</description>
             </item>
             <item>
-              <term>STDEV</term>
+              <term>DESVPAD</term>
               <description>LOGNORM. DIST</description>
             </item>
             <item>
-              <term>STDEVP</term>
+              <term>DESVPADP</term>
               <description>LOGNORM. INV</description>
             </item>
             <item>
@@ -496,15 +496,15 @@
             </item>
             <item>
               <term>INVT</term>
-              <description>modo</description>
+              <description>MODO</description>
             </item>
             <item>
               <term>TESTET</term>
-              <description>modo. MULT</description>
+              <description>MODO. MULT</description>
             </item>
             <item>
               <term>VAR</term>
-              <description>modo. SNGL</description>
+              <description>MODO. SNGL</description>
             </item>
             <item>
               <term>VARA</term>
@@ -512,7 +512,7 @@
             </item>
             <item>
               <term>VARP</term>
-              <description>DIATRABALHOTOTAL. Internacional</description>
+              <description>DIATRABALHOTOTAL. INTERNACIONAL</description>
             </item>
             <item>
               <term>VARPA</term>
@@ -531,94 +531,124 @@
               <description>NORM. S.INV</description>
             </item>
             <item>
-              <term />percentil
+              <term />
+              <description>PERCENTIL</description>
             </item>
             <item>
-              <term />percentil. EXC
+              <term />
+              <description>PERCENTIL. EXC</description>
             </item>
             <item>
-              <term />percentil. INC
+              <term />
+              <description>PERCENTIL. INC</description>
             </item>
             <item>
-              <term />PERCENTRANK
+              <term />
+              <description>ORDEM.PORCENTUAL</description>
             </item>
             <item>
-              <term />porcentual. EXC
+              <term />
+              <description>PORCENTUAL. EXC</description>
             </item>
             <item>
-              <term />porcentual. INC
+              <term />
+              <description>PORCENTUAL. INC</description>
             </item>
             <item>
-              <term />POISSON. DIST
+              <term />
+              <description>POISSON. DIST</description>
             </item>
             <item>
-              <term />quartil
+              <term />
+              <description>QUARTIL</description>
             </item>
             <item>
-              <term />quartil. EXC
+              <term />
+              <description>QUARTIL. EXC</description>
             </item>
             <item>
-              <term />quartil. INC
+              <term />
+              <description>QUARTIL. INC</description>
             </item>
             <item>
-              <term />classificação
+              <term />
+              <description>ORDEM</description>
             </item>
             <item>
-              <term />classificação. AVG
+              <term />
+              <description>CLASSIFICAÇÃO. AVG</description>
             </item>
             <item>
-              <term />classificação. EQ
+              <term />
+              <description>CLASSIFICAÇÃO. EQ</description>
             </item>
             <item>
-              <term />Desv. P
+              <term />
+              <description>DESV. P</description>
             </item>
             <item>
-              <term />Desv. S
+              <term />
+              <description>DESV. S</description>
             </item>
             <item>
-              <term />T.DIST
+              <term />
+              <description>T.DIST</description>
             </item>
             <item>
-              <term />T.DIST.2T
+              <term />
+              <description>T.DIST.2T</description>
             </item>
             <item>
-              <term />T.DIST. RT
+              <term />
+              <description>T.DIST. RT</description>
             </item>
             <item>
-              <term />T.DIST. RT
+              <term />
+              <description>T.DIST. RT</description>
             </item>
             <item>
-              <term />T.INV
+              <term />
+              <description>T.INV</description>
             </item>
             <item>
-              <term />T.INV.2T
+              <term />
+              <description>T.INV.2T</description>
             </item>
             <item>
-              <term />T.INV. RT
+              <term />
+              <description>T.INV. RT</description>
             </item>
             <item>
-              <term />T.TEST
+              <term />
+              <description>T.TEST</description>
             </item>
             <item>
-              <term />VAR. P
+              <term />
+              <description>VAR. P</description>
             </item>
             <item>
-              <term />VAR. S
+              <term />
+              <description>VAR. S</description>
             </item>
             <item>
-              <term />WEEKDAY
+              <term />
+              <description>DIA.DA.SEMANA</description>
             </item>
             <item>
-              <term />NÚMSEMANA
+              <term />
+              <description>NÚMSEMANA</description>
             </item>
             <item>
-              <term />WEIBULL. DIST
+              <term />
+              <description>WEIBULL. DIST</description>
             </item>
             <item>
-              <term />dia de trabalho. Internacional
+              <term />
+              <description>DIA DE TRABALHO. INTERNACIONAL</description>
             </item>
             <item>
-              <term />Z.TEST
+              <term />
+              <description>Z.TEST</description>
             </item>
           </list>
           <para></para>
@@ -679,7 +709,7 @@
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> object que representa o gráfico ativo (um gráfico incorporado ou uma planilha de gráfico). Um gráfico incorporado é considerado ativo quando ele está selecionado ou ativado. Quando nenhum gráfico está ativo, essa propriedade retornará <b>Nothing</b>. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se você não especificar um qualificador de objeto, essa propriedade retornará o gráfico ativo na pasta de trabalho ativa.</para>
+          <para>Se você não especificar um qualificador de objeto, essa propriedade retornará o gráfico ativo da pasta de trabalho ativa.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -710,7 +740,7 @@
         <summary>Retorna um objeto que representa a planilha ativa (a planilha na parte superior) na pasta de trabalho ativa ou na janela especificada ou pasta de trabalho. Retorna <b>Nothing</b> se não planilha ativa. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se você não especificar um qualificador de objeto, essa propriedade retornará a planilha ativa na pasta de trabalho ativa.</para>
+          <para>Se você não especificar um qualificador de objeto, esta propriedade retornará a planilha ativa na pasta de trabalho ativa.</para>
           <para>Se uma pasta de trabalho aparecer em mais de uma janela, o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" /> propriedade poderá ser diferente em janelas diferentes.</para>
           <para></para>
         </remarks>
@@ -920,7 +950,7 @@
         <summary>Retorna ou define o número de minutos entre as atualizações automáticas para a pasta de trabalho compartilhada. <b>Integer</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>a propriedade <b>AutoUpdateFrequency</b> precisa ser definida como um valor de 5 a 1.440 para essa propriedade entrem em vigor.</para>
+          <para>A propriedade <b>AutoUpdateFrequency</b> deve ser definida como um valor de 5 a 1.440 para essa propriedade tenha efeito.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -955,7 +985,7 @@
           <b>True</b> se as alterações atuais na pasta de trabalho compartilhada forem publicadas para outros usuários sempre que a pasta de trabalho for atualizada automaticamente. <b>False</b> se as alterações não forem publicadas (esta pasta de trabalho ainda estará sincronizada com as alterações feitas por outros usuários). O valor padrão é <b>True</b>. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AutoUpdateFrequency" /> propriedade deve ser definida como um valor de 5 a 1.440 para essa propriedade entrem em vigor.</para>
+          <para>O <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AutoUpdateFrequency" /> propriedade deve ser definida como um valor de 5 a 1.440 para essa propriedade tenha efeito.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1018,38 +1048,42 @@
         <value>To be added.</value>
         <remarks>
           <para>Essa propriedade retorna toda a coleção de propriedades internas do documento. Use o <see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" /> método para retornar um único membro da coleção (um <see cref="T:Microsoft.Office.Core.DocumentProperty" /> objeto), especificando o nome da propriedade ou o índice da coleção (como um número).</para>
-          <para>Você pode consultar às propriedades do documento pelo valor de índice ou pelo nome. A lista a seguir mostra a internas do documento disponíveis nomes de propriedade:</para>
-          <para>assunto</para>
-          <para>autor</para>
-          <para>palavras-chave</para>
-          <para>comentários</para>
-          <para>modelo</para>
-          <para>Último autor</para>
-          <para>título </para>
-          <para>Número de revisão</para>
-          <para> Nome do aplicativo</para>
-          <para>Data da última impressão</para>
+          <para>Você pode referir-se às propriedades do documento por um valor de índice ou por nome. A lista a seguir mostra os nomes das propriedades internas do documento disponíveis:</para>
+          <para>Title </para>
+          <para>Subject</para>
+          <para>Autor</para>
+          <para>Keywords</para>
+          <para>Comentários</para>
+          <para>Template</para>
+          <para>Last Author</para>
+          <para>Revision Number</para>
+          <para>Nome do Aplicativo</para>
+          <para>Last Print Date</para>
           <para>Creation Date </para>
-          <para>última economizar tempo</para>
-          <para>Tempo Total de edição</para>
-          <para>número de páginas</para>
-          <para>número de palavras de</para>
-          <para>número de caracteres</para>
-          <para>segurança</para>
-          <para> Categoria</para>
+          <para>Last Save Time</para>
+          <para>Total Editing Time</para>
+          <para>Número de Páginas</para>
+          <para>Número de Palavras</para>
+          <para>Número de Caracteres</para>
+          <para>Security</para>
+          <para>Category</para>
+          <para>Formatar</para>
           <para>Manager</para>
-          <para>empresa</para>
-          <para>número de Bytes</para>
-          <para>número de linhas de</para>
-          <para>número de parágrafos</para>
-          <para>número de Slides</para>
-          <para>número de anotações</para>
-          <para>formato</para>
-          <para>número de Slides ocultos</para>
-          <para>Número de multimídia recorta</para>
+          <para>Empresa</para>
+          <para>Número de Bytes</para>
+          <para>Número de Linhas</para>
+          <para>Número de Parágrafos</para>
+          <para>Número de Slides</para>
+          <para>Número de Anotações</para>
+          <para>Número de Slides Ocultos</para>
+          <para>Número de Clipes Multimídia</para>
           <para>Base do hiperlink</para>
-          <para>Número de caracteres (com espaços)</para> Aplicativos de contêiner 
-          <para>não são necessários para definir valores para cada propriedade de documento interna. Se o Microsoft Excel não definir um valor para uma das propriedades internas do documento, lendo o <see cref="P:Microsoft.Office.Core.DocumentProperty.Value" /> propriedade dessa propriedade de documento causará um erro.</para><para>o método <b>Item</b> é o método padrão para a coleção <b>DocumentProperties</b> .</para><para>Uso o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.CustomDocumentProperties" /> propriedade para retornar a coleção das propriedades personalizadas de documento.</para><para></para></remarks>
+          <para>Número de caracteres (com espaços)</para>
+          <para>Aplicativos de contêiner não são necessários para definir valores para cada propriedade de documento interna. Se o Microsoft Excel não definir um valor para uma das propriedades internas do documento, lendo o <see cref="P:Microsoft.Office.Core.DocumentProperty.Value" /> propriedade dessa propriedade de documento causará um erro.</para>
+          <para>O método <b>Item</b> é o método padrão para a coleção <b>DocumentProperties</b> .</para>
+          <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.CustomDocumentProperties" /> propriedade para retornar a coleção das propriedades personalizadas de documento.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CalculationVersion">
@@ -1078,7 +1112,7 @@
         <summary>Retorna um número cujos quatro dígitos da direita constituem o número de versão do mecanismo de cálculo secundário e cujos outros dígitos (à esquerda) constituem a versão principal do Microsoft Excel. Para uma <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> de objeto, essa propriedade retorna as informações sobre a versão do Excel que a pasta de trabalho foi totalmente recalculada pela última vez. <b>Integer</b> somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se a pasta de trabalho foi salva em uma versão anterior do Excel, e se a pasta de trabalho não tiver sido recalculada, esta propriedade retornará 0.</para>
+          <para>Se a pasta de trabalho foi salva em uma versão anterior do Excel, e se a pasta de trabalho não tiver sido recalculada, essa propriedade retornará 0.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1173,7 +1207,7 @@
           <b>Objeto</b>de opcional. <b>True</b> (ou omitido) para notificar o usuário se o arquivo não puder ser acessado imediatamente.</param>
         <summary>Altera as permissões de acesso para a pasta de trabalho. Isso pode exigir que uma versão atualizada seja carregada do disco.</summary>
         <remarks>
-          <para>Se você tiver um arquivo abrir no modo somente leitura, você não tem acesso exclusivo ao arquivo. Se você alterar um arquivo de somente leitura para leitura/gravação, o Microsoft Excel deve carregar uma nova cópia do arquivo para garantir que nenhuma alteração foi feita enquanto o arquivo estava aberto como somente leitura.</para>
+          <para>Se houver um arquivo aberto em modo somente leitura, você não terá acesso exclusivo a ele. Se você alterar um arquivo de somente leitura para leitura/gravação, o Microsoft Excel precisará carregar uma nova cópia do arquivo para assegurar que nenhuma alteração tenha sido feita enquanto o arquivo estava aberto como somente leitura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1207,7 +1241,7 @@
         <summary>Retorna ou define o número de dias mostrado no histórico de alterações da pasta de trabalho compartilhada. <b>Integer</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Quaisquer alterações no histórico de alterações mais antigo do que a configuração dessa propriedade serão removidas quando a pasta de trabalho está fechada.</para>
+          <para>Quaisquer alterações no histórico de alterações que sejam mais antigas que a definição dessa propriedade serão removidas quando a pasta de trabalho for fechada.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1306,7 +1340,7 @@
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> coleção que representa todas as planilhas de gráfico na pasta de trabalho especificada. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Uso desta propriedade sem um qualificador de objeto retorna todas as planilhas na pasta de trabalho ativa de gráfico.</para>
+          <para>O uso desta propriedade sem um qualificador de objeto retorna todas as planilhas de gráfico na pasta de trabalho ativa.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1412,7 +1446,7 @@
         <summary>Salva uma pasta de trabalho de um computador local em um servidor e define a pasta de trabalho local como somente leitura para impedir que ela seja editada localmente.</summary>
         <remarks>
           <para>Definindo o <paramref name="MakePublic" /> parâmetro como <b>true</b> envia a pasta de trabalho para o processo de aprovação, que pode resultar em uma versão da pasta de trabalho que está sendo publicada para usuários com direitos de somente leitura à pasta de trabalho (aplicável somente se <paramref name="SaveChanges" /> estiver definida como true <b></b>). </para>
-          <para>Para se beneficiar dos recursos de colaboração incorporados ao Microsoft Excel, os documentos precisam ser armazenados em um Microsoft SharePoint Server.</para>
+          <para>Para aproveitar os recursos de colaboração internos do Microsoft Excel, os documentos devem ser armazenados em um Microsoft SharePoint Server.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1483,8 +1517,8 @@
         <summary>Retorna o nome de código para o objeto. <b>String</b> somente leitura. O valor que você vê na célula à direita do <b>(Name)</b> na janela Propriedades é o nome de código do objeto selecionado. Em tempo de design, você pode alterar o nome de código de um objeto alterando este valor. Programaticamente, você não pode alterar essa propriedade em tempo de execução.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>o nome de código para um objeto pode ser usado no lugar de uma expressão que retorna o objeto.</para>
-          <para>, É possível que o nome da planilha seja diferente do nome de código. Quando você cria uma planilha, o nome da planilha e o nome de código são os mesmos, mas alterar o nome da planilha não altera o nome de código e alterar o nome de código (usando a janela Propriedades no Editor do Visual Basic) não altera o nome da planilha.</para>
+          <para>O nome de código para um objeto pode ser usado no lugar de uma expressão que retorna o objeto.</para>
+          <para>É possível que o nome da planilha seja diferente do nome de código. Quando você cria uma planilha, o nome de planilha e nome de código são iguais, mas a alteração do nome da planilha não altera o nome de código, assim como a alteração do nome de código (usando a janela Propriedades no Editor do Visual Basic) não altera o nome da planilha.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1557,8 +1591,8 @@
         <summary>Retorna um <see cref="P:Microsoft.Office.Interop.Excel._Workbook.CommandBars" /> object que representa as barras de comandos do Microsoft Excel. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Quando uma pasta de trabalho está incorporada em outro aplicativo e ativada pelo usuário, clicando duas vezes a pasta de trabalho, o uso desta propriedade com um objeto <b>Workbook</b> retorna o conjunto de barras de comandos do Microsoft Excel disponíveis em outro aplicativo. Em todos os momentos, o uso desta propriedade com um objeto <b>Workbook</b> retornará <b>Nothing</b>.</para>
-          <para>Há um meio de programação para retornar o conjunto de barras de comandos anexado a uma pasta de trabalho.</para>
+          <para>Quando uma pasta de trabalho está incorporada em outro aplicativo e ativada pelo usuário, clicando duas vezes a pasta de trabalho, o uso desta propriedade com um objeto <b>Workbook</b> retorna o conjunto de barras de comandos do Microsoft Excel disponíveis em outro aplicativo. Em todas as outras vezes, o uso desta propriedade com um objeto <b>Workbook</b> retornará <b>Nothing</b>.</para>
+          <para>Não há um meio automático para retornar o conjunto de barras de comando anexados a uma pasta de trabalho.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1741,7 +1775,7 @@
         <summary>Retorna o objeto que representa o aplicativo contêiner do objeto OLE especificado. <b>Object</b> somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Essa propriedade oferece uma maneira de acessar o modelo de objeto do aplicativo contêiner se uma pasta de trabalho do Excel é aberta em um aplicativo host como o Microsoft Internet Explorer.</para>
+          <para>Essa propriedade oferece uma maneira de acessar o modelo de objeto do aplicativo contêiner quando uma pasta de trabalho do Excel é aberta em um aplicativo host, como o Microsoft Internet Explorer.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1833,7 +1867,10 @@
       <Docs>
         <summary>Retorna uma constante no <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeração que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriedade <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomDocumentProperties">
@@ -1863,8 +1900,8 @@
         <value>To be added.</value>
         <remarks>
           <para>Essa propriedade retorna toda a coleção de propriedades personalizadas de documento. Use o <see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" /> método para retornar um único membro da coleção (um <see cref="T:Microsoft.Office.Core.DocumentProperty" /> objeto), especificando o nome da propriedade ou o índice da coleção (como um número).</para>
-          <para>o método <b>Item</b> é o método padrão para a coleção <b>DocumentProperties</b> .</para>
-          <para>Uso o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties" /> propriedade para retornar a coleção das propriedades internas do documento.</para>
+          <para>O método <b>Item</b> é o método padrão para a coleção <b>DocumentProperties</b> .</para>
+          <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties" /> propriedade para retornar a coleção das propriedades internas do documento.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2223,17 +2260,20 @@
             <item>
               <term>
                 <paramref name="xlDisplayShapes" />
-              </term>Exibe todas as formas.
+              </term>
+              <description>Exibe todas as formas.</description>
             </item>
             <item>
               <term>
                 <paramref name="xlPlaceholders" />
-              </term>Exibe somente espaços reservados.
+              </term>
+              <description>Exibe somente espaços reservados.</description>
             </item>
             <item>
               <term>
                 <paramref name="xlHide" />
-              </term>Oculta todas as formas.
+              </term>
+              <description>Oculta todas as formas.</description>
             </item>
           </list>
           <para></para>
@@ -2327,7 +2367,7 @@
         <summary>Retorna um <see cref="P:Microsoft.Office.Interop.Excel._Workbook.DocumentLibraryVersions" /> coleção que representa a coleção de versões de uma pasta de trabalho compartilhada com versão habilitada e que está armazenada em uma biblioteca de documentos em um servidor.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Recursos XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
+          <para>Recursos de XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2507,7 +2547,7 @@
         <summary>Salva arquivos alterados, de todos os formatos, em um intervalo cronometrado. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o Microsoft Excel falhar, o sistema falhar, ou se o sistema está desligado incorretamente (não permitindo que o Excel para salvar os arquivos alterados), o backup dos arquivos abertos e o usuário tem uma oportunidade para salvar as alterações que, caso contrário, poderiam ter sido perdidas. Quando o usuário reiniciar o Excel, uma janela de recuperação de documento é aberto, dando ao usuário uma opção para recuperar os arquivos que estavam trabalhando. A definição dessa propriedade como <b>True</b> (padrão) habilita esse recurso.</para>
+          <para>Se o Microsoft Excel falha, o sistema falha, ou se o sistema for desligado de maneira incorreta (não permitindo que o Excel salve os arquivos alterados), os arquivos de backup serão abertos e o usuário terá a oportunidade de salvar as alterações que de outra maneira se perderiam. Quando o usuário reiniciar o Excel, uma janela de recuperação de documento será aberta, oferecendo ao usuário a opção de recuperar os arquivos nos quais estava trabalhando. Configurar essa propriedade para <b>True</b> (padrão) ativa este recurso.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2711,7 +2751,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>No modo de compatibilidade, algumas funcionalidades está desabilitada ou funciona de maneira diferente.  Por exemplo, em short_Excel2007 há mais linhas e colunas disponíveis em comparação com as versões anteriores do Excel. Também a referenciando estruturado está disponível em short_Excel2007.</para>
+          <para>No modo de compatibilidade, algumas funcionalidades é desabilitado ou funções de forma diferente.  Por exemplo, em short_Excel2007 há mais linhas e colunas disponíveis em comparação com as versões anteriores do Excel. Também está disponível short_Excel2007 referenciando estruturado.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2743,7 +2783,7 @@
         <summary>Atribui ao usuário atual acesso exclusivo à pasta de trabalho que está aberta como uma lista compartilhada.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>O método <b>ExclusiveAccess</b> salva as alterações feitas na pasta de trabalho e requer a outros usuários que têm a pasta de trabalho abertas para salvar suas alterações em um arquivo diferente.</para>
+          <para>O método <b>ExclusiveAccess</b> salva quaisquer alterações que você tenha feito à pasta de trabalho e requer que os outros usuários que tenham a pasta de trabalho aberta salvem suas alterações em um arquivo diferente.</para>
           <para>Se a pasta de trabalho especificada não estiver aberta como uma lista compartilhada, este método falhará. Para determinar se uma pasta de trabalho está aberta como uma lista compartilhada, use o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.MultiUserEditing" /> propriedade.</para>
           <para></para>
         </remarks>
@@ -2791,7 +2831,7 @@
         <summary>O <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ExportAsFixedFormat(Microsoft.Office.Interop.Excel.XlFixedFormatType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método é usado para publicar uma planilha em formato PDF ou XPS.</summary>
         <remarks>To be added.</remarks>
         <example>
-          <para>o exemplo a seguir cria o PDF em qualidade padrão no diretório do arquivo atual e exibe o arquivo no visualizador depois que ela for publicada.</para>
+          <para>O exemplo seguinte cria o PDF em qualidade padrão no diretório do arquivo atual e exibe o arquivo no visualizador depois que ele é publicado.</para>
           <para>
             <b>Observação</b>: ocorrerá um erro se o suplemento PDF não estiver sendo instalado.</para>
         </example>
@@ -2826,7 +2866,7 @@
         <summary>Retorna o formato de arquivo e/ou o tipo da pasta de trabalho. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlFileFormat" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Algumas dessas constantes podem não estar disponíveis para você, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou.</para>
+          <para>Algumas dessas constantes podem não estar disponíveis, dependendo do suporte a idioma (português do Brasil, por exemplo) que você selecionou ou instalou.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2862,7 +2902,9 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Definindo o valor como <b>True</b> marca a pasta de trabalho como final, avisa aos destinatários (se houver) que a pasta de trabalho é final e define a pasta de trabalho como somente leitura.</para>
+          <para>A definição do valor como <b>True</b> marca a pasta de trabalho como final, avisa aos destinatários (se houver) que ela é final, e a define como somente leitura.
+
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3003,7 +3045,7 @@
         <summary>Retorna o nome do objeto, incluindo seu caminho no disco, na forma de uma cadeia de caracteres. <b>String</b> somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propriedade é equivalente ao <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Path" /> seguido de propriedade, seguida o atual separador de sistema de arquivos, o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" /> propriedade.</para>
+          <para>Essa propriedade é equivalente ao <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Path" /> seguido de propriedade, seguida o atual separador de sistema de arquivos, o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" /> propriedade.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3215,7 +3257,7 @@
           <b>True</b> se a pasta de trabalho possuir uma lista de circulação. <b>Boolean</b> de leitura/gravação</summary>
         <value>To be added.</value>
         <remarks>
-          <para>a definição dessa propriedade como <b>True</b> cria uma lista de circulação com valores padrão. A configuração da propriedade como <b>False</b> exclui a lista de circulação.</para>
+          <para>Configurar essa propriedade como <b>True</b> cria uma lista de circulação com valores padrão. Configurar essa propriedade como <b>False</b> exclui a lista de circulação.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3248,7 +3290,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Esta propriedade é mais útil para determinar programaticamente se uma pasta de trabalho precisa ser salvo em um formato de arquivo habilitado para macro. Se salvou em outro formato, macros e projetos de código contidos no documento podem ser perdidos.</para>
+          <para>Essa propriedade é mais útil para determinar programaticamente se uma pasta de trabalho precisa ser salva em um formato de arquivo habilitado por macro. Caso seja salva em outro formato, as macros e os projetos de código contidos no documento talvez sejam perdidos.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3409,7 +3451,7 @@
         <summary>Uma valor <b>Boolean</b> que especifica se as bordas da lista são visíveis quando uma lista não está ativa. Retorna <b>True</b> se a borda estiver visível. <b>Boolean</b> de leitura/gravação</summary>
         <value>To be added.</value>
         <remarks>
-          <para>a definição dessa propriedade afetará todas as listas da planilha.</para>
+          <para>Definir essa propriedade afetará todas as listas da planilha.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3444,22 +3486,22 @@
           <b>True</b> se a pasta de trabalho estiver executando como um suplemento. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Quando você define essa propriedade como <b>True</b>, a pasta de trabalho tem as seguintes características:</para>
+          <para>Ao definir essa propriedade como <b>True</b>, a pasta de trabalho terá as seguintes características:</para>
           <list type="bullet">
             <item>
-              <description>você não será avisado para salvar a pasta de trabalho se alterações forem feitas enquanto a pasta de trabalho está aberta.</description>
+              <description>Você não será avisado para salvar a pasta de trabalho se alterações forem feitas enquanto a pasta de trabalho estiver aberta.</description>
             </item>
             <item>
-              <description>a janela de pasta de trabalho não será visível.</description>
+              <description>A janela da pasta de trabalho não será visível.</description>
             </item>
             <item>
-              <description>Todas as macros na pasta de trabalho estará visíveis na caixa de diálogo Macro (exibida ao apontar para Macro no menu Ferramentas e clicar em Macros).</description>
+              <description>Nenhuma macro da pasta de trabalho estará visível na caixa de diálogo Macro (exibida ao apontar para Macro no menu Ferramentas e clicar em Macros).</description>
             </item>
             <item>
-              <description>Macros na pasta de trabalho ainda poderão ser executadas da caixa de diálogo Macro, mesmo que eles não estejam visíveis. Além disso, os nomes de macro não precisam ser qualificado com o nome da pasta de trabalho.</description>
+              <description>As macros da pasta de trabalho ainda poderão ser executadas da caixa de diálogo Macro apesar de não estarem visíveis. Além disso, os nomes das macros não precisam ser qualificados com o nome da pasta de trabalho.</description>
             </item>
             <item>
-              <description>Mantendo pressionada a tecla SHIFT quando você abre a pasta de trabalho não tem efeito.</description>
+              <description>Manter pressionada a tecla SHIFT quando você abre a pasta de trabalho não produz nenhum efeito.</description>
             </item>
           </list>
           <para></para>
@@ -3637,8 +3679,8 @@
         <summary>Retorna uma matriz de vínculos da pasta de trabalho. Os nomes na matriz são os nomes dos documentos vinculados, edições ou servidores OLE ou DDE. Retorna <b>vazia</b> se não houver nenhum link. <b>Objeto</b>.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>o formato da matriz é uma matriz unidimensional para todos os tipos de mas Editor e do assinante. As cadeias de caracteres retornadas contém o nome da origem do vínculo, na notação apropriada para o tipo de link. Por exemplo, uso de vínculos DDE o "servidor | Documento! Item"sintaxe.</para>
-          <para>Para links de editor e do assinante, a matriz retornada é bidimensional. A primeira coluna da matriz contém os nomes da edição e a segunda coluna contém as referências das edições como texto.</para>
+          <para>O formato da matriz é o de uma matriz unidimensional para todos os tipos, exceto editora e assinante. As sequências de caracteres retornadas contêm o nome da origem do vínculo, na notação apropriada ao tipo de vínculo. Por exemplo, os vínculos DDE usam a sintaxe "Servidor|Documento!Item".</para>
+          <para>Para vínculos de editora e assinante, a matriz retornada é bidimensional. A primeira coluna da matriz contém os nomes da edição, e a segunda coluna contém as referências das edições na forma de texto.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4157,7 +4199,10 @@
       <Docs>
         <summary>Retorna ou define a senha que deve ser fornecida para abrir a pasta de trabalho especificada. <b>String</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>Senhas <para>uso forte que combinam maiusculas e minúsculas, números e símbolos. Senhas fracas não misturam esses elementos. Senha forte: Y6dh! et5. Senha fraca: House27. Use uma senha forte que você possa lembrar para que você não tenha anotá-la.</para><para></para></remarks>
+        <remarks>
+          <para>[!OBSERVAçãO] Use senhas fortes que combinem letras maiúsculas e minúsculas, números e símbolos. As senhas fracas não combinam esses elementos. Senha forte: Y6dh!et5. Senha fraca: House27. Use uma senha fraca para que você possa lembrá-la sem precisar escrevê-la.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PasswordEncryptionAlgorithm">
@@ -4186,7 +4231,7 @@
         <summary>Retorna um <b>String</b> que indica o algoritmo usado pelo Microsoft Excel para criptografar senhas para a pasta de trabalho especificada. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> método para especificar se o Excel deve criptografar propriedades de arquivo para pastas de trabalho protegidas por senha.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> método para especificar se o Excel deve criptografar propriedades de arquivo para pastas de trabalho protegidas por senha.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4218,7 +4263,7 @@
           <b>True</b> se o Microsoft Excel criptografar as propriedades de arquivo para a pasta de trabalho especificada protegida por senha. <b>Boolean</b> de somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> método para especificar se o Excel deve criptografar propriedades de arquivo para a pasta de trabalho especificada protegida por senha.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> método para especificar se o Excel deve criptografar propriedades de arquivo para a pasta de trabalho especificada protegida por senha.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4249,7 +4294,7 @@
         <summary>Retorna um <b>inteiro</b> indicando o comprimento da chave do algoritmo que o Microsoft Excel usa ao criptografar senhas para a pasta de trabalho especificada. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> método para especificar se o Excel deve criptografar propriedades de arquivo para a pasta de trabalho especificada protegida por senha.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> método para especificar se o Excel deve criptografar propriedades de arquivo para a pasta de trabalho especificada protegida por senha.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4804,7 +4849,10 @@
         <param name="SharingPassword">
           <b>Objeto</b>de opcional. Uma sequência de caracteres indicando a senha a ser usada para proteger o arquivo para compartilhar.</param>
         <summary>Salva a pasta de trabalho a protege para compartilhamento.</summary>
-        <remarks>Senhas <para>uso forte que combinam maiusculas e minúsculas, números e símbolos. Senhas fracas não misturam esses elementos. Senha forte: Y6dh! et5. Senha fraca: House27. Use uma senha forte que você possa lembrar para que você não tenha anotá-la.</para><para></para></remarks>
+        <remarks>
+          <para>[!OBSERVAçãO] Use senhas fortes que combinem letras maiúsculas e minúsculas, números e símbolos. As senhas fracas não combinam esses elementos. Senha forte: Y6dh!et5. Senha fraca: House27. Use uma senha fraca para que você possa lembrá-la sem precisar escrevê-la.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProtectSharingEx">
@@ -4992,7 +5040,7 @@
         <summary>Retorna <b>True</b> se o objeto tiver sido aberto como somente leitura. <b>Boolean</b> somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Essa propriedade é usada apenas para listas vinculadas a um site do SharePoint.</para>
+          <para>Esta propriedade é usada apenas para listas vinculadas a um site do SharePoint.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5027,8 +5075,8 @@
           <b>True</b> se a pasta de trabalho tiver sido salva como recomendável somente leitura. <b>Boolean</b> de somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Quando você abre uma pasta de trabalho que foi salvo como somente leitura recomendado, o Microsoft Excel exibe uma mensagem recomendando que você abra a pasta de trabalho como somente leitura.</para>
-          <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para alterar essa propriedade.</para>
+          <para>Quando você abre uma pasta de trabalho que foi salva como recomendável somente leitura, o Microsoft Excel exibe uma mensagem recomendando sua abertura como somente leitura.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para alterar essa propriedade.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5084,7 +5132,7 @@
       <Docs>
         <summary>Atualiza todos os intervalos de dados externos e relatórios de Tabela Dinâmica na pasta de trabalho especificada.</summary>
         <remarks>
-          <para>Objetos que têm o <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.BackgroundQuery" /> propriedade definida como <b>True</b> são atualizados em segundo plano.</para>
+          <para>Os objetos que têm o <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.BackgroundQuery" /> propriedade definida como <b>True</b> são atualizados em segundo plano.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5324,7 +5372,10 @@
         <param name="ShowMessage">
           <b>Objeto</b>de opcional. <b>False</b> não exibe a mensagem. <b>True</b> exibe a mensagem.</param>
         <summary>Envia uma mensagem de email para o autor de uma pasta de trabalho que foi enviada para revisão, notificando que um revisor concluiu a revisão da pasta de trabalho.</summary>
-        <remarks>Uso de <para>o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SendForReview(System.Object,System.Object,System.Object,System.Object)" /> método para iniciar uma revisão colaborativa de uma pasta de trabalho. Se o método <b>ReplyWithChanges</b> é executado em uma pasta de trabalho que não faz parte de um ciclo de revisão colaborativa, o usuário receberá um erro.</para><para></para></remarks>
+        <remarks>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SendForReview(System.Object,System.Object,System.Object,System.Object)" /> método para iniciar uma revisão colaborativa de uma pasta de trabalho. Se o método <b>ReplyWithChanges</b> é executado em uma pasta de trabalho que não faz parte de um ciclo de revisão colaborativa, o usuário receberá um erro.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Research">
@@ -5411,7 +5462,7 @@
         <summary>Retorna o número de vezes que a pasta de trabalho foi salva enquanto aberta como uma lista compartilhada. Se a pasta de trabalho for aberta no modo exclusivo, essa propriedade retorna 0 (zero). <b>Integer</b> somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>a propriedade <b>RevisionNumber</b> só é atualizada quando a cópia local da pasta de trabalho é salva, não quando as cópias remotas são salvas.</para>
+          <para>A propriedade <b>RevisionNumber</b> só é atualizada quando a cópia local da pasta de trabalho é salva, e não quando as cópias remotas são salvas.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5445,7 +5496,7 @@
       <Docs>
         <summary>Encaminha a pasta de trabalho usando sua lista de circulação atual.</summary>
         <remarks>
-          <para>Roteamento uma pasta de trabalho define a <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Routed" /> propriedade como <b>True</b>.</para>
+          <para>Roteamento de uma pasta de trabalho define a <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Routed" /> propriedade como <b>True</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5483,7 +5534,7 @@
           <b>True</b> se a pasta de trabalho tiver sido circulada para o próximo destinatário. <b>False</b> se a pasta de trabalho precisar ser circulada. <b>Boolean</b> de somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se a pasta de trabalho não tiver sido circulada para o destinatário atual, essa propriedade será sempre <b>False</b> (por exemplo, se o documento tiver lista de circulação, ou se o roteamento de uma lista de circulação acabou de ser criada).</para>
+          <para>Se a pasta de trabalho não tiver sido circulada para o destinatário atual, essa propriedade será sempre <b>False</b> (por exemplo, se o documento não tiver lista de circulação, ou se a lista tiver acabado de ser criada).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5674,7 +5725,7 @@
         <param name="Map">Necessário <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> objeto. O mapa de esquema a ser aplicado aos dados.</param>
         <summary>Exporta os dados, que foram mapeados para o mapa de esquema XML especificado, para um arquivo de dados XML.</summary>
         <remarks>
-          <para>Recursos XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
+          <para>Recursos de XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
           <para>Esse método resultará em um erro em tempo de execução se o Excel não pode exportar dados com o mapa de esquema especificado. Para verificar se o Excel pode usar o mapa de esquema especificado para exportar dados, use o <see cref="P:Microsoft.Office.Interop.Excel.XmlMap.IsExportable" /> propriedade.</para>
           <para></para>
         </remarks>
@@ -5747,7 +5798,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Se uma pasta de trabalho nunca tiver sido salva, sua <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Path" /> propriedade retornará uma sequência vazia ("").</para>
-          <para>Você pode definir essa propriedade como <b>True</b> , se desejar fechar uma pasta de trabalho modificada sem salvá-la ou ser avisado para salvá-la</para>
+          <para>Você poderá definir essa propriedade como <b>True</b> se desejar fechar uma pasta de trabalho modificada sem salvá-la ou ser avisado para salvá-la.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5853,10 +5904,10 @@
           <b>Objeto</b>de opcional. <b>True</b> exibe a mensagem de fax antes de enviá-la. <b>False</b> envia o fax sem exibir a mensagem de fax.</param>
         <summary>Envia uma planilha como um fax para os destinatários especificados.</summary>
         <remarks>
-          <para>Usar o método <b>SendFaxOverInternet</b> requer que o serviço de fax está habilitado no computador do usuário.</para>
-          <para>o formato usado para especificar números de fax no <paramref name="Recipients" /> parâmetro é <paramref name="recipientsfaxnumber@usersfaxprovider" /> ou <paramref name="recipientsname@recipientsfaxnumber" />. Você pode acessar informações do provedor de fax do usuário usando o seguinte caminho do registro:</para>
+          <para>O uso do método <b>SendFaxOverInternet</b> requer que o serviço de fax esteja habilitado no computador do usuário.</para>
+          <para>O formato usado para especificar números de fax no <paramref name="Recipients" /> parâmetro é <paramref name="recipientsfaxnumber@usersfaxprovider" /> ou <paramref name="recipientsname@recipientsfaxnumber" />. Você pode acessar as informações do servidor de fax de usuário usando o caminho do Registro abaixo:</para>
           <para>HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Common\Services\Fax</para>
-          <para>Use o valor da chave FaxAddress nesse caminho do registro para determinar o formato a ser usado por um destinatário.</para>
+          <para>Use o valor da chave FaxAddress nesse caminho do registro para determinar o formato a ser usado para o destinatário.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5895,7 +5946,10 @@
         <param name="IncludeAttachment">
           <b>Objeto</b>de opcional. Um valor <b>Boolean</b> que indica se a mensagem deve incluir um anexo ou um link para um local no servidor. O valor padrão é <b>True</b>. Se definido como <b>False</b>, o documento deve ser armazenado em um local compartilhado.</param>
         <summary>Envia uma pasta de trabalho em uma mensagem de email para revisão aos destinatários especificados.</summary>
-        <remarks>Método <para>o <b>SendForReview</b> inicia um ciclo de revisão colaborativa. Use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.EndReview" /> método para encerrar um ciclo de revisão.</para><para></para></remarks>
+        <remarks>
+          <para>O método <b>SendForReview</b> inicia um ciclo de revisão colaborativa. Use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.EndReview" /> método para encerrar um ciclo de revisão.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SendMail">
@@ -6025,7 +6079,7 @@
           <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ServerViewableItems" />
         </value>
         <remarks>
-          <para>Essa propriedade retorna uma coleção de itens que pôde ser publicado nos serviços do Excel.  Ele pode incluir gráficos, tabelas dinâmicas, intervalos nomeados e tabelas.  Ele também pode conter folhas desde que ele não seja uma mistura de folhas e o antes de lista mencionada.  </para>
+          <para>Essa propriedade retorna uma coleção dos itens que poderiam ser publicados nos Serviços do Excel. Ela pode incluir Tabelas, Tabelas Dinâmicas, Intervalos Nomeados e Gráficos. Ela também pode conter Planilhas desde que não seja uma mistura de Planilhas e da lista mencionada anteriormente.  </para>
           <para></para>
         </remarks>
       </Docs>
@@ -6233,7 +6287,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Esta propriedade controlará a visibilidade do painel de filtro gráfico dinâmico (alterna ativado/desativado).  Na ordem para que ele fique visível, um objeto de <b>gráfico dinâmico</b> deve ser selecionado. </para>
+          <para>Essa propriedade controla a visibilidade do Painel Filtro da Tabela Dinâmica (liga e desliga). Para ele que fique visível, um objeto <b>PivotChart</b> deve ser selecionado.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6298,7 +6352,8 @@
           <see cref="T:Microsoft.Office.Core.SignatureSet" />
         </value>
         <remarks>
-          <para>Digitalmente assinar Excel2007 pastas de trabalho e verifique se as outras assinaturas neles, você precisará do Microsoft CryptoAPI e um certificado de assinatura digital exclusiva. A CryptoAPI é instalada com o Microsoft Internet Explorer 4.01 ou posterior. Você pode obter um certificado de assinatura digital de uma autoridade de certificação. </para>
+          <para>Para pastas de trabalho Excel2007 de assinar digitalmente e verificar as outras assinaturas neles, você precisará do Microsoft CryptoAPI e um certificado de assinatura digital exclusiva. A CryptoAPI é instalada com o Microsoft Internet Explorer 4.01 ou posterior. Você pode obter um certificado de assinatura digital de uma autoridade de certificação.
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6653,7 +6708,7 @@
       <Docs>
         <summary>Alterna o modo de design de formulário ativada ou desativada.</summary>
         <remarks>
-          <para>Excel quando está no modo de design do formulário, a barra de ferramentas de controle é exibida. Você pode usar essa barra de ferramentas para inserir controles ActiveX como botões de comando, barras de rolagem e botões de opção. No modo de design do formulário, procedimentos de evento não são executados e quando você clica em um controle incorporado, as alças de dimensionamento do controle aparecem.</para>
+          <para>Quando o Excel está no modo de design do formulário, a barra de ferramentas de controle é exibida. Você pode usar essa barra de ferramentas para inserir controles ActiveX como botões de comando, barras de rolagem e botões de opção. No modo de design do formulário, os procedimentos de evento não são executados e, quando você clica em um controle incorporado, as alças de dimensionamento do controle serão exibidos.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6687,7 +6742,7 @@
           <b>Objeto</b>de opcional. Uma string que indica a senha diferencia maiusculas de minúsculas usar para unprotect a planilha ou pasta de trabalho. Se a planilha ou pasta de trabalho não está protegida por senha, esse argumento será ignorado. Se você omitir esse argumento para uma planilha protegida com uma senha, você será solicitado para a senha. Se você omitir esse argumento para uma pasta de trabalho for protegida por uma senha, o método falhará.</param>
         <summary>Remove a proteção de uma planilha ou de uma pasta de trabalho. Esse método não terá efeito caso a planilha ou a pasta de trabalho não esteja protegida.</summary>
         <remarks>
-          <para>Se você esquecer a senha, você não pode ser unprotect a planilha ou pasta de trabalho. É uma boa ideia manter uma lista de suas senhas e seus respectivos nomes de documentos em um local seguro.</para>
+          <para>Se você esquecer a senha, não poderá desproteger a planilha ou a pasta de trabalho. É uma boa ideia manter uma lista de suas senhas e dos nomes dos documentos correspondentes em um local seguro.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6717,7 +6772,10 @@
         <param name="SharingPassword">
           <b>Objeto</b>de opcional. A senha da pasta de trabalho.</param>
         <summary>Desativa a proteção para o compartilhamento e salva a pasta de trabalho.</summary>
-        <remarks>Senhas <para>uso forte que combinam maiusculas e minúsculas, números e símbolos. Senhas fracas não misturam esses elementos. Senha forte: Y6dh! et5. Senha fraca: House27. Use uma senha forte que você possa lembrar para que você não tenha anotá-la.</para><para></para></remarks>
+        <remarks>
+          <para>[!OBSERVAçãO] Use senhas fortes que combinem letras maiúsculas e minúsculas, números e símbolos. As senhas fracas não combinam esses elementos. Senha forte: Y6dh!et5. Senha fraca: House27. Use uma senha fraca para que você possa lembrá-la sem precisar escrevê-la.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateFromFile">
@@ -6746,7 +6804,7 @@
       <Docs>
         <summary>Atualiza uma pasta de trabalho somente leitura a partir de sua versão salva em disco se esta for mais recente que a cópia da pasta de trabalho carregada na memória. Se a cópia em disco não tiver sido alterada desde que a pasta de trabalho foi carregada, a cópia em memória da pasta de trabalho não será recarregada.</summary>
         <remarks>
-          <para>Esse método é útil quando uma pasta de trabalho é aberta como somente leitura pelo usuário A e aberta como leitura/gravação pelo usuário B. Se o usuário B salva uma versão mais recente da pasta de trabalho em disco enquanto o usuário A ainda tiver o pasta de trabalho aberta, o usuário A não poderá obter a cópia atualizada sem fechar e reabri-lo a pasta de trabalho e perder as configurações de exibição. O método <b>UpdateFromFile</b> atualizará a cópia de na memória da pasta de trabalho do arquivo do disco.</para>
+          <para>Este método é útil quando uma pasta de trabalho é aberta como somente leitura pelo usuário A e aberta como de leitura/gravação pelo usuário B. Se o usuário B salvar uma versão mais nova da pasta de trabalho em disco enquanto o usuário A ainda tiver a pasta de trabalho aberta, o usuário A não poderá obter a cópia atualizada sem fechar e reabrir a pasta de trabalho, perdendo as definições de exibição. O método <b>UpdateFromFile</b> atualiza a cópia em memória da pasta de trabalho a partir do arquivo em disco.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6782,7 +6840,7 @@
         <param name="Type">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlLinkType" />.</param>
         <summary>Atualiza um vínculo (ou vínculos) DDE, OLE ou do Microsoft Excel.</summary>
         <remarks>
-          <para>Quando o método <b>UpdateLink</b> é chamado sem nenhum parâmetro, o Excel usa como padrão para a atualização de todos os vínculos de planilha.</para>
+          <para>Quando o método <b>UpdateLink</b> é chamado sem parâmetros, o Excel usa como padrão a atualização de todos os vínculos de planilha.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6922,7 +6980,7 @@
         <summary>Retorna uma matriz bidimensional, baseado em 1 que fornece informações sobre cada usuário com a pasta de trabalho aberta como uma lista compartilhada. O primeiro elemento da segunda dimensão é o nome do usuário, o segundo elemento é a data e a hora em que o usuário abriu pela última vez a pasta de trabalho, e o terceiro elemento é um número indicando o tipo de lista (1 indica exclusiva e 2 indica compartilhada). Somente leitura <b>objeto</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>a propriedade <b>UserStatus</b> não retorna informações sobre os usuários que têm a pasta de trabalho especificada aberto como somente leitura.</para>
+          <para>A propriedade <b>UserStatus</b> não retorna informações sobre os usuários que têm a pasta de trabalho especificada aberta como somente leitura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -7121,7 +7179,7 @@
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> coleção que representa todas as janelas na pasta de trabalho especificada. Objeto <b>Windows</b> somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Essa propriedade retorna uma coleção de janelas tanto visíveis quanto ocultas.</para>
+          <para>Esta propriedade retorna uma coleção de janelas tanto visíveis quanto ocultas.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -7152,8 +7210,8 @@
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> coleção que representa todas as planilhas da pasta de trabalho especificada. Objeto <b>Sheets</b> somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Uso dessa propriedade sem um qualificador de objeto retorna todas as planilhas na pasta de trabalho ativa.</para>
-          <para>Essa propriedade não retorna folhas de macro; use o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4MacroSheets" /> propriedade ou o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4IntlMacroSheets" /> propriedade para retornar essas folhas.</para>
+          <para>Os uso desta propriedade sem um qualificador de objeto retorna todas as planilhas da pasta de trabalho ativa.</para>
+          <para>Essa propriedade não retorna folhas de macro; Use o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4MacroSheets" /> propriedade ou o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4IntlMacroSheets" /> propriedade para retornar essas folhas.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -7219,7 +7277,7 @@
           <b>True</b> se a pasta de trabalho exigir permissão para gravação. <b>Boolean</b> somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para definir essa propriedade.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para definir essa propriedade.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -7288,18 +7346,18 @@
         <summary>Importa um arquivo de dados XML para a pasta de trabalho atual. Retorna <see cref="T:Microsoft.Office.Interop.Excel.XlXmlImportResult" />.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Recursos XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
-          <para>Não for especificado um valor para o <paramref name="Destination" /> parâmetro se quiser importar dados para um mapeamento existente.</para>
-          <para>As seguintes condições farão com o método <b>XMLImport</b> gere erros de tempo de execução:</para>
+          <para>Recursos de XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
+          <para>Não especificar um valor para o <paramref name="Destination" /> parâmetro se quiser importar dados para um mapeamento existente.</para>
+          <para>As seguintes condições fará com que o método <b>XMLImport</b> gere erros de tempo de execução:</para>
           <list type="bullet">
             <item>
               <description>Os dados XML especificados contêm erros de sintaxe.</description>
             </item>
             <item>
-              <description>o processo de importação foi cancelado porque os dados especificados não cabem na planilha.</description>
+              <description>O processo de importação foi cancelado porque os dados especificados não cabem na planilha.</description>
             </item>
           </list>
-          <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.XmlImportXml(System.String,Microsoft.Office.Interop.Excel.XmlMap@,System.Object,System.Object)" /> método do <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto para importar dados XML que tem sido previamente carregados na memória.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.XmlImportXml(System.String,Microsoft.Office.Interop.Excel.XmlMap@,System.Object,System.Object)" /> método do <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto para importar dados XML que tem sido previamente carregados na memória.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -7337,18 +7395,18 @@
         <summary>Importa um fluxo de dados XML que tenha sido previamente carregado na memória. Retorna <see cref="T:Microsoft.Office.Interop.Excel.XlXmlImportResult" />.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Recursos XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
-          <para>Não for especificado um valor para o <paramref name="Destination" /> parâmetro se quiser importar dados para um mapeamento existente.</para>
-          <para>As seguintes condições farão com o método <b>XMLImport</b> gere erros de tempo de execução:</para>
+          <para>Recursos de XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
+          <para>Não especificar um valor para o <paramref name="Destination" /> parâmetro se quiser importar dados para um mapeamento existente.</para>
+          <para>As seguintes condições fará com que o método <b>XMLImport</b> gere erros de tempo de execução:</para>
           <list type="bullet">
             <item>
               <description>Os dados XML especificados contêm erros de sintaxe.</description>
             </item>
             <item>
-              <description>o processo de importação foi cancelado porque os dados especificados não cabem na planilha.</description>
+              <description>O processo de importação foi cancelado porque os dados especificados não cabem na planilha.</description>
             </item>
           </list>
-          <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.XmlImport(System.String,Microsoft.Office.Interop.Excel.XmlMap@,System.Object,System.Object)" /> método do <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto para importar um arquivo de dados XML para a pasta de trabalho atual.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.XmlImport(System.String,Microsoft.Office.Interop.Excel.XmlMap@,System.Object,System.Object)" /> método do <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto para importar um arquivo de dados XML para a pasta de trabalho atual.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -7379,7 +7437,7 @@
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.XmlMaps" /> coleção que representa os mapas de esquema que foram adicionados à pasta de trabalho especificada. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Recursos XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
+          <para>Recursos de XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -7410,7 +7468,7 @@
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.XmlNamespaces" /> coleção que representa os espaços para nome XML contidos na pasta de trabalho especificada. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Recursos XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
+          <para>Recursos de XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
       </Docs>

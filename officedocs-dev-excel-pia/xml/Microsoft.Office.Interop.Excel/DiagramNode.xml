@@ -1,10 +1,10 @@
 <Type Name="DiagramNode" FullName="Microsoft.Office.Interop.Excel.DiagramNode">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0ca42ecf50dd3405db74400e2269347011d04258" />
+    <Meta Name="ms.openlocfilehash" Value="86e622fca7f83a44ee8326d13178a7a41108a865" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576143" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DiagramNode : Microsoft.Office.Core._IMsoDispObj" />
@@ -33,29 +33,29 @@
     <summary>Representa um nó em um diagrama.</summary>
     <remarks>
       <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> método para adicionar um nó a um diagrama ou a um nó de diagrama.</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.Delete" /> método para remover um nó de um diagrama ou nó de diagrama.</para>
-      <para>Para retornar um objeto <b>DiagramNode</b> , use um dos seguintes:</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.Delete" /> método para remover um nó de um diagrama ou nó de diagrama.</para>
+      <para>Para retornar um objeto <b>DiagramNode</b> , use um destes procedimentos:</para>
       <list type="bullet">
         <item>
-          <description>Do objeto <b>DiagramNode</b><see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" />, <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.CloneNode(System.Boolean,Microsoft.Office.Interop.Excel.DiagramNode,Microsoft.Office.Core.MsoRelativeNodePosition)" />, <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.NextNode" />, ou <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.PrevNode" /> métodos ou seu <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Root" /> propriedade</description>
+          <description>O objeto de <b>DiagramNode</b><see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" />, <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.CloneNode(System.Boolean,Microsoft.Office.Interop.Excel.DiagramNode,Microsoft.Office.Core.MsoRelativeNodePosition)" />, <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.NextNode" />, ou <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.PrevNode" /> métodos ou seu <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Root" /> propriedade</description>
         </item>
         <item>
-          <description>o <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" /> da coleção <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" /> métodos ou <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" /> ou <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" /> propriedades </description>
+          <description>O <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" /> da coleção <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" /> métodos ou <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" /> ou <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" /> propriedades</description>
         </item>
         <item>
-          <description>o <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" /> da coleção <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodes.Item(System.Object)" /> método</description>
+          <description>O <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" /> da coleção <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodes.Item(System.Object)" /> método</description>
         </item>
         <item>
-          <description>o <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> do objeto ou <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> propriedade de <b>DiagramNode</b> da coleção</description>
+          <description>O <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> do objeto ou <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> propriedade de <b>DiagramNode</b> da coleção</description>
         </item>
       </list>
-      <para>um nó de diagrama pode encerrar, ou pode conter outros diagramas filhos, filho nós de diagramas ou formas filhas. Referir-se a esses recursos com o seguinte:</para>
+      <para>Um nó de diagrama pode encerrar ou ela pode conter outros diagramas filhos, nós de diagramas filhos ou formas filhas. Consulte esses recursos com o seguinte:</para>
       <list type="bullet">
         <item>
-          <description>para se referir a um diagrama filho, use o <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Diagram" /> propriedade.</description>
+          <description>Para se referir a um diagrama filho, use o <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Diagram" /> propriedade.</description>
         </item>
         <item>
-          <description>Para se referir a um nó de diagrama filho individual, use o <b>AddNode</b>, métodos <b>CloneNode</b>, <b>NextNode</b> ou <b>PrevNode</b> ou a propriedade <b>raiz</b> .</description>
+          <description>Para fazer referência a um nó de diagrama filho individual, use o <b>AddNode</b>, métodos <b>CloneNode</b>, <b>NextNode</b> ou <b>PrevNode</b> ou a propriedade <b>raiz</b> .</description>
         </item>
         <item>
           <description>Para se referir a uma coleção de nós de diagramas filhos, use o <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" /> propriedade.</description>
@@ -219,8 +219,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -307,18 +309,18 @@
         <remarks>
           <para>
             <b>MsoOrgChartLayoutType</b> pode ser uma destas constantes <b>MsoOrgChartLayoutType</b> .</para>
-          <para>os nós 
-            <b>msoOrgChartLayoutAssistant</b> casas filho como assistentes.</para>
-          <para>os nós 
-            <b>msoOrgChartLayoutBothHanging</b> casas filho verticalmente a partir do nó pai, à esquerda e direita.</para>
-          <para>os nós 
-            <b>msoOrgChartLayoutLeftHanging</b> casas filho verticalmente a partir do nó pai no lado esquerdo.</para>
           <para>
-            <b>msoOrgChartLayoutMixed</b> valor de retorno de um nó pai que tem filhos formatados usando mais de um <b>MsoOrgChartLayoutType</b>.</para>
-          <para>os nós 
-            <b>msoOrgChartLayoutRightHanging</b> casas filho verticalmente a partir do nó pai no lado direito.</para>
-          <para>os nós 
-            <b>msoOrgChartLayoutStandard</b> casas filho horizontalmente abaixo do nó pai.</para>
+            <b>msoOrgChartLayoutAssistant</b> Coloca os nós filho como assistentes.</para>
+          <para>
+            <b>msoOrgChartLayoutBothHanging</b> Coloca os nós filho verticalmente a partir do nó pai à esquerda e direita.</para>
+          <para>
+            <b>msoOrgChartLayoutLeftHanging</b> Coloca os nós filho verticalmente a partir do nó pai no lado esquerdo.</para>
+          <para>
+            <b>msoOrgChartLayoutMixed</b> Retorne o valor de um nó pai que tem filhos formatados usando mais de um <b>MsoOrgChartLayoutType</b>.</para>
+          <para>
+            <b>msoOrgChartLayoutRightHanging</b> Coloca os nós filho verticalmente a partir do nó pai no lado direito.</para>
+          <para>
+            <b>msoOrgChartLayoutStandard</b> Coloca os nós filho horizontalmente abaixo do nó pai.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -459,7 +461,7 @@
         <param name="pTargetNode">Necessário <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> objeto. O nó de diagrama de destino a ser substituído.</param>
         <summary>Substitui um nó de diagrama de destino com o nó de diagrama de origem.</summary>
         <remarks>
-          <para>o nó de diagrama de destino é excluído e o nó de diagrama de origem, incluindo quaisquer de seus nós filho, são movidos para onde o nó de diagrama de destino estava.</para>
+          <para>O nó de diagrama de destino é excluído e o nó de diagrama de origem, incluindo quaisquer de seus nós filho, são movidos para onde o nó de diagrama de destino estava.</para>
           <para></para>
         </remarks>
       </Docs>

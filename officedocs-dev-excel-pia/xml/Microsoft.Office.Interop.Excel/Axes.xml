@@ -1,10 +1,10 @@
 <Type Name="Axes" FullName="Microsoft.Office.Interop.Excel.Axes">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1feb8ea34c54c7ea8501e763d3ed216c97836be8" />
+    <Meta Name="ms.openlocfilehash" Value="16133b78fe6ef635f84e7e24582e31b62c79a469" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572776" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Axes : System.Collections.IEnumerable" />
@@ -36,7 +36,7 @@
     <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.Axis" /> objetos no gráfico especificado.</summary>
     <remarks>
       <para>Use o <see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" /> método para retornar a coleção <b>Axes</b> .</para>
-      <para>Use <b>eixos</b>(<paramref name="type" />, <paramref name="group" />), onde <paramref name="type" /> é o tipo de eixo e <paramref name="group" /> é o grupo do eixo, para retornar um único objeto <b>Axis</b> . <paramref name="Type" /> pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> constantes: <b>xlCategory</b>, <b>xlSeries</b>ou <b>xlValue</b>. <paramref name="Group" /> pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> constantes: <b>xlPrimary</b> ou <b>xlSecondary</b>. Para obter mais informações, consulte o método <b>Axes</b> .</para>
+      <para>Use <b>eixos</b>(<paramref name="type" />, <paramref name="group" />), onde <paramref name="type" /> é o tipo de eixo e <paramref name="group" /> é o grupo do eixo, para retornar um único objeto <b>Axis</b> . <paramref name="Type" />pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> constantes: <b>xlCategory</b>, <b>xlSeries</b>ou <b>xlValue</b>. <paramref name="Group" />pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> constantes: <b>xlPrimary</b> ou <b>xlSecondary</b>. Para obter mais informações, consulte o método <b>Axes</b>.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -156,8 +156,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

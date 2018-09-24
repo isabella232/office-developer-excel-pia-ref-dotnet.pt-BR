@@ -1,10 +1,10 @@
 <Type Name="RoutingSlip" FullName="Microsoft.Office.Interop.Excel.RoutingSlip">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cecf638f353f71fb8e3f7ca178c4b958a480636c" />
+    <Meta Name="ms.openlocfilehash" Value="d1e265b4ea2021fff6dba4ef91746a75aeaa3e17" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572699" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface RoutingSlip" />
@@ -32,7 +32,7 @@
     <summary>Representa a lista de circulação de uma pasta de trabalho. A lista de circulação é usada para enviar uma pasta de trabalho por sistema de email.</summary>
     <remarks>
       <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.RoutingSlip" /> propriedade para retornar o objeto <b>RoutingSlip</b> .</para>
-      <para>o objeto <b>RoutingSlip</b> não existe e não pode ser retornado se a <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> propriedade da pasta de trabalho for <b>True</b>.</para>
+      <para>O objeto <b>RoutingSlip</b> não existe e não pode ser retornado se a <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> propriedade da pasta de trabalho for <b>True</b>.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -91,8 +91,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delivery">
@@ -124,7 +126,7 @@
         <summary>Retorna ou define o método de entrega de roteamento. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery" /> constantes: <b>xlOneAfterAnother</b> ou <b>xlAllAtOnce</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Você não pode definir essa propriedade se a circulação estiver em andamento.</para>
+          <para>Você não poderá definir essa propriedade se a circulação estiver em andamento.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -222,8 +224,8 @@
         <summary>Retorna ou define os destinatários na lista de circulação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>A ordem da lista de destinatários define a ordem de entrega se a opção de entrega de circulação for <b>xlOneAfterAnother</b>.</para>
-          <para>Se uma lista de circulação estiver em andamento, somente os destinatários que ainda não tiverem recebido e circulado o documento são retornados ou definidos.</para>
+          <para>A ordem da lista de destinatários definirá a ordem de entrega se a opção de entrega de circulação for <b>xlOneAfterAnother</b>.</para>
+          <para>Se uma lista de circulação estiver em progresso, somente os destinatários que ainda não tiverem recebido e circulado o documento serão retornados ou definidos.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -251,7 +253,10 @@
       <Docs>
         <summary>Redefine a lista de circulação para que uma nova circulação possa ser iniciada com a mesma lista (usando as mesmas informações de entrega e de lista de destinatários).</summary>
         <returns>To be added.</returns>
-        <remarks>O roteamento de <para>devem ser concluídas antes de você usar esse método. O uso desse método em outros momentos causará um erro.</para><para></para></remarks>
+        <remarks>
+          <para>O roteamento deve ser concluído antes de você usar esse método. O uso desse método em outros momentos causará um erro.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReturnWhenDone">
@@ -343,7 +348,7 @@
         <summary>Retorna ou define o assunto para o mensageiro ou lista de circulação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>o assunto para o <see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" /> objeto é usado como o assunto para mensagens de email usadas para rotear a pasta de trabalho.</para>
+          <para>O assunto para o <see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" /> objeto é usado como o assunto para mensagens de email usadas para rotear a pasta de trabalho.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -378,7 +383,7 @@
           <b>True</b> se o controle de status está habilitado para a lista de circulação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Você não pode definir essa propriedade se a circulação estiver em andamento.</para>
+          <para>Você não poderá definir essa propriedade se a circulação estiver em andamento.</para>
           <para></para>
         </remarks>
       </Docs>

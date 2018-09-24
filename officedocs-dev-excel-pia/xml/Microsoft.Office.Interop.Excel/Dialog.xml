@@ -1,10 +1,10 @@
 <Type Name="Dialog" FullName="Microsoft.Office.Interop.Excel.Dialog">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="683b59b8e165135797b6775618abd9a9ace43d44" />
+    <Meta Name="ms.openlocfilehash" Value="274e93847efbe2121de825e75c0a66505c3899d3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582863" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Dialog" />
@@ -32,8 +32,8 @@
     <summary>Representa uma caixa de diálogo interna do Microsoft Excel.</summary>
     <remarks>
       <para>O objeto <b>Dialog</b> é um membro do <see cref="T:Microsoft.Office.Interop.Excel.Dialogs" /> conjunto. A coleção <b>Dialogs</b> contém todas as caixas de diálogo internas do Microsoft Excel. Você não pode criar uma nova caixa de diálogo interna ou adicionar um à coleção. A única utilidade você pode fazer com que um objeto <b>Dialog</b> é usá-lo com o <see cref="M:Microsoft.Office.Interop.Excel.Dialog.Show(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para exibir a caixa de diálogo correspondente.</para>
-      <para>Uso <b>Dialogs</b>(<paramref name="index" />), onde <paramref name="index" /> é uma constante interna identificando a caixa de diálogo, para retornar um único objeto <b>Dialog</b> .</para>
-      <para>Microsoft Excel inclui constantes internas para muitas das caixas de diálogo internas. Cada constante é formada do prefixo "xlDialog" seguido do nome da caixa de diálogo. Por exemplo, a constante de caixa de diálogo Aplicar nomes é <b>xlDialogApplyNames</b>e a constante de caixa de diálogo Localizar arquivo é <b>xlDialogFindFile</b>. Essas constantes são membros do <see cref="T:Microsoft.Office.Interop.Excel.XlBuiltInDialog" /> tipo enumerado.</para>
+      <para>Use <b>Dialogs</b>(<paramref name="index" />), onde <paramref name="index" /> é uma constante interna identificando a caixa de diálogo, para retornar um único objeto <b>Dialog</b> .</para>
+      <para>O Microsoft Excel inclui constantes internas para muitas das caixas de diálogo internas. Cada constante é formada do prefixo "xlDialog" seguido do nome da caixa de diálogo. Por exemplo, a constante de caixa de diálogo Aplicar nomes é <b>xlDialogApplyNames</b>e a constante de caixa de diálogo Localizar arquivo é <b>xlDialogFindFile</b>. Essas constantes são membros do <see cref="T:Microsoft.Office.Interop.Excel.XlBuiltInDialog" /> tipo enumerado.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -92,8 +92,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -238,9 +240,9 @@
         <summary>Exibe a caixa de diálogo interna e aguarda enquanto o usuário inserir dados.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Para baseado nas caixas de diálogo, esse método retornará <b>True</b> se o usuário clica em Okey ou ele retornará <b>False</b> se o usuário clicar em Cancelar.</para>
+          <para>Para baseado nas caixas de diálogo, esse método retorna <b>True</b> se o usuário clica em Okey ou ele retornará <b>False</b> se o usuário clicar em Cancelar.</para>
           <para>Você pode usar uma única caixa de diálogo alterar várias propriedades ao mesmo tempo. Por exemplo, você pode usar a caixa de diálogo Formatar células para alterar todas as propriedades do <see cref="T:Microsoft.Office.Interop.Excel.Font" /> objeto.</para>
-          <para>Para algumas caixas de diálogo internas (a caixa de diálogo Abrir, por exemplo), você pode definir valores iniciais usando arg1, arg2,..., arg30. Para obter mais informações sobre caixas de diálogo internas, consulte o <see cref="T:Microsoft.Office.Interop.Excel.Dialogs" /> conjunto.</para>
+          <para>Para algumas caixas de diálogo internas (a caixa de diálogo Abrir, por exemplo), você pode definir os valores iniciais usando arg1, arg2,..., arg30. Para obter mais informações sobre caixas de diálogo internas, consulte o <see cref="T:Microsoft.Office.Interop.Excel.Dialogs" /> conjunto.</para>
           <para></para>
         </remarks>
       </Docs>

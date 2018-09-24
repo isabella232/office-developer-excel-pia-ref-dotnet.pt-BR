@@ -1,10 +1,10 @@
 <Type Name="SmartTagAction" FullName="Microsoft.Office.Interop.Excel.SmartTagAction">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f9b7525cdde5955b94995035e9fee9c22d92425a" />
+    <Meta Name="ms.openlocfilehash" Value="0a10fef880f7ed0c7daae5414a8fa44a05aefdd9" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578075" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SmartTagAction" />
@@ -153,7 +153,7 @@
         <summary>Retorna ou define um valor <b>Boolean</b> que indica se uma caixa de seleção em um documento inteligente está selecionada.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Definindo a propriedade <b>CheckboxState</b> como <b>True</b> seleciona a caixa de seleção. A definição dessa propriedade como <b>False</b> limpa a caixa de seleção.</para>
+          <para>Definir a propriedade <b>CheckboxState</b> como <b>True</b> seleciona a caixa de seleção. A definição dessa propriedade como <b>False</b> limpa a caixa de seleção.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -184,8 +184,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -312,37 +314,37 @@
             </item>
             <item>
               <term>
-                <b>nome</b>
+                <b>Nome</b>
               </term>
-              <description>[Europe]. [ França]. [Paris] (somente leitura)</description>
+              <description>[Europe].[France].[Paris] (somente leitura)</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]. [ França]. [Paris] (somente leitura)</description>
-              <description>(Igual ao valor da propriedade SQL, somente leitura)</description>
+              <description>[Europe].[France].[Paris] (somente leitura)</description>
+              <description>(Igual ao da propriedade SQL, somente leitura)</description>
             </item>
             <item>
               <term>
                 <b>Valor</b>
               </term>
-              <description>[Europe]. [ França]. [Paris] (somente leitura)</description>
+              <description>[Europe].[France].[Paris] (somente leitura)</description>
               <description>Paris</description>
             </item>
           </list>
-          <para>Ao se especificar um índice para o <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> coleção, você pode usar a sintaxe mostrada na tabela a seguir.</para>
+          <para>Ao especificar um índice para o <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> coleção, você pode usar a sintaxe mostrada na tabela a seguir.</para>
           <list type="table">
             <item>
               <term>Expression.PivotItems ("[Europe]. [ França]. [Paris] ")</term>
               <description>expressão. PivotItems("Paris")</description>
             </item>
           </list>
-          <para>ao usar o <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> propriedade referência um determinado membro de uma coleção, você pode usar o nome do índice de texto conforme mostrado na tabela a seguir.</para>
+          <para>Ao usar o <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> propriedade referência um determinado membro de uma coleção, você pode usar o nome do índice de texto conforme mostrado na tabela a seguir.</para>
           <list type="table">
             <item>
-              <term>[Europe]. [ França]. [Paris]</term>
+              <term>[Europe]. [France]. [Paris]</term>
               <description>Paris</description>
             </item>
           </list>
@@ -509,7 +511,7 @@
             <b>xlSmartTagControlCombo</b>
           </para>
           <para>
-            <b>xlSmartTagControlHelp </b>
+            <b>xlSmartTagControlHelp</b>
           </para>
           <para>
             <b>xlSmartTagControlHelpURL</b>
@@ -530,7 +532,7 @@
             <b>xlSmartTagControlRadioGroup</b>
           </para>
           <para>
-            <b> xlSmartTagControlSeparator</b>
+            <b>xlSmartTagControlSeparator</b>
           </para>
           <para>
             <b>xlSmartTagControlSmartTag</b>

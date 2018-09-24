@@ -1,10 +1,10 @@
 <Type Name="Points" FullName="Microsoft.Office.Interop.Excel.Points">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="651310432b2d8ea7783d19f10fc31af828c69ea3" />
+    <Meta Name="ms.openlocfilehash" Value="ae80f91ccd2e0535f72e2ae08eab742230abf0bd" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586853" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Points : System.Collections.IEnumerable" />
@@ -35,8 +35,8 @@
   <Docs>
     <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.Point" /> objetos na série especificada em um gráfico.</summary>
     <remarks>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Series.Points(System.Object)" /> método para retornar a coleção <b>Points</b> .</para>
-      <para>Usar <b>pontos</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do ponto, para retornar um único objeto <b>Point</b> . Pontos são numerados da esquerda para direita na série. Points(1) é o ponto mais à esquerda e Points(Points.Count) é o ponto mais à direita.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Series.Points(System.Object)" /> método para retornar a coleção de <b>pontos</b> .</para>
+      <para>Use <b>pontos</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do ponto, para retornar um único objeto <b>Point</b> . Pontos são numerados da esquerda para direita na série. Points(1) é o ponto mais à esquerda e Points(Points.Count) é o ponto mais à direita.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -155,8 +155,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

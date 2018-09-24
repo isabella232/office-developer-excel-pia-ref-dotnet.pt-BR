@@ -1,10 +1,10 @@
 <Type Name="ErrorBars" FullName="Microsoft.Office.Interop.Excel.ErrorBars">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6184f44146a0a3b987edb9aaee7576a2b9ce0177" />
+    <Meta Name="ms.openlocfilehash" Value="60889c6b8ce84452540bb212c8f4d70d23f454da" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581344" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ErrorBars" />
@@ -30,7 +30,11 @@
   </Attributes>
   <Docs>
     <summary>Representa as barras de erro em uma série de gráficos.</summary>
-    <remarks>Barras de erro <para>indicam o grau de incerteza para os dados do gráfico. Somente uma série de área, barra, linha, coluna e grupos de dispersão em um gráfico 2D pode ter barras de erro. Somente séries em grupos de dispersão podem ter valores x e y barras de erro. Este objeto não é uma coleção. Não há nenhum objeto que representa uma única barra de erro; Você pode ativar x barras de erro ou barras de erro y para todos os pontos em uma série ou desativá-los desativados.</para><para>Uso o <see cref="P:Microsoft.Office.Interop.Excel.Series.ErrorBars" /> propriedade para retornar o objeto <b>ErrorBars</b> .</para><para></para></remarks>
+    <remarks>
+      <para>As barras de erros indicam o grau de incerteza dos dados do gráfico. Somente séries em grupos de área, de dispersão, de linhas, de colunas e de barras em um gráfico 2D podem ter barras de erros. Somente séries em grupos de dispersão podem ter barras de erros x e y. Este objeto não é uma coleção. Não há nenhum objeto que represente uma única barra de erros; você ativa ou desativa as barras de erro de x (ou as barras de erros de y) para todos os pontos de uma série.</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.Series.ErrorBars" /> propriedade para retornar o objeto <b>ErrorBars</b> .</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -141,8 +145,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -200,7 +206,7 @@
         <summary>Retorna ou define o estilo final das barras de erro.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>a propriedade <b>EndStyle</b> pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlEndStyleCap" /> constantes: <b>xlCap</b> ou <b>xlNoCap</b>.</para>
+          <para>A propriedade <b>EndStyle</b> pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlEndStyleCap" /> constantes: <b>xlCap</b> ou <b>xlNoCap</b>.</para>
           <para></para>
         </remarks>
       </Docs>

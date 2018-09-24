@@ -1,10 +1,10 @@
 <Type Name="ShapeNodes" FullName="Microsoft.Office.Interop.Excel.ShapeNodes">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="01b5b643110df0aa3347346606d63c6288376360" />
+    <Meta Name="ms.openlocfilehash" Value="fcefaa651f73c2e96e8b51711d14e2e3ee8df786" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578096" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ShapeNodes : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
@@ -36,9 +36,9 @@
     <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.ShapeNode" /> objetos especificado forma livre.</summary>
     <remarks>
       <para>Cada objeto <b>ShapeNode</b> representa um nó entre segmentos em uma forma livre ou um ponto de controle de um segmento curvo de uma forma livre. Você pode criar uma forma livre manualmente ou usando o <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> e <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> métodos.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Excel.Shape.Nodes" /> propriedade para retornar a coleção <b>ShapeNodes</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> método para criar um novo nó e adicioná-lo à coleção <b>ShapeNodes</b> .</para>
-      <para>Uso <b>nós</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do nó, para retornar um único objeto <b>ShapeNode</b> .</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.Shape.Nodes" /> propriedade para retornar a coleção <b>ShapeNodes</b> .</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> método para criar um novo nó e adicioná-lo à coleção <b>ShapeNodes</b> .</para>
+      <para>Use <b>nós</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do nó, para retornar um único objeto <b>ShapeNode</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -130,7 +130,10 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. <b>Integer</b> somente leitura.</summary>
         <value>To be added.</value>
-        <remarks>Propriedade <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -327,7 +330,7 @@
         <param name="EditingType">Necessário <see cref="T:Microsoft.Office.Core.MsoEditingType" />. A propriedade de edição do vértice.</param>
         <summary>Define o tipo de edição do nó especificado.</summary>
         <remarks>
-          <para>Se o nó for um ponto de controle de um segmento curvo, este método define o tipo de edição do nó adjacente a ele que une dois segmentos. Observe que, dependendo do tipo de edição, esse método pode afetar a posição de nós adjacentes.</para>
+          <para>Se o nó for um ponto de controle de um segmento curvo, este método definirá o tipo de edição do nó adjacente para que una dois segmentos. Observe que, dependendo do tipo de edição, esse método poderá afetar a posição de nós adjacentes.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -399,7 +402,7 @@
         <param name="SegmentType">Necessário <see cref="T:Microsoft.Office.Core.MsoSegmentType" />. Especifica se o segmento é reto ou curvo. Pode ser uma destas constantes <b>MsoSegmentType</b> :<b>MsoSegmentType</b><b>msoSegmentCurve</b><b>msoSegmentLine</b></param>
         <summary>Define o tipo de segmento que acompanha o nó especificado.</summary>
         <remarks>
-          <para>Se o nó for um ponto de controle de um segmento curvo, este método define o tipo de segmento para essa curva. Observe que isso pode afetar o número total de nós pela inserção ou exclusão de nós adjacentes.</para>
+          <para>Se o nó for um ponto de controle de um segmento curvo, esse método definirá o tipo de segmento dessa curva. Observe que isso pode afetar o número total de nós determinado pela inserção ou exclusão de nós adjacentes.</para>
           <para></para>
         </remarks>
       </Docs>

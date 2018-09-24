@@ -1,10 +1,10 @@
 <Type Name="Series" FullName="Microsoft.Office.Interop.Excel.Series">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3bf5d873dc8f258078c4b08af2de06bdc1a91315" />
+    <Meta Name="ms.openlocfilehash" Value="3a8cc36d1324ac7595cb7a40f82c526876f56ea7" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574827" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Series" />
@@ -439,7 +439,7 @@
         <summary>Retorna ou define o tipo de gráfico. Leitura/gravação <see cref="T:Microsoft.Office.Interop.Excel.XlChartType" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Alguns tipos de gráfico não estão disponíveis para relatórios de gráfico dinâmico.</para>
+          <para>Alguns tipos de gráfico não estão disponíveis para relatórios de tabela dinâmica.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -521,7 +521,10 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriedade <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabels">
@@ -551,8 +554,8 @@
         <summary>Retorna um objeto representando um único rótulo de dados (um <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> objeto) ou uma coleção de todos os rótulos de dados da série (um <see cref="T:Microsoft.Office.Interop.Excel.DataLabels" /> conjunto).</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Se a série tiver a opção de <b>Mostrar valor</b> ativada para os rótulos de dados, a coleção retornada pode conter até um rótulo para cada ponto. Rótulos de dados podem ser ativados ou desativados para pontos individuais na série.</para>
-          <para>Se a série estiver em um gráfico de área e tiver a opção <b>Mostrar rótulo</b> ativada para os rótulos de dados, a coleção retornada contém um único rótulo, que é o rótulo da série de área.</para>
+          <para>Se a série tiver a opção <b>Mostrar valor</b> ativada para os rótulos de dados, a coleção retornada poderá conter até um rótulo para cada ponto. Os rótulos de dados podem ser ativados ou desativados para pontos individuais na série.</para>
+          <para>Se a série estiver em um gráfico de área e tiver a opção <b>Mostrar rótulo</b> ativada para os rótulos de dados, a coleção retornada conterá um único rótulo, que será o rótulo da série de área.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -581,7 +584,7 @@
         <summary>Exclui o objeto.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Exclusão de um objeto <b>Point</b> ou <b>LegendKey</b> exclui a série inteira.</para>
+          <para>A exclusão de um objeto <b>Point</b> ou <b>LegendKey</b> acarreta a exclusão de toda a série.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -773,11 +776,11 @@
         <summary>Retorna ou define a fórmula do objeto na notação de estilo A1. <b>String</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Essa propriedade não está disponível para fontes de dados OLAP.</para>
-          <para>Se a célula contiver uma constante, essa propriedade retornará a constante. Se a célula estiver vazia, <b>essa propriedade</b> retornará uma sequência vazia. Se a célula contiver uma fórmula, a propriedade <b>Formula</b> retorna a fórmula como uma cadeia de caracteres no mesmo formato que seria exibido na barra de fórmulas (incluindo o sinal de igualdade).</para>
-          <para>Se você definir o valor ou fórmula de uma célula como uma data, o Microsoft Excel verifica se essa célula já está formatada com um dos formatos de número de data ou hora. Se não, o Microsoft Excel altera o formato de número para o formato de número de data curta padrão.</para>
-          <para>Se o intervalo for um intervalo one - ou bidimensional, você pode definir a fórmula como uma matriz do Visual Basic de mesmas dimensões. Da mesma forma, você pode colocar a fórmula em uma matriz do Visual Basic.</para>
-          <para>a definição da fórmula para um intervalo de múltiplas células preenche todas as células do intervalo com a fórmula.</para>
+          <para>Esta propriedade não está disponível para fontes de dados OLAP.</para>
+          <para>Se a célula contiver uma constante, essa propriedade retornará a constante. Se a célula estiver vazia, a propriedade <b>Formula</b> retornará uma sequência de caracteres vazia. Se a célula contiver uma fórmula, a propriedade <b>Formula</b> retornará a fórmula como uma sequência de caracteres no mesmo formato que seria exibido na barra de fórmulas (inclusive o sinal de igual).</para>
+          <para>Quando você define o valor ou a fórmula de uma célula como uma data, o Microsoft Excel verifica se a célula já está formatada com um dos formatos numéricos de data ou hora. Se não estiver, o Microsoft Excel altera o formato numérico para o formato padrão de data abreviada.</para>
+          <para>Quando o intervalo é uni ou bidimensional, você pode definir a fórmula como uma matriz do Visual Basic com as mesmas dimensões. Também pode inserir a fórmula em uma matriz do Visual Basic.</para>
+          <para>A configuração da fórmula para um intervalo de várias células preenche todas as células do intervalo com a fórmula.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -811,10 +814,10 @@
         <summary>Retorna ou define a fórmula para o objeto usando referências de estilo A1 no idioma do usuário. <b>Cadeia de caracteres</b> de leitura/gravação</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se a célula contiver uma constante, essa propriedade retornará essa constante. Se a célula estiver vazia, a propriedade retorna uma sequência vazia. Se a célula contiver uma fórmula, a propriedade retornará a fórmula como uma cadeia de caracteres, no mesmo formato no qual ela seria exibida na barra de fórmulas (incluindo o sinal de igualdade).</para>
-          <para>Se você definir o valor ou fórmula de uma célula como uma data, o Microsoft Excel verifica se essa célula já está formatada com um dos formatos de número de data ou hora. Se não, o formato de número será alterado para o formato de número de data curta padrão.</para>
-          <para>Se o intervalo for um intervalo one - ou bidimensional, você pode definir a fórmula como uma matriz do Visual Basic de mesmas dimensões. Da mesma forma, você pode colocar a fórmula em uma matriz do Visual Basic.</para>
-          <para>a definição da fórmula de um intervalo de múltiplas células preenche todas as células do intervalo com a fórmula.</para>
+          <para>Se a célula contiver uma constante, esta propriedade retornará essa constante. Se a célula estiver vazia, a propriedade retornará uma sequência de caracteres vazia. Se a célula contiver uma fórmula, a propriedade retornará a fórmula como uma sequência de caracteres, no mesmo formato em que ela seria exibida na barra de fórmulas (inclusive o sinal de igual).</para>
+          <para>Quando você define o valor ou a fórmula de uma célula como uma data, o Microsoft Excel verifica se essa célula já está formatada com um dos formatos de número de data ou hora. Se não estiver, o formato de número será alterado para o formato de número de data abreviada padrão.</para>
+          <para>Quando o intervalo é uni ou bidimensional, você pode definir a fórmula como uma matriz do Visual Basic com as mesmas dimensões. Também pode inserir a fórmula em uma matriz do Visual Basic.</para>
+          <para>A configuração da fórmula de um intervalo de múltiplas células preenche todas as células do intervalo com a fórmula.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -848,10 +851,10 @@
         <summary>Retorna ou define a fórmula para o objeto usando a notação de estilo L1C1. <b>String</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se a célula contiver uma constante, essa propriedade retornará a constante. Se a célula estiver vazia, a propriedade retorna uma sequência vazia. Se a célula contiver uma fórmula, a propriedade retornará a fórmula como uma cadeia de caracteres, no mesmo formato no qual ela seria exibida na barra de fórmulas (incluindo o sinal de igualdade).</para>
-          <para>Se você definir o valor ou fórmula de uma célula como uma data, o Microsoft Excel verifica se essa célula já está formatada com um dos formatos de número de data ou hora. Se não, o formato de número será alterado para o formato de número de data curta padrão.</para>
-          <para>Se o intervalo for um intervalo one - ou bidimensional, você pode definir a fórmula como uma matriz do Visual Basic de mesmas dimensões. Da mesma forma, você pode colocar a fórmula em uma matriz do Visual Basic.</para>
-          <para>a definição da fórmula de um intervalo de múltiplas células preenche todas as células do intervalo com a fórmula.</para>
+          <para>Se a célula contiver uma constante, essa propriedade retornará essa constante. Se a célula estiver vazia, a propriedade retornará uma cadeia de caracteres vazia. Se a célula contiver uma fórmula, a propriedade retornará a fórmula como uma cadeia de caracteres, no mesmo formato em que ela seria exibida na barra de fórmulas (inclusive o sinal de igual).</para>
+          <para>Quando você define o valor ou a fórmula de uma célula como uma data, o Microsoft Excel verifica se essa célula já está formatada com um dos formatos de número de data ou hora. Se não estiver, o formato de número será alterado para o formato de número de data abreviada padrão.</para>
+          <para>Quando o intervalo é uni ou bidimensional, você pode definir a fórmula como uma matriz do Visual Basic com as mesmas dimensões. Também pode inserir a fórmula em uma matriz do Visual Basic.</para>
+          <para>A configuração da fórmula de um intervalo de múltiplas células preenche todas as células do intervalo com a fórmula.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -885,10 +888,10 @@
         <summary>Retorna ou define a fórmula para o objeto, usando a notação de estilo L1C1 no idioma do usuário. <b>Cadeia de caracteres</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se a célula contiver uma constante, essa propriedade retornará essa constante. Se a célula estiver vazia, a propriedade retorna uma sequência vazia. Se a célula contiver uma fórmula, a propriedade retornará a fórmula como uma cadeia de caracteres, no mesmo formato no qual ela seria exibida na barra de fórmulas (incluindo o sinal de igualdade).</para>
-          <para>Se você definir o valor ou fórmula de uma célula como uma data, o Microsoft Excel verifica se essa célula já está formatada com um dos formatos de número de data ou hora. Se não, o formato de número será alterado para o formato de número de data curta padrão.</para>
-          <para>Se o intervalo for um intervalo one - ou bidimensional, você pode definir a fórmula como uma matriz do Visual Basic de mesmas dimensões. Da mesma forma, você pode colocar a fórmula em uma matriz do Visual Basic.</para>
-          <para>a definição da fórmula de um intervalo de múltiplas células preenche todas as células do intervalo com a fórmula.</para>
+          <para>Se a célula contiver uma constante, esta propriedade retornará essa constante. Se a célula estiver vazia, a propriedade retornará uma sequência de caracteres vazia. Se a célula contiver uma fórmula, a propriedade retornará a fórmula como uma sequência de caracteres, no mesmo formato em que ela seria exibida na barra de fórmulas (inclusive o sinal de igual).</para>
+          <para>Quando você define o valor ou a fórmula de uma célula como uma data, o Microsoft Excel verifica se essa célula já está formatada com um dos formatos de número de data ou hora. Se não estiver, o formato de número será alterado para o formato de número de data abreviada padrão.</para>
+          <para>Quando o intervalo é uni ou bidimensional, você pode definir a fórmula como uma matriz do Visual Basic com as mesmas dimensões. Também pode inserir a fórmula em uma matriz do Visual Basic.</para>
+          <para>A configuração da fórmula de um intervalo de múltiplas células preenche todas as células do intervalo com a fórmula.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1082,7 +1085,7 @@
         <value>A cor de preenchimento de pontos de dados negativos em uma série.</value>
         <remarks>
           <para>Leitura/gravação.</para>
-          <para>o <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" /> propriedade permite definir a cor de preenchimento de pontos de dados negativos como numérico específico, hexadecimal, octal ou o valor de cor RGB. Para definir o valor como um valor de RBG, use a função do Visual Basic <b>RGB</b> . Em vez de usar o <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" /> propriedade, você pode usar o <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> propriedade, que usa um conjunto mais simples dos valores inteiros da paleta de cores atual.</para>
+          <para>O <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" /> propriedade permite definir a cor de preenchimento de pontos de dados negativos como numérico específico, hexadecimal, octal ou o valor de cor RGB. Para definir o valor como um valor de RBG, use a função do Visual Basic <b>RGB</b> . Em vez de usar o <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" /> propriedade, você pode usar o <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> propriedade, que usa um conjunto mais simples dos valores inteiros da paleta de cores atual.</para>
           <para>Para o <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" />propriedade tenha efeito, a <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertIfNegative" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Series" /> objeto também deve ser definido como <b>true</b>.</para>
           <para></para>
         </remarks>
@@ -1118,7 +1121,7 @@
         <value>A cor de preenchimento de pontos de dados negativos em uma série.</value>
         <remarks>
           <para>Leitura/gravação.</para>
-          <para>o <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> propriedade permite definir a cor de preenchimento de pontos de dados negativos como um valor de índice da cor de 0 a 56. Em vez de usar o <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> propriedade, você pode usar o <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" /> propriedade, que permite que você definir a cor como um hexadecimal numérico, específico, octal ou um valor de cor RGB.</para>
+          <para>O <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> propriedade permite definir a cor de preenchimento de pontos de dados negativos como um valor de índice da cor de 0 a 56. Em vez de usar o <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> propriedade, você pode usar o <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" /> propriedade, que permite que você definir a cor como um hexadecimal numérico, específico, octal ou um valor de cor RGB.</para>
           <para>Para o <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> propriedade tenha efeito, a <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertIfNegative" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Series" /> objeto também deve ser definido como <b>true</b>.</para>
           <para></para>
         </remarks>
@@ -1185,7 +1188,7 @@
         <summary>Esta configuração controla se a série tiver sido filtrada do gráfico. O valor padrão é <b>False</b>. <b>Boolean</b> (<b>bool</b> em c#) Leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Quando um usuário filtra uma série, a série <b>IsFiltered</b> comutadores de propriedade como <b>True</b>e a série é transferido para fora de seu pai <b>SeriesCollection</b>. No entanto, dessa série permanece no seu pai <b>FullSeriesCollection</b>. Quando um filtros de usuário a série novamente, é inserido novamente em seu lugar original no <b>SeriesCollection</b>.</para>
+          <para>Quando um usuário filtra uma série, a propriedade <b>IsFiltered</b> série alterna para <b>True</b>e a série é transferida para fora de seu pai <b>SeriesCollection</b>. No entanto, dessa série permanece no seu pai <b>FullSeriesCollection</b>. Quando um filtros de usuário a série novamente, é inserido novamente em seu lugar original no <b>SeriesCollection</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1433,7 +1436,7 @@
         <summary>Retorna ou define o nome do objeto. <b>String</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>A tabela a seguir mostra os valores de exemplo da propriedade de <b>nome</b> e propriedades relacionadas dada a uma fonte de dados OLAP com o nome exclusivo "[Europe]. [France]. [Paris] "e o nome de uma fonte de dados não-OLAP com o item"Paris".</para>
+          <para>A tabela a seguir mostra valores de exemplo da propriedade <b>Name</b> e propriedades relacionadas, pressupondo-se uma fonte de dados OLAP com o nome exclusivo "[Europe].[France].[Paris]" e uma fonte de dados não-OLAP com o nome de item "Paris".</para>
           <list type="table">
             <item>
               <term>
@@ -1444,28 +1447,42 @@
             </item>
             <item>
               <term>
-                <b>nome</b>
+                <b>Nome</b>
               </term>
-              <description>[Europe]. [ França]. [Paris] (somente leitura)</description>
+              <description>[Europe].[France].[Paris] (somente leitura)</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]. [ França]. [Paris] (somente leitura)</description>
-              <description>(Igual ao valor da propriedade SQL, somente leitura)</description>
+              <description>[Europe].[France].[Paris] (somente leitura)</description>
+              <description>(Igual ao da propriedade SQL, somente leitura)</description>
             </item>
             <item>
               <term>
                 <b>Valor</b>
               </term>
-              <description>[Europe]. [ França]. [Paris] (somente leitura)</description>
+              <description>[Europe].[France].[Paris] (somente leitura)</description>
               <description>Paris</description>
             </item>
           </list>
-          <para>Ao se especificar um índice para o <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> coleção, você pode usar a sintaxe mostrada na tabela a seguir.</para> expressão 
-          <list type="table"><item><term>. PivotItems ("[Europe]. [ França]. [Paris] ")</term><description>expressão. PivotItems("Paris")</description></item></list><para>ao usar o <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> propriedade referência um determinado membro de uma coleção, você pode usar o nome do índice de texto conforme mostrado na tabela a seguir.</para><list type="table"><item><term>[Europe]. [ França]. [Paris]</term><description>Paris</description></item></list><para></para></remarks>
+          <para>Ao especificar um índice para o <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> coleção, você pode usar a sintaxe mostrada na tabela a seguir.</para>
+          <list type="table">
+            <item>
+              <term>expressão. PivotItems ("[Europe]. [ França]. [Paris] ")</term>
+              <description>expressão. PivotItems("Paris")</description>
+            </item>
+          </list>
+          <para>Ao usar o <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> propriedade referência um determinado membro de uma coleção, você pode usar o nome do índice de texto conforme mostrado na tabela a seguir.</para>
+          <list type="table">
+            <item>
+              <term>[Europe]. [France]. [Paris]</term>
+              <description>Paris</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1650,7 +1667,7 @@
         <value>Um valor de índice que é usado internamente para associar a formatação da sequência de elementos do gráfico.</value>
         <remarks>
           <para>Somente leitura.</para>
-          <para>Essa propriedade é usada internamente pelo Excel e não se destina a ser chamado a partir de seu código.</para>
+          <para>Essa propriedade é usada internamente pelo Excel e não se destina a ser chamada do código.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1684,8 +1701,8 @@
         <summary>Retorna ou define a ordem de plotagem para a série selecionada dentro do grupo gráfico. <b>Integer</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Você pode definir a ordem de plotagem somente dentro de um grupo de gráficos (você não pode definir a ordem de plotagem para todo o gráfico se você tiver mais de um tipo de gráfico). Um grupo gráfico é uma coleção de séries com o mesmo tipo de gráfico.</para>
-          <para>Alterar a ordem de plotagem de uma série fará as ordens de plotagem das outras série do grupo gráfico sejam ajustadas, se necessário.</para>
+          <para>Só é possível definir a ordem de plotagem dentro de um grupo de gráficos (você não pode definir a ordem de plotagem para todo o gráfico quando há mais de um tipo de gráfico). Um grupo de gráficos é uma coleção de séries com o mesmo tipo de gráfico.</para>
+          <para>Alterar a ordem de plotagem de uma série, você fará as ordens de plotagem das outras série do grupo gráfico sejam ajustadas conforme necessário.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1901,7 +1918,7 @@
         <summary>Retorna ou define uma coleção de todos os valores da série. Isso pode ser um intervalo em uma planilha ou uma matriz de valores de constantes, mas não uma combinação de ambos. <b>Objeto</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Relatórios de gráfico dinâmico para, essa propriedade é somente leitura.</para>
+          <para>Para relatórios de gráfico dinâmico, essa propriedade é somente leitura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1935,7 +1952,7 @@
         <summary>Retorna ou define uma matriz de valores x para uma série de gráficos. A propriedade <b>XValues</b> pode ser definida com um intervalo em uma planilha ou como uma matriz de valores, mas ele não pode ser uma combinação de ambos. <b>Objeto</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Relatórios de gráfico dinâmico para essa propriedade é somente leitura.</para>
+          <para>Para relatórios de gráfico dinâmico, essa propriedade é somente leitura.</para>
           <para></para>
         </remarks>
       </Docs>

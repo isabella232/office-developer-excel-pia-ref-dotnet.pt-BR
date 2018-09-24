@@ -1,10 +1,10 @@
 <Type Name="ModelChanges" FullName="Microsoft.Office.Interop.Excel.ModelChanges">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d6d99d98460b08cfccb756c4802796ed0bea50e1" />
+    <Meta Name="ms.openlocfilehash" Value="9f59d830c9bcb2ca9333087af48cbeb26d3d390d" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572825" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ModelChanges" />
@@ -30,7 +30,10 @@
   </Attributes>
   <Docs>
     <summary>Representa as alterações feitas ao modelo de dados.</summary>
-    <remarks>Objeto <para>o <b>ModelChanges</b> contém informações sobre quais alterações foram feitas para os dados do modelo quando o <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.ModelChange" /> evento ocorre após uma operação de modelo. Quando Excel faz alterações ao modelo de dados, várias alterações podem ser feitas na mesma operação e o objeto <b>ModelChanges</b> incluem informações sobre todas as alterações feitas na operação de um modelo.</para><para></para></remarks>
+    <remarks>
+      <para>O objeto de <b>ModelChanges</b> contém informações sobre quais alterações foram feitas para os dados do modelo quando o <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.ModelChange" /> evento ocorre após uma operação de modelo. Quando o Excel faz alterações ao modelo de dados, várias alterações podem ser feitas na mesma operação e o objeto <b>ModelChanges</b> incluirá informações sobre todas as alterações feitas na operação de um modelo.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -286,7 +289,7 @@
         <summary>A fonte do modelo de dados.</summary>
         <value>XlModelChangeSource</value>
         <remarks>
-          <para>A fonte pode ser Excel ou em um suplemento do PowerPivot</para>
+          <para>A fonte pode ser Excel ou um Add-in do PowerPivot.</para>
           <para></para>
         </remarks>
       </Docs>

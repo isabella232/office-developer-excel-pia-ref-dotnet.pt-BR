@@ -1,10 +1,10 @@
 <Type Name="Walls" FullName="Microsoft.Office.Interop.Excel.Walls">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a799677b46bf969b126a84541e7f118b6dcbcf47" />
+    <Meta Name="ms.openlocfilehash" Value="694e055e0616d70a2ab7c59205f377db0e237a53" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576045" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Walls" />
@@ -32,7 +32,7 @@
     <summary>Representa as paredes de um gráfico 3D.</summary>
     <remarks>
       <para>Este objeto não é uma coleção. Não há nenhum objeto que representa uma única parede; Você deve retornar todas as paredes como uma unidade.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Excel._Chart.Walls" /> propriedade para retornar o objeto <b>Walls</b> .</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Chart.Walls" /> propriedade para retornar o objeto <b>Walls</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -148,8 +148,10 @@
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente à c. 5843454 número hexadecimal</para> Propriedade 
-          <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -270,7 +272,7 @@
         <summary>Retorna o nome do objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>A tabela a seguir mostra os valores de exemplo da propriedade de <b>nome</b> e propriedades relacionadas dada a uma fonte de dados OLAP com o nome exclusivo "[Europe]. [France]. [Paris] "e o nome de uma fonte de dados não-OLAP com o item"Paris".</para>
+          <para>A tabela a seguir mostra valores de exemplo da propriedade <b>Name</b> e propriedades relacionadas, pressupondo-se uma fonte de dados OLAP com o nome exclusivo "[Europe].[France].[Paris]" e uma fonte de dados não-OLAP com o nome de item "Paris".</para>
           <list type="table">
             <item>
               <term>
@@ -281,28 +283,35 @@
             </item>
             <item>
               <term>
-                <b>nome</b>
+                <b>Nome</b>
               </term>
-              <description>[Europe]. [ França]. [Paris] (somente leitura)</description>
+              <description>[Europe].[France].[Paris] (somente leitura)</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]. [ França]. [Paris] (somente leitura)</description>
-              <description>(Igual ao valor da propriedade SQL, somente leitura)</description>
+              <description>[Europe].[France].[Paris] (somente leitura)</description>
+              <description>(Igual ao da propriedade SQL, somente leitura)</description>
             </item>
             <item>
               <term>
                 <b>Valor</b>
               </term>
-              <description>[Europe]. [ França]. [Paris] (somente leitura)</description>
+              <description>[Europe].[France].[Paris] (somente leitura)</description>
               <description>Paris</description>
             </item>
           </list>
-          <para>Ao se especificar um índice para o <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> coleção, você pode usar a sintaxe mostrada na tabela a seguir.</para> expressão 
-          <list type="table"><item><term>. PivotItems ("[Europe]. [ França]. [Paris] ")</term><description>expressão. PivotItems("Paris")</description></item></list><para></para></remarks>
+          <para>Ao especificar um índice para o <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> coleção, você pode usar a sintaxe mostrada na tabela a seguir.</para>
+          <list type="table">
+            <item>
+              <term>expressão. PivotItems ("[Europe]. [ França]. [Paris] ")</term>
+              <description>expressão. PivotItems("Paris")</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -356,7 +365,7 @@
       <Docs>
         <summary>Cola uma imagem da Área de Transferência nas paredes do gráfico especificado.</summary>
         <remarks>
-          <para>Este método pode ser usado em gráficos de colunas, barras, linhas ou radar. Ele define a propriedade <b>MarkerStyle</b> como <b>xlMarkerStylePicture</b>.</para>
+          <para>Este método pode ser usado em gráficos de colunas, de barras, de linhas ou de radar. Ele define a propriedade <b>MarkerStyle</b> como <b>xlMarkerStylePicture</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -390,7 +399,7 @@
         <summary>Retorna ou define a maneira como as imagens são exibidas nas paredes e faces de um gráfico 3D.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>a propriedade <b>PictureType</b> pode ser uma das seguintes constantes: <b>xlStack</b> ou <b>xlStretch</b>.</para>
+          <para>A propriedade <b>PictureType</b> pode ser uma das seguintes constantes: <b>xlStack</b> ou <b>xlStretch</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -483,7 +492,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Usar esta propriedade para definir a espessura da parede.  A espessura padrão é 0.</para>
+          <para>Use essa propriedade para definir a espessura da parede. A espessura padrão é 0.</para>
           <para></para>
         </remarks>
       </Docs>

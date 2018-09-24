@@ -1,10 +1,10 @@
 <Type Name="PivotItems" FullName="Microsoft.Office.Interop.Excel.PivotItems">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="435b6d2a95849e9f7ebe1d9128033b756945106a" />
+    <Meta Name="ms.openlocfilehash" Value="79244040b4a42af82c600ab5fd7fc7b700d3b722" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580903" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotItems : System.Collections.IEnumerable" />
@@ -36,7 +36,7 @@
     <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> objetos em um campo de tabela dinâmica. Os itens são as entradas de dados individuais em uma categoria de campo.</summary>
     <remarks>
       <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.PivotField.PivotItems(System.Object)" /> método para retornar a coleção <b>PivotItems</b> .</para>
-      <para>Uso <b>PivotItems</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do item ou o nome, para retornar um único objeto <b>PivotItem</b> .</para>
+      <para>Use <b>PivotItems</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome, para retornar um único objeto <b>PivotItem</b> ou número de índice do item.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -151,7 +151,10 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriedade <para>o <b>criador</b> foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
