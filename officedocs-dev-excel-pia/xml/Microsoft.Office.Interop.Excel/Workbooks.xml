@@ -1,13 +1,5 @@
 <Type Name="Workbooks" FullName="Microsoft.Office.Interop.Excel.Workbooks">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e216142f85071dc6b33c9b1eb3c9ddffaa7369de" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20574932" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Workbooks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e216142f85071dc6b33c9b1eb3c9ddffaa7369de" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50008613" /></Metadata><TypeSignature Language="C#" Value="public interface Workbooks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Workbooks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Workbooks" />
   <TypeSignature Language="VB.NET" Value="Public Interface Workbooks&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objetos que estão atualmente abertos no aplicativo Microsoft Excel.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /> propriedade para retornar a coleção de <b>pastas de trabalho</b> .</para>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Add(System.Object)" /> método para criar uma nova pasta de trabalho vazia e adicioná-lo à coleção.</para>
+    <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objetos que estão abertos no aplicativo Microsoft Excel.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /> propriedade para retornar a coleção <b>Workbooks</b> .</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Add(System.Object)" /> método para criar uma nova livro de trabalho vazia e adicioná-la à coleção.</para>
       <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para abrir um arquivo.</para>
-      <para>Para obter mais informações sobre como usar um único objeto <b>Workbook</b> , consulte o <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto.</para>
-      <para></para>
-    </remarks>
+      <para>Para obter mais informações sobre como usar <b>um único objeto Workbook,</b> consulte o <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="__OpenText">
@@ -313,14 +303,11 @@
         <Parameter Name="Template" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Template">
-          <b>Objeto</b>de opcional. Determina como a nova pasta de trabalho é criada. Se esse argumento não for uma cadeia de caracteres especificando o nome de um arquivo existente do Microsoft Excel, a nova pasta de trabalho é criada com o arquivo especificado como um modelo. Se esse argumento for uma constante, a nova pasta de trabalho contém uma única planilha do tipo especificado. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlWBATemplate" /> constantes: <b>xlWBATChart</b>, <b>xlWBATExcel4IntlMacroSheet</b>, <b>xlWBATExcel4MacroSheet</b>ou <b>xlWBATWorksheet</b>. Se esse argumento for omitido, o Microsoft Excel criará uma nova pasta de trabalho com um número de folhas de em branco (o número de planilhas é definido pela propriedade <b>SheetsInNewWorkbook</b> ).</param>
-        <summary>Cria uma nova pasta de trabalho. A nova pasta de trabalho se torna a pasta de trabalho ativa. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto.</summary>
+        <param name="Template">Objeto <b>opcional</b>. Determina como a nova pasta de trabalho será criada. Se este argumento for uma cadeia de caracteres especificando o nome de um arquivo do Microsoft Excel existente, a nova pasta de trabalho será criada com o arquivo especificado como modelo. Se esse argumento for uma constante, a nova pasta de trabalho conterá uma única planilha do tipo especificado. Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlWBATemplate" /> constantes: <b>xlWBATChart</b>, <b>xlWBATExcel4IntlMacroSheet</b>, <b>xlWBATExcel4MacroSheet</b>ou <b>xlWBATWorksheet</b>. Se esse argumento for omitido, o Microsoft Excel criará uma nova pasta de trabalho com algumas planilhas em branco (o número de planilhas é definido pela propriedade <b>SheetsInNewWorkbook</b>).</param>
+        <summary>Cria uma nova agenda. A nova pasta de trabalho se transforma na pasta de trabalho ativa. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Se o <paramref name="Template" /> argumento especificará um arquivo, o nome de arquivo pode incluir um caminho.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o <paramref name="Template" /> argumento especificar um arquivo, o nome do arquivo poderá incluir um caminho.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -346,7 +333,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -374,10 +361,8 @@
         <Parameter Name="Filename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Filename">
-          <b>String</b> necessário. O nome do arquivo a ser feito o check-out.</param>
-        <summary>
-          <b>True</b> se o Microsoft Excel puder fazer check out de uma pasta de trabalho especificada em um servidor. <b>Boolean</b> de leitura/gravação.</summary>
+        <param name="Filename"><b>String</b> necessário. O nome do arquivo para ser retirado.</param>
+        <summary><b>True</b> se o Microsoft Excel puder fazer check out de uma pasta de trabalho especificada em um servidor. <b>Boolean</b> de leitura/gravação.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -405,9 +390,8 @@
         <Parameter Name="Filename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Filename">
-          <b>String</b> necessário. O nome do arquivo a ser feito o check-out.</param>
-        <summary>Copia a pasta de trabalho especificada de um servidor a um computador local para edição.</summary>
+        <param name="Filename"><b>String</b> necessário. O nome do arquivo para ser retirado.</param>
+        <summary>Copia a agenda especificada de um servidor para um computador local para edição.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -436,10 +420,8 @@
       <Parameters />
       <Docs>
         <summary>Fecha o objeto.</summary>
-        <remarks>
-          <para>Fechar uma pasta de trabalho usando o método <b>Close</b> não executa qualquer macro Auto_Close da pasta de trabalho. Use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> método para executar o auto fechar macros.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Fechar uma área de trabalho usando <b>o método Close</b> não executará Auto_Close macros na área de trabalho. Use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> método para executar as macros de fechamento automático.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -493,12 +475,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. Somente <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -559,8 +539,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>necessário. O nome ou número de índice do objeto.</param>
+        <param name="Index">Objeto <b>Required</b>. O nome ou número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -605,42 +584,25 @@
         <Parameter Name="CorruptLoad" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Filename">
-          <b>String</b> necessário. O nome de arquivo da pasta de trabalho a ser aberto.</param>
-        <param name="UpdateLinks">
-          <b>Objeto</b>de opcional. Especifica que os vínculos de maneira no arquivo serão atualizados. Se esse argumento for omitido, o usuário é solicitado para especificar como os vínculos serão atualizados. Caso contrário, esse argumento será um dos valores listados na tabela a seguir. Se o Microsoft Excel está abrindo um arquivo em WKS, WK1 ou WK3 Formatar e o <paramref name="UpdateLinks" /> argumento for 2, o Microsoft Excel gerará gráficos a partir dos gráficos anexados ao arquivo. Se o argumento for 0, nenhum gráfico será criado.</param>
-        <param name="ReadOnly">
-          <b>Objeto</b>de opcional. Verdadeiro para abrir a pasta de trabalho em modo somente leitura.</param>
-        <param name="Format">
-          <b>Objeto</b>de opcional. Se o Microsoft Excel estiver abrindo um arquivo de texto, este argumento especificará o caractere delimitador, conforme mostrado na tabela a seguir. Se esse argumento for omitido, o delimitador atual será usado.</param>
-        <param name="Password">
-          <b>Objeto</b>de opcional. Uma cadeia de caracteres que contém a senha necessária para abrir uma pasta de trabalho protegida. Se esse argumento for omitido e a pasta de trabalho requer uma senha, o usuário é solicitado para a senha.</param>
-        <param name="WriteResPassword">
-          <b>Objeto</b>de opcional. Uma cadeia de caracteres que contém a senha necessária para gravar em uma pasta de trabalho de gravação reservada. Se esse argumento for omitido e a pasta de trabalho requer uma senha, o usuário será solicitado a senha.</param>
-        <param name="IgnoreReadOnlyRecommended">
-          <b>Objeto</b>de opcional. <b>True</b> para fazer com que o Microsoft Excel não exiba a mensagem recomendada somente leitura (se a pasta de trabalho tiver sido salva com a opção <b>Somente Leitura Recomendada</b>).</param>
-        <param name="Origin">
-          <b>Objeto</b>de opcional. Se o arquivo for um arquivo de texto, este argumento indica onde ele foi originada (de forma que as páginas de código e o Feed de retorno de linha de carro (CR LF) podem ser mapeados corretamente). Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlPlatform" /> constantes: <b>xlMacintosh</b>, <b>xlWindows</b>ou <b>xlMSDOS</b>. Se esse argumento for omitido, o sistema operacional atual será usado.</param>
-        <param name="Delimiter">
-          <b>Objeto</b>de opcional. Se o arquivo é um arquivo de texto e o argumento <b>Format</b> for 6, este argumento é uma cadeia de caracteres que especifica o caractere a ser usado como o delimitador. Por exemplo, use Chr(9) para tabulações, use "," para vírgulas, use ";" por ponto e vírgula ou use um caractere personalizado. O primeiro caractere da cadeia de caracteres é usado.</param>
-        <param name="Editable">
-          <b>Objeto</b>de opcional. Se o arquivo for um suplemento do Microsoft Excel 4.0, este argumento será <b>True</b> para abrir o suplemento para que ele seja uma janela visível. Se esse argumento for <b>Falso</b> ou omitido, o suplemento será aberto como oculto, e não podem ser exibida. Essa opção não se aplica aos suplementos criados no Microsoft Excel 5.0 ou posterior. Se o arquivo for um modelo do Excel, use <b>True</b> para abrir o modelo especificado para edição ou <b>False</b> para abrir uma nova pasta de trabalho com base no modelo especificado. O valor padrão é <b>False</b>.</param>
-        <param name="Notify">
-          <b>Objeto</b>de opcional. Se o arquivo não pode ser aberto no modo leitura/gravação, este argumento é <b>verdadeiro</b> para adicionar o arquivo à lista de notificação de arquivos. Microsoft Excel irá abrir o arquivo como somente leitura, pesquisará a lista de notificação de arquivos e notificar o usuário quando o arquivo se tornar disponível. Se esse argumento for <b>Falso</b> ou omitido, nenhuma notificação será solicitada, e qualquer tentativa de abrir um arquivo não disponível falhará.</param>
-        <param name="Converter">
-          <b>Objeto</b>de opcional. O índice do primeiro conversor de arquivo a experimentar ao abrir o arquivo. O conversor de arquivo especificado é experimentado primeiro; Se esse conversor não reconhecer o arquivo, todos os outros conversores serão usados. O índice de conversor compreende os números de linha dos conversores, retornados pelo <see cref="P:Microsoft.Office.Interop.Excel._Application.FileConverters(System.Object,System.Object)" /> propriedade.</param>
-        <param name="AddToMru">
-          <b>Objeto</b>de opcional. <b>True</b> para adicionar essa pasta de trabalho à lista de arquivos recentemente usados. O valor padrão é <b>False</b>.</param>
-        <param name="Local">
-          <b>Objeto</b>de opcional. <b>True</b> salva os arquivos no idioma do Microsoft Excel (incluindo as configurações do painel de controle). <b>False</b> (padrão) salva os arquivos no idioma do Visual Basic for Applications (VBA) (que normalmente é inglês (EUA), a menos que o projeto VBA em que Workbooks é executado a partir é um projeto VBA XL5/95 antigo e internacionalizado).</param>
-        <param name="CorruptLoad">
-          <b>Objeto</b>de opcional. Pode ser uma das seguintes constantes: <b>xlNormalLoad</b>, <b>xlRepairFile</b>e <b>xlExtractData</b>. O comportamento padrão se nenhum valor for especificado é geralmente normal, mas pode ser segura carga ou recuperação de dados, se o Excel já tiver tentado abrir o arquivo. A primeira tentativa é normal. Se o Excel parar de operar ao abrir o arquivo, a segunda tentativa será o carregamento seguro. Se novamente o Excel parar operacional, a próxima tentativa é a recuperação de dados.</param>
+        <param name="Filename"><b>String</b> necessário. O nome de arquivo da pasta de trabalho a ser aberta.</param>
+        <param name="UpdateLinks">Objeto <b>opcional</b>. Especifica a maneira como os links no arquivo são atualizados. Se esse argumento for omitido, será solicitado que o usuário especifique como os links serão atualizados. Caso contrário, esse argumento será um dos valores listados na tabela a seguir. Se o Microsoft Excel estiver abrindo um arquivo no formato WKS, WK1 ou WK3 e o argumento for 2, o Microsoft Excel gerará gráficos a partir dos gráficos anexados ao <paramref name="UpdateLinks" /> arquivo. Se o argumento for 0, nenhum gráfico será criado.</param>
+        <param name="ReadOnly">Objeto <b>opcional</b>. Verdadeiro para abrir a pasta de trabalho em modo somente leitura.</param>
+        <param name="Format">Objeto <b>opcional</b>. Se o Microsoft Excel estiver abrindo um arquivo de texto, esse argumento especificará o caractere dolimidor, conforme mostrado na tabela a seguir. Se esse argumento for omitido, o delimitador atual será usado.</param>
+        <param name="Password">Objeto <b>opcional</b>. Uma cadeia de caracteres que contém a senha necessária para abrir uma pasta de trabalho protegida. Se esse argumento for omitido e a pasta de trabalho exigir uma senha, será solicitada a senha do usuário.</param>
+        <param name="WriteResPassword">Objeto <b>opcional</b>. Uma cadeia de caracteres que contém a senha necessária para gravar uma pasta de trabalho reservada para gravação. Se esse argumento for omitido e se a pasta de trabalho exigir uma senha, a senha será solicitada do usuário.</param>
+        <param name="IgnoreReadOnlyRecommended">Objeto <b>opcional</b>. <b>True</b> para fazer com que o Microsoft Excel não exiba a mensagem recomendada somente leitura (se a pasta de trabalho tiver sido salva com a opção <b>Somente Leitura Recomendada</b>).</param>
+        <param name="Origin">Objeto <b>opcional</b>. Se o arquivo for um arquivo de texto, esse argumento indicará a origem (para que as páginas de código e o Retorno de Carro/Alimentação de Linha (CR/LF) possam ser mapeados corretamente). Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlPlatform" /> constantes: <b>xlMacintosh</b>, <b>xlWindows</b>ou <b>xlMSDOS</b>. Se esse argumento for omitido, o sistema operacional atual será usado.</param>
+        <param name="Delimiter">Objeto <b>opcional</b>. Se o arquivo for um arquivo de texto e o argumento <b>Format</b> for 6, esse argumento será uma cadeia de caracteres que especifica o caractere a ser usado como o delimiter. Por exemplo, use Chr(9) para guias, use "," para vírgulas, use ";" para ponto-e-vírgula ou use um caractere personalizado. Somente o primeiro caractere da cadeia de caracteres será usado.</param>
+        <param name="Editable">Objeto <b>opcional</b>. Se o arquivo for um complemento do Microsoft Excel 4.0, esse argumento será <b>True</b> para abrir o complemento para que seja uma janela visível. Se esse argumento for <b>False</b> ou se for omitido, o suplemento será aberto como oculto e não poderá ser reexibido. Essa opção não se aplica a complementos criados no Microsoft Excel 5.0 ou posterior. Se o arquivo for um modelo do Excel, use <b>True</b> para abrir o modelo especificado para edição ou <b>False</b> para abrir uma nova pasta de trabalho com base no modelo especificado. O valor padrão é <b>False</b>.</param>
+        <param name="Notify">Objeto <b>opcional</b>. Se o arquivo não puder ser aberto em modo leitura/gravação, esse argumento será <b>True</b> para adicionar o arquivo para a lista de notificações de arquivo. O Microsoft Excel abrirá o arquivo como somente leitura, pesquisará a lista de notificações de arquivo e então notificará o usuário quando o arquivo for disponibilizado. Se esse argumento for <b>False</b> ou se for omitido, nenhuma notificação será solicitada e todas as tentativas de abrir um arquivo não disponível falharão.</param>
+        <param name="Converter">Objeto <b>opcional</b>. O índice do primeiro conversor de arquivos a ser experimentado na abertura do arquivo. O conversor de arquivo especificado é tentado primeiro; se esse conversor não reconhecer o arquivo, todos os outros conversores serão tentados. O índice do conversor consiste nos números de linha dos conversores retornados pela <see cref="P:Microsoft.Office.Interop.Excel._Application.FileConverters(System.Object,System.Object)" /> propriedade.</param>
+        <param name="AddToMru">Objeto <b>opcional</b>. <b>True</b> para adicionar esta pasta de trabalho à lista de arquivos usados recentemente. O valor padrão é <b>False</b>.</param>
+        <param name="Local">Objeto <b>opcional</b>. <b>True</b> salva arquivos no idioma do Microsoft Excel (incluindo as configurações do painel de controle). <b>False</b> (padrão) salva arquivos no idioma do Visual Basic for Applications (VBA) (que normalmente é inglês dos EUA, a menos que o projeto VBA do qual Workbooks.Open é executado seja um projeto do VBA XL5/95 internacionalizado antigo).</param>
+        <param name="CorruptLoad">Objeto <b>opcional</b>. Pode ser uma das seguintes constantes: <b>xlNormalLoad</b>, <b>xlRepairFile</b>e <b>xlExtractData</b>. O comportamento padrão se nenhum valor for especificado normalmente é normal, mas pode ser uma carga segura ou recuperação de dados se o Excel já tentou abrir o arquivo. A primeira tentativa é normal. Se o Excel parar de operar ao abrir o arquivo, a segunda tentativa será de carregamento seguro. Se o Excel parar de operar novamente, a próxima tentativa será a recuperação de dados.</param>
         <summary>Abre uma pasta de trabalho.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Por padrão, as macros serão habilitadas ao abrir arquivos por programação. Use o <see cref="P:Microsoft.Office.Interop.Excel._Application.AutomationSecurity" /> propriedade para definir o modo de segurança de macro usado ao abrir arquivos por programação.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Por padrão, as macros são habilitadas na abertura programática dos arquivos. Use a <see cref="P:Microsoft.Office.Interop.Excel._Application.AutomationSecurity" /> propriedade para definir o modo de segurança de macro usado ao abrir arquivos de forma programática.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenDatabase">
@@ -669,17 +631,12 @@
         <Parameter Name="ImportDataAs" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Filename">
-          <b>String</b> necessário. A sequência de caracteres da conexão.</param>
-        <param name="CommandText">
-          <b>Objeto</b>de opcional. O texto do comando da consulta.</param>
-        <param name="CommandType">
-          <b>Objeto</b>de opcional. O tipo de comando da consulta. Os tipos de comando a seguir estão disponíveis: Default, SQL e tabela.</param>
-        <param name="BackgroundQuery">
-          <b>Objeto</b>de opcional. O plano de fundo da consulta.</param>
-        <param name="ImportDataAs">
-          <b>Objeto</b>de opcional. Determina o formato da consulta.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto representando um banco de dados.</summary>
+        <param name="Filename"><b>String</b> necessário. A sequência de caracteres da conexão.</param>
+        <param name="CommandText">Objeto <b>opcional</b>. O texto do comando da consulta.</param>
+        <param name="CommandType">Objeto <b>opcional</b>. O tipo de comando da consulta. Os seguintes tipos de comando estão disponíveis: Default, SQL e Table.</param>
+        <param name="BackgroundQuery">Objeto <b>opcional</b>. O plano de fundo da consulta.</param>
+        <param name="ImportDataAs">Objeto <b>opcional</b>. Determina o formato da consulta.</param>
+        <summary>Retorna um objeto <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> que representa um banco de dados.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -726,40 +683,24 @@
         <Parameter Name="Local" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Filename">
-          <b>String</b> necessário. Especifica o nome do arquivo de texto a ser aberto ou analisado.</param>
-        <param name="Origin">
-          <b>Objeto</b>de opcional. Especifica a origem do arquivo de texto. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlPlatform" /> constantes: <b>xlMacintosh</b>, <b>xlWindows</b>ou <b>xlMSDOS</b>. Além disso, isso poderia ser um inteiro que representa o número da página de código da página de código desejada. Por exemplo, "1256" Especifica que a codificação do arquivo de texto de origem seja árabe (Windows). Se esse argumento for omitido, o método usa a configuração atual da opção origem do arquivo no <b>Assistente de importação de texto</b>.</param>
-        <param name="StartRow">
-          <b>Objeto</b>de opcional. O número da linha na qual se deseja iniciar a análise de texto. O valor padrão é 1.</param>
-        <param name="DataType">
-          <b>Objeto</b>de opcional. Especifica o formato de coluna dos dados no arquivo. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlTextParsingType" /> constantes: <b>xlDelimited</b> ou <b>xlFixedWidth</b>. Se esse argumento não for especificado, o Microsoft Excel tenta determinar o formato de colunas quando abrir o arquivo.</param>
-        <param name="TextQualifier">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlTextQualifier" />. Especifica o qualificador do texto. Pode ser uma dessas <see cref="T:Microsoft.Office.Interop.Excel.XlTextQualifier" /> constantes. <b>xlTextQualifierDoubleQuote</b><paramref name="default" /><b>xlTextQualifierNone</b><b>xlTextQualifierSingleQuote</b></param>
-        <param name="ConsecutiveDelimiter">
-          <b>Objeto</b>de opcional. <b>True</b> para ter delimitadores consecutivos considerados um delimitador. O padrão é <b>False</b>.</param>
-        <param name="Tab">
-          <b>Objeto</b>de opcional. True para fazer com que o caractere de tabulação o delimitador (<paramref name="DataType" /> deve ser <b>xlDelimited</b>). O valor padrão é <b>False</b>.</param>
-        <param name="Semicolon">
-          <b>Objeto</b>de opcional. <b>True</b> para que o caractere de ponto e vírgula seja o delimitador (<paramref name="DataType" /> deve ser <b>xlDelimited</b>). O valor padrão é <b>False</b>.</param>
-        <param name="Comma">
-          <b>Objeto</b>de opcional. <b>True</b> para que o caractere de vírgula seja o delimitador (<paramref name="DataType" /> deve ser <b>xlDelimited</b>). O valor padrão é <b>False</b>.</param>
-        <param name="Space">
-          <b>Objeto</b>de opcional. <b>True</b> para que o caractere de espaço seja o delimitador (<paramref name="DataType" /> deve ser <b>xlDelimited</b>). O valor padrão é <b>False</b>.</param>
-        <param name="Other">
-          <b>Objeto</b>de opcional. <b>True</b> para que o caractere especificado pelo <paramref name="OtherChar" /> argumento seja o delimitador (<paramref name="DataType" /> deve ser <b>xlDelimited</b>). O valor padrão é <b>False</b>.</param>
-        <param name="OtherChar">
-          <b>Objeto</b> de opcional (necessário se <paramref name="Other" /> for <b>True</b>). Especifica o delimitador caractere quando <paramref name="Other" /> for <b>verdadeira</b>. Se mais de um caractere for especificado, que somente o primeiro caractere da cadeia de caracteres é usado; os caracteres restantes serão ignorados.</param>
-        <param name="FieldInfo">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlColumnDataType" />. Uma matriz contendo informações de análise para colunas de dados individuais. A interpretação depende do valor de <paramref name="DataType" />. Quando os dados estão delimitados, esse argumento é uma matriz de matrizes de dois elementos, com cada matriz de dois elementos especificando as opções de conversão para uma determinada coluna. O primeiro elemento é o número da coluna (baseado em 1) e o segundo elemento é uma das constantes<b>XlColumnDataType</b> especificando como a coluna é analisada. <b>xlGeneralFormat</b> Geral<b>xlTextFormat</b> texto<b>xlMDYFormat</b> MDY data<b>xlDMYFormat</b> DMY data<b>xlYMDFormat</b> YMD data<b>xlMYDFormat</b> MYD data<b>xlDYMFormat</b> DYM data<b>xlYDMFormat</b> YDM Data Data EMD de<b>xlEMDFormat</b><b>xlSkipColumn</b> Skip ColumnYou pode usar <b>xlEMDFormat</b> somente se você tiver instalado e selecionado o suporte ao idioma. A constante <b>xlEMDFormat</b> Especifica que as datas que estão sendo usadas. Especificadores de coluna podem estar em qualquer ordem. Se não houver nenhum especificador de coluna para uma determinada coluna nos dados de entrada, a coluna é analisada com a definição geral. <b>Notas</b> Se você especificar que uma coluna seja ignorada, deve declarar explicitamente o tipo de todas as colunas remanescentes, ou os dados não serão analisados corretamente. Se houver uma data reconhecível nos dados, a célula será formatada como uma data na planilha, mesmo se a configuração da coluna é geral. Além disso, se você especificar um dos formatos de data acima para uma coluna e os dados não contiverem uma data reconhecida, o formato da célula na planilha será General.If na fonte de dados tem colunas de largura fixa, o primeiro elemento em cada matriz de dois elementos Especifica a posição do caractere inicial na coluna (como um inteiro; o caractere 0 (zero) é o primeiro caractere). O segundo elemento na matriz de dois elementos especifica a opção de análise para a coluna como um número entre 0 e 9, conforme listado na tabela anterior.</param>
-        <param name="TextVisualLayout">
-          <b>Objeto</b>de opcional. O layout visual do texto.</param>
-        <param name="DecimalSeparator">
-          <b>Objeto</b>de opcional. O separador decimal que o Microsoft Excel usa quando reconhece números. A configuração padrão é a configuração do sistema.</param>
-        <param name="ThousandsSeparator">
-          <b>Objeto</b>de opcional. Milhares separador Excel usa quando reconhece números. A configuração padrão é a configuração do sistema. A tabela a seguir mostra os resultados da importação de texto no Excel para várias configurações de importação. Os resultados numéricos são exibidos na coluna mais à direita.</param>
-        <param name="TrailingMinusNumbers">
-          <b>Objeto</b>de opcional.</param>
-        <param name="Local">
-          <b>Objeto</b>de opcional.</param>
+        <param name="Filename"><b>String</b> necessário. Especifica o nome do arquivo de texto a ser aberto ou analisado.</param>
+        <param name="Origin">Objeto <b>opcional</b>. Especifica a origem do arquivo de texto. Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlPlatform" /> constantes: <b>xlMacintosh</b>, <b>xlWindows</b>ou <b>xlMSDOS</b>. Adicionalmente, poderia ser um inteiro representando o número da página de código da página de código desejada. Por exemplo, "1256" especificaria que a codificação do arquivo de texto de origem é Árabe (Windows). Se esse argumento for omitido, o método usará a configuração atual da opção Origem do Arquivo no <b>Assistente de Importação de Texto</b>.</param>
+        <param name="StartRow">Objeto <b>opcional</b>. O número da linha na qual o texto começa a ser analisado. O valor padrão é 1.</param>
+        <param name="DataType">Objeto <b>opcional</b>. Especifica o formato da coluna dos dados no arquivo. Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlTextParsingType" /> constantes: <b>xlDelimited</b> ou <b>xlFixedWidth</b>. Se esse argumento não for especificado, o Microsoft Excel tentará determinar o formato da coluna quando abrir o arquivo.</param>
+        <param name="TextQualifier">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlTextQualifier" /> . Especifica o qualificador do texto. Pode ser uma destas <see cref="T:Microsoft.Office.Interop.Excel.XlTextQualifier" /> constantes.<b> xlTextQualifierDoubleQuote</b> <paramref name="default" /> <b>xlTextQualifierNone</b><b>xlTextQualifierSingleQuote</b></param>
+        <param name="ConsecutiveDelimiter">Objeto <b>opcional</b>. <b>True</b> para ter delimitadores consecutivos considerados como um delimitador. O padrão é <b>False</b>.</param>
+        <param name="Tab">Objeto <b>opcional</b>. True para ter o caractere de tabulação como olimiter ( <paramref name="DataType" /> deve ser <b>xlDelimited</b>). O valor padrão é <b>False</b>.</param>
+        <param name="Semicolon">Objeto <b>opcional</b>. <b>True</b> para ter o caractere de ponto-e-vírgula como o delimiter ( <paramref name="DataType" /> deve ser <b>xlDelimited</b>). O valor padrão é <b>False</b>.</param>
+        <param name="Comma">Objeto <b>opcional</b>. <b>True</b> para ter o caractere de vírgula como olimiter ( <paramref name="DataType" /> deve ser <b>xlDelimited</b>). O valor padrão é <b>False</b>.</param>
+        <param name="Space">Objeto <b>opcional</b>. <b>True</b> para ter o caractere de espaço como olimiter ( <paramref name="DataType" /> deve ser <b>xlDelimited</b>). O valor padrão é <b>False</b>.</param>
+        <param name="Other">Objeto <b>opcional</b>. <b>True</b> para ter o caractere especificado pelo argumento como o <paramref name="OtherChar" /> delimiter ( <paramref name="DataType" /> deve ser <b>xlDelimited</b>). O valor padrão é <b>False</b>.</param>
+        <param name="OtherChar">Objeto <b>opcional</b> (obrigatório se <paramref name="Other" /> for <b>True</b>). Especifica o caractere do delimiter quando <paramref name="Other" /> for <b>True</b>. Se mais de um caractere for especificado, somente o primeiro caractere da cadeia de caracteres será usado; os caracteres restantes será ignorado.</param>
+        <param name="FieldInfo">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlColumnDataType" /> . Uma matriz com informações de análise para colunas de dados individuais. A interpretação depende do valor de <paramref name="DataType" /> . Quando os dados forem delimitados, esse argumento será uma matriz de matrizes de dois elementos, com cada matriz de dois elementos especificando as opções de conversão para uma coluna em particular. O primeiro elemento é o número da coluna (baseado em 1) e o segundo elemento é uma das constantes<b>XlColumnDataType</b> que especificam como a coluna é analisado. <b>xlGeneralFormat</b> General<b>xlTextFormat</b> Text<b>xlMDYFormat</b> MDY date<b>xlDMYFormat</b> DMY date<b>xlYMDFormat</b> YMD date<b>xlMYDFormat</b> MYD date<b>xlDYMFormat</b> DYM date<b>xlYDMFormat</b> YDM date<b>xlEMDFormat</b> EMD date<b>xlSkipColumn</b> Skip ColumnYou can use <b>xlEMDFormat</b> only if you have installed and selected Taiwanese language support. A <b>constante xlEMDFormat</b> especifica que as datas da era taiwanesa estão sendo usadas. Os especificadores de coluna podem estar em qualquer ordem. Se não houver um especificador de coluna para uma coluna específica nos dados de entrada, a coluna será analisado com a configuração Geral. <b>Observações</b> Se você especificar que uma coluna deve ser ignorada, deverá indicar explicitamente o tipo de todas as colunas restantes ou os dados não serão analisados corretamente. Se houver uma data reconhecível nos dados, a célula será formatada como uma data na planilha, mesmo se a configuração da coluna for Geral. Além disso, se você especificar um dos formatos de data acima para uma coluna e os dados não contêm uma data reconhecida, o formato da célula na planilha será Geral.Se os dados de origem têm colunas de largura fixa, o primeiro elemento em cada matriz de dois elementos especifica a posição do caractere inicial na coluna (como um inteiro; caractere 0 (zero) é o primeiro caractere). O segundo elemento da matriz de dois elementos especifica a opção de análise para a coluna como um número entre 0 e 9, como listado na tabela anterior.</param>
+        <param name="TextVisualLayout">Objeto <b>opcional</b>. O layout visual do texto.</param>
+        <param name="DecimalSeparator">Objeto <b>opcional</b>. O separador decimal que o Microsoft Excel usa ao reconhecer números. A configuração padrão é a configuração do sistema.</param>
+        <param name="ThousandsSeparator">Objeto <b>opcional</b>. O separador de milhares que o Excel usa ao reconhecer números. A configuração padrão é a configuração do sistema. A tabela a seguir mostra os resultados da importação de texto para o Excel para várias configurações de importação. Os resultados numéricos são exibidos na coluna mais à direita.</param>
+        <param name="TrailingMinusNumbers">Objeto <b>opcional</b>.</param>
+        <param name="Local">Objeto <b>opcional</b>.</param>
         <summary>Carrega e analisa um arquivo de texto como uma nova pasta de trabalho com uma única planilha que contém os dados de arquivo de texto analisados.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -788,18 +729,13 @@
         <Parameter Name="LoadOption" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Filename">
-          <b>String</b> necessário. O nome do arquivo a ser aberto.</param>
-        <param name="Stylesheets">
-          <b>Objeto</b>de opcional. Um único valor ou uma matriz de valores que especifica quais instruções de processamento de folha de estilo de transformação em XSL (XSLT) a ser aplicado.</param>
-        <param name="LoadOption">
-          <b>Objeto</b>de opcional. Especifica como o Excel abre o arquivo de dados XML. Pode ser uma dessas <see cref="T:Microsoft.Office.Interop.Excel.XlXmlLoadOption" /> constantes:<b>xlXmlLoadImportToList</b> coloca o conteúdo do arquivo de dados XML em uma lista XML. <b>xlXmlLoadMapXml</b> Exibe o esquema do arquivo de dados XML no painel de tarefas <b>Estrutura XML</b> . <b>xlXmlLoadOpenXml</b> Abre o arquivo de dados XML. O conteúdo do arquivo será simplificado. <b>xlXmlLoadPromptUser</b> Solicita que o usuário escolha como abrir o arquivo.</param>
+        <param name="Filename"><b>String</b> necessário. O nome do arquivo a ser aberto.</param>
+        <param name="Stylesheets">Objeto <b>opcional</b>. Um único valor ou uma matriz de valores que especificam quais instruções de processamento de folha de estilos XSL Transformation (XSLT) devem ser aplicadas.</param>
+        <param name="LoadOption">Objeto <b>opcional</b>. Especifica como o Excel abre o arquivo de dados XML. Pode ser uma destas <see cref="T:Microsoft.Office.Interop.Excel.XlXmlLoadOption" /> constantes:<b>xlXmlLoadImportToList</b> coloca o conteúdo do arquivo de dados XML em uma lista XML.<b> xlXmlLoadMapXml</b> Exibe o esquema do arquivo de dados XML no painel de tarefas <b>Estrutura XML.</b> <b>xlXmlLoadOpenXml</b> Abre o arquivo de dados XML. O conteúdo do arquivo será achatado. <b>xlXmlLoadPromptUser</b> Solicita que o usuário escolha como abrir o arquivo.</param>
         <summary>Abre um arquivo de dados XML. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Recursos de XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Recursos XML, exceto para salvar arquivos no formato de Planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e no Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -825,7 +761,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado. Somente leitura.</summary>
+        <summary>Retorna o objeto pai do objeto especificado. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="WorkbookConnection" FullName="Microsoft.Office.Interop.Excel.WorkbookConnection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a6d1fef0add7e32139d0f7d1970c0354fbd328c7" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581064" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface WorkbookConnection" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a6d1fef0add7e32139d0f7d1970c0354fbd328c7" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009209" /></Metadata><TypeSignature Language="C#" Value="public interface WorkbookConnection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WorkbookConnection" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />
   <TypeSignature Language="VB.NET" Value="Public Interface WorkbookConnection" />
@@ -29,15 +21,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma conexão é um conjunto de informações necessárias para obter dados de uma fonte de dados externos que não seja uma pasta de trabalho do 1st_Excel12.</summary>
-    <remarks>
-      <para>As conexões podem ser armazenadas em uma pasta de trabalho do Excel. Quando a pasta de trabalho é aberta, o Excel cria na memória uma cópia da conexão, à qual se faz referência como o objeto da conexão. Um objeto de conexão contém informações como o nome do servidor e o nome do objeto a ser aberto nesse servidor. Como opção, o objeto da conexão também pode incluir credenciais de autenticação e/ou um comando a ser passado ao servidor e executado (exemplo: uma instrução SELECT a ser executada pelo SQL Server).</para>
+    <summary>Uma conexão é um conjunto de informações necessárias para obter dados de uma fonte de dados externa que não seja uma 1st_Excel12 de trabalho.</summary>
+    <remarks><para>As conexões podem ser armazenadas em uma pasta de trabalho do Excel. Quando a pasta de trabalho é aberta, o Excel cria na memória uma cópia da conexão, à qual se faz referência como o objeto da conexão. Um objeto de conexão contém informações como o nome do servidor e o nome do objeto a ser aberto nesse servidor. Como opção, o objeto da conexão também pode incluir credenciais de autenticação e/ou um comando a ser passado ao servidor e executado (exemplo: uma instrução SELECT a ser executada pelo SQL Server).</para>
       <para>
-        <b>Observação</b>: A forma exata da conexão depende do mecanismo que está sendo usado para recuperar dados – conexões ODBC, conexões OLEDB e consultas Web conterão informações diferentes.</para>
+        <b>Observação:</b>a forma exata da conexão depende do mecanismo que está sendo usado para recuperar dados – as conexões ODBC, as conexões OLEDB e as Consultas da Web conterão informações diferentes.</para>
       <para>Uma conexão também pode ser armazenada em um arquivo de conexão separado. A maioria das conexões em uma pasta de trabalho do Excel incluem um ponteiro para um arquivo de conexão externo. Os arquivos de conexão possuem extensões que claramente os rotulam como arquivos de conexão (*.ODC, *.IQY etc.) e podem estar localizados na máquina local do usuário ou em outros locais conhecidos ou confiáveis tais como o WSS (Biblioteca de Conexões de Dados) ou outros servidores corporativos. Os arquivos de conexão permitem que vários usuários na mesma organização reutilizem conexões. Os administradores de rede podem alterar a forma como toda a organização se conecta a uma fonte de dados back-end alterando um único arquivo de conexão. Um arquivo de conexão não é obrigatório ao conectar-se a uma fonte de dados externa.</para>
       <para>Os nomes de conexão são sequências que identificam exclusivamente conexões na pasta de trabalho em que são usadas. Há outras propriedades de uma conexão que não são exclusivas. Sempre que uma fórmula no Excel pegar um argumento que seja uma conexão, ele será suficiente para fazer referência ao nome dessa conexão, seja diretamente (como uma sequência) ou indiretamente (fazendo referência a uma célula que contém o nome de conexão como sequência).</para>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,12 +90,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usado sem um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object que representa o aplicativo Microsoft Office Excel. Quando usado com um qualificador de objeto, essa propriedade retorna um objeto <b>Application</b> que representa o criador do objeto especificado. Somente leitura.</summary>
+        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna um  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa o aplicativo Microsoft Office Excel. Quando usado com um qualificador de objeto, essa propriedade retorna um objeto <b>Application</b> que representa o criador do objeto especificado. Somente leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Você pode usar essa propriedade com um objeto de Automação OLE para retornar o aplicativo desse objeto.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Você pode usar essa propriedade com um objeto de Automação OLE para retornar o aplicativo desse objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -133,10 +121,8 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. <b>Integer</b> somente leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.  A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.  A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFeedConnection">
@@ -162,7 +148,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DataFeedConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um objeto <b>DataFeedConnection</b> que contém os dados e a funcionalidade necessária para se conectar ao feeds de dados. Somente leitura</summary>
+        <summary>Retorna um <b>objeto DataFeedConnection</b> que contém os dados e a funcionalidade necessários para se conectar aos feeds de dados. Somente leitura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -189,14 +175,12 @@
       <Parameters />
       <Docs>
         <summary>Exclui a conexão de uma pasta de trabalho.</summary>
-        <remarks>
-          <para>Use esse método para excluir uma conexão de dados externa. Esse método não se aplica a links para outras pastas de trabalho. </para>
-          <para>Excluir uma conexão não excluir ou remover todos os objetos que estavam usando essa conexão.
+        <remarks><para>Use esse método para excluir uma conexão de dados externa. Esse método não se aplica a links para outras pastas de trabalho. </para>
+          <para>A exclusão de uma conexão não excluirá ou removerá quaisquer objetos que estavam usando a conexão.
 
-Excluir uma conexão não causará qualquer um dos arquivos de conexão a ser excluído do sistema de arquivos.  Se você editar qualquer um desses objetos para usar outra conexão, tudo vai começar a trabalhar novamente.</para>
+A exclusão de uma conexão não fará com que nenhum dos arquivos de conexão seja excluído do sistema de arquivos.  Se você editar qualquer um desses objetos para usar outra conexão, tudo começará a funcionar novamente.</para>
           <para>Os objetos que usam uma conexão excluída se comportam como se a conexão não pudesse ser estabelecida.  </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -227,11 +211,9 @@ Excluir uma conexão não causará qualquer um dos arquivos de conexão a ser ex
       <Docs>
         <summary>Retorna ou define uma breve descrição para um <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto. <b>String</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Na caixa de diálogo Propriedades da Conexão, o usuário pode editar o nome da conexão e/ou descrição. A alteração do nome e da descrição nesta caixa de diálogo altera os campos somente no objeto de conexão do Excel.</para>
+        <remarks><para>Na caixa de diálogo Propriedades da Conexão, o usuário pode editar o nome da conexão e/ou descrição.  A alteração do nome e da descrição nesta caixa de diálogo altera os campos somente no objeto de conexão do Excel.</para>
           <para>O tamanho máximo de uma descrição é 255 caracteres. Se o usuário especificar uma descrição em um arquivo de conexão que tenha mais de 255 caracteres, a descrição ficará truncada para caber no limite de 255 caracteres.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InModel">
@@ -257,12 +239,10 @@ Excluir uma conexão não causará qualquer um dos arquivos de conexão a ser ex
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Especifica se é ou não o objeto <b>WorkbookConnection</b> foi adicionado ao modelo. <b>Boolean</b> (<b>bool</b> em c#) Somente leitura.</summary>
+        <summary>Especifica se o objeto <b>WorkbookConnection</b> foi ou não adicionado ao modelo. <b>Booliana</b> (<b>bool</b> em C#) Somente leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Deve ser false para conexões de legado.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Deve ser falso para conexões herdadas.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ModelConnection">
@@ -288,7 +268,7 @@ Excluir uma conexão não causará qualquer um dos arquivos de conexão a ser ex
         <ReturnType>Microsoft.Office.Interop.Excel.ModelConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um objeto que contém informações para o novo tipo de Conexão de modelo introduzido no Excel 2013 para interagir com o modelo de dados integrado. Somente leitura</summary>
+        <summary>Retorna um objeto que contém informações para o novo Tipo de Conexão de Modelo introduzido no Excel 2013 para interagir com o Modelo de Dados integrado. Somente leitura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -316,7 +296,7 @@ Excluir uma conexão não causará qualquer um dos arquivos de conexão a ser ex
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTables</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.ModelTables" /> objeto associado com a conexão específica. Somente leitura</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.ModelTables" /> objeto associado à conexão específica. Somente leitura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -375,7 +355,7 @@ Excluir uma conexão não causará qualquer um dos arquivos de conexão a ser ex
         <ReturnType>Microsoft.Office.Interop.Excel.ODBCConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Detalhes do Retuns a Conexão ODBC for especificado <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />.</summary>
+        <summary>Retuns the ODBC Connection details for the specified <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object. Somente <see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" /> leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -403,7 +383,7 @@ Excluir uma conexão não causará qualquer um dos arquivos de conexão a ser ex
         <ReturnType>Microsoft.Office.Interop.Excel.OLEDBConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Detalhes do Retuns a Conexão OLE DB for especificado <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />.</summary>
+        <summary>Retuns the OLEDB Connection details for the specified <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object. Somente <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -431,7 +411,7 @@ Excluir uma conexão não causará qualquer um dos arquivos de conexão a ser ex
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado. Somente leitura.</summary>
+        <summary>Retorna o objeto pai do objeto especificado. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -459,7 +439,7 @@ Excluir uma conexão não causará qualquer um dos arquivos de conexão a ser ex
         <ReturnType>Microsoft.Office.Interop.Excel.Ranges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o intervalo do objeto especificado <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.Ranges" />.</summary>
+        <summary>Retorna o intervalo de objeto do objeto <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> especificado. Somente <see cref="T:Microsoft.Office.Interop.Excel.Ranges" /> leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -486,12 +466,10 @@ Excluir uma conexão não causará qualquer um dos arquivos de conexão a ser ex
       <Parameters />
       <Docs>
         <summary>Atualiza a conexão de uma pasta de trabalho.</summary>
-        <remarks>
-          <para>Se o <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> propriedade for <b>False</b>, as caixas de diálogo não são exibidas e o método <b>Refresh</b> falhará com a exceção informações de Conexão insuficientes.</para>
+        <remarks><para>Se a propriedade for False , as caixas de diálogo não serão exibidas e o método <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> <b>Refresh</b> falhará com a exceção Informações de Conexão Insuficientes. <b></b></para>
           <para>Uma falha na atualização de uma conexão não terá impacto nas operações de atualização das outras conexões. 
 </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshWithRefreshAll">
@@ -520,7 +498,7 @@ Excluir uma conexão não causará qualquer um dos arquivos de conexão a ser ex
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se a conexão deve ser atualizado quando atualizar todos os é executado. <b>Boolean</b> (<b>bool</b> em c#). Leitura/gravação.</summary>
+        <summary>Determina se a conexão deve ser atualizada quando a atualização for executada. <b>Booliana</b> (<b>booleano</b> em C#). Leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -548,7 +526,7 @@ Excluir uma conexão não causará qualquer um dos arquivos de conexão a ser ex
         <ReturnType>Microsoft.Office.Interop.Excel.TextConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.TextConnection" /> objeto que contém as informações em uma consulta em um arquivo de texto. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.TextConnection" /> objeto que contém as informações em uma consulta para um arquivo de texto. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -576,7 +554,7 @@ Excluir uma conexão não causará qualquer um dos arquivos de conexão a ser ex
         <ReturnType>Microsoft.Office.Interop.Excel.XlConnectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o tipo de conexão de pasta de trabalho. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlConnectionType" />.</summary>
+        <summary>Retorna o tipo de conexão da pasta de trabalho. Somente <see cref="T:Microsoft.Office.Interop.Excel.XlConnectionType" /> leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -604,7 +582,7 @@ Excluir uma conexão não causará qualquer um dos arquivos de conexão a ser ex
         <ReturnType>Microsoft.Office.Interop.Excel.WorksheetDataConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um objeto que contém informações para uma conexão do modelo PowerPivot aos dados na pasta de trabalho como um intervalo, intervalo nomeado ou tabela. Somente leitura.</summary>
+        <summary>Retorna um objeto que contém informações para uma conexão do Modelo do PowerPivot com dados dentro da agenda, como um intervalo, um intervalo nomeado ou uma tabela. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

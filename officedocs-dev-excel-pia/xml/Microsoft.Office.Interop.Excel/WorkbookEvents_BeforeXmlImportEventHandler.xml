@@ -1,13 +1,5 @@
 <Type Name="WorkbookEvents_BeforeXmlImportEventHandler" FullName="Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeXmlImportEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="481b569bafc01838e418c1b16eae3a7f5a8b8cb7" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578467" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void WorkbookEvents_BeforeXmlImportEventHandler(XmlMap Map, string Url, bool IsRefresh, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="481b569bafc01838e418c1b16eae3a7f5a8b8cb7" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009041" /></Metadata><TypeSignature Language="C#" Value="public delegate void WorkbookEvents_BeforeXmlImportEventHandler(XmlMap Map, string Url, bool IsRefresh, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WorkbookEvents_BeforeXmlImportEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeXmlImportEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub WorkbookEvents_BeforeXmlImportEventHandler(Map As XmlMap, Url As String, IsRefresh As Boolean, ByRef Cancel As Boolean)" />
@@ -37,15 +29,12 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="Map">Necessário <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> objeto. O mapa XML que será usado para importar dados.</param>
-    <param name="Url">
-      <b>String</b> necessário. O local do arquivo XML para importação.</param>
-    <param name="IsRefresh">Necessário <b>booleano</b>. <b>True</b> se o evento tiver sido disparado por meio da atualização de uma conexão existente com os dados XML; <b>False</b> se o evento tiver sido disparado por meio da importação a partir de uma fonte de dados diferente.</param>
-    <param name="Cancel">Necessário <b>booleano</b>. Defina como <b>True</b> para cancelar a operação de importação ou de atualização.</param>
-    <summary>Um tipo de <b>delegado</b> usado para adicionar um manipulador de eventos para o <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.BeforeXmlImport" /> evento. O evento <b>BeforeXmlImport</b> ocorre antes que uma conexão de dados XML existente é atualizada ou antes de XML novo dados são importados para uma pasta de trabalho do Microsoft Excel.</summary>
-    <remarks>
-      <para>Recursos de XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
-      <para></para>
-    </remarks>
+    <param name="Map">Objeto <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> obrigatório. O mapa XML que será usado para importar dados.</param>
+    <param name="Url"><b>String</b> necessário. O local do arquivo XML para importação.</param>
+    <param name="IsRefresh">Boolean <b>necessário.</b> <b>True</b> se o evento tiver sido disparado por meio da atualização de uma conexão existente com os dados XML; <b>False</b> se o evento tiver sido disparado por meio da importação a partir de uma fonte de dados diferente.</param>
+    <param name="Cancel">Boolean <b>necessário.</b> Defina como <b>True</b> para cancelar a operação de importação ou de atualização.</param>
+    <summary>Um <b>tipo</b> delegate usado para adicionar um manipulador de eventos para o <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.BeforeXmlImport" /> evento. O <b>evento BeforeXmlImport</b> ocorre antes de uma conexão de dados XML existente ser atualizada ou antes que novos dados XML são importados para uma planilha do Microsoft Excel.</summary>
+    <remarks><para>Recursos XML, exceto para salvar arquivos no formato de Planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e no Microsoft Office Excel 2003.</para>
+      <para> </para></remarks>
   </Docs>
 </Type>

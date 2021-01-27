@@ -1,13 +1,5 @@
 <Type Name="XPath" FullName="Microsoft.Office.Interop.Excel.XPath">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d73d2c6682dfafc4ccfddfe3f9001a4e4768bd0e" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20573595" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XPath" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d73d2c6682dfafc4ccfddfe3f9001a4e4768bd0e" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50008495" /></Metadata><TypeSignature Language="C#" Value="public interface XPath" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XPath" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XPath" />
   <TypeSignature Language="VB.NET" Value="Public Interface XPath" />
@@ -29,13 +21,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa um XPath que tenha sido mapeado para um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> ou <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> objeto.</summary>
-    <remarks>
-      <para>Recursos de XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.XPath.SetValue(Microsoft.Office.Interop.Excel.XmlMap,System.String,System.Object,System.Object)" /> método para mapear um XPath para uma coluna de lista ou intervalo. O método <b>SetValue</b> também é usado para alterar as propriedades de um XPath existente.</para>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.XPath.Clear" /> método para remover um XPath que tenha sido mapeado para uma coluna de lista ou intervalo.</para>
-      <para></para>
-    </remarks>
+    <summary>Representa um XPath que foi mapeado para um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> ou <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> objeto.</summary>
+    <remarks><para>Recursos XML, exceto para salvar arquivos no formato de Planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e no Microsoft Office Excel 2003.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.XPath.SetValue(Microsoft.Office.Interop.Excel.XmlMap,System.String,System.Object,System.Object)" /> método para mapear um XPath para uma coluna de intervalo ou lista. O <b>método SetValue</b> também é usado para alterar as propriedades de um XPath existente.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.XPath.Clear" /> método para remover um XPath que foi mapeado para uma coluna de intervalo ou lista.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -92,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,11 +109,9 @@
       <Parameters />
       <Docs>
         <summary>Limpa o mapeamento de esquema das células mapeadas para o XPath especificado.</summary>
-        <remarks>
-          <para>Este método não limpa os dados das células mapeadas para o XPath especificado. Use o <see cref="M:Microsoft.Office.Interop.Excel.Range.Clear" /> método do <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto para limpar os dados das células.</para>
+        <remarks><para>Este método não limpa os dados das células mapeadas para o XPath especificado. Use o <see cref="M:Microsoft.Office.Interop.Excel.Range.Clear" /> método do objeto para limpar os dados das <see cref="T:Microsoft.Office.Interop.Excel.Range" /> células.</para>
           <para>Se o XPath especificado estiver mapeado em uma lista XML, o mapeamento do esquema será removido, mas a lista não será excluída da planilha.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -149,12 +137,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. Somente <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Map">
@@ -180,12 +166,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XmlMap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> object que representa o mapa de esquema que contém o especificado <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> objeto. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> objeto que representa o mapa de esquema que contém o objeto <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> especificado. Somente leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Recursos de XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Recursos XML, exceto para salvar arquivos no formato de Planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e no Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -211,7 +195,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado. Somente leitura.</summary>
+        <summary>Retorna o objeto pai do objeto especificado. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -239,12 +223,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna <b>True</b> se o especificado <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> objeto é mapeado para uma lista XML; Retorna <b>False</b> se o objeto <b>XPath</b> é mapeado para uma única célula. <b>Boolean</b> somente leitura.</summary>
+        <summary>Retorna <b>True</b> se o objeto especificado estiver mapeado para uma lista XML; retorna False se o objeto XPath estiver mapeado <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> para uma única célula. <b></b> <b></b> <b>Boolean</b> somente leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Recursos de XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Recursos XML, exceto para salvar arquivos no formato de Planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e no Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -272,17 +254,13 @@
         <Parameter Name="Repeating" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Map">Necessário <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />. O mapa de esquema que contém informações sobre o objeto <b>XPath</b> .</param>
-        <param name="XPath">
-          <b>String</b> necessário. Uma instrução XPath válida.</param>
-        <param name="SelectionNamespace">
-          <b>Objeto</b>de opcional. Especifica a qualquer prefixos de namespace usados no <paramref name="XPath" /> argumento. Este argumento pode ser omitido se o objeto <b>XPath</b> não contiver prefixos, ou se o objeto <b>XPath</b> usa os prefixos do Microsoft Excel.</param>
+        <param name="Map">Obrigatório. <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> O mapa de esquema que contém informações sobre o <b>objeto XPath.</b></param>
+        <param name="XPath"><b>String</b> necessário. Uma instrução XPath válida.</param>
+        <param name="SelectionNamespace">Objeto <b>opcional</b>. Especifica qualquer prefixo de namespace usado no <paramref name="XPath" /> argumento. Esse argumento poderá ser omitido se o objeto <b>XPath</b> não tiver prefixos ou se o objeto <b>XPath</b> usar os prefixos do Microsoft Excel.</param>
         <param name="Repeating">Opcional <b>booleano</b>. Especifica se o objeto <b>XPath</b> deve ser vinculado a uma coluna em uma lista XML, ou mapeado para uma única célula. Defina como <b>True</b> para vincular o objeto <b>XPath</b> a uma coluna em uma lista XML.</param>
-        <summary>Mapeia especificado <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> o objeto para um <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> objeto ou <see cref="T:Microsoft.Office.Interop.Excel.Range" /> conjunto. Se o objeto <b>XPath</b> anteriormente tenha sido mapeado para o objeto <b>ListColumn</b> ou a coleção de <b>intervalo</b> , o método <b>SetValue</b> define as propriedades do objeto <b>XPath</b> .</summary>
-        <remarks>
-          <para>Recursos de XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <summary>Mapeia o <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> objeto especificado para um objeto ou <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> <see cref="T:Microsoft.Office.Interop.Excel.Range" /> coleção. Se o objeto <b>XPath</b> tiver sido mapeado anteriormente para o objeto <b>ListColumn</b> ou a coleção <b>Range</b>, o método <b>SetValue</b> definirá as propriedades do objeto <b>XPath</b>.</summary>
+        <remarks><para>Recursos XML, exceto para salvar arquivos no formato de Planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e no Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">

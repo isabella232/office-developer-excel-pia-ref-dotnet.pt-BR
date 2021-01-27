@@ -1,13 +1,5 @@
 <Type Name="Windows" FullName="Microsoft.Office.Interop.Excel.Windows">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="216071def9d8f4a2c63cf628170e2d5fcd646a71" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20574918" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="216071def9d8f4a2c63cf628170e2d5fcd646a71" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009251" /></Metadata><TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Windows implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Windows" />
   <TypeSignature Language="VB.NET" Value="Public Interface Windows&#xA;Implements IEnumerable" />
@@ -34,13 +26,11 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.Window" /> objetos no Microsoft Excel.</summary>
-    <remarks>
-      <para>A coleção <b>Windows</b> retornada pelo <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto contém todas as janelas no aplicativo, enquanto a coleção <b>Windows</b> retornado pelo <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto contém somente as janelas na pasta de trabalho especificada.</para>
-      <para>Use o método <b>NewWindow</b> de um objeto de <b>janela</b> ou <b>pasta de trabalho</b> para criar uma nova janela e adicioná-lo à coleção.</para>
-      <para>Usar o <b>Windows</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome da janela ou número de índice, para retornar um único objeto <b>Window</b> .</para>
+    <remarks><para>A <b>coleção Windows</b> retornada pela propriedade do objeto contém todas as janelas no aplicativo, enquanto a coleção Windows retornada pela propriedade do objeto contém apenas as janelas na agenda <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> especificada.</para>
+      <para>Use o <b>método NewWindow</b> de <b>um objeto Window</b> ou <b>Workbook</b> para criar uma nova janela e adicioná-la à coleção.</para>
+      <para>Use <b>o Windows</b>( ), onde está o nome da janela ou o número de <paramref name="index" /> <paramref name="index" /> índice, para retornar um único objeto <b>Window</b> .</para>
       <para>Observe que a janela ativa é sempre Windows(1).</para>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -101,7 +91,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,13 +121,10 @@
         <Parameter Name="SyncVertical" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ArrangeStyle">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlArrangeStyle" />.</param>
-        <param name="ActiveWorkbook">
-          <b>Objeto</b>de opcional. <b>True</b> para organizar somente as janelas visíveis da pasta de trabalho ativa. <b>False</b> para organizar todas as janelas. O valor padrão é <b>False</b>.</param>
-        <param name="SyncHorizontal">
-          <b>Objeto</b>de opcional. Ignorado se <paramref name="ActiveWorkbook" /> for <b>Falso</b> ou omitido. <b>True</b> para sincronizar as janelas da pasta de trabalho ativa ao rolar horizontalmente. <b>False</b> para não sincronizar as janelas. O valor padrão é <b>False</b>.</param>
-        <param name="SyncVertical">
-          <b>Objeto</b>de opcional. Ignorado se <paramref name="ActiveWorkbook" /> for <b>Falso</b> ou omitido. <b>True</b> para sincronizar as janelas da pasta de trabalho ativa ao rolar verticalmente. <b>False</b> para não sincronizar as janelas. O valor padrão é <b>False</b>.</param>
+        <param name="ArrangeStyle">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlArrangeStyle" /> .</param>
+        <param name="ActiveWorkbook">Objeto <b>opcional</b>. <b>True</b> para organizar apenas as janelas visíveis da pasta de trabalho ativa. <b>False</b> para organizar todas as janelas. O valor padrão é <b>False</b>.</param>
+        <param name="SyncHorizontal">Objeto <b>opcional</b>. Ignorado se for <paramref name="ActiveWorkbook" /> <b>False</b> ou omitido. <b>True</b> para sincronizar as janelas da pasta de trabalho ativo quando rolando horizontalmente. <b>False</b> para não sincronizar as janelas. O valor padrão é <b>False</b>.</param>
+        <param name="SyncVertical">Objeto <b>opcional</b>. Ignorado se for <paramref name="ActiveWorkbook" /> <b>False</b> ou omitido. <b>True</b> para sincronizar as janelas da pasta de trabalho ativa ao rolar verticalmente. <b>False</b> para não sincronizar as janelas. O valor padrão é <b>False</b>.</param>
         <summary>Organiza as janelas na tela.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -192,13 +179,11 @@
         <Parameter Name="WindowName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="WindowName">O nome de uma janela para abrir.</param>
+        <param name="WindowName">O nome de uma janela a ser aberta.</param>
         <summary>Abre duas janelas no modo lado a lado.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Você não pode usar o método <b>CompareSideBySideWith</b> com o <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto ou o <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" /> propriedade.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Você não pode usar <b>o método CompareSideBySideWith</b> com <see cref="T:Microsoft.Office.Interop.Excel._Application" /> o objeto ou a <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" /> propriedade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -254,11 +239,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -319,8 +302,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>necessário. O nome ou número de índice do objeto.</param>
+        <param name="Index">Objeto <b>Required</b>. O nome ou número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -349,7 +331,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado.</summary>
+        <summary>Retorna o objeto pai do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -376,10 +358,8 @@
       <Parameters />
       <Docs>
         <summary>Redefine a posição de duas janelas da planilha que estejam sendo comparadas lado a lado.</summary>
-        <remarks>
-          <para>Use o método <b>ResetPositionsSideBySide</b> para redefinir a posição de duas planilhas que estejam sendo comparadas lado a lado. Por exemplo, se um usuário minimiza ou maximiza uma das duas janelas planilha comparadas, o método <b>ResetPositionsSideBySide</b> redefine a exibição para que as duas janelas sejam exibidas lado a lado novamente.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Use o <b>método ResetPositionsSideBySide</b> para redefinir a posição de duas planilhas que estão sendo comparadas lado a lado. Por exemplo, se um usuário minimiza ou maximiza uma das duas janelas que estão sendo comparadas, o método <b>ResetPositionsSideBySide</b> redefine a exibição de modo que as duas janelas sejam novamente exibidas lado a lado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncScrollingSideBySide">
@@ -408,8 +388,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> permite rolar ao mesmo tempo os conteúdos das janelas quando os documentos estão sendo comparados lado a lado. <b>False</b> desativa a rolagem simultânea das janelas.</summary>
+        <summary><b>True</b> permite rolar ao mesmo tempo os conteúdos das janelas quando os documentos estão sendo comparados lado a lado. <b>False</b> desativa a rolagem simultânea das janelas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="Worksheets" FullName="Microsoft.Office.Interop.Excel.Worksheets">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a754235a311170e13d0d4825decb297f28a9fa27" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581498" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Worksheets : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a754235a311170e13d0d4825decb297f28a9fa27" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50008502" /></Metadata><TypeSignature Language="C#" Value="public interface Worksheets : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Worksheets implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Worksheets" />
   <TypeSignature Language="VB.NET" Value="Public Interface Worksheets&#xA;Implements IEnumerable" />
@@ -33,14 +25,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objetos na pasta de trabalho ativa ou especificada. Cada objeto <b>Worksheet</b> representa uma planilha.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Application.Worksheets" /> propriedade para retornar a coleção de <b>planilhas</b> .</para>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Worksheets.Add(System.Object,System.Object,System.Object,System.Object)" /> método para criar uma nova planilha e adicioná-lo à coleção.</para>
-      <para>Use as <b>planilhas</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome, para retornar um único objeto <b>Worksheet</b> ou número de índice da planilha.</para>
-      <para>O objeto <b>Worksheet</b> também é membro do <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> conjunto. A coleção <b>Sheets</b> contém todas as planilhas na pasta de trabalho (tanto planilhas e folhas de gráfico).</para>
-      <para></para>
-    </remarks>
+    <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objetos na área de trabalho especificada ou ativa. Cada objeto <b>Worksheet</b> representa uma planilha.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel._Application.Worksheets" /> propriedade para retornar a coleção <b>Worksheets</b> .</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Worksheets.Add(System.Object,System.Object,System.Object,System.Object)" /> método para criar uma nova planilha e adicioná-la à coleção.</para>
+      <para>Use <b>Planilhas</b>( ), onde está o nome ou número de índice da <paramref name="index" /> <paramref name="index" /> planilha, para retornar um único <b>objeto Worksheet.</b></para>
+      <para>O <b>objeto Worksheet</b> também é membro da <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> coleção. O conjunto <b>planilhas</b> contém todas as planilhas na pasta de trabalho (ambas planilhas de gráfico e planilhas).</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -145,20 +135,14 @@
         <Parameter Name="Type" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">
-          <b>Objeto</b>de opcional. Um objeto que especifica a planilha antes da qual a nova planilha será adicionada.</param>
-        <param name="After">
-          <b>Objeto</b>de opcional. Um objeto que especifica a planilha depois após a qual a nova planilha será adicionada.</param>
-        <param name="Count">
-          <b>Objeto</b>de opcional. O número de folhas a ser adicionado. O valor padrão é um.</param>
-        <param name="Type">
-          <b>Objeto</b>de opcional. Especifica o tipo de planilha. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlSheetType" /> constantes: <b>xlWorksheet</b>, <b>xlChart</b>, <b>xlExcel4MacroSheet</b>ou <b>xlExcel4IntlMacroSheet</b>. Se você estiver inserindo uma planilha com base em um modelo existente, especifique o caminho para o modelo. O valor padrão é <b>xlWorksheet</b>.</param>
+        <param name="Before">Objeto <b>opcional</b>. Um objeto que especifica a planilha antes da qual a nova planilha será adicionada.</param>
+        <param name="After">Objeto <b>opcional</b>. Um objeto que especifica a planilha depois após a qual a nova planilha será adicionada.</param>
+        <param name="Count">Objeto <b>opcional</b>. O número de planilhas a serem adicionadas. O valor padrão é um.</param>
+        <param name="Type">Objeto <b>opcional</b>. Especifica o tipo de planilha. Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlSheetType" /> constantes: <b>xlWorksheet</b>, <b>xlChart</b>, <b>xlExcel4MacroSheet</b>ou <b>xlExcel4IntlMacroSheet</b>. Se você estiver inserindo uma planilha com base em um modelo existente, especifique o caminho para o modelo. O valor padrão é <b>xlWorksheet</b>.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Se <paramref name="Before" /> e <paramref name="After" /> são ambos omitidos, a nova planilha será inserido antes da planilha ativa.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se <paramref name="Before" /> e ambos são <paramref name="After" /> omitidos, a nova planilha é inserida antes da planilha ativa.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Add2">
@@ -186,20 +170,14 @@
         <Parameter Name="NewLayout" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">
-          <b>Objeto</b>de opcional. Um objeto que especifica a planilha antes da qual a nova planilha será adicionada.</param>
-        <param name="After">
-          <b>Objeto</b>de opcional. Um objeto que especifica a planilha depois após a qual a nova planilha será adicionada.</param>
-        <param name="Count">
-          <b>Objeto</b>de opcional. O número de folhas a ser adicionado. O valor padrão é uma</param>
-        <param name="NewLayout">
-          <b>Objeto</b>de opcional. Um objeto que especifica o layout a ser usado para a nova planilha.</param>
-        <summary>Este método só é implementado para o objeto de coleção <b>Charts</b> e produzirá um erro em tempo de execução se usada em <b>planilhas</b> e <b>folhas de</b> objetos.</summary>
+        <param name="Before">Objeto <b>opcional</b>. Um objeto que especifica a planilha antes da qual a nova planilha será adicionada.</param>
+        <param name="After">Objeto <b>opcional</b>. Um objeto que especifica a planilha depois após a qual a nova planilha será adicionada.</param>
+        <param name="Count">Objeto <b>opcional</b>. O número de planilhas a serem adicionadas. O valor padrão é um</param>
+        <param name="NewLayout">Objeto <b>opcional</b>. Um objeto que especifica o layout a ser usado para a nova planilha.</param>
+        <summary>Esse método só é implementado para o objeto da coleção <b>Charts</b> e produzirá um erro de tempo de execução se usado nos objetos <b>Sheets</b> <b>e Worksheets</b> .</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Se <paramref name="Before" /> e <paramref name="After" /> são ambos omitidos, a nova planilha será inserido antes da planilha ativa.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se <paramref name="Before" /> e ambos são <paramref name="After" /> omitidos, a nova planilha é inserida antes da planilha ativa.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -225,7 +203,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -253,15 +231,11 @@
         <Parameter Name="After" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">
-          <b>Objeto</b>de opcional. A planilha antes da qual a planilha copiada será colocada. Não é possível especificar <paramref name="Before" /> se você especificar <paramref name="After" />.</param>
-        <param name="After">
-          <b>Objeto</b>de opcional. A planilha após o qual a planilha copiada será colocada. Não é possível especificar <paramref name="After" /> se você especificar <paramref name="Before" />.</param>
+        <param name="Before">Objeto <b>opcional</b>. A planilha antes da qual a planilha copiada será inserida. Não é possível <paramref name="Before" /> especificar se <paramref name="After" /> você especificar.</param>
+        <param name="After">Objeto <b>opcional</b>. A planilha depois da qual a planilha copiada será inserida. Não é possível <paramref name="After" /> especificar se <paramref name="Before" /> você especificar.</param>
         <summary>Copia a planilha para outro local na pasta de trabalho.</summary>
-        <remarks>
-          <para>Se você não especificar um <paramref name="Before" /> ou <paramref name="After" />, o Microsoft Excel criará uma nova pasta de trabalho contendo a planilha copiada.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se você não especificar um ou <paramref name="Before" /> , o Microsoft Excel cria uma nova pasta de trabalho que contém a planilha <paramref name="After" /> copiada.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -315,12 +289,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. Somente <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -345,10 +317,8 @@
       <Parameters />
       <Docs>
         <summary>Exclui o objeto.</summary>
-        <remarks>
-          <para>Quando você exclui um <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> ou <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />, esse método exibe uma caixa de diálogo que solicita ao usuário para confirmar a exclusão. Esta caixa de diálogo é exibida por padrão. O método <b>Delete</b> retorna um valor <b>Boolean</b> que será <b>False</b> se o usuário clicou em Cancelar na caixa de diálogo ou <b>True</b> se o usuário clicado em Excluir.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Quando você exclui um ou , este método exibe uma caixa de diálogo que solicita que o <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> usuário confirme a exclusão. Esta caixa de diálogo é exibida por padrão. O <b>método Delete</b> retorna um valor <b>Boolean</b> que será <b>False</b> se o usuário clicou em Cancelar na caixa de diálogo ou <b>True</b> se o usuário clicou em Excluir.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FillAcrossSheets">
@@ -373,8 +343,8 @@
         <Parameter Name="Type" Type="Microsoft.Office.Interop.Excel.XlFillWith" />
       </Parameters>
       <Docs>
-        <param name="Range">Necessário <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto. O intervalo para preencher em todas as planilhas na coleção. O intervalo deve ser de uma planilha dentro da coleção.</param>
-        <param name="Type">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlFillWith" />. Especifica como copiar o intervalo.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Excel.Range" /> obrigatório. O intervalo a ser preenchido em todas as planilhas da coleção. O intervalo precisa ser de uma planilha dentro da coleção.</param>
+        <param name="Type">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlFillWith" /> . Especifica como copiar o intervalo.</param>
         <summary>Copia um intervalo para a mesma área em todas as outras planilhas de uma coleção.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -434,12 +404,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.HPageBreaks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> coleção que representa a página horizontal quebras na planilha. Somente leitura.</summary>
+        <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> coleção que representa as quebras de página horizontais na planilha. Somente leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Não há um limite de 1,026 quebras de página horizontais por planilha.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Há um limite de 1.026 quebras de página horizontais por folha.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -468,8 +436,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>necessário. O nome ou número de índice do objeto.</param>
+        <param name="Index">Objeto <b>Required</b>. O nome ou número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -498,15 +465,11 @@
         <Parameter Name="After" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">
-          <b>Objeto</b>de opcional. A planilha antes da qual a planilha movida será colocada. Não é possível especificar <paramref name="Before" /> se você especificar <paramref name="After" />.</param>
-        <param name="After">
-          <b>Objeto</b>de opcional. A planilha após o qual a planilha movida será colocada. Não é possível especificar <paramref name="After" /> se você especificar <b>antes</b>.</param>
+        <param name="Before">Objeto <b>opcional</b>. A planilha antes da qual a planilha movida será inserida. Não é possível <paramref name="Before" /> especificar se <paramref name="After" /> você especificar.</param>
+        <param name="After">Objeto <b>opcional</b>. A planilha depois da qual a planilha movida será inserida. Não é possível <paramref name="After" /> especificar se você especificar <b>Before</b>.</param>
         <summary>Move a planilha para outro lugar na pasta de trabalho.</summary>
-        <remarks>
-          <para>Se você não especificar um <paramref name="Before" /> ou <paramref name="After" />, o Microsoft Excel criará uma nova pasta de trabalho contendo a planilha movida.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se você não especificar um ou <paramref name="Before" /> , o Microsoft Excel cria uma nova pasta de trabalho que contém a planilha <paramref name="After" /> movida.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -532,7 +495,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado. Somente leitura.</summary>
+        <summary>Retorna o objeto pai do objeto especificado. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -569,27 +532,17 @@
         <Parameter Name="PrToFileName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="From">
-          <b>Objeto</b>de opcional. O número de página pela qual começar a impressão. Se esse argumento for omitido, a impressão começará no início.</param>
-        <param name="To">
-          <b>Objeto</b>de opcional. O número da última página a ser impresso. Se esse argumento for omitido, a impressão termina com a última página.</param>
-        <param name="Copies">
-          <b>Objeto</b>de opcional. O número de cópias que serão impressas. Se esse argumento for omitido, será impressa uma cópia.</param>
-        <param name="Preview">
-          <b>Objeto</b>de opcional. <b>True</b> para que o Microsoft Excel invocar a visualização de impressão antes de imprimir o objeto. <b>False</b> (ou omitido) para imprimir o objeto imediatamente.</param>
-        <param name="ActivePrinter">
-          <b>Objeto</b>de opcional. Define o nome da impressora ativa.</param>
-        <param name="PrintToFile">
-          <b>Objeto</b>de opcional. <b>True</b> para imprimir em um arquivo. Se <paramref name="PrToFileName" /> não for especificado, o Microsoft Excel solicita que o usuário insira o nome do arquivo de saída.</param>
-        <param name="Collate">
-          <b>Objeto</b>de opcional. <b>True</b> para agrupar várias cópias.</param>
-        <param name="PrToFileName">
-          <b>Objeto</b>de opcional. Se <paramref name="PrintToFile" /> estiver definida como <b>True</b>, este argumento especificará o nome do arquivo que você deseja imprimir.</param>
+        <param name="From">Objeto <b>opcional</b>. O número da página na qual a impressão deve começar. Se esse argumento for omitido, a impressão começará do início.</param>
+        <param name="To">Objeto <b>opcional</b>. O número da última página a ser impressa. Se esse argumento for omitido, a impressão terminará na última página.</param>
+        <param name="Copies">Objeto <b>opcional</b>. O número de cópias a serem impressas. Se esse argumento for omitido, será impressa uma cópia.</param>
+        <param name="Preview">Objeto <b>opcional</b>. <b>True</b> para fazer o Microsoft Excel invocar a visualização de impressão antes de imprimir o objeto. <b>False</b> (ou omitido) para imprimir o objeto imediatamente.</param>
+        <param name="ActivePrinter">Objeto <b>opcional</b>. Define o nome da impressora ativa.</param>
+        <param name="PrintToFile">Objeto <b>opcional</b>. <b>True</b> para imprimir em um arquivo. Se não for especificado, o Microsoft Excel solicitará que o usuário insira <paramref name="PrToFileName" /> o nome do arquivo de saída.</param>
+        <param name="Collate">Objeto <b>opcional</b>. <b>True</b> para agrupar várias cópias.</param>
+        <param name="PrToFileName">Objeto <b>opcional</b>. Se <paramref name="PrintToFile" /> for definido como <b>True</b>, este argumento especificará o nome do arquivo para o que você deseja imprimir.</param>
         <summary>Imprime o objeto.</summary>
-        <remarks>
-          <para>"Páginas" nas descrições de <paramref name="From" /> e <paramref name="To" /> se refere a páginas impressas — não a páginas gerais na planilha ou pasta de trabalho.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>"Páginas" nas descrições e refere-se a páginas impressas , não a páginas gerais <paramref name="From" /> na planilha ou pasta de <paramref name="To" /> trabalho.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintOutEx">
@@ -657,7 +610,7 @@
         <Parameter Name="EnableChanges" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="EnableChanges">Permite que as alterações ao objeto.</param>
+        <param name="EnableChanges">Habilita alterações no objeto.</param>
         <summary>Mostra uma visualização de como o objeto aparecerá quando for impresso.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -684,12 +637,10 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">Opcional <b>objeto</b> (usado somente com planilhas). <b>True</b> para substituir a seleção atual pelo objeto especificado. <b>False</b> para estender a seleção atual para incluir qualquer selecionada anteriormente objetos e o objeto especificado.</param>
+        <param name="Replace">Objeto <b>opcional</b> (usado somente com planilhas). <b>True</b> para substituir a seleção atual pelo objeto especificado. <b>False</b> para estender a seleção atual para incluir qualquer selecionada anteriormente objetos e o objeto especificado.</param>
         <summary>Seleciona o objeto.</summary>
-        <remarks>
-          <para>Para selecionar uma célula ou um intervalo de células, use o método <b>Select</b> . Para tornar uma única célula a célula ativa, use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Activate" /> método.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Para selecionar uma célula ou um intervalo de células, use o método <b>Select</b>. Para tornar uma única célula a célula ativa, use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Activate" /> método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -718,7 +669,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se o objeto está visível. <b>Objeto</b> de leitura/gravação.</summary>
+        <summary>Determina se o objeto será visível. <b>Objeto</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -746,7 +697,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.VPageBreaks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" /> coleção que representa a página vertical quebras na planilha. Somente leitura.</summary>
+        <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" /> coleção que representa as quebras de página verticais na planilha. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
