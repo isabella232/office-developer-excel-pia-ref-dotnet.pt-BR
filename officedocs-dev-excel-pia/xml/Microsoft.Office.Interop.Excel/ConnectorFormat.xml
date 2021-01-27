@@ -1,13 +1,5 @@
 <Type Name="ConnectorFormat" FullName="Microsoft.Office.Interop.Excel.ConnectorFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6e2dfed647b41c630904642100343ae25d044efb" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586111" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ConnectorFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6e2dfed647b41c630904642100343ae25d044efb" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003938" /></Metadata><TypeSignature Language="C#" Value="public interface ConnectorFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ConnectorFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ConnectorFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ConnectorFormat" />
@@ -29,89 +21,22 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="e0172-101">Contém propriedades e métodos que se aplicam a conectores.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="e0172-101">Contains properties and methods that apply to connectors.</span>
-      </span>
-    </summary>
-    <remarks>
-      <para>
-        <span data-ttu-id="e0172-p101">Um conector é uma linha que anexa duas outras formas em pontos chamados sites de conexão. Se você reorganizar formas que estão conectadas, a geometria do conector será ajustada automaticamente para que as formas permaneçam conectadas.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="e0172-p101">A connector is a line that attaches two other shapes at points called connection sites. If you rearrange shapes that are connected, the geometry of the connector will be automatically adjusted so that the shapes remain connected.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="e0172-104">Use o <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectorFormat" /> propriedade para retornar um objeto <b>ConnectorFormat</b> .</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="e0172-104">Use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectorFormat" /> property to return a <b>ConnectorFormat</b> object.</span>
-        </span>
-        <span data-ttu-id="e0172-105">Use o <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> e <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> métodos para anexar as extremidades do conector a outras formas no documento.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="e0172-105">Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> and <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> methods to attach the ends of the connector to other shapes in the document.</span>
-        </span>
-        <span data-ttu-id="e0172-106">Use o <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> método para encontrar automaticamente o caminho mais curto entre as duas formas conectadas pelo conector.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="e0172-106">Use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> method to automatically find the shortest path between the two shapes connected by the connector.</span>
-        </span>
-        <span data-ttu-id="e0172-107">Use o <see cref="P:Microsoft.Office.Interop.Excel.Shape.Connector" /> propriedade para ver se uma forma é um conector.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="e0172-107">Use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.Connector" /> property to see whether a shape is a connector.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="e0172-108">Observe que você atribui um tamanho e uma posição quando você adiciona um conector para o <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> conjunto, mas o tamanho e posição são ajustados automaticamente quando você anexa o início e fim do conector a outras formas na coleção.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="e0172-108">Note that you assign a size and a position when you add a connector to the <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection, but the size and position are automatically adjusted when you attach the beginning and end of the connector to other shapes in the collection.</span>
-        </span>
-        <span data-ttu-id="e0172-109">Portanto, se você pretende anexa um conector a outras formas, o tamanho inicial e a posição que você especificar serão irrelevantes.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="e0172-109">Therefore, if you intend to attach a connector to other shapes, the initial size and position you specify are irrelevant.</span>
-        </span>
-        <span data-ttu-id="e0172-110">Da mesma forma, você especifica quais sites de conexão de uma forma para anexar o conector a quando você anexa o conector, mas o uso do método <b>RerouteConnections</b> depois que o conector é anexado pode alterar a quais sites de conexão o conector anexado, tornando sua escolha original de sites de conexão irrelevante.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="e0172-110">Likewise, you specify which connection sites on a shape to attach the connector to when you attach the connector, but using the <b>RerouteConnections</b> method after the connector is attached may change which connection sites the connector attaches to, making your original choice of connection sites irrelevant.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="e0172-111">Os sites de conexão são geralmente numerados conforme as regras apresentadas na tabela a seguir.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="e0172-111">Connection sites are generally numbered according to the rules presented in the following table.</span>
-        </span>
-      </para>
+    <summary><span data-ttu-id="b571d-101">Contém propriedades e métodos que se aplicam a conectores.</span><span class="sxs-lookup"><span data-stu-id="b571d-101">Contains properties and methods that apply to connectors.</span></span></summary>
+    <remarks><para><span data-ttu-id="b571d-p101">Um conector é uma linha que anexa duas outras formas em pontos chamados sites de conexão. Se você reorganizar formas que estão conectadas, a geometria do conector será ajustada automaticamente para que as formas permaneçam conectadas.</span><span class="sxs-lookup"><span data-stu-id="b571d-p101">A connector is a line that attaches two other shapes at points called connection sites. If you rearrange shapes that are connected, the geometry of the connector will be automatically adjusted so that the shapes remain connected.</span></span></para>
+      <para><span data-ttu-id="b571d-104">Use a <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectorFormat" /> propriedade para retornar um objeto <b>ConnectorFormat</b> .</span><span class="sxs-lookup"><span data-stu-id="b571d-104">Use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectorFormat" /> property to return a <b>ConnectorFormat</b> object.</span></span> <span data-ttu-id="b571d-105">Use o <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> e os métodos para <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> anexar as extremidades do conector a outras formas no documento.</span><span class="sxs-lookup"><span data-stu-id="b571d-105">Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> and <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> methods to attach the ends of the connector to other shapes in the document.</span></span> <span data-ttu-id="b571d-106">Use o <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> método para encontrar automaticamente o caminho mais curto entre as duas formas conectadas pelo conector.</span><span class="sxs-lookup"><span data-stu-id="b571d-106">Use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> method to automatically find the shortest path between the two shapes connected by the connector.</span></span> <span data-ttu-id="b571d-107">Use a <see cref="P:Microsoft.Office.Interop.Excel.Shape.Connector" /> propriedade para ver se uma forma é um conector.</span><span class="sxs-lookup"><span data-stu-id="b571d-107">Use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.Connector" /> property to see whether a shape is a connector.</span></span></para>
+      <para><span data-ttu-id="b571d-108">Observe que você atribui um tamanho e uma posição quando adiciona um conector à coleção, mas o tamanho e a posição são ajustados automaticamente quando você anexa o início e o fim do conector a outras formas na <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> coleção.</span><span class="sxs-lookup"><span data-stu-id="b571d-108">Note that you assign a size and a position when you add a connector to the <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection, but the size and position are automatically adjusted when you attach the beginning and end of the connector to other shapes in the collection.</span></span> <span data-ttu-id="b571d-109">Portanto, se você pretende anexa um conector a outras formas, o tamanho inicial e a posição que você especificar serão irrelevantes.</span><span class="sxs-lookup"><span data-stu-id="b571d-109">Therefore, if you intend to attach a connector to other shapes, the initial size and position you specify are irrelevant.</span></span> <span data-ttu-id="b571d-110">Da mesma forma, você especifica quais sites de conexão de uma forma para anexar o conector a quando você anexa o conector, mas o uso do método <b>RerouteConnections</b> depois que o conector é anexado pode alterar a quais sites de conexão o conector anexado, tornando sua escolha original de sites de conexão irrelevante.</span><span class="sxs-lookup"><span data-stu-id="b571d-110">Likewise, you specify which connection sites on a shape to attach the connector to when you attach the connector, but using the <b>RerouteConnections</b> method after the connector is attached may change which connection sites the connector attaches to, making your original choice of connection sites irrelevant.</span></span></para>
+      <para><span data-ttu-id="b571d-111">Os sites de conexão são geralmente numerados conforme as regras apresentadas na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="b571d-111">Connection sites are generally numbered according to the rules presented in the following table.</span></span></para>
       <list type="table">
         <item>
-          <term>
-            <span data-ttu-id="e0172-112">AutoFormas, WordArt, figuras e objetos OLE</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-112">AutoShapes, WordArt, pictures, and OLE objects</span>
-            </span>
-          </term>
-          <description>
-            <span data-ttu-id="e0172-113">Os sites de conexão são numerados começando pela parte superior e seguindo o sentido anti-horário.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-113">The connection sites are numbered starting at the top and proceeding counterclockwise.</span>
-            </span>
-          </description>
+          <term><span data-ttu-id="b571d-112">AutoFormas, WordArt, figuras e objetos OLE</span><span class="sxs-lookup"><span data-stu-id="b571d-112">AutoShapes, WordArt, pictures, and OLE objects</span></span></term>
+          <description><span data-ttu-id="b571d-113">Os sites de conexão são numerados começando pela parte superior e seguindo o sentido anti-horário.</span><span class="sxs-lookup"><span data-stu-id="b571d-113">The connection sites are numbered starting at the top and proceeding counterclockwise.</span></span></description>
         </item>
         <item>
-          <term>
-            <span data-ttu-id="e0172-114">Formas livres</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-114">Freeforms</span>
-            </span>
-          </term>
-          <description>
-            <span data-ttu-id="e0172-115">Os sites de conexão são os vértices e correspondem aos números de vértice.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-115">The connection sites are the vertices, and they correspond to the vertex numbers.</span>
-            </span>
-          </description>
+          <term><span data-ttu-id="b571d-114">Formas livres</span><span class="sxs-lookup"><span data-stu-id="b571d-114">Freeforms</span></span></term>
+          <description><span data-ttu-id="b571d-115">Os sites de conexão são os vértices e correspondem aos números de vértice.</span><span class="sxs-lookup"><span data-stu-id="b571d-115">The connection sites are the vertices, and they correspond to the vertex numbers.</span></span></description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -137,12 +62,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="e0172-116">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-116">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="b571d-116">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="b571d-116">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -171,68 +91,12 @@
         <Parameter Name="ConnectionSite" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ConnectedShape">
-          <span data-ttu-id="e0172-117">Necessário <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-117">Required <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object.</span>
-          </span>
-          <span data-ttu-id="e0172-118">A forma para anexar o início do conector.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-118">The shape to attach the beginning of the connector to.</span>
-          </span>
-          <span data-ttu-id="e0172-119">O objeto <b>Shape</b> especificado deve estar no mesmo <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> coleção que o conector.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-119">The specified <b>Shape</b> object must be in the same <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection as the connector.</span>
-          </span>
-        </param>
-        <param name="ConnectionSite">
-          <span data-ttu-id="e0172-120">
-            <b>Integer</b>necessário.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-120">Required <b>Integer</b>.</span>
-          </span>
-          <span data-ttu-id="e0172-121">Um site de conexão na forma especificada por <paramref name="ConnectedShape" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-121">A connection site on the shape specified by <paramref name="ConnectedShape" />.</span>
-          </span>
-          <span data-ttu-id="e0172-122">Deve ser um inteiro entre 1 e o inteiro retornado pelo <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> propriedade da forma especificada.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-122">Must be an integer between 1 and the integer returned by the <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> property of the specified shape.</span>
-          </span>
-          <span data-ttu-id="e0172-123">Se desejar que o conector encontre automaticamente o caminho mais curto entre as duas formas de se conectar, especifique qualquer número inteiro válido para este argumento e use o <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> método depois que o conector é anexado às formas em ambas as extremidades.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-123">If you want the connector to automatically find the shortest path between the two shapes it connects, specify any valid integer for this argument and then use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> method after the connector is attached to shapes at both ends.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="e0172-124">Conecta o início do conector especificado à forma especificada.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-124">Attaches the beginning of the specified connector to a specified shape.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="e0172-125">Se já houver uma conexão entre o início do conector e outra forma, essa conexão será desfeito.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-125">If there’s already a connection between the beginning of the connector and another shape, that connection is broken.</span>
-            </span>
-            <span data-ttu-id="e0172-126">Se o início do conector não estiver posicionado no site de conexão especificado, esse método Move o início do conector para o site de conexão e ajusta o tamanho e posição do conector.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-126">If the beginning of the connector isn’t already positioned at the specified connecting site, this method moves the beginning of the connector to the connecting site and adjusts the size and position of the connector.</span>
-            </span>
-            <span data-ttu-id="e0172-127">Use o <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> método para anexar a extremidade do conector a uma forma.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-127">Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> method to attach the end of the connector to a shape.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="e0172-128">Quando um conector é conectado a um objeto, o tamanho e a posição do conector são ajustados automaticamente, se necessário.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-128">When you attach a connector to an object, the size and position of the connector are automatically adjusted if necessary.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <param name="ConnectedShape"><span data-ttu-id="b571d-117">Objeto <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b571d-117">Required <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object.</span></span> <span data-ttu-id="b571d-118">A forma para anexar o início do conector.</span><span class="sxs-lookup"><span data-stu-id="b571d-118">The shape to attach the beginning of the connector to.</span></span> <span data-ttu-id="b571d-119">O objeto <b>Shape especificado</b> deve estar na mesma coleção que o <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> conector.</span><span class="sxs-lookup"><span data-stu-id="b571d-119">The specified <b>Shape</b> object must be in the same <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection as the connector.</span></span></param>
+        <param name="ConnectionSite"><span data-ttu-id="b571d-120">Obrigatório <b>Integer</b>.</span><span class="sxs-lookup"><span data-stu-id="b571d-120">Required <b>Integer</b>.</span></span> <span data-ttu-id="b571d-121">Um site de conexão na forma especificada por <paramref name="ConnectedShape" /> .</span><span class="sxs-lookup"><span data-stu-id="b571d-121">A connection site on the shape specified by <paramref name="ConnectedShape" />.</span></span> <span data-ttu-id="b571d-122">Deve ser um inteiro entre 1 e o inteiro retornado <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> pela propriedade da forma especificada.</span><span class="sxs-lookup"><span data-stu-id="b571d-122">Must be an integer between 1 and the integer returned by the <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> property of the specified shape.</span></span> <span data-ttu-id="b571d-123">Se você quiser que o conector encontre automaticamente o caminho mais curto entre as duas formas que ele conecta, especifique qualquer inteiro válido para esse argumento e use o método depois que o conector for anexado às formas em ambas as <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> extremidades.</span><span class="sxs-lookup"><span data-stu-id="b571d-123">If you want the connector to automatically find the shortest path between the two shapes it connects, specify any valid integer for this argument and then use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> method after the connector is attached to shapes at both ends.</span></span></param>
+        <summary><span data-ttu-id="b571d-124">Anexa o início do conector especificado a uma forma especificada.</span><span class="sxs-lookup"><span data-stu-id="b571d-124">Attaches the beginning of the specified connector to a specified shape.</span></span></summary>
+        <remarks><para><span data-ttu-id="b571d-125">Se já existir uma conexão entre o início do conector e uma outra forma, essa conexão será quebrada.</span><span class="sxs-lookup"><span data-stu-id="b571d-125">If there’s already a connection between the beginning of the connector and another shape, that connection is broken.</span></span> <span data-ttu-id="b571d-126">Se o início do conector não estiver já posicionado no site de conexão especificado, este método moverá o início do conector para o site de conexão e ajustará o tamanho e a posição do conector.</span><span class="sxs-lookup"><span data-stu-id="b571d-126">If the beginning of the connector isn’t already positioned at the specified connecting site, this method moves the beginning of the connector to the connecting site and adjusts the size and position of the connector.</span></span> <span data-ttu-id="b571d-127">Use o <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> método para anexar a extremidade do conector a uma forma.</span><span class="sxs-lookup"><span data-stu-id="b571d-127">Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> method to attach the end of the connector to a shape.</span></span></para>
+          <para><span data-ttu-id="b571d-128">Quando um conector é conectado a um objeto, o tamanho e a posição do conector são ajustados automaticamente, se necessário.</span><span class="sxs-lookup"><span data-stu-id="b571d-128">When you attach a connector to an object, the size and position of the connector are automatically adjusted if necessary.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginConnected">
@@ -258,74 +122,35 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="e0172-129">
-            <b>True</b> se o início do conector especificado está conectado a uma forma.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-129">
-              <b>True</b> if the beginning of the specified connector is connected to a shape.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="b571d-129"><b>True</b> se o início do conector especificado estiver conectado a uma forma.</span><span class="sxs-lookup"><span data-stu-id="b571d-129"><b>True</b> if the beginning of the specified connector is connected to a shape.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="e0172-130">
-              <see cref="T:Microsoft.Office.Core.MsoTriState" />pode ser uma das seguintes constantes <b>MsoTriState</b> :</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-130">
-                <see cref="T:Microsoft.Office.Core.MsoTriState" /> can be one of the following <b>MsoTriState</b> constants:</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="e0172-131">
-              <b>msoCTrue</b>
-            </span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-131">
-                <b>msoCTrue</b>
-              </span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="e0172-132">
-              <b>msoFalse</b>
-            </span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-132">
-                <b>msoFalse</b>
-              </span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="e0172-133">
-              <b>msoTriStateMixed</b>
-            </span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-133">
-                <b>msoTriStateMixed</b>
-              </span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="e0172-134">
-              <b>msoTriStateToggle</b>
-            </span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-134">
-                <b>msoTriStateToggle</b>
-              </span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="e0172-135">
-              <b>msoTrue</b> O início do conector especificado está conectado a uma forma.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-135">
-                <b>msoTrue</b> The beginning of the specified connector is connected to a shape.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="b571d-130">
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />pode ser uma das seguintes <b>constantes MsoTriState:</b></span><span class="sxs-lookup"><span data-stu-id="b571d-130">
+            <see cref="T:Microsoft.Office.Core.MsoTriState" /> can be one of the following <b>MsoTriState</b> constants:</span></span></para>
+          <para><span data-ttu-id="b571d-131">
+            <b>msoCTrue</b>
+          </span><span class="sxs-lookup"><span data-stu-id="b571d-131">
+            <b>msoCTrue</b>
+          </span></span></para>
+          <para><span data-ttu-id="b571d-132">
+            <b>msoFalse</b>
+          </span><span class="sxs-lookup"><span data-stu-id="b571d-132">
+            <b>msoFalse</b>
+          </span></span></para>
+          <para><span data-ttu-id="b571d-133">
+            <b>msoTriStateMixed</b>
+          </span><span class="sxs-lookup"><span data-stu-id="b571d-133">
+            <b>msoTriStateMixed</b>
+          </span></span></para>
+          <para><span data-ttu-id="b571d-134">
+            <b>msoTriStateToggle</b>
+          </span><span class="sxs-lookup"><span data-stu-id="b571d-134">
+            <b>msoTriStateToggle</b>
+          </span></span></para>
+          <para><span data-ttu-id="b571d-135">
+            <b>msoTrue</b> O início do conector especificado está conectado a uma forma.</span><span class="sxs-lookup"><span data-stu-id="b571d-135">
+            <b>msoTrue</b> The beginning of the specified connector is connected to a shape.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginConnectedShape">
@@ -351,22 +176,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="e0172-136">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object que representa a forma à qual o início do conector especificado está anexado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-136">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object that represents the shape that the beginning of the specified connector is attached to.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="b571d-136">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto que representa a forma à que o início do conector especificado está anexado.</span><span class="sxs-lookup"><span data-stu-id="b571d-136">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object that represents the shape that the beginning of the specified connector is attached to.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="e0172-137">Se o início do conector especificado não estiver anexado a uma forma, essa propriedade gerará um erro.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-137">If the beginning of the specified connector isn’t attached to a shape, this property generates an error.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="b571d-137">Se o início do conector especificado não estiver anexado a uma forma, essa propriedade gerará um erro.</span><span class="sxs-lookup"><span data-stu-id="b571d-137">If the beginning of the specified connector isn’t attached to a shape, this property generates an error.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginConnectionSite">
@@ -392,22 +205,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="e0172-138">Retorna um número inteiro especificando o site de conexão ao qual o final de um conector está conectado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-138">Returns an integer that specifies the connection site that the end of a connector is connected to.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="b571d-138">Retorna um número inteiro especificando o site de conexão ao qual o final de um conector está conectado.</span><span class="sxs-lookup"><span data-stu-id="b571d-138">Returns an integer that specifies the connection site that the end of a connector is connected to.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="e0172-139">Se o final do conector especificado não estiver anexado a uma forma, essa propriedade irá gerar um erro.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-139">If the end of the specified connector isn’t attached to a shape, this property generates an error.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="b571d-139">Se o final do conector especificado não estiver anexado a uma forma, essa propriedade irá gerar um erro.</span><span class="sxs-lookup"><span data-stu-id="b571d-139">If the end of the specified connector isn’t attached to a shape, this property generates an error.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginDisconnect">
@@ -431,29 +232,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="e0172-140">Desconecta o início do conector especificado da forma à que qual está anexado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-140">Detaches the beginning of the specified connector from the shape it’s attached to.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="e0172-141">O método <b>BeginDisconnect</b> não altera o tamanho ou a posição do conector.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-141">The <b>BeginDisconnect</b> method doesn’t alter the size or position of the connector.</span>
-            </span>
-            <span data-ttu-id="e0172-142">O início do conector permanece posicionado em um site de conexão, mas não fica conectado.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-142">The beginning of the connector remains positioned at a connection site but is no longer connected.</span>
-            </span>
-            <span data-ttu-id="e0172-143">Use o <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndDisconnect" /> método para desconectar o fim do conector de uma forma.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-143">Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndDisconnect" /> method to detach the end of the connector from a shape.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="b571d-140">Desconecta o início do conector especificado da forma a qual ele está anexado.</span><span class="sxs-lookup"><span data-stu-id="b571d-140">Detaches the beginning of the specified connector from the shape it’s attached to.</span></span></summary>
+        <remarks><para><span data-ttu-id="b571d-141">O <b>método BeginDisconnect</b> não altera o tamanho ou a posição do conector.</span><span class="sxs-lookup"><span data-stu-id="b571d-141">The <b>BeginDisconnect</b> method doesn’t alter the size or position of the connector.</span></span> <span data-ttu-id="b571d-142">O início do conector permanece posicionado em um site de conexão, mas não mais conectado.</span><span class="sxs-lookup"><span data-stu-id="b571d-142">The beginning of the connector remains positioned at a connection site but is no longer connected.</span></span> <span data-ttu-id="b571d-143">Use o <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndDisconnect" /> método para desconectar a extremidade do conector de uma forma.</span><span class="sxs-lookup"><span data-stu-id="b571d-143">Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndDisconnect" /> method to detach the end of the connector from a shape.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -479,32 +260,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="e0172-144">Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-144">Returns a 32-bit integer that indicates the application in which this object was created.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="b571d-144">Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</span><span class="sxs-lookup"><span data-stu-id="b571d-144">Returns a 32-bit integer that indicates the application in which this object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="e0172-145">Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-145">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="e0172-146">A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-146">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
-            </span>
-            <span data-ttu-id="e0172-147">Por exemplo, o Microsoft Excel tem o código de criador XCEL.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-147">For example, Microsoft Excel has the creator code XCEL.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="b571d-145">Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</span><span class="sxs-lookup"><span data-stu-id="b571d-145">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span></span></para>
+          <para><span data-ttu-id="b571d-146">A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="b571d-146">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="b571d-147">Por exemplo, o Microsoft Excel possui o código de criador XCEL.</span><span class="sxs-lookup"><span data-stu-id="b571d-147">For example, Microsoft Excel has the creator code XCEL.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndConnect">
@@ -531,68 +291,12 @@
         <Parameter Name="ConnectionSite" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ConnectedShape">
-          <span data-ttu-id="e0172-148">Necessário <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-148">Required <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object.</span>
-          </span>
-          <span data-ttu-id="e0172-149">A forma para anexar a extremidade do conector.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-149">The shape to attach the end of the connector to.</span>
-          </span>
-          <span data-ttu-id="e0172-150">O objeto <b>Shape</b> especificado deve estar no mesmo <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> coleção que o conector.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-150">The specified <b>Shape</b> object must be in the same <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection as the connector.</span>
-          </span>
-        </param>
-        <param name="ConnectionSite">
-          <span data-ttu-id="e0172-151">
-            <b>Integer</b>necessário.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-151">Required <b>Integer</b>.</span>
-          </span>
-          <span data-ttu-id="e0172-152">Um site de conexão na forma especificada por <paramref name="ConnectedShape" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-152">A connection site on the shape specified by <paramref name="ConnectedShape" />.</span>
-          </span>
-          <span data-ttu-id="e0172-153">Deve ser um inteiro entre 1 e o inteiro retornado pelo <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> propriedade da forma especificada.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-153">Must be an integer between 1 and the integer returned by the <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> property of the specified shape.</span>
-          </span>
-          <span data-ttu-id="e0172-154">Se desejar que o conector encontre automaticamente o caminho mais curto entre as duas formas de se conectar, especifique qualquer número inteiro válido para este argumento e use o <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> método depois que o conector é anexado às formas em ambas as extremidades.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-154">If you want the connector to automatically find the shortest path between the two shapes it connects, specify any valid integer for this argument and then use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> method after the connector is attached to shapes at both ends.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="e0172-155">Conecta o fim do conector especificado à forma especificada.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-155">Attaches the end of the specified connector to a specified shape.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="e0172-156">Se já houver uma conexão entre o final do conector e outra forma, essa conexão será desfeito.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-156">If there’s already a connection between the end of the connector and another shape, that connection is broken.</span>
-            </span>
-            <span data-ttu-id="e0172-157">Se o final do conector não estiver posicionado no site de conexão especificado, esse método Move o final do conector para o site de conexão e ajusta o tamanho e posição do conector.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-157">If the end of the connector isn’t already positioned at the specified connecting site, this method moves the end of the connector to the connecting site and adjusts the size and position of the connector.</span>
-            </span>
-            <span data-ttu-id="e0172-158">Use o <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> método para anexar o início do conector a uma forma.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-158">Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> method to attach the beginning of the connector to a shape.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="e0172-159">Quando um conector é conectado a um objeto, o tamanho e a posição do conector são ajustados automaticamente, se necessário.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-159">When you attach a connector to an object, the size and position of the connector are automatically adjusted if necessary.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <param name="ConnectedShape"><span data-ttu-id="b571d-148">Objeto <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b571d-148">Required <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object.</span></span> <span data-ttu-id="b571d-149">A forma para anexar a extremidade do conector.</span><span class="sxs-lookup"><span data-stu-id="b571d-149">The shape to attach the end of the connector to.</span></span> <span data-ttu-id="b571d-150">O objeto <b>Shape especificado</b> deve estar na mesma coleção que o <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> conector.</span><span class="sxs-lookup"><span data-stu-id="b571d-150">The specified <b>Shape</b> object must be in the same <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection as the connector.</span></span></param>
+        <param name="ConnectionSite"><span data-ttu-id="b571d-151">Obrigatório <b>Integer</b>.</span><span class="sxs-lookup"><span data-stu-id="b571d-151">Required <b>Integer</b>.</span></span> <span data-ttu-id="b571d-152">Um site de conexão na forma especificada por <paramref name="ConnectedShape" /> .</span><span class="sxs-lookup"><span data-stu-id="b571d-152">A connection site on the shape specified by <paramref name="ConnectedShape" />.</span></span> <span data-ttu-id="b571d-153">Deve ser um inteiro entre 1 e o inteiro retornado <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> pela propriedade da forma especificada.</span><span class="sxs-lookup"><span data-stu-id="b571d-153">Must be an integer between 1 and the integer returned by the <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> property of the specified shape.</span></span> <span data-ttu-id="b571d-154">Se você quiser que o conector encontre automaticamente o caminho mais curto entre as duas formas que ele conecta, especifique qualquer inteiro válido para esse argumento e use o método depois que o conector for anexado às formas em ambas as <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> extremidades.</span><span class="sxs-lookup"><span data-stu-id="b571d-154">If you want the connector to automatically find the shortest path between the two shapes it connects, specify any valid integer for this argument and then use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> method after the connector is attached to shapes at both ends.</span></span></param>
+        <summary><span data-ttu-id="b571d-155">Conecta o fim do conector especificado a uma forma especificada.</span><span class="sxs-lookup"><span data-stu-id="b571d-155">Attaches the end of the specified connector to a specified shape.</span></span></summary>
+        <remarks><para><span data-ttu-id="b571d-156">Se já existir uma conexão entre o final do conector e uma outra forma, essa conexão será quebrada.</span><span class="sxs-lookup"><span data-stu-id="b571d-156">If there’s already a connection between the end of the connector and another shape, that connection is broken.</span></span> <span data-ttu-id="b571d-157">Se o final do conector não estiver já posicionado no site de conexão especificado, este método moverá o fim do conector para o site de conexão e ajustará o tamanho e a posição do conector.</span><span class="sxs-lookup"><span data-stu-id="b571d-157">If the end of the connector isn’t already positioned at the specified connecting site, this method moves the end of the connector to the connecting site and adjusts the size and position of the connector.</span></span> <span data-ttu-id="b571d-158">Use o <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> método para anexar o início do conector a uma forma.</span><span class="sxs-lookup"><span data-stu-id="b571d-158">Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> method to attach the beginning of the connector to a shape.</span></span></para>
+          <para><span data-ttu-id="b571d-159">Quando um conector é conectado a um objeto, o tamanho e a posição do conector são ajustados automaticamente, se necessário.</span><span class="sxs-lookup"><span data-stu-id="b571d-159">When you attach a connector to an object, the size and position of the connector are automatically adjusted if necessary.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndConnected">
@@ -618,42 +322,18 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="e0172-160">
-            <b>msoTrue</b> se o final do conector especificado está conectado a uma forma.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-160">
-              <b>msoTrue</b> if the end of the specified connector is connected to a shape.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="b571d-160"><b>msoTrue</b> se o final do conector especificado estiver conectado a uma forma.</span><span class="sxs-lookup"><span data-stu-id="b571d-160"><b>msoTrue</b> if the end of the specified connector is connected to a shape.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="e0172-161">
-              <see cref="T:Microsoft.Office.Core.MsoTriState" />pode ser uma das seguintes constantes <b>MsoTriState</b> :</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-161">
-                <see cref="T:Microsoft.Office.Core.MsoTriState" /> can be one of the following <b>MsoTriState</b> constants:</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="e0172-162">
-              <b>msoFalse</b> O final do conector especificado não está conectado a uma forma.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-162">
-                <b>msoFalse</b> The end of the specified connector is not connected to a shape.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="e0172-163">
-              <b>msoTrue</b> O final do conector especificado está conectado a uma forma.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-163">
-                <b>msoTrue</b> The end of the specified connector is connected to a shape.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="b571d-161">
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />pode ser uma das seguintes <b>constantes MsoTriState:</b></span><span class="sxs-lookup"><span data-stu-id="b571d-161">
+            <see cref="T:Microsoft.Office.Core.MsoTriState" /> can be one of the following <b>MsoTriState</b> constants:</span></span></para>
+          <para><span data-ttu-id="b571d-162">
+            <b>msoFalse</b> O final do conector especificado não está conectado a uma forma.</span><span class="sxs-lookup"><span data-stu-id="b571d-162">
+            <b>msoFalse</b> The end of the specified connector is not connected to a shape.</span></span></para>
+          <para><span data-ttu-id="b571d-163">
+            <b>msoTrue</b> O final do conector especificado está conectado a uma forma.</span><span class="sxs-lookup"><span data-stu-id="b571d-163">
+            <b>msoTrue</b> The end of the specified connector is connected to a shape.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndConnectedShape">
@@ -679,22 +359,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="e0172-164">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object que representa a forma à qual a extremidade do conector especificado está anexado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-164">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object that represents the shape that the end of the specified connector is attached to.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="b571d-164">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto que representa a forma à que o final do conector especificado está anexado.</span><span class="sxs-lookup"><span data-stu-id="b571d-164">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object that represents the shape that the end of the specified connector is attached to.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="e0172-165">Se o final do conector especificado não estiver anexado a uma forma, essa propriedade irá gerar um erro.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-165">If the end of the specified connector isn’t attached to a shape, this property generates an error.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="b571d-165">Se o final do conector especificado não estiver anexado a uma forma, essa propriedade irá gerar um erro.</span><span class="sxs-lookup"><span data-stu-id="b571d-165">If the end of the specified connector isn’t attached to a shape, this property generates an error.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndConnectionSite">
@@ -720,22 +388,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="e0172-166">Retorna um número inteiro especificando o site de conexão ao qual o final de um conector está conectado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-166">Returns an integer that specifies the connection site that the end of a connector is connected to.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="b571d-166">Retorna um número inteiro especificando o site de conexão ao qual o final de um conector está conectado.</span><span class="sxs-lookup"><span data-stu-id="b571d-166">Returns an integer that specifies the connection site that the end of a connector is connected to.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="e0172-167">Se o final do conector especificado não estiver anexado a uma forma, essa propriedade irá gerar um erro.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-167">If the end of the specified connector isn’t attached to a shape, this property generates an error.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="b571d-167">Se o final do conector especificado não estiver anexado a uma forma, essa propriedade irá gerar um erro.</span><span class="sxs-lookup"><span data-stu-id="b571d-167">If the end of the specified connector isn’t attached to a shape, this property generates an error.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndDisconnect">
@@ -759,25 +415,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="e0172-168">Desliga o fim do conector especificado da forma à que qual está anexado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-168">Detaches the end of the specified connector from the shape it’s attached to.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="e0172-169">Este método não altera o tamanho ou a posição do conector; o final do conector do mesmo permanece posicionado em um site de conexão, mas não fica conectado.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-169">This method doesn’t alter the size or position of the connector; the end of the connector remains positioned at a connection site but is no longer connected.</span>
-            </span>
-            <span data-ttu-id="e0172-170">Use o <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginDisconnect" /> método para desconectar o início do conector de uma forma.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-170">Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginDisconnect" /> method to detach the beginning of the connector from a shape.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="b571d-168">Desconecta o fim do conector especificado da forma à qual está anexado.</span><span class="sxs-lookup"><span data-stu-id="b571d-168">Detaches the end of the specified connector from the shape it’s attached to.</span></span></summary>
+        <remarks><para><span data-ttu-id="b571d-169">Esse método não altera o tamanho ou a posição do conector; o final do conector permanece posicionado em um site de conexão, mas não mais conectado.</span><span class="sxs-lookup"><span data-stu-id="b571d-169">This method doesn’t alter the size or position of the connector; the end of the connector remains positioned at a connection site but is no longer connected.</span></span> <span data-ttu-id="b571d-170">Use o <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginDisconnect" /> método para desconectar o início do conector de uma forma.</span><span class="sxs-lookup"><span data-stu-id="b571d-170">Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginDisconnect" /> method to detach the beginning of the connector from a shape.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -803,12 +443,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="e0172-171">Retorna o objeto pai para o objeto especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-171">Returns the parent object for the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="b571d-171">Retorna o objeto pai do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="b571d-171">Returns the parent object for the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -839,64 +474,32 @@
         <ReturnType>Microsoft.Office.Core.MsoConnectorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="e0172-172">Retorna ou define o tipo de formato de conector.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e0172-172">Returns or sets the connector format type.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="b571d-172">Retorna ou define o tipo de formato do conector.</span><span class="sxs-lookup"><span data-stu-id="b571d-172">Returns or sets the connector format type.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="e0172-173">
-              <see cref="T:Microsoft.Office.Core.MsoConnectorType" />pode ser uma das seguintes constantes <b>MsoConnectorType</b> :</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-173">
-                <see cref="T:Microsoft.Office.Core.MsoConnectorType" /> can be one of the following <b>MsoConnectorType</b> constants:</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="e0172-174">
-              <b>msoConnectorCurve</b>
-            </span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-174">
-                <b>msoConnectorCurve</b>
-              </span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="e0172-175">
-              <b>msoConnectorElbow</b>
-            </span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-175">
-                <b>msoConnectorElbow</b>
-              </span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="e0172-176">
-              <b>msoConnectorStraight</b>
-            </span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-176">
-                <b>msoConnectorStraight</b>
-              </span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="e0172-177">
-              <b>msoConnectorTypeMixed</b>
-            </span>
-            <span class="sxs-lookup">
-              <span data-stu-id="e0172-177">
-                <b>msoConnectorTypeMixed</b>
-              </span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="b571d-173">
+            <see cref="T:Microsoft.Office.Core.MsoConnectorType" />pode ser uma das seguintes <b>constantes MsoConnectorType:</b></span><span class="sxs-lookup"><span data-stu-id="b571d-173">
+            <see cref="T:Microsoft.Office.Core.MsoConnectorType" /> can be one of the following <b>MsoConnectorType</b> constants:</span></span></para>
+          <para><span data-ttu-id="b571d-174">
+            <b>msoConnectorCurve</b>
+          </span><span class="sxs-lookup"><span data-stu-id="b571d-174">
+            <b>msoConnectorCurve</b>
+          </span></span></para>
+          <para><span data-ttu-id="b571d-175">
+            <b>msoConnectorElbow</b>
+          </span><span class="sxs-lookup"><span data-stu-id="b571d-175">
+            <b>msoConnectorElbow</b>
+          </span></span></para>
+          <para><span data-ttu-id="b571d-176">
+            <b>msoConnectorStraight</b>
+          </span><span class="sxs-lookup"><span data-stu-id="b571d-176">
+            <b>msoConnectorStraight</b>
+          </span></span></para>
+          <para><span data-ttu-id="b571d-177">
+            <b>msoConnectorTypeMixed</b>
+          </span><span class="sxs-lookup"><span data-stu-id="b571d-177">
+            <b>msoConnectorTypeMixed</b>
+          </span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
