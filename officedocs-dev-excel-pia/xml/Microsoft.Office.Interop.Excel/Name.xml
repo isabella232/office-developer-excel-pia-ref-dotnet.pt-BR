@@ -1,13 +1,5 @@
 <Type Name="Name" FullName="Microsoft.Office.Interop.Excel.Name">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="03c7a9b67e0c5237abc6e68749010ea9f9840fdb" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575891" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Name" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="03c7a9b67e0c5237abc6e68749010ea9f9840fdb" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011435" /></Metadata><TypeSignature Language="C#" Value="public interface Name" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Name" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Name" />
   <TypeSignature Language="VB.NET" Value="Public Interface Name" />
@@ -29,69 +21,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="d188d-101">Representa um nome definido para um intervalo de células.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="d188d-101">Represents a defined name for a range of cells.</span>
-      </span>
-    </summary>
-    <remarks>
-      <para>
-        <span data-ttu-id="d188d-102">Os nomes podem ser nomes internos — como o banco de dados, Print_Area e Auto_Open — ou nomes personalizados.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="d188d-102">Names can be either built-in names — such as Database, Print_Area, and Auto_Open — or custom names.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="d188d-103">Objetos Application, Workbook e Worksheet</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="d188d-103">Application, Workbook, and Worksheet Objects</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="d188d-104">O <b>nome</b> de objeto é um membro do <see cref="T:Microsoft.Office.Interop.Excel.Names" /> coleção para o <see cref="T:Microsoft.Office.Interop.Excel.Application" />, <see cref="T:Microsoft.Office.Interop.Excel.Workbook" />, e <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objetos.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="d188d-104">The <b>Name</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.Names" /> collection for the <see cref="T:Microsoft.Office.Interop.Excel.Application" />, <see cref="T:Microsoft.Office.Interop.Excel.Workbook" />, and <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objects.</span>
-        </span>
-        <span data-ttu-id="d188d-105">Usar <b>nomes</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do nome ou o nome definido, para retornar um único objeto <b>Name</b> .</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="d188d-105">Use <b>Names</b>(<paramref name="index" />), where <paramref name="index" /> is the name index number or defined name, to return a single <b>Name</b> object.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="d188d-106">O número de índice indica a posição do nome dentro da coleção.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="d188d-106">The index number indicates the position of the name within the collection.</span>
-        </span>
-        <span data-ttu-id="d188d-107">Os nomes são colocados em ordem alfabética, de um a z e não diferencia maiusculas de minúsculas (isto é a mesma ordem como é exibido nas caixas de diálogo Definir nome e aplicar nomes, retornadas ao clicar no comando nome no menu Inserir).</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="d188d-107">Names are placed in alphabetic order, from a to z, and are not case-sensitive (this is the same order as is displayed in the Define Name and Apply Names dialog boxes, returned by clicking the Name command on the Insert menu).</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="d188d-108">Use o <see cref="P:Microsoft.Office.Interop.Excel.Name.Name" /> propriedade para retornar ou definir o texto do próprio nome.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="d188d-108">Use the <see cref="P:Microsoft.Office.Interop.Excel.Name.Name" /> property to return or set the text of the name itself.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="d188d-109">Objetos Range</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="d188d-109">Range Objects</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="d188d-110">Embora uma <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto pode ter mais de um nome, não existe uma coleção <b>nomes</b> para o objeto <b>Range</b> .</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="d188d-110">Although a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object can have more than one name, there’s no <b>Names</b> collection for the <b>Range</b> object.</span>
-        </span>
-        <span data-ttu-id="d188d-111">Usar <b>nome</b> com um objeto <b>Range</b> para retornar o primeiro nome da lista de nomes (classificados em ordem alfabética) atribuído ao intervalo.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="d188d-111">Use <b>Name</b> with a <b>Range</b> object to return the first name from the list of names (sorted alphabetically) assigned to the range.</span>
-        </span>
-      </para>
-      <para></para>
-    </remarks>
+    <summary><span data-ttu-id="f6682-101">Representa um nome definido para um intervalo de células.</span><span class="sxs-lookup"><span data-stu-id="f6682-101">Represents a defined name for a range of cells.</span></span></summary>
+    <remarks><para><span data-ttu-id="f6682-102">Os nomes podem ser nomes internos (como Database, Print_Area e Auto_Open) ou nomes personalizados.</span><span class="sxs-lookup"><span data-stu-id="f6682-102">Names can be either built-in names — such as Database, Print_Area, and Auto_Open — or custom names.</span></span></para>
+      <para><span data-ttu-id="f6682-103">Objetos Application, Workbook e Worksheet</span><span class="sxs-lookup"><span data-stu-id="f6682-103">Application, Workbook, and Worksheet Objects</span></span></para>
+      <para><span data-ttu-id="f6682-104">O <b>objeto Name</b> é um membro da coleção para os objetos , e <see cref="T:Microsoft.Office.Interop.Excel.Names" /> <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> .</span><span class="sxs-lookup"><span data-stu-id="f6682-104">The <b>Name</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.Names" /> collection for the <see cref="T:Microsoft.Office.Interop.Excel.Application" />, <see cref="T:Microsoft.Office.Interop.Excel.Workbook" />, and <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objects.</span></span> <span data-ttu-id="f6682-105">Use <b>Names</b>( ), onde está o número de índice do nome ou o <paramref name="index" /> nome <paramref name="index" /> definido, para retornar um único <b>objeto</b> Name.</span><span class="sxs-lookup"><span data-stu-id="f6682-105">Use <b>Names</b>(<paramref name="index" />), where <paramref name="index" /> is the name index number or defined name, to return a single <b>Name</b> object.</span></span></para>
+      <para><span data-ttu-id="f6682-106">O número de índice indica a posição do nome dentro da coleção.</span><span class="sxs-lookup"><span data-stu-id="f6682-106">The index number indicates the position of the name within the collection.</span></span> <span data-ttu-id="f6682-107">Os nomes são colocados em ordem alfabética, de a a z, e não são sensíveis a letras minúsculas (essa é a mesma ordem exibida nas caixas de diálogo Definir Nome e Aplicar Nomes, retornada clicando no comando Nome no menu Inserir).</span><span class="sxs-lookup"><span data-stu-id="f6682-107">Names are placed in alphabetic order, from a to z, and are not case-sensitive (this is the same order as is displayed in the Define Name and Apply Names dialog boxes, returned by clicking the Name command on the Insert menu).</span></span></para>
+      <para><span data-ttu-id="f6682-108">Use a <see cref="P:Microsoft.Office.Interop.Excel.Name.Name" /> propriedade para retornar ou definir o texto do próprio nome.</span><span class="sxs-lookup"><span data-stu-id="f6682-108">Use the <see cref="P:Microsoft.Office.Interop.Excel.Name.Name" /> property to return or set the text of the name itself.</span></span></para>
+      <para><span data-ttu-id="f6682-109">Objetos Range</span><span class="sxs-lookup"><span data-stu-id="f6682-109">Range Objects</span></span></para>
+      <para><span data-ttu-id="f6682-110">Embora um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto possa ter mais de um nome, não há coleção <b>Names</b> para o <b>objeto Range</b> .</span><span class="sxs-lookup"><span data-stu-id="f6682-110">Although a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object can have more than one name, there’s no <b>Names</b> collection for the <b>Range</b> object.</span></span> <span data-ttu-id="f6682-111">Use <b>Name</b> com um objeto <b>Range</b> para retornar o primeiro nome da lista de nomes (classificados alfabeticamente) atribuídos ao intervalo.</span><span class="sxs-lookup"><span data-stu-id="f6682-111">Use <b>Name</b> with a <b>Range</b> object to return the first name from the list of names (sorted alphabetically) assigned to the range.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -120,12 +58,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d188d-112">Reservado para uso interno.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-112">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f6682-112">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="f6682-112">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -153,12 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d188d-113">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-113">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f6682-113">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="f6682-113">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -189,22 +117,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d188d-114">Retorna ou define a categoria para o nome especificado no idioma da macro.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-114">Returns or sets the category for the specified name in the language of the macro.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f6682-114">Retorna ou define a categoria para o nome especificado na linguagem da macro.</span><span class="sxs-lookup"><span data-stu-id="f6682-114">Returns or sets the category for the specified name in the language of the macro.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="d188d-115">O nome deve se referir a um comando ou uma função personalizada.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="d188d-115">The name must refer to a custom function or command.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="f6682-115">O nome precisa referir-se a um comando ou a uma função personalizada.</span><span class="sxs-lookup"><span data-stu-id="f6682-115">The name must refer to a custom function or command.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CategoryLocal">
@@ -233,12 +149,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d188d-116">Retorna ou define a categoria para o nome especificado, no idioma do usuário, se o nome se refere a um comando ou uma função personalizada.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-116">Returns or sets the category for the specified name, in the language of the user, if the name refers to a custom function or command.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f6682-116">Retorna ou define a categoria para o nome especificado, no idioma do usuário, se o nome se referir a uma função ou comando personalizado.</span><span class="sxs-lookup"><span data-stu-id="f6682-116">Returns or sets the category for the specified name, in the language of the user, if the name refers to a custom function or command.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -269,31 +180,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d188d-p104">Retorna ou define o comentário associado ao nome. <b>String</b> de leitura/gravação.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-p104">Returns or sets the comment associated with the name. Read/write <b>String</b>.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="d188d-119">
-            <b>String</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-119">
-              <b>String</b>
-            </span>
-          </span>
-        </value>
-        <remarks>
-          <para>
-            <span data-ttu-id="d188d-120">O texto do comentário não pode exceder 255 caracteres.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="d188d-120">The comment text cannot exceed 255 characters.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="f6682-117">Retorna ou define o comentário associado ao nome.</span><span class="sxs-lookup"><span data-stu-id="f6682-117">Returns or sets the comment associated with the name.</span></span> <span data-ttu-id="f6682-118"><b>String</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="f6682-118">Read/write <b>String</b>.</span></span></summary>
+        <value><span data-ttu-id="f6682-119"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="f6682-119"><b>String</b></span></span></value>
+        <remarks><para><span data-ttu-id="f6682-120">O texto do comentário não pode exceder 255 caracteres.</span><span class="sxs-lookup"><span data-stu-id="f6682-120">The comment text cannot exceed 255 characters.</span></span> </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -319,32 +209,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d188d-121">Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-121">Returns a 32-bit integer that indicates the application in which this object was created.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f6682-121">Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</span><span class="sxs-lookup"><span data-stu-id="f6682-121">Returns a 32-bit integer that indicates the application in which this object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="d188d-122">Se o objeto especificado foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="d188d-122">If the specified object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="d188d-123">A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="d188d-123">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
-            </span>
-            <span data-ttu-id="d188d-124">Por exemplo, o Microsoft Excel tem o código de criador XCEL.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="d188d-124">For example, Microsoft Excel has the creator code XCEL.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="f6682-122">Se o objeto especificado foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</span><span class="sxs-lookup"><span data-stu-id="f6682-122">If the specified object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span></span></para>
+          <para><span data-ttu-id="f6682-123">A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="f6682-123">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="f6682-124">Por exemplo, o Microsoft Excel possui o código de criador XCEL.</span><span class="sxs-lookup"><span data-stu-id="f6682-124">For example, Microsoft Excel has the creator code XCEL.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -368,12 +237,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="d188d-125">Exclui o objeto.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-125">Deletes the object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f6682-125">Exclui o objeto.</span><span class="sxs-lookup"><span data-stu-id="f6682-125">Deletes the object.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -400,12 +264,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d188d-126">Retorna o número de índice do objeto dentro da coleção de objetos similares.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-126">Returns the index number of the object within the collection of similar objects.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f6682-126">Retorna o número de índice do objeto dentro da coleção de objetos similares.</span><span class="sxs-lookup"><span data-stu-id="f6682-126">Returns the index number of the object within the collection of similar objects.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -436,12 +295,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlXLMMacroType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d188d-127">Retorna ou define a que se refere o nome.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-127">Returns or sets what the name refers to.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f6682-127">Retorna ou define a que se refere o nome.</span><span class="sxs-lookup"><span data-stu-id="f6682-127">Returns or sets what the name refers to.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -471,12 +325,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d188d-128">Retorna ou define o nome do objeto.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-128">Returns or sets the name of the object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f6682-128">Retorna ou define o nome do objeto.</span><span class="sxs-lookup"><span data-stu-id="f6682-128">Returns or sets the name of the object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -507,22 +356,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d188d-129">Retorna ou define o nome do objeto no idioma do usuário.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-129">Returns or sets the name of the object in the language of the user.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f6682-129">Retorna ou define o nome do objeto no idioma do usuário.</span><span class="sxs-lookup"><span data-stu-id="f6682-129">Returns or sets the name of the object in the language of the user.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="d188d-130">Se o estilo for interno, esta propriedade retornará o nome do estilo no idioma local atual.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="d188d-130">If the style is a built-in style, this property returns the name of the style in the language of the current locale.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="f6682-130">Se o estilo for interno, esta propriedade retornará o nome do estilo no idioma local atual.</span><span class="sxs-lookup"><span data-stu-id="f6682-130">If the style is a built-in style, this property returns the name of the style in the language of the current locale.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -548,12 +385,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d188d-131">Retorna o objeto pai para o objeto especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-131">Returns the parent object for the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f6682-131">Retorna o objeto pai do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="f6682-131">Returns the parent object for the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -584,12 +416,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d188d-132">Retorna ou define a fórmula que o nome está definido para referir-se, no idioma da macro e em notação de estilo A1, começando com um sinal de igualdade.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-132">Returns or sets the formula that the name is defined to refer to, in the language of the macro and in A1-style notation, beginning with an equal sign.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f6682-132">Retorna ou define a fórmula à qual o nome está definido para se referir, na linguagem da macro e em notação de estilo A1, começando com um sinal de igual.</span><span class="sxs-lookup"><span data-stu-id="f6682-132">Returns or sets the formula that the name is defined to refer to, in the language of the macro and in A1-style notation, beginning with an equal sign.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -620,22 +447,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d188d-133">Retorna ou define a fórmula que se refere o nome.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-133">Returns or sets the formula that the name refers to.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f6682-133">Retorna ou define a fórmula à qual o nome se refere.</span><span class="sxs-lookup"><span data-stu-id="f6682-133">Returns or sets the formula that the name refers to.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="d188d-134">A fórmula deve estar no idioma do usuário e está em notação de estilo A1, começando com um sinal de igualdade.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="d188d-134">The formula is in the language of the user, and it's in A1-style notation, beginning with an equal sign.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="f6682-134">A fórmula está no idioma do usuário e em notação de estilo A1, começando com um sinal de igual.</span><span class="sxs-lookup"><span data-stu-id="f6682-134">The formula is in the language of the user, and it's in A1-style notation, beginning with an equal sign.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefersToR1C1">
@@ -664,22 +479,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d188d-135">Retorna ou define a fórmula que se refere o nome.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-135">Returns or sets the formula that the name refers to.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f6682-135">Retorna ou define a fórmula à qual o nome se refere.</span><span class="sxs-lookup"><span data-stu-id="f6682-135">Returns or sets the formula that the name refers to.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="d188d-136">A fórmula deve estar no idioma da macro e está em notação de estilo L1C1, começando com um sinal de igualdade.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="d188d-136">The formula is in the language of the macro, and it's in R1C1-style notation, beginning with an equal sign.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="f6682-136">A fórmula está no idioma da macro e em notação de estilo R1C1, começando com um sinal de igual.</span><span class="sxs-lookup"><span data-stu-id="f6682-136">The formula is in the language of the macro, and it's in R1C1-style notation, beginning with an equal sign.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefersToR1C1Local">
@@ -708,22 +511,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d188d-137">Retorna ou define a fórmula que se refere o nome.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-137">Returns or sets the formula that the name refers to.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f6682-137">Retorna ou define a fórmula à qual o nome se refere.</span><span class="sxs-lookup"><span data-stu-id="f6682-137">Returns or sets the formula that the name refers to.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="d188d-138">Essa fórmula deve estar no idioma do usuário e está em notação de estilo L1C1, começando com um sinal de igualdade.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="d188d-138">This formula is in the language of the user, and it's in R1C1-style notation, beginning with an equal sign.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="f6682-138">Essa fórmula está no idioma do usuário e em notação de estilo L1C1, começando com um sinal de igual.</span><span class="sxs-lookup"><span data-stu-id="f6682-138">This formula is in the language of the user, and it's in R1C1-style notation, beginning with an equal sign.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefersToRange">
@@ -749,28 +540,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d188d-139">Retorna o <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto referido por um <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objeto.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-139">Returns the <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object referred to by a <see cref="T:Microsoft.Office.Interop.Excel.Name" /> object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f6682-139">Retorna o <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto referido por um <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objeto.</span><span class="sxs-lookup"><span data-stu-id="f6682-139">Returns the <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object referred to by a <see cref="T:Microsoft.Office.Interop.Excel.Name" /> object.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="d188d-140">Se o objeto <b>Name</b> não se referir a um intervalo (por exemplo, se fizer referência a uma constante ou fórmula), essa propriedade falhará.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="d188d-140">If the <b>Name</b> object doesn't refer to a range (for example, if it refers to a constant or a formula), this property fails.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="d188d-141">Para alterar o intervalo de um nome se refere, use o <see cref="P:Microsoft.Office.Interop.Excel.Name.RefersTo" /> propriedade.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="d188d-141">To change the range that a name refers to, use the <see cref="P:Microsoft.Office.Interop.Excel.Name.RefersTo" /> property.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="f6682-140">Se o objeto <b>Name</b> não se referir a um intervalo (por exemplo, se fizer referência a uma constante ou fórmula), essa propriedade falhará.</span><span class="sxs-lookup"><span data-stu-id="f6682-140">If the <b>Name</b> object doesn't refer to a range (for example, if it refers to a constant or a formula), this property fails.</span></span></para>
+          <para><span data-ttu-id="f6682-141">Para alterar o intervalo ao que um nome se refere, use a <see cref="P:Microsoft.Office.Interop.Excel.Name.RefersTo" /> propriedade.</span><span class="sxs-lookup"><span data-stu-id="f6682-141">To change the range that a name refers to, use the <see cref="P:Microsoft.Office.Interop.Excel.Name.RefersTo" /> property.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShortcutKey">
@@ -799,12 +573,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d188d-142">Retorna ou define a tecla de atalho para um nome definido como um comando personalizado de macro do Microsoft Excel 4.0.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-142">Returns or sets the shortcut key for a name defined as a custom Microsoft Excel 4.0 macro command.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f6682-142">Retorna ou define a tecla de atalho para um nome definido em um comando de macro personalizado do Microsoft Excel 4.0.</span><span class="sxs-lookup"><span data-stu-id="f6682-142">Returns or sets the shortcut key for a name defined as a custom Microsoft Excel 4.0 macro command.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -832,22 +601,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d188d-p106">Retorna <b>True</b> se o objeto <b>Name</b> especificado for um parâmetro de pasta de trabalho válido. <b>Boolen</b> somente leitura.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-p106">Returns <b>True</b> if the specified <b>Name</b> object is a valid workbook parameter. Read-only <b>Boolen</b>.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="d188d-145">
-            <b>Boolen</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-145">
-              <b>Boolen</b>
-            </span>
-          </span>
-        </value>
+        <summary><span data-ttu-id="f6682-143">Retorna <b>True</b> se o objeto <b>Name</b> especificado for um parâmetro de pasta de trabalho válido.</span><span class="sxs-lookup"><span data-stu-id="f6682-143">Returns <b>True</b> if the specified <b>Name</b> object is a valid workbook parameter.</span></span> <span data-ttu-id="f6682-144"><b>Boolen</b> somente leitura.</span><span class="sxs-lookup"><span data-stu-id="f6682-144">Read-only <b>Boolen</b>.</span></span></summary>
+        <value><span data-ttu-id="f6682-145"><b>Boolen</b></span><span class="sxs-lookup"><span data-stu-id="f6682-145"><b>Boolen</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -877,22 +632,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d188d-146">Retorna um valor string que contém a fórmula que o nome está definido para se referir a.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-146">Returns a string containing the formula that the name is defined to refer to.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f6682-146">Retorna uma cadeia de caracteres que contém a fórmula à que o nome está definido para se referir.</span><span class="sxs-lookup"><span data-stu-id="f6682-146">Returns a string containing the formula that the name is defined to refer to.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="d188d-147">A cadeia de caracteres está em notação de estilo A1 no idioma da macro, e começa com um sinal de igualdade.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="d188d-147">The string is in A1-style notation in the language of the macro, and it begins with an equal sign.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="f6682-147">A cadeia de caracteres está em notação de estilo A1 na linguagem da macro e começa com um sinal de igual.</span><span class="sxs-lookup"><span data-stu-id="f6682-147">The string is in A1-style notation in the language of the macro, and it begins with an equal sign.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -921,28 +664,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d188d-148">Determina se o objeto está visível.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-148">Determines whether the object is visible.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f6682-148">Determina se o objeto será visível.</span><span class="sxs-lookup"><span data-stu-id="f6682-148">Determines whether the object is visible.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="d188d-149">A propriedade <b>Visible</b> para um item de tabela dinâmica será <b>True</b> quando o item estiver visível no momento na tabela.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="d188d-149">The <b>Visible</b> property for a PivotTable item is <b>True</b> if the item is currently visible in the table.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="d188d-150">Se você definir a propriedade <b>Visible</b> de um nome como <b>False</b>, o nome não aparecerá na caixa de diálogo <b>Definir Nome</b>.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="d188d-150">If you set the <b>Visible</b> property for a name to <b>False</b>, the name won't appear in the <b>Define Name</b> dialog box.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="f6682-149">A propriedade <b>Visible</b> para um item de tabela dinâmica será <b>True</b> quando o item estiver visível no momento na tabela.</span><span class="sxs-lookup"><span data-stu-id="f6682-149">The <b>Visible</b> property for a PivotTable item is <b>True</b> if the item is currently visible in the table.</span></span></para>
+          <para><span data-ttu-id="f6682-150">Se você definir a propriedade <b>Visible</b> de um nome como <b>False</b>, o nome não aparecerá na caixa de diálogo <b>Definir Nome</b>.</span><span class="sxs-lookup"><span data-stu-id="f6682-150">If you set the <b>Visible</b> property for a name to <b>False</b>, the name won't appear in the <b>Define Name</b> dialog box.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkbookParameter">
@@ -971,26 +697,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d188d-151">Retorna ou define o especificado <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objeto como um parâmetro de pasta de trabalho.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-151">Returns or sets the specified <see cref="T:Microsoft.Office.Interop.Excel.Name" /> object as a workbook parameter.</span>
-          </span>
-          <span data-ttu-id="d188d-152">Leitura/gravação</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-152">Read/write</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="d188d-153">
-            <b>Boolean</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d188d-153">
-              <b>Boolean</b>
-            </span>
-          </span>
-        </value>
+        <summary><span data-ttu-id="f6682-151">Retorna ou define o objeto <see cref="T:Microsoft.Office.Interop.Excel.Name" /> especificado como um parâmetro de livro de trabalho.</span><span class="sxs-lookup"><span data-stu-id="f6682-151">Returns or sets the specified <see cref="T:Microsoft.Office.Interop.Excel.Name" /> object as a workbook parameter.</span></span> <span data-ttu-id="f6682-152">Leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="f6682-152">Read/write</span></span></summary>
+        <value><span data-ttu-id="f6682-153"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="f6682-153"><b>Boolean</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
