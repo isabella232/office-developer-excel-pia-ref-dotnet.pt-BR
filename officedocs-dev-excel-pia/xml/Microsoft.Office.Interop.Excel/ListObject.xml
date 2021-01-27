@@ -1,13 +1,5 @@
 <Type Name="ListObject" FullName="Microsoft.Office.Interop.Excel.ListObject">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1bb3f266b1d484c480fc364acfdb40b99ff98c94" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20583017" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListObject" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1bb3f266b1d484c480fc364acfdb40b99ff98c94" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999928" /></Metadata><TypeSignature Language="C#" Value="public interface ListObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ListObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListObject" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Representa um objeto de lista em uma planilha.</summary>
-    <remarks>
-      <para>O <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto é um membro do <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> conjunto. O <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> coleção contém todos os objetos de lista em uma planilha.</para>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.ListObjects" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> para retornar um <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> conjunto.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>O <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto é um membro da <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> coleção. A <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> coleção contém todos os objetos de lista em uma planilha.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.ListObjects" /> propriedade do para retornar uma <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> coleção.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -91,12 +81,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um valor <b>Boolean</b> que indica se um <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto em uma planilha está ativo — isto é, se a célula ativa está dentro do intervalo do objeto <b>ListObject</b> .</summary>
+        <summary>Retorna um <b>valor Boolean</b> indicando se um objeto em uma planilha está ativo ou seja, se a célula ativa está dentro do intervalo do <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto <b>ListObject</b> .</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Como não há nenhum método <b>Activate</b> para o objeto <b>ListObject</b> , você pode ativar um objeto <b>ListObject</b> ativando um intervalo de células dentro da lista.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Como não há <b>nenhum método Activate</b> para o objeto <b>ListObject,</b> você pode ativar um objeto <b>ListObject</b> somente ativando um intervalo de células dentro da lista.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AlternativeText">
@@ -125,13 +113,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define a cadeia de caracteres de texto descritiva (alternativa) da tabela especificada.</summary>
+        <summary>Obtém ou define a cadeia de caracteres de texto descritiva (alternativa) para a tabela especificada.</summary>
         <value>A cadeia de caracteres de texto descritiva (alternativa) da tabela especificada.</value>
-        <remarks>
-          <para>Leitura/gravação.</para>
-          <para>O valor do <see cref="P:Microsoft.Office.Interop.Excel.ListObject.AlternativeText" /> propriedade corresponde à configuração da caixa Título na caixa de diálogo texto alternativo, que é exibida clicando em uma tabela, apontando para a tabela e clicando em texto alternativo.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Leitura/gravação.</para>
+          <para>O valor da propriedade corresponde à configuração da caixa Título na caixa de diálogo Texto Alternativo, que é exibida clicando com o botão direito do mouse em uma tabela, apontando para Tabela e clicando em Texto <see cref="P:Microsoft.Office.Interop.Excel.ListObject.AlternativeText" /> Alternativo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -157,7 +143,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -185,10 +171,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AutoFilter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Filtra uma lista usando o <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" />. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" />
-        </value>
+        <summary>Filtra uma lista usando o <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" /> . Somente leitura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,16 +202,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o comentário associado ao objeto da lista. <b>String</b> de leitura/gravação.
-
-</summary>
-        <value>
-          <b>String</b>
-        </value>
-        <remarks>
-          <para>O texto do comentário não pode exceder 255 caracteres.</para>
-          <para></para>
-        </remarks>
+        <summary>Retorna ou define o comentário associado ao objeto da lista. <b>String</b> de leitura/gravação.</summary>
+        <value><b>String</b></value>
+        <remarks><para>O texto do comentário não pode exceder 255 caracteres.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -255,11 +233,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataBodyRange">
@@ -285,7 +261,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa o intervalo que contém a área de dados na lista entre a linha de cabeçalho e a linha de inserção.</summary>
+        <summary>Retorna um objeto que representa o intervalo que contém a área de dados na lista entre a linha <see cref="T:Microsoft.Office.Interop.Excel.Range" /> de header e a linha de inserção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -311,11 +287,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Exclui o <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> object e limpa os dados de célula da planilha.</summary>
-        <remarks>
-          <para>Se a lista é vinculada a um site do SharePoint, excluí-lo não afetará os dados no servidor que está executando o Windows SharePoint Services. Quaisquer alterações não confirmadas feitas na lista local não são enviadas à lista do SharePoint. (Não há nenhum aviso que essas alterações não confirmadas são perdidas.)</para>
-          <para></para>
-        </remarks>
+        <summary>Exclui o <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto e limpa os dados da célula da planilha.</summary>
+        <remarks><para>Se a lista estiver vinculada a um site do SharePoint, excluí-la não afetará os dados no servidor que está executando o Windows SharePoint Services. Qualquer alteração não confirmada na lista local não será enviada à lista do SharePoint. (Nenhum aviso será emitido informando que essas alterações foram perdidas.)</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -344,10 +318,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o nome de exibição para especificado <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto. <b>String</b> de leitura/gravação.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <summary>Retorna ou define o nome de exibição do objeto <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> especificado. <b>String</b> de leitura/gravação.</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -374,12 +346,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se a janela especificada, a planilha ou <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto é exibido da direita para a esquerda em vez da esquerda para a direita.</summary>
+        <summary>Determina se a janela, a planilha ou o objeto especificado é exibido da direita para a esquerda em vez <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> da esquerda para a direita.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade retorna <b>True</b> se a janela especificada, planilha ou <b>ListObject</b> é exibida da direita para a esquerda em vez da esquerda para a direita e <b>False</b> se o objeto for exibido da parte esquerda para direita.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Essa propriedade retornará <b>True</b> se a janela, a planilha ou <b>ListObject</b> especificada for exibida da direita para a esquerda em vez da esquerda para a direita e <b>False</b> se o objeto for exibido da esquerda para a direita.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportToVisio">
@@ -430,7 +400,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa o intervalo de linha de cabeçalho para obter uma lista.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa o intervalo da linha de header de uma lista.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -458,12 +428,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto representando a inserir linha, se houver, de um especificado <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa a linha Insert, se for o caso, de um objeto <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se Inserir linha não estiver visível porque a lista está inativa, o objeto <b>Nothing</b> será retornado.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se Inserir linha não estiver visível porque a lista está inativa, o objeto <b>Nothing</b> será retornado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListColumns">
@@ -489,7 +457,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ListColumns</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> coleção que representa todas as colunas em um <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto.</summary>
+        <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> coleção que representa todas as colunas em um <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -517,12 +485,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ListRows</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.ListRows" /> object que representa todas as linhas de dados no <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.ListRows" /> objeto que representa todas as linhas de dados no <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O objeto <b>ListRows</b> retornado não inclui o cabeçalho, o total ou Inserir linhas.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>O objeto <b>ListRows</b> retornado não inclui o cabeçalho, o total ou Inserir linhas.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -579,7 +545,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado.</summary>
+        <summary>Retorna o objeto pai do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -608,16 +574,13 @@
         <Parameter Name="LinkSource" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Target">
-          <b>Objeto</b>necessário. Contém uma <b>matriz</b> de <b>cadeias de caracteres</b>. A tabela a seguir descreve os elementos de Contents0URL de # este elemento: matriz do SharePoint server1ListName (nome de exibição) 2Description da lista. Opcional.</param>
-        <param name="LinkSource">Necessário <b>booleano</b>.</param>
-        <summary>Publica o <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto para um servidor que está executando o Microsoft Windows SharePoint Services.</summary>
+        <param name="Target">Objeto <b>Required</b>. Contém uma <b>matriz de</b> <b>cadeias de caracteres</b>. A tabela a seguir descreve os elementos desta matriz:Element#Contents0URL do SharePoint server1ListName (Nome para Exibição)2Descrição da lista. Opcional.</param>
+        <param name="LinkSource">Boolean <b>necessário.</b></param>
+        <summary>Publica o <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto em um servidor que está executando o Microsoft Windows SharePoint Services.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Essa propriedade retorna uma<b>String</b> que é a URL da lista publicada no site do SharePoint.</para>
-          <para>Se o <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto atualmente não estiver vinculado a uma lista em um site do SharePoint, configuração <paramref name="LinkSource" /> como <b>True</b> criará uma nova lista no site do SharePoint especificado. Se o objeto <b>ListObject</b> estiver atualmente vinculado a um site do SharePoint, configurando <paramref name="LinkSource" /> argumento como <b>True</b> substituirá o link existente (você só pode vincular a lista a um site do SharePoint). Se o objeto <b>ListObject</b> atualmente não está vinculado, configurando <paramref name="LinkSource" /> como <b>False</b> deixará o objeto <b>ListObject</b> desvinculado. Se o objeto <b>ListObject</b> estiver atualmente vinculado a um site do SharePoint, configurando <paramref name="LinkSource" /> como <b>False</b> para manter o objeto <b>ListObject</b> vinculado ao site do SharePoint atual.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Essa propriedade retorna um S<b>tring</b> que é a URL da lista publicada no site do SharePoint.</para>
+          <para>Se o objeto não estiver vinculado no momento a uma lista em um site do SharePoint, a configuração como True criará uma nova lista no <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> <paramref name="LinkSource" /> site do SharePoint especificado. <b></b> Se o <b>objeto ListObject</b> estiver atualmente vinculado a um site do SharePoint, definir o argumento como True substituirá o link existente (você só pode vincular a lista a um <paramref name="LinkSource" /> site do SharePoint). <b></b> Se o <b>objeto ListObject</b> não estiver vinculado no momento, a definição como False deixará o <paramref name="LinkSource" /> objeto <b>ListObject</b> desvinculado. <b></b> Se o <b>objeto ListObject</b> estiver atualmente vinculado a um site do SharePoint, a configuração como False manterá o objeto <paramref name="LinkSource" /> <b>ListObject</b> vinculado ao site atual do SharePoint. <b></b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="QueryTable">
@@ -643,7 +606,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.QueryTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> objeto que fornece um link para o <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto para o servidor da lista.</summary>
+        <summary>Retorna o <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> objeto que fornece um link para o objeto para o servidor de <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> lista.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -697,12 +660,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retorna a data atual e o esquema para a lista do servidor que está executando o Microsoft Windows SharePoint Services.</summary>
-        <remarks>
-          <para>Este método pode ser usado somente com listas vinculadas a um site do SharePoint. Se o site do SharePoint não estiver disponível, chamar este método retornará um erro.</para>
-          <para>Chamar o método <b>Refresh</b> não confirmar as alterações à lista na pasta de trabalho do Excel. As alterações não confirmadas na lista no Excel serão descartadas quando o método <b>Refresh</b> for chamado. Para evitar a perder alterações não confirmadas, chame o <see cref="M:Microsoft.Office.Interop.Excel.ListObject.UpdateChanges(Microsoft.Office.Interop.Excel.XlListConflict)" /> método do <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto antes de chamar o método <b>Refresh</b> .</para>
-          <para></para>
-        </remarks>
+        <summary>Retorna os dados e o esquema atuais para a lista do servidor que está executando o Microsoft Windows SharePoint Services.</summary>
+        <remarks><para>Este método só pode ser usado para listas vinculadas a um site do SharePoint. Se o site do SharePoint não estiver disponível, chamar esse método retornará um erro.</para>
+          <para>A chamada do método <b>Refresh</b> não autoriza alterações na lista da pasta de trabalho do Excel. Alterações não autorizadas serão descartadas se o método <b>Refresh</b> for chamado. Para evitar a perda de alterações não confirmados, chame o <see cref="M:Microsoft.Office.Interop.Excel.ListObject.UpdateChanges(Microsoft.Office.Interop.Excel.XlListConflict)" /> método do objeto antes de chamar o método <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> <b>Refresh.</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Resize">
@@ -727,14 +688,12 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Excel.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Necessário <b>intervalo</b>.</param>
-        <summary>O método <b>Resize</b> permite que um <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto a ser redimensionado em um novo intervalo.</summary>
-        <remarks>
-          <para>Nenhuma célula é inserida ou movida por esta propriedade.</para>
-          <para>Essa propriedade retornará <b>Nothing</b>.</para>
-          <para>Para listas vinculadas a um servidor que está executando o Microsoft Windows SharePoint Services, você pode redimensionar a lista usando esse método, fornecendo um <paramref name="Range" /> argumento que difere do intervalo atual do ListObject apenas no número de linhas que ele contém. Tentar redimensionar listas vinculadas ao Windows SharePoint Services, adicionando ou excluindo colunas (no <paramref name="Range" /> argumento) resultará em um erro de tempo de execução.</para>
-          <para></para>
-        </remarks>
+        <param name="Range">Intervalo <b>obrigatório.</b></param>
+        <summary>O <b>método Resize</b> permite que <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> um objeto seja resized em um novo intervalo.</summary>
+        <remarks><para>Nenhuma célula é inserida ou movida por essa propriedade.</para>
+          <para>Esta propriedade retorna <b>Nothing</b>.</para>
+          <para>Para listas vinculadas a um servidor que esteja executando o Microsoft Windows SharePoint Services, você pode resize a lista usando esse método fornecendo um argumento que difere do intervalo atual do ListObject apenas no número de linhas que ele <paramref name="Range" /> contém. Tentar resize listas vinculadas ao Windows SharePoint Services adicionando ou excluindo colunas (no argumento) resulta em um erro <paramref name="Range" /> em tempo de executar.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SharePointURL">
@@ -760,12 +719,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um<b>String</b> que representa a URL da lista do SharePoint para um determinado <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto.</summary>
+        <summary>Retorna um<b>Sring que</b> representa a URL da lista do SharePoint para um determinado <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Acessar essa propriedade gera um erro de tempo de execução se a lista não estiver vinculada a um site do SharePoint.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Acessar essa propriedade gerará um erro em tempo de executar se a lista não estiver vinculada a um site do SharePoint.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowAutoFilter">
@@ -794,12 +751,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um valor <b>Boolean</b> que indica se o AutoFiltro será exibido.</summary>
+        <summary>Retorna um <b>valor Boolean</b> que indica se o AutoFiltro será exibido.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Propriedade <b>ShowAutoFilter</b> usa como padrão <b>True</b> para um novo <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>O <b>padrão da propriedade ShowAutoFilter</b> é <b>True</b> para um novo <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowAutoFilterDropDown">
@@ -828,8 +783,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> quando o AutoFiltro suspensa para o objeto <b>ListObject</b> é exibida. <b>Boolean</b> (<b>bool</b> em c#) Leitura/gravação</summary>
+        <summary><b>True</b> quando o filtro automático para o objeto <b>ListObject</b> é exibido. <b>Booliana</b> (<b>booleano</b> em C#) Leitura/gravação</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -860,10 +814,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define se as informações de cabeçalho devem ser exibidas para especificado <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto. <b>Boolean</b> de leitura/gravação.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Retorna ou define se as informações de header devem ser exibidas para o objeto <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> especificado. <b>Boolean</b> de leitura/gravação.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -893,10 +845,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define se o estilo de tabela listras de colunas é usado para especificado <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto. <b>Boolean</b> de leitura/gravação.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Retorna ou define se o estilo de tabela Listras de Colunas é usado para o objeto <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> especificado. <b>Boolean</b> de leitura/gravação.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -926,10 +876,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define se a primeira coluna é formatada para especificado <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto. <b>Boolean</b> de leitura/gravação.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Retorna ou define se a primeira coluna está formatada para o objeto <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> especificado. <b>Boolean</b> de leitura/gravação.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -959,10 +907,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define se a última coluna é exibida para especificado <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto. <b>Boolean</b> de leitura/gravação.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Retorna ou define se a última coluna é exibida para o objeto <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> especificado. <b>Boolean</b> de leitura/gravação.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -992,10 +938,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define se o estilo de tabela listras de linhas é usado para especificado <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto. <b>Boolean</b> de leitura/gravação.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Retorna ou define se o estilo de tabela Listras de Linhas é usado para o objeto <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> especificado. <b>Boolean</b> de leitura/gravação.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1025,7 +969,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um valor <b>booleano</b> para indicar se a linha de totais está visível.</summary>
+        <summary>Retorna ou define um <b>valor Boolean</b> para indicar se a linha Total está visível.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1053,12 +997,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Slicers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna uma lista das segmentações de dados de tabela associados a um <b>objeto ListObject</b>. Somente leitura</summary>
+        <summary>Retorna uma lista das slicers de tabela associadas a <b>um ListObject</b>. Somente leitura</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Um <b>objeto ListObject</b> é essencialmente uma tabela.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Um <b>ListObject</b> é essencialmente uma tabela.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -1084,10 +1026,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Sort</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define a classificação de coluna ou colunas e a ordem de classificação para o <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> conjunto.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Sort" />
-        </value>
+        <summary>Obtém ou define a coluna ou colunas de classificação e a ordem de classificação para a <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> coleção.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Sort" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1114,7 +1054,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlListObjectSourceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um do <see cref="T:Microsoft.Office.Interop.Excel.XlListObjectSourceType" /> constantes indicando a fonte atual da lista.</summary>
+        <summary>Retorna uma das <see cref="T:Microsoft.Office.Interop.Excel.XlListObjectSourceType" /> constantes que indicam a fonte atual da lista.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1145,13 +1085,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define a descrição associada a cadeia de caracteres de texto alternativo para a tabela especificada.</summary>
-        <value>A descrição associada com a cadeia de caracteres de texto alternativo para a tabela especificada.</value>
-        <remarks>
-          <para>Leitura/gravação.</para>
-          <para>O valor do <see cref="P:Microsoft.Office.Interop.Excel.ListObject.Summary" /> propriedade corresponde à configuração da caixa Descrição na caixa de diálogo texto alternativo, que é exibida clicando em uma tabela, apontando para a tabela e clicando em texto alternativo.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém ou define a descrição associada à cadeia de caracteres de texto alternativa para a tabela especificada.</summary>
+        <value>A descrição associada à cadeia de caracteres de texto alternativa para a tabela especificada.</value>
+        <remarks><para>Leitura/gravação.</para>
+          <para>O valor da propriedade corresponde à configuração da caixa Descrição na caixa de diálogo Texto Alternativo, que é exibida clicando com o botão direito do mouse em uma tabela, apontando para Tabela e clicando em Texto <see cref="P:Microsoft.Office.Interop.Excel.ListObject.Summary" /> Alternativo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableObject">
@@ -1179,10 +1117,8 @@
       <Docs>
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.TableObject" /> objeto. Somente leitura</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O objeto <b>TableObject</b> é uma tabela de planilha construída a partir de dados retornados a partir de um modelo do PowerPivot.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>O <b>objeto TableObject</b> é uma tabela de planilha criada a partir de dados retornados de um modelo do PowerPivot.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableStyle">
@@ -1211,10 +1147,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define o estilo de tabela especificado <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto. <b>Objeto</b> de leitura/gravação.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Obtém ou define o estilo de tabela para o objeto <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> especificado. <b>Objeto</b> de leitura/gravação.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1241,7 +1175,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto representando o Total de linha, se houver, de um especificada <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa a linha Total, se for o caso, de um objeto <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1267,12 +1201,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Remove o link a um site do Microsoft Windows SharePoint Services em uma lista.</summary>
-        <remarks>
-          <para>Essa propriedade retornará <b>Nothing</b>.</para>
+        <summary>Remove o link para um site do Microsoft Windows SharePoint Services de uma lista.</summary>
+        <remarks><para>Esta propriedade retorna <b>Nothing</b>.</para>
           <para>Uma vez chamado esse método e desvinculada a lista, não é possível revertê-lo.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Unlist">
@@ -1296,13 +1228,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Remove a funcionalidade da lista de um <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto.</summary>
-        <remarks>
-          <para>Depois de usar esse método, o intervalo de células que compõem a lista será um intervalo de dados regular.</para>
-          <para>Essa propriedade retornará <b>Nothing</b>.</para>
-          <para>A execução desse método deixa os dados da célula, formatação e fórmulas na planilha. A linha de Total também permanece intacta. Esse método remove qualquer link para um site do Microsoft Windows SharePoint Services. O AutoFiltro e Inserir linha também são removidas da lista.</para>
-          <para></para>
-        </remarks>
+        <summary>Remove a funcionalidade de lista de um <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto.</summary>
+        <remarks><para>Depois de usar esse método, o intervalo de células que comou a lista será um intervalo regular de dados.</para>
+          <para>Esta propriedade retorna <b>Nothing</b>.</para>
+          <para>A execução desse método mantém os dados da célula, a formatação e as fórmulas na planilha. A linha Total  também é mantida intacta. Esse método remove qualquer link para um site do Microsoft Windows SharePoint Services. O AutoFiltro e a linha Insert também são removidos da lista.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateChanges">
@@ -1330,13 +1260,11 @@
         <Parameter Name="iConflictType" Type="Microsoft.Office.Interop.Excel.XlListConflict" />
       </Parameters>
       <Docs>
-        <param name="iConflictType">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlListConflict" />. Opções de resolução de conflito.</param>
+        <param name="iConflictType">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlListConflict" /> . Opções de resolução de conflitos.</param>
         <summary>Atualiza a lista em um site do Microsoft Windows SharePoint Services com as alterações feitas na lista na planilha.</summary>
-        <remarks>
-          <para>Essa propriedade retornará <b>Nothing</b>.</para>
-          <para>Esse método se aplica apenas às listas vinculadas a um site do SharePoint. Se o site do SharePoint não estiver disponível, um erro será gerado.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Esta propriedade retorna <b>Nothing</b>.</para>
+          <para>Esse método só se aplica a listas vinculadas a um site do SharePoint. Se o site do SharePoint não estiver disponível, será gerado um erro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlMap">
@@ -1362,12 +1290,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XmlMap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> object que representa o mapa de esquema usado para a lista especificada.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> objeto que representa o mapa de esquema usado para a lista especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Recursos de XML, exceto salvar arquivos no formato de planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e o Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Recursos XML, exceto para salvar arquivos no formato de Planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e no Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

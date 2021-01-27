@@ -1,13 +1,5 @@
 <Type Name="IconCriterion" FullName="Microsoft.Office.Interop.Excel.IconCriterion">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="aeac399c7630a815bc10a17585c99b77cfcc3ff7" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20579293" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface IconCriterion" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="aeac399c7630a815bc10a17585c99b77cfcc3ff7" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50000229" /></Metadata><TypeSignature Language="C#" Value="public interface IconCriterion" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IconCriterion" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IconCriterion" />
   <TypeSignature Language="VB.NET" Value="Public Interface IconCriterion" />
@@ -30,14 +22,10 @@
   </Attributes>
   <Docs>
     <summary>Representa o critério de um ícone individual em um conjunto de ícones. O critério especifica o intervalo de valores e o tipo de limite associado ao ícone na regra de formatação condicional de um conjunto de ícones.</summary>
-    <remarks>
-      <para>Todos os critérios para um formato condicional de conjunto de ícones estão contidos em um <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> conjunto. Você pode acessar cada objeto <b>IconCriterion</b> na coleção passando-se um índice na coleção. Consulte o exemplo para obter detalhes.</para>
-      <para></para>
-    </remarks>
-    <example>
-      <para>O exemplo de código a seguir cria um intervalo de números que representam pontuações de teste e aplicam uma regra de formatação condicional do conjunto de ícones ao intervalo. O tipo de conjunto de ícones é alterado dos ícones padrão para um conjunto de ícones de cinco setas. Finalmente, o tipo de limite é modificado do percentil para um número embutido em código.</para>
-      <code>&lt;span class="label"&gt;Sub CreateIconSetCF()    Dim cfIconSet As IconSetCondition        'Fill cells with sample data    With ActiveSheet        .Range("C1") = 55        .Range("C2") = 92        .Range("C3") = 88        .Range("C4") = 77        .Range("C5") = 66        .Range("C6") = 93        .Range("C7") = 76        .Range("C8") = 80        .Range("C9") = 79        .Range("C10") = 83        .Range("C11") = 66        .Range("C12") = 74    End With        Range("C1:C12").Select          'Create an icon set conditional format for the created sample data range    Set cfIconSet = Selection.FormatConditions.AddIconSetCondition        'Change the icon set to a five-arrow icon set    cfIconSet.IconSet = ActiveWorkbook.IconSets(xl5Arrows)        'The IconCriterion collection contains all IconCriteria    'By indexing into the collection you can modify each criterion    With cfIconSet.IconCriteria(1)        .Type = xlConditionValueNumber        .Value = 0        .Operator = 7    End With    With cfIconSet.IconCriteria(2)        .Type = xlConditionValueNumber        .Value = 60        .Operator = 7    End With    With cfIconSet.IconCriteria(3)        .Type = xlConditionValueNumber        .Value = 70        .Operator = 7    End With    With cfIconSet.IconCriteria(4)        .Type = xlConditionValueNumber        .Value = 80        .Operator = 7    End With    With cfIconSet.IconCriteria(5)        .Type = xlConditionValueNumber        .Value = 90        .Operator = 7    End With        End Sub&lt;/span&gt;</code>
-    </example>
+    <remarks><para>Todos os critérios para um formato condicional de conjunto de ícones estão contidos em uma <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> coleção. Você pode acessar cada objeto <b>IconCriterion</b> na coleção passando um índice para a coleção. Consulte o exemplo para obter detalhes.</para>
+      <para> </para></remarks>
+    <example><para>O exemplo de código a seguir cria um intervalo de números que representam pontuações de teste e aplicam uma regra de formatação condicional do conjunto de ícones ao intervalo. O tipo de conjunto de ícones é alterado dos ícones padrão para um conjunto de ícones de cinco setas. Finalmente, o tipo de limite é modificado do percentil para um número embutido em código.</para>
+      <code>&lt;span class="label"&gt;Sub CreateIconSetCF()    Dim cfIconSet As IconSetCondition        'Fill cells with sample data    With ActiveSheet        .Range("C1") = 55        .Range("C2") = 92        .Range("C3") = 88        .Range("C4") = 77        .Range("C5") = 66        .Range("C6") = 93        .Range("C7") = 76        .Range("C8") = 80        .Range("C9") = 79        .Range("C10") = 83        .Range("C11") = 66        .Range("C12") = 74    End With        Range("C1:C12").Select          'Create an icon set conditional format for the created sample data range    Set cfIconSet = Selection.FormatConditions.AddIconSetCondition        'Change the icon set to a five-arrow icon set    cfIconSet.IconSet = ActiveWorkbook.IconSets(xl5Arrows)        'The IconCriterion collection contains all IconCriteria    'By indexing into the collection you can modify each criterion    With cfIconSet.IconCriteria(1)        .Type = xlConditionValueNumber        .Value = 0        .Operator = 7    End With    With cfIconSet.IconCriteria(2)        .Type = xlConditionValueNumber        .Value = 60        .Operator = 7    End With    With cfIconSet.IconCriteria(3)        .Type = xlConditionValueNumber        .Value = 70        .Operator = 7    End With    With cfIconSet.IconCriteria(4)        .Type = xlConditionValueNumber        .Value = 80        .Operator = 7    End With    With cfIconSet.IconCriteria(5)        .Type = xlConditionValueNumber        .Value = 90        .Operator = 7    End With        End Sub&lt;/span&gt;</code></example>
   </Docs>
   <Members>
     <Member MemberName="Icon">
@@ -66,12 +54,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlIcon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define o ícone de um critério em uma regra de formatação condicional do conjunto de ícones.</summary>
+        <summary>Obtém ou define o ícone para um critério em uma regra de formatação condicional do conjunto de ícones.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Depois de definir a propriedade <b>Icon</b> do critério do ícone em uma ícone conjunto regra de formatação condicional, o <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconSet" /> propriedade for alterada para <b>xlCustomSet</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Depois de definir a propriedade <b>Icon</b> para o critério de ícone em uma regra de formatação condicional do conjunto de ícones, a propriedade é alterada <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconSet" /> para <b>xlCustomSet</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -97,12 +83,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um valor indicando que representa os critérios de limite.</summary>
+        <summary>Obtém um valor que indica qual limite os critérios representam.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para um conjunto de ícones, essa propriedade retornará um valor de "1" para o limite mínimo, "2" para o próximo limite, e assim por diante.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Para um conjunto de ícones, essa propriedade retornará um valor de "1" para o limite mínimo, "2" para o próximo limite, e assim por diante.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Operator">
@@ -131,12 +115,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define uma das constantes do <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> enumeração, que especifica se o limite é "maior que" ou "maior que ou igual a" o valor limite.</summary>
+        <summary>Retorna ou define uma das constantes da enumeração, que especifica se o limite é "maior que" ou "maior ou igual a" o <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> valor limite.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para uma regra de formatação condicional de conjunto de ícones, essa propriedade pode ser definida somente como uma das duas seguintes constantes: <b>xlGreater</b> ou <b>xlGreaterEqual</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Para uma regra de formatação condicional de conjunto de ícones, essa propriedade pode ser definida somente como uma das duas seguintes constantes: <b>xlGreater</b> ou <b>xlGreaterEqual</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -165,12 +147,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlConditionValueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna uma das constantes do <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> enumeração, que especifica como o valor de limite para um conjunto de ícones é determinado. Somente leitura.</summary>
+        <summary>Retorna uma das constantes da enumeração, que especifica como o valor limite para um <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> conjunto de ícones é determinado. Somente leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O tipo do valor limite para um conjunto de ícones pode ser um número, percentagem, fórmula ou percentil. Definir o tipo como percentil usará a função Percentil no Excel para determinar o valor limite.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>O tipo do valor limite para um conjunto de ícones pode ser um número, percentagem, fórmula ou percentil. Definir o tipo como percentil usará a função Percentil no Excel para determinar o valor limite.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -199,13 +179,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o valor limite de um ícone em uma formatação condicional. <b>Variant</b> de leitura/gravação.</summary>
+        <summary>Retorna ou define o valor limite de um ícone em uma formatação condicional. <b>Variant</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Você pode definir o valor apenas se o <see cref="P:Microsoft.Office.Interop.Excel.IconCriterion.Type" /> propriedade para o formato condicional for definida como uma das seguintes constantes: <b>xlConditionValueNumber</b>, <b>xlConditionValuePercent</b>, <b>xlConditionValuePercentile</b>ou <b> xlConditionValueFormula</b>.</para>
-          <para>Se o tipo de limite é uma fórmula, você poderá definir a fórmula como uma <b>cadeia de caracteres</b>. A fórmula deve retornar um único número.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Você só poderá definir o valor se a propriedade do formato condicional estiver definida como uma das seguintes <see cref="P:Microsoft.Office.Interop.Excel.IconCriterion.Type" /> constantes: <b>xlConditionValueNumber</b>, <b>xlConditionValuePercent</b>, <b>xlConditionValuePercentile</b>ou <b>xlConditionValueFormula</b>.</para>
+          <para>Se o tipo de limite for uma fórmula, você poderá definir a fórmula como uma cadeia de <b>caracteres</b>. A fórmula deve retornar um único número.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

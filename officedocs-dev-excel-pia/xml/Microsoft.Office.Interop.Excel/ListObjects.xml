@@ -1,13 +1,5 @@
 <Type Name="ListObjects" FullName="Microsoft.Office.Interop.Excel.ListObjects">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="297eaae8b8252f38795243645194d97dbacd5ca5" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580938" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListObjects : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="297eaae8b8252f38795243645194d97dbacd5ca5" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999921" /></Metadata><TypeSignature Language="C#" Value="public interface ListObjects : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListObjects implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ListObjects" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListObjects&#xA;Implements IEnumerable" />
@@ -34,10 +26,8 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objetos em uma planilha. Cada <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto representa uma lista na planilha.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.ListObjects" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objeto para retornar a coleção <b>ListObjects</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.ListObjects" /> propriedade do objeto para retornar a coleção <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> <b>ListObjects</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -104,19 +94,15 @@
         <Parameter Name="Destination" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SourceType">Opcional <b>XlListObjectSourceType</b>. Indica o tipo de fonte da consulta. Pode ser uma das seguintes constantes <b>XlListObjectSourceType</b> : <b>xlSrcExternal</b> ou <b>xlSrcRange</b>. Se for omitido, o <paramref name="SourceType" /> será padronizado como <b>xlSrcRange</b>.</param>
-        <param name="Source">Opcional quando <paramref name="SourceType" /> é <b>xlSrcRange</b>. Uma <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa a fonte de dados. Se for omitido, o <paramref name="Source" /> será padronizado como o intervalo retornado pelo código de detecção de intervalo de lista. Obrigatório quando <paramref name="SourceType" /> é <b>xlSrcExternal</b>. Uma matriz de valores de <b>cadeia de caracteres</b> especificando uma conexão para a fonte. Elemento Contents0URL de # para 2ViewGUID de 1ListName de site do SharePoint</param>
-        <param name="LinkSource">Opcional <b>booleano</b>. Indica se uma fonte de dados externa é a serem vinculadas ao objeto <b>ListObject</b> . Se <paramref name="SourceType" /> é <b>xlSrcExternal</b>, o padrão é <b>True</b>. Se inválido <paramref name="SourceType" /> é <b>xlSrcRange</b>e retornará um erro se não for omitido.</param>
-        <param name="XlListObjectHasHeaders">
-          <b>Objeto</b>de opcional. Um <see cref="T:Microsoft.Office.Interop.Excel.XlYesNoGuess" /> constante que indica se os dados estão sendo importados tem rótulos de coluna. Se a fonte não contiver cabeçalhos, o Excel gerará automaticamente cabeçalhos.</param>
-        <param name="Destination">
-          <b>Objeto</b>de opcional. Um objeto <b>Range</b> especificando uma referência de célula única como destino para o canto superior esquerdo do novo objeto de lista. Se o objeto de <b>intervalo</b> se refere a mais de uma célula, um erro será gerado. O <paramref name="Destination" /> argumento deve ser especificado quando <paramref name="SourceType" /> estiver definida como <b>xlSrcExternal</b>. O <paramref name="Destination" /> argumento será ignorado se <paramref name="SourceType" /> estiver definida como <b>xlSrcRange</b>. O intervalo de destino deve estar na planilha que contém o especificado <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> conjunto. Novas colunas serão inseridas no <paramref name="Destination" /> para ajustá-la a nova lista. Portanto, os dados existentes não serão substituídos.</param>
+        <param name="SourceType">Opcional <b>XlListObjectSourceType</b>. Indica o tipo de fonte da consulta. Pode ser uma das seguintes constantes <b>XlListObjectSourceType:</b> <b>xlSrcExternal</b> ou <b>xlSrcRange</b>. Se omitido, <paramref name="SourceType" /> o padrão será <b>xlSrcRange</b>.</param>
+        <param name="Source">Opcional quando <paramref name="SourceType" /> é <b>xlSrcRange</b>. Um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa a fonte de dados. Se omitido, o padrão será o intervalo retornado pelo código de detecção <paramref name="Source" /> de intervalo de lista. Obrigatório quando <paramref name="SourceType" /> for <b>xlSrcExternal</b>. Uma matriz de valores <b>String</b> especificando uma conexão com a fonte. Element#Contents0URL to SharePoint site 1ListName 2ViewGUID</param>
+        <param name="LinkSource">Opcional <b>booleano</b>. Indica se uma fonte de dados externa deve ser vinculada ao objeto <b>ListObject</b>. Se <paramref name="SourceType" /> for <b>xlSrcExternal</b>, o padrão é <b>True</b>. Inválido se <paramref name="SourceType" /> for <b>xlSrcRange</b>e retornará um erro se não for omitido.</param>
+        <param name="XlListObjectHasHeaders">Objeto <b>opcional</b>. Uma <see cref="T:Microsoft.Office.Interop.Excel.XlYesNoGuess" /> constante que indica se os dados que estão sendo importados têm rótulos de coluna. Quado o Source não tem cabeçalhos, o Excel os gera automaticamente.</param>
+        <param name="Destination">Objeto <b>opcional</b>. Um <b>objeto Range</b> especificando uma referência de célula única como o destino para o canto superior esquerdo do novo objeto de lista. Se o objeto <b>Range</b> se refere a mais de uma célula, um erro é gerado. O <paramref name="Destination" /> argumento deve ser especificado quando for definido como <paramref name="SourceType" /> <b>xlSrcExternal</b>. O <paramref name="Destination" /> argumento será ignorado se estiver definido como <paramref name="SourceType" /> <b>xlSrcRange</b>. O intervalo de destino deve estar na planilha que contém a coleção <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> especificada. Novas colunas serão inseridas para <paramref name="Destination" /> caber na nova lista. Portanto, os dados existentes não serão substituídos.</param>
         <summary>Cria um novo objeto de lista. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Quando a lista tiver cabeçalhos, a primeira linha de células vai ser convertida <b>em texto</b>, se não estiver definida como texto. A conversão será baseada no texto visível para a célula. Isso significa que, se houver um valor de data com um formato de <b>Data</b> que muda com localidade, a conversão em uma lista pode produzir resultados diferentes dependendo da localidade do sistema atual. Além disso, se houver duas células na linha de cabeçalho que têm o mesmo texto visível, um <b>inteiro</b> de incrementais serão acrescentados para tornar a cada cabeçalho de coluna exclusivo.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Quando a lista tiver cabeçalhos, a primeira linha de células será convertida em <b>Text</b>, se ainda não estiver definida como texto. A conversão será baseada no texto visível na célula. Isso significa que, se existir um valor de data com um formato <b>Date</b> que é alterado de acordo com o local, a conversão em uma lista poderá produzir resultados diferentes, dependendo do local do sistema atual. Além disso, se duas células na linha de cabeçalho contiverem o mesmo texto visível, será acrescentado um <b>Integer</b> incremental para tornar cada cabeçalho de coluna exclusivo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddEx">
@@ -180,7 +166,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -236,12 +222,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. Somente <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -302,8 +286,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>necessário. O nome ou número de índice do objeto.</param>
+        <param name="Index">Objeto <b>Required</b>. O nome ou número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -332,7 +315,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado. Somente leitura.</summary>
+        <summary>Retorna o objeto pai do objeto especificado. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
