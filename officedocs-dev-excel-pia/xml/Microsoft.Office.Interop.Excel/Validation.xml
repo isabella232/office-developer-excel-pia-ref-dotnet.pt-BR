@@ -1,13 +1,5 @@
 <Type Name="Validation" FullName="Microsoft.Office.Interop.Excel.Validation">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="64490ccfa07c156fb946aaf6fbcab62bd0310122" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575800" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Validation" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="64490ccfa07c156fb946aaf6fbcab62bd0310122" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009349" /></Metadata><TypeSignature Language="C#" Value="public interface Validation" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Validation" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Validation" />
   <TypeSignature Language="VB.NET" Value="Public Interface Validation" />
@@ -29,27 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="95343-101">Representa a validação de dados para um intervalo de planilha.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="95343-101">Represents data validation for a worksheet range.</span>
-      </span>
-    </summary>
-    <remarks>
-      <para>
-        <span data-ttu-id="95343-102">Use o <see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" /> propriedade para retornar o objeto <b>Validation</b> .</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="95343-102">Use the <see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" /> property to return the <b>Validation</b> object.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="95343-103">Use o <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> método para adicionar a validação de dados a um intervalo e criar um novo objeto <b>Validation</b> .</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="95343-103">Use the <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> method to add data validation to a range and create a new <b>Validation</b> object.</span>
-        </span>
-      </para>
-      <para></para>
-    </remarks>
+    <summary><span data-ttu-id="d4d25-101">Representa a validação de dados para um intervalo de planilha.</span><span class="sxs-lookup"><span data-stu-id="d4d25-101">Represents data validation for a worksheet range.</span></span></summary>
+    <remarks><para><span data-ttu-id="d4d25-102">Use a <see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" /> propriedade para retornar o objeto <b>Validation</b> .</span><span class="sxs-lookup"><span data-stu-id="d4d25-102">Use the <see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" /> property to return the <b>Validation</b> object.</span></span></para>
+      <para><span data-ttu-id="d4d25-103">Use o <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> método para adicionar a validação de dados a um intervalo e criar um novo objeto <b>Validation.</b></span><span class="sxs-lookup"><span data-stu-id="d4d25-103">Use the <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> method to add data validation to a range and create a new <b>Validation</b> object.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -78,173 +53,52 @@
         <Parameter Name="Formula2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">
-          <span data-ttu-id="95343-104">Necessário <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-104">Required <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</span>
-          </span>
-          <span data-ttu-id="95343-105">O tipo de validação.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-105">The validation type.</span>
-          </span>
-        </param>
-        <param name="AlertStyle">
-          <span data-ttu-id="95343-106">
-            <b>Objeto</b>de opcional.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-106">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="95343-107">O estilo de alerta de validação.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-107">The validation alert style.</span>
-          </span>
-          <span data-ttu-id="95343-108">Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> constantes: <b>xlValidAlertInformation</b>, <b>xlValidAlertStop</b>ou <b>xlValidAlertWarning</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-108">Can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> constants: <b>xlValidAlertInformation</b>, <b>xlValidAlertStop</b>, or <b>xlValidAlertWarning</b>.</span>
-          </span>
-        </param>
-        <param name="Operator">
-          <span data-ttu-id="95343-109">
-            <b>Objeto</b>de opcional.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-109">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="95343-110">O operador de validação de dados.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-110">The data validation operator.</span>
-          </span>
-          <span data-ttu-id="95343-111">Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> constantes: <b>xlBetween</b>, <b>xlEqual</b>, <b>xlGreater</b>, <b>xlGreaterEqual</b>, <b>xlLess</b>, <b>xlLessEqual</b>, <b>xlNotBetween</b>ou <b>xlNotEqual</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-111">Can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> constants: <b>xlBetween</b>, <b>xlEqual</b>, <b>xlGreater</b>, <b>xlGreaterEqual</b>, <b>xlLess</b>, <b>xlLessEqual</b>, <b>xlNotBetween</b>, or <b>xlNotEqual</b>.</span>
-          </span>
-        </param>
-        <param name="Formula1">
-          <span data-ttu-id="95343-112">
-            <b>Objeto</b>de opcional.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-112">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="95343-113">A primeira parte da equação de validação de dados.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-113">The first part of the data validation equation.</span>
-          </span>
-        </param>
-        <param name="Formula2">
-          <span data-ttu-id="95343-114">
-            <b>Objeto</b>de opcional.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-114">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="95343-115">A segunda parte da validação de dados quando <paramref name="Operator" /> é <b>xlBetween</b> ou <b>xlNotBetween</b> (caso contrário, esse argumento será ignorado).</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-115">The second part of the data validation when <paramref name="Operator" /> is <b>xlBetween</b> or <b>xlNotBetween</b> (otherwise, this argument is ignored).</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="95343-116">Adiciona validação de dados ao intervalo especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-116">Adds data validation to the specified range.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="95343-117">O método Add requer argumentos diferentes dependendo do tipo de validação, como mostra a tabela a seguir.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="95343-117">The Add method requires different arguments, depending on the validation type, as shown in the following table.</span>
-            </span>
-          </para>
+        <param name="Type"><span data-ttu-id="d4d25-104">Obrigatório. <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" /></span><span class="sxs-lookup"><span data-stu-id="d4d25-104">Required <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</span></span> <span data-ttu-id="d4d25-105">O tipo de validação.</span><span class="sxs-lookup"><span data-stu-id="d4d25-105">The validation type.</span></span></param>
+        <param name="AlertStyle"><span data-ttu-id="d4d25-106">Objeto <b>opcional</b>.</span><span class="sxs-lookup"><span data-stu-id="d4d25-106">Optional <b>Object</b>.</span></span> <span data-ttu-id="d4d25-107">O estilo de alerta de validação.</span><span class="sxs-lookup"><span data-stu-id="d4d25-107">The validation alert style.</span></span> <span data-ttu-id="d4d25-108">Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> constantes: <b>xlValidAlertInformation</b>, <b>xlValidAlertStop</b>ou <b>xlValidAlertWarning</b>.</span><span class="sxs-lookup"><span data-stu-id="d4d25-108">Can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> constants: <b>xlValidAlertInformation</b>, <b>xlValidAlertStop</b>, or <b>xlValidAlertWarning</b>.</span></span></param>
+        <param name="Operator"><span data-ttu-id="d4d25-109">Objeto <b>opcional</b>.</span><span class="sxs-lookup"><span data-stu-id="d4d25-109">Optional <b>Object</b>.</span></span> <span data-ttu-id="d4d25-110">O operador de validação de dados.</span><span class="sxs-lookup"><span data-stu-id="d4d25-110">The data validation operator.</span></span> <span data-ttu-id="d4d25-111">Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> constantes: <b>xlBetween</b>, <b>xlEqual</b>, <b>xlGreater</b>, <b>xlGreaterEqual</b>, <b>xlLess</b>, <b>xlLessEqual</b>, <b>xlNotBetween</b>ou <b>xlNotEqual</b>.</span><span class="sxs-lookup"><span data-stu-id="d4d25-111">Can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> constants: <b>xlBetween</b>, <b>xlEqual</b>, <b>xlGreater</b>, <b>xlGreaterEqual</b>, <b>xlLess</b>, <b>xlLessEqual</b>, <b>xlNotBetween</b>, or <b>xlNotEqual</b>.</span></span></param>
+        <param name="Formula1"><span data-ttu-id="d4d25-112">Objeto <b>opcional</b>.</span><span class="sxs-lookup"><span data-stu-id="d4d25-112">Optional <b>Object</b>.</span></span> <span data-ttu-id="d4d25-113">A primeira parte da equação de validação de dados.</span><span class="sxs-lookup"><span data-stu-id="d4d25-113">The first part of the data validation equation.</span></span></param>
+        <param name="Formula2"><span data-ttu-id="d4d25-114">Objeto <b>opcional</b>.</span><span class="sxs-lookup"><span data-stu-id="d4d25-114">Optional <b>Object</b>.</span></span> <span data-ttu-id="d4d25-115">A segunda parte da validação de dados quando <paramref name="Operator" /> for <b>xlBetween</b> ou <b>xlNotBetween</b> (caso contrário, esse argumento será ignorado).</span><span class="sxs-lookup"><span data-stu-id="d4d25-115">The second part of the data validation when <paramref name="Operator" /> is <b>xlBetween</b> or <b>xlNotBetween</b> (otherwise, this argument is ignored).</span></span></param>
+        <summary><span data-ttu-id="d4d25-116">Adiciona validação de dados ao intervalo especificado.</span><span class="sxs-lookup"><span data-stu-id="d4d25-116">Adds data validation to the specified range.</span></span></summary>
+        <remarks><para><span data-ttu-id="d4d25-117">O método Add requer argumentos diferentes dependendo do tipo de validação, como mostra a tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="d4d25-117">The Add method requires different arguments, depending on the validation type, as shown in the following table.</span></span></para>
           <list type="table">
             <item>
-              <term>
-                <span data-ttu-id="95343-118">
-                  <b>xlValidateCustom</b>
-                </span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="95343-118">
-                    <b>xlValidateCustom</b>
-                  </span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="95343-119">
-                  <paramref name="Formula1" />é necessário; <paramref name="Formula2" /> será ignorado.</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="95343-119">
-                    <paramref name="Formula1" /> is required; <paramref name="Formula2" /> is ignored.</span>
-                </span>
-                <span data-ttu-id="95343-120">
-                  <paramref name="Formula1" />deve conter uma expressão que é avaliada como <b>True</b> quando a entrada de dados é válida e <b>False</b> quando a entrada de dados é inválida.</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="95343-120">
-                    <paramref name="Formula1" /> must contain an expression that evaluates to <b>True</b> when data entry is valid and <b>False</b> when data entry is invalid.</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="d4d25-118">
+                <b>xlValidateCustom</b>
+              </span><span class="sxs-lookup"><span data-stu-id="d4d25-118">
+                <b>xlValidateCustom</b>
+              </span></span></term>
+              <description><span data-ttu-id="d4d25-119">
+                <paramref name="Formula1" /> é necessário; <paramref name="Formula2" /> é ignorado.</span><span class="sxs-lookup"><span data-stu-id="d4d25-119">
+                <paramref name="Formula1" /> is required; <paramref name="Formula2" /> is ignored.</span></span> <span data-ttu-id="d4d25-120"><paramref name="Formula1" /> deve conter uma expressão que é avaliada como <b>True quando</b> a entrada de dados é válida e <b>False quando</b> a entrada de dados é inválida.</span><span class="sxs-lookup"><span data-stu-id="d4d25-120"><paramref name="Formula1" /> must contain an expression that evaluates to <b>True</b> when data entry is valid and <b>False</b> when data entry is invalid.</span></span></description>
             </item>
             <item>
-              <term>
-                <span data-ttu-id="95343-121">
-                  <b>xlInputOnly</b>
-                </span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="95343-121">
-                    <b>xlInputOnly</b>
-                  </span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="95343-122">
-                  <paramref name="AlertStyle" />, <paramref name="Formula1" />, ou <paramref name="Formula2" /> são usados.</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="95343-122">
-                    <paramref name="AlertStyle" />, <paramref name="Formula1" />, or <paramref name="Formula2" /> are used.</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="d4d25-121">
+                <b>xlInputOnly</b>
+              </span><span class="sxs-lookup"><span data-stu-id="d4d25-121">
+                <b>xlInputOnly</b>
+              </span></span></term>
+              <description><span data-ttu-id="d4d25-122">
+                <paramref name="AlertStyle" />, <paramref name="Formula1" /> ou <paramref name="Formula2" /> são usados.</span><span class="sxs-lookup"><span data-stu-id="d4d25-122">
+                <paramref name="AlertStyle" />, <paramref name="Formula1" />, or <paramref name="Formula2" /> are used.</span></span></description>
             </item>
             <item>
-              <term>
-                <span data-ttu-id="95343-123">
-                  <b>xlValidateList</b>
-                </span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="95343-123">
-                    <b>xlValidateList</b>
-                  </span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="95343-124">
-                  <paramref name="Formula1" />é necessário; <paramref name="Formula2" /> será ignorado.</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="95343-124">
-                    <paramref name="Formula1" /> is required; <paramref name="Formula2" /> is ignored.</span>
-                </span>
-                <span data-ttu-id="95343-125">
-                  <paramref name="Formula1" />deve conter uma lista delimitada por vírgula dos valores ou uma referência de planilha a essa lista.</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="95343-125">
-                    <paramref name="Formula1" /> must contain either a comma-delimited list of values or a worksheet reference to this list.</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="d4d25-123">
+                <b>xlValidateList</b>
+              </span><span class="sxs-lookup"><span data-stu-id="d4d25-123">
+                <b>xlValidateList</b>
+              </span></span></term>
+              <description><span data-ttu-id="d4d25-124">
+                <paramref name="Formula1" /> é necessário; <paramref name="Formula2" /> é ignorado.</span><span class="sxs-lookup"><span data-stu-id="d4d25-124">
+                <paramref name="Formula1" /> is required; <paramref name="Formula2" /> is ignored.</span></span> <span data-ttu-id="d4d25-125"><paramref name="Formula1" /> deve conter uma lista de valores delimitada por vírgula ou uma referência de planilha a essa lista.</span><span class="sxs-lookup"><span data-stu-id="d4d25-125"><paramref name="Formula1" /> must contain either a comma-delimited list of values or a worksheet reference to this list.</span></span></description>
             </item>
             <item>
-              <term>
-                <span data-ttu-id="95343-126">
-                  <b>XlValidateWholeNumber</b>, <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b> ou <b>xlValidateTime</b></span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="95343-126">
-                    <b>xlValidateWholeNumber</b>, <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>, or <b>xlValidateTime</b></span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="95343-127">Um deles <paramref name="Formula1" /> ou <paramref name="Formula2" /> deve ser especificado, ou ambos os podem ser especificados.</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="95343-127">One of either <paramref name="Formula1" /> or <paramref name="Formula2" /> must be specified, or both may be specified.</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="d4d25-126">
+                <b>XlValidateWholeNumber</b>, <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b> ou <b>xlValidateTime</b></span><span class="sxs-lookup"><span data-stu-id="d4d25-126">
+                <b>xlValidateWholeNumber</b>, <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>, or <b>xlValidateTime</b></span></span></term>
+              <description><span data-ttu-id="d4d25-127">Um ou <paramref name="Formula1" /> deve <paramref name="Formula2" /> ser especificado, ou ambos podem ser especificados.</span><span class="sxs-lookup"><span data-stu-id="d4d25-127">One of either <paramref name="Formula1" /> or <paramref name="Formula2" /> must be specified, or both may be specified.</span></span></description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AlertStyle">
@@ -270,30 +124,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="95343-128">Retorna o estilo de alerta de validação.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-128">Returns the validation alert style.</span>
-          </span>
-          <span data-ttu-id="95343-129">Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-129">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d4d25-128">Retorna o estilo de alerta de validação.</span><span class="sxs-lookup"><span data-stu-id="d4d25-128">Returns the validation alert style.</span></span> <span data-ttu-id="d4d25-129">Somente <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> leitura.</span><span class="sxs-lookup"><span data-stu-id="d4d25-129">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="95343-130">Use o <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> método para definir o estilo de alerta para um intervalo.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="95343-130">Use the <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> method to set the alert style for a range.</span>
-            </span>
-            <span data-ttu-id="95343-131">Se o intervalo já tiver validação de dados, use o <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para alterar o estilo de alerta.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="95343-131">If the range already has data validation, use the <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to change the alert style.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="d4d25-130">Use o <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> método para definir o estilo de alerta para um intervalo.</span><span class="sxs-lookup"><span data-stu-id="d4d25-130">Use the <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> method to set the alert style for a range.</span></span> <span data-ttu-id="d4d25-131">Se o intervalo já tiver validação de dados, use o <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para alterar o estilo de alerta.</span><span class="sxs-lookup"><span data-stu-id="d4d25-131">If the range already has data validation, use the <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to change the alert style.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -319,12 +153,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="95343-132">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-132">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d4d25-132">Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="d4d25-132">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -352,34 +181,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="95343-133">Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-133">Returns a 32-bit integer that indicates the application in which this object was created.</span>
-          </span>
-          <span data-ttu-id="95343-134">Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-134">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
-          </span>
-          <span data-ttu-id="95343-135">Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-135">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d4d25-133">Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</span><span class="sxs-lookup"><span data-stu-id="d4d25-133">Returns a 32-bit integer that indicates the application in which this object was created.</span></span> <span data-ttu-id="d4d25-134">Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</span><span class="sxs-lookup"><span data-stu-id="d4d25-134">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span></span> <span data-ttu-id="d4d25-135">Somente <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> leitura.</span><span class="sxs-lookup"><span data-stu-id="d4d25-135">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="95343-136">A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="95343-136">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
-            </span>
-            <span data-ttu-id="95343-137">Por exemplo, o Microsoft Excel tem o código de criador XCEL.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="95343-137">For example, Microsoft Excel has the creator code XCEL.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="d4d25-136">A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="d4d25-136">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="d4d25-137">Por exemplo, o Microsoft Excel possui o código de criador XCEL.</span><span class="sxs-lookup"><span data-stu-id="d4d25-137">For example, Microsoft Excel has the creator code XCEL.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -403,12 +208,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="95343-138">Exclui o objeto.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-138">Deletes the object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d4d25-138">Exclui o objeto.</span><span class="sxs-lookup"><span data-stu-id="d4d25-138">Deletes the object.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -438,12 +238,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="95343-p112">Retorna ou define a mensagem de erro de validação de dados. <b>String</b> de leitura/gravação</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-p112">Returns or sets the data validation error message. Read/write <b>String</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d4d25-139">Retorna ou define a mensagem de erro de validação de dados.</span><span class="sxs-lookup"><span data-stu-id="d4d25-139">Returns or sets the data validation error message.</span></span> <span data-ttu-id="d4d25-140"><b>String</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="d4d25-140">Read/write <b>String</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -474,12 +269,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="95343-p113">Retorna ou define o título da caixa de diálogo de erro na validação de dados. <b>String</b> de leitura/gravação</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-p113">Returns or sets the title of the data-validation error dialog box. Read/write <b>String</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d4d25-141">Retorna ou define o título da caixa de diálogo de erro na validação de dados.</span><span class="sxs-lookup"><span data-stu-id="d4d25-141">Returns or sets the title of the data-validation error dialog box.</span></span> <span data-ttu-id="d4d25-142"><b>String</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="d4d25-142">Read/write <b>String</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -507,12 +297,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="95343-p114">Retorna a expressão ou o valor associado ao formato condicional ou à validação de dados. Pode ser um valor de constante, um valor de sequência de caracteres, uma referência de célula ou uma fórmula. <b>String</b> somente leitura.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-p114">Returns the value or expression associated with the conditional format or data validation. Can be a constant value, a string value, a cell reference, or a formula. Read-only <b>String</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d4d25-143">Retorna a expressão ou o valor associado ao formato condicional ou à validação de dados.</span><span class="sxs-lookup"><span data-stu-id="d4d25-143">Returns the value or expression associated with the conditional format or data validation.</span></span> <span data-ttu-id="d4d25-144">Pode ser um valor de constante, um valor de sequência de caracteres, uma referência de célula ou uma fórmula.</span><span class="sxs-lookup"><span data-stu-id="d4d25-144">Can be a constant value, a string value, a cell reference, or a formula.</span></span> <span data-ttu-id="d4d25-145"><b>String</b> somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d4d25-145">Read-only <b>String</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -540,31 +325,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="95343-146">Retorna o valor ou uma expressão associada à segunda parte de uma validação de dados ou formato condicional.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-146">Returns the value or expression associated with the second part of a conditional format or data validation.</span>
-          </span>
-          <span data-ttu-id="95343-147">
-            <b>String</b> somente leitura.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-147">Read-only <b>String</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d4d25-146">Retorna a expressão ou o valor associado à segunda parte de um formato condicional ou uma validação de dados.</span><span class="sxs-lookup"><span data-stu-id="d4d25-146">Returns the value or expression associated with the second part of a conditional format or data validation.</span></span> <span data-ttu-id="d4d25-147"><b>String</b> somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d4d25-147">Read-only <b>String</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="95343-148">Essa propriedade é usada somente quando o dados validação formato condicional <see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" /> propriedade é <b>xlBetween</b> ou <b>xlNotBetween</b>.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="95343-148">This property is used only when the data validation conditional format <see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" /> property is <b>xlBetween</b> or <b>xlNotBetween</b>.</span>
-            </span>
-            <span data-ttu-id="95343-149">Ele pode ser um valor de constante, um valor de cadeia de caracteres, uma referência de célula ou uma fórmula.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="95343-149">It can be a constant value, a string value, a cell reference, or a formula.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="d4d25-148">Essa propriedade é usada somente quando a propriedade de formato condicional de validação de dados é <see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" /> <b>xlBetween</b> ou <b>xlNotBetween</b>.</span><span class="sxs-lookup"><span data-stu-id="d4d25-148">This property is used only when the data validation conditional format <see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" /> property is <b>xlBetween</b> or <b>xlNotBetween</b>.</span></span> <span data-ttu-id="d4d25-149">Pode ser um valor constante, um valor de cadeia de caracteres, uma referência de célula ou uma fórmula.</span><span class="sxs-lookup"><span data-stu-id="d4d25-149">It can be a constant value, a string value, a cell reference, or a formula.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IgnoreBlank">
@@ -593,24 +357,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="95343-p117">
-            <b>True</b> se valores em branco forem permitidos pela validação de dados do intervalo. <b>Boolean</b> de leitura/gravação</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-p117">
-              <b>True</b> if blank values are permitted by the range data validation. Read/write <b>Boolean</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d4d25-150"><b>True</b> se valores em branco forem permitidos pela validação de dados do intervalo.</span><span class="sxs-lookup"><span data-stu-id="d4d25-150"><b>True</b> if blank values are permitted by the range data validation.</span></span> <span data-ttu-id="d4d25-151"><b>Boolean</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="d4d25-151">Read/write <b>Boolean</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="95343-152">Se a propriedade <b>IgnoreBlank</b> for <b>True</b>, os dados da célula serão considerados válidos se a célula estiver em branco, ou se uma célula referenciada pela tanto o <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" /> ou <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" /> propriedade estiver em branco.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="95343-152">If the <b>IgnoreBlank</b> property is <b>True</b>, cell data is considered valid if the cell is blank, or if a cell referenced by either the <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" /> or <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" /> property is blank.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="d4d25-152">Se a <b>propriedade IgnoreBlank</b> for <b>True</b>, os dados da célula serão considerados válidos se a célula estiver em branco ou se uma célula referenciada pela propriedade ou estiver em <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" /> <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" /> branco.</span><span class="sxs-lookup"><span data-stu-id="d4d25-152">If the <b>IgnoreBlank</b> property is <b>True</b>, cell data is considered valid if the cell is blank, or if a cell referenced by either the <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" /> or <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" /> property is blank.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IMEMode">
@@ -639,31 +389,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="95343-153">Retorna ou define a descrição das regras de entrada japonês.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-153">Returns or sets the description of the Japanese input rules.</span>
-          </span>
-          <span data-ttu-id="95343-154">Pode ser uma do <see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" /> constantes.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-154">Can be one of the <see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" /> constants.</span>
-          </span>
-          <span data-ttu-id="95343-155">
-            <b>Integer</b> de leitura/gravação.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-155">Read/write <b>Integer</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d4d25-153">Retorna ou define a descrição das regras de entrada de japonês.</span><span class="sxs-lookup"><span data-stu-id="d4d25-153">Returns or sets the description of the Japanese input rules.</span></span> <span data-ttu-id="d4d25-154">Pode ser uma das <see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" /> constantes.</span><span class="sxs-lookup"><span data-stu-id="d4d25-154">Can be one of the <see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" /> constants.</span></span> <span data-ttu-id="d4d25-155"><b>número inteiro</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="d4d25-155">Read/write <b>Integer</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="95343-156">Observe que esta propriedade só pode ser definida quando o suporte para idioma japonês estiver instalado e selecionado.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="95343-156">Note that this property can be set only when Japanese language support has been installed and selected.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="d4d25-156">Observe que esta propriedade só pode ser definida quando o suporte para idioma japonês estiver instalado e selecionado.</span><span class="sxs-lookup"><span data-stu-id="d4d25-156">Note that this property can be set only when Japanese language support has been installed and selected.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InCellDropdown">
@@ -692,30 +421,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="95343-p119">
-            <b>True</b> se a validação de dados exibir uma lista suspensa que contém valores aceitáveis. <b>Boolean</b> de leitura/gravação.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-p119">
-              <b>True</b> if data validation displays a drop-down list that contains acceptable values. Read/write <b>Boolean</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d4d25-157"><b>True</b> se a validação de dados exibir uma lista suspensa que contém valores aceitáveis.</span><span class="sxs-lookup"><span data-stu-id="d4d25-157"><b>True</b> if data validation displays a drop-down list that contains acceptable values.</span></span> <span data-ttu-id="d4d25-158"><b>Boolean</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="d4d25-158">Read/write <b>Boolean</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="95343-159">Essa propriedade é ignorada se o tipo de validação não for <b>xlValidateList</b>.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="95343-159">This property is ignored if the validation type isn’t <b>xlValidateList</b>.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="95343-160">Use o <paramref name="Minimum" /> argumento da <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> método do <see cref="T:Microsoft.Office.Interop.Excel.Validation" /> objeto para especificar o intervalo que contém dados válidos.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="95343-160">Use the <paramref name="Minimum" /> argument of the <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> or <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.Office.Interop.Excel.Validation" /> object to specify the range that contains valid data.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="d4d25-159">Essa propriedade é ignorada se o tipo de validação não for <b>xlValidateList</b>.</span><span class="sxs-lookup"><span data-stu-id="d4d25-159">This property is ignored if the validation type isn’t <b>xlValidateList</b>.</span></span></para>
+          <para><span data-ttu-id="d4d25-160">Use o <paramref name="Minimum" /> argumento ou o método do objeto para especificar o intervalo que contém dados <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.Validation" /> válidos.</span><span class="sxs-lookup"><span data-stu-id="d4d25-160">Use the <paramref name="Minimum" /> argument of the <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> or <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.Office.Interop.Excel.Validation" /> object to specify the range that contains valid data.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InputMessage">
@@ -744,12 +454,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="95343-p120">Retorna ou define a mensagem de entrada da validação de dados. <b>String</b> de leitura/gravação</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-p120">Returns or sets the data validation input message. Read/write <b>String</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d4d25-161">Retorna ou define a mensagem de erro de validação de dados.</span><span class="sxs-lookup"><span data-stu-id="d4d25-161">Returns or sets the data validation input message.</span></span> <span data-ttu-id="d4d25-162"><b>String</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="d4d25-162">Read/write <b>String</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -780,12 +485,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="95343-p121">Retorna ou define o título da caixa de diálogo de entrada de validação de dados. <b>String</b> de leitura/gravação</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-p121">Returns or sets the title of the data-validation input dialog box. Read/write <b>String</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d4d25-163">Retorna ou define o título da caixa de diálogo de entrada de validação de dados.</span><span class="sxs-lookup"><span data-stu-id="d4d25-163">Returns or sets the title of the data-validation input dialog box.</span></span> <span data-ttu-id="d4d25-164"><b>String</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="d4d25-164">Read/write <b>String</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -816,165 +516,54 @@
         <Parameter Name="Formula2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">
-          <span data-ttu-id="95343-165">Necessário <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-165">Required <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</span>
-          </span>
-          <span data-ttu-id="95343-166">O tipo de validação.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-166">The validation type.</span>
-          </span>
-        </param>
-        <param name="AlertStyle">
-          <span data-ttu-id="95343-167">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-167">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />.</span>
-          </span>
-          <span data-ttu-id="95343-168">O estilo de alerta de validação.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-168">The validation alert style.</span>
-          </span>
-        </param>
-        <param name="Operator">
-          <span data-ttu-id="95343-169">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-169">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />.</span>
-          </span>
-          <span data-ttu-id="95343-170">O operador de validação de dados.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-170">The data validation operator.</span>
-          </span>
-        </param>
-        <param name="Formula1">
-          <span data-ttu-id="95343-171">
-            <b>Objeto</b>de opcional.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-171">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="95343-172">A primeira parte da equação de validação de dados.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-172">The first part of the data validation equation.</span>
-          </span>
-        </param>
-        <param name="Formula2">
-          <span data-ttu-id="95343-173">
-            <b>Objeto</b>de opcional.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-173">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="95343-174">A segunda parte da validação de dados quando <paramref name="Operator" /> é <b>xlBetween</b> ou <b>xlNotBetween</b> (caso contrário, esse argumento será ignorado).</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-174">The second part of the data validation when <paramref name="Operator" /> is <b>xlBetween</b> or <b>xlNotBetween</b> (otherwise, this argument is ignored).</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="95343-175">Modifica a validação de dados para um intervalo.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-175">Modifies data validation for a range.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="95343-176">O método <b>Modify</b> requer argumentos diferentes, dependendo do tipo de validação, conforme mostra a tabela a seguir.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="95343-176">The <b>Modify</b> method requires different arguments, depending on the validation type, as shown in the following table.</span>
-            </span>
-          </para>
+        <param name="Type"><span data-ttu-id="d4d25-165">Obrigatório. <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" /></span><span class="sxs-lookup"><span data-stu-id="d4d25-165">Required <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</span></span> <span data-ttu-id="d4d25-166">O tipo de validação.</span><span class="sxs-lookup"><span data-stu-id="d4d25-166">The validation type.</span></span></param>
+        <param name="AlertStyle"><span data-ttu-id="d4d25-167">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> .</span><span class="sxs-lookup"><span data-stu-id="d4d25-167">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />.</span></span> <span data-ttu-id="d4d25-168">O estilo de alerta de validação.</span><span class="sxs-lookup"><span data-stu-id="d4d25-168">The validation alert style.</span></span></param>
+        <param name="Operator"><span data-ttu-id="d4d25-169">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> .</span><span class="sxs-lookup"><span data-stu-id="d4d25-169">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />.</span></span> <span data-ttu-id="d4d25-170">O operador de validação de dados.</span><span class="sxs-lookup"><span data-stu-id="d4d25-170">The data validation operator.</span></span></param>
+        <param name="Formula1"><span data-ttu-id="d4d25-171">Objeto <b>opcional</b>.</span><span class="sxs-lookup"><span data-stu-id="d4d25-171">Optional <b>Object</b>.</span></span> <span data-ttu-id="d4d25-172">A primeira parte da equação de validação de dados.</span><span class="sxs-lookup"><span data-stu-id="d4d25-172">The first part of the data validation equation.</span></span></param>
+        <param name="Formula2"><span data-ttu-id="d4d25-173">Objeto <b>opcional</b>.</span><span class="sxs-lookup"><span data-stu-id="d4d25-173">Optional <b>Object</b>.</span></span> <span data-ttu-id="d4d25-174">A segunda parte da validação de dados quando <paramref name="Operator" /> for <b>xlBetween</b> ou <b>xlNotBetween</b> (caso contrário, esse argumento será ignorado).</span><span class="sxs-lookup"><span data-stu-id="d4d25-174">The second part of the data validation when <paramref name="Operator" /> is <b>xlBetween</b> or <b>xlNotBetween</b> (otherwise, this argument is ignored).</span></span></param>
+        <summary><span data-ttu-id="d4d25-175">Modifica a validação de dados para um intervalo.</span><span class="sxs-lookup"><span data-stu-id="d4d25-175">Modifies data validation for a range.</span></span></summary>
+        <remarks><para><span data-ttu-id="d4d25-176">O método <b>Modify</b> requer argumentos diferentes, dependendo do tipo de validação, conforme mostra a tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="d4d25-176">The <b>Modify</b> method requires different arguments, depending on the validation type, as shown in the following table.</span></span></para>
           <list type="table">
             <item>
-              <term>
-                <span data-ttu-id="95343-177">
-                  <b>xlInputOnly</b>
-                </span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="95343-177">
-                    <b>xlInputOnly</b>
-                  </span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="95343-178">
-                  <paramref name="AlertStyle" />, <paramref name="Formula1" />, e <paramref name="Formula2" /> não são usados.</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="95343-178">
-                    <paramref name="AlertStyle" />, <paramref name="Formula1" />, and <paramref name="Formula2" /> are not used.</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="d4d25-177">
+                <b>xlInputOnly</b>
+              </span><span class="sxs-lookup"><span data-stu-id="d4d25-177">
+                <b>xlInputOnly</b>
+              </span></span></term>
+              <description><span data-ttu-id="d4d25-178">
+                <paramref name="AlertStyle" />, <paramref name="Formula1" /> e não são <paramref name="Formula2" /> usados.</span><span class="sxs-lookup"><span data-stu-id="d4d25-178">
+                <paramref name="AlertStyle" />, <paramref name="Formula1" />, and <paramref name="Formula2" /> are not used.</span></span></description>
             </item>
             <item>
-              <term>
-                <span data-ttu-id="95343-179">
-                  <b>xlValidateCustom</b>
-                </span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="95343-179">
-                    <b>xlValidateCustom</b>
-                  </span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="95343-180">
-                  <paramref name="Formula1" />é necessário; <paramref name="Formula2" /> será ignorado.</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="95343-180">
-                    <paramref name="Formula1" /> is required; <paramref name="Formula2" /> is ignored.</span>
-                </span>
-                <span data-ttu-id="95343-181">
-                  <paramref name="Formula1" />deve conter uma expressão que é avaliada como <b>True</b> quando a entrada de dados é válida e <b>False</b> quando a entrada de dados é inválida.</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="95343-181">
-                    <paramref name="Formula1" /> must contain an expression that evaluates to <b>True</b> when data entry is valid and <b>False</b> when data entry is invalid.</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="d4d25-179">
+                <b>xlValidateCustom</b>
+              </span><span class="sxs-lookup"><span data-stu-id="d4d25-179">
+                <b>xlValidateCustom</b>
+              </span></span></term>
+              <description><span data-ttu-id="d4d25-180">
+                <paramref name="Formula1" /> é necessário; <paramref name="Formula2" /> é ignorado.</span><span class="sxs-lookup"><span data-stu-id="d4d25-180">
+                <paramref name="Formula1" /> is required; <paramref name="Formula2" /> is ignored.</span></span> <span data-ttu-id="d4d25-181"><paramref name="Formula1" /> deve conter uma expressão que é avaliada como <b>True quando</b> a entrada de dados é válida e <b>False quando</b> a entrada de dados é inválida.</span><span class="sxs-lookup"><span data-stu-id="d4d25-181"><paramref name="Formula1" /> must contain an expression that evaluates to <b>True</b> when data entry is valid and <b>False</b> when data entry is invalid.</span></span></description>
             </item>
             <item>
-              <term>
-                <span data-ttu-id="95343-182">
-                  <b>xlValidateList</b>
-                </span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="95343-182">
-                    <b>xlValidateList</b>
-                  </span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="95343-183">
-                  <paramref name="Formula1" />é necessário; <paramref name="Formula2" /> será ignorado.</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="95343-183">
-                    <paramref name="Formula1" /> is required; <paramref name="Formula2" /> is ignored.</span>
-                </span>
-                <span data-ttu-id="95343-184">
-                  <paramref name="Formula1" />deve conter uma lista delimitada por vírgula dos valores ou uma referência de planilha à lista.</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="95343-184">
-                    <paramref name="Formula1" /> must contain either a comma-delimited list of values or a worksheet reference to the list.</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="d4d25-182">
+                <b>xlValidateList</b>
+              </span><span class="sxs-lookup"><span data-stu-id="d4d25-182">
+                <b>xlValidateList</b>
+              </span></span></term>
+              <description><span data-ttu-id="d4d25-183">
+                <paramref name="Formula1" /> é necessário; <paramref name="Formula2" /> é ignorado.</span><span class="sxs-lookup"><span data-stu-id="d4d25-183">
+                <paramref name="Formula1" /> is required; <paramref name="Formula2" /> is ignored.</span></span> <span data-ttu-id="d4d25-184"><paramref name="Formula1" /> deve conter uma lista de valores delimitada por vírgula ou uma referência de planilha à lista.</span><span class="sxs-lookup"><span data-stu-id="d4d25-184"><paramref name="Formula1" /> must contain either a comma-delimited list of values or a worksheet reference to the list.</span></span></description>
             </item>
             <item>
-              <term>
-                <span data-ttu-id="95343-185">
-                  <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>, <b>xlValidateTime</b> ou <b>xlValidateWholeNumber</b></span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="95343-185">
-                    <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>, <b>xlValidateTime</b>, or <b>xlValidateWholeNumber</b></span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="95343-186">
-                  <paramref name="Formula1" />ou <paramref name="Formula2" />, ou ambos, deve ser especificado.</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="95343-186">
-                    <paramref name="Formula1" /> or <paramref name="Formula2" />, or both, must be specified.</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="d4d25-185">
+                <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>, <b>xlValidateTime</b> ou <b>xlValidateWholeNumber</b></span><span class="sxs-lookup"><span data-stu-id="d4d25-185">
+                <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>, <b>xlValidateTime</b>, or <b>xlValidateWholeNumber</b></span></span></term>
+              <description><span data-ttu-id="d4d25-186">
+                <paramref name="Formula1" /> ou <paramref name="Formula2" /> , ou ambos, devem ser especificados.</span><span class="sxs-lookup"><span data-stu-id="d4d25-186">
+                <paramref name="Formula1" /> or <paramref name="Formula2" />, or both, must be specified.</span></span></description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Operator">
@@ -1000,17 +589,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="95343-187">Retorna o operador para a validação de dados ou formato condicional.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-187">Returns the operator for the conditional format or data validation.</span>
-          </span>
-          <span data-ttu-id="95343-188">
-            <b>Integer</b> somente leitura.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-188">Read-only <b>Integer</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d4d25-187">Retorna o operador para o formato condicional ou validação de dados.</span><span class="sxs-lookup"><span data-stu-id="d4d25-187">Returns the operator for the conditional format or data validation.</span></span> <span data-ttu-id="d4d25-188"><b>Integer</b> somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d4d25-188">Read-only <b>Integer</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1038,12 +617,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="95343-p130">Retorna o objeto pai para o objeto especificado. Somente leitura.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-p130">Returns the parent object for the specified object. Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d4d25-189">Retorna o objeto pai do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="d4d25-189">Returns the parent object for the specified object.</span></span> <span data-ttu-id="d4d25-190">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d4d25-190">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1074,14 +648,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="95343-p131">
-            <b>True</b> se a mensagem de erro de validação de dados for exibida sempre que o usuário inserir dados inválidos. <b>Boolean</b> de leitura/gravação.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-p131">
-              <b>True</b> if the data validation error message will be displayed whenever the user enters invalid data. Read/write <b>Boolean</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d4d25-191"><b>True</b> se a mensagem de erro de validação de dados for exibida sempre que o usuário inserir dados inválidos.</span><span class="sxs-lookup"><span data-stu-id="d4d25-191"><b>True</b> if the data validation error message will be displayed whenever the user enters invalid data.</span></span> <span data-ttu-id="d4d25-192"><b>Boolean</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="d4d25-192">Read/write <b>Boolean</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1112,14 +679,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="95343-p132">
-            <b>True</b> se a mensagem de entrada de validação de dados for exibida sempre que o usuário selecionar uma célula no intervalo de validação de dados. <b>Boolean</b> de leitura/gravação.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-p132">
-              <b>True</b> if the data validation input message will be displayed whenever the user selects a cell in the data validation range. Read/write <b>Boolean</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d4d25-193"><b>True</b> se a mensagem de entrada de validação de dados for exibida sempre que o usuário selecionar uma célula no intervalo de validação de dados.</span><span class="sxs-lookup"><span data-stu-id="d4d25-193"><b>True</b> if the data validation input message will be displayed whenever the user selects a cell in the data validation range.</span></span> <span data-ttu-id="d4d25-194"><b>Boolean</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="d4d25-194">Read/write <b>Boolean</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1147,16 +707,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="95343-195">Retorna a validação de tipo de dados para um intervalo.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-195">Returns data type validation for a range.</span>
-          </span>
-          <span data-ttu-id="95343-196">Somente leitura <b>inteiro</b> que pode ser uma das constantes da <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-196">Read-only <b>Integer</b> that can be one of the constants of <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d4d25-195">Retorna a validação de tipo de dados para um intervalo.</span><span class="sxs-lookup"><span data-stu-id="d4d25-195">Returns data type validation for a range.</span></span> <span data-ttu-id="d4d25-196">Integer <b>somente</b> leitura que pode ser uma das constantes de <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" /> .</span><span class="sxs-lookup"><span data-stu-id="d4d25-196">Read-only <b>Integer</b> that can be one of the constants of <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1184,19 +735,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="95343-197">
-            <b>True</b> se todos os critérios de validação forem atendidos (ou seja, se o intervalo contém dados válidos).</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-197">
-              <b>True</b> if all the validation criteria are met (that is, if the range contains valid data).</span>
-          </span>
-          <span data-ttu-id="95343-198">
-            <b>Boolean</b> somente leitura.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="95343-198">Read-only <b>Boolean</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d4d25-197"><b>True</b> se todos os critérios de validação são atendidos (ou seja, se o intervalo contém dados válidos).</span><span class="sxs-lookup"><span data-stu-id="d4d25-197"><b>True</b> if all the validation criteria are met (that is, if the range contains valid data).</span></span> <span data-ttu-id="d4d25-198"><b>Boolean</b> somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d4d25-198">Read-only <b>Boolean</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
