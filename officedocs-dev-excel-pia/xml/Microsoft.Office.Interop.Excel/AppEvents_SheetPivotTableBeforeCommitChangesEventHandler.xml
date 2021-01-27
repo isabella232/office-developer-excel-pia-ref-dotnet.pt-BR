@@ -1,13 +1,5 @@
 <Type Name="AppEvents_SheetPivotTableBeforeCommitChangesEventHandler" FullName="Microsoft.Office.Interop.Excel.AppEvents_SheetPivotTableBeforeCommitChangesEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="347c6dbdf364880f26c7d726bba23e2774b74a1b" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584228" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void AppEvents_SheetPivotTableBeforeCommitChangesEventHandler(object Sh, PivotTable TargetPivotTable, int ValueChangeStart, int ValueChangeEnd, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="347c6dbdf364880f26c7d726bba23e2774b74a1b" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004624" /></Metadata><TypeSignature Language="C#" Value="public delegate void AppEvents_SheetPivotTableBeforeCommitChangesEventHandler(object Sh, PivotTable TargetPivotTable, int ValueChangeStart, int ValueChangeEnd, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AppEvents_SheetPivotTableBeforeCommitChangesEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AppEvents_SheetPivotTableBeforeCommitChangesEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub AppEvents_SheetPivotTableBeforeCommitChangesEventHandler(Sh As Object, TargetPivotTable As PivotTable, ValueChangeStart As Integer, ValueChangeEnd As Integer, ByRef Cancel As Boolean)" />
@@ -40,11 +32,10 @@
   <Docs>
     <param name="Sh">A planilha que contém a Tabela Dinâmica.</param>
     <param name="TargetPivotTable">A Tabela Dinâmica que contém as alterações a serem confirmadas.</param>
-    <param name="ValueChangeStart">O índice para a primeira alteração a ele associada <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> objeto. O índice é especificado pelo <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> do objeto no <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> conjunto.</param>
-    <param name="ValueChangeEnd">O índice para a última alteração a ele associada <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> objeto. O índice é especificado pelo <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> do objeto no <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> conjunto.</param>
-    <param name="Cancel">
-      <b>false</b> quando o evento ocorre. Se o procedimento de evento define este parâmetro como <b>true</b>, as alterações não são confirmadas com base em fonte de dados OLAP da tabela dinâmica.</param>
-    <summary>Um tipo de <b>delegado</b> usado para adicionar um manipulador de eventos para o <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeCommitChanges" /> evento. O evento <b>SheetPivotTableBeforeCommitChanges</b> ocorre antes que as alterações sejam confirmadas com base em fonte de dados OLAP de uma tabela dinâmica.</summary>
+    <param name="ValueChangeStart">O índice da primeira alteração no objeto <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> associado. O índice é especificado pela <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> propriedade do objeto na <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> coleção.</param>
+    <param name="ValueChangeEnd">O índice da última alteração no objeto <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> associado. O índice é especificado pela <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> propriedade do objeto na <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> coleção.</param>
+    <param name="Cancel"><b>false</b> quando o evento ocorre. Se o procedimento do evento define esse parâmetro como <b>true</b>, as alterações não são comprometidas com a fonte de dados OLAP da tabela dinâmica.</param>
+    <summary>Um <b>tipo</b> delegate usado para adicionar um manipulador de eventos para o <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeCommitChanges" /> evento. O <b>evento SheetPivotTableBeforeCommitChanges</b> ocorre antes que as alterações sejam comprometidas com a fonte de dados OLAP de uma Tabela Dinâmica.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>
