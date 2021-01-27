@@ -1,13 +1,5 @@
 <Type Name="Trendlines" FullName="Microsoft.Office.Interop.Excel.Trendlines">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="16729ecd05466f30367a2ad9f0440647d5e8ade1" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581729" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Trendlines : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="16729ecd05466f30367a2ad9f0440647d5e8ade1" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009468" /></Metadata><TypeSignature Language="C#" Value="public interface Trendlines : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Trendlines implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Trendlines" />
   <TypeSignature Language="VB.NET" Value="Public Interface Trendlines&#xA;Implements IEnumerable" />
@@ -33,14 +25,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.Trendline" /> objetos para a série especificada. Cada objeto <b>Trendline</b> representa uma linha de tendência em um gráfico. Uma linha de tendência mostra a tendência ou direção dos dados em uma série.</summary>
-    <remarks>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Series.Trendlines(System.Object)" /> método para retornar a coleção <b>Trendlines</b> .</para>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Trendlines.Add(Microsoft.Office.Interop.Excel.XlTrendlineType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para criar uma nova linha de tendência e adicioná-lo à série.</para>
-      <para>Use <b>Trendlines</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice de linha de tendência, para retornar um único objeto <b>TrendLine</b> .</para>
+    <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.Trendline" /> objetos da série especificada. Cada objeto <b>Trendline</b> representa uma linha de tendência em um gráfico. Uma linha de tendência mostra a tendência ou direção dos dados em uma série.</summary>
+    <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Series.Trendlines(System.Object)" /> método para retornar a coleção <b>Trendlines</b> .</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Trendlines.Add(Microsoft.Office.Interop.Excel.XlTrendlineType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para criar uma nova linha de tendência e adicioná-la à série.</para>
+      <para>Use <b>Trendlines</b>( ), onde é o número de índice da linha <paramref name="index" /> de <paramref name="index" /> tendência, para retornar um único objeto <b>TrendLine</b> .</para>
       <para>O número de índice denota a ordem em que as linhas de tendência foram adicionadas à série. Trendlines(1) é a primeira e Trendlines(Trendlines.Count) é a última.</para>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -104,23 +94,15 @@
         <Parameter Name="Name" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlTrendlineType" />. O tipo de linha de tendência.</param>
-        <param name="Order">
-          <b>Objeto</b>de opcional. Necessário se <paramref name="Type" /> é <b>xlPolynomial</b>. A ordem da linha de tendência. Deve ser um inteiro de 2 a 6, inclusive.</param>
-        <param name="Period">
-          <b>Objeto</b>de opcional. Necessário se <paramref name="Type" /> for <b>xlMovingAvg</b>. O período de linha de tendência. Deve ser um inteiro maior que 1 e menor que o número de pontos de dados na série que estiver adicionando uma linha de tendência.</param>
-        <param name="Forward">
-          <b>Objeto</b>de opcional. O número de períodos (ou unidades em um gráfico de dispersão) pelos quais a linha de tendência se estende para frente.</param>
-        <param name="Backward">
-          <b>Objeto</b>de opcional. O número de períodos (ou unidades em um gráfico de dispersão) pelos quais uma linha de tendência se estende para trás.</param>
-        <param name="Intercept">
-          <b>Objeto</b>de opcional. A intercepção da linha de tendência. Se esse argumento for omitido, a interseção será automaticamente definida pela regressão.</param>
-        <param name="DisplayEquation">
-          <b>Objeto</b>de opcional. <b>True</b> para exibir a equação da linha de tendência no gráfico (no mesmo rótulo de dados como o valor quadrada). O valor padrão é <b>False</b>.</param>
-        <param name="DisplayRSquared">
-          <b>Objeto</b>de opcional. <b>True</b> para exibir o valor quadrada da linha de tendência no gráfico (no mesmo rótulo de dados que a equação). O valor padrão é <b>False</b>.</param>
-        <param name="Name">
-          <b>Objeto</b>de opcional. O nome da linha de tendência como texto. Se esse argumento for omitido, o Microsoft Excel gerará um nome.</param>
+        <param name="Type">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlTrendlineType" /> . O tipo de linha de tendência.</param>
+        <param name="Order">Objeto <b>opcional</b>. Obrigatório se <paramref name="Type" /> for <b>xlPolynomial</b>. A ordem da linha de tendência. Deve ser um número inteiro de 2 a 6, inclusive.</param>
+        <param name="Period">Objeto <b>opcional</b>. Obrigatório se <paramref name="Type" /> for <b>xlMovingAvg</b>. O período da linha de tendência. Deve ser um número inteiro maior que 1 e menor que o número de pontos de dados da série à qual você está adicionando uma linha de tendência.</param>
+        <param name="Forward">Objeto <b>opcional</b>. O número de períodos (ou unidades em um gráfico de dispersão) pelos quais a linha de tendência se estende para frente.</param>
+        <param name="Backward">Objeto <b>opcional</b>. O número de períodos (ou unidades em um gráfico de dispersão) pelos quais uma linha de tendência se estende para trás.</param>
+        <param name="Intercept">Objeto <b>opcional</b>. A interseção da linha de tendência. Se este argumento for omitido, a interseção será definida automaticamente pela regressão.</param>
+        <param name="DisplayEquation">Objeto <b>opcional</b>. <b>True</b> para exibir a equação da linha de tendência no gráfico (no mesmo rótulo de dados como o valor quadrada). O valor padrão é <b>False</b>.</param>
+        <param name="DisplayRSquared">Objeto <b>opcional</b>. <b>True</b> para exibir o valor quadrada da linha de tendência no gráfico (no mesmo rótulo de dados que a equação). O valor padrão é <b>False</b>.</param>
+        <param name="Name">Objeto <b>opcional</b>. O nome da linha de tendência como texto. Se este argumento for omitido, o Microsoft Excel gerará um nome.</param>
         <summary>Cria uma nova linha de tendência. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Trendline" /> objeto.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -149,7 +131,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -207,11 +189,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -268,8 +248,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>necessário. O nome ou número de índice do objeto.</param>
+        <param name="Index">Objeto <b>Required</b>. O nome ou número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

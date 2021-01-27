@@ -1,13 +1,5 @@
 <Type Name="TableStyles" FullName="Microsoft.Office.Interop.Excel.TableStyles">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="70d5a69d0e4e826dda6e82f38beab66614060a9a" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20579594" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TableStyles : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="70d5a69d0e4e826dda6e82f38beab66614060a9a" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009713" /></Metadata><TypeSignature Language="C#" Value="public interface TableStyles : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TableStyles implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TableStyles" />
   <TypeSignature Language="VB.NET" Value="Public Interface TableStyles&#xA;Implements IEnumerable" />
@@ -34,32 +26,30 @@
   </Attributes>
   <Docs>
     <summary>Representa estilos que podem ser aplicados a uma tabela.</summary>
-    <remarks>
-      <para>Os estilos de tabela fornecem uma forma de formatar uma tabela ou uma tabela dinâmica inteira. Os estilos de tabela substituem o recurso de autoformatação existente para formatar uma tabela inteira.</para>
+    <remarks><para>Os estilos de tabela fornecem uma forma de formatar uma tabela ou uma tabela dinâmica inteira. Os estilos de tabela substituem o recurso de autoformatação existente para formatar uma tabela inteira.</para>
       <para>Os estilos de tabela diferem da autoformatação das seguintes formas:</para>
-      <para></para>
+      <para> </para>
       <list type="bullet">
         <item>
-          <description>Você pode criar e reutilizar seus próprios estilos de tabela personalizada.
+          <description>Você pode criar e re-usar seus próprios estilos de tabela personalizados.
 </description>
         </item>
         <item>
           <description>Estilos de tabela funcionam com temas.  </description>
         </item>
         <item>
-          <description>Alterar o esquema de cores e/ou esquema de fontes do tema de documento alterará a aparência dos estilos de tabela internos. </description>
+          <description>Alterar o esquema de cores e/ou esquema de fontes do tema do documento alterará a aparência dos estilos de tabela integrados. </description>
         </item>
         <item>
           <description>Os estilos de tabela podem reaplicar estilos em objetos como tabelas dinâmicas e tabelas, conforme o objeto se altera. As tabelas lembrarão o estilo aplicado a elas e se reexibirão adequadamente quando as células forem adicionadas, removidas, ocultas e mostradas.</description>
         </item>
         <item>
-          <description>Estilos de tabela possuem uma interface de usuário visual na faixa de opções.
+          <description>Os estilos de tabela têm uma interface do usuário visual na Faixa de Opções.
 </description>
         </item>
       </list>
-      <para></para>
-      <para></para>
-    </remarks>
+      <para> </para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -121,7 +111,7 @@
       </Parameters>
       <Docs>
         <param name="TableStyleName">O nome do estilo da tabela.</param>
-        <summary>Cria um novo <see cref="T:Microsoft.Office.Interop.Excel.TableStyle" /> do objeto e o adiciona à coleção.</summary>
+        <summary>Cria um novo <see cref="T:Microsoft.Office.Interop.Excel.TableStyle" /> objeto e o adiciona à coleção.</summary>
         <returns>TableStyle</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,14 +139,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usado sem um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object que representa o aplicativo Microsoft Office Excel. Quando usado com um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object que representa o criador do objeto especificado. Somente leitura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
-        <remarks>
-          <para>Você pode usar essa propriedade com um objeto de Automação OLE para retornar o aplicativo desse objeto.</para>
-          <para></para>
-        </remarks>
+        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna um  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa o aplicativo Microsoft Office Excel. Quando usada com um qualificador de objeto, essa propriedade retorna um objeto que representa o <see cref="T:Microsoft.Office.Interop.Excel._Application" /> criador do objeto especificado. Somente leitura.</summary>
+        <value><b>Object</b></value>
+        <remarks><para>Você pode usar essa propriedade com um objeto de Automação OLE para retornar o aplicativo desse objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -183,9 +169,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna o número de objetos da coleção. Somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,13 +197,9 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um número inteiro de 32 bits que indica o aplicativo em que esse objeto foi criado. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.  A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.  A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -279,9 +259,7 @@
       <Docs>
         <param name="Index">O nome ou número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Excel.TableStyle" />
-        </returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.TableStyle" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,10 +286,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado. Somente leitura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Retorna o objeto pai do objeto especificado. Somente leitura.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

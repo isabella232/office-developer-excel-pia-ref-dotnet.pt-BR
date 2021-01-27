@@ -1,13 +1,5 @@
 <Type Name="Protection" FullName="Microsoft.Office.Interop.Excel.Protection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f9996163076ffe6bcb7674a54fe7b673141d992b" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585187" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Protection" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f9996163076ffe6bcb7674a54fe7b673141d992b" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010791" /></Metadata><TypeSignature Language="C#" Value="public interface Protection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Protection" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Protection" />
   <TypeSignature Language="VB.NET" Value="Public Interface Protection" />
@@ -30,9 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Representa os vários tipos de opções de proteção disponíveis para uma planilha.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Protection" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objeto para retornar um objeto <b>Protection</b> .</para>
-      <para>Depois que um objeto <b>Protection</b> é retornado, você pode usar as propriedades a seguir para definir ou retornar opções de proteção:</para>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Protection" /> propriedade do objeto para retornar um objeto <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> <b>Protection.</b></para>
+      <para>Depois que <b>um objeto Protection</b> é retornado, você pode usar as seguintes propriedades para definir ou retornar opções de proteção:</para>
       <list type="bullet">
         <item>
           <description>
@@ -90,8 +81,7 @@
           </description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowDeletingColumns">
@@ -117,13 +107,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna <b>True</b> se a exclusão de colunas for permitida em uma planilha protegida.</summary>
+        <summary>Retorna <b>True</b> se a exclusão das colunas for permitida em uma planilha não protegida.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>AllowDeletingColumns</b> pode ser definida por meio do <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos do método.</para>
+        <remarks><para>A <b>propriedade AllowDeletingColumns</b> pode ser definida usando os <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos do método.</para>
           <para>As colunas que contêm as células a serem excluídas devem estar desbloqueadas quando a planilha for protegida.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowDeletingRows">
@@ -149,13 +137,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna <b>True</b> se a exclusão de linhas for permitida em uma planilha protegida.</summary>
+        <summary>Retorna <b>True</b> se a exclusão das linhas for permitida em uma planilha protegida.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>AllowDeletingRows</b> pode ser definida por meio do <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos do método.</para>
+        <remarks><para>A <b>propriedade AllowDeletingRows</b> pode ser definida usando os <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos do método.</para>
           <para>As linhas que contêm as células a serem excluídas devem estar desbloqueadas quando a planilha for protegida.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowEditRanges">
@@ -209,14 +195,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna <b>True</b> se o usuário tem permissão para fazer a usar um AutoFiltro criado antes que a planilha foi protegida.</summary>
+        <summary>Retorna <b>True</b> se o usuário tiver permissão para usar de um AutoFiltro criado antes da planilha ser protegida.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>AllowFiltering</b> pode ser definida por meio do <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos do método.</para>
+        <remarks><para>A <b>propriedade AllowFiltering</b> pode ser definida usando os <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos do método.</para>
           <para>A propriedade <b>AllowFiltering</b> permite ao usuário alterar os critérios de filtro em um AutoFiltro existente. O usuário não pode criar ou remover um AutoFiltro em uma planilha protegida.</para>
           <para>As células a serem filtradas devem estar desbloqueadas quando a planilha for protegida.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowFormattingCells">
@@ -244,11 +228,9 @@
       <Docs>
         <summary>Retorna <b>True</b> se a formatação das células for permitida em uma planilha protegida.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>AllowFormattingCells</b> pode ser definida por meio do <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos do método.</para>
-          <para>O uso dessa propriedade desativa a guia de proteção, permitindo ao usuário alterar todos os formatos, mas não desbloquear ou exibir intervalos.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A <b>propriedade AllowFormattingCells</b> pode ser definida usando os <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos do método.</para>
+          <para>O uso dessa propriedade desabilita a guia de proteção, permitindo que o usuário altere todos os formatos, mas não desbloqueie ou desative intervalos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowFormattingColumns">
@@ -274,12 +256,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna <b>True</b> se a formatação das colunas for permitida em uma planilha protegida.</summary>
+        <summary>Retorna <b>True</b> se a formatação das células for permitida em uma planilha protegida.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>AllowFormattingColumns</b> pode ser definida por meio do <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos do método.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A <b>propriedade AllowFormattingColumns</b> pode ser definida usando os <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos do método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowFormattingRows">
@@ -305,12 +285,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna <b>True</b> se a formatação de linhas for permitida em uma planilha protegida.</summary>
+        <summary>Retorna <b>True</b> se a formatação das colunas for permitida em uma planilha protegida.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>AllowFormattingRows</b> pode ser definida por meio do <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos do método.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A <b>propriedade AllowFormattingRows</b> pode ser definida usando os <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos do método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowInsertingColumns">
@@ -336,13 +314,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna <b>True</b> se a inserção de colunas for permitida em uma planilha protegida.</summary>
+        <summary>Retorna <b>True</b> se a inserção das colunas for permitida em uma planilha protegida.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Uma coluna inserida herda a formatação (por padrão) da coluna à esquerda, o que significa que que ela pode ter células bloqueadas. Em outras palavras, é possível que os os usuários não consigam excluir colunas que inseriram.</para>
-          <para>A propriedade <b>AllowInsertingColumns</b> pode ser definida por meio do <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos do método.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Uma coluna inserida herda a formatação (por padrão) da coluna à esquerda, o que significa que que ela pode ter células bloqueadas. Em outras palavras, é possível que os os usuários não consigam excluir colunas que inseriram.</para>
+          <para>A <b>propriedade AllowInsertingColumns</b> pode ser definida usando os <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos do método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowInsertingHyperlinks">
@@ -368,13 +344,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna <b>True</b> se a inserção de hyperlinks for permitida em uma planilha protegida.</summary>
+        <summary>Retorna <b>True</b> se a inserção de hiperlinks for permitida em uma planilha protegida.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Os hiperlinks podem ser inseridos somente em células desbloqueadas ou desprotegidas em uma planilha protegida.</para>
-          <para>A propriedade <b>AllowInsertingHyperlinks</b> pode ser definida por meio do <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos do método.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Os hiperlinks podem ser inseridos somente em células desbloqueadas ou desprotegidas em uma planilha protegida.</para>
+          <para>A <b>propriedade AllowInsertingHyperlinks</b> pode ser definida usando os <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos do método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowInsertingRows">
@@ -402,10 +376,8 @@
       <Docs>
         <summary>Retorna <b>True</b> se a inserção de linhas for permitida em uma planilha protegida.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>AllowInsertingRows</b> pode ser definida por meio do <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos do método.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A <b>propriedade AllowInsertingRows</b> pode ser definida usando os <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos do método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowSorting">
@@ -433,11 +405,9 @@
       <Docs>
         <summary>Retorna <b>True</b> se a opção de classificação for permitida em uma planilha protegida.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Em uma planilha protegida, classificação pode ser feita somente em células desbloqueadas ou desprotegidas.</para>
-          <para>A propriedade <b>AllowSorting</b> pode ser definida por meio do <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos do método.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Em uma planilha protegida, a classificação só pode ser executada em células desbloqueadas ou desprotegidas.</para>
+          <para>A <b>propriedade AllowSorting</b> pode ser definida usando os <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos do método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowUsingPivotTables">
@@ -463,13 +433,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna <b>True</b> se o usuário tem permissão para manipular tabelas dinâmicas em uma planilha protegida.</summary>
+        <summary>Retorna <b>True</b> se o usuário tiver permissão para manipular tabelas dinâmicas em uma planilha protegida.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>AllowUsingPivotTables</b> se aplica a fontes de dados não-OLAP.</para>
-          <para>A propriedade <b>AllowUsingPivotTables</b> pode ser definida por meio do <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos do método.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A propriedade <b>AllowUsingPivotTables</b> se aplica a fontes de dados não-OLAP.</para>
+          <para>A <b>propriedade AllowUsingPivotTables</b> pode ser definida usando os <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos do método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

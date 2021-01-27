@@ -1,13 +1,5 @@
 <Type Name="PivotFormula" FullName="Microsoft.Office.Interop.Excel.PivotFormula">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ce492b9d9661d497cae1980426cde80b49102656" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585145" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotFormula" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ce492b9d9661d497cae1980426cde80b49102656" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010854" /></Metadata><TypeSignature Language="C#" Value="public interface PivotFormula" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotFormula" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotFormula" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotFormula" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Representa uma fórmula usada para calcular resultados em um relatório de tabela dinâmica.</summary>
-    <remarks>
-      <para>Use <b>PivotFormulas</b>(<paramref name="index" />), onde <paramref name="index" /> é o número da fórmula ou a cadeia de caracteres no lado esquerdo da fórmula, para retornar o objeto <b>PivotFormula</b> .</para>
+    <remarks><para>Use <b>PivotFormulas</b>( ), onde é o número da fórmula ou cadeia de caracteres no lado esquerdo da fórmula, para retornar <paramref name="index" /> o objeto <paramref name="index" /> <b>PivotFormula.</b></para>
       <para>Este objeto e suas propriedades e métodos associados não estão disponíveis para fontes de dados OLAP porque não há suporte para campos e itens calculados.</para>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -97,7 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -127,11 +117,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -187,14 +175,12 @@
       <Docs>
         <summary>Retorna ou define a fórmula do objeto na notação de estilo A1.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propriedade não está disponível para fontes de dados OLAP.</para>
-          <para>Se a célula contiver uma constante, essa propriedade retornará a constante. Se a célula estiver vazia, a propriedade <b>Formula</b> retornará uma sequência de caracteres vazia. Se a célula contiver uma fórmula, a propriedade <b>Formula</b> retornará a fórmula como uma sequência de caracteres no mesmo formato que seria exibido na barra de fórmulas (inclusive o sinal de igual).</para>
+        <remarks><para>Esta propriedade não está disponível para fontes de dados OLAP.</para>
+          <para>Se a célula contiver uma constante, essa propriedade retornará essa constante. Se a célula estiver vazia, a propriedade <b>Formula</b> retornará uma sequência de caracteres vazia. Se a célula contiver uma fórmula, a propriedade <b>Formula</b> retornará a fórmula como uma sequência de caracteres no mesmo formato exibido na barra de fórmulas (inclusive o sinal de igual).</para>
           <para>Quando você define o valor ou a fórmula de uma célula como uma data, o Microsoft Excel verifica se a célula já está formatada com um dos formatos numéricos de data ou hora. Se não estiver, o Microsoft Excel altera o formato numérico para o formato padrão de data abreviada.</para>
-          <para>Se o intervalo for um intervalo one - ou bidimensional, você poderá definir a fórmula em uma matriz das mesmas dimensões. Da mesma forma, você pode colocar a fórmula em uma matriz.</para>
+          <para>Se o intervalo for uni ou bidimensional, você poderá definir a fórmula como uma matriz com as mesmas dimensões. Da mesma forma, você pode colocar a fórmula em uma matriz.</para>
           <para>A configuração da fórmula para um intervalo de várias células preenche todas as células do intervalo com a fórmula.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -223,7 +209,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o número de índice do objeto dentro do <see cref="T:Microsoft.Office.Interop.Excel.PivotFormulas" /> conjunto.</summary>
+        <summary>Retorna ou define o número de índice do objeto dentro da <see cref="T:Microsoft.Office.Interop.Excel.PivotFormulas" /> coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -251,7 +237,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado.</summary>
+        <summary>Retorna o objeto pai do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -282,13 +268,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <b>String</b> que especifica fórmulas com inglês (Estados Unidos) do padrão de formatação.</summary>
+        <summary>Retorna ou define um <b>String</b> que especifica fórmulas com a formatação em inglês (EUA) padrão.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>StandardFormula</b> afeta principalmente nomes de itens com formatação de data ou número. Isso permite especificar ou consultar uma fórmula para um determinado item calculado.</para>
-          <para>A propriedade <b>StandardFormula</b> é "internacional" enquanto o <see cref="P:Microsoft.Office.Interop.Excel.PivotFormula.Formula" /> propriedade não está.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A propriedade <b>StandardFormula</b> afeta principalmente nomes de itens com formatação de data ou número. Isso permite especificar ou consultar uma fórmula para um determinado item calculado.</para>
+          <para>A <b>propriedade StandardFormula</b> é "internacionalmente amigável", enquanto <see cref="P:Microsoft.Office.Interop.Excel.PivotFormula.Formula" /> a propriedade não é.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">

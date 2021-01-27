@@ -1,13 +1,5 @@
 <Type Name="SmartTagAction" FullName="Microsoft.Office.Interop.Excel.SmartTagAction">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0a10fef880f7ed0c7daae5414a8fa44a05aefdd9" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578075" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTagAction" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0a10fef880f7ed0c7daae5414a8fa44a05aefdd9" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010112" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagAction" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagAction" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SmartTagAction" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagAction" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Representa as ações que podem ser executadas com rótulos inteligentes.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.SmartTagActions.Item(System.Object)" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SmartTagActions" /> coleção, para retornar um objeto <b>SmartTagAction</b> .</para>
-      <para>Depois que um objeto <b>SmartTagAction</b> tiver retornado, você pode ativar uma marca inteligente para anotar automaticamente os dados usando o <see cref="M:Microsoft.Office.Interop.Excel.SmartTagAction.Execute" /> método.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel.SmartTagActions.Item(System.Object)" /> propriedade da coleção para retornar um objeto <see cref="T:Microsoft.Office.Interop.Excel.SmartTagActions" /> <b>SmartTagAction.</b></para>
+      <para>Depois que <b>um objeto SmartTagAction</b> tiver sido retornado, você poderá ativar uma marca inteligente para anotar automaticamente os dados usando o <see cref="M:Microsoft.Office.Interop.Excel.SmartTagAction.Execute" /> método.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -91,7 +81,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <b>objeto</b> que representa um controle ActiveX exibido no painel de tarefas ações do documento.</summary>
+        <summary>Retorna um <b>objeto</b> que representa um controle ActiveX exibido no painel de tarefas Ações do Documento.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,7 +109,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,12 +140,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um valor <b>Boolean</b> que indica se uma caixa de seleção em um documento inteligente está selecionada.</summary>
+        <summary>Retorna ou configura um valor <b>Boolean</b> que indica se uma caixa de seleção em um documento inteligente está marcada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Definir a propriedade <b>CheckboxState</b> como <b>True</b> seleciona a caixa de seleção. A definição dessa propriedade como <b>False</b> limpa a caixa de seleção.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A <b>definição da propriedade CheckboxState</b> como <b>True</b> marca a caixa de seleção. Configurar essa propriedade como <b>False</b> desmarca a caixa de seleção.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -183,11 +171,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -211,7 +197,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ativa uma ação de marca inteligente que está associada com o tipo de marca inteligente em uma célula.</summary>
+        <summary>Ativa uma ação de marca inteligente associada ao tipo de marca inteligente em uma célula.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,7 +227,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Define ou retorna um valor <b>Boolean</b> que representa se o controle de texto da Ajuda do documento inteligente especificado está expandido ou recolhido no painel de tarefas Ações do Documento. <b>True</b> indica se o controle está expandido. <b>False</b> indica se o controle está recolhido.</summary>
+        <summary>Define ou retorna um <b>valor Boolean</b> que representa se o controle de texto da Ajuda do documento inteligente especificado está expandido ou recolhido no painel de tarefas Ações do Documento. <b>True</b> indica se o controle está expandido. <b>False</b> indica se o controle está recolhido.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -272,7 +258,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Define ou retorna um valor <b>Integer</b> que representa o número de índice do item selecionado em um controle de caixa de listagem do documento inteligente.</summary>
+        <summary>Define ou retorna um <b>valor Integer</b> que representa o número de índice do item selecionado em um controle de caixa de listagem de documento inteligente.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -302,8 +288,7 @@
       <Docs>
         <summary>Retorna o nome do objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A tabela a seguir mostra os valores de exemplo da propriedade de <b>nome</b> e propriedades relacionadas dada a uma fonte de dados com o nome exclusivo "[Europe]. [France]. [Paris] "e o nome de uma fonte de dados não-OLAP com o item"Paris".</para>
+        <remarks><para>A tabela a seguir mostra valores de exemplo <b>da propriedade Name</b> e das propriedades relacionadas considerando uma fonte de dados com o nome exclusivo "[Europa]. [França]. [Paris]" e uma fonte de dados não OLAP com o nome do item "Paris".</para>
           <list type="table">
             <item>
               <term>
@@ -334,22 +319,21 @@
               <description>Paris</description>
             </item>
           </list>
-          <para>Ao especificar um índice para o <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> coleção, você pode usar a sintaxe mostrada na tabela a seguir.</para>
+          <para>Ao especificar um índice na <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> coleção, você pode usar a sintaxe mostrada na tabela a seguir.</para>
           <list type="table">
             <item>
-              <term>Expression.PivotItems ("[Europe]. [ França]. [Paris] ")</term>
+              <term>Expression.PivotItems("[Europa].[ França]. [Paris]")</term>
               <description>expressão. PivotItems("Paris")</description>
             </item>
           </list>
-          <para>Ao usar o <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> propriedade referência um determinado membro de uma coleção, você pode usar o nome do índice de texto conforme mostrado na tabela a seguir.</para>
+          <para>Ao usar a propriedade para fazer referência a um determinado membro de uma coleção, você pode usar o nome do índice <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> de texto, conforme mostrado na tabela a seguir.</para>
           <list type="table">
             <item>
-              <term>[Europe]. [France]. [Paris]</term>
+              <term>[Europa]. [França]. [Paris]</term>
               <description>Paris</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -375,7 +359,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado.</summary>
+        <summary>Retorna o objeto pai do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -403,7 +387,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um valor <b>Boolean</b> que indica se um controle de documento inteligente é exibido no momento no painel de tarefas ações do documento.</summary>
+        <summary>Retorna um <b>valor Boolean</b> que representa se um controle de documento inteligente está sendo exibido no painel de tarefas Ações do Documento.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -434,7 +418,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Define ou retorna um <b>inteiro</b> que representa o número de índice do item selecionado em um grupo de controles de botão de opção em um documento inteligente.</summary>
+        <summary>Define ou retorna um <b>integer</b> que representa o número de índice do item selecionado em um grupo de controles de botão de opção em um documento inteligente.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -465,7 +449,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Define ou retorna uma <b>cadeia de caracteres</b> que representa o texto em um controle textbox de documento inteligente.</summary>
+        <summary>Define ou retorna uma <b>cadeia de caracteres</b> que representa o texto em um controle de caixa de texto de documento inteligente.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -493,11 +477,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSmartTagControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.XlSmartTagControlType" /> que representa o tipo de controle de documento inteligente exibido no painel de tarefas ações do documento.</summary>
+        <summary>Retorna um que representa o tipo de controle Documento Inteligente exibido no painel de tarefas <see cref="T:Microsoft.Office.Interop.Excel.XlSmartTagControlType" /> Ações do Documento.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlSmartTagControlType" />pode ser uma das seguintes constantes <b>XlSmartTagControlType</b> :</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlSmartTagControlType" />pode ser uma das seguintes <b>constantes XlSmartTagControlType:</b></para>
           <para>
             <b>xlSmartTagControlActiveX</b>
           </para>
@@ -540,8 +523,7 @@
           <para>
             <b>xlSmartTagControlTextbox</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

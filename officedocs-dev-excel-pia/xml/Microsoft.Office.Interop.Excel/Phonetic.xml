@@ -1,13 +1,5 @@
 <Type Name="Phonetic" FullName="Microsoft.Office.Interop.Excel.Phonetic">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="968b33512b8ee5525d7c2fa249064b898613c020" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587644" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Phonetic" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="968b33512b8ee5525d7c2fa249064b898613c020" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011015" /></Metadata><TypeSignature Language="C#" Value="public interface Phonetic" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Phonetic" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Phonetic" />
   <TypeSignature Language="VB.NET" Value="Public Interface Phonetic" />
@@ -30,12 +22,10 @@
   </Attributes>
   <Docs>
     <summary>Contém informações sobre uma determinada cadeia de texto fonético em uma célula.</summary>
-    <remarks>
-      <para>No Microsoft Excel 97, este objeto continha os atributos de formatação para qualquer texto fonético no intervalo especificado.</para>
-      <para>Use <b>fonética</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do texto fonético, para retornar um único objeto <b>Phonetic</b> .</para>
-      <para>O <see cref="P:Microsoft.Office.Interop.Excel.Range.Phonetic" /> propriedade fornece compatibilidade com versões anteriores do Microsoft Excel. Você deve usar <b>Phonetics</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do texto fonético, para retornar um único objeto <b>Phonetic</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para>No Microsoft Excel 97, este objeto continha os atributos de formatação para qualquer texto fonético no intervalo especificado.</para>
+      <para>Use <b>Phonetics</b>( ), onde é o número de índice do texto <paramref name="index" /> <paramref name="index" /> phoneético, para retornar um único <b>objeto Phonetic.</b></para>
+      <para>A <see cref="P:Microsoft.Office.Interop.Excel.Range.Phonetic" /> propriedade fornece compatibilidade com versões anteriores do Microsoft Excel. Você deve usar <b>Phonetics</b>( ), onde é o número de índice do texto phoneético, para retornar <paramref name="index" /> um único objeto <paramref name="index" /> <b>Phonetic.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -64,10 +54,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o alinhamento do texto fonético especificado.</summary>
+        <summary>Retorna ou define o alinhamento do texto phoneético especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>Alignment</b> pode ser uma dessas <see cref="T:Microsoft.Office.Interop.Excel.XlPhoneticAlignment" /> constantes:</para>
+        <remarks><para>A <b>propriedade Alignment</b> pode ser uma destas <see cref="T:Microsoft.Office.Interop.Excel.XlPhoneticAlignment" /> constantes:</para>
           <para>
             <b>XlPhoneticAlignCenter</b>
           </para>
@@ -80,8 +69,7 @@
           <para>
             <b>XlPhoneticAlignNoControl</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -107,7 +95,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -168,11 +156,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -198,7 +184,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object que representa a fonte do objeto especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Font" /> objeto que representa a fonte do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -226,7 +212,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado.</summary>
+        <summary>Retorna o objeto pai do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -259,10 +245,8 @@
       <Docs>
         <summary>Retorna ou define o texto do objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade retorna ou define o texto fonético para um <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> objeto. Você não pode definir essa propriedade como <b>Null</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Essa propriedade retorna ou define o texto phoneético de um <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> objeto. Não é possível definir essa propriedade como <b>Null</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -291,7 +275,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se o objeto está visível.</summary>
+        <summary>Determina se o objeto será visível.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

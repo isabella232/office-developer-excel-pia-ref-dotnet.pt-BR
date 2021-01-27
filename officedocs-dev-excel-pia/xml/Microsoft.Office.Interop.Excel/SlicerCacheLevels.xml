@@ -1,13 +1,5 @@
 <Type Name="SlicerCacheLevels" FullName="Microsoft.Office.Interop.Excel.SlicerCacheLevels">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="aa0b86cacb4cc71377b8c24dce9b71558a7bfc10" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584718" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SlicerCacheLevels : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="aa0b86cacb4cc71377b8c24dce9b71558a7bfc10" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010217" /></Metadata><TypeSignature Language="C#" Value="public interface SlicerCacheLevels : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SlicerCacheLevels implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" />
   <TypeSignature Language="VB.NET" Value="Public Interface SlicerCacheLevels&#xA;Implements IEnumerable" />
@@ -34,10 +26,8 @@
   </Attributes>
   <Docs>
     <summary>Representa a coleção de níveis hierárquicos da fonte de dados OLAP que é filtrada por uma segmentação de dados.</summary>
-    <remarks>
-      <para>Quando uma segmentação de dados é usada para filtrar uma fonte de dados OLAP, o seu cache de segmentação de dados pai pode conter vários níveis hierárquicos da fonte de dados. Usar o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerCacheLevels" /> coleção do pai <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> o objeto para o acesso a <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objetos que representam esses níveis de hierarquia. Esta coleção não está acessível para fontes de dados não-OLAP.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Quando uma segmentação de dados é usada para filtrar uma fonte de dados OLAP, seu cache de segmentação de dados pai pode conter vários níveis hierárquicos provenientes da fonte de dados. Use a <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerCacheLevels" /> coleção do objeto pai para acessar os objetos que representam esses níveis de <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> hierarquia. Essa coleção não é acessível para fontes de dados não OLAP.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -71,7 +61,7 @@
       <Docs>
         <param name="Level">To be added.</param>
         <summary>To be added.</summary>
-        <value>Retorna <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />.</value>
+        <value>Retorna <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,12 +88,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usado sem um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel. Quando usado com um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o criador do objeto especificado.</summary>
+        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna <see cref="T:Microsoft.Office.Interop.Excel.Application" /> um objeto que representa o aplicativo Microsoft Excel. Quando usada com um qualificador de objeto, essa propriedade retorna um objeto que representa o <see cref="T:Microsoft.Office.Interop.Excel.Application" /> criador do objeto especificado.</summary>
         <value>Um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -129,8 +117,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém o número de níveis no especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> coleção, que representa o número de níveis a ele associada <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto.</summary>
-        <value>O número de níveis no especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> coleção, que representa o número de níveis a ele associada <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto.</value>
+        <summary>Obtém o número de níveis na coleção especificada, que representa o número de <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> níveis no objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> associado.</summary>
+        <value>O número de níveis na coleção especificada, que representa o <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> número de níveis no objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> associado.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,11 +147,9 @@
       <Docs>
         <summary>Obtém um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>Um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</value>
-        <remarks>
-          <para>Somente leitura <b>long</b>.</para>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. O <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevels.Creator" /> propriedade foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Somente leitura <b>long</b>.</para>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. A propriedade foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo tem um código de criador de <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevels.Creator" /> quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -194,7 +180,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>Retorna <see cref="T:System.Collections.IEnumerator" />.</returns>
+        <returns>Retorna <see cref="T:System.Collections.IEnumerator" /> .</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,8 +211,8 @@
       </Parameters>
       <Docs>
         <param name="Level">O nome MDX exclusivo do nível ou do número de índice do objeto.</param>
-        <summary>Retorna o especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objeto da coleção, ou se nenhum nível for especificado, retorna o primeiro <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objeto na coleção.</summary>
-        <value>Retorna <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />.</value>
+        <summary>Retorna o objeto especificado da coleção ou, se nenhum nível for especificado, retorna <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> o primeiro objeto da <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> coleção.</summary>
+        <value>Retorna <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,12 +239,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém o <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto que é o pai do especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> objeto.</summary>
-        <value>O <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto que é o pai do especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> objeto.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> o objeto que é o pai do objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> especificado.</summary>
+        <value>O <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto que é o pai do objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> especificado.</value>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

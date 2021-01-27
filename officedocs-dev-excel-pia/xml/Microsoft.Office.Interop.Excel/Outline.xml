@@ -1,13 +1,5 @@
 <Type Name="Outline" FullName="Microsoft.Office.Interop.Excel.Outline">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ce084732f853490e51e0b2ae76bee9cab95e3b55" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584046" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Outline" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ce084732f853490e51e0b2ae76bee9cab95e3b55" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011155" /></Metadata><TypeSignature Language="C#" Value="public interface Outline" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Outline" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Outline" />
   <TypeSignature Language="VB.NET" Value="Public Interface Outline" />
@@ -30,10 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Representa uma estrutura de tópicos em uma planilha.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Outline" /> propriedade para retornar um objeto <b>Outline</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Outline" /> propriedade para retornar um objeto <b>Outline.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,8 +80,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se os tópicos usam estilos automáticos.</summary>
+        <summary><b>True</b> se o contorno usar estilos automáticos.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,11 +110,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -151,7 +138,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado.</summary>
+        <summary>Retorna o objeto pai do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -179,16 +166,12 @@
         <Parameter Name="ColumnLevels" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="RowLevels">
-          <b>Objeto</b>de opcional. Especifica o número de níveis de linha de uma estrutura de tópicos para exibir. Se os tópicos tiverem menos níveis que o número especificado, o Microsoft Excel exibe todos os níveis. Se esse argumento for 0 (zero) ou for omitido, nenhuma ação é executada em linhas.</param>
-        <param name="ColumnLevels">
-          <b>Objeto</b>de opcional. Especifica o número de níveis de coluna de uma estrutura de tópicos para exibir. Se os tópicos tiverem menos níveis que o número especificado, o Microsoft Excel exibe todos os níveis. Se esse argumento for 0 (zero) ou for omitido, nenhuma ação é executada em colunas.</param>
+        <param name="RowLevels">Objeto <b>opcional</b>. Especifica o número de níveis de linha dos tópicos a exibir. Se os tópicos tiverem menos níveis que o número especificado, o Microsoft Excel exibirá todos os níveis. Se esse argumento for 0 (zero) ou se for omitido, nenhuma ação será efetuada sobre as linhas.</param>
+        <param name="ColumnLevels">Objeto <b>opcional</b>. Especifica o número de níveis de coluna dos tópicos a exibir. Se os tópicos tiverem menos níveis que o número especificado, o Microsoft Excel exibirá todos os níveis. Se esse argumento for 0 (zero) ou se for omitido, nenhuma ação será efetuada sobre as colunas.</param>
         <summary>Exibe o número especificado de níveis de linhas e/ou colunas de tópicos.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Você precisa especificar pelo menos um argumento.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Você precisa especificar pelo menos um argumento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SummaryColumn">
@@ -217,7 +200,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSummaryColumn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o local das colunas de resumo na estrutura de tópicos.</summary>
+        <summary>Retorna ou define o local das colunas de resumo no tópico.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -248,12 +231,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSummaryRow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o local das linhas de resumo na estrutura de tópicos.</summary>
+        <summary>Retorna ou define o local das linhas de resumo no tópico.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Definido <b>SummaryRow</b> como <b>xlAbove</b> para tópicos em estilo Microsoft Word, onde os títulos de categoria ficam acima das informações detalhadas. Defina <b>SummaryRow</b> como <b>xlBelow</b> para tópicos em estilo de contabilidade, onde os somatórios ficam abaixo das informações detalhadas.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Definir <b>SummaryRow</b> como <b>xlAbove para estruturas</b> de estruturas de texto estilo Microsoft Word, onde os headers de categoria estão acima das informações detalhadas. Definir <b>SummaryRow</b> como <b>xlBelow</b> para estruturas de estruturas de estilo de contabilidade, onde os resumos estão abaixo das informações detalhadas.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

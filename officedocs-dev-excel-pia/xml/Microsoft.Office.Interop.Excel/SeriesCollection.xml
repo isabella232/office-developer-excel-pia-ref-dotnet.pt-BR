@@ -1,13 +1,5 @@
 <Type Name="SeriesCollection" FullName="Microsoft.Office.Interop.Excel.SeriesCollection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9b503045ebef3ddb75466923708250f026284484" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578964" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SeriesCollection : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9b503045ebef3ddb75466923708250f026284484" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010413" /></Metadata><TypeSignature Language="C#" Value="public interface SeriesCollection : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SeriesCollection implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SeriesCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface SeriesCollection&#xA;Implements IEnumerable" />
@@ -33,13 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.Series" /> objetos no gráfico especificado ou grupo de gráficos.</summary>
-    <remarks>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel._Chart.SeriesCollection(System.Object)" /> método para retornar a coleção <b>SeriesCollection</b> .</para>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.SeriesCollection.Add(System.Object,Microsoft.Office.Interop.Excel.XlRowCol,System.Object,System.Object,System.Object)" /> método para criar uma nova série e adicioná-lo ao gráfico.</para>
-      <para>Use <b>SeriesCollection</b>(<paramref name="index" />), onde índice é o número de índice da série ou o nome, para retornar um único objeto <b>Series</b> .</para>
-      <para></para>
-    </remarks>
+    <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.Series" /> objetos no gráfico ou grupo de gráficos especificado.</summary>
+    <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Excel._Chart.SeriesCollection(System.Object)" /> método para retornar a coleção <b>SeriesCollection.</b></para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.SeriesCollection.Add(System.Object,Microsoft.Office.Interop.Excel.XlRowCol,System.Object,System.Object,System.Object)" /> método para criar uma nova série e adicioná-la ao gráfico.</para>
+      <para>Use <b>SeriesCollection</b>( ), onde index é o nome ou número de índice da série, para <paramref name="index" /> retornar um único objeto <b>Series</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,21 +90,15 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">
-          <b>Objeto</b>necessário. Os novos dados, como um objeto Range ou uma matriz de pontos de dados.</param>
-        <param name="Rowcol">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" />. Especifica se os novos valores estão nas linhas ou colunas do intervalo especificado.</param>
-        <param name="SeriesLabels">
-          <b>Objeto</b>de opcional. Ignorado se <paramref name="Source" /> é uma matriz. <b>True</b> se a primeira linha ou coluna contém o nome da série de dados. <b>False</b> se a primeira linha ou coluna contiver o primeiro ponto de dados da série. Se esse argumento for omitido, o Microsoft Excel tenta determinar o local do nome da série a partir do conteúdo da primeira linha ou coluna.</param>
-        <param name="CategoryLabels">
-          <b>Objeto</b>de opcional. Ignorado se <paramref name="Source" /> é uma matriz. <b>True</b> se a primeira linha ou coluna contém o nome dos rótulos de categoria. <b>False</b> se a primeira linha ou coluna contiver o primeiro ponto de dados da série. Se esse argumento for omitido, o Microsoft Excel tenta determinar a localização dos rótulos de categoria a partir do conteúdo da primeira linha ou coluna.</param>
-        <param name="Replace">
-          <b>Objeto</b>de opcional. Se <paramref name="CategoryLabels" /> for <b>True</b> e <paramref name="Replace" /> for <b>True</b>, a substituição de categorias especificadas as categorias existem que estão atualmente na série. Se <paramref name="Replace" /> for <b>False</b>, as categorias existentes não serão substituídas. O valor padrão é <b>False</b>.</param>
-        <summary>Adiciona uma ou mais séries novas para o <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> conjunto.</summary>
+        <param name="Source">Objeto <b>Required</b>. Os novos dados, como um objeto Range ou uma matriz de pontos de dados.</param>
+        <param name="Rowcol">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" /> . Especifica se os novos valores estão nas linhas ou colunas do intervalo especificado.</param>
+        <param name="SeriesLabels">Objeto <b>opcional</b>. Ignorado se <paramref name="Source" /> for uma matriz. <b>True</b> se a primeira linha ou coluna contém o nome da série de dados. <b>False</b> se a primeira linha ou coluna contiver o primeiro ponto de dados da série. Se este argumento for omitido, o Microsoft Excel tentará determinar o local do nome de série a partir do conteúdo da primeira linha ou coluna.</param>
+        <param name="CategoryLabels">Objeto <b>opcional</b>. Ignorado se <paramref name="Source" /> for uma matriz. <b>True</b> se a primeira linha ou coluna contém o nome dos rótulos de categoria. <b>False</b> se a primeira linha ou coluna contiver o primeiro ponto de dados da série. Se esse argumento for omitido, o Microsoft Excel tentará determinar a posição do rótulo de categorias a partir do conteúdo da primeira linha ou coluna.</param>
+        <param name="Replace">Objeto <b>opcional</b>. If <paramref name="CategoryLabels" /> is <b>True</b> and <paramref name="Replace" /> is <b>True</b>, the specified categories replace the categories that currently exist for the series. Se <paramref name="Replace" /> for <b>False</b>, as categorias existentes não serão substituídas. O valor padrão é <b>False</b>.</param>
+        <summary>Adiciona uma ou mais séries novas à <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> coleção.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Este método não está disponível para relatórios de gráfico dinâmico.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Este método não está disponível para relatórios de gráfico dinâmico.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -140,7 +124,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -198,11 +182,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Extend">
@@ -229,18 +211,13 @@
         <Parameter Name="CategoryLabels" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">
-          <b>Objeto</b>necessário. Os novos dados a ser adicionado ao <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> objeto, seja como um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto ou uma matriz de pontos de dados.</param>
-        <param name="Rowcol">
-          <b>Objeto</b>de opcional. Ignorado se <paramref name="Source" /> é uma matriz. Especifica se os novos valores estão nas linhas ou colunas da fonte de dado intervalo. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" /> constantes: <b>xlRows</b> ou <b>xlColumns</b>. Se esse argumento for omitido, o Microsoft Excel tenta determinar onde os valores estão pelo tamanho e orientação do intervalo selecionado ou pelas dimensões da matriz.</param>
-        <param name="CategoryLabels">
-          <b>Objeto</b>de opcional. Ignorado se <paramref name="Source" /> é uma matriz. <b>True</b> para que a primeira linha ou coluna contenha o nome dos rótulos de categoria. <b>False</b> para que a primeira linha ou coluna contenha o primeiro ponto de dados da série. Se esse argumento for omitido, o Microsoft Excel tenta determinar a localização dos rótulos de categoria a partir do conteúdo da primeira linha ou coluna.</param>
-        <summary>Adiciona novos pontos de dados a uma coleção de séries existente.</summary>
+        <param name="Source">Objeto <b>Required</b>. Os novos dados a serem adicionados ao <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> objeto, como um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto ou uma matriz de pontos de dados.</param>
+        <param name="Rowcol">Objeto <b>opcional</b>. Ignorado se <paramref name="Source" /> for uma matriz. Especifica se os novos valores estão nas linhas ou colunas de uma determinada fonte do intervalo. Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" /> constantes: <b>xlRows</b> ou <b>xlColumns</b>. Se esse argumento for omitido, o Microsoft Excel tentará determinar onde os valores estão pelo tamanho e orientação do intervalo selecionado ou pelas dimensões da matriz.</param>
+        <param name="CategoryLabels">Objeto <b>opcional</b>. Ignorado se <paramref name="Source" /> for uma matriz. <b>True</b> para que a primeira linha ou coluna contenha o nome dos rótulos de categoria. <b>False</b> para que a primeira linha ou coluna contenha o primeiro ponto de dados da série. Se esse argumento for omitido, o Microsoft Excel tentará determinar a posição do rótulo de categorias a partir do conteúdo da primeira linha ou coluna.</param>
+        <summary>Adiciona novos pontos de dados à coleção de séries existente.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Este método não está disponível para relatórios de gráfico dinâmico.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Este método não está disponível para relatórios de gráfico dinâmico.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -298,8 +275,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>necessário. O nome ou número de índice do objeto.</param>
+        <param name="Index">Objeto <b>Required</b>. O nome ou número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -326,12 +302,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cria uma nova série. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Series" /> object que representa a nova série.</summary>
+        <summary>Cria uma nova série. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Series" /> objeto que representa a nova série.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Este método não está disponível para relatórios do gráfico dinâmico.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Este método não está disponível para relatórios do gráfico dinâmico.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -357,7 +331,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado.</summary>
+        <summary>Retorna o objeto pai do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -388,15 +362,11 @@
         <Parameter Name="NewSeries" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Rowcol">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" />. Especifica se os valores correspondentes a uma determinada série de dados estão em linhas ou colunas. Pode ser uma destas constantes <b>XlRowCol</b> :<b>xlColumns</b> padrão<b>xlRows</b></param>
-        <param name="SeriesLabels">
-          <b>Objeto</b>de opcional. <b>True</b> para usar o conteúdo da célula na primeira coluna de cada linha (ou a primeira linha de cada coluna) como o nome da série de dados nessa linha (ou coluna). <b>False</b> para usar o conteúdo da célula na primeira coluna de cada linha (ou a primeira linha de cada coluna) como primeiro ponto de dados da série de dados. O valor padrão é <b>False</b>.</param>
-        <param name="CategoryLabels">
-          <b>Objeto</b>de opcional. <b>True</b> para usar o conteúdo da primeira linha (ou coluna) da seleção como as categorias do gráfico. <b>False</b> para usar o conteúdo da primeira linha (ou coluna) como a primeira série de dados do gráfico. O valor padrão é <b>False</b>.</param>
-        <param name="Replace">
-          <b>Objeto</b>de opcional. <b>True</b> para aplicar categorias ao substituir categorias existentes pelas informações do intervalo copiado. <b>False</b> para inserir novas categorias sem substituir nenhuma das antigas. O valor padrão é <b>True</b>.</param>
-        <param name="NewSeries">
-          <b>Objeto</b>de opcional. <b>True</b> para colar os dados como uma nova série. <b>False</b> para colar os dados como novos pontos em uma série existente. O valor padrão é <b>True</b>.</param>
+        <param name="Rowcol">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" /> . Especifica se os valores correspondentes a uma determinada série de dados estão em linhas ou colunas. Pode ser uma destas constantes <b>XlRowCol:</b> <b>xlColumns</b> padrão<b>xlRows</b></param>
+        <param name="SeriesLabels">Objeto <b>opcional</b>. <b>True</b> para usar o conteúdo da célula na primeira coluna de cada linha (ou na primeira linha de cada coluna) como o nome da série de dados dessa linha (ou coluna). <b>False</b> para usar o conteúdo da célula na primeira coluna de cada linha (ou na primeira linha de cada coluna) como o primeiro ponto de dados na série de dados. O valor padrão é <b>False</b>.</param>
+        <param name="CategoryLabels">Objeto <b>opcional</b>. <b>True</b> para usar o conteúdo da primeira linha (ou coluna) da seleção como as categorias do gráfico. <b>False</b> para usar o conteúdo da primeira linha (ou coluna) como a primeira série de dados no gráfico. O valor padrão é <b>False</b>.</param>
+        <param name="Replace">Objeto <b>opcional</b>. <b>True</b> para aplicar categorias ao substituir categorias existentes pelas informações do intervalo copiado. <b>False</b> para inserir novas categorias sem substituir as antigas. O valor padrão é <b>True</b>.</param>
+        <param name="NewSeries">Objeto <b>opcional</b>. <b>True</b> para colar os dados como uma nova série. <b>False</b> para colar os dados como novos pontos em uma série existente. O valor padrão é <b>True</b>.</param>
         <summary>Cola dados da Área de Transferência na coleção de séries especificada.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

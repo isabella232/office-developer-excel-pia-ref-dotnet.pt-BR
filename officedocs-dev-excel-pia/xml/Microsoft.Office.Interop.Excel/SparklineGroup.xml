@@ -1,13 +1,5 @@
 <Type Name="SparklineGroup" FullName="Microsoft.Office.Interop.Excel.SparklineGroup">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ba984506dbd7cd1c005762dfefbca8ba4bc4260a" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585075" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SparklineGroup : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ba984506dbd7cd1c005762dfefbca8ba4bc4260a" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009895" /></Metadata><TypeSignature Language="C#" Value="public interface SparklineGroup : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SparklineGroup implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SparklineGroup" />
   <TypeSignature Language="VB.NET" Value="Public Interface SparklineGroup&#xA;Implements IEnumerable" />
@@ -34,11 +26,9 @@
   </Attributes>
   <Docs>
     <summary>Representa um grupo de minigráficos.</summary>
-    <remarks>
-      <para>O <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> objeto pode conter vários minigráficos e contém as configurações de propriedade para o grupo, como configurações de cor e eixo. Cada Minigráfico é representado por um <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" /> objeto.</para>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.Modify(Microsoft.Office.Interop.Excel.Range,System.String)" /> método para adicionar ou remover os Minigráficos do grupo de minigráficos. Use o <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifyLocation(Microsoft.Office.Interop.Excel.Range)" /> método para alterar o local do Minigráfico e usar o <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifySourceData(System.String)" /> método para alterar o intervalo de dados de origem.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>O <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> objeto pode conter vários sparklines e contém as configurações de propriedade do grupo, como as configurações de cor e eixo. Cada sparkline é representado por um <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" /> objeto.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.Modify(Microsoft.Office.Interop.Excel.Range,System.String)" /> método para adicionar ou remover os sparklines do grupo de sparklines. Use o <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifyLocation(Microsoft.Office.Interop.Excel.Range)" /> método para alterar o local do sparkline e use o método para alterar o intervalo dos dados de <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifySourceData(System.String)" /> origem.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,12 +54,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usado sem um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel. Quando usado com um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o criador do objeto especificado.</summary>
+        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna <see cref="T:Microsoft.Office.Interop.Excel.Application" /> um objeto que representa o aplicativo Microsoft Excel. Quando usada com um qualificador de objeto, essa propriedade retorna um objeto que representa o <see cref="T:Microsoft.Office.Interop.Excel.Application" /> criador do objeto especificado.</summary>
         <value>Um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Axes">
@@ -95,12 +83,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SparkAxes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém o associado <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> objeto.</summary>
-        <value>O associado <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> objeto.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém o objeto <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> associado.</summary>
+        <value>O objeto <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> associado.</value>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -126,12 +112,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém o número de minigráficos no grupo de minigráficos.</summary>
-        <value>O número de minigráficos no grupo de minigráficos.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém o número de sparklines no grupo de sparklines.</summary>
+        <value>O número de sparklines no grupo de sparklines.</value>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -157,13 +141,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um <b>inteiro</b> de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
-        <value>De 32 bits <b>inteiro</b> que indica o aplicativo no qual esse objeto foi criado.</value>
-        <remarks>
-          <para>Somente leitura <b>long</b>.</para>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. O <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Creator" /> propriedade foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém um inteiro de 32 <b>bits</b> que indica o aplicativo no qual esse objeto foi criado.</summary>
+        <value>Um inteiro de 32 <b>bits</b> que indica o aplicativo no qual esse objeto foi criado.</value>
+        <remarks><para>Somente leitura <b>long</b>.</para>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. A propriedade foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo tem um código de criador de <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Creator" /> quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DateRange">
@@ -192,16 +174,14 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define o intervalo de datas do grupo de minigráficos.</summary>
+        <summary>Obtém ou define o intervalo de datas para o grupo de minigráficos.</summary>
         <value>O intervalo de datas do grupo de minigráficos.</value>
-        <remarks>
-          <para>Raed/gravação.</para>
+        <remarks><para>Raed/write.</para>
           <para>Para limpar o intervalo de datas, configure esta propriedade como uma cadeia de caracteres vazia.</para>
           <para>O intervalo de datas deve ser um intervalo dimensional contínuo.</para>
-          <para>O intervalo de datas pode estar localizado em uma planilha diferente da <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> e <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" /> propriedades.</para>
+          <para>O intervalo de datas pode estar localizado em uma planilha diferente da <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> planilha e das <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" /> propriedades.</para>
           <para>No intervalo de datas, células vazias e valores que não sejam de data não são exibidos.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -255,12 +235,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlDisplayBlanksAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define a forma com que as células vazias são plotadas em um gráfico.</summary>
-        <value>Especifica a forma que as células vazias são plotadas em um gráfico.</value>
-        <remarks>
-          <para>Essa propriedade pode ser uma do <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayBlanksAs" /> constantes. Leitura/gravação.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém ou define a maneira como as células em branco são plotadas em um gráfico.</summary>
+        <value>Especifica a maneira como as células em branco são plotadas em um gráfico.</value>
+        <remarks><para>Essa propriedade pode ser uma das <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayBlanksAs" /> constantes. Leitura/gravação.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayHidden">
@@ -289,15 +267,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Especifica se as células ocultas são plotadas no grupo de minigráficos.</summary>
-        <value>
-          <b>true</b> se as células ocultas são plotadas no grupo de minigráficos; Caso contrário, <b>false</b>.</value>
-        <remarks>
-          <para>Leitura/gravação.</para>
+        <summary>Especifica se as células ocultas são plotadas no grupo de sparklines.</summary>
+        <value><b>true</b> se as células ocultas são plotadas no grupo de sparklines; caso contrário, <b>false</b>.</value>
+        <remarks><para>Leitura/gravação.</para>
           <para>
-            <b>true</b> se as células ocultas forem mostradas no grupo de minigráficos.</para>
-          <para></para>
-        </remarks>
+            <b>true</b> se células ocultas são mostradas no grupo de sparklines.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -328,7 +303,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>Retorna <see cref="T:System.Collections.IEnumerator" />.</returns>
+        <returns>Retorna <see cref="T:System.Collections.IEnumerator" /> .</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -360,7 +335,7 @@
       <Docs>
         <param name="Index">Valor de índice do minigráfico.</param>
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" /> objeto.</summary>
-        <value>Retorna <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" />.</value>
+        <value>Retorna <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -390,12 +365,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define a espessura da minigráficos no grupo de minigráficos.</summary>
-        <value>A espessura da minigráficos no grupo de minigráficos.</value>
-        <remarks>
-          <para>Leitura/gravação.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém ou define a espessura dos minigráficos do grupo de minigráficos.</summary>
+        <value>A espessura dos sparklines no grupo de sparklines.</value>
+        <remarks><para>Leitura/gravação.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -424,17 +397,15 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define o <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa o local do grupo de minigráficos.</summary>
-        <value>O <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa o local do grupo de minigráficos.</value>
-        <remarks>
-          <para>Leitura/gravação.</para>
+        <summary>Obtém ou define <see cref="T:Microsoft.Office.Interop.Excel.Range" /> o objeto que representa o local do grupo de sparklines.</summary>
+        <value>O <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa o local do grupo de sparklines.</value>
+        <remarks><para>Leitura/gravação.</para>
           <para>Todos os minigráficos de um grupo de minigráficos devem ficar localizados em uma mesma planilha, mas os dados de origem do grupo de minigráficos podem ficar em uma planilha ou pasta de trabalho diferente.</para>
-          <para>O tamanho do intervalo que representa o <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> propriedade deve ser igual ao número de linhas ou colunas no <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" /> propriedade para o <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> objeto.</para>
+          <para>O tamanho do intervalo que representa a propriedade deve ser igual ao número de linhas ou <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> colunas na <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> objeto.</para>
           <para>Um intervalo contínuo associado a um grupo de minigráficos só pode ser unidimensional. Se o intervalo não for contínuo, cada célula deve ser especificada individualmente.</para>
           <para>
-            <b>Observação</b>: não use o <see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" /> método para criar um intervalo não contínuo, pois o <see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" /> método retorna uma referência de intervalo único.</para>
-          <para></para>
-        </remarks>
+            <b>Observação:</b>não use o método para criar um intervalo não contínuo porque o método retorna uma <see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" /> referência de intervalo <see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" /> único.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Modify">
@@ -461,7 +432,7 @@
         <Parameter Name="SourceData" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Location">O <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa o local do grupo de minigráficos.</param>
+        <param name="Location">O <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa o local do grupo de sparklines.</param>
         <param name="SourceData">O intervalo que representa os dados de origem do grupo de minigráficos.</param>
         <summary>Define o local e os dados de origem do grupo de minigráficos.</summary>
         <remarks>To be added.</remarks>
@@ -518,8 +489,8 @@
         <Parameter Name="Location" Type="Microsoft.Office.Interop.Excel.Range" />
       </Parameters>
       <Docs>
-        <param name="Location">O <see cref="T:Microsoft.Office.Interop.Excel.Range" /> que representa o local do grupo de minigráficos.</param>
-        <summary>Define o associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto para modificar o local do grupo de minigráficos.</summary>
+        <param name="Location">O <see cref="T:Microsoft.Office.Interop.Excel.Range" /> que representa o local do grupo de sparklines.</param>
+        <summary>Define o objeto associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> para modificar o local do grupo de sparklines.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -576,10 +547,8 @@
       <Docs>
         <summary>Obtém o objeto pai do objeto especificado.</summary>
         <value>O objeto pai do objeto especificado.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PlotBy">
@@ -608,14 +577,12 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSparklineRowCol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define como plotar o Minigráfico quando os dados no qual ele se baseia estiverem em um intervalo em forma de quadrado.</summary>
+        <summary>Obtém ou define como plotar o sparkline quando os dados nos quais ele se baseia estão em um intervalo em forma de quadrado.</summary>
         <value>Especifica como plotar o minigráfico quando os dados nos quais ele é baseado estão em um intervalo de formato quadrado.</value>
-        <remarks>
-          <para>Leitura/gravação.</para>
+        <remarks><para>Leitura/gravação.</para>
           <para>Esta propriedade só poderá ser definida se os dados nos quais se baseia o minigráfico estiverem em um intervalo em forma de quadrado, por exemplo se os dados estiverem no intervalo A1:B2.</para>
-          <para>O valor padrão para os dados em um intervalo em forma de quadrado sp é plote os dados por linhas (<see cref="F:Microsoft.Office.Interop.Excel.XlSparklineRowCol.xlSparklineRowsSquare" />).</para>
-          <para></para>
-        </remarks>
+          <para>O valor padrão para dados sp em um intervalo em forma de quadrado é plotar os dados por linhas ( <see cref="F:Microsoft.Office.Interop.Excel.XlSparklineRowCol.xlSparklineRowsSquare" /> ).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Points">
@@ -643,11 +610,9 @@
       <Docs>
         <summary>Obtém a posição do nó especificado como um par de coordenadas. Cada coordenada é expressa em pontos.</summary>
         <value>A posição do nó especificado como um par de coordenadas.</value>
-        <remarks>
-          <para>Um par de coordenadas é um par de valores que representam as coordenadas x e y de um ponto são armazenados em uma matriz bidimensional que contém coordenadas para vários pontos.</para>
-          <para>Esta propriedade é somente leitura. Use o <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" /> método para definir o valor dessa propriedade.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Um par de coordenadas é um par de valores que representa as coordenadas x e y de um ponto armazenado em uma matriz bidimensional que pode conter coordenadas para muitos pontos.</para>
+          <para>Essa propriedade é somente leitura. Use o <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" /> método para definir o valor dessa propriedade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SeriesColor">
@@ -673,12 +638,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.FormatColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> object que representa a cor da série principal para o grupo de minigráficos.</summary>
-        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> object que representa a cor da série principal para o grupo de minigráficos.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> um objeto que representa a cor da série principal do grupo de sparklines.</summary>
+        <value>Um <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> objeto que representa a cor da série principal do grupo de sparklines.</value>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceData">
@@ -707,14 +670,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define o intervalo que contém os dados de origem para o grupo de minigráficos.</summary>
-        <value>O intervalo que contém os dados de origem para o grupo de minigráficos.</value>
-        <remarks>
-          <para>Leitura/gravação.</para>
-          <para>O número de linhas ou colunas do intervalo de dados de origem deve ser igual ao número de células no <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> intervalo de propriedade.</para>
+        <summary>Obtém ou define o intervalo que contém os dados de origem para o grupo de sparklines.</summary>
+        <value>O intervalo que contém os dados de origem do grupo de sparklines.</value>
+        <remarks><para>Leitura/gravação.</para>
+          <para>O número de linhas ou colunas no intervalo de dados de origem deve ser igual ao número de células no intervalo <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> de propriedades.</para>
           <para>O intervalo da fonte de dados de um único minigráfico do grupo de minigráficos deve ser contínuo.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -743,12 +704,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSparkType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define o tipo de Minigráfico para o grupo.</summary>
-        <value>O tipo de Minigráfico para o grupo.</value>
-        <remarks>
-          <para>Leitura/gravação.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém ou define o tipo de minigráfico do grupo.</summary>
+        <value>O tipo de sparkline do grupo.</value>
+        <remarks><para>Leitura/gravação.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

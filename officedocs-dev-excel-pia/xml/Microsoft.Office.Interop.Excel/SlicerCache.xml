@@ -1,13 +1,5 @@
 <Type Name="SlicerCache" FullName="Microsoft.Office.Interop.Excel.SlicerCache">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a96b54b98889ea92252a13d6047f49b294863580" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20579587" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SlicerCache" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a96b54b98889ea92252a13d6047f49b294863580" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010245" /></Metadata><TypeSignature Language="C#" Value="public interface SlicerCache" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SlicerCache" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SlicerCache" />
   <TypeSignature Language="VB.NET" Value="Public Interface SlicerCache" />
@@ -29,12 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa o estado atual do filtro de uma segmentação de dados e informações sobre quais <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> ou <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> a segmentação de dados está conectada.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.SlicerCaches" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> objeto para acessar a coleção de <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objetos em uma pasta de trabalho.</para>
-      <para>Cada segmentação de dados tem uma base <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> object que representa os itens exibidos na segmentação de dados e o estado atual de interface de usuário dos blocos exibida com suas legendas de item correspondente. Cada controle da segmentação de dados que o usuário vê no Excel é representado por um <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto que tem um <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto associado a ela.</para>
-      <para></para>
-    </remarks>
+    <summary>Representa o estado atual do filtro para uma slicer e informações sobre a qual <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> ou <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> a slicer está conectada.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel._Workbook.SlicerCaches" /> propriedade do objeto para acessar a coleção de objetos em uma área de <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> trabalho.</para>
+      <para>Cada slicer tem um objeto base que representa os itens exibidos na slicer e o estado atual da interface do usuário dos blocos exibidos com suas legendas <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> de item correspondentes. Cada controle de slicer que o usuário vê no Excel é representado por um objeto que tem <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> um objeto associado a <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> ele.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,12 +50,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usado sem um qualificador de objeto, essa propriedade obtém um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel. Quando usado com um qualificador de objeto, essa propriedade obtém um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o criador do objeto especificado.</summary>
+        <summary>Quando usada sem um qualificador de objeto, essa propriedade obtém <see cref="T:Microsoft.Office.Interop.Excel.Application" /> um objeto que representa o aplicativo Microsoft Excel. Quando usada com um qualificador de objeto, essa propriedade obtém um objeto que representa o <see cref="T:Microsoft.Office.Interop.Excel.Application" /> criador do objeto especificado.</summary>
         <value>Um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearAllFilters">
@@ -89,7 +77,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Limpa o filtro de segmentação de dados ou linha do tempo, dependendo do tipo de cache de segmentação de dados.</summary>
+        <summary>Limpa o filtro para a slicer ou linha do tempo, dependendo do tipo de cache da slicer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,7 +102,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Limpa o filtro para uma linha de tempo (filtro de data).</summary>
+        <summary>Limpa o filtro para uma linha do tempo (filtro de data).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,10 +128,8 @@
       <Parameters />
       <Docs>
         <summary>Limpa a filtragem de todas as segmentações de dados associadas ao cache da segmentação de dados especificada.</summary>
-        <remarks>
-          <para>Se você desmarcar a filtragem de uma segmentação de dados usando o <see cref="M:Microsoft.Office.Interop.Excel.SlicerCache.ClearManualFilter" /> método, mas um ou mais segmentações de dados são multifiltragem dados em que a segmentação de dados, alguns itens na primeira segmentação de dados permanecerá desabilitadas. Por exemplo, se você tiver uma segmentação de dados do cliente e o país que estão entre filtrada e executar ActiveWorkbook.SlicerCaches("Slicer_Customer"). ClearManualFilter, todos os itens na segmentação de dados do cliente não ficará disponíveis até você executar ActiveWorkbook.SlicerCaches("Slicer_Country"). ClearManualFilter. Para obter mais informações sobre filtragem cruzada, consulte o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> propriedade.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se você limpar a filtragem de uma slicer usando o método, mas uma ou mais slicers estão filtrando dados cruzados nessa slicer, alguns itens na primeira slicer permanecerão es <see cref="M:Microsoft.Office.Interop.Excel.SlicerCache.ClearManualFilter" /> cinza. Por exemplo, se você tiver uma slicer Customer e Country que são filtradas de forma cruzada e executar ActiveWorkbook.SlicerCaches("Slicer_Customer"). ClearManualFilter, todos os itens na slicer Customer não serão disponibilizados até que você execute ActiveWorkbook.SlicerCaches("Slicer_Country"). ClearManualFilter. Para obter mais informações sobre filtragem cruzada, consulte a <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> propriedade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -169,13 +155,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um <b>inteiro</b> de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
-        <value>De 32 bits <b>inteiro</b> que indica o aplicativo no qual esse objeto foi criado.</value>
-        <remarks>
-          <para>Somente leitura <b>long</b>.</para>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. O <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.Creator" /> propriedade foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém um inteiro de 32 <b>bits</b> que indica o aplicativo no qual esse objeto foi criado.</summary>
+        <value>Um inteiro de 32 <b>bits</b> que indica o aplicativo no qual esse objeto foi criado.</value>
+        <remarks><para>Somente leitura <b>long</b>.</para>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. A propriedade foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo tem um código de criador de <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.Creator" /> quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CrossFilterType">
@@ -204,15 +188,13 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define se uma segmentação de dados estiverem participando multifiltragem com outras segmentações de dados que compartilham o mesmo cache de segmentação de dados e sobre como a filtragem cruzada é exibida.</summary>
-        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType" /> objeto.</value>
-        <remarks>
-          <para>Leitura/gravação.</para>
+        <summary>Obtém ou define se uma slicer está participando da filtragem cruzada com outras slicers que compartilham o mesmo cache de slicer e como a filtragem cruzada é exibida.</summary>
+        <value>Um <see cref="T:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType" /> objeto.</value>
+        <remarks><para>Leitura/gravação.</para>
           <para>Se mais de uma segmentação de dados estiver associada à mesma Tabela Dinâmica, por padrão, se os itens usados para filtragem em uma segmentação de dados não tiverem dados correspondentes em outra segmentação de dados, esses itens ficarão esmaecidos. Por exemplo, se você tiver a segmentação de dados Country e uma segmentação de dados State, e clicar em um país na segmentação de dados Country, todos os estados que não estiverem nesse país ficarão esmaecidos. Esse recurso é chamado de "filtragem cruzada".</para>
-          <para>As configurações de interface do usuário que correspondem à configuração do <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> são de propriedade a indicar visualmente os itens sem dados e Mostrar itens sem dados último caixas de seleção na caixa de diálogo Configurações de segmentação de dados. Definindo o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> propriedade a ser <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithDataAtTop" /> corresponde à seleção de ambos os indicar visualmente os itens sem dados e Mostrar itens sem dados última caixas de seleção. Definindo o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> propriedade <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithNoData" /> corresponde à seleção de somente a indicar visualmente os itens cujo nenhuma caixa de seleção de dados. Desmarcar ambas as caixas de seleção corresponde à configuração de <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> propriedade <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerNoCrossFilter" />.</para>
-          <para>Fontes de dados OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) não são compatíveis com o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto. Para fontes de dados OLAP, use o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> do objeto, em vez disso.</para>
-          <para></para>
-        </remarks>
+          <para>As configurações da interface do usuário que correspondem à configuração da propriedade são os itens visualmente indicados sem dados e Mostrar itens sem dados por último na caixa de diálogo Configurações da <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> Slicer. A definição da propriedade corresponde à seleção dos itens visualmente indicados sem dados e da última caixa de seleção Mostrar itens <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithDataAtTop" /> sem dados. Definir a propriedade para corresponder à seleção apenas da caixa de seleção Indicar itens sem dados <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithNoData" /> visualmente. Limpar as duas caixas de seleção corresponde à <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> definição da propriedade como <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerNoCrossFilter" /> .</para>
+          <para>Fontes de dados OLAP ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) não são suportados pela <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto. Para fontes de dados OLAP, use <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> a propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -237,10 +219,8 @@
       <Parameters />
       <Docs>
         <summary>Excluir o cache da segmentação de dados especificada e as segmentações de dados associadas a ele.</summary>
-        <remarks>
-          <para>Para excluir uma determinada segmentação de dados independentemente do cache de segmentação de dados, use o <see cref="M:Microsoft.Office.Interop.Excel.Slicer.Delete" /> método do <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> do objeto em vez disso.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Para excluir uma determinada slicer independentemente do cache da slicer, use <see cref="M:Microsoft.Office.Interop.Excel.Slicer.Delete" /> o método do <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FilterCleared">
@@ -266,7 +246,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna se o estado de filtro de segmentação de dados ou do cronograma está desmarcado. <b>Boolean</b> (<b>bool</b> em c#). Somente leitura</summary>
+        <summary>Retorna se a slicer ou o estado do filtro de linha do tempo está limpo. <b>Booliana</b> (<b>booleano</b> em C#). Somente leitura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -294,8 +274,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém o índice do objeto <b>SlicerCache</b> especificado no <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> conjunto.</summary>
-        <value>Retorna <see cref="T:System.Int32" />.</value>
+        <summary>Obtém o índice do objeto <b>SlicerCache</b> especificado na <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> coleção.</summary>
+        <value>Retorna <see cref="T:System.Int32" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -322,8 +302,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o cache de segmentação de dados é para uma segmentação de dados em uma tabela. <b>False</b> caso contrário. <b>Boolean</b> (<b>bool</b> em c#) Somente leitura</summary>
+        <summary><b>True</b> se o cache da slicer for para uma slicer em uma tabela. <b>Caso contrário, false.</b> <b>Boolean</b> (<b>bool</b> em C#) Somente leitura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -351,7 +330,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ListObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um objeto <b>ListObject</b> para o <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> objeto. Somente leitura</summary>
+        <summary>Retorna um <b>objeto ListObject</b> para o <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> objeto. Somente leitura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -382,12 +361,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define o nome do cache de segmentação de dados.</summary>
-        <value>O nome do cache de segmentação de dados.</value>
-        <remarks>
-          <para>Nome do cache de segmentação de dados deve ser exclusivo no namespace da pasta de trabalho. Por padrão, o nome atribuído a um cache de segmentação de dados é Slicer_ seguido do nome do campo de tabela dinâmica do cache de segmentação de dados está associado. Por exemplo, se a segmentação de dados está associada com o campo da categoria de produto na tabela dinâmica, o nome padrão será Slicer_Product_Category (espaços no nome de campo são substituídos por caracteres de sublinhado). Se houver mais de um campo de categoria de produto na mesma pasta de trabalho com uma segmentação de dados associado a ela, ou alguma outra entidade nomeada na pasta de trabalho com o nome Slicer_Product_Category, o Excel irá acrescentar um número após o nome para produzir um nome exclusivo , como Slicer_Product_Category1.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém ou define o nome do cache da slicer.</summary>
+        <value>O nome do cache da slicer.</value>
+        <remarks><para>O nome do cache de segmentação de dados precisa ser exclusivo no namespace de pasta de trabalho. Por padrão, o nome atribuído a um cache de segmentação de dados é Slicer_ seguido do nome do campo da Tabela Dinâmica ao qual o cache de segmentação de dados está associado. Por exemplo, se a segmentação de dados estiver associada ao campo Product Category na Tabela Dinâmica, o nome padrão será Slicer_Product_Category (quaisquer espaços no nome do campo serão subsituídos por caracteres de sublinhado). Se houver mais de um campo De categoria de produto na mesma planilha com uma slicer associada a ele ou alguma outra entidade nomeada na planilha com o nome Slicer_Product_Category, o Excel irá anexar um número após o nome para produzir um nome exclusivo, como Slicer_Product_Category1.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OLAP">
@@ -413,15 +390,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém se a segmentação de dados associada ao cache de segmentação de dados especificada se baseia em uma fonte de dados OLAP.</summary>
-        <value>
-          <b>true</b> se a segmentação de dados associada ao cache de segmentação de dados especificada se baseia em uma fonte de dados OLAP; Caso contrário, <b>false</b>.</value>
-        <remarks>
-          <para>Somente leitura.</para>
+        <summary>Obtém se a slicer associada ao cache de dados especificado é baseada em uma fonte de dados OLAP.</summary>
+        <value><b>true</b> se a slicer associada ao cache de dados especificado se baseia em uma fonte de dados OLAP; caso contrário, <b>false</b>.</value>
+        <remarks><para>Somente leitura.</para>
           <para>
-            <b>true</b>, se a segmentação de dados se baseia em uma fonte de dados OLAP; Caso contrário <b>false</b>.</para>
-          <para></para>
-        </remarks>
+            <b>true</b>, se a slicer for baseada em uma fonte de dados OLAP; caso <b>contrário, false</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -447,12 +421,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém o pai <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> objeto para especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto.</summary>
-        <value>O pai <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> objeto para especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém o <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> objeto pai do objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> especificado.</summary>
+        <value>O objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> pai do objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> especificado.</value>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotTables">
@@ -478,13 +450,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SlicerPivotTables</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> coleção que contém informações sobre as tabelas dinâmicas do cache de segmentação de dados está filtrando no momento.</summary>
-        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> coleção que contém informações sobre as tabelas dinâmicas do cache de segmentação de dados está filtrando no momento.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para>O <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> coleção retornada pelo <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.PivotTables" /> propriedade estará vazia se a segmentação de dados associado com o especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> não estiver conectada a nenhuma tabela dinâmica.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> uma coleção que contém informações sobre as Tabelas Dinâmicas que o cache de dados está filtrando no momento.</summary>
+        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> coleção que contém informações sobre as Tabelas Dinâmicas que o cache de dados está filtrando no momento.</value>
+        <remarks><para>Somente leitura.</para>
+          <para>A coleção retornada pela propriedade estará vazia se a slicer associada ao especificado não estiver conectada <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.PivotTables" /> a nenhuma Tabela <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> Dinâmica.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RequireManualUpdate">
@@ -513,7 +483,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>True quando manual de atualizações do cache de segmentação de dados necessários. Boolean (<b>bool</b> em c#) leitura/gravação</summary>
+        <summary>True quando são necessárias atualizações manuais do cache da slicer. Booliana (<b>booleano</b> em C#) Leitura/gravação</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -544,15 +514,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define se a segmentação de dados conectada para os itens de exibição de cache de segmentação de dados especificada que foram excluídos no PivotCache correspondente.</summary>
-        <value>
-          <b>true</b> se a segmentação de dados conectada ao cache de segmentação de dados especificado exibir itens que foram excluídos no PivotCache correspondente; Caso contrário, <b>false</b>. O padrão é <b>true</b>.</value>
-        <remarks>
-          <para>Leitura/gravação.</para>
-          <para>Quando o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> propriedade estiver definida como <b>true</b> (o padrão), os itens que foram excluídos nos dados de origem são exibidos na segmentação de dados conectada ao cache de segmentação de dados especificada. O <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> propriedade corresponde à configuração dos Mostrar itens excluídos da caixa de seleção de fonte de dados, na caixa de diálogo Configurações de segmentação de dados.</para>
-          <para>O <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> propriedade só se aplica a segmentações de dados que se baseiam em intervalos da pasta de trabalho ou listas (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />), ou para segmentações de dados que se baseiam em fontes de dados relacionais (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" />e <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>false</b>). Uma tentativa de definir o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> propriedade segmentações de dados que estão conectados a tabelas dinâmicas com base em fontes de dados OLAP externos (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) gera um erro de tempo de execução.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém ou define se as slicers conectadas ao cache de slicer especificado exibem itens que foram excluídos do PivotCache correspondente.</summary>
+        <value><b>true</b> se as slicers conectados ao cache de slicer especificado exibem itens que foram excluídos do PivotCache correspondente; caso contrário, <b>false</b>. The default is <b>true</b>.</value>
+        <remarks><para>Leitura/gravação.</para>
+          <para>Quando a propriedade é definida como true (o padrão), os itens que foram excluídos dos dados de origem são exibidos nas slicers conectadas ao cache de <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> slicer especificado. <b></b> A propriedade corresponde à configuração da caixa de seleção Mostrar itens excluídos da fonte de dados na caixa de diálogo Configurações <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> da Slicer.</para>
+          <para>A <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> propriedade só se aplica a slicers baseadas em listas ou intervalos de trabalho ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />) ou para as slicers baseadas em fontes de dados relacionais ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" /> e <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>false</b>). Tentar definir a propriedade para as slicers que estão conectadas a Tabelas Dinâmicas com base em fontes de dados <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> OLAP externas ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) gera um erro em tempo de executar.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SlicerCacheLevels">
@@ -578,13 +545,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SlicerCacheLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém a coleção de <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objetos que representam os níveis de uma hierarquia OLAP na qual o cache de segmentação de dados especificada se baseia.</summary>
-        <value>A coleção de <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objetos que representam os níveis de uma hierarquia OLAP na qual o cache de segmentação de dados especificada se baseia.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para>O <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerCacheLevels" /> propriedade só se aplica a segmentações de dados que filtram fontes de dados OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>). A tentativa de acessar essa propriedade de segmentação de dados não-OLAP irá gerar um erro em tempo de execução.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém a coleção de objetos que representam os níveis de uma hierarquia OLAP na qual <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> o cache de slicer especificado se baseia.</summary>
+        <value>A coleção de objetos que representa os níveis de uma hierarquia OLAP na qual <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> o cache de slicer especificado se baseia.</value>
+        <remarks><para>Somente leitura.</para>
+          <para>A <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerCacheLevels" /> propriedade só se aplica a slicers que filtram fontes de dados OLAP ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>). Tentar acessar essa propriedade das segmentações de dados não OLAP gerará um erro de tempo de execução.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SlicerCacheType">
@@ -610,7 +575,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSlicerCacheType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o tipo de cache de segmentação de dados – segmentação de dados ou linha do tempo. Somente leitura</summary>
+        <summary>Retorna o tipo do cache da slicer – a slicer ou a linha do tempo. Somente leitura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -638,13 +603,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SlicerItems</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> coleção que contém a coleção de todos os itens no cache de segmentação de dados.</summary>
-        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> coleção que contém a coleção de todos os itens no cache de segmentação de dados.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para>O <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto só é aplicável para segmentações de dados que se baseiam em tabelas dinâmicas com base nas listas ou intervalos de pasta de trabalho (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />), ou para segmentações de dados que se baseiam em tabelas dinâmicas com base em fontes de dados relacionais (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" />e <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>false</b>). Tentativa de acesso a <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> propriedade segmentações de dados que estão conectados a uma fonte de dados OLAP externa (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) gera um erro de tempo de execução. Para fontes de dados OLAP, use o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> do objeto em vez disso.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> uma coleção que contém a coleção de todos os itens no cache da slicer.</summary>
+        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> coleção que contém a coleção de todos os itens no cache da slicer.</value>
+        <remarks><para>Somente leitura.</para>
+          <para>A propriedade do objeto só é aplicável para as <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> slicers baseadas em Tabelas Dinâmicas com base em listas ou intervalos de trabalho <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />) ou para as slicers baseadas em Tabelas Dinâmicas com base em fontes de dados relacionais ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" /> e <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>false</b>). Tentar acessar a <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> propriedade para as slicers que estão conectadas a uma fonte de dados OLAP externa ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) gera um erro em tempo de executar. Para fontes de dados OLAP, use <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" /> a propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Slicers">
@@ -670,12 +633,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Slicers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> coleção que contém a coleção de <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objetos associados ao <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.</summary>
-        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> coleção que contém a coleção de <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objetos associados ao <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> uma coleção que contém a coleção de objetos <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> associados ao especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .</summary>
+        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> coleção que contém a coleção de objetos <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> associados ao <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> especificado.</value>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SortItems">
@@ -704,14 +665,12 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSlicerSort</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define se os itens na segmentação de dados são classificados.</summary>
-        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.XlSlicerSort" /> objeto.</value>
-        <remarks>
-          <para>Leitura/gravação.</para>
-          <para>A configuração padrão dessa propriedade é <see cref="F:Microsoft.Office.Interop.Excel.XlSortOrder.xlAscending" />.</para>
-          <para>O <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortItems" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto só se aplica a segmentações de dados que se baseiam em tabelas dinâmicas que estão conectadas aos intervalos de pasta de trabalho ou listas (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />). Tentativa de acesso a <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortItems" /> propriedade segmentações de dados que estão conectados a uma fontes de dados OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) gera um erro de tempo de execução. Para fontes de dados OLAP, use o <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SortItems" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> do objeto em vez disso.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém ou define se os itens na slicer são organizados.</summary>
+        <value>Um <see cref="T:Microsoft.Office.Interop.Excel.XlSlicerSort" /> objeto.</value>
+        <remarks><para>Leitura/gravação.</para>
+          <para>A configuração padrão dessa propriedade é <see cref="F:Microsoft.Office.Interop.Excel.XlSortOrder.xlAscending" /> .</para>
+          <para>A propriedade do objeto só se aplica a <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortItems" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> slicers baseadas em Tabelas Dinâmicas conectadas a listas ou intervalos de trabalho ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />). Tentar acessar a <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortItems" /> propriedade de slicers que estão conectadas a fontes de dados OLAP ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) gera um erro em tempo de executar. Para fontes de dados OLAP, use <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SortItems" /> a propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SortUsingCustomLists">
@@ -740,15 +699,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define se os itens no cache de segmentação de dados especificado serão classificados de listas personalizadas.</summary>
-        <value>
-          <b>true</b> se itens no cache de segmentação de dados especificado serão classificados de listas personalizadas; Caso contrário, <b>false</b>.</value>
-        <remarks>
-          <para>Leitura/gravação.</para>
-          <para>O <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortUsingCustomLists" /> propriedade corresponde à configuração das listas de uso personalizado, quando a caixa de seleção da caixa de diálogo Configurações de segmentação de dados de classificação. Para acessar as listas personalizadas associadas com a instalação atual do Excel, clique na guia arquivo, clique em Opções, clique em Avançado e, em seguida, clique em Editar listas personalizadas em categoria geral.</para>
-          <para>O <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortUsingCustomLists" /> propriedade só se aplica a segmentações de dados que estão filtrando fontes de dados não-OLAP. A tentativa de acessar essa propriedade de um cache de segmentação de dados que está filtrando uma fonte de dados OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) gera um erro de tempo de execução.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém ou define se os itens no cache de slicer especificado serão organizados pelas listas personalizadas.</summary>
+        <value><b>true</b> se os itens no cache de slicer especificado serão organizados pelas listas personalizadas; caso contrário, <b>false</b>.</value>
+        <remarks><para>Leitura/gravação.</para>
+          <para>A propriedade corresponde à configuração da caixa de seleção Usar Listas Personalizadas ao classificar da caixa de diálogo Configurações <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortUsingCustomLists" /> da Slicer. Para acessar as listas personalizadas associadas à instalação atual do Excel, clique na guia Arquivo, clique em Opções, clique em Avançado e clique em Editar Listas Personalizadas na categoria Geral.</para>
+          <para>A <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortUsingCustomLists" /> propriedade só se aplica a slicers que estão filtrando fontes de dados não OLAP. Tentar acessar essa propriedade a partir de um cache de dados que está filtrando uma fonte de dados OLAP ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) gera um erro em tempo de executar.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceName">
@@ -774,14 +730,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém o nome da fonte de dados que está conectada a segmentação de dados.</summary>
-        <value>O nome da fonte de dados a segmentação de dados está conectada a.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para>Segmentações de dados com base nos dados da pasta de trabalho (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />), ou segmentações de dados com base em dados externos não-OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" />e <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>false</b>), retorna o nome da coluna correspondente nos dados de origem.</para>
-          <para>Segmentações de dados OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>), retorna o nome exclusivo MDX da hierarquia a segmentação de dados se baseia em.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém o nome da fonte de dados à que a slicer está conectada.</summary>
+        <value>O nome da fonte de dados à que a slicer está conectada.</value>
+        <remarks><para>Somente leitura.</para>
+          <para>Para slicers com base em dados na área de trabalho ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />) ou slicers com base em dados externos não OLAP ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" /> e <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>false</b>), retorna o nome da coluna correspondente nos dados de origem.</para>
+          <para>Para as slicers OLAP ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>), retorna o nome exclusivo MDX da hierarquia em que a slicer se baseia.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceType">
@@ -807,13 +761,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotTableSourceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém o tipo de fonte de dados que está conectada a segmentação de dados.</summary>
-        <value>O tipo de fonte de dados a segmentação de dados está conectada a.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para>Somente o <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" /> e <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" /> tipos de fonte de dados são suportados.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém o tipo de fonte de dados à qual a slicer está conectada.</summary>
+        <value>O tipo de fonte de dados à qual a slicer está conectada.</value>
+        <remarks><para>Somente leitura.</para>
+          <para>Somente os <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" /> tipos de fonte de dados e os tipos de fonte de dados são <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" /> suportados.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TimelineState">
@@ -839,7 +791,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TimelineState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>O estado de cronograma específica do objeto <b>SlicerCache</b> . Somente leitura</summary>
+        <summary>O estado específico da linha do tempo do <b>objeto SlicerCache.</b> Somente leitura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -867,13 +819,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SlicerItems</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> coleção que contém a coleção de todos os itens visíveis no cache de segmentação de dados especificada.</summary>
-        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> coleção que contém a coleção de todos os itens visíveis no cache de segmentação de dados especificada.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para>O <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItems" /> propriedade é aplicável somente para as segmentações de dados que se baseiam em tabelas dinâmicas com base nas listas ou intervalos de pasta de trabalho (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />). Tentativa de acesso a <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItems" /> propriedade segmentações de dados que estão conectados a uma fonte de dados OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) gera um erro de tempo de execução.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> uma coleção que contém a coleção de todos os itens visíveis no cache de slicer especificado.</summary>
+        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> coleção que contém a coleção de todos os itens visíveis no cache de slicer especificado.</value>
+        <remarks><para>Somente leitura.</para>
+          <para>A <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItems" /> propriedade só é aplicável para as slicers baseadas em Tabelas Dinâmicas com base em listas ou intervalos de trabalho ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />). Tentar acessar a <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItems" /> propriedade para as slicers que estão conectadas a uma fonte de dados OLAP ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) gera um erro em tempo de executar.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleSlicerItemsList">
@@ -902,13 +852,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define a lista de nomes exclusivos de MDX para membros em todos os níveis da hierarquia onde a filtragem manual está aplicada.</summary>
-        <value>A lista de nomes exclusivos de MDX para membros em todos os níveis da hierarquia onde a filtragem manual está aplicada.</value>
-        <remarks>
-          <para>Leitura/gravação.</para>
-          <para>O <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItemsList" /> propriedade só é aplicável segmentações de dados que se baseiam em fontes de dados OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>).</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém ou define a lista de nomes exclusivos MDX para membros em todos os níveis da hierarquia onde a filtragem manual é aplicada.</summary>
+        <value>A lista de nomes exclusivos MDX para membros em todos os níveis da hierarquia onde a filtragem manual é aplicada.</value>
+        <remarks><para>Leitura/gravação.</para>
+          <para>A <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItemsList" /> propriedade só é aplicável para as slicers baseadas em fontes de dados OLAP ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkbookConnection">
@@ -934,13 +882,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object que representa a conexão de dados usado pela segmentação de dados especificada.</summary>
-        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object que representa a conexão de dados usado pela segmentação de dados especificada.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para>O <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.WorkbookConnection" /> propriedade só se aplica a segmentações de dados que se baseiam em fontes de dados externas (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" />). Tentativa de acesso a <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.WorkbookConnection" /> propriedade segmentações de dados que estão conectados a tabelas dinâmicas com base em intervalos da pasta de trabalho ou listas (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />) gera um erro em tempo de execução.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> um objeto que representa a conexão de dados usada pela slicer especificada.</summary>
+        <value>Um <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto que representa a conexão de dados usada pela slicer especificada.</value>
+        <remarks><para>Somente leitura.</para>
+          <para>A <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.WorkbookConnection" /> propriedade só se aplica a slicers baseadas em fontes de dados externas ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" />). Tentar acessar a <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.WorkbookConnection" /> propriedade para as slicers que estão conectadas a Tabelas Dinâmicas com base em listas ou intervalos de trabalho ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />) gera um erro em tempo de executar.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

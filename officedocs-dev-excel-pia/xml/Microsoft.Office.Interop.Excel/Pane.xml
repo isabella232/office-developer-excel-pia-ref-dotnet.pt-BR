@@ -1,13 +1,5 @@
 <Type Name="Pane" FullName="Microsoft.Office.Interop.Excel.Pane">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="88411cce6007dd3bdb19bfe1fbfa29a798d89eed" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586902" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Pane" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="88411cce6007dd3bdb19bfe1fbfa29a798d89eed" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011085" /></Metadata><TypeSignature Language="C#" Value="public interface Pane" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Pane" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Pane" />
   <TypeSignature Language="VB.NET" Value="Public Interface Pane" />
@@ -30,12 +22,10 @@
   </Attributes>
   <Docs>
     <summary>Representa um painel de uma janela.</summary>
-    <remarks>
-      <para>
-        <see cref="T:Microsoft.Office.Interop.Excel.Pane" />objetos só existem para planilhas e folhas de macro do Microsoft Excel 4.0. O <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> objeto é um membro do <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> conjunto. O <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> coleção contém todos os painéis mostrados em uma única janela.</para>
-      <para>Uso <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> (<paramref name="index" />), onde <paramref name="index" /> é o número de índice do painel, para retornar um único <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> objeto.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>
+        <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> existem somente para planilhas e folhas de macro do Microsoft Excel 4.0. O <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> objeto é um membro da <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> coleção. A <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> coleção contém todos os painéis mostrados em uma única janela.</para>
+      <para>Use <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> ( ), onde está o número de índice do <paramref name="index" /> <paramref name="index" /> painel, para retornar um único <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> objeto.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -61,10 +51,8 @@
       <Docs>
         <summary>Ativa o painel.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Se o painel não estiver na janela ativa, a janela à qual ele pertence também será ativada. Não é possível ativar um painel congelado.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o painel não estiver na janela ativa, a janela à qual ele pertence também será ativada. Não é possível ativar um painel congelado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -90,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,11 +108,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -180,22 +166,16 @@
         <Parameter Name="ToLeft" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Down">
-          <b>Objeto</b>de opcional. O número de páginas pelas quais rolar o conteúdo para baixo.</param>
-        <param name="Up">
-          <b>Objeto</b>de opcional. O número de páginas pelas quais rolar o conteúdo para cima.</param>
-        <param name="ToRight">
-          <b>Objeto</b>de opcional. O número de páginas pelas quais rolar o conteúdo para a direita.</param>
-        <param name="ToLeft">
-          <b>Objeto</b>de opcional. O número de páginas pelas quais rolar o conteúdo para a esquerda.</param>
+        <param name="Down">Objeto <b>opcional</b>. O número de páginas pelas quais rolar o conteúdo para baixo.</param>
+        <param name="Up">Objeto <b>opcional</b>. O número de páginas pelas quais rolar o conteúdo para cima.</param>
+        <param name="ToRight">Objeto <b>opcional</b>. O número de páginas pelas quais rolar o conteúdo para a direita.</param>
+        <param name="ToLeft">Objeto <b>opcional</b>. O número de páginas pelas quais rolar o conteúdo para a esquerda.</param>
         <summary>Rola o conteúdo da janela por páginas.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Se <paramref name="Down" /> e <paramref name="Up" /> forem especificados, o conteúdo da janela será rolado pela diferença dos argumentos. Por exemplo, se <paramref name="Down" /> é 3 e <paramref name="Up" /> é 6, o conteúdo será rolado para cima três páginas.</para>
-          <para>Se <paramref name="ToLeft" /> e <paramref name="ToRight" /> forem especificados, o conteúdo da janela será rolado pela diferença dos argumentos. Por exemplo, se <paramref name="ToLeft" /> é 3 e <paramref name="ToRight" /> é 6, o conteúdo será rolado para a direita três páginas.</para>
+        <remarks><para>Se e ambos são especificados, o conteúdo da janela é rolado <paramref name="Down" /> <paramref name="Up" /> pela diferença dos argumentos. Por exemplo, se <paramref name="Down" /> for 3 <paramref name="Up" /> e for 6, o conteúdo será rolado três páginas para cima.</para>
+          <para>Se e ambos são especificados, o conteúdo da janela é rolado <paramref name="ToLeft" /> <paramref name="ToRight" /> pela diferença dos argumentos. Por exemplo, se <paramref name="ToLeft" /> for 3 <paramref name="ToRight" /> e for 6, o conteúdo será rolado para a direita em três páginas.</para>
           <para>Qualquer dos argumentos pode ser um número negativo.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -221,7 +201,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado.</summary>
+        <summary>Retorna o objeto pai do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -251,9 +231,7 @@
       <Docs>
         <param name="Points">Local do pixel na tela.</param>
         <summary>Retorna ou define um ponto de pixel na tela.</summary>
-        <returns>
-          <b>Integer</b>
-        </returns>
+        <returns><b>Integer</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,9 +260,7 @@
       <Docs>
         <param name="Points">Local do ponto de início.</param>
         <summary>Retorna ou define o local do pixel na tela.</summary>
-        <returns>
-          <b>Integer</b>
-        </returns>
+        <returns><b>Integer</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,7 +290,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o número de coluna da extrema esquerda no painel.</summary>
+        <summary>Retorna ou define o número da coluna mais à esquerda no painel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -345,21 +321,14 @@
         <Parameter Name="Start" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Left">
-          <b>Integer</b>necessário. A posição horizontal do retângulo (em pontos) da borda esquerda do painel.</param>
-        <param name="Top">
-          <b>Integer</b>necessário. A posição vertical do retângulo (em pontos) da parte superior do painel.</param>
-        <param name="Width">
-          <b>Integer</b>necessário. A largura do retângulo, em pontos.</param>
-        <param name="Height">
-          <b>Integer</b>necessário. A altura do retângulo, em pontos.</param>
-        <param name="Start">
-          <b>Objeto</b>de opcional. <b>True</b> para que o canto superior esquerdo do retângulo aparecem no canto superior esquerdo do painel. <b>False</b> para que o canto inferior direito do retângulo aparecem no canto inferior direito do painel. O valor padrão é <b>True</b>.</param>
-        <summary>Rola o painel de forma que o conteúdo de uma área retangular específica sejam exibido no canto superior esquerdo ou inferior direito do painel.</summary>
-        <remarks>
-          <para>O <paramref name="Start" /> argumento é útil para orientar a exibição da tela quando o retângulo é maior do que o painel.</para>
-          <para></para>
-        </remarks>
+        <param name="Left">Obrigatório <b>Integer</b>. A posição horizontal do retângulo (em pontos) a partir da borda esquerda do painel.</param>
+        <param name="Top">Obrigatório <b>Integer</b>. A posição vertical do retângulo (em pontos) a partir da parte superior do painel.</param>
+        <param name="Width">Obrigatório <b>Integer</b>. A largura do retângulo em pontos.</param>
+        <param name="Height">Obrigatório <b>Integer</b>. A altura do retângulo em pontos.</param>
+        <param name="Start">Objeto <b>opcional</b>. <b>True</b> para que o canto superior esquerdo do retângulo apareça no canto superior esquerdo do painel. <b>False</b> para que o canto inferior direito do retângulo apareça no canto inferior direito do painel. O valor padrão é <b>True</b>.</param>
+        <summary>Rola o painel para que o conteúdo de uma área retangular especificada seja exibido no canto superior esquerdo ou inferior direito do painel.</summary>
+        <remarks><para>O <paramref name="Start" /> argumento é útil para orientar a exibição da tela quando o retângulo for maior que o painel.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollRow">
@@ -418,22 +387,16 @@
         <Parameter Name="ToLeft" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Down">
-          <b>Objeto</b>de opcional. O número de linhas pelas quais rolar o conteúdo para baixo.</param>
-        <param name="Up">
-          <b>Objeto</b>de opcional. O número de linhas pelas quais rolar o conteúdo para cima.</param>
-        <param name="ToRight">
-          <b>Objeto</b>de opcional. O número de colunas pelas quais rolar o conteúdo para a direita.</param>
-        <param name="ToLeft">
-          <b>Objeto</b>de opcional. O número de colunas pelas quais rolar o conteúdo para a esquerda.</param>
+        <param name="Down">Objeto <b>opcional</b>. O número de linhas pelas quais rolar o conteúdo para baixo.</param>
+        <param name="Up">Objeto <b>opcional</b>. O número de linhas pelas quais rolar o conteúdo para cima.</param>
+        <param name="ToRight">Objeto <b>opcional</b>. O número de colunas pelas quais rolar o conteúdo para a direita.</param>
+        <param name="ToLeft">Objeto <b>opcional</b>. O número de colunas pelas quais rolar o conteúdo para a esquerda.</param>
         <summary>Rola o conteúdo da janela por linhas ou colunas.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Se <paramref name="Down" /> e <paramref name="Up" /> forem especificados, o conteúdo da janela será rolado pela diferença dos argumentos. Por exemplo, se <paramref name="Down" /> é 3 e <paramref name="Up" /> é 6, o conteúdo será rolado para cima três linhas.</para>
-          <para>Se <paramref name="ToLeft" /> e <paramref name="ToRight" /> forem especificados, o conteúdo da janela será rolado pela diferença dos argumentos. Por exemplo, se <paramref name="ToLeft" /> é 3 e <paramref name="ToRight" /> é 6, o conteúdo será rolado para a direita três colunas.</para>
+        <remarks><para>Se e ambos são especificados, o conteúdo da janela é rolado <paramref name="Down" /> <paramref name="Up" /> pela diferença dos argumentos. Por exemplo, se <paramref name="Down" /> for 3 <paramref name="Up" /> e for 6, o conteúdo será rolado três linhas para cima.</para>
+          <para>Se e ambos são especificados, o conteúdo da janela é rolado <paramref name="ToLeft" /> <paramref name="ToRight" /> pela diferença dos argumentos. Por exemplo, se <paramref name="ToLeft" /> for 3 <paramref name="ToRight" /> e for 6, o conteúdo será rolado para a direita em três colunas.</para>
           <para>Qualquer um desses argumentos pode ser um número negativo.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleRange">
@@ -459,7 +422,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa o intervalo de células que estejam visíveis no painel. Se uma coluna ou linha estiver parcialmente visível, ela é incluída no intervalo.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa o intervalo de células visíveis no painel. Se uma coluna ou linha estiver parcialmente visível, ela será incluída no intervalo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

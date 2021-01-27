@@ -1,13 +1,5 @@
 <Type Name="Series" FullName="Microsoft.Office.Interop.Excel.Series">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3a8cc36d1324ac7595cb7a40f82c526876f56ea7" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20574827" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Series" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3a8cc36d1324ac7595cb7a40f82c526876f56ea7" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010427" /></Metadata><TypeSignature Language="C#" Value="public interface Series" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Series" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Series" />
   <TypeSignature Language="VB.NET" Value="Public Interface Series" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa uma série de um gráfico. O objeto <b>Series</b> é membro do <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> conjunto.</summary>
+    <summary>Representa uma série de um gráfico. O <b>objeto Series</b> é um membro da <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> coleção.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -93,7 +85,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -124,7 +116,7 @@
         <Parameter Name="ChartType" Type="Microsoft.Office.Interop.Excel.XlChartType" />
       </Parameters>
       <Docs>
-        <param name="ChartType">Necessário <see cref="T:Microsoft.Office.Interop.Excel.XlChartType" />. Um tipo de gráfico padrão.</param>
+        <param name="ChartType">Obrigatório. <see cref="T:Microsoft.Office.Interop.Excel.XlChartType" /> Um tipo de gráfico padrão.</param>
         <summary>Aplica um tipo de gráfico personalizado ou padrão a uma série.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -160,25 +152,16 @@
         <Parameter Name="Separator" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlDataLabelsType" />. O tipo de rótulo de dados a ser aplicado.</param>
-        <param name="LegendKey">
-          <b>Objeto</b>de opcional. <b>True</b> para mostrar o código da legenda ao lado do ponto. O valor padrão é <b>False</b>.</param>
-        <param name="AutoText">
-          <b>Objeto</b>de opcional. <b>True</b> se o objeto gerar automaticamente o texto adequado com base no conteúdo.</param>
-        <param name="HasLeaderLines">
-          <b>Objeto</b>de opcional. Para o <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> e <see cref="T:Microsoft.Office.Interop.Excel.Series" /> objetos, <b>True</b> se a série tiver linhas tracejadas.</param>
-        <param name="ShowSeriesName">
-          <b>Objeto</b>de opcional. O nome da série do rótulo de dados.</param>
-        <param name="ShowCategoryName">
-          <b>Objeto</b>de opcional. O nome da categoria do rótulo de dados.</param>
-        <param name="ShowValue">
-          <b>Objeto</b>de opcional. O valor do rótulo de dados.</param>
-        <param name="ShowPercentage">
-          <b>Objeto</b>de opcional. A porcentagem do rótulo de dados.</param>
-        <param name="ShowBubbleSize">
-          <b>Objeto</b>de opcional. O tamanho da bolha do rótulo de dados.</param>
-        <param name="Separator">
-          <b>Objeto</b>de opcional. O separador para o rótulo de dados.</param>
+        <param name="Type">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlDataLabelsType" /> . O tipo de rótulo de dados a ser aplicado.</param>
+        <param name="LegendKey">Objeto <b>opcional</b>. <b>True</b> para mostrar o código da legenda ao lado do ponto. O valor padrão é <b>False</b>.</param>
+        <param name="AutoText">Objeto <b>opcional</b>. <b>True</b> se o objeto gerar automaticamente o texto adequado com base no conteúdo.</param>
+        <param name="HasLeaderLines">Objeto <b>opcional</b>. Para o <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> objeto <see cref="T:Microsoft.Office.Interop.Excel.Series" /> e o <b>objeto, True</b> se a série tiver linhas de líderes.</param>
+        <param name="ShowSeriesName">Objeto <b>opcional</b>. O nome da série do rótulo de dados.</param>
+        <param name="ShowCategoryName">Objeto <b>opcional</b>. O nome da categoria do rótulo de dados.</param>
+        <param name="ShowValue">Objeto <b>opcional</b>. O valor do rótulo de dados.</param>
+        <param name="ShowPercentage">Objeto <b>opcional</b>. A porcentagem do rótulo de dados.</param>
+        <param name="ShowBubbleSize">Objeto <b>opcional</b>. O tamanho da bolha do rótulo de dados.</param>
+        <param name="Separator">Objeto <b>opcional</b>. O separador para o rótulo de dados.</param>
         <summary>Aplica rótulos de dados a um ponto, a uma série ou a todas as séries de um gráfico.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -210,8 +193,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se uma figura for aplicada ao final do ponto ou de todos os pontos na série. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> se uma figura for aplicada ao final do ponto ou de todos os pontos na série. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -242,8 +224,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se uma figura for aplicada à frente do ponto ou de todos os pontos na série. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> se uma figura for aplicada à frente do ponto ou de todos os pontos na série. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -274,8 +255,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se uma figura for aplicada aos lados do ponto ou de todos os pontos na série. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> se uma figura for aplicada aos lados do ponto ou de todos os pontos na série. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -306,12 +286,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAxisGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o grupo para a série ou grupo de gráficos especificado. Leitura/gravação <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" />.</summary>
+        <summary>Retorna o grupo da série ou do grupo de gráficos especificado. <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" />Leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para gráficos 3D, apenas <b>xlPrimary</b> é válida.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Para gráficos 3D, apenas <b>xlPrimary</b> é válida.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BarShape">
@@ -340,7 +318,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlBarShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a forma usada com o gráfico de colunas ou barras 3D. Leitura/gravação <see cref="T:Microsoft.Office.Interop.Excel.XlBarShape" />.</summary>
+        <summary>Retorna ou define a forma usada com o gráfico de colunas ou de barras 3D. <see cref="T:Microsoft.Office.Interop.Excel.XlBarShape" />Leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -371,7 +349,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Border" /> object que representa a borda do objeto.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Border" /> objeto que representa a borda do objeto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -402,12 +380,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um valor string que se refere às células da planilha que contém os dados de tamanho do gráfico de bolhas. Aplica-se somente a gráficos de bolha. <b>Objeto</b> de leitura/gravação.</summary>
+        <summary>Retorna ou define uma cadeia de caracteres que se refere às células da planilha que contêm os dados de tamanho do gráfico de bolhas. Aplica-se apenas a gráficos de bolhas. <b>Objeto</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Quando você retorna a referência da célula, ela retornará uma cadeia de caracteres que descreve as células em notação de estilo A1. Para definir os dados de tamanho do gráfico de bolhas, você deve usar a notação de estilo R1.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Quando você retorna a referência da célula, ela retornará uma cadeia descrevendo as células na notação de estilo A1. Para definir os dados de tamanho do gráfico de bolhas, você deve usar a notação de estilo R1.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartType">
@@ -436,12 +412,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o tipo de gráfico. Leitura/gravação <see cref="T:Microsoft.Office.Interop.Excel.XlChartType" />.</summary>
+        <summary>Retorna ou define o tipo de gráfico. <see cref="T:Microsoft.Office.Interop.Excel.XlChartType" />Leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Alguns tipos de gráfico não estão disponíveis para relatórios de tabela dinâmica.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Alguns tipos de gráfico não estão disponíveis para relatórios de tabela dinâmica.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearFormats">
@@ -519,12 +493,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. Somente <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabels">
@@ -549,15 +521,12 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>de opcional. O número do rótulo de dados.</param>
-        <summary>Retorna um objeto representando um único rótulo de dados (um <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> objeto) ou uma coleção de todos os rótulos de dados da série (um <see cref="T:Microsoft.Office.Interop.Excel.DataLabels" /> conjunto).</summary>
+        <param name="Index">Objeto <b>opcional</b>. O número do rótulo de dados.</param>
+        <summary>Retorna um objeto que representa um único rótulo de dados (um objeto) ou uma coleção de todos os rótulos de dados da série <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> (uma <see cref="T:Microsoft.Office.Interop.Excel.DataLabels" /> coleção).</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Se a série tiver a opção <b>Mostrar valor</b> ativada para os rótulos de dados, a coleção retornada poderá conter até um rótulo para cada ponto. Os rótulos de dados podem ser ativados ou desativados para pontos individuais na série.</para>
+        <remarks><para>Se a série tiver a opção <b>Mostrar valor</b> ativada para os rótulos de dados, a coleção retornada poderá conter até um rótulo para cada ponto. Os rótulos de dados podem ser ativados ou desativados para pontos individuais na série.</para>
           <para>Se a série estiver em um gráfico de área e tiver a opção <b>Mostrar rótulo</b> ativada para os rótulos de dados, a coleção retornada conterá um único rótulo, que será o rótulo da série de área.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -583,10 +552,8 @@
       <Docs>
         <summary>Exclui o objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>A exclusão de um objeto <b>Point</b> ou <b>LegendKey</b> acarreta a exclusão de toda a série.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A exclusão de um objeto <b>Point</b> ou <b>LegendKey</b> acarreta a exclusão de toda a série.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorBar">
@@ -615,13 +582,11 @@
         <Parameter Name="MinusValues" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Direction">Necessário <see cref="T:Microsoft.Office.Interop.Excel.XlErrorBarDirection" />. A direção da barra de erro.</param>
-        <param name="Include">Necessário <see cref="T:Microsoft.Office.Interop.Excel.XlErrorBarInclude" />. As partes da barra de erro a serem incluídas.</param>
-        <param name="Type">Necessário <see cref="T:Microsoft.Office.Interop.Excel.XlErrorBarType" />. O tipo de barra de erro.</param>
-        <param name="Amount">
-          <b>Objeto</b>de opcional. O valor de erro. Usada para apenas a quantidade de erros positivos quando <paramref name="Type" /> é <b>xlErrorBarTypeCustom</b>.</param>
-        <param name="MinusValues">
-          <b>Objeto</b>de opcional. A quantidade de erro negativa quando <paramref name="Type" /> é <b>xlErrorBarTypeCustom</b>.</param>
+        <param name="Direction">Obrigatório. <see cref="T:Microsoft.Office.Interop.Excel.XlErrorBarDirection" /> A direção da barra de erro.</param>
+        <param name="Include">Obrigatório. <see cref="T:Microsoft.Office.Interop.Excel.XlErrorBarInclude" /> As partes da barra de erro a serem incluídas.</param>
+        <param name="Type">Obrigatório. <see cref="T:Microsoft.Office.Interop.Excel.XlErrorBarType" /> O tipo de barra de erro.</param>
+        <param name="Amount">Objeto <b>opcional</b>. O valor de erro. Usado apenas para a quantidade de erro positivo <paramref name="Type" /> quando for <b>xlErrorBarTypeCustom</b>.</param>
+        <param name="MinusValues">Objeto <b>opcional</b>. A quantidade de erro negativa <paramref name="Type" /> quando é <b>xlErrorBarTypeCustom</b>.</param>
         <summary>Aplica barras de erro à série. <b>Objeto</b>.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -650,7 +615,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ErrorBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.ErrorBars" /> object que representa as barras de erros para a série. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.ErrorBars" /> objeto que representa as barras de erro da série. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -681,7 +646,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o valor de explosão para uma fatia de pizza ou gráfico de rosca. Retorna 0 (zero) se não houver nenhum detalhamento (a ponta da fatia estiver no centro da pizza). <b>Integer</b> de leitura/gravação.</summary>
+        <summary>Retorna ou define o valor de explosão para um gráfico de pizza ou fatia de gráfico de rosca. Retorna 0 (zero) se não houver explosão (a ponta da fatia está no centro da pizza). <b>número inteiro</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -712,7 +677,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto que contém as propriedades para o gráfico especificado ou a forma de formatação de preenchimento. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto que contém propriedades de formatação de preenchimento para o gráfico ou forma especificada. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -741,9 +706,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna o <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objeto. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -775,14 +738,12 @@
       <Docs>
         <summary>Retorna ou define a fórmula do objeto na notação de estilo A1. <b>String</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propriedade não está disponível para fontes de dados OLAP.</para>
-          <para>Se a célula contiver uma constante, essa propriedade retornará a constante. Se a célula estiver vazia, a propriedade <b>Formula</b> retornará uma sequência de caracteres vazia. Se a célula contiver uma fórmula, a propriedade <b>Formula</b> retornará a fórmula como uma sequência de caracteres no mesmo formato que seria exibido na barra de fórmulas (inclusive o sinal de igual).</para>
+        <remarks><para>Esta propriedade não está disponível para fontes de dados OLAP.</para>
+          <para>Se a célula contiver uma constante, essa propriedade retornará essa constante. Se a célula estiver vazia, a propriedade <b>Formula</b> retornará uma sequência de caracteres vazia. Se a célula contiver uma fórmula, a propriedade <b>Formula</b> retornará a fórmula como uma sequência de caracteres no mesmo formato exibido na barra de fórmulas (inclusive o sinal de igual).</para>
           <para>Quando você define o valor ou a fórmula de uma célula como uma data, o Microsoft Excel verifica se a célula já está formatada com um dos formatos numéricos de data ou hora. Se não estiver, o Microsoft Excel altera o formato numérico para o formato padrão de data abreviada.</para>
           <para>Quando o intervalo é uni ou bidimensional, você pode definir a fórmula como uma matriz do Visual Basic com as mesmas dimensões. Também pode inserir a fórmula em uma matriz do Visual Basic.</para>
           <para>A configuração da fórmula para um intervalo de várias células preenche todas as células do intervalo com a fórmula.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaLocal">
@@ -811,15 +772,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a fórmula para o objeto usando referências de estilo A1 no idioma do usuário. <b>Cadeia de caracteres</b> de leitura/gravação</summary>
+        <summary>Retorna ou define a fórmula para o objeto usando referências de estilo A1 no idioma do usuário. Cadeia de caracteres de <b>leitura/gravação</b></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se a célula contiver uma constante, esta propriedade retornará essa constante. Se a célula estiver vazia, a propriedade retornará uma sequência de caracteres vazia. Se a célula contiver uma fórmula, a propriedade retornará a fórmula como uma sequência de caracteres, no mesmo formato em que ela seria exibida na barra de fórmulas (inclusive o sinal de igual).</para>
+        <remarks><para>Se a célula contiver uma constante, esta propriedade retornará essa constante. Se a célula estiver vazia, a propriedade retornará uma sequência de caracteres vazia. Se a célula contiver uma fórmula, a propriedade retornará a fórmula como uma sequência de caracteres, no mesmo formato em que ela seria exibida na barra de fórmulas (inclusive o sinal de igual).</para>
           <para>Quando você define o valor ou a fórmula de uma célula como uma data, o Microsoft Excel verifica se essa célula já está formatada com um dos formatos de número de data ou hora. Se não estiver, o formato de número será alterado para o formato de número de data abreviada padrão.</para>
           <para>Quando o intervalo é uni ou bidimensional, você pode definir a fórmula como uma matriz do Visual Basic com as mesmas dimensões. Também pode inserir a fórmula em uma matriz do Visual Basic.</para>
-          <para>A configuração da fórmula de um intervalo de múltiplas células preenche todas as células do intervalo com a fórmula.</para>
-          <para></para>
-        </remarks>
+          <para>A definição da fórmula de um intervalo de múltiplas células preenche todas as células do intervalo com a fórmula.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaR1C1">
@@ -848,15 +807,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a fórmula para o objeto usando a notação de estilo L1C1. <b>String</b> de leitura/gravação.</summary>
+        <summary>Retorna ou define a fórmula para o objeto usando notação de estilo R1C1. <b>String</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se a célula contiver uma constante, essa propriedade retornará essa constante. Se a célula estiver vazia, a propriedade retornará uma cadeia de caracteres vazia. Se a célula contiver uma fórmula, a propriedade retornará a fórmula como uma cadeia de caracteres, no mesmo formato em que ela seria exibida na barra de fórmulas (inclusive o sinal de igual).</para>
+        <remarks><para>Se a célula contiver uma constante, essa propriedade retornará essa constante. Se a célula estiver vazia, a propriedade retornará uma cadeia de caracteres vazia. Se a célula contiver uma fórmula, a propriedade retornará a fórmula como uma cadeia de caracteres, no mesmo formato em que ela seria exibida na barra de fórmulas (inclusive o sinal de igual).</para>
           <para>Quando você define o valor ou a fórmula de uma célula como uma data, o Microsoft Excel verifica se essa célula já está formatada com um dos formatos de número de data ou hora. Se não estiver, o formato de número será alterado para o formato de número de data abreviada padrão.</para>
           <para>Quando o intervalo é uni ou bidimensional, você pode definir a fórmula como uma matriz do Visual Basic com as mesmas dimensões. Também pode inserir a fórmula em uma matriz do Visual Basic.</para>
-          <para>A configuração da fórmula de um intervalo de múltiplas células preenche todas as células do intervalo com a fórmula.</para>
-          <para></para>
-        </remarks>
+          <para>A definição da fórmula de um intervalo de múltiplas células preenche todas as células do intervalo com a fórmula.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaR1C1Local">
@@ -887,13 +844,11 @@
       <Docs>
         <summary>Retorna ou define a fórmula para o objeto, usando a notação de estilo L1C1 no idioma do usuário. <b>Cadeia de caracteres</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se a célula contiver uma constante, esta propriedade retornará essa constante. Se a célula estiver vazia, a propriedade retornará uma sequência de caracteres vazia. Se a célula contiver uma fórmula, a propriedade retornará a fórmula como uma sequência de caracteres, no mesmo formato em que ela seria exibida na barra de fórmulas (inclusive o sinal de igual).</para>
+        <remarks><para>Se a célula contiver uma constante, esta propriedade retornará essa constante. Se a célula estiver vazia, a propriedade retornará uma sequência de caracteres vazia. Se a célula contiver uma fórmula, a propriedade retornará a fórmula como uma sequência de caracteres, no mesmo formato em que ela seria exibida na barra de fórmulas (inclusive o sinal de igual).</para>
           <para>Quando você define o valor ou a fórmula de uma célula como uma data, o Microsoft Excel verifica se essa célula já está formatada com um dos formatos de número de data ou hora. Se não estiver, o formato de número será alterado para o formato de número de data abreviada padrão.</para>
           <para>Quando o intervalo é uni ou bidimensional, você pode definir a fórmula como uma matriz do Visual Basic com as mesmas dimensões. Também pode inserir a fórmula em uma matriz do Visual Basic.</para>
-          <para>A configuração da fórmula de um intervalo de múltiplas células preenche todas as células do intervalo com a fórmula.</para>
-          <para></para>
-        </remarks>
+          <para>A definição da fórmula de um intervalo de múltiplas células preenche todas as células do intervalo com a fórmula.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Has3DEffect">
@@ -922,8 +877,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se a série possuir uma aparência tridimensional. Só se aplica a gráficos de bolhas. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> se a série possuir uma aparência tridimensional. Só se aplica a gráficos de bolhas. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -954,8 +908,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se a série tiver rótulos de dados. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> se a série tiver rótulos de dados. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -986,8 +939,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se a série tiver barras de erro. Essa propriedade não está disponível para gráficos 3D. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> se a série tiver barras de erro. Essa propriedade não está disponível para gráficos 3D. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1018,8 +970,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se a série tiver linhas de preenchimento. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> se a série tiver linhas de preenchimento. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1050,7 +1001,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object que representa o interior do objeto especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objeto que representa o interior do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1081,14 +1032,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define a cor de preenchimento de pontos de dados negativos em uma série.</summary>
+        <summary>Obtém ou define a cor de preenchimento para pontos de dados negativos em uma série.</summary>
         <value>A cor de preenchimento de pontos de dados negativos em uma série.</value>
-        <remarks>
-          <para>Leitura/gravação.</para>
-          <para>O <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" /> propriedade permite definir a cor de preenchimento de pontos de dados negativos como numérico específico, hexadecimal, octal ou o valor de cor RGB. Para definir o valor como um valor de RBG, use a função do Visual Basic <b>RGB</b> . Em vez de usar o <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" /> propriedade, você pode usar o <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> propriedade, que usa um conjunto mais simples dos valores inteiros da paleta de cores atual.</para>
-          <para>Para o <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" />propriedade tenha efeito, a <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertIfNegative" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Series" /> objeto também deve ser definido como <b>true</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Leitura/gravação.</para>
+          <para>A propriedade permite que você defina a cor de preenchimento para pontos de dados negativos como um valor de cor <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" /> numérico, hexadecimal, octal ou RGB específico. Para definir o valor como um valor RBG, use a função RGB do Visual Basic <b>RGB</b>. Em vez de usar a propriedade, você pode usar a propriedade, que usa um conjunto mais simples de valores inteiros <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" /> <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> da paleta de cores atual.</para>
+          <para>Para que <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" /> a propriedade tenha um efeito, a propriedade do objeto também deve ser definida como <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertIfNegative" /> <see cref="T:Microsoft.Office.Interop.Excel.Series" /> <b>true</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvertColorIndex">
@@ -1117,14 +1066,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define a cor de preenchimento de pontos de dados negativos em uma série.</summary>
+        <summary>Obtém ou define a cor de preenchimento para pontos de dados negativos em uma série.</summary>
         <value>A cor de preenchimento de pontos de dados negativos em uma série.</value>
-        <remarks>
-          <para>Leitura/gravação.</para>
-          <para>O <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> propriedade permite definir a cor de preenchimento de pontos de dados negativos como um valor de índice da cor de 0 a 56. Em vez de usar o <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> propriedade, você pode usar o <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" /> propriedade, que permite que você definir a cor como um hexadecimal numérico, específico, octal ou um valor de cor RGB.</para>
-          <para>Para o <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> propriedade tenha efeito, a <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertIfNegative" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Series" /> objeto também deve ser definido como <b>true</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Leitura/gravação.</para>
+          <para>A propriedade permite definir a cor de preenchimento para pontos de dados negativos como um valor de índice de cor de <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> 0 a 56. Em vez de usar a propriedade, você pode usar a propriedade, que permite definir a cor como um valor de cor <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" /> numérico, hexadecimal, octal ou RGB específico.</para>
+          <para>Para que <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> a propriedade tenha um efeito, a propriedade do objeto também deve ser definida como <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertIfNegative" /> <see cref="T:Microsoft.Office.Interop.Excel.Series" /> <b>true</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvertIfNegative">
@@ -1153,8 +1100,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o Microsoft Excel inverter o padrão no item quando este corresponder a um número negativo. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> se o Microsoft Excel inverte o padrão no item quando ele corresponde a um número negativo. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1185,12 +1131,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Esta configuração controla se a série tiver sido filtrada do gráfico. O valor padrão é <b>False</b>. <b>Boolean</b> (<b>bool</b> em c#) Leitura/gravação.</summary>
+        <summary>Essa configuração controla se a série foi filtrada do gráfico. O valor padrão é <b>False</b>. <b>Booliana</b> (<b>booleano</b> em C#) Leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Quando um usuário filtra uma série, a propriedade <b>IsFiltered</b> série alterna para <b>True</b>e a série é transferida para fora de seu pai <b>SeriesCollection</b>. No entanto, dessa série permanece no seu pai <b>FullSeriesCollection</b>. Quando um filtros de usuário a série novamente, é inserido novamente em seu lugar original no <b>SeriesCollection</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Quando um usuário filtra uma série, a propriedade <b>IsFiltered</b> da série alterna para <b>True</b>e a série é transferida de seu <b>pai SeriesCollection</b>. No entanto, essa série ainda permanece em <b>seu pai FullSeriesCollection</b>. Quando um usuário filtra a série novamente, ela é inserida novamente em seu lugar original no <b>SeriesCollection</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LeaderLines">
@@ -1216,7 +1160,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.LeaderLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um objeto <b>LeaderLines</b> que representa as linhas de preenchimento para a série. Somente leitura.</summary>
+        <summary>Retorna um objeto <b>LeaderLines</b> que representa as linhas de preenchimento para a série. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1247,7 +1191,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a cor de plano de fundo do marcador como um valor RGB. Aplica-se somente a gráficos de linhas, de dispersão e de radar. <b>Integer</b> de leitura/gravação.</summary>
+        <summary>Retorna ou define a cor de plano de fundo do marcador como um valor RGB. Só se aplica a gráficos de linhas, de dispersão e de radar. <b>número inteiro</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1278,7 +1222,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a cor de plano de fundo do marcador. Aplica-se somente a gráficos de linhas, de dispersão e de radar. Leitura/gravação <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />.</summary>
+        <summary>Retorna ou define a cor de plano de fundo do marcador. É aplicado somente a gráficos de linha, de dispersão e de radar. <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />Leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1309,7 +1253,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a cor de primeiro plano do marcador como um valor RGB. Aplica-se somente a gráficos de linhas, de dispersão e de radar. <b>Integer</b> de leitura/gravação.</summary>
+        <summary>Retorna ou define a cor de primeiro plano do marcador como um valor RGB. Só se aplica a gráficos de linhas, de dispersão e de radar. <b>número inteiro</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1340,7 +1284,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a cor de primeiro plano do marcador. Aplica-se somente a gráficos de linhas, de dispersão e de radar. Leitura/gravação <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />.</summary>
+        <summary>Retorna ou define a cor de primeiro plano do marcador. É aplicado somente a gráficos de linha, de dispersão e de radar. <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />Leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1371,7 +1315,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o tamanho do marcador de dados em pontos. <b>Integer</b> de leitura/gravação.</summary>
+        <summary>Retorna ou define o tamanho do marcador de dados em pontos. <b>número inteiro</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1402,7 +1346,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlMarkerStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o estilo de marcador para um ponto ou uma série em um gráfico de linhas, de dispersão ou de radar. Leitura/gravação <see cref="T:Microsoft.Office.Interop.Excel.XlMarkerStyle" />.</summary>
+        <summary>Retorna ou define o estilo de marcador para um ponto ou uma série em um gráfico de linhas, de dispersão ou de radar. <see cref="T:Microsoft.Office.Interop.Excel.XlMarkerStyle" />Leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1435,8 +1379,7 @@
       <Docs>
         <summary>Retorna ou define o nome do objeto. <b>String</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A tabela a seguir mostra valores de exemplo da propriedade <b>Name</b> e propriedades relacionadas, pressupondo-se uma fonte de dados OLAP com o nome exclusivo "[Europe].[France].[Paris]" e uma fonte de dados não-OLAP com o nome de item "Paris".</para>
+        <remarks><para>A tabela a seguir mostra valores de exemplo da propriedade <b>Name</b> e propriedades relacionadas, pressupondo-se uma fonte de dados OLAP com o nome exclusivo "[Europe].[France].[Paris]" e uma fonte de dados não-OLAP com o nome de item "Paris".</para>
           <list type="table">
             <item>
               <term>
@@ -1467,22 +1410,21 @@
               <description>Paris</description>
             </item>
           </list>
-          <para>Ao especificar um índice para o <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> coleção, você pode usar a sintaxe mostrada na tabela a seguir.</para>
+          <para>Ao especificar um índice na <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> coleção, você pode usar a sintaxe mostrada na tabela a seguir.</para>
           <list type="table">
             <item>
-              <term>expressão. PivotItems ("[Europe]. [ França]. [Paris] ")</term>
+              <term>expressão. PivotItems("[Europe].[ França]. [Paris]")</term>
               <description>expressão. PivotItems("Paris")</description>
             </item>
           </list>
-          <para>Ao usar o <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> propriedade referência um determinado membro de uma coleção, você pode usar o nome do índice de texto conforme mostrado na tabela a seguir.</para>
+          <para>Ao usar a propriedade para fazer referência a um determinado membro de uma coleção, você pode usar o nome do índice <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> de texto, conforme mostrado na tabela a seguir.</para>
           <list type="table">
             <item>
-              <term>[Europe]. [France]. [Paris]</term>
+              <term>[Europa]. [França]. [Paris]</term>
               <description>Paris</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1508,7 +1450,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado. Somente leitura.</summary>
+        <summary>Retorna o objeto pai do objeto especificado. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1534,7 +1476,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cola uma imagem da Área de Transferência como marcador na série selecionada. Este método pode ser usado em gráficos de radar, barra, linha ou coluna e define o <see cref="P:Microsoft.Office.Interop.Excel.Series.MarkerStyle" /> propriedade como <b>xlMarkerStylePicture</b>.</summary>
+        <summary>Cola uma imagem da Área de Transferência como marcador na série selecionada. Este método pode ser usado em gráficos de coluna, barra, linha ou radar e define a propriedade <see cref="P:Microsoft.Office.Interop.Excel.Series.MarkerStyle" /> como <b>xlMarkerStylePicture</b>.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1565,7 +1507,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlChartPictureType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a maneira como as imagens são exibidas em um gráfico de imagem de barra ou coluna. Leitura/gravação <see cref="T:Microsoft.Office.Interop.Excel.XlChartPictureType" />.</summary>
+        <summary>Retorna ou define a maneira como as imagens são exibidas em um gráfico de imagem de coluna ou barra. <see cref="T:Microsoft.Office.Interop.Excel.XlChartPictureType" />Leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1602,7 +1544,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a unidade de cada figura no gráfico se o <see cref="P:Microsoft.Office.Interop.Excel.Series.PictureType" /> propriedade estiver definida como <b>xlScale</b> (caso contrário, essa propriedade será ignorada). <b>Integer</b> de leitura/gravação.</summary>
+        <summary>Retorna ou define a unidade de cada imagem no gráfico se a propriedade estiver definida como <see cref="P:Microsoft.Office.Interop.Excel.Series.PictureType" /> <b>xlScale</b> (caso não seja, essa propriedade será ignorada). <b>número inteiro</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1633,10 +1575,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a unidade de cada figura no gráfico se o <see cref="P:Microsoft.Office.Interop.Excel.Series.PictureType" /> propriedade estiver definida como <see cref="F:Microsoft.Office.Interop.Excel.XlChartPictureType.xlStackScale" /> (se não, essa propriedade será ignorada). Leitura/gravação.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>Retorna ou define a unidade de cada imagem no gráfico se a propriedade estiver definida como (caso não <see cref="P:Microsoft.Office.Interop.Excel.Series.PictureType" /> <see cref="F:Microsoft.Office.Interop.Excel.XlChartPictureType.xlStackScale" /> seja, essa propriedade será ignorada). Leitura/gravação.</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1663,13 +1603,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um valor de índice que é usado internamente para associar a formatação da sequência de elementos do gráfico.</summary>
-        <value>Um valor de índice que é usado internamente para associar a formatação da sequência de elementos do gráfico.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para>Essa propriedade é usada internamente pelo Excel e não se destina a ser chamada do código.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém um valor de índice que é usado internamente para associar a formatação de série com elementos de gráfico.</summary>
+        <value>Um valor de índice que é usado internamente para associar a formatação de série a elementos de gráfico.</value>
+        <remarks><para>Somente leitura.</para>
+          <para>Esta propriedade é usada internamente pelo Excel e não deve ser chamada do seu código.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PlotOrder">
@@ -1698,13 +1636,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a ordem de plotagem para a série selecionada dentro do grupo gráfico. <b>Integer</b> de leitura/gravação.</summary>
+        <summary>Retorna ou define a ordem de plotagem para a série selecionada dentro do grupo gráfico. <b>número inteiro</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Só é possível definir a ordem de plotagem dentro de um grupo de gráficos (você não pode definir a ordem de plotagem para todo o gráfico quando há mais de um tipo de gráfico). Um grupo de gráficos é uma coleção de séries com o mesmo tipo de gráfico.</para>
-          <para>Alterar a ordem de plotagem de uma série, você fará as ordens de plotagem das outras série do grupo gráfico sejam ajustadas conforme necessário.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Só é possível definir a ordem de plotagem dentro de um grupo de gráficos (você não pode definir a ordem de plotagem para todo o gráfico quando há mais de um tipo de gráfico). Um grupo de gráficos é uma coleção de séries com o mesmo tipo de gráfico.</para>
+          <para>Alterar a ordem de plotagem de uma série fará com que as ordens de plotagem da outra série no grupo de gráficos sejam ajustadas conforme necessário.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Points">
@@ -1729,9 +1665,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>de opcional. O nome ou número do ponto.</param>
-        <summary>Retorna um object que representa um único ponto (um <see cref="T:Microsoft.Office.Interop.Excel.Point" /> objeto) ou uma coleção de todos os pontos (um <see cref="T:Microsoft.Office.Interop.Excel.Points" /> coleção) na série. Somente leitura.</summary>
+        <param name="Index">Objeto <b>opcional</b>. O nome ou número do ponto.</param>
+        <summary>Retorna um objeto que representa um único ponto (um objeto) ou uma coleção de todos <see cref="T:Microsoft.Office.Interop.Excel.Point" /> os pontos (uma <see cref="T:Microsoft.Office.Interop.Excel.Points" /> coleção) da série. Somente leitura.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1759,10 +1694,8 @@
       <Docs>
         <summary>Seleciona o objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Para selecionar uma célula ou um intervalo de células, use o método <b>Select</b> . Para tornar uma única célula a célula ativa, use o <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> método.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Para selecionar uma célula ou um intervalo de células, use o método <b>Select</b>. Para tornar uma única célula a célula ativa, use o <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shadow">
@@ -1791,8 +1724,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se a fonte for uma fonte sombreada ou se o objeto tem uma sombra. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> se a fonte for uma fonte de sombra ou se o objeto tiver uma sombra. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1823,8 +1755,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se a suavização de curvas estiver ativada para o gráfico de linhas ou de dispersão. Só se aplica a gráficos de linhas e de dispersão. Leitura/gravação.</summary>
+        <summary><b>True</b> se a suavização de curvas estiver ativada para o gráfico de linhas ou gráfico de dispersão. Só se aplica a gráficos de linhas e de dispersão. Leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1851,9 +1782,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>de opcional. O nome ou número da linha de tendência.</param>
-        <summary>Retorna um object que representa uma única linha de tendência (um <see cref="T:Microsoft.Office.Interop.Excel.Trendline" /> objeto) ou uma coleção de todas as linhas de tendência (um <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> conjunto) para a série.</summary>
+        <param name="Index">Objeto <b>opcional</b>. O nome ou o número da linha de tendência.</param>
+        <summary>Retorna um objeto que representa uma única linha de tendência (um objeto) ou uma coleção de todas as linhas de <see cref="T:Microsoft.Office.Interop.Excel.Trendline" /> tendência (uma <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> coleção) da série.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1884,7 +1814,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o tipo de gráfico ou série. <b>Integer</b> de leitura/gravação.</summary>
+        <summary>Retorna ou define o tipo de gráfico ou série. <b>número inteiro</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1915,12 +1845,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define uma coleção de todos os valores da série. Isso pode ser um intervalo em uma planilha ou uma matriz de valores de constantes, mas não uma combinação de ambos. <b>Objeto</b> de leitura/gravação.</summary>
+        <summary>Retorna ou define uma coleção de todos os valores da série. Pode ser um intervalo em uma planilha ou uma matriz de valores constantes, mas não uma combinação de ambos. <b>Objeto</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para relatórios de gráfico dinâmico, essa propriedade é somente leitura.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Para relatórios de gráfico dinâmico, essa propriedade é somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="XValues">
@@ -1949,12 +1877,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define uma matriz de valores x para uma série de gráficos. A propriedade <b>XValues</b> pode ser definida com um intervalo em uma planilha ou como uma matriz de valores, mas ele não pode ser uma combinação de ambos. <b>Objeto</b> de leitura/gravação.</summary>
+        <summary>Retorna ou define uma matriz de valores x para uma série de gráficos. A propriedade <b>XValues</b> pode ser definida como um intervalo de uma planilha ou como uma matriz de valores, mas não como uma combinação de ambos. <b>Objeto</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para relatórios de gráfico dinâmico, essa propriedade é somente leitura.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Para relatórios de Gráficos Gráficos Dinâmicas, essa propriedade é somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

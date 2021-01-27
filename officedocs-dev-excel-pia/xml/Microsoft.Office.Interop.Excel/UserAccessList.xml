@@ -1,13 +1,5 @@
 <Type Name="UserAccessList" FullName="Microsoft.Office.Interop.Excel.UserAccessList">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="71430eea5453407e668e836ef8751c08d9fe2160" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20577613" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface UserAccessList : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="71430eea5453407e668e836ef8751c08d9fe2160" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009398" /></Metadata><TypeSignature Language="C#" Value="public interface UserAccessList : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UserAccessList implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.UserAccessList" />
   <TypeSignature Language="VB.NET" Value="Public Interface UserAccessList&#xA;Implements IEnumerable" />
@@ -33,12 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Excel.UserAccess" /> objetos que representam o acesso do usuário a intervalos protegidos.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.AllowEditRange.Users" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.AllowEditRange" /> objeto para retornar uma coleção <b>UserAccessList</b> .</para>
-      <para>Depois que uma coleção <b>UserAccessList</b> é retornada, você pode usar o <see cref="P:Microsoft.Office.Interop.Excel.UserAccessList.Count" /> propriedade para determinar o número de usuários que têm acesso a um intervalo protegido.</para>
-      <para></para>
-    </remarks>
+    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Excel.UserAccess" /> objetos que representa o acesso do usuário para intervalos protegidos.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel.AllowEditRange.Users" /> propriedade do objeto para retornar uma coleção <see cref="T:Microsoft.Office.Interop.Excel.AllowEditRange" /> <b>UserAccessList</b> .</para>
+      <para>Depois que <b>uma coleção UserAccessList</b> é retornada, você pode usar a propriedade para determinar o número de usuários que têm acesso <see cref="P:Microsoft.Office.Interop.Excel.UserAccessList.Count" /> a um intervalo protegido.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,9 +90,8 @@
         <Parameter Name="AllowEdit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b> necessário. O nome da lista de acesso de usuário.</param>
-        <param name="AllowEdit">Necessário <b>booleano</b>. <b>True</b> permite que os usuários da lista de acesso alterem os intervalos editáveis em uma planilha protegida.</param>
+        <param name="Name"><b>String</b> necessário. O nome da lista de acesso de usuário.</param>
+        <param name="AllowEdit">Boolean <b>necessário.</b> <b>True</b> permite que os usuários da lista de acesso alterem os intervalos editáveis em uma planilha protegida.</param>
         <summary>Adiciona uma lista de acesso de usuário. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.UserAccess" /> objeto.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -157,7 +146,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Remove todos os usuários associados com acesso a um intervalo protegido em uma planilha.</summary>
+        <summary>Remove todos os usuários associados ao acesso a um intervalo protegido em uma planilha.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,8 +208,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>necessário. O nome ou número de índice do objeto.</param>
+        <param name="Index">Objeto <b>Required</b>. O nome ou número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

@@ -1,13 +1,5 @@
 <Type Name="PublishObjects" FullName="Microsoft.Office.Interop.Excel.PublishObjects">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f387dc9c018dbd0378441a0c44743179b7b5fb9c" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20574036" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PublishObjects : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f387dc9c018dbd0378441a0c44743179b7b5fb9c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010749" /></Metadata><TypeSignature Language="C#" Value="public interface PublishObjects : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PublishObjects implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PublishObjects" />
   <TypeSignature Language="VB.NET" Value="Public Interface PublishObjects&#xA;Implements IEnumerable" />
@@ -33,12 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de todos <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> objetos na pasta de trabalho. Cada objeto <b>PublishObject</b> representa um item em uma pasta de trabalho que foi salva em uma página da Web e pode ser atualizada de acordo com os valores especificados pelas propriedades e métodos do objeto.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.PublishObjects" /> propriedade para retornar a coleção <b>PublishObjects</b> .</para>
-      <para>Use <b>PublishObjects</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do item especificado na pasta de trabalho, para retornar um único objeto <b>PublishObject</b> .</para>
-      <para></para>
-    </remarks>
+    <summary>Uma coleção de todos <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> os objetos na área de trabalho. Cada objeto <b>PublishObject</b> representa um item em uma pasta de trabalho que foi salva em uma página da Web e pode ser atualizada de acordo com os valores especificados pelas propriedades e métodos do objeto.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel._Workbook.PublishObjects" /> propriedade para retornar a coleção <b>PublishObjects</b> .</para>
+      <para>Use <b>PublishObjects</b>( ), onde é o número de índice do item especificado na lista de trabalho, para retornar um único <paramref name="index" /> objeto <paramref name="index" /> <b>PublishObject</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -104,20 +94,14 @@
         <Parameter Name="Title" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SourceType">Necessário <see cref="T:Microsoft.Office.Interop.Excel.XlSourceType" />. O tipo de fonte.</param>
-        <param name="Filename">
-          <b>String</b> necessário. A URL (na intranet ou Web) ou caminho (local ou rede) no qual o objeto de origem que foi salvo.</param>
-        <param name="Sheet">
-          <b>Objeto</b>de opcional. O nome da planilha salva como uma página da Web.</param>
-        <param name="Source">
-          <b>Objeto</b>de opcional. Um nome exclusivo usado para identificar os itens que possuem uma das seguintes constantes como seus <paramref name="SourceType" /> argumento: <b>xlSourceAutoFilter</b>, <b>xlSourcePivotTable</b>, <b>xlSourceChart</b>, <b>xlSourcePrintArea</b>, <b>xlSourceQuery</b>ou <b> xlSourceRange</b>. Se <paramref name="SourceType" /> é <b>igual a xlSourceRange</b>, origem Especifica um intervalo, que pode ser um nome definido. Se <paramref name="SourceType" /> é <b>xlSourceChart</b>, <b>xlSourcePivotTable</b>ou <b>xlSourceQuery</b>, <paramref name="Source" /> Especifica o nome de um gráfico, um relatório de tabela dinâmica ou uma tabela de consulta.</param>
-        <param name="HtmlType">
-          <b>Objeto</b>de opcional. Especifica se o item é salvo como um componente interativo do Microsoft Office Web ou como imagens e texto estático. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> constantes. ConstantDescription<b>xlHtmlCalc</b>Item salvo como um componente de planilha do Microsoft Office interativo. <b>xlHtmlChart</b> Item salvo como um componente interativo do Microsoft Office Chart. <b>xlHtmlList</b> Item salvo como um componente interativo do Microsoft Office PivotTable. <b>xlHtmlStatic</b> Item salvo como imagens e texto estático.</param>
-        <param name="DivID">
-          <b>Objeto</b>de opcional. O identificador exclusivo usado no rótulo DIV de HTML para identificar o item na página da Web.</param>
-        <param name="Title">
-          <b>Objeto</b>de opcional. O título da página da Web.</param>
-        <summary>Cria um objeto que representa um item em um documento salvo em uma página da Web. Esses objetos facilitam atualizações subsequentes para a página da Web enquanto alterações automatizadas estão sendo feitas para o documento no Microsoft Excel. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> objeto.</summary>
+        <param name="SourceType">Obrigatório. <see cref="T:Microsoft.Office.Interop.Excel.XlSourceType" /> O tipo de fonte.</param>
+        <param name="Filename"><b>String</b> necessário. A URL (na intranet ou na Web) ou o caminho (local ou de rede) no qual o objeto de origem foi salvo.</param>
+        <param name="Sheet">Objeto <b>opcional</b>. O nome da planilha salva como uma página da Web.</param>
+        <param name="Source">Objeto <b>opcional</b>. Um nome exclusivo usado para identificar itens que têm uma das seguintes constantes como <paramref name="SourceType" /> argumento: <b>xlSourceAutoFilter</b>, <b>xlSourceChart</b>, <b>xlSourcePivotTable</b>, <b>xlSourcePrintArea</b>, <b>xlSourceQuery</b>ou <b>xlSourceRange</b>. Se <paramref name="SourceType" /> for <b>xlSourceRange</b>, Source especificará um intervalo, que pode ser um nome definido. Se for <paramref name="SourceType" /> <b>xlSourceChart</b>, <b>xlSourcePivotTable</b>ou <b>xlSourceQuery</b>, especifica o nome de um gráfico, relatório de tabela dinâmica ou tabela de <paramref name="Source" /> consulta.</param>
+        <param name="HtmlType">Objeto <b>opcional</b>. Especifica se o item será salvo como um componente interativo do Microsoft Office Web Components ou como texto e imagens estáticas. Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> constantes. Item ConstantDescription<b>xlHtmlCalc</b>salvo como um componente interativo da Planilha do Microsoft Office. <b>xlHtmlChart</b> Item salvo como um componente interativo do Microsoft Office Chart. <b>xlHtmlList</b> Item salvo como um componente interativo de Tabela Dinâmica do Microsoft Office. <b>xlHtmlStatic</b> Item salvo como texto e imagens estáticos.</param>
+        <param name="DivID">Objeto <b>opcional</b>. O identificador exclusivo usado no rótulo DIV de HTML para identificar o item na página da Web.</param>
+        <param name="Title">Objeto <b>opcional</b>. O título da página da Web.</param>
+        <summary>Cria um objeto que representa um item de um documento salvo em uma página da Web. Esses objetos facilitam atualizações subsequentes na página da Web durante alterações automatizadas no documento no Microsoft Excel. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> objeto.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -145,7 +129,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -203,11 +187,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -293,8 +275,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>necessário. O nome ou número de índice do objeto.</param>
+        <param name="Index">Objeto <b>Required</b>. O nome ou número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -323,7 +304,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado.</summary>
+        <summary>Retorna o objeto pai do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

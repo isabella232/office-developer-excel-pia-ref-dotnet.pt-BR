@@ -1,13 +1,5 @@
 <Type Name="RoutingSlip" FullName="Microsoft.Office.Interop.Excel.RoutingSlip">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d1e265b4ea2021fff6dba4ef91746a75aeaa3e17" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572699" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface RoutingSlip" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d1e265b4ea2021fff6dba4ef91746a75aeaa3e17" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010490" /></Metadata><TypeSignature Language="C#" Value="public interface RoutingSlip" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RoutingSlip" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.RoutingSlip" />
   <TypeSignature Language="VB.NET" Value="Public Interface RoutingSlip" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Representa a lista de circulação de uma pasta de trabalho. A lista de circulação é usada para enviar uma pasta de trabalho por sistema de email.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.RoutingSlip" /> propriedade para retornar o objeto <b>RoutingSlip</b> .</para>
-      <para>O objeto <b>RoutingSlip</b> não existe e não pode ser retornado se a <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> propriedade da pasta de trabalho for <b>True</b>.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel._Workbook.RoutingSlip" /> propriedade para retornar o objeto <b>RoutingSlip.</b></para>
+      <para>O <b>objeto RoutingSlip</b> não existe e não pode ser retornado, a menos que a <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> propriedade da agenda seja <b>True</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,11 +80,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delivery">
@@ -123,12 +111,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o método de entrega de roteamento. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery" /> constantes: <b>xlOneAfterAnother</b> ou <b>xlAllAtOnce</b>.</summary>
+        <summary>Retorna ou define o método de entrega para a circulação. Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery" /> constantes: <b>xlOneAfterAnother</b> ou <b>xlAllAtOnce</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Você não poderá definir essa propriedade se a circulação estiver em andamento.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Você não poderá definir essa propriedade se a circulação estiver em andamento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -157,7 +143,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o texto da mensagem para a lista de circulação. Esse texto é usado como corpo de texto das mensagens de email que são usadas para rotear a pasta de trabalho.</summary>
+        <summary>Retorna ou define o texto da mensagem para a lista de circulação. Esse texto é usado como corpo de texto das mensagens de email que são usadas na circulação da pasta de trabalho.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -185,7 +171,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado.</summary>
+        <summary>Retorna o objeto pai do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -219,15 +205,12 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>de opcional. O destinatário. Se esse argumento não for especificado, a propriedade <b>Recipients</b> retorna (ou pode ser definido como) uma matriz que contém todos os destinatários.</param>
+        <param name="Index">Objeto <b>opcional</b>. O destinatário. Se esse argumento não for especificado, a propriedade <b>Recipients</b> retornará (ou poderá ser definida como) uma matriz que contém todos os destinatários.</param>
         <summary>Retorna ou define os destinatários na lista de circulação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A ordem da lista de destinatários definirá a ordem de entrega se a opção de entrega de circulação for <b>xlOneAfterAnother</b>.</para>
+        <remarks><para>A ordem da lista de destinatários definirá a ordem de entrega se a opção de entrega de circulação for <b>xlOneAfterAnother</b>.</para>
           <para>Se uma lista de circulação estiver em progresso, somente os destinatários que ainda não tiverem recebido e circulado o documento serão retornados ou definidos.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -251,12 +234,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Redefine a lista de circulação para que uma nova circulação possa ser iniciada com a mesma lista (usando as mesmas informações de entrega e de lista de destinatários).</summary>
+        <summary>Redefine a lista de circulação para que uma nova circulação possa ser iniciada com a mesma lista (usando as mesmas informações de entrega e lista de destinatários).</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>O roteamento deve ser concluído antes de você usar esse método. O uso desse método em outros momentos causará um erro.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A circulação precisa ser completada antes de você usar esse método. O uso desse método em outras ocasiões causa um erro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReturnWhenDone">
@@ -285,8 +266,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se a pasta de trabalho é retornada ao remetente quando a circulação é concluída.</summary>
+        <summary><b>True</b> se a pasta de trabalho for retornada ao remetente quando a circulação terminar.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -347,10 +327,8 @@
       <Docs>
         <summary>Retorna ou define o assunto para o mensageiro ou lista de circulação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O assunto para o <see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" /> objeto é usado como o assunto para mensagens de email usadas para rotear a pasta de trabalho.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>O assunto do objeto é usado como assunto das mensagens <see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" /> de email usadas para rotear a agenda.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TrackStatus">
@@ -379,13 +357,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o controle de status está habilitado para a lista de circulação.</summary>
+        <summary><b>True</b> se o controle de status estiver ativado para a lista de circulação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Você não poderá definir essa propriedade se a circulação estiver em andamento.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Você não poderá definir essa propriedade se a circulação estiver em andamento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

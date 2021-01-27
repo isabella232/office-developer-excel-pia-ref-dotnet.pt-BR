@@ -1,13 +1,5 @@
 <Type Name="PivotFormulas" FullName="Microsoft.Office.Interop.Excel.PivotFormulas">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="883ef67197cacd07662fdeaa82dbd82051f41c92" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20574694" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotFormulas : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="883ef67197cacd07662fdeaa82dbd82051f41c92" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010840" /></Metadata><TypeSignature Language="C#" Value="public interface PivotFormulas : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotFormulas implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotFormulas" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotFormulas&#xA;Implements IEnumerable" />
@@ -34,11 +26,9 @@
   </Attributes>
   <Docs>
     <summary>Representa a coleção de fórmulas para um relatório de tabela dinâmica. Cada fórmula é representada por um <see cref="T:Microsoft.Office.Interop.Excel.PivotFormula" /> objeto.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PivotFormulas" /> método para retornar a coleção <b>PivotFormulas</b> .</para>
+    <remarks><para>Use o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PivotFormulas" /> método para retornar a coleção <b>PivotFormulas.</b></para>
       <para>Este objeto e suas propriedades e métodos associados não estão disponíveis para fontes de dados OLAP porque não há suporte para campos e itens calculados.</para>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Add">
@@ -131,10 +121,8 @@
         <Parameter Name="UseStandardFormula" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Formula">
-          <b>String</b> necessário. A nova fórmula de tabela dinâmica.</param>
-        <param name="UseStandardFormula">
-          <b>Objeto</b>de opcional. Uma fórmula de tabela dinâmica padrão.</param>
+        <param name="Formula"><b>String</b> necessário. A nova fórmula de tabela dinâmica.</param>
+        <param name="UseStandardFormula">Objeto <b>opcional</b>. Uma fórmula de tabela dinâmica padrão.</param>
         <summary>Cria uma nova fórmula de tabela dinâmica. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.PivotFormula" /> objeto.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -163,7 +151,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -221,11 +209,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -283,14 +269,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>necessário. O nome ou número de índice do objeto.</param>
+        <param name="Index">Objeto <b>Required</b>. O nome ou número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>O nome de texto do objeto é o valor do <see cref="P:Microsoft.Office.Interop.Excel.PivotFormula.Value" /> propriedade.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>O nome de texto do objeto é o valor da <see cref="P:Microsoft.Office.Interop.Excel.PivotFormula.Value" /> propriedade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

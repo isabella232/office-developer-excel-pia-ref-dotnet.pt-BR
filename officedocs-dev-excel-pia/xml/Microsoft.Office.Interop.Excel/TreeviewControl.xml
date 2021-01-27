@@ -1,13 +1,5 @@
 <Type Name="TreeviewControl" FullName="Microsoft.Office.Interop.Excel.TreeviewControl">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1afb6b42e9222ca9571894f88d24856a84c5f717" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587119" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TreeviewControl" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1afb6b42e9222ca9571894f88d24856a84c5f717" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009489" /></Metadata><TypeSignature Language="C#" Value="public interface TreeviewControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TreeviewControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TreeviewControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface TreeviewControl" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Representa o controle hierárquico da seleção de membros de um campo de cubo. Este objeto é usado principalmente para gravação de macros, não sendo destinado a nenhum outro uso.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.CubeField.TreeviewControl" /> propriedade para retornar o objeto <b>TreeviewControl</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel.CubeField.TreeviewControl" /> propriedade para retornar o objeto <b>TreeviewControl</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,11 +76,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Drilled">
@@ -119,14 +107,12 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Define o status "esburacado" (expandido ou visível) do cubo membros do campo no controle hierárquico de seleção de um campo de cubo. Essa propriedade é usada principalmente para gravação de macro e não é destinada a nenhum outro uso.</summary>
+        <summary>Define o status "drilled" (expandido ou visível) dos membros do campo de cubo no controle hierárquico de seleção de membros de um campo de cubo. Essa propriedade é usada principalmente para gravação de macros e não destina-se a outro fim.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>Drilled</b> aceita uma matriz. Cada elemento da matriz corresponde a um nível do campo de cubo que foi expandido. O número máximo de elementos é o número de níveis no campo de cubo. Cada elemento da matriz é uma matriz do tipo <b>cadeia de caracteres</b>, que contém os nomes de membros exclusivos que são visíveis (expandidos) no nível correspondente do controle. Consulte o <see cref="T:Microsoft.Office.Interop.Excel.TreeviewControl" /> do objeto <see cref="P:Microsoft.Office.Interop.Excel.TreeviewControl.Hidden" /> propriedade para determinar quando os membros serão explicitamente ocultos no modo de exibição expandido.</para>
+        <remarks><para>A propriedade <b>Drilled</b> aceita uma matriz. Cada elemento da matriz corresponde a um nível do campo de cubo que foi expandido. O número máximo de elementos é o número de níveis no campo de cubo. Cada elemento da matriz é uma matriz do tipo <b>String</b>, contendo nomes exclusivos de membros que são visíveis (expandidos) no nível correspondente do controle. Consulte a <see cref="T:Microsoft.Office.Interop.Excel.TreeviewControl" /> propriedade do objeto para determinar quando os membros estão <see cref="P:Microsoft.Office.Interop.Excel.TreeviewControl.Hidden" /> explicitamente ocultos em um exibição expandida.</para>
           <para>
-            <b>Observação</b>: essa propriedade não retorna uma matriz que representa o status drilled dos membros de campo de cubo no controle hierárquico de seleção de um campo de cubo.</para>
-          <para></para>
-        </remarks>
+            <b>Observação:</b>essa propriedade não retorna uma matriz que representa o status drilled dos membros do campo de cubo no controle hierárquico de seleção de membros de um campo de cubo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Hidden">
@@ -155,12 +141,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o status oculto do cubo membros do campo no controle de seleção hierárquica de membros de um campo de cubo.</summary>
+        <summary>Retorna ou define o status oculto dos membros do campo de cubo no controle de seleção de membro hierárquico de um campo de cubo.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>Hidden</b> Retorna ou define uma matriz. Cada elemento da matriz corresponde a um nível do campo de cubo que está oculto. O número máximo de elementos é o número de níveis no campo de cubo. Cada elemento da matriz é uma matriz do tipo <b>cadeia de caracteres</b>, que contém os nomes de membros exclusivos que estão ocultos no nível correspondente do controle. Consulte o <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.DrilledDown" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> do objeto para determinar quando os membros são visíveis (expandidos) no controle.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A propriedade <b>Hidden</b> retorna ou define uma matriz. Cada elemento da matriz corresponde a um nível do campo de cubo que foi oculto. O número máximo de elementos é o número de níveis no campo de cubo. Cada elemento da matriz é uma matriz do tipo <b>String</b>, contendo nomes exclusivos de membros que estão ocultos no nível correspondente do controle. Consulte a <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.DrilledDown" /> propriedade do objeto para determinar quando os membros estão <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> visíveis (expandidos) no controle.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

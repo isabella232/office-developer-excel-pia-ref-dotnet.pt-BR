@@ -1,13 +1,5 @@
 <Type Name="ShadowFormat" FullName="Microsoft.Office.Interop.Excel.ShadowFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5eeac5f0fb754a2bafeb2c032994726f97c18d68" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584431" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ShadowFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5eeac5f0fb754a2bafeb2c032994726f97c18d68" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010357" /></Metadata><TypeSignature Language="C#" Value="public interface ShadowFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShadowFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ShadowFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShadowFormat&#xA;Implements _IMsoDispObj" />
@@ -30,11 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa formatação de sombra para uma <see cref="T:Microsoft.Office.Interop.Excel.Shape" />.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.Shape.Shadow" /> propriedade para retornar um <see cref="T:Microsoft.Office.Interop.Excel.ShadowFormat" /> objeto.</para>
-      <para></para>
-    </remarks>
+    <summary>Representa a formatação de sombra para um <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> .</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel.Shape.Shadow" /> propriedade para retornar um <see cref="T:Microsoft.Office.Interop.Excel.ShadowFormat" /> objeto.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,7 +53,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,10 +84,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o grau de pouco de desfoque da sombra especificado. Leitura/gravação.</summary>
-        <value>
-          <b>Float</b>
-        </value>
+        <summary>Retorna ou define o grau de desfoque da sombra especificada. Leitura/gravação.</summary>
+        <value><b>Float</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,11 +117,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -162,7 +148,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.ColorFormat" /> object que representa o preenchimento de primeiro plano especificada ou cor sólida.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.ColorFormat" /> objeto que representa o preenchimento de primeiro plano especificado ou cor sólida.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -190,13 +176,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>obrigatório. Especifica quanto o deslocamento de sombra deve ser movido horizontalmente, em pontos. Um valor positivo faz a sombra se mover para a direita; um valor negativo faz com que ela se mova para a esquerda.</param>
+        <param name="Increment">Obrigatório <b>Único</b>. Especifica o quanto o deslocamento de sombra deve ser movido horizontalmente em pontos. Um valor positivo move a sombra para a direita; um valor negativo a move para a esquerda.</param>
         <summary>Altera o deslocamento horizontal da sombra pelo número especificado de pontos.</summary>
-        <remarks>
-          <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.OffsetX" /> propriedade para definir o deslocamento horizontal absoluto da sombra.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.OffsetX" /> propriedade para definir o deslocamento de sombra horizontal absoluto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementOffsetY">
@@ -222,13 +205,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>obrigatório. Especifica quanto o deslocamento de sombra deve ser movido verticalmente, em pontos. Um valor positivo faz a sombra se mover para baixo; uma valor negativo faz com que ela se mova para cima.</param>
+        <param name="Increment">Obrigatório <b>Único</b>. Especifica o quanto o deslocamento de sombra deve ser movido verticalmente em pontos. Um valor positivo faz a sombra se mover para baixo; uma valor negativo faz com que ela se mova para cima.</param>
         <summary>Altera o deslocamento vertical da sombra pelo número especificado de pontos.</summary>
-        <remarks>
-          <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.OffsetY" /> propriedade para definir o deslocamento vertical absoluto da sombra.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.OffsetY" /> propriedade para definir o deslocamento de sombra vertical absoluto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Obscured">
@@ -257,8 +237,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se a sombra da forma especificada aparece preenchida e é obscurecida pela forma, mesmo se a forma não tiver nenhum preenchimento. <b>False</b> se a sombra não tem nenhum preenchimento e o contorno da sombra é visível através da forma se a forma não tiver nenhum preenchimento.</summary>
+        <summary><b>True</b> se a sombra da forma especificada aparecer preenchida e estiver obscurecida pela forma, mesmo que a forma não tenha preenchimento. <b>False</b> se a sombra não tiver preenchimento e o seu contorno for visível através da forma, caso a forma não tenha preenchimento.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -291,11 +270,9 @@
       <Docs>
         <summary>Retorna ou define o deslocamento horizontal da sombra da forma especificada em pontos.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Um valor positivo desloca a sombra para a direita da forma; um valor negativo desloca a sombra para a esquerda.</para>
-          <para>Se você deseja deslocar uma sombra horizontal ou verticalmente a partir de sua posição atual sem ter que especificar uma posição absoluta, use o <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetX(System.Single)" /> método ou o <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetY(System.Single)" /> método.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Um valor positivo desloca a sombra para a direita da forma; um valor negativo desloca para a esquerda.</para>
+          <para>Se você deseja passar uma sombra horizontal ou verticalmente de sua posição atual sem precisar especificar uma posição absoluta, use o método <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetX(System.Single)" /> ou o <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetY(System.Single)" /> método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OffsetY">
@@ -326,11 +303,9 @@
       <Docs>
         <summary>Retorna ou define o deslocamento vertical da sombra da forma especificada em pontos.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Um valor positivo desloca a sombra para a direita da forma; um valor negativo desloca a sombra para a esquerda.</para>
-          <para>Se você deseja deslocar uma sombra horizontal ou verticalmente a partir de sua posição atual sem ter que especificar uma posição absoluta, use o <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetX(System.Single)" /> método ou o <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetY(System.Single)" /> método.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Um valor positivo desloca a sombra para a direita da forma; um valor negativo desloca para a esquerda.</para>
+          <para>Se você deseja passar uma sombra horizontal ou verticalmente de sua posição atual sem precisar especificar uma posição absoluta, use o método <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetX(System.Single)" /> ou o <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetY(System.Single)" /> método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -356,7 +331,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado.</summary>
+        <summary>Retorna o objeto pai do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -387,10 +362,8 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Core.MsoTriState" /> que representa se girar a sombra quando girar a <see cref="T:Microsoft.Office.Interop.Excel.Shape" />. Leitura/gravação.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoTriState" />
-        </value>
+        <summary>Returns or sets a <see cref="T:Microsoft.Office.Core.MsoTriState" /> that represents whether to rotate the shadow when rotateing the <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> . Leitura/gravação.</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoTriState" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -420,10 +393,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o tamanho da sombra especificado. Leitura/gravação.</summary>
-        <value>
-          <b>Simples</b>
-        </value>
+        <summary>Retorna ou define o tamanho da sombra especificada. Leitura/gravação.</summary>
+        <value><b>Single</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -453,12 +424,9 @@
         <ReturnType>Microsoft.Office.Core.MsoShadowStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna tanto usa um <see cref="T:Microsoft.Office.Core.MsoShadowStyle" /> objeto para definir o estilo da sombra especificado. Leitura/gravação.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoShadowStyle" />
-        </value>
-        <remarks>
-          <para>A tabela a seguir mostra os valores possíveis para <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.Style" />.</para>
+        <summary>Retorna ou usa um <see cref="T:Microsoft.Office.Core.MsoShadowStyle" /> objeto para definir o estilo da sombra especificada. Leitura/gravação.</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoShadowStyle" /></value>
+        <remarks><para>A tabela a seguir mostra os valores possíveis para <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.Style" /> .</para>
           <list type="table">
             <item>
               <term>
@@ -476,8 +444,7 @@
               </term>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Transparency">
@@ -506,12 +473,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o grau de transparência de preenchimento especificado como um valor de 0,0 (opaco) a 1,0 (transparente).</summary>
+        <summary>Retorna ou define o grau de transparência do preenchimento especificado como um valor de 0,0 (opaco) a 1,0 (transparente).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O valor dessa propriedade afeta a aparência somente das linhas e preenchimentos que usam cores sólidas; não afetando em nada a aparência das linhas ou preenchimentos padronizados, texturizados, ou que possuam imagem ou gradiente.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>O valor dessa propriedade afeta a aparência somente das linhas e preenchimentos que usam cores sólidas; não afetando em nada a aparência das linhas ou preenchimentos padronizados, texturizados, ou que possuam imagem ou gradiente.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -571,7 +536,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se o objeto está visível.</summary>
+        <summary>Determina se o objeto será visível.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="TimelineState" FullName="Microsoft.Office.Interop.Excel.TimelineState">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0335f3e0e135a9ce6c845d79bd25325307729e66" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580819" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TimelineState" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0335f3e0e135a9ce6c845d79bd25325307729e66" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009587" /></Metadata><TypeSignature Language="C#" Value="public interface TimelineState" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TimelineState" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TimelineState" />
   <TypeSignature Language="VB.NET" Value="Public Interface TimelineState" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>O estado de cronograma específicas de um <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto.</summary>
+    <summary>O estado específico da linha do tempo de um <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -56,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo do Excel. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Excel. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,12 +76,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado. Somente leitura <b>inteiro</b> (<b>int</b> em c#).</summary>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado. Integer somente <b>leitura</b> <b>(int</b> em C#).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Porque o objeto foi criado no Excel, essa propriedade retorna o valor hexadecimal, 5843454C, que representa a cadeia de caracteres "XCEL".</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Como o objeto foi criado no Excel, essa propriedade retorna o valor hexadecimal, 5843454C, que representa a cadeia de caracteres "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndDate">
@@ -115,7 +105,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o final do intervalo de datas filtragem (é igual a <see cref="P:Microsoft.Office.Interop.Excel.TimelineState.StartDate" /> se o intervalo é um único dia). <b>Objeto</b> (o<b>objeto</b> em c#) Somente leitura</summary>
+        <summary>Retorna o final do intervalo de datas de filtragem (igual a <see cref="P:Microsoft.Office.Interop.Excel.TimelineState.StartDate" /> se o intervalo for um único dia). <b>Objeto</b> (<b>objeto</b> em C#) Somente leitura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -143,7 +133,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotFilterType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o tipo de filtro de data. <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFilterType" />Somente leitura.</summary>
+        <summary>Retorna o tipo do filtro de data. <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFilterType" /> Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -171,7 +161,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o primeiro valor associado ao filtro de data (semântica variam de acordo com o tipo de filtro). <b>Objeto</b> (o<b>objeto</b> em c#) Somente leitura.</summary>
+        <summary>Retorna o primeiro valor associado ao filtro de data (a semântica varia por tipo de filtro). <b>Objeto</b> (<b>objeto</b> em C#) Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -199,7 +189,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o segundo valor associado ao filtro de data (semântica variam de acordo com o tipo de filtro). <b>Objeto</b> (o<b>objeto</b> em c#) Somente leitura.</summary>
+        <summary>Retorna o segundo valor associado ao filtro de data (a semântica varia por tipo de filtro). <b>Objeto</b> (<b>objeto</b> em C#) Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -227,7 +217,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <b>objeto</b> (<b>objeto</b> em c#) que representa o objeto pai do objeto <b>TimelineState</b> especificado. Somente leitura.</summary>
+        <summary>Retorna um <b>objeto</b> (<b>objeto</b> em C#) que representa o objeto pai do objeto <b>TimelineState</b> especificado. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -258,7 +248,7 @@
       <Docs>
         <param name="StartDate">O início do intervalo de datas de filtragem.</param>
         <param name="EndDate">O final do intervalo de datas de filtragem.</param>
-        <summary>Define o filtro da linha do tempo.</summary>
+        <summary>Define o filtro da Linha do Tempo.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -286,8 +276,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> quando o estado de filtragem é um intervalo de datas contíguos; <b>False</b> caso contrário. <b>Boolean</b> (<b>bool</b> em c#) Somente leitura.</summary>
+        <summary><b>True</b> quando o estado de filtragem é um intervalo de datas contíguo; <b>Caso contrário, false.</b> <b>Booliana</b> (<b>bool</b> em C#) Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -315,7 +304,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o início do intervalo de datas de filtragem. <b>Objeto</b> (o<b>objeto</b> em c#) Somente leitura.</summary>
+        <summary>Retorna o início do intervalo de datas de filtragem. <b>Objeto</b> (<b>objeto</b> em C#) Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

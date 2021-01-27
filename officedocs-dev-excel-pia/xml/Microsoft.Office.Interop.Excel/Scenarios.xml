@@ -1,13 +1,5 @@
 <Type Name="Scenarios" FullName="Microsoft.Office.Interop.Excel.Scenarios">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ae2d83b0cebf35ca68c44e96b1d08c3bd0e82529" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584676" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Scenarios : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ae2d83b0cebf35ca68c44e96b1d08c3bd0e82529" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010462" /></Metadata><TypeSignature Language="C#" Value="public interface Scenarios : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Scenarios implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Scenarios" />
   <TypeSignature Language="VB.NET" Value="Public Interface Scenarios&#xA;Implements IEnumerable" />
@@ -33,13 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.Scenario" /> objetos na planilha especificada. Um cenário é um grupo de valores de entrada (chamado <paramref name="changing cells" />) que recebe um nome e salvo.</summary>
-    <remarks>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Scenarios(System.Object)" /> método para retornar a coleção de <b>cenários</b> .</para>
+    <summary>Uma coleção de todos <see cref="T:Microsoft.Office.Interop.Excel.Scenario" /> os objetos na planilha especificada. Um cenário é um grupo de valores de entrada <paramref name="changing cells" /> (chamado) que é nomeado e salvo.</summary>
+    <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Scenarios(System.Object)" /> método para retornar a coleção <b>Scenarios.</b></para>
       <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Scenarios.Add(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para criar um novo cenário e adicioná-lo à coleção.</para>
-      <para>Usar <b>cenários</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome de cenário ou o número de índice, para retornar um único objeto <b>Scenario</b> .</para>
-      <para></para>
-    </remarks>
+      <para>Use <b>Cenários</b>( ), onde é o nome do cenário ou número <paramref name="index" /> de <paramref name="index" /> índice, para retornar um único objeto <b>Scenario.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -69,24 +59,16 @@
         <Parameter Name="Hidden" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b> necessário. O nome do cenário.</param>
-        <param name="ChangingCells">
-          <b>Objeto</b>necessário. Uma <see cref="T:Microsoft.Office.Interop.Excel.Range" /> cells do objeto referente à alteração para o cenário.</param>
-        <param name="Values">
-          <b>Objeto</b>de opcional. Uma matriz que contém o cenário valores para as células em <paramref name="ChangingCells" />. Se esse argumento for omitido, os valores de cenário são considerados os valores atuais das células em <paramref name="ChangingCells" />.</param>
-        <param name="Comment">
-          <b>Objeto</b>de opcional. Uma cadeia de caracteres que especifica o texto de comentário para o cenário. Quando um novo cenário é adicionado, nome do autor e a data são adicionados automaticamente no início do texto do comentário.</param>
-        <param name="Locked">
-          <b>Objeto</b>de opcional. <b>True</b> para bloquear o cenário para impedir alterações. O valor padrão é <b>True</b>.</param>
-        <param name="Hidden">
-          <b>Objeto</b>de opcional. <b>True</b> para ocultar o cenário. O valor padrão é <b>False</b>.</param>
+        <param name="Name"><b>String</b> necessário. O nome do cenário.</param>
+        <param name="ChangingCells">Objeto <b>Required</b>. Um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que se refere às células changing para o cenário.</param>
+        <param name="Values">Objeto <b>opcional</b>. Uma matriz que contém os valores de cenário para as células em <paramref name="ChangingCells" /> . Se esse argumento for omitido, os valores do cenário serão considerados os valores atuais nas células em <paramref name="ChangingCells" /> .</param>
+        <param name="Comment">Objeto <b>opcional</b>. Uma sequência de caracteres que especifica o texto de comentário para o cenário. Quando um novo cenário é adicionado, o nome do autor e a data são adicionados automaticamente no início do texto de comentário.</param>
+        <param name="Locked">Objeto <b>opcional</b>. <b>True</b> para bloquear o cenário e evitar alterações. O valor padrão é <b>True</b>.</param>
+        <param name="Hidden">Objeto <b>opcional</b>. <b>True</b> para ocultar o cenário. O valor padrão é <b>False</b>.</param>
         <summary>Cria um novo cenário e o adiciona à lista de cenários disponíveis para a planilha atual.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Um nome de cenário precisa ser exclusivo; o Microsoft Excel gerará um erro se você tentar criar um cenário com um nome que já esteja em uso.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Um nome de cenário precisa ser exclusivo; o Microsoft Excel gerará um erro se você tentar criar um cenário com um nome que já esteja em uso.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -112,7 +94,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -168,10 +150,9 @@
         <Parameter Name="ResultCells" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ReportType">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlSummaryReportType" />.</param>
-        <param name="ResultCells">
-          <b>Objeto</b>de opcional. Uma <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa as células de resultado na planilha especificada. Normalmente, esse intervalo refere-se a uma ou mais células contendo as fórmulas que dependem de valores de células variáveis para seu modelo — ou seja, as células que mostram os resultados de um cenário específico. Se esse argumento for omitido, não há nenhuma incluídas no relatório de células de resultado.</param>
-        <summary>Cria uma nova planilha que contém um relatório de resumo para os cenários na planilha especificada.</summary>
+        <param name="ReportType">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlSummaryReportType" /> .</param>
+        <param name="ResultCells">Objeto <b>opcional</b>. Um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa as células de resultado na planilha especificada. Normalmente, esse intervalo refere-se a uma ou mais células contendo as fórmulas que dependem dos valores das células variáveis para seu modelo — ou seja, as células que exibem os resultados de um cenário particular. Se esse argumento for omitido, não serão incluídas células de resultado no relatório.</param>
+        <summary>Cria uma nova planilha contendo um relatório resumido dos cenários na planilha especificada.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -201,11 +182,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -263,8 +242,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>necessário. O nome ou número de índice do objeto.</param>
+        <param name="Index">Objeto <b>Required</b>. O nome ou número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -293,14 +271,11 @@
         <Parameter Name="Source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">
-          <b>Objeto</b>necessário. O nome da planilha que contém cenários a serem mesclados, ou um <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objeto que representa essa planilha.</param>
-        <summary>Mescla os cenários de outra planilha no <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> conjunto.</summary>
+        <param name="Source">Objeto <b>Required</b>. O nome da planilha que contém cenários a serem mesclados ou um <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objeto que representa essa planilha.</param>
+        <summary>Mescla os cenários de outra planilha na <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> coleção.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>O valor de um intervalo mesclado é especificado na célula do canto superior esquerdo do intervalo.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>O valor de um intervalo mesclado é especificado na célula do canto superior esquerdo do intervalo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
