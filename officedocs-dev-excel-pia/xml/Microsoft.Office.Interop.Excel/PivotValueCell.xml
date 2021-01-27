@@ -1,13 +1,5 @@
 <Type Name="PivotValueCell" FullName="Microsoft.Office.Interop.Excel.PivotValueCell">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a54dc53a361d17536e0f89e90248c89704782a9c" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585138" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotValueCell" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a54dc53a361d17536e0f89e90248c89704782a9c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997233" /></Metadata><TypeSignature Language="C#" Value="public interface PivotValueCell" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotValueCell" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotValueCell" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotValueCell" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Fornece uma maneira para expor os valores de células no caso de células reais (objetos de<b>intervalo</b> ) não estão disponíveis.</summary>
+    <summary>Fornece uma maneira de expor valores de células caso células reais<b>(objetos Range)</b> não estão disponíveis.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -56,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um aplicativo <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo do Excel. Somente leitura.</summary>
+        <summary>Retorna um objeto Application <see cref="T:Microsoft.Office.Interop.Excel.Application" /> que representa o aplicativo Excel. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,12 +76,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado. Somente leitura <b>inteiro</b> (<b>int</b> em c#).</summary>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado. Integer somente <b>leitura</b> <b>(int</b> em C#).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Porque o objeto foi criado no Excel, essa propriedade retorna o valor hexadecimal, 5843454C, que representa a cadeia de caracteres "XCEL".</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Como o objeto foi criado no Excel, essa propriedade retorna o valor hexadecimal, 5843454C, que representa a cadeia de caracteres "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -115,7 +105,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <b>objeto</b> (<b>objeto</b> em c#) que representa o objeto pai do especificado <see cref="T:Microsoft.Office.Interop.Excel.PivotValueCell" /> objeto. Somente leitura.</summary>
+        <summary>Retorna um <b>objeto</b> (<b>objeto</b> em C#) que representa o objeto pai do objeto <see cref="T:Microsoft.Office.Interop.Excel.PivotValueCell" /> especificado. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -143,7 +133,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotCell</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> que especifica a localização do <b>PivotValueCell</b>. Somente leitura</summary>
+        <summary>Retorna o <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> que especifica o local do <b>PivotValueCell</b>. Somente leitura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -171,12 +161,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Actions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna uma coleção dos objetos de nome de ação OLAP que representará ações definidas pelo OLAP que podem ser executadas. Somente leitura</summary>
+        <summary>Retorna uma coleção de objetos de nome de Ação OLAP que representará ações definidas pelo OLAP que podem ser executadas. Somente leitura</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Uma ação de servidor é um recurso opcional que um administrador de cubo OLAP pode definir em um servidor que usa um membro do cubo ou medir como um parâmetro em uma consulta para obter detalhes no cubo ou para iniciar outro aplicativo,</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Uma ação de servidor é um recurso opcional que um administrador de cubo OLAP pode definir em um servidor que usa um membro de cubo ou mede como um parâmetro em uma consulta para obter detalhes no cubo ou para iniciar outro aplicativo,</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowDetail">
@@ -200,7 +188,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Coloca as linhas individuais de uma fonte de dados OLAP que contribuem para um valor agregado em sua próprias planilha do Excel.</summary>
+        <summary>Coloca as linhas individuais de uma fonte de dados OLAP que contribuem para uma agregação em sua própria planilha do Excel.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,12 +215,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o valor no local. O valor é o valor após <b>ShowAs</b> e outros cálculos tiverem sido aplicados. Variant pode ser <b>vazia</b>, <b>número</b>, <b>Data</b>, <b>cadeia de caracteres</b>ou o valor de <b>erro</b> .</summary>
+        <summary>Retorna o valor no local. O valor é o valor depois que <b>ShowAs</b> e outros cálculos foram aplicados. Variant pode ser <b>Empty</b>, <b>Number</b>, <b>Date</b>, <b>String</b>ou <b>Error</b> value.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade funciona independente da se a tabela dinâmica está em uma planilha ou não.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Essa propriedade funciona independentemente de a tabela dinâmica ser ou não em uma planilha.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
