@@ -1,13 +1,5 @@
 <Type Name="Comment" FullName="Microsoft.Office.Interop.Excel.Comment">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="aee055e9a2656dedc02e66bab44aba17d315d4f9" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585845" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Comment" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="aee055e9a2656dedc02e66bab44aba17d315d4f9" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003980" /></Metadata><TypeSignature Language="C#" Value="public interface Comment" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Comment" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Comment" />
   <TypeSignature Language="VB.NET" Value="Public Interface Comment" />
@@ -30,13 +22,11 @@
   </Attributes>
   <Docs>
     <summary>Representa um comentário de célula.</summary>
-    <remarks>
-      <para>O objeto <b>Comment</b> é membro do <see cref="T:Microsoft.Office.Interop.Excel.Comments" /> conjunto.</para>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.Range.Comment" /> propriedade para retornar um objeto <b>Comment</b> .</para>
-      <para>Usar os <b>comentários</b>(<paramref name="index" />), onde <paramref name="index" /> é o número do comentário, para retornar um único comentário da coleção <b>Comments</b> .</para>
+    <remarks><para>O <b>objeto Comment</b> é um membro da <see cref="T:Microsoft.Office.Interop.Excel.Comments" /> coleção.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Excel.Range.Comment" /> propriedade para retornar um objeto <b>Comment.</b></para>
+      <para>Use <b>Comentários</b>( <paramref name="index" /> ), onde está o número do <paramref name="index" /> comentário, para retornar um único comentário da <b>coleção Comments</b> .</para>
       <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Range.AddComment(System.Object)" /> método para adicionar um comentário a um intervalo.</para>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,11 +110,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -173,12 +161,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> object que representa o próximo comentário.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> objeto que representa o próximo comentário.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Este método trabalha somente em uma planilha. O uso deste método no último comentário em uma planilha retorna <b>Null</b> (não o próximo comentário na próxima planilha).</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Este método trabalha somente em uma planilha. O uso deste método no último comentário em uma planilha retorna <b>Null</b> (não o próximo comentário na próxima planilha).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -204,7 +190,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado.</summary>
+        <summary>Retorna o objeto pai do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -230,12 +216,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> object que representa o comentário anterior.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> objeto que representa o comentário anterior.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Este método trabalha somente em uma planilha. O uso deste método no primeiro comentário em uma planilha retorna <b>Null</b> (não o último comentário na planilha anterior).</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Este método trabalha somente em uma planilha. O uso deste método no primeiro comentário em uma planilha retorna <b>Null</b> (não o último comentário na planilha anterior).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shape">
@@ -261,7 +245,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object que representa a forma anexada ao comentário especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto que representa a forma anexada ao comentário especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -290,12 +274,9 @@
         <Parameter Name="Overwrite" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Text">
-          <b>Objeto</b>de opcional. O texto a ser adicionado.</param>
-        <param name="Start">
-          <b>Objeto</b>de opcional. O número do caractere onde o texto adicionado será colocado. Se esse argumento for omitido, qualquer texto existente no comentário será excluído.</param>
-        <param name="Overwrite">
-          <b>Objeto</b>de opcional. <b>True</b> para substituir o texto existente. O valor padrão é <b>False</b> (o texto é inserido).</param>
+        <param name="Text">Objeto <b>opcional</b>. O texto a ser adicionado.</param>
+        <param name="Start">Objeto <b>opcional</b>. O número do caractere onde o texto adicionado será inserido. Se este argumento for omitido, qualquer texto existente no comentário será excluído.</param>
+        <param name="Overwrite">Objeto <b>opcional</b>. <b>True</b> para substituir o texto existente. O valor padrão é <b>False</b> (o texto é inserido).</param>
         <summary>Define texto de comentário.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -327,7 +308,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se o objeto está visível.</summary>
+        <summary>Determina se o objeto será visível.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

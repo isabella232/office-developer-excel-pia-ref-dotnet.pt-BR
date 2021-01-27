@@ -1,13 +1,5 @@
 <Type Name="ChartArea" FullName="Microsoft.Office.Interop.Excel.ChartArea">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8707be5e24dec82e4b5526b2fd741c4c8a846d77" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582373" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartArea" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8707be5e24dec82e4b5526b2fd741c4c8a846d77" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004225" /></Metadata><TypeSignature Language="C#" Value="public interface ChartArea" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartArea" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartArea" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartArea" />
@@ -29,11 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa a área de gráfico de um gráfico. A área do gráfico em um gráfico 2D contém os eixos, o título do gráfico, os títulos de eixo e a legenda. Área do gráfico em um gráfico 3D contém o título do gráfico e a legenda; ele não inclui a área de plotagem (a área dentro da área do gráfico onde os dados são plotados). Para obter informações sobre como formatar a área de plotagem, consulte o <see cref="T:Microsoft.Office.Interop.Excel.PlotArea" /> objeto.</summary>
-    <remarks>
-      <para>Use o arredondado<see cref="P:Microsoft.Office.Interop.Excel._Chart.ChartArea" /> propriedade para retornar o objeto <b>ChartArea</b> .</para>
-      <para></para>
-    </remarks>
+    <summary>Representa a área de gráfico de um gráfico. A área do gráfico em um gráfico 2D contém os eixos, o título do gráfico, os títulos de eixo e a legenda. A área do gráfico em um gráfico 3D contém o título do gráfico e a legenda; não inclui a área de plotagem (a área dentro da área do gráfico onde os dados são plotados). Para obter informações sobre como formatar a área de plotagem, consulte o <see cref="T:Microsoft.Office.Interop.Excel.PlotArea" /> objeto.</summary>
+    <remarks><para>Use a propriedade <see cref="P:Microsoft.Office.Interop.Excel._Chart.ChartArea" /> Rounded para retornar o <b>objeto ChartArea.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto de automação OLE para retornar o aplicativo desse objeto).</summary>
+        <summary>Retorna um objeto que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto de automação OLE para retornar o aplicativo <see cref="T:Microsoft.Office.Interop.Excel.Application" /> desse objeto).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,8 +86,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o texto no objeto altera o tamanho da fonte quando o tamanho do objeto é alterada. O valor padrão é <b>True</b>.</summary>
+        <summary><b>True</b> se o texto contido no objeto tiver o tamanho da fonte alterado quando o tamanho do objeto for alterado. O valor padrão é <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,7 +117,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Border" /> object que representa a borda do objeto.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Border" /> objeto que representa a borda do objeto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -262,11 +251,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -295,7 +282,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto para uma forma especificada ou um <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> objeto para um gráfico especificado que contém as propriedades para a forma ou o gráfico de formatação de preenchimento.</summary>
+        <summary>Retorna um objeto para uma forma especificada ou um objeto para um gráfico especificado que contém propriedades de formatação de <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> preenchimento para a forma ou <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> gráfico.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -326,7 +313,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object que representa a fonte do objeto especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Font" /> objeto que representa a fonte do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -355,13 +342,9 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna o <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objeto. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
-        <remarks>
-          <para>O <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objeto contém a linha, preenchimento e efeito da formatação da área do gráfico.</para>
-          <para></para>
-        </remarks>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
+        <remarks><para>O <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objeto contém a linha, o preenchimento e a formatação de efeito da área do gráfico.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -421,7 +404,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object que representa o interior do objeto especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objeto que representa o interior do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -454,10 +437,8 @@
       <Docs>
         <summary>A distância, em pontos, da borda esquerda do objeto até a borda esquerda da área do gráfico.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se a janela estiver maximizada, essa propriedade retornará um número negativo que varia com base na largura da borda da janela. A definição dessa propriedade como 0 (zero) tornará a janela um pouco menor do que seria se a janela do aplicativo fosse maximizado. Em outras palavras, se essa propriedade for 0 (zero), a borda esquerda da janela principal do Microsoft Excel mal será visível na tela.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se a janela estiver maximizada, essa propriedade retornará um número negativo que varia com base na largura da borda da janela. Definir essa propriedade como 0 (zero) fará com que a janela um pouco menor do que seria se a janela do aplicativo fosse maximizada. Em outras palavras, se essa propriedade for 0 (zero), a borda esquerda da janela principal do Microsoft Excel simplesmente ficará visível na tela.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -511,7 +492,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado.</summary>
+        <summary>Retorna o objeto pai do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -543,8 +524,7 @@
       </ReturnValue>
       <Docs>
         <summary>True se o gráfico incorporado tiver cantos arredondados. <b>Boolean</b> de leitura/gravação.</summary>
-        <value>
-          <b>Boolean</b>.</value>
+        <value><b>Boolean</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -600,8 +580,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se a fonte for uma fonte sombreada ou se o objeto tem uma sombra.</summary>
+        <summary><b>True</b> se a fonte for uma fonte de sombra ou se o objeto tiver uma sombra.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -632,7 +611,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A distância, em pontos, da borda superior do objeto à parte superior da linha 1 (em uma planilha) ou a parte superior da área do gráfico (em um gráfico).</summary>
+        <summary>A distância, em pontos, da borda superior do objeto até a parte superior da linha 1 (em uma planilha) ou a parte superior da área do gráfico (em um gráfico).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

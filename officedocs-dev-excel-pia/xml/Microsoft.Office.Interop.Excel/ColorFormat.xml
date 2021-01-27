@@ -1,13 +1,5 @@
 <Type Name="ColorFormat" FullName="Microsoft.Office.Interop.Excel.ColorFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3d031f52b238ec46211ddb6bca7295480f58f00f" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584473" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ColorFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3d031f52b238ec46211ddb6bca7295480f58f00f" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004008" /></Metadata><TypeSignature Language="C#" Value="public interface ColorFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ColorFormat&#xA;Implements _IMsoDispObj" />
@@ -31,8 +23,7 @@
   </Attributes>
   <Docs>
     <summary>Representa a cor de um objeto de uma só cor, a cor do ponteiro ou a cor de primeiro plano ou de plano de fundo de um objeto com um preenchimento gradual ou padronizado.</summary>
-    <remarks>
-      <para>Você pode definir as cores com um valor vermelho-verde-azul explícito (usando o <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" /> propriedade) ou com uma cor no esquema de cores (usando o <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" /> propriedade).</para>
+    <remarks><para>Você pode definir as cores com um valor vermelho-verde-azul explícito (usando a propriedade) ou como uma cor no esquema de cores <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" /> (usando a <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" /> propriedade).</para>
       <para>Use uma das propriedades listadas na tabela a seguir para retornar um objeto <b>ColorFormat</b>.</para>
       <list type="table">
         <item>
@@ -90,8 +81,7 @@
           <description>A cor dos lados de um objeto extrudado</description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -120,7 +110,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -153,11 +143,9 @@
       <Docs>
         <summary>Obtém ou define a luminosidade do objeto especificado.</summary>
         <value>A luminosidade do objeto especificado.</value>
-        <remarks>
-          <para>Leitura/gravação.</para>
+        <remarks><para>Leitura/gravação.</para>
           <para>O valor dessa propriedade deve ser um número de 0,0 (mais esmaecido) a 1,0 (mais brilhante).</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -187,14 +175,10 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>O <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" /> propriedade foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL. Consulte também <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</para>
-          <para></para>
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo tem um código de criador de <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" /> quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL. Consulte também <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ObjectThemeColor">
@@ -223,10 +207,8 @@
         <ReturnType>Microsoft.Office.Core.MsoThemeColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define uma cor que é mapeada para o esquema de cores de tema. Leitura/gravação <see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" />
-        </value>
+        <summary>Retorna ou define uma cor que é mapeada para o esquema de cores do tema. <see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" />Leitura/gravação.</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,10 +235,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Retorna o objeto pai do objeto especificado.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -320,7 +300,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a cor de um objeto color, como um índice no esquema de cores atual.</summary>
+        <summary>Retorna ou define a cor de um objeto de cor como um índice no esquema de cores atual.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -351,12 +331,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um valor <b>Single</b> que clareia ou escurece a cor de uma forma especificada.</summary>
+        <summary>Retorna ou define um <b>valor único</b> que clareia ou escurece a cor de uma forma especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Você pode inserir um número de -1 (mais escuro) até 1 (mais claro) para a propriedade <b>TintAndShade</b>, 0 (zero) é neutro.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Você pode inserir um número de -1 (mais escuro) até 1 (mais claro) para a propriedade <b>TintAndShade</b>, 0 (zero) é neutro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -382,10 +360,9 @@
         <ReturnType>Microsoft.Office.Core.MsoColorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o tipo de formato de texto explicativo.</summary>
+        <summary>Retorna ou define o tipo de formato de texto explicatil.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>MsoCalloutType</b> pode ser uma dessas constantes <b>MsoCalloutType</b>.</para>
           <para>
             <b>msoCalloutFour</b>
@@ -402,8 +379,7 @@
           <para>
             <b>msoCalloutTwo</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

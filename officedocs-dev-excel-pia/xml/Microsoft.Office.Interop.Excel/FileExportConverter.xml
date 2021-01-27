@@ -1,13 +1,5 @@
 <Type Name="FileExportConverter" FullName="Microsoft.Office.Interop.Excel.FileExportConverter">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4b27ac15b0b3e0b0e1c199c9745e73b9bbe348b0" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582401" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FileExportConverter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4b27ac15b0b3e0b0e1c199c9745e73b9bbe348b0" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003602" /></Metadata><TypeSignature Language="C#" Value="public interface FileExportConverter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FileExportConverter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.FileExportConverter" />
   <TypeSignature Language="VB.NET" Value="Public Interface FileExportConverter" />
@@ -30,10 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Representa um conversor de arquivo usado para salvar arquivos.</summary>
-    <remarks>
-      <para>Não é possível criar um novo conversor de arquivo ou adicionar um para o <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> conjunto. <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />objetos são adicionados durante a instalação do Microsoft Office ou pela instalação de conversores de arquivo suplementares.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Você não pode criar um novo conversor de arquivo ou adicionar um à <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> coleção. <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> são adicionados durante a instalação do Microsoft Office ou instalando conversores de arquivo suplementares.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,9 +49,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Application" />.</value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel. Somente leitura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Application" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,12 +78,9 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> que indica o aplicativo no qual o objeto especificado foi criado. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</value>
-        <remarks>
-          <para>Se o objeto tiver sido criado no Microsoft Excel, essa propriedade retornará o valor hexadecimal, 5843454C, que representa a cadeia de caracteres "XCEL". A propriedade Creator foi planejada para ser usada no Microsoft Excel para o Macintosh, onde cada aplicativo tem um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</value>
+        <remarks><para>Se o objeto tiver sido criado no Microsoft Excel, essa propriedade retornará o valor hexadecimal, 5843454C, que representa a cadeia de caracteres "XCEL". A propriedade Creator foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -121,9 +107,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna a descrição do conversor de arquivo. <b>String</b> somente leitura.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,10 +134,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o arquivo associadas especificado de extensões de nome <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> objeto. <b>String</b> somente leitura.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <summary>Retorna as extensões de nome de arquivo associadas ao objeto <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> especificado. <b>String</b> somente leitura.</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,10 +162,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um inteiro que identifica o formato de arquivo associado especificado <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> objeto. Somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Retorna um inteiro que identifica o formato de arquivo associado ao objeto <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> especificado. Somente leitura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,10 +190,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <b>objeto</b> que representa o objeto pai do especificado <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> objeto. Somente leitura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Retorna um <b>objeto</b> que representa o objeto pai do objeto <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> especificado. Somente leitura.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

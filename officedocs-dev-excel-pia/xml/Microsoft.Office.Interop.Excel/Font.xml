@@ -1,13 +1,5 @@
 <Type Name="Font" FullName="Microsoft.Office.Interop.Excel.Font">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a8ba6992514b1438faa9fc74351cb46d6d8e0551" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585691" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Font" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a8ba6992514b1438faa9fc74351cb46d6d8e0551" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003574" /></Metadata><TypeSignature Language="C#" Value="public interface Font" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Font" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Font" />
   <TypeSignature Language="VB.NET" Value="Public Interface Font" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Contém os atributos de fonte (nome, tamanho, cor, etc) de um objeto.</summary>
-    <remarks>
-      <para>Use a propriedade <b>Font</b> para retornar o objeto <b>Font</b>.</para>
-      <para>Se você não quiser formatar todo o texto em uma célula ou gráfico da mesma maneira, use o <see cref="P:Microsoft.Office.Interop.Excel.Range.Characters(System.Object,System.Object)" /> propriedade para retornar um subconjunto do texto.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Use a propriedade <b>Font</b> para retornar o objeto <b>Font</b>.</para>
+      <para>Se você não quiser formatar todo o texto em uma célula ou gráfico da mesma maneira, use a propriedade para retornar um <see cref="P:Microsoft.Office.Interop.Excel.Range.Characters(System.Object,System.Object)" /> subconjunto do texto.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,10 +81,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o tipo de plano de fundo do texto usado em gráficos. Pode ser uma do <see cref="T:Microsoft.Office.Interop.Excel.XlBackground" /> constantes.</summary>
+        <summary>Retorna ou define o tipo de plano de fundo do texto usado em gráficos. Pode ser uma das <see cref="T:Microsoft.Office.Interop.Excel.XlBackground" /> constantes.</summary>
         <value>To be added.</value>
-        <remarks>
-          <list type="table">
+        <remarks><list type="table">
             <item>
               <term>
                 <b>xlBackgroundAutomatic</b>
@@ -105,7 +94,7 @@
               <term>
                 <b>xlBackgroundOpaque</b>
               </term>
-              <description>Plano de fundo de fonte definirá o plano de fundo da fonte para preto se a cor do texto e a cor de preenchimento sob o texto são muito semelhantes ou a mesma cor, de forma que o texto não apareceriam</description>
+              <description>O plano de fundo da fonte definirá o plano de fundo da fonte como preto se a cor do texto e a cor de preenchimento sob o texto são muito próximas ou da mesma cor, de forma que o texto não apareça</description>
             </item>
             <item>
               <term>
@@ -114,8 +103,7 @@
               <description>Font background é definido como transparente de modo que o segundo plano do texto não mude se a cor do texto for muito parecida com a cor sob o texto</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Bold">
@@ -144,8 +132,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se a fonte for negrito.</summary>
+        <summary><b>True</b> se a fonte for negrito.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -209,14 +196,12 @@
       <Docs>
         <summary>Retorna ou define a cor da fonte.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A cor é especificada como um valor de índice na paleta de cores atual ou como um dos seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constantes:</para>
+        <remarks><para>A cor é especificada como um valor de índice na paleta de cores atual ou como uma das seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constantes:</para>
           <para>
             <b>xlColorIndexAutomatic</b>. Use para especificar a cor automática.</para>
           <para>
             <b>xlColorIndexNone</b>.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -244,11 +229,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FontStyle">
@@ -279,10 +262,8 @@
       <Docs>
         <summary>Retorna ou define o estilo da fonte.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A alteração dessa propriedade pode afetar outras <see cref="T:Microsoft.Office.Interop.Excel.Font" /> propriedades do objeto (como <see cref="P:Microsoft.Office.Interop.Excel.Font.Bold" /> e <see cref="P:Microsoft.Office.Interop.Excel.Font.Italic" />).</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Alterar essa propriedade pode afetar outras <see cref="T:Microsoft.Office.Interop.Excel.Font" /> propriedades do objeto (como e <see cref="P:Microsoft.Office.Interop.Excel.Font.Bold" /> <see cref="P:Microsoft.Office.Interop.Excel.Font.Italic" /> ).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Italic">
@@ -311,8 +292,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o estilo da fonte for itálico.</summary>
+        <summary><b>True</b> se o estilo da fonte for itálico.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -345,8 +325,7 @@
       <Docs>
         <summary>Retorna ou define o nome do objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A tabela a seguir mostra os valores de exemplo da propriedade de <b>nome</b> e propriedades relacionadas, recebe um <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a></para>
+        <remarks><para>A tabela a seguir mostra valores de exemplo <b>da propriedade Name</b> e das propriedades relacionadas, dado um <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a></para>
           <list type="table">
             <item>
               <term>
@@ -377,15 +356,14 @@
               <description>Paris</description>
             </item>
           </list>
-          <para>Ao especificar um índice para o <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> coleção, você pode usar a sintaxe mostrada na tabela a seguir.</para>
+          <para>Ao especificar um índice na <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> coleção, você pode usar a sintaxe mostrada na tabela a seguir.</para>
           <list type="table">
             <item>
-              <term>expressão. PivotItems ("[Europe]. [ França]. [Paris] ")</term>
+              <term>expressão. PivotItems("[Europe].[ França]. [Paris]")</term>
               <description>expressão. PivotItems("Paris")</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutlineFont">
@@ -422,10 +400,8 @@
       <Docs>
         <summary>True se a fonte for uma fonte de tópicos.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propriedade não tem efeito no Windows, mas seu valor é retido (ele pode ser definido e retornado).</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Esta propriedade não tem efeito no Windows, mas seu valor é retido (ele pode ser definido e retornado).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -451,7 +427,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado.</summary>
+        <summary>Retorna o objeto pai do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -488,13 +464,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se a fonte for uma fonte sombreada ou se o objeto tem uma sombra.</summary>
+        <summary><b>True</b> se a fonte for uma fonte de sombra ou se o objeto tiver uma sombra.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade não tem efeito no Microsoft Windows, mas seu valor é mantido (pode ser definido e retornado).</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Essa propriedade não tem efeito no Microsoft Windows, mas seu valor é mantido (pode ser definido e retornado).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -554,8 +527,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se a fonte é ignorada com uma linha horizontal.</summary>
+        <summary><b>True</b> se a fonte é ignorada com uma linha horizontal.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -586,8 +558,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se a fonte estiver formatada como subscrito. <b>False</b> por padrão.</summary>
+        <summary><b>True</b> se a fonte estiver formatada como subscrito. <b>False</b> por padrão.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -618,8 +589,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se a fonte estiver formatada como superscrito. <b>False</b> por padrão.</summary>
+        <summary><b>True</b> se a fonte estiver formatada como superscrito. <b>False</b> por padrão.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -650,14 +620,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a cor do tema no esquema de cores aplicado que está associado ao objeto especificado.  <b>Objeto</b> de leitura/gravação.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>A tentativa de acessar uma cor de tema para um objeto cuja cor não possui tema atualmente resultará em um erro em tempo de execução de solicitação inválida.</para>
-          <para></para>
-        </remarks>
+        <summary>Retorna ou define a cor do tema no esquema de cores aplicado associado ao objeto especificado.  <b>Objeto</b> de leitura/gravação.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>A tentativa de acessar uma cor de tema para um objeto cuja cor não possui tema atualmente resultará em um erro em tempo de execução de solicitação inválida.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ThemeFont">
@@ -686,10 +652,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlThemeFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a fonte do tema do esquema de fonte aplicado que está associado ao objeto especificado.  Leitura/gravação <see cref="T:Microsoft.Office.Interop.Excel.XlThemeFont" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlThemeFont" />
-        </value>
+        <summary>Retorna ou define a fonte do tema no esquema de fontes aplicado associado ao objeto especificado.  <see cref="T:Microsoft.Office.Interop.Excel.XlThemeFont" />Leitura/gravação.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlThemeFont" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -720,14 +684,10 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define um <b>Single</b> que clareia ou escurece uma cor.</summary>
-        <value>
-          <b>Object</b>
-        </value>
-        <remarks>
-          <para>Você pode inserir um número de -1 (mais escuro) até 1 (mais claro) para o <see cref="P:Microsoft.Office.Interop.Excel.Font.TintAndShade" /> propriedade. Zero (0) é neutro.</para>
+        <value><b>Object</b></value>
+        <remarks><para>Você pode inserir um número de -1 (mais escuro) a 1 (mais claro) para a <see cref="P:Microsoft.Office.Interop.Excel.Font.TintAndShade" /> propriedade. Zero (0) é neutro.</para>
           <para>A tentativa de definir esta propriedade como um valor menor que -1 ou maior que 1 resulta em um erro em tempo de execução: "O valor especificado está fora dos limites". Esta propriedade funciona tanto com cores com tema quanto sem tema.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Underline">
@@ -758,8 +718,7 @@
       <Docs>
         <summary>Retorna ou define o tipo de sublinhado aplicado à fonte.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlUnderlineStyle" /> constantes.</para>
+        <remarks><para>Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlUnderlineStyle" /> constantes.</para>
           <para>
             <b>xlUnderlineStyleNone</b>
           </para>
@@ -775,8 +734,7 @@
           <para>
             <b>xlUnderlineStyleDoubleAccounting</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

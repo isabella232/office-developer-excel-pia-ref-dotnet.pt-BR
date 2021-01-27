@@ -1,13 +1,5 @@
 <Type Name="AppEvents_WorkbookBeforeXmlImportEventHandler" FullName="Microsoft.Office.Interop.Excel.AppEvents_WorkbookBeforeXmlImportEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f90389f86fa49c46f8484bb870e4db187dc8cf28" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584319" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void AppEvents_WorkbookBeforeXmlImportEventHandler(Workbook Wb, XmlMap Map, string Url, bool IsRefresh, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f90389f86fa49c46f8484bb870e4db187dc8cf28" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004428" /></Metadata><TypeSignature Language="C#" Value="public delegate void AppEvents_WorkbookBeforeXmlImportEventHandler(Workbook Wb, XmlMap Map, string Url, bool IsRefresh, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AppEvents_WorkbookBeforeXmlImportEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AppEvents_WorkbookBeforeXmlImportEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub AppEvents_WorkbookBeforeXmlImportEventHandler(Wb As Workbook, Map As XmlMap, Url As String, IsRefresh As Boolean, ByRef Cancel As Boolean)" />
@@ -38,13 +30,12 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="Wb">Necessário <see cref="T:Microsoft.Office.Interop.Excel.Workbook" />. A pasta de trabalho de destino.</param>
-    <param name="Map">Necessário <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />. O mapa XML que será usado para importar dados.</param>
-    <param name="Url">
-      <b>String</b> necessário. O local do arquivo XML para importação.</param>
-    <param name="IsRefresh">Necessário <b>booleano</b>. <b>True</b> se o evento tiver sido disparado pela atualização de uma conexão existente com dados XML; <b>False</b> se um novo mapeamento será criado.</param>
-    <param name="Cancel">Necessário <b>booleano</b>. Defina como <b>True</b> para cancelar a operação de importação ou de atualização.</param>
-    <summary>Um tipo de <b>delegado</b> usado para adicionar um manipulador de eventos para o <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeXmlImport" /> evento. O evento <b>WorkbookBeforeXmlImport</b> ocorre antes que uma conexão de dados XML existente é atualizada ou novos dados XML são importados para qualquer pasta de trabalho aberta do Microsoft Excel.</summary>
+    <param name="Wb">Obrigatório. <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> A pasta de trabalho de destino.</param>
+    <param name="Map">Obrigatório. <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> O mapa XML que será usado para importar dados.</param>
+    <param name="Url"><b>String</b> necessário. O local do arquivo XML para importação.</param>
+    <param name="IsRefresh">Boolean <b>necessário.</b> <b>True</b> se o evento foi disparado por meio da atualização de uma conexão existente com dados XML; <b>False</b> se um novo mapeamento for criado.</param>
+    <param name="Cancel">Boolean <b>necessário.</b> Defina como <b>True</b> para cancelar a operação de importação ou de atualização.</param>
+    <summary>Um <b>tipo</b> delegate usado para adicionar um manipulador de eventos para o <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeXmlImport" /> evento. O <b>evento WorkbookBeforeXmlImport</b> ocorre antes que uma conexão de dados XML existente seja atualizada ou novos dados XML são importados para qualquer planilha aberta do Microsoft Excel.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

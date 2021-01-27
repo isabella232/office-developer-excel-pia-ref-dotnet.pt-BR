@@ -1,13 +1,5 @@
 <Type Name="Hyperlinks" FullName="Microsoft.Office.Interop.Excel.Hyperlinks">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="384731b744bc8d5ac5fc450f7f7db1aaeb7f87e6" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582702" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Hyperlinks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="384731b744bc8d5ac5fc450f7f7db1aaeb7f87e6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003427" /></Metadata><TypeSignature Language="C#" Value="public interface Hyperlinks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Hyperlinks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Hyperlinks" />
   <TypeSignature Language="VB.NET" Value="Public Interface Hyperlinks&#xA;Implements IEnumerable" />
@@ -34,11 +26,9 @@
   </Attributes>
   <Docs>
     <summary>Representa a coleção de hiperlinks para uma planilha ou um intervalo. Cada hiperlink é representado por um <see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" /> objeto.</summary>
-    <remarks>
-      <para>Use a propriedade <b>Hyperlinks</b> para retornar a coleção <b>Hyperlinks</b>.</para>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Hyperlinks.Add(System.Object,System.String,System.Object,System.Object,System.Object)" /> método para criar um hiperlink e adicioná-lo à coleção <b>Hyperlinks</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Use a propriedade <b>Hyperlinks</b> para retornar a coleção <b>Hyperlinks</b>.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Hyperlinks.Add(System.Object,System.String,System.Object,System.Object,System.Object)" /> método para criar um hiperlink e adicioná-lo à coleção <b>Hyperlinks.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -102,22 +92,15 @@
         <Parameter Name="TextToDisplay" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Anchor">
-          <b>Objeto</b>necessário. A âncora para o hiperlink. Pode ser uma <see cref="T:Microsoft.Office.Interop.Excel.Range" /> ou <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto.</param>
-        <param name="Address">
-          <b>String</b> necessário. O endereço do hiperlink.</param>
-        <param name="SubAddress">
-          <b>Objeto</b>de opcional. O subendereço do hiperlink.</param>
-        <param name="ScreenTip">
-          <b>Objeto</b>de opcional. A dica de tela a ser exibida quando o ponteiro do mouse é pausado sobre o hiperlink.</param>
-        <param name="TextToDisplay">
-          <b>Objeto</b>de opcional. O texto a ser exibido para o hiperlink.</param>
-        <summary>Adiciona um hiperlink ao intervalo ou à forma especificado. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" /> objeto.</summary>
+        <param name="Anchor">Objeto <b>Required</b>. A âncora do hiperlink. Pode ser um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> ou <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> um objeto.</param>
+        <param name="Address"><b>String</b> necessário. O endereço do hiperlink.</param>
+        <param name="SubAddress">Objeto <b>opcional</b>. O subendereço do hiperlink.</param>
+        <param name="ScreenTip">Objeto <b>opcional</b>. A dica de tela a ser exibida quando o ponteiro do mouse é pausado sobre o hiperlink.</param>
+        <param name="TextToDisplay">Objeto <b>opcional</b>. O texto a ser exibido para o hiperlink.</param>
+        <summary>Adiciona um hiperlink ao intervalo ou à forma especificada. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Ao especificar o <paramref name="TextToDisplay" /> argumento, o texto deve ser uma cadeia de caracteres.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Quando você especifica o <paramref name="TextToDisplay" /> argumento, o texto deve ser uma cadeia de caracteres.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -143,7 +126,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -201,11 +184,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -291,8 +272,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>necessário. O nome ou número de índice do objeto.</param>
+        <param name="Index">Objeto <b>Required</b>. O nome ou número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

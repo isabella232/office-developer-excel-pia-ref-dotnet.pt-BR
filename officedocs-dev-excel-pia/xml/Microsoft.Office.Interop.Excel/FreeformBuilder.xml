@@ -1,13 +1,5 @@
 <Type Name="FreeformBuilder" FullName="Microsoft.Office.Interop.Excel.FreeformBuilder">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="49bbc8d21ea36b32da44ca3a92e3697a77f26497" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582646" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FreeformBuilder" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="49bbc8d21ea36b32da44ca3a92e3697a77f26497" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003546" /></Metadata><TypeSignature Language="C#" Value="public interface FreeformBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FreeformBuilder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.FreeformBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Interface FreeformBuilder" />
@@ -30,10 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Representa a geometria de uma forma livre enquanto esta está sendo construída.</summary>
-    <remarks>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> método para retornar um objeto <b>FreeformBuilder</b> . Use o <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> método para adicionar nós à forma livre. Use o <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> método para criar a forma definida no objeto <b>FreeformBuilder</b> e adicioná-lo para o <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> conjunto.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> método para retornar um objeto <b>FreeformBuilder</b> . Use o <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> método para adicionar nós à forma livre. Use o <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> método para criar a forma definida no objeto <b>FreeformBuilder</b> e adicioná-la à <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> coleção.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNodes">
@@ -65,20 +55,14 @@
         <Parameter Name="Y3" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SegmentType">Necessário <see cref="T:Microsoft.Office.Interop.Office.MsoSegmentType" />. O tipo de segmento a ser adicionado. <b>MsoSegmentType</b> pode ser uma destas constantes:<b>msoSegmentLine</b><b>msoSegmentCurve</b></param>
-        <param name="EditingType">Necessário <see cref="T:Microsoft.Office.Interop.Office.MsoEditingType" />. A propriedade de edição do vértice. <b>MsoEditingType</b> pode ser uma destas constantes:<b>msoEditingAuto</b><b>msoEditingCorner</b>não pode ser <b>msoEditingSmooth</b> ou <b>msoEditingSymmetric</b>. Se <paramref name="SegmentType" /> for <b>msoSegmentLine</b>, <paramref name="EditingType" /> deve ser <b>msoEditingAuto</b>.</param>
-        <param name="X1">
-          <b>Single</b>obrigatório. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, este argumento especificará a distância horizontal (em pontos) do canto superior esquerdo do documento até o ponto final do novo segmento. Se o <paramref name="EditingType" /> do novo nó for <b>msoEditingCorner</b>, este argumento especificará a distância horizontal (em pontos) do canto superior esquerdo do documento até o primeiro ponto de controle do novo segmento.</param>
-        <param name="Y1">
-          <b>Single</b>obrigatório. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, este argumento especificará a distância horizontal (em pontos) do canto superior esquerdo do documento até o ponto final do novo segmento. Se o <paramref name="EditingType" /> do novo nó for <b>msoEditingCorner</b>, este argumento especificará a distância horizontal (em pontos) do canto superior esquerdo do documento até o primeiro ponto de controle do novo segmento.</param>
-        <param name="X2">
-          <b>Objeto</b>de opcional. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingCorner</b>, este argumento especificará a distância horizontal (em pontos) do canto superior esquerdo do documento até o segundo ponto de controle do novo segmento. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, não especifique um valor para este argumento.</param>
-        <param name="Y2">
-          <b>Objeto</b>de opcional. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingCorner</b>, este argumento especificará a distância horizontal (em pontos) do canto superior esquerdo do documento até o segundo ponto de controle do novo segmento. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, não especifique um valor para este argumento.</param>
-        <param name="X3">
-          <b>Objeto</b>de opcional. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingCorner</b>, este argumento especificará a distância horizontal (em pontos) do canto superior esquerdo do documento até o ponto final do novo segmento. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, não especifique um valor para este argumento.</param>
-        <param name="Y3">
-          <b>Objeto</b>de opcional. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingCorner</b>, este argumento especificará a distância vertical (em pontos) do canto superior esquerdo do documento até o ponto final do novo segmento. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, não especifique um valor para este argumento.</param>
+        <param name="SegmentType">Obrigatório. <see cref="T:Microsoft.Office.Interop.Office.MsoSegmentType" /> O tipo de segmento a ser adicionado. <b>MsoSegmentType</b> pode ser uma destas constantes:<b>msoSegmentLine</b><b>msoSegmentCurve</b></param>
+        <param name="EditingType">Obrigatório. <see cref="T:Microsoft.Office.Interop.Office.MsoEditingType" /> A propriedade de edição do vértice. <b>MsoEditingType</b> pode ser uma destas constantes:<b>msoEditingAuto</b><b>msoEditingCorner</b>Cannot be <b>msoEditingSmooth</b> or <b>msoEditingSymmetric</b>. Se <paramref name="SegmentType" /> for <b>msoSegmentLine</b>, <paramref name="EditingType" /> deve ser <b>msoEditingAuto</b>.</param>
+        <param name="X1">Obrigatório <b>Único</b>. Se o do novo segmento for <paramref name="EditingType" /> <b>msoEditingAuto</b>, este argumento especificará a distância horizontal (em pontos) do canto superior esquerdo do documento até o ponto final do novo segmento. Se o novo nó for <paramref name="EditingType" /> <b>msoEditingCorner</b>, este argumento especificará a distância horizontal (em pontos) do canto superior esquerdo do documento até o primeiro ponto de controle do novo segmento.</param>
+        <param name="Y1">Obrigatório <b>Único</b>. Se o do novo segmento for <paramref name="EditingType" /> <b>msoEditingAuto</b>, este argumento especificará a distância horizontal (em pontos) do canto superior esquerdo do documento até o ponto final do novo segmento. Se o novo nó for <paramref name="EditingType" /> <b>msoEditingCorner</b>, este argumento especificará a distância horizontal (em pontos) do canto superior esquerdo do documento até o primeiro ponto de controle do novo segmento.</param>
+        <param name="X2">Objeto <b>opcional</b>. Se o do novo segmento for <paramref name="EditingType" /> <b>msoEditingCorner</b>, este argumento especificará a distância horizontal (em pontos) do canto superior esquerdo do documento até o segundo ponto de controle do novo segmento. Se o <paramref name="EditingType" /> novo segmento for <b>msoEditingAuto,</b>não especifique um valor para esse argumento.</param>
+        <param name="Y2">Objeto <b>opcional</b>. Se o do novo segmento for <paramref name="EditingType" /> <b>msoEditingCorner</b>, este argumento especificará a distância horizontal (em pontos) do canto superior esquerdo do documento até o segundo ponto de controle do novo segmento. Se o <paramref name="EditingType" /> novo segmento for <b>msoEditingAuto,</b>não especifique um valor para esse argumento.</param>
+        <param name="X3">Objeto <b>opcional</b>. Se o do novo segmento for <paramref name="EditingType" /> <b>msoEditingCorner</b>, este argumento especificará a distância horizontal (em pontos) do canto superior esquerdo do documento até o ponto final do novo segmento. Se o <paramref name="EditingType" /> novo segmento for <b>msoEditingAuto,</b>não especifique um valor para esse argumento.</param>
+        <param name="Y3">Objeto <b>opcional</b>. Se o do novo segmento for <paramref name="EditingType" /> <b>msoEditingCorner</b>, este argumento especificará a distância vertical (em pontos) do canto superior esquerdo do documento até o ponto final do novo segmento. Se o <paramref name="EditingType" /> novo segmento for <b>msoEditingAuto,</b>não especifique um valor para esse argumento.</param>
         <summary>Adiciona um nó a uma forma livre.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -106,7 +90,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -132,13 +116,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cria uma forma que tem as características geométricas do especificado <see cref="T:Microsoft.Office.Interop.Excel.FreeformBuilder" /> objeto. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object que representa a nova forma.</summary>
+        <summary>Cria uma forma que tem as características geométricas do objeto <see cref="T:Microsoft.Office.Interop.Excel.FreeformBuilder" /> especificado. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto que representa a nova forma.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>Observação</b>   Você deve aplicar o <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> método para um <b>FreeformBuilder</b> do objeto pelo menos uma vez antes de usar o método <b>ConvertToShape</b> .</para>
-          <para></para>
-        </remarks>
+        <remarks><para>
+            <b>Observação</b>   Você deve aplicar o <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> método a um objeto <b>FreeformBuilder</b> pelo menos uma vez antes de usar o <b>método ConvertToShape.</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -166,11 +148,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
