@@ -1,13 +1,5 @@
 <Type Name="Characters" FullName="Microsoft.Office.Interop.Excel.Characters">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="175d99118aa50595e1cd1bb6597be66d75d3d559" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582359" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Characters" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="175d99118aa50595e1cd1bb6597be66d75d3d559" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005989" /></Metadata><TypeSignature Language="C#" Value="public interface Characters" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Characters" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Characters" />
   <TypeSignature Language="VB.NET" Value="Public Interface Characters" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Representa caracteres em um objeto que contém texto. O objeto <b>Characters</b> permite que você modifique qualquer sequência de caracteres contida na sequência de texto completa.</summary>
-    <remarks>
-      <para>Usar <b>caracteres</b>(<paramref name="start" />, <paramref name="length" />), onde <paramref name="start" /> é o número do caractere inicial e <paramref name="length" /> é o número de caracteres, para retornar um objeto <b>Characters</b> .</para>
-      <para>O método <b>Characters</b> é necessário somente quando você precisar alterar a parte do texto de um objeto sem afetar o restante (você não pode usar o método de <b>caracteres</b> para formatar uma parte do texto, se o objeto não suporta rich-text). Para alterar todo o texto ao mesmo tempo, você geralmente pode aplicar o método apropriado ou a propriedade diretamente ao objeto.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Use <b>Characters</b>( , ), onde é o número do caractere inicial e é o <paramref name="start" /> número de <paramref name="length" /> <paramref name="start" /> <paramref name="length" /> caracteres, para retornar um objeto <b>Characters</b> .</para>
+      <para>O método <b>Characters</b> só é necessário quando você precisa alterar um pouco do texto de um objeto sem afetar o restante (você não pode usar o método <b>Characters</b> para formatar uma parte do texto se o objeto não suportar Rich Text). Para alterar todo o texto ao mesmo tempo, você geralmente pode aplicar o método apropriado ou a propriedade diretamente ao objeto.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,7 +81,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>O texto deste intervalo de caracteres.</summary>
+        <summary>O texto desse intervalo de caracteres.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,11 +139,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -205,7 +193,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object que representa a fonte do objeto especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Font" /> objeto que representa a fonte do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -232,8 +220,7 @@
         <Parameter Name="String" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="String">
-          <b>String</b> necessário. A cadeia de caracteres a ser inserida.</param>
+        <param name="String"><b>String</b> necessário. A cadeia de caracteres a ser inserida.</param>
         <summary>Insere uma cadeia de caracteres antecedendo os caracteres selecionados.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -262,7 +249,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado.</summary>
+        <summary>Retorna o objeto pai do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -293,13 +280,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o texto fonético especificado <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> objeto.</summary>
+        <summary>Retorna ou define o texto phoneético no objeto <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Em vez de usar essa propriedade, você deve usar o <see cref="M:Microsoft.Office.Interop.Excel.Phonetics.Add(System.Int32,System.Int32,System.String)" /> método do <see cref="T:Microsoft.Office.Interop.Excel.Phonetics" /> coleção para adicionar informações fonéticas a uma célula e usar o <see cref="P:Microsoft.Office.Interop.Excel.Phonetic.Text" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> objeto para retornar ou definir as cadeias de caracteres de texto fonético em uma célula.</para>
-          <para>Você pode usar essa propriedade somente com objetos de <b>caracteres</b> que se baseiam em uma única célula.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Em vez de usar essa propriedade, você deve usar o método da coleção para adicionar informações phoneéticas a uma célula e usar a propriedade do objeto para retornar ou definir as cadeias de caracteres de texto phoneético em <see cref="M:Microsoft.Office.Interop.Excel.Phonetics.Add(System.Int32,System.Int32,System.String)" /> <see cref="T:Microsoft.Office.Interop.Excel.Phonetics" /> uma <see cref="P:Microsoft.Office.Interop.Excel.Phonetic.Text" /> <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> célula.</para>
+          <para>Você só pode usar essa propriedade com <b>objetos Characters</b> baseados em uma única célula.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">

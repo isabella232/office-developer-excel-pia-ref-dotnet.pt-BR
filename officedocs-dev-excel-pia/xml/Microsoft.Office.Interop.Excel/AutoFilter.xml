@@ -1,13 +1,5 @@
 <Type Name="AutoFilter" FullName="Microsoft.Office.Interop.Excel.AutoFilter">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="085dbe03cc8ab153375e03745f01e25010542104" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580525" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoFilter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="085dbe03cc8ab153375e03745f01e25010542104" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006199" /></Metadata><TypeSignature Language="C#" Value="public interface AutoFilter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoFilter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AutoFilter" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoFilter" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Representa a filtragem automática para a planilha especificada.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.AutoFilter" /> propriedade para retornar o objeto <b>AutoFilter</b> . Use o <see cref="P:Microsoft.Office.Interop.Excel.AutoFilter.Filters" /> propriedade para retornar uma coleção de filtros de coluna individual. Use o <see cref="P:Microsoft.Office.Interop.Excel.AutoFilter.Range" /> propriedade para retornar o <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa todo o intervalo filtrado.</para>
-      <para>Para criar um objeto <b>AutoFilter</b> para uma planilha, você deve ativar o AutoFiltro para um intervalo na planilha seja manualmente ou usando o <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> método do objeto <b>Range</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.AutoFilter" /> propriedade para retornar o objeto <b>AutoFilter.</b> Use a <see cref="P:Microsoft.Office.Interop.Excel.AutoFilter.Filters" /> propriedade para retornar uma coleção de filtros de coluna individuais. Use a <see cref="P:Microsoft.Office.Interop.Excel.AutoFilter.Range" /> propriedade para retornar o objeto que representa todo o intervalo <see cref="T:Microsoft.Office.Interop.Excel.Range" /> filtrado.</para>
+      <para>Para criar um <b>objeto AutoFilter</b> para uma planilha, você deve ativar a filtragem automática para um intervalo na planilha manualmente ou usando o método do <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> objeto <b>Range.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto de automação OLE para retornar o aplicativo desse objeto). Somente leitura.</summary>
+        <summary>Retorna um objeto que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto de automação OLE para retornar o aplicativo <see cref="T:Microsoft.Office.Interop.Excel.Application" /> desse objeto). Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,7 +76,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Aplica-se especificado <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" />objeto.</summary>
+        <summary>Aplica o objeto <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" /> especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,12 +103,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. Somente <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FilterMode">
@@ -145,9 +133,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna <b>True</b> se a planilha estiver em modo de filtro automático. <b>Boolean</b> somente leitura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,7 +160,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Filters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Filters" /> coleção que representa todos os filtros em um intervalo filtrado automaticamente. Somente leitura.</summary>
+        <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Excel.Filters" /> coleção que representa todos os filtros em um intervalo filtrado automaticamente. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,7 +188,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado. Somente leitura.</summary>
+        <summary>Retorna o objeto pai do objeto especificado. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -256,7 +242,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Exibe todos os dados retornados pelo <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" />objeto.</summary>
+        <summary>Exibe todos os dados retornados pelo <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" /> objeto.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,10 +269,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Sort</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém a classificação de coluna ou colunas e a ordem de classificação para o <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" /> conjunto.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Sort" />
-        </value>
+        <summary>Obtém a coluna ou colunas de classificação e a ordem de classificação para a <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" /> coleção.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Sort" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

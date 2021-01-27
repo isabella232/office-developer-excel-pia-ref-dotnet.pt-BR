@@ -1,13 +1,5 @@
 <Type Name="CalculatedMembers" FullName="Microsoft.Office.Interop.Excel.CalculatedMembers">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2ef237f29eff8550f0d57ac22a72517d08855192" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572832" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CalculatedMembers : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2ef237f29eff8550f0d57ac22a72517d08855192" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006045" /></Metadata><TypeSignature Language="C#" Value="public interface CalculatedMembers : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalculatedMembers implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CalculatedMembers" />
   <TypeSignature Language="VB.NET" Value="Public Interface CalculatedMembers&#xA;Implements IEnumerable" />
@@ -34,11 +26,9 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objetos na tabela dinâmica especificada.</summary>
-    <remarks>
-      <para>Cada <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objeto representa um membro calculado ou uma medida calculada.</para>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.CalculatedMembers" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objeto para retornar um <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> conjunto.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Cada <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objeto representa um membro calculado ou uma medida calculada.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.CalculatedMembers" /> propriedade do objeto para retornar uma <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> coleção.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -104,21 +94,15 @@
         <Parameter Name="Type" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b> necessário. O nome do membro calculado.</param>
-        <param name="Formula">
-          <b>String</b> necessário. A fórmula do membro calculado.</param>
-        <param name="SolveOrder">
-          <b>Objeto</b>de opcional. A ordem de resolução do membro calculado.</param>
-        <param name="Type">
-          <b>Objeto</b>de opcional. O tipo do membro calculado.</param>
-        <summary>Adiciona um campo calculado ou item calculado em uma tabela dinâmica.</summary>
+        <param name="Name"><b>String</b> necessário. O nome do membro calculado.</param>
+        <param name="Formula"><b>String</b> necessário. A fórmula do membro calculado.</param>
+        <param name="SolveOrder">Objeto <b>opcional</b>. A ordem de resolução do membro calculado.</param>
+        <param name="Type">Objeto <b>opcional</b>. O tipo do membro calculado.</param>
+        <summary>Adiciona um campo ou item calculado a uma tabela dinâmica.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>O <paramref name="Formula" /> argumento deve ter uma instrução de sintaxe MDX (multidimensional expression) válida. O <paramref name="Name" /> argumento deve ser aceitável pelo provedor Online Analytical Processing (OLAP) e o <paramref name="Type" /> argumento deve ser definido.</para>
-          <para>Se você definir o <paramref name="Type" /> argumento deste método para <paramref name="xlCalculatedSet" />, e em seguida, você deve chamar o <see cref="M:Microsoft.Office.Interop.Excel.CubeFields.AddSet(System.String,System.String)" /> método para tornar o novo campo definir visível na tabela dinâmica.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>O argumento deve ter uma instrução de sintaxe <paramref name="Formula" /> MDX (expressão multidimensional) válida. O <paramref name="Name" /> argumento deve ser aceitável para o provedor OLAP (Online Analytical Processing) e o argumento precisa ser <paramref name="Type" /> definido.</para>
+          <para>Se você definir o argumento desse método como , você deve chamar o método para tornar o novo campo <paramref name="Type" /> definido visível na tabela <paramref name="xlCalculatedSet" /> <see cref="M:Microsoft.Office.Interop.Excel.CubeFields.AddSet(System.String,System.String)" /> dinâmica.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Add2">
@@ -157,7 +141,7 @@
         <param name="DisplayFolder">To be added.</param>
         <param name="HierarchizeDistinct">To be added.</param>
         <summary>Reservado para uso interno.</summary>
-        <returns>Retorna <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" />.</returns>
+        <returns>Retorna <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> .</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,31 +179,29 @@
         <param name="Formula">A fórmula do membro calculado.</param>
         <param name="SolveOrder">A ordem de resolução do membro calculado.</param>
         <param name="Type">O tipo do membro calculado.</param>
-        <param name="DisplayFolder">Uma pasta que existe para exibir as medidas calculadas.</param>
+        <param name="DisplayFolder">Uma pasta que existe para exibir medidas calculadas.</param>
         <param name="MeasureGroup">O grupo ao qual pertence o calculado.</param>
-        <param name="ParentHierarchy">O caminho do pai do <b>ParentMember</b>.</param>
+        <param name="ParentHierarchy">O caminho pai do <b>ParentMember</b>.</param>
         <param name="ParentMember">O pai do membro calculado.</param>
         <param name="NumberFormat">O formato dos números usados para membros calculados.</param>
-        <summary>Adiciona um campo calculado ou item calculado em uma tabela dinâmica.</summary>
+        <summary>Adiciona um campo ou item calculado a uma tabela dinâmica.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>O argumento de <b>fórmula</b> deve ter uma instrução de sintaxe válida MDX (multidimensional expression). O argumento <b>Name</b> deve ser aceitável para o provedor Online Analytical Processing (OLAP).</para>
+        <remarks><para>O <b>argumento Formula</b> deve ter uma instrução de sintaxe MDX (expressão multidimensional) válida. O <b>argumento Name</b> deve ser aceitável para o provedor OLAP (Online Analytical Processing).</para>
           <list type="bullet">
             <item>
               <description>
-                <b>DisplayFolder</b>: as pastas de exibição somente são válidas para medidas calculadas. Eles não são válidos para membros calculados. A cadeia de caracteres pode ter um ponto e vírgula; nela. Ponto e vírgula designa várias pastas de exibição. Por exemplo, se você usar a cadeia de caracteres minha folder1; myfolder2 e em seguida, a medida calculada mostrará em dois exibição pastas um nomeado myfolder1 a outros nomeado 'myfolder2'. A cadeia de caracteres pode ter barras invertidas \. Isso designa um caminho hierárquico da pasta de exibição. Por exemplo, se você usar o welcome\to\seattle de cadeia de caracteres, haverá uma pasta de exibição chamada boas-vindas que contenha uma pasta de exibição chamado para que contém uma pasta de exibição chamada seattle. Pastas de exibição são pastas virtuais.  Eles realmente não existem no mesmo sentido que pensamos das pastas do sistema. Eles só existem para fins de exibir as medidas calculadas.</description>
+                <b>DisplayFolder:</b>as pastas de exibição só são válidas para medidas calculadas. Eles não são válidos para membros calculados. A cadeia de caracteres pode ter ponto-e-vírgula; nele. Os ponto-e-vírgulas designam várias pastas de exibição. Por exemplo, se você usar a cadeia de caracteres my folder1;myfolder2, a medida calculada será exibida em duas pastas de exibição, uma chamada myfolder1 e a outra chamada 'myfolder2'. A cadeia de caracteres pode ter backslashes \. Isso designa um caminho hierárquico para a pasta de exibição. Por exemplo, se você usar a cadeia de caracteres welcome\to\seattle, haverá uma pasta de exibição chamada welcome que contém uma pasta de exibição chamada para a qual contém uma pasta de exibição chamada seattle. As pastas de exibição são pastas virtuais.Eles realmente não existem no mesmo sentido que pensemos em pastas do sistema. Eles existem apenas para fins de exibição das medidas calculadas.</description>
             </item>
             <item>
               <description>
-                <b>NumberFormat</b>: os formatos de número só podem ser definidos por macros. Não há nenhuma interface de usuário para configurá-las. Esta é a única propriedade que não pode ser definida por meio da interface do usuário. O tipo é sempre <b>xlNumberFormatTypeDefault</b> quando um membro calculado é criado por meio da interface do usuário. Os formatos de número somente são válidos para membros calculados. Eles não são válidos para medidas calculadas.</description>
+                <b>NumberFormat</b>: os formatos de número só podem ser definidos por macros. Não há interface do usuário para defini-los. Essa é a única propriedade que não pode ser definida por meio da interface do usuário. O tipo é <b>sempre xlNumberFormatTypeDefault</b> quando um membro calculado é criado por meio da interface do usuário. Os formatos de número só são válidos para membros calculados. Elas não são válidas para medidas calculadas.</description>
             </item>
             <item>
               <description>
-                <b>ParentHierarchy</b>: A hierarquia pai pode ser qualquer hierarquia MDX válido. Hierarquias pai somente são válidas para membros calculados. Eles não são válidos para medidas calculadas. Se um membro pai for escolhido, que está em uma hierarquia pai diferentes, a hierarquia pai será automaticamente alterada para coincidir com a hierarquia do pai do membro pai.</description>
+                <b>ParentHierarchy</b>: a hierarquia pai pode ser qualquer hierarquia MDX válida. Hierarquias pai só são válidas para membros calculados. Elas não são válidas para medidas calculadas. Se um membro pai for escolhido e estiver em uma hierarquia pai diferente, a hierarquia pai será alterada automaticamente para corresponder à hierarquia pai do membro pai.</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -245,7 +227,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -303,11 +285,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -368,8 +348,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>necessário. O nome ou número de índice do objeto.</param>
+        <param name="Index">Objeto <b>Required</b>. O nome ou número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

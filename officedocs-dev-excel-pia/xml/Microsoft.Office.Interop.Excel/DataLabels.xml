@@ -1,13 +1,5 @@
 <Type Name="DataLabels" FullName="Microsoft.Office.Interop.Excel.DataLabels">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="59a0db665b8a81c22e071c0c60a0f23b4492e55a" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584550" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DataLabels : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="59a0db665b8a81c22e071c0c60a0f23b4492e55a" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005660" /></Metadata><TypeSignature Language="C#" Value="public interface DataLabels : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DataLabels implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DataLabels" />
   <TypeSignature Language="VB.NET" Value="Public Interface DataLabels&#xA;Implements IEnumerable" />
@@ -33,12 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> objetos para a série especificada. Cada objeto <b>DataLabel</b> representa um rótulo de dados para um ponto ou linha de tendência. Para uma série sem pontos definíveis (por exemplo, uma série de área), a coleção <b>DataLabels</b> contém um único rótulo de dados.</summary>
-    <remarks>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Series.DataLabels(System.Object)" /> método para retornar a coleção <b>DataLabels</b> .</para>
-      <para>Use <b>DataLabels</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do rótulo de dados, para retornar um único objeto <b>DataLabel</b> .</para>
-      <para></para>
-    </remarks>
+    <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> objetos da série especificada. Cada objeto <b>DataLabel</b> representa um rótulo de dados para um ponto ou linha de tendência. Para uma série sem pontos definíveis (por exemplo, uma série de área), a coleção <b>DataLabels</b> contém um único rótulo de dados.</summary>
+    <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Excel.Series.DataLabels(System.Object)" /> método para retornar a coleção <b>DataLabels.</b></para>
+      <para>Use <b>DataLabels</b>( ), onde é o número de índice do rótulo de <paramref name="index" /> <paramref name="index" /> dados, para retornar um único <b>objeto DataLabel.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -236,7 +226,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -273,11 +263,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o texto no objeto altera o tamanho da fonte quando o tamanho do objeto é alterada. O valor padrão é <b>True</b>. <b>Objeto</b> de leitura/gravação.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary><b>True</b> se o texto contido no objeto tiver o tamanho da fonte alterado quando o tamanho do objeto for alterado. O valor padrão é <b>True</b>. <b>Objeto</b> de leitura/gravação.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -307,8 +294,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o objeto gerar automaticamente o texto apropriado com base no contexto. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> se o objeto gerar automaticamente o texto apropriado com base no contexto. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -339,10 +325,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Border" /> object que representa a borda do objeto.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Border" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Border" /> objeto que representa a borda do objeto.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Border" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -397,12 +381,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. Somente <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -457,10 +439,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto para uma forma especificada ou um <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> objeto para um gráfico especificado que contém as propriedades para a forma ou o gráfico de formatação de preenchimento. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" />
-        </value>
+        <summary>Retorna um objeto para uma forma especificada ou um objeto para um gráfico especificado que contém propriedades de formatação de <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> preenchimento para a forma ou <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> gráfico. Somente leitura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -490,10 +470,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object que representa a fonte do objeto especificado.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Font" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Font" /> objeto que representa a fonte do objeto especificado.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Font" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -521,9 +499,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna o <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objeto. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -587,8 +563,7 @@
       <Docs>
         <summary>Retorna ou define o alinhamento horizontal do objeto especificado. <b>Objeto</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>As constantes a seguir podem ser usadas:</para>
+        <remarks><para>As constantes a seguir podem ser usadas:</para>
           <para>
             <b>xlCenter</b>
           </para>
@@ -604,8 +579,7 @@
             <b>xlRight</b>
           </para>
           <para>[!OBSERVAçãO] Alguma dessas constantes podem não estar disponíveis para você, dependendo do suporte de idioma (inglês dos EUA, por exemplo) que você selecionou ou instalou.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -634,10 +608,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object que representa o interior do objeto especificado.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Interior" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objeto que representa o interior do objeto especificado.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -664,12 +636,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>necessário. O nome ou número de índice do objeto.</param>
+        <param name="Index">Objeto <b>Required</b>. O nome ou número de índice do objeto.</param>
         <summary>Retorna um único objeto da coleção.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" />
-        </returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -729,10 +698,8 @@
       <Docs>
         <summary>Retorna ou define o código de formatação para o objeto. <b>Cadeia de caracteres</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O código de formatação é a mesma cadeia de caracteres da opção Códigos de formato da caixa de diálogo Formatar células. A função <b>Format</b> usa cadeias de caracteres de código de formatação diferentes a <b>NumberFormat</b> e <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> propriedades.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>O código de formatação é a mesma cadeia de caracteres da opção Códigos de formato da caixa de diálogo Formatar células. A <b>função Format</b> usa cadeias de caracteres de código de formato diferentes das de <b>NumberFormat</b> e <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> propriedades.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLinked">
@@ -761,8 +728,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o formato de número está vinculado às células (de modo que o formato de número mude nos rótulos quando for alterado nas células). Leitura/gravação <b>booleano</b>.</summary>
+        <summary><b>True</b> se o formato de número está vinculado às células (de modo que o formato de número mude nos rótulos quando for alterado nas células). Leitura/gravação <b>booleano</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -795,10 +761,8 @@
       <Docs>
         <summary>Retorna ou define o código de formatação para o objeto como uma cadeia de caracteres no idioma do usuário. <b>Objeto</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A função <b>Format</b> usa cadeias de caracteres de código de formatação diferentes a <see cref="P:Microsoft.Office.Interop.Excel.DataLabels.NumberFormat" /> e propriedades <b>NumberFormatLocal</b> .</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A <b>função Format</b> usa cadeias de caracteres de código de formato diferentes das que as propriedades <see cref="P:Microsoft.Office.Interop.Excel.DataLabels.NumberFormat" /> <b>NumberFormatLocal e NumberFormatLocal</b> fazem.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -827,24 +791,22 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A orientação do texto. Pode ser um valor inteiro de – 90 a 90 graus.</summary>
+        <summary>A orientação do texto. Pode ser um valor inteiro de –90 a 90 graus.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>As constantes a seguir podem ser usadas:</para>
+        <remarks><para>As constantes a seguir podem ser usadas:</para>
           <para>
-            <b>xlDownward</b>
+            <b>xlDownward </b>
           </para>
           <para>
-            <b>xlHorizontal</b>
+            <b>xlHorizontal </b>
           </para>
           <para>
-            <b>xlUpward</b>
+            <b>xlUpward </b>
           </para>
           <para>
             <b>xlVertical</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -870,7 +832,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado. Somente leitura.</summary>
+        <summary>Retorna o objeto pai do objeto especificado. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -901,7 +863,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlDataLabelPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a posição do rótulo de dados. Leitura/gravação <see cref="T:Microsoft.Office.Interop.Excel.XlDataLabelPosition" />.</summary>
+        <summary>Retorna ou define a posição do rótulo de dados. <see cref="T:Microsoft.Office.Interop.Excel.XlDataLabelPosition" />Leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -929,14 +891,12 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">O número de índice do rótulo de dados para propagar.</param>
-        <summary>Permite que você tire o conteúdo e a formatação de um único rótulo de dados e aplicá-la a todos os outro rótulo de dados da série.</summary>
-        <remarks>
-          <para>Se o rótulo de dados de origem suporta campos que são incompatíveis com o rótulo de dados de destino, aos campos serão inseridos como seu [nome do campo]. Por exemplo, se um rótulo de dados em uma série de pizza com um campo de porcentagem é propagado para um rótulo de dados em um gráfico de coluna, esse campo porcentagem se tornará um campo não resolvido mostrando [PERCENTAGE].</para>
+        <param name="Index">O número de índice do rótulo de dados a ser propagado.</param>
+        <summary>Permite que você pegue o conteúdo e a formatação de um único rótulo de dados e aplique-o a todos os outros rótulos de dados na série.</summary>
+        <remarks><para>Se o rótulo de dados de origem suportar campos incompatíveis com o rótulo de dados de destino, esses campos serão inseridos como seu [NOME DO CAMPO]. Por exemplo, se um rótulo de dados em uma série de pizza com um campo de porcentagem for propagado para um rótulo de dados em um gráfico de colunas, esse campo de porcentagem se tornará um campo não resolvido mostrando [PERCENTAGE].</para>
           <para>
-            <b>Observação</b>: passar um argumento de zero (0) redefine os rótulos de dados para seu protótipo atual.</para>
-          <para></para>
-        </remarks>
+            <b>Observação:</b>passar um argumento zero (0) redefine os rótulos de dados para seu protótipo atual.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadingOrder">
@@ -965,12 +925,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o sentido de leitura para o objeto especificado. Pode ser uma das seguintes constantes: <b>xlContext</b>, <b>xlLTR</b> (esquerda para direita) ou <b>xlRTL</b> (direita para esquerda). <b>Integer</b> de leitura/gravação.</summary>
+        <summary>Retorna ou define o sentido de leitura do objeto especificado. Pode ser uma das seguintes constantes : <b>xlRTL</b> (direita para esquerda), <b>xlLTR</b> (esquerda para direita) ou <b>xlContext</b>. <b>número inteiro</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>[!OBSERVAçãO] Alguma dessas constantes podem não estar disponíveis para você, dependendo do suporte de idioma (inglês dos EUA, por exemplo) que você selecionou ou instalou.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>[!OBSERVAçãO] Alguma dessas constantes podem não estar disponíveis para você, dependendo do suporte de idioma (inglês dos EUA, por exemplo) que você selecionou ou instalou.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -1025,12 +983,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Define ou retorna um <b>objeto</b> que representa o separador usado para os rótulos de dados em um gráfico. Leitura/gravação.</summary>
+        <summary>Define ou retorna um <b>Objeto</b> que representa o separador usado para os rótulos de dados em um gráfico. Leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>o gráfico deve estar ativo antes que você possa acessar os rótulos de dados por programação; Caso contrário, ocorrerá um erro de tempo de execução.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>o gráfico deve estar ativo antes que você possa acessar os rótulos de dados por programação; Caso contrário, ocorrerá um erro de tempo de execução.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shadow">
@@ -1059,8 +1015,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se a fonte for uma fonte sombreada ou se o objeto tem uma sombra. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> se a fonte for uma fonte de sombra ou se o objeto tiver uma sombra. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1091,13 +1046,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> para mostrar o tamanho da bolha dos rótulos de dados em um gráfico. <b>False</b> para ocultá-lo. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> para mostrar o tamanho da bolha dos rótulos de dados em um gráfico. <b>False</b> para ocultá-lo. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O gráfico deve estar ativo para que você possa acessar os rótulos de dados por programação; caso contrário, ocorrerá um erro em tempo de execução.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>O gráfico deve estar ativo para que você possa acessar os rótulos de dados por programação; caso contrário, ocorrerá um erro em tempo de execução.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowCategoryName">
@@ -1126,13 +1078,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> para exibir o nome da categoria dos rótulos de dados em um gráfico. <b>False</b> para ocultá-lo. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> para exibir o nome da categoria dos rótulos de dados em um gráfico. <b>False</b> para ocultá-lo. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O gráfico deve estar ativo para que você possa acessar os rótulos de dados por programação; caso contrário, ocorrerá um erro em tempo de execução.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>O gráfico deve estar ativo para que você possa acessar os rótulos de dados por programação; caso contrário, ocorrerá um erro em tempo de execução.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowLegendKey">
@@ -1161,8 +1110,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se a tecla de legenda do rótulo de dados estiver visível. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> se a tecla de legenda do rótulo de dados estiver visível. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1193,13 +1141,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> para exibir o valor de porcentagem dos rótulos de dados em um gráfico. <b>False</b> para ocultá-lo. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> para exibir o valor da porcentagem dos rótulos de dados em um gráfico. <b>False</b> para ocultá-lo. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O gráfico deve estar ativo para que você possa acessar os rótulos de dados por programação; caso contrário, ocorrerá um erro em tempo de execução.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>O gráfico deve estar ativo para que você possa acessar os rótulos de dados por programação; caso contrário, ocorrerá um erro em tempo de execução.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowRange">
@@ -1228,12 +1173,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Usado para alternar o campo <b>intervalo</b> se ele já existir no intervalo de rótulo de dados. <b>Boolean</b> (<b>bool</b> em c#) Leitura/gravação</summary>
+        <summary>Usado para alternar o <b>campo Intervalo</b> se ele existir no intervalo do rótulo de dados. <b>Booliana</b> (<b>booleano</b> em C#) Leitura/gravação</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O objeto de <b>intervalo</b> mapeia um intervalo de células de arbitrário a um intervalo de rótulos de dados, de modo que cada rótulo de dados corresponde a uma das células no intervalo.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>O <b>objeto Range</b> mapeia um intervalo arbitrário de células para um intervalo de rótulos de dados, para que cada rótulo de dados corresponda a uma das células no intervalo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowSeriesName">
@@ -1264,10 +1207,8 @@
       <Docs>
         <summary>Retorna ou define um <b>Boolean</b> para indicar o comportamento de exibição do nome da série dos rótulos de dados em um gráfico. <b>True</b> para exibir o nome da série. <b>False</b> para ocultá-lo. Leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O gráfico deve estar ativo para que você possa acessar os rótulos de dados por programação; caso contrário, ocorrerá um erro em tempo de execução.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>O gráfico deve estar ativo para que você possa acessar os rótulos de dados por programação; caso contrário, ocorrerá um erro em tempo de execução.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowValue">
@@ -1296,12 +1237,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <b>Boolean</b> que corresponde a um determinado comportamento de exibição de valores do rótulo de dados do gráfico. <b>True</b> para exibir os valores. <b>False</b> para ocultá-los. Leitura/gravação.</summary>
+        <summary>Retorna ou define um <b>Boolean</b> que corresponde a um determinado comportamento de exibição de valores do rótulo de dados do gráfico. <b>True</b> para exibir os valores. <b>False</b> para ocultá-lo. Leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O gráfico especificado deve estar ativo para que você possa acessar os rótulos de dados por programação; caso contrário, ocorrerá um erro em tempo de execução.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>O gráfico especificado deve estar ativo para que você possa acessar os rótulos de dados por programação; caso contrário, ocorrerá um erro em tempo de execução.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -1337,9 +1276,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define o tipo de rótulo. <b>Objeto</b> de leitura/gravação.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1371,8 +1308,7 @@
       <Docs>
         <summary>Retorna ou define o alinhamento vertical do objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>As constantes a seguir podem ser usadas:</para>
+        <remarks><para>As constantes a seguir podem ser usadas:</para>
           <para>
             <b>xlBottom</b>
           </para>
@@ -1388,8 +1324,7 @@
           <para>
             <b>xlTop</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="DiagramNodeChildren" FullName="Microsoft.Office.Interop.Excel.DiagramNodeChildren">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c37b83ec609da17fbc1f54f6970e5d09d6941f16" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20573539" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DiagramNodeChildren : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c37b83ec609da17fbc1f54f6970e5d09d6941f16" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005618" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNodeChildren : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DiagramNodeChildren implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" />
   <TypeSignature Language="VB.NET" Value="Public Interface DiagramNodeChildren&#xA;Implements _IMsoDispObj, IEnumerable" />
@@ -33,11 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> objetos que representa os nós filho em um diagrama.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" /> propriedade do objeto <b>DiagramNode</b> para retornar uma coleção <b>DiagramNodeChildren</b> . Para adicionar um nó de diagrama filho individual à coleção, use o <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" /> método. Para retornar nós de diagramas de filho individuais na coleção, use o <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" /> ou <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" /> propriedades, ou o <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" /> método.</para>
-      <para></para>
-    </remarks>
+    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> objetos que representa nós filho em um diagrama.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" /> propriedade do <b>objeto DiagramNode</b> para retornar uma <b>coleção DiagamNodeChildren.</b> Para adicionar um nó de diagrama filho individual à coleção, use o <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" /> método. Para retornar nós de diagrama filho individuais na coleção, use <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" /> as propriedades ou o <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" /> <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" /> método.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNode">
@@ -63,10 +53,9 @@
         <Parameter Name="nodeType" Type="Microsoft.Office.Core.MsoDiagramNodeType" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>de opcional. A posição do nó.</param>
-        <param name="nodeType">Opcional <see cref="T:Microsoft.Office.Interop.Office.MsoDiagramNodeType" />. O tipo de nó. <b>MsoDiagramNodeType</b> pode ser uma destas constantes:<b>msoDiagramAssistant</b><b>msoDiagramNode</b> padrão</param>
-        <summary>Cria um nó de diagrama. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object que representa o novo nó.</summary>
+        <param name="Index">Objeto <b>opcional</b>. A posição do nó.</param>
+        <param name="nodeType">Opcional <see cref="T:Microsoft.Office.Interop.Office.MsoDiagramNodeType" /> . O tipo de nó. <b>MsoDiagramNodeType</b> pode ser uma destas constantes:<b>msoDiagramAssistant</b><b>msoDiagramNode</b> Default</param>
+        <summary>Cria um nó de diagrama. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> objeto que representa o novo nó.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -97,7 +86,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -158,11 +147,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FirstChild">
@@ -188,7 +175,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object que representa o primeiro nó filho de um nó pai.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> objeto que representa o primeiro nó filho de um nó pai.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -248,8 +235,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>necessário. O nome ou número de índice do objeto.</param>
+        <param name="Index">Objeto <b>Required</b>. O nome ou número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -278,7 +264,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object que representa o último nó filho de um nó pai.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> objeto que representa o último nó filho de um nó pai.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -306,7 +292,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado.</summary>
+        <summary>Retorna o objeto pai do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="Areas" FullName="Microsoft.Office.Interop.Excel.Areas">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3d66092e7ce8a02412645f2fcf1c40d1d7d63d9e" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584354" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Areas : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3d66092e7ce8a02412645f2fcf1c40d1d7d63d9e" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006255" /></Metadata><TypeSignature Language="C#" Value="public interface Areas : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Areas implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Areas" />
   <TypeSignature Language="VB.NET" Value="Public Interface Areas&#xA;Implements IEnumerable" />
@@ -34,13 +26,11 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção das áreas (ou seja, blocos contíguos de células) em uma seleção.</summary>
-    <remarks>
-      <para>Não há nenhum objeto <b>Area</b> separado; os membros individuais da coleção <b>Areas</b> são <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objetos. Coleção <b>Areas</b> contém um objeto de <b>intervalo</b> para cada intervalo discreto, contíguo de células dentro da seleção. Se a seleção contiver somente uma área, a coleção <b>Areas</b> contém um único objeto de <b>intervalo</b> que corresponde a essa seleção.</para>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.Range.Areas" /> propriedade para retornar a coleção <b>Areas</b> .</para>
-      <para>Use as <b>áreas</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice de área, para retornar um único objeto <b>Range</b> da coleção. Os números de índice correspondem na ordem na qual as áreas foram selecionadas.</para>
-      <para>Algumas operações não podem ser executadas em mais de uma área em uma seleção, ao mesmo tempo; Você deve executar um loop através das áreas individuais na seleção e executar as operações em cada área separadamente.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Não há nenhum objeto <b>Area</b> singular; membros individuais da coleção <b>Areas</b> são <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objetos. A coleção <b>Areas</b> contém um objeto <b>Range</b> para cada intervalo de células contíguo individual na seleção. Se a seleção contiver somente uma área, a coleção <b>Areas</b> conterá um único objeto <b>Range</b> correspondente a essa seleção.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Excel.Range.Areas" /> propriedade para retornar a coleção <b>Areas.</b></para>
+      <para>Use <b>Areas</b>( ), onde é o número de índice da área, para retornar um único objeto <paramref name="index" /> <paramref name="index" /> <b>Range</b> da coleção. Os números de índice correspondem à ordem em que as áreas foram selecionadas.</para>
+      <para>Algumas operações não podem ser executadas em mais de uma área de uma seleção ao mesmo tempo; você deve fazer um loop pelas áreas individuais da seleção e executar as operações em cada área separadamente.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -101,7 +91,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -159,11 +149,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -224,8 +212,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>necessário. O número de índice do objeto.</param>
+        <param name="Index">Obrigatório <b>Integer</b>. O número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

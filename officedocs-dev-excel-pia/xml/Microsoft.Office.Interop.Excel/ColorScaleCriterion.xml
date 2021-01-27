@@ -1,13 +1,5 @@
 <Type Name="ColorScaleCriterion" FullName="Microsoft.Office.Interop.Excel.ColorScaleCriterion">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="71a5a3fdaa7d1393ccedac6ff867343c7fd8ae11" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580539" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ColorScaleCriterion" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="71a5a3fdaa7d1393ccedac6ff867343c7fd8ae11" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005744" /></Metadata><TypeSignature Language="C#" Value="public interface ColorScaleCriterion" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorScaleCriterion" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />
   <TypeSignature Language="VB.NET" Value="Public Interface ColorScaleCriterion" />
@@ -30,14 +22,10 @@
   </Attributes>
   <Docs>
     <summary>Representa os critérios dos limites mínimos, médios e máximos de uma formatação condicional de formato de cor.</summary>
-    <remarks>
-      <para>Cada <b>ColorScaleCriterion</b> faz parte do <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> conjunto. Use <b>ColorScaleCriteria</b>(<paramref name="index" />), para retornar um critério individual.</para>
-      <para>Você pode definir o <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" />, <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Value" />, e <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.FormatColor" /> de cada limite da escala de cores.</para>
-      <para></para>
-    </remarks>
-    <example>
-      <para>O exemplo de código a seguir cria um intervalo de números e aplica uma regra de formatação condicional da escala de duas cores para aquele intervalo. A cor para o limite mínimo é atribuída para vermelho e o limite máximo como azul por indexado no <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />conjunto para definir critérios individuais.</para>
-    </example>
+    <remarks><para>Cada <b>ColorScaleCriterion</b> faz parte da <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> coleção. Use <b>ColorScaleCriteria</b>( <paramref name="index" /> ), para retornar um critério individual.</para>
+      <para>Você pode definir <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" /> o , e de cada limite para a escala de <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Value" /> <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.FormatColor" /> cores.</para>
+      <para> </para></remarks>
+    <example><para>O exemplo de código a seguir cria um intervalo de números e aplica uma regra de formatação condicional de escala de duas cores a esse intervalo. A cor do limite mínimo é então atribuída a vermelho e o limite máximo como azul, indexando na coleção para <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> definir critérios individuais.</para></example>
   </Docs>
   <Members>
     <Member MemberName="FormatColor">
@@ -63,14 +51,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.FormatColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> object, que especifica a cor atribuída ao limite de um formato condicional de escala de cores. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" />
-        </value>
-        <remarks>
-          <para>Você pode definir a cor do mínimo, médio ou máximo limites para qualquer cor personalizada usando o <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Color" /> propriedade; ou use o <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.ThemeColor" /> propriedade.</para>
-          <para></para>
-        </remarks>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> objeto, que especifica a cor atribuída ao limite de uma formatação condicional de escala de cores. Somente leitura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /></value>
+        <remarks><para>Você pode definir a cor dos limites mínimo, médio ou máximo para qualquer cor personalizada usando a propriedade <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Color" /> ou usar a <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.ThemeColor" /> propriedade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -96,14 +80,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um valor <b>inteiro</b> indicando que representa os critérios de limite. Somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Para uma regra de formatação condicional de escala de duas cores, essa propriedade retornará um valor "1" para o limite mínimo e "2" para o limite máximo. No uso de uma regra de escala de três cores, os valores serão "1" para o limite mínimo, "2" para o médio e "3" para o máximo.</para>
-          <para></para>
-        </remarks>
+        <summary>Retorna um <b>valor Integer</b> indicando qual limite os critérios representam. Somente leitura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Para uma regra de formatação condicional de escala de duas cores, essa propriedade retornará um valor "1" para o limite mínimo e "2" para o limite máximo. No uso de uma regra de escala de três cores, os valores serão "1" para o limite mínimo, "2" para o médio e "3" para o máximo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -132,14 +112,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlConditionValueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna uma das constantes do <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> enumeração, que especifica como os valores de limite de uma cor ou a barra de dados dimensionar o formato condicional são determinados. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" />
-        </value>
-        <remarks>
-          <para>O tipo do valor de limite para uma barra de dados ou a cor de escala pode ser um número, por cento, fórmula ou percentil. Definir o tipo como percentil usará a função percentil no Excel para determinar o valor limite.</para>
-          <para></para>
-        </remarks>
+        <summary>Retorna uma das constantes da enumeração, que especifica como os valores limite para uma formatação condicional de barra de dados ou escala <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> de cores são determinados. Somente leitura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /></value>
+        <remarks><para>O tipo do valor limite para uma barra de dados ou escala de cores pode ser um número, percentagem, fórmula ou percentil. Definir o tipo como percentil usará a função Percentil no Excel para determinar o valor limite.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -168,15 +144,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o mínimo, médio ou o valor de limite máximo de um formato condicional de escala de cores. Leitura/gravação.</summary>
-        <value>
-          <b>Object</b>
-        </value>
-        <remarks>
-          <para>Você pode definir o valor apenas se o <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" /> propriedade para o formato condicional for definida como uma das seguintes constantes: <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />, <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />, <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />, ou <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />.</para>
+        <summary>Retorna ou define o valor limite mínimo, médio ou máximo de uma formatação condicional de escala de cores. Leitura/gravação.</summary>
+        <value><b>Object</b></value>
+        <remarks><para>Você só poderá definir o valor se a propriedade para o formato condicional estiver definida como uma das seguintes <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" /> constantes: <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" /> , , ou <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" /> <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" /> <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" /> .</para>
           <para>Se o tipo de limite for uma fórmula, você poderá definir a fórmula como um valor <b>String</b>. A fórmula deve retornar um único número.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

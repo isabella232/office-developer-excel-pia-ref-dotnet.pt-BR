@@ -1,13 +1,5 @@
 <Type Name="DisplayFormat" FullName="Microsoft.Office.Interop.Excel.DisplayFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4ddcd9f96de4128a0ca313e475935d98703af7f3" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20573525" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DisplayFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4ddcd9f96de4128a0ca313e475935d98703af7f3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005590" /></Metadata><TypeSignature Language="C#" Value="public interface DisplayFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DisplayFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DisplayFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface DisplayFormat" />
@@ -29,12 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa as configurações de exibição para um associados <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto.</summary>
-    <remarks>
-      <para>Somente leitura.</para>
-      <para>Ações como alterar o estilo de tabela ou a formatação condicional de um intervalo podem causar o que é exibido na interface do usuário atual para ser inconsistente com os valores das propriedades correspondentes do <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto. Use as propriedades do <see cref="T:Microsoft.Office.Interop.Excel.DisplayFormat" /> objeto para retornar os valores conforme eles são exibidos na interface do usuário atual.</para>
-      <para></para>
-    </remarks>
+    <summary>Representa as configurações de exibição de um objeto <see cref="T:Microsoft.Office.Interop.Excel.Range" /> associado.</summary>
+    <remarks><para>Somente leitura.</para>
+      <para>Ações como alterar a formatação condicional ou o estilo de tabela de um intervalo podem fazer com que o que é exibido na interface do usuário atual seja inconsistente com os valores nas propriedades correspondentes do <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto. Use as propriedades do <see cref="T:Microsoft.Office.Interop.Excel.DisplayFormat" /> objeto para retornar os valores conforme eles são exibidos na interface do usuário atual.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddIndent">
@@ -60,13 +50,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um valor que indica se o Microsoft Excel recua automaticamente texto de associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> do objeto quando o alinhamento do texto em uma célula estiver definido como distribuição igual (horizontal ou verticalmente), como ele é exibido na interface do usuário atual.</summary>
-        <value>Indica se o Microsoft Excel recua automaticamente texto de associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> do objeto quando o alinhamento do texto em uma célula estiver definido como distribuição igual (horizontal ou verticalmente), como ele é exibido na interface do usuário atual.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para>Retorna <b>true</b> se o texto for automaticamente recuado, quando o alinhamento do texto na célula estiver definido, horizontal ou verticalmente, como distribuição igual.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém um valor que indica se o Microsoft Excel recua automaticamente o texto do objeto associado quando o alinhamento do texto em uma célula é definido como distribuição igual (horizontal ou verticalmente), como é exibido na interface atual do <see cref="T:Microsoft.Office.Interop.Excel.Range" /> usuário.</summary>
+        <value>Indica se o Microsoft Excel recua automaticamente o texto do objeto associado quando o alinhamento do texto em uma célula é definido como distribuição igual (horizontal ou verticalmente), como é exibido na interface atual do <see cref="T:Microsoft.Office.Interop.Excel.Range" /> usuário.</value>
+        <remarks><para>Somente leitura.</para>
+          <para>Retorna <b>true</b> se o texto for recuado automaticamente quando o alinhamento do texto na célula for definido, horizontal ou verticalmente, como distribuição igual.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -92,12 +80,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usado sem um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel. Quando usado com um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o criador do objeto especificado.</summary>
+        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna <see cref="T:Microsoft.Office.Interop.Excel.Application" /> um objeto que representa o aplicativo Microsoft Excel. Quando usada com um qualificador de objeto, essa propriedade retorna um objeto que representa o <see cref="T:Microsoft.Office.Interop.Excel.Application" /> criador do objeto especificado.</summary>
         <value>Um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -123,12 +109,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> object que representa as bordas de associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</summary>
-        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> object que representa as bordas de associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém um objeto que representa as bordas do objeto associado à medida <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> que ele é exibido na interface do usuário <see cref="T:Microsoft.Office.Interop.Excel.Range" /> atual.</summary>
+        <value>Um objeto que representa as bordas do objeto associado como <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> ele é exibido na interface do usuário <see cref="T:Microsoft.Office.Interop.Excel.Range" /> atual.</value>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Characters">
@@ -159,9 +143,9 @@
       </Parameters>
       <Docs>
         <param name="Start">O primeiro caractere a ser retornado. Se esse argumento for 1 ou omitido, essa propriedade retornará um intervalo de caracteres começando com o primeiro caractere.</param>
-        <param name="Length">O número de caracteres a ser retornado. Se esse argumento for omitido, essa propriedade retorna o restante da cadeia de caracteres (tudo após o <paramref name="Start" /> caracteres).</param>
-        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> object que representa um intervalo de caracteres dentro do texto de associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</summary>
-        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> object que representa um intervalo de caracteres dentro do texto de associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</value>
+        <param name="Length">O número de caracteres a ser retornado. Se esse argumento for omitido, essa propriedade retornará o restante da cadeia de caracteres (tudo após o <paramref name="Start" /> caractere).</param>
+        <summary>Obtém um objeto que representa um intervalo de caracteres dentro do texto do objeto associado como <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> ele é exibido na interface do usuário <see cref="T:Microsoft.Office.Interop.Excel.Range" /> atual.</summary>
+        <value>Um objeto que representa um intervalo de caracteres dentro do texto do objeto associado como ele <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> é exibido na interface do usuário <see cref="T:Microsoft.Office.Interop.Excel.Range" /> atual.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,13 +172,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um <b>inteiro</b> de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
-        <value>De 32 bits <b>inteiro</b> que indica o aplicativo no qual esse objeto foi criado.</value>
-        <remarks>
-          <para>Somente leitura <b>long</b>.</para>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C. O <see cref="P:Microsoft.Office.Interop.Excel.DisplayFormat.Creator" /> propriedade foi projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém um inteiro de 32 <b>bits</b> que indica o aplicativo no qual esse objeto foi criado.</summary>
+        <value>Um inteiro de 32 <b>bits</b> que indica o aplicativo no qual esse objeto foi criado.</value>
+        <remarks><para>Somente leitura <b>long</b>.</para>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. A propriedade foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo tem um código de criador de <see cref="P:Microsoft.Office.Interop.Excel.DisplayFormat.Creator" /> quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -220,12 +202,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object que representa a fonte do associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual.</summary>
-        <value>Uma <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object que representa a fonte do associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém <see cref="T:Microsoft.Office.Interop.Excel.Font" /> um objeto que representa a fonte do associado conforme ele é exibido na interface do usuário <see cref="T:Microsoft.Office.Interop.Excel.Range" /> atual.</summary>
+        <value>Um <see cref="T:Microsoft.Office.Interop.Excel.Font" /> objeto que representa a fonte do associado como ele é exibido na interface do usuário <see cref="T:Microsoft.Office.Interop.Excel.Range" /> atual.</value>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaHidden">
@@ -251,13 +231,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um valor que indica se a fórmula de associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto ficar oculta quando a planilha for protegida como ele é exibido na interface do usuário atual.</summary>
-        <value>Indica se a fórmula de associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto ficar oculta quando a planilha for protegida como ele é exibido na interface do usuário atual.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para>Retorna <b>true</b> se a fórmula ficar oculta quando a planilha estiver protegida, uma referência null (Nothing no Visual Basic) se o intervalo contiver algumas células com <see cref="P:Microsoft.Office.Interop.Excel.DisplayFormat.FormulaHidden" /> igual a <b>true</b> e algumas células com <see cref="P:Microsoft.Office.Interop.Excel.DisplayFormat.FormulaHidden" /> igual a <b>false</b>.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém um valor que indica se a fórmula do objeto associado está oculta quando a planilha está protegida conforme é exibida na <see cref="T:Microsoft.Office.Interop.Excel.Range" /> interface do usuário atual.</summary>
+        <value>Indica se a fórmula do objeto associado está oculta quando a planilha está protegida, como é exibida na <see cref="T:Microsoft.Office.Interop.Excel.Range" /> interface do usuário atual.</value>
+        <remarks><para>Somente leitura.</para>
+          <para>Retorna <b>true</b> se a fórmula estiver oculta quando a planilha estiver protegida, uma referência nula (Nothing no Visual Basic) se o intervalo contiver algumas células com valor igual a true e algumas células com igual a <see cref="P:Microsoft.Office.Interop.Excel.DisplayFormat.FormulaHidden" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.DisplayFormat.FormulaHidden" /> <b>falso</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlignment">
@@ -283,12 +261,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um valor que representa o alinhamento horizontal do associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</summary>
-        <value>O alinhamento horizontal do associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém um valor que representa o alinhamento horizontal do objeto associado à medida que <see cref="T:Microsoft.Office.Interop.Excel.Range" /> é exibido na interface do usuário atual.</summary>
+        <value>O alinhamento horizontal do objeto <see cref="T:Microsoft.Office.Interop.Excel.Range" /> associado como é exibido na interface do usuário atual.</value>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IndentLevel">
@@ -314,12 +290,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um valor que representa o nível de recuo de associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</summary>
-        <value>O nível de recuo de associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém um valor que representa o nível de recuo do objeto associado à medida que <see cref="T:Microsoft.Office.Interop.Excel.Range" /> ele é exibido na interface do usuário atual.</summary>
+        <value>O nível de recuo do objeto <see cref="T:Microsoft.Office.Interop.Excel.Range" /> associado como ele é exibido na interface do usuário atual.</value>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -345,12 +319,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object que representa o interior do associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</summary>
-        <value>Um <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object que representa o interior do associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém um objeto que representa o interior do objeto associado como <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> ele é exibido na interface do usuário <see cref="T:Microsoft.Office.Interop.Excel.Range" /> atual.</summary>
+        <value>Um objeto que representa o interior do objeto associado como <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> ele é exibido na interface do usuário <see cref="T:Microsoft.Office.Interop.Excel.Range" /> atual.</value>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -376,13 +348,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um valor que indica se o associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> o objeto está bloqueado, como ele é exibido na interface do usuário atual.</summary>
-        <value>Indica se o associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> o objeto está bloqueado, como ele é exibido na interface do usuário atual.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para>Retorna <b>true</b> se o intervalo estiver bloqueado, <b>false</b> se o intervalo pode ser modificado quando a planilha estiver protegida, ou uma referência null (Nothing no Visual Basic) se o intervalo contiver bloqueadas e células.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém um valor que indica se o objeto associado está bloqueado conforme <see cref="T:Microsoft.Office.Interop.Excel.Range" /> é exibido na interface do usuário atual.</summary>
+        <value>Indica se o objeto <see cref="T:Microsoft.Office.Interop.Excel.Range" /> associado está bloqueado conforme é exibido na interface do usuário atual.</value>
+        <remarks><para>Somente leitura.</para>
+          <para>Retorna <b>true</b> se o intervalo estiver bloqueado, <b>false</b> se o intervalo puder ser modificado quando a planilha estiver protegida ou uma referência nula (Nothing no Visual Basic) se o intervalo contiver células bloqueadas e desbloqueadas.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MergeCells">
@@ -408,13 +378,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um valor que indica se o associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto contiver células mescladas como ele é exibido na interface do usuário atual.</summary>
-        <value>Indica se o associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto contiver células mescladas como ele é exibido na interface do usuário atual.</value>
-        <remarks>
-          <para>Somente leitura.</para>
+        <summary>Obtém um valor que indica se o objeto associado contém células mescladas conforme <see cref="T:Microsoft.Office.Interop.Excel.Range" /> ele é exibido na interface do usuário atual.</summary>
+        <value>Indica se o objeto associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> contém células mescladas conforme ele é exibido na interface do usuário atual.</value>
+        <remarks><para>Somente leitura.</para>
           <para>Retorna <b>true</b> se o intervalo contiver células mescladas.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormat">
@@ -440,13 +408,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um valor que representa o código de formato de associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</summary>
-        <value>O código de formatação de associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para>Essa propriedade retorna uma referência null (Nothing no Visual Basic) se todas as células no intervalo especificado não tiverem o mesmo formato de número.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém um valor que representa o código de formato do objeto associado como <see cref="T:Microsoft.Office.Interop.Excel.Range" /> ele é exibido na interface do usuário atual.</summary>
+        <value>O código de formato do <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto associado como ele é exibido na interface do usuário atual.</value>
+        <remarks><para>Somente leitura.</para>
+          <para>Essa propriedade retornará uma referência nula (Nothing no Visual Basic) se todas as células no intervalo especificado não têm o mesmo formato de número.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLocal">
@@ -472,12 +438,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um valor que representa o código de formato de associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como uma cadeia de caracteres no idioma do usuário como ele é exibido na interface do usuário atual.</summary>
-        <value>O código de formatação de associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como uma cadeia de caracteres no idioma do usuário como ele é exibido na interface do usuário atual.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém um valor que representa o código de formato do associado como uma cadeia de caracteres no idioma do usuário como ele é exibido <see cref="T:Microsoft.Office.Interop.Excel.Range" /> na interface do usuário atual.</summary>
+        <value>O código de formato do associado como uma cadeia de caracteres no idioma do usuário como <see cref="T:Microsoft.Office.Interop.Excel.Range" /> ele é exibido na interface do usuário atual.</value>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -503,12 +467,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um valor que representa a orientação do texto de associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</summary>
-        <value>A orientação do texto de associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém um valor que representa a orientação de texto do objeto associado à medida que <see cref="T:Microsoft.Office.Interop.Excel.Range" /> ele é exibido na interface do usuário atual.</summary>
+        <value>A orientação de texto do <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto associado como ele é exibido na interface do usuário atual.</value>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -536,10 +498,8 @@
       <Docs>
         <summary>Obtém o objeto pai do objeto especificado.</summary>
         <value>O objeto pai do objeto especificado.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadingOrder">
@@ -565,12 +525,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém o sentido de leitura do associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</summary>
-        <value>A ordem de leitura do associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém a ordem de leitura do <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto associado como ele é exibido na interface do usuário atual.</summary>
+        <value>A ordem de leitura do <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto associado como ele é exibido na interface do usuário atual.</value>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShrinkToFit">
@@ -596,13 +554,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um valor que indica se o Microsoft Excel reduz automaticamente o texto para se ajustar à largura de coluna disponível de associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</summary>
-        <value>Indica se o Microsoft Excel reduz automaticamente o texto para se ajustar à largura de coluna disponível de associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para>Retorna <b>true</b> se o texto será automaticamente diminuído para se ajustar à largura de coluna disponível.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém um valor que indica se o Microsoft Excel reduz automaticamente o texto para se ajustar à largura da coluna disponível do objeto associado conforme ele é exibido na <see cref="T:Microsoft.Office.Interop.Excel.Range" /> interface atual do usuário.</summary>
+        <value>Indica se o Microsoft Excel reduz automaticamente o texto para se ajustar à largura da coluna disponível do objeto associado conforme ele é exibido na <see cref="T:Microsoft.Office.Interop.Excel.Range" /> interface do usuário atual.</value>
+        <remarks><para>Somente leitura.</para>
+          <para>Retorna <b>true</b> se o texto é automaticamente diminuído para se ajustar à largura da coluna disponível.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -628,8 +584,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um valor, contendo um <see cref="T:Microsoft.Office.Interop.Excel.Style" /> object, que representa o estilo do associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</summary>
-        <value>Um valor, contendo um <see cref="T:Microsoft.Office.Interop.Excel.Style" /> object, que representa o estilo do associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</value>
+        <summary>Obtém um valor, contendo um objeto, que representa o estilo do objeto associado como <see cref="T:Microsoft.Office.Interop.Excel.Style" /> ele é exibido na interface do usuário <see cref="T:Microsoft.Office.Interop.Excel.Range" /> atual.</summary>
+        <value>Um valor, contendo um objeto, que representa o estilo do objeto associado como ele <see cref="T:Microsoft.Office.Interop.Excel.Style" /> é exibido na interface do usuário <see cref="T:Microsoft.Office.Interop.Excel.Range" /> atual.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -656,12 +612,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um valor que representa o alinhamento vertical do associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</summary>
-        <value>O alinhamento vertical do associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém um valor que representa o alinhamento vertical do objeto associado à medida que <see cref="T:Microsoft.Office.Interop.Excel.Range" /> é exibido na interface do usuário atual.</summary>
+        <value>O alinhamento vertical do objeto <see cref="T:Microsoft.Office.Interop.Excel.Range" /> associado como é exibido na interface do usuário atual.</value>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WrapText">
@@ -687,13 +641,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um valor que indica se o Microsoft Excel faz retorno automático o texto do associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</summary>
-        <value>Indica se o Microsoft Excel faz retorno automático o texto do associado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> como ele é exibido na interface do usuário atual do objeto.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para>Retorna <b>true</b> se o texto é disposto em todas as células do intervalo.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtém um valor que indica se o Microsoft Excel quebra o texto do objeto associado conforme ele é exibido <see cref="T:Microsoft.Office.Interop.Excel.Range" /> na interface do usuário atual.</summary>
+        <value>Indica se o Microsoft Excel quebra o texto do objeto associado conforme <see cref="T:Microsoft.Office.Interop.Excel.Range" /> ele é exibido na interface do usuário atual.</value>
+        <remarks><para>Somente leitura.</para>
+          <para>Retorna <b>true</b> se o texto for empacotado em todas as células dentro do intervalo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

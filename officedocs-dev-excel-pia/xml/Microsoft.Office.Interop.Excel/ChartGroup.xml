@@ -1,13 +1,5 @@
 <Type Name="ChartGroup" FullName="Microsoft.Office.Interop.Excel.ChartGroup">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d867c9c484716da4b2528f8d662af2030b791599" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578243" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartGroup" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d867c9c484716da4b2528f8d662af2030b791599" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005849" /></Metadata><TypeSignature Language="C#" Value="public interface ChartGroup" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartGroup" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartGroup" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartGroup" />
@@ -29,39 +21,37 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa uma ou mais séries plotadas em um gráfico com o mesmo formato. O objeto <b>ChartGroup</b> é um membro do <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> conjunto.</summary>
-    <remarks>
-      <para>Um gráfico contém um ou mais grupos de gráficos, cada grupo gráfico contém uma ou mais séries e cada seqüência contém um ou mais pontos. Por exemplo, um único gráfico pode conter um grupo de gráficos de linha, que contém todas as séries plotadas com o formato de gráfico de linhas e um grupo de gráficos de barras, contendo todas as séries plotadas com o formato de gráfico de barras.</para>
-      <para>Use <b>ChartGroups</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do grupo gráfico, para retornar um único objeto <b>ChartGroup</b> . Se o gráfico tiver sido ativado, você pode usar o <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" /> propriedade.</para>
-      <para>Como o número de índice para um determinado grupo gráfico pode ser alterado se o formato de gráfico usado para esse grupo for alterado, talvez seja mais fácil usar um dos métodos de atalho de grupo gráfico nomeados para retornar um determinado grupo gráfico. O <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> método retorna a coleção dos grupos de gráficos de pizza em um gráfico, o <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> método retorna a coleção de grupos de gráficos de linha e assim por diante. Cada um desses métodos pode ser usado com um número de índice para retornar um único objeto <b>ChartGroup</b> , ou sem um número de índice para retornar uma coleção <b>ChartGroups</b> . Os seguintes métodos de grupo gráfico estão disponíveis:</para>
+    <summary>Representa uma ou mais séries plotadas em um gráfico com o mesmo formato. O <b>objeto ChartGroup</b> é um membro da <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> coleção.</summary>
+    <remarks><para>Um gráfico contém um ou mais grupos de gráficos, cada grupo gráfico contém uma ou mais séries e cada seqüência contém um ou mais pontos. Por exemplo, um único gráfico pode conter um grupo de gráficos de linha, que contém todas as séries plotadas com o formato de gráfico de linhas e um grupo de gráficos de barras, contendo todas as séries plotadas com o formato de gráfico de barras.</para>
+      <para>Use <b>ChartGroups</b>( ), onde é o número de índice do grupo <paramref name="index" /> <paramref name="index" /> gráfico, para retornar um único <b>objeto ChartGroup</b> . Se o gráfico tiver sido ativado, você poderá usar a <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" /> propriedade.</para>
+      <para>Como o número de índice para um determinado grupo gráfico pode mudar se o formato do gráfico usado para este grupo for alterado, pode ser mais fácil usar um dos métodos de atalho de grupo gráfico nomeados para retornar um determinado grupo gráfico. O método retorna a coleção de grupos de gráficos de pizza em um gráfico, o método retorna a coleção de grupos de gráficos de linhas <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> e assim por diante. Cada um destes métodos pode ser usado com um número de índice para retornar um único objeto <b>ChartGroup</b> ou sem um número do índice para retornar uma coleção <b>ChartGroups</b>. Os seguintes métodos de grupo de gráficos estão disponíveis:</para>
       <list type="bullet">
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" />método</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" /> método</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" />método</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" /> método</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" />método</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" /> método</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" />método</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" /> método</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />método</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> método</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />método</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> método</description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -87,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto de automação OLE para retornar o aplicativo desse objeto).</summary>
+        <summary>Retorna um objeto que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto de automação OLE para retornar o aplicativo <see cref="T:Microsoft.Office.Interop.Excel.Application" /> desse objeto).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,12 +108,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAxisGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o grupo para a série ou grupo de gráficos especificado.</summary>
+        <summary>Retorna o grupo da série ou do grupo de gráficos especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para gráficos 3D, apenas <b>xlPrimary</b> é válida.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Para gráficos 3D, somente <b>xlPrimary</b> é válido.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BubbleScale">
@@ -152,7 +140,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o fator de escala para bolhas do grupo de gráficos especificado. Pode ser um valor inteiro de 0 (zero) a 300, correspondendo a um percentual do tamanho padrão. Aplica-se somente a gráficos de bolha.</summary>
+        <summary>Retorna ou define o fator de dimensionamento para balões no grupo de gráficos especificado. Pode ser um valor inteiro de 0 (zero) a 300, correspondente a uma porcentagem do tamanho padrão. Aplica-se apenas a gráficos de bolhas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -179,8 +167,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">O nome ou número de categorias.</param>
-        <summary>Retorna um object que representa uma coleção de todas as categorias visíveis (um <see cref="T:Microsoft.Office.Interop.Excel.CategoryCollection" /> coleção) no grupo de gráficos.</summary>
+        <param name="Index">O nome ou número das categorias.</param>
+        <summary>Retorna um objeto que representa uma coleção de todas as categorias visíveis <see cref="T:Microsoft.Office.Interop.Excel.CategoryCollection" /> (uma coleção) no grupo de gráficos.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -208,12 +196,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</summary>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DoughnutHoleSize">
@@ -242,7 +228,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o tamanho do orifício em um grupo de gráficos de rosca. O tamanho do orifício é expresso como um percentual do tamanho do gráfico, entre 10 e 90 por cento.</summary>
+        <summary>Retorna ou define o tamanho do buraco em um grupo de gráficos de rosca. O tamanho do buraco é expresso como um percentual do tamanho do gráfico, entre 10 e 90%.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -270,7 +256,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DownBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.DownBars" /> object que representa as barras inferiores em um gráfico de linha. Só se aplica a gráficos de linhas.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.DownBars" /> objeto que representa as barras 7 em um gráfico de linhas. Aplica-se apenas a gráficos de linhas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -298,7 +284,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DropLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.DropLines" /> object que representa as linhas verticais de uma série em um gráfico de linhas ou gráfico de área. Só se aplica a gráficos de linhas ou gráficos de área.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.DropLines" /> objeto que representa as linhas verticais de uma série em um gráfico de linhas ou gráfico de área. Aplica-se apenas a gráficos de linhas e a gráficos de áreas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -329,7 +315,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o ângulo da primeira fatia do gráfico de pizza ou de rosca em graus (no sentido horário a partir da vertical). Só se aplica a gráficos de rosca, de pizza e pizza 3D.</summary>
+        <summary>Retorna ou define o ângulo da primeira fatia do gráfico de pizza ou gráfico de rosca em graus (no sentido horário a partir da vertical). Aplica-se apenas a pizza, torta 3-D e gráficos de rosca..</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -356,8 +342,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">O nome ou número de categorias.</param>
-        <summary>Retorna um object que representa uma coleção de todas as categorias visíveis e filtradas (um <see cref="T:Microsoft.Office.Interop.Excel.CategoryCollection" />) no grupo de gráficos.</summary>
+        <param name="Index">O nome ou número das categorias.</param>
+        <summary>Retorna um objeto que representa uma coleção de todas as categorias visíveis e filtradas <see cref="T:Microsoft.Office.Interop.Excel.CategoryCollection" /> (a) no grupo de gráficos.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -388,12 +374,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gráficos de barras e coluna: Retorna ou define o espaço entre barra ou coluna clusters como um percentual da barra ou coluna largura. Pizza de pizza ou barra de gráficos de pizza: Retorna ou define o espaço entre as seções principais e secundárias do gráfico.</summary>
+        <summary>Gráficos de barras e colunas: retorna ou define o espaço entre grupos de barras ou colunas como um percentual da largura da barra ou coluna. Gráficos pizza de pizza e barra de pizza: Retorna ou define o espaço entre as seções primária e secundária do gráfico.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O valor dessa propriedade precisa estar entre 0 e 500.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>O valor dessa propriedade precisa estar entre 0 e 500.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Has3DShading">
@@ -422,8 +406,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o grupo gráfico possui sombreamento tridimensional. Essa propriedade só se aplica a gráficos de superfície e retornará um erro de tempo de execução se você tentar defini-la como um gráfico de superfície de não.</summary>
+        <summary><b>True</b> se o grupo gráfico possuir sombreamento tridimensional. Essa propriedade só se aplica a gráficos de superfície e retornará um erro em tempo de executar se você tentar defini-la como um gráfico que não seja de superfície.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -454,8 +437,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o gráfico de linhas ou gráfico de área tem linhas de projeção. Aplica-se somente a gráficos de linhas e de área.</summary>
+        <summary><b>True</b> se o gráfico de linhas ou gráfico de área tem grades verticais. Só se aplica a gráficos de linhas e de área.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -486,8 +468,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o gráfico de linhas tiver linhas de máximo/mínimo. Só se aplica a gráficos de linhas.</summary>
+        <summary><b>True</b> se o gráfico de linhas tem linhas de máximo/mínimo. Só se aplica a gráficos de linhas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -518,8 +499,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se um gráfico de radar tem rótulos do eixo. Aplica-se somente a gráficos de radar.</summary>
+        <summary><b>True</b> se um gráfico de radar tem rótulos de eixo. Só se aplica a gráficos de radar.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -550,8 +530,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se um gráfico de barras ou de gráfico de colunas empilhadas tiver linhas de série ou se um gráfico de pizza de pizza ou barra de pizza tiver linhas de conector entre as duas seções. Só se aplica a gráficos de colunas empilhadas, gráficos de barras, gráficos de pizza de pizza ou barra de gráficos de pizza.</summary>
+        <summary><b>True</b> se um gráfico de colunas ou de barras empilhadas tiver linhas de série ou se um gráfico pizza de pizza ou gráfico barra de pizza tiver linhas de conexão entre as duas seções. Aplica-se somente a gráficos de colunas ou de barras empilhadas, gráficos pizza de pizza ou gráficos barra de pizza.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -582,7 +561,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>True se um gráfico de linhas tiver barras superiores e inferiores. Só se aplica a gráficos de linhas.</summary>
+        <summary>True se um gráfico de linhas tiver barras superiores e inferiores. Aplica-se apenas a gráficos de linhas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -610,7 +589,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.HiLoLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.HiLoLines" /> object que representa as linhas de máximo/mínimo de uma série em um gráfico de linhas. Só se aplica a gráficos de linhas.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.HiLoLines" /> objeto que representa as linhas de alto/baixo para uma série em um gráfico de linhas. Aplica-se apenas a gráficos de linhas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -669,12 +648,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Especifica como as barras e colunas são posicionadas. Pode ser um valor entre – 100 e 100. Aplica-se somente a gráficos de colunas 2D e de barras 2D.</summary>
+        <summary>Especifica como barras e colunas são posicionadas. Pode ser um valor entre –100 e 100. Se aplicam apenas às barras 2D e gráficos de colunas 2D.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se essa propriedade for definida como – 100, barras serão posicionadas para que haja uma barra largura entre elas. Se a sobreposição for 0 (zero), não existe espaço entre barras (uma barra começando imediatamente após a barra precedente). Se a sobreposição for 100, as barras serão posicionadas umas sobre as outras.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se essa propriedade for definida como –100, as barras serão posicionadas para que haja uma largura de barra entre elas. Se a sobreposição for 0 (zero), não haverá espaço entre as barras (uma barra começará imediatamente após a barra precedente). Se a sobreposição for 100, as barras serão posicionadas umas sobre as outras.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -700,7 +677,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado.</summary>
+        <summary>Retorna o objeto pai do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -728,7 +705,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TickLabels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.TickLabels" /> object que representa os rótulos do eixo radar para o grupo gráfico especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.TickLabels" /> objeto que representa os rótulos de eixo de radar para o grupo de gráficos especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -759,7 +736,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o tamanho da seção secundária de um gráfico de pizza de pizza ou uma barra de gráfico de pizza, como um percentual do tamanho da pizza principal. Pode ser um valor de 5 a 200.</summary>
+        <summary>Retorna ou define o tamanho da seção secundária de um gráfico Pizza de Pizza ou Barra de Pizza, como uma porcentagem do tamanho da pizza principal. Pode ser um valor de 5 de 200.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -786,9 +763,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>de opcional. O nome ou número da série.</param>
-        <summary>Retorna um object que representa uma única série (um <see cref="T:Microsoft.Office.Interop.Excel.Series" /> objeto) ou uma coleção de todas as séries (uma <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> coleção) no gráfico ou grupo de gráficos.</summary>
+        <param name="Index">Objeto <b>opcional</b>. O nome ou número da série.</param>
+        <summary>Retorna um objeto que representa uma única série (um objeto) ou uma coleção de todas as séries (uma coleção) no gráfico ou <see cref="T:Microsoft.Office.Interop.Excel.Series" /> <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> grupo de gráficos.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -816,7 +792,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SeriesLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.SeriesLines" /> object que representa as linhas de série para um gráfico de barras empilhadas ou um gráfico de colunas empilhadas. Aplica-se somente a gráficos de colunas empilhadas e barra empilhada.</summary>
+        <summary>Retorna um objeto que representa as linhas de série para um gráfico de barras empilhadas <see cref="T:Microsoft.Office.Interop.Excel.SeriesLines" /> ou um gráfico de colunas empilhadas. Aplica-se somente aos gráficos de colunas e barras empilhadas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -847,8 +823,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se as bolhas negativas são mostradas para o grupo de gráficos. Válida somente para gráficos de bolha.</summary>
+        <summary><b>True</b> se bolhas negativas forem mostradas para o grupo gráfico. Válida somente para gráficos de bolhas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -910,7 +885,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlChartSplitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a maneira como as duas seções de um gráfico de pizza de pizza ou uma barra de gráfico de pizza são divididas.</summary>
+        <summary>Retorna ou define a maneira como as duas seções de um gráfico pizza de pizza ou gráfico barra de pizza são divididas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -941,7 +916,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o valor de limite separando as duas seções de um gráfico de pizza de pizza ou uma barra de gráfico de pizza.</summary>
+        <summary>Retorna ou define o valor limite separando as duas seções de um gráfico Pizza de Pizza ou Barra de Pizza.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1043,7 +1018,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.UpBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.UpBars" /> object que representa as barras superiores em um gráfico de linha. Só se aplica a gráficos de linhas.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.UpBars" /> objeto que representa as barras para cima em um gráfico de linhas. Aplica-se apenas a gráficos de linhas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1074,8 +1049,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o Microsoft Excel atribui uma cor ou padrão diferente para cada marcador de dados. O gráfico precisa conter somente uma série.</summary>
+        <summary><b>True</b> se o Microsoft Excel atribuir uma cor ou padrão diferente a cada marcador de dados. O gráfico deve conter apenas uma série.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
