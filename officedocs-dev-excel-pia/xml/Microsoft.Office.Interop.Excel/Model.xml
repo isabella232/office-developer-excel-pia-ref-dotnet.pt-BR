@@ -1,13 +1,5 @@
 <Type Name="Model" FullName="Microsoft.Office.Interop.Excel.Model">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="828748126cb216cd88900a55932d3ae0cccf6925" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20577536" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Model" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="828748126cb216cd88900a55932d3ae0cccf6925" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011750" /></Metadata><TypeSignature Language="C#" Value="public interface Model" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Model" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Model" />
   <TypeSignature Language="VB.NET" Value="Public Interface Model" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Armazena referências para obter informações sobre as tabelas e relações contidas no modelo de dados e conexões da pasta de trabalho.</summary>
+    <summary>Armazena referências a conexões de workbook e informações sobre as tabelas e relações contidas no Modelo de Dados.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -56,8 +48,8 @@
         <Parameter Name="ConnectionToDataSource" Type="Microsoft.Office.Interop.Excel.WorkbookConnection" />
       </Parameters>
       <Docs>
-        <param name="ConnectionToDataSource">A conexão da pasta de trabalho.</param>
-        <summary>Adiciona uma nova Conexão de pasta de trabalho para o modelo com as mesmas propriedades que aquele fornecido como um argumento.</summary>
+        <param name="ConnectionToDataSource">A conexão da workbook.</param>
+        <summary>Adiciona uma nova Conexão de Workbook ao modelo com as mesmas propriedades que a fornecida como um argumento.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo do Excel. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Excel. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,8 +105,8 @@
         <Parameter Name="ModelTable" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ModelTable">Um nome de tabela do modelo ou um objeto table de modelo.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto do tipo <see cref="T:Microsoft.Office.Interop.Excel.ModelConnection" />.</summary>
+        <param name="ModelTable">Um nome de tabela modelo ou um objeto de tabela de modelo.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto do tipo <see cref="T:Microsoft.Office.Interop.Excel.ModelConnection" /> .</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,12 +134,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado. Somente leitura <b>inteiro</b> (<b>int</b> em c#).</summary>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado. Integer somente <b>leitura</b> <b>(int</b> em C#).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Porque o objeto foi criado no Excel, essa propriedade retorna o valor hexadecimal, 5843454C, que representa a cadeia de caracteres "XCEL".</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Como o objeto foi criado no Excel, essa propriedade retorna o valor hexadecimal, 5843454C, que representa a cadeia de caracteres "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataModelConnection">
@@ -173,7 +163,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto de conexão de pasta de trabalho do modelo da coleção de conexões de pasta de trabalho que se conecta ao modelo.</summary>
+        <summary>Retorna o objeto de conexão de uma coleção de conexões de workbook que se conecta ao modelo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -199,7 +189,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Inicializa o modelo de dados da pasta de trabalho. Isso é chamado por padrão na primeira vez que o modelo é usado.</summary>
+        <summary>Inicializa o Modelo de Dados da Workbook. Isso é chamado por padrão na primeira vez que o modelo é usado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,7 +216,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelRelationships</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna uma coleção de relações entre tabelas do modelo de dados. Somente leitura</summary>
+        <summary>Retorna uma coleção de relações entre tabelas de Modelo de Dados. Somente leitura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -254,7 +244,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTables</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna uma coleção de tabelas dentro do modelo de dados. Somente leitura</summary>
+        <summary>Retorna uma coleção de tabelas dentro do Modelo de Dados. Somente leitura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -282,7 +272,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um valor de <b>cadeia de caracteres</b> (string em c#) que representa o nome do <b>modelo de</b> objeto. Somente leitura</summary>
+        <summary>Retorna um <b>valor String</b> (string em C#) que representa o nome do <b>objeto Model</b> . Somente leitura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -310,7 +300,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <b>objeto</b> que representa o objeto pai do objeto de <b>modelo</b> especificado. Somente leitura.</summary>
+        <summary>Retorna um <b>objeto</b> que representa o objeto pai do objeto <b>Model</b> especificado. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -336,7 +326,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Atualiza todas as fontes de dados associadas com o modelo, totalmente reprocessa o modelo e atualiza todos os recursos de dados do Excel associados com o modelo.</summary>
+        <summary>Atualiza todas as fontes de dados associadas ao modelo, reprocessa totalmente o modelo e atualiza todos os recursos de dados do Excel associados ao Modelo.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

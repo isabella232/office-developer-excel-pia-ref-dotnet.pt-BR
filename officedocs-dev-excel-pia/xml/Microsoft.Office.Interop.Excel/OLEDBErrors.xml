@@ -1,13 +1,5 @@
 <Type Name="OLEDBErrors" FullName="Microsoft.Office.Interop.Excel.OLEDBErrors">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="bfaa825363e49bf8602641a717e43a00bc56ea37" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575534" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OLEDBErrors : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bfaa825363e49bf8602641a717e43a00bc56ea37" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011337" /></Metadata><TypeSignature Language="C#" Value="public interface OLEDBErrors : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OLEDBErrors implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.OLEDBErrors" />
   <TypeSignature Language="VB.NET" Value="Public Interface OLEDBErrors&#xA;Implements IEnumerable" />
@@ -34,11 +26,9 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Excel.OLEDBError" /> objetos.</summary>
-    <remarks>
-      <para>Cada objeto <b>OLEDBError</b> representa um erro retornado pela consulta OLE DB mais recente. Se a consulta ODBC especificada for executado sem erro, a coleção <b>ODBCErrors</b> está vazia. Os erros na coleção são indexados na ordem em que são gerados pelo provedor OLE DB. Você não pode adicionar membros à coleção.</para>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel._Application.OLEDBErrors" /> propriedade para retornar a coleção <b>ODBCErrors</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Cada objeto <b>OLEDBError</b> representa um erro retornado pela consulta OLE DB mais recente. Se a consulta ODBC especificada for executada sem erros, a coleção <b>ODBCErrors</b> permanecerá vazia. Os erros na coleção são indexados na ordem em que são gerados pelo provedor OLE DB. Não é possível adicionar membros à coleção.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Excel._Application.OLEDBErrors" /> propriedade para retornar a coleção <b>ODBCErrors</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -99,7 +89,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -157,11 +147,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -219,8 +207,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>necessário. O número de índice do objeto.</param>
+        <param name="Index">Obrigatório <b>Integer</b>. O número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

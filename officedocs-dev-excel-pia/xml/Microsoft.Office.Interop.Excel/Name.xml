@@ -1,13 +1,5 @@
 <Type Name="Name" FullName="Microsoft.Office.Interop.Excel.Name">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="03c7a9b67e0c5237abc6e68749010ea9f9840fdb" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575891" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Name" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="03c7a9b67e0c5237abc6e68749010ea9f9840fdb" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011435" /></Metadata><TypeSignature Language="C#" Value="public interface Name" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Name" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Name" />
   <TypeSignature Language="VB.NET" Value="Public Interface Name" />
@@ -30,16 +22,14 @@
   </Attributes>
   <Docs>
     <summary>Representa um nome definido para um intervalo de células.</summary>
-    <remarks>
-      <para>Os nomes podem ser nomes internos — como o banco de dados, Print_Area e Auto_Open — ou nomes personalizados.</para>
+    <remarks><para>Os nomes podem ser nomes internos (como Database, Print_Area e Auto_Open) ou nomes personalizados.</para>
       <para>Objetos Application, Workbook e Worksheet</para>
-      <para>O <b>nome</b> de objeto é um membro do <see cref="T:Microsoft.Office.Interop.Excel.Names" /> coleção para o <see cref="T:Microsoft.Office.Interop.Excel.Application" />, <see cref="T:Microsoft.Office.Interop.Excel.Workbook" />, e <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objetos. Usar <b>nomes</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do nome ou o nome definido, para retornar um único objeto <b>Name</b> .</para>
-      <para>O número de índice indica a posição do nome dentro da coleção. Os nomes são colocados em ordem alfabética, de um a z e não diferencia maiusculas de minúsculas (isto é a mesma ordem como é exibido nas caixas de diálogo Definir nome e aplicar nomes, retornadas ao clicar no comando nome no menu Inserir).</para>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.Name.Name" /> propriedade para retornar ou definir o texto do próprio nome.</para>
+      <para>O <b>objeto Name</b> é um membro da coleção para os objetos , e <see cref="T:Microsoft.Office.Interop.Excel.Names" /> <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> . Use <b>Names</b>( ), onde está o número de índice do nome ou o <paramref name="index" /> nome <paramref name="index" /> definido, para retornar um único <b>objeto</b> Name.</para>
+      <para>O número de índice indica a posição do nome dentro da coleção. Os nomes são colocados em ordem alfabética, de a a z, e não são sensíveis a letras minúsculas (essa é a mesma ordem exibida nas caixas de diálogo Definir Nome e Aplicar Nomes, retornada clicando no comando Nome no menu Inserir).</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Excel.Name.Name" /> propriedade para retornar ou definir o texto do próprio nome.</para>
       <para>Objetos Range</para>
-      <para>Embora uma <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto pode ter mais de um nome, não existe uma coleção <b>nomes</b> para o objeto <b>Range</b> . Usar <b>nome</b> com um objeto <b>Range</b> para retornar o primeiro nome da lista de nomes (classificados em ordem alfabética) atribuído ao intervalo.</para>
-      <para></para>
-    </remarks>
+      <para>Embora um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto possa ter mais de um nome, não há coleção <b>Names</b> para o <b>objeto Range</b> . Use <b>Name</b> com um objeto <b>Range</b> para retornar o primeiro nome da lista de nomes (classificados alfabeticamente) atribuídos ao intervalo.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -96,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -127,12 +117,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a categoria para o nome especificado no idioma da macro.</summary>
+        <summary>Retorna ou define a categoria para o nome especificado na linguagem da macro.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O nome deve se referir a um comando ou uma função personalizada.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>O nome precisa referir-se a um comando ou a uma função personalizada.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CategoryLocal">
@@ -161,7 +149,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a categoria para o nome especificado, no idioma do usuário, se o nome se refere a um comando ou uma função personalizada.</summary>
+        <summary>Retorna ou define a categoria para o nome especificado, no idioma do usuário, se o nome se referir a uma função ou comando personalizado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -193,13 +181,9 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define o comentário associado ao nome. <b>String</b> de leitura/gravação.</summary>
-        <value>
-          <b>String</b>
-        </value>
-        <remarks>
-          <para>O texto do comentário não pode exceder 255 caracteres. </para>
-          <para></para>
-        </remarks>
+        <value><b>String</b></value>
+        <remarks><para>O texto do comentário não pode exceder 255 caracteres. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -227,11 +211,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto especificado foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto especificado foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -376,10 +358,8 @@
       <Docs>
         <summary>Retorna ou define o nome do objeto no idioma do usuário.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o estilo for interno, esta propriedade retornará o nome do estilo no idioma local atual.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o estilo for interno, esta propriedade retornará o nome do estilo no idioma local atual.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -405,7 +385,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado.</summary>
+        <summary>Retorna o objeto pai do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -436,7 +416,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a fórmula que o nome está definido para referir-se, no idioma da macro e em notação de estilo A1, começando com um sinal de igualdade.</summary>
+        <summary>Retorna ou define a fórmula à qual o nome está definido para se referir, na linguagem da macro e em notação de estilo A1, começando com um sinal de igual.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -467,12 +447,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a fórmula que se refere o nome.</summary>
+        <summary>Retorna ou define a fórmula à qual o nome se refere.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A fórmula deve estar no idioma do usuário e está em notação de estilo A1, começando com um sinal de igualdade.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A fórmula está no idioma do usuário e em notação de estilo A1, começando com um sinal de igual.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefersToR1C1">
@@ -501,12 +479,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a fórmula que se refere o nome.</summary>
+        <summary>Retorna ou define a fórmula à qual o nome se refere.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A fórmula deve estar no idioma da macro e está em notação de estilo L1C1, começando com um sinal de igualdade.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A fórmula está no idioma da macro e em notação de estilo R1C1, começando com um sinal de igual.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefersToR1C1Local">
@@ -535,12 +511,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a fórmula que se refere o nome.</summary>
+        <summary>Retorna ou define a fórmula à qual o nome se refere.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa fórmula deve estar no idioma do usuário e está em notação de estilo L1C1, começando com um sinal de igualdade.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Essa fórmula está no idioma do usuário e em notação de estilo L1C1, começando com um sinal de igual.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefersToRange">
@@ -568,11 +542,9 @@
       <Docs>
         <summary>Retorna o <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto referido por um <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto <b>Name</b> não se referir a um intervalo (por exemplo, se fizer referência a uma constante ou fórmula), essa propriedade falhará.</para>
-          <para>Para alterar o intervalo de um nome se refere, use o <see cref="P:Microsoft.Office.Interop.Excel.Name.RefersTo" /> propriedade.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto <b>Name</b> não se referir a um intervalo (por exemplo, se fizer referência a uma constante ou fórmula), essa propriedade falhará.</para>
+          <para>Para alterar o intervalo ao que um nome se refere, use a <see cref="P:Microsoft.Office.Interop.Excel.Name.RefersTo" /> propriedade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShortcutKey">
@@ -601,7 +573,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a tecla de atalho para um nome definido como um comando personalizado de macro do Microsoft Excel 4.0.</summary>
+        <summary>Retorna ou define a tecla de atalho para um nome definido em um comando de macro personalizado do Microsoft Excel 4.0.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -630,9 +602,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna <b>True</b> se o objeto <b>Name</b> especificado for um parâmetro de pasta de trabalho válido. <b>Boolen</b> somente leitura.</summary>
-        <value>
-          <b>Boolen</b>
-        </value>
+        <value><b>Boolen</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -662,12 +632,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um valor string que contém a fórmula que o nome está definido para se referir a.</summary>
+        <summary>Retorna uma cadeia de caracteres que contém a fórmula à que o nome está definido para se referir.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A cadeia de caracteres está em notação de estilo A1 no idioma da macro, e começa com um sinal de igualdade.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A cadeia de caracteres está em notação de estilo A1 na linguagem da macro e começa com um sinal de igual.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -696,13 +664,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se o objeto está visível.</summary>
+        <summary>Determina se o objeto será visível.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>Visible</b> para um item de tabela dinâmica será <b>True</b> quando o item estiver visível no momento na tabela.</para>
+        <remarks><para>A propriedade <b>Visible</b> para um item de tabela dinâmica será <b>True</b> quando o item estiver visível no momento na tabela.</para>
           <para>Se você definir a propriedade <b>Visible</b> de um nome como <b>False</b>, o nome não aparecerá na caixa de diálogo <b>Definir Nome</b>.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkbookParameter">
@@ -731,10 +697,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o especificado <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objeto como um parâmetro de pasta de trabalho. Leitura/gravação</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Retorna ou define o objeto <see cref="T:Microsoft.Office.Interop.Excel.Name" /> especificado como um parâmetro de livro de trabalho. Leitura/gravação</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

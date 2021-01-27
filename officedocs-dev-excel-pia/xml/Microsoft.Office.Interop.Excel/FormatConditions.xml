@@ -1,13 +1,5 @@
 <Type Name="FormatConditions" FullName="Microsoft.Office.Interop.Excel.FormatConditions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ba5c29fb9f36cf63da85041a757db4dd4b830ce1" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587511" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FormatConditions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ba5c29fb9f36cf63da85041a757db4dd4b830ce1" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012170" /></Metadata><TypeSignature Language="C#" Value="public interface FormatConditions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FormatConditions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.FormatConditions" />
   <TypeSignature Language="VB.NET" Value="Public Interface FormatConditions&#xA;Implements IEnumerable" />
@@ -34,13 +26,11 @@
   </Attributes>
   <Docs>
     <summary>Representa a coleção de formatos condicionais para um único intervalo.</summary>
-    <remarks>
-      <para>Coleção <b>FormatConditions</b> pode conter até três formatos condicionais. Cada formato é representado por um <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> objeto.</para>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" /> propriedade para retornar um objeto <b>FormatConditions</b> . Use o <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> método para criar um novo formato condicional e use o <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> método para alterar um formato condicional existente.</para>
-      <para>Se você tentar criar mais de três formatos condicionais para um único intervalo, o método <b>Add</b> falhará. Se um intervalo tiver três formatos, você pode usar o método <b>Modify</b> para alterar um dos formatos ou você pode usar o <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> método para excluir um formato e, em seguida, use o método <b>Add</b> para criar um novo formato.</para>
+    <remarks><para>A <b>coleção FormatConditions</b> pode conter até três formatos condicionais. Cada formato é representado por um <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> objeto.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" /> propriedade para retornar um objeto <b>FormatConditions</b> . Use o método para criar um novo formato condicional e use o método para alterar um <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> formato condicional existente.</para>
+      <para>Se você tentar criar mais de três formatos condicionais para um único intervalo, o <b>método Add</b> falhará. Se um intervalo tiver três formatos, você poderá usar o método <b>Modify</b> para alterar um dos formatos ou pode usar o método para excluir um formato e, em seguida, usar o método Add para criar um novo <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> formato. <b></b></para>
       <para>Para obter mais informações sobre formatos condicionais, consulte o <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> objeto.</para>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -108,19 +98,17 @@
       </Parameters>
       <Docs>
         <param name="Type">. (<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />. Especifica se o formato condicional se baseia em um valor de célula ou em uma expressão.</param>
-        <param name="Operator">O operador do formato condicional. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> constantes: <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreater" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreaterEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLess" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLessEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" />, ou <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotEqual" />. Se <paramref name="Type" /> é <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlExpression" />, o <paramref name="Operator" /> argumento é ignorado.</param>
-        <param name="Formula1">O valor ou uma expressão associada ao formato condicional. Pode ser um valor de constante, um valor de <b>cadeia de caracteres</b> , uma referência de célula ou uma fórmula.</param>
-        <param name="Formula2">O valor ou uma expressão associada à segunda parte da condicional que formatar quando <paramref name="Operator" /> é <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" /> ou <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" /> (caso contrário, esse argumento será ignorado). Pode ser um valor de constante, um valor de cadeia de caracteres, uma referência de célula ou uma fórmula.</param>
+        <param name="Operator">O operador do formato condicional. Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> constantes: <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" /> , , , , , , ou <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlEqual" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreater" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreaterEqual" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLess" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLessEqual" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotEqual" /> . Se <paramref name="Type" /> for , o argumento será <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlExpression" /> <paramref name="Operator" /> ignorado.</param>
+        <param name="Formula1">A expressão ou o valor associado ao formato condicional. Pode ser um valor constante, um valor <b>String,</b> uma referência de célula ou uma fórmula.</param>
+        <param name="Formula2">O valor ou expressão associada à segunda parte do formato condicional quando for ou <paramref name="Operator" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" /> (caso contrário, esse argumento será ignorado). Pode ser um valor de constante, um valor de sequência de caracteres, uma referência de célula ou uma fórmula.</param>
         <param name="String">To be added.</param>
         <param name="TextOperator">To be added.</param>
         <param name="DateOperator">To be added.</param>
         <param name="ScopeType">To be added.</param>
         <summary>Adiciona um novo formato condicional.</summary>
-        <returns>Uma <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> object que representa o novo formato condicional.</returns>
-        <remarks>
-          <para>Você não pode definir mais do que três formatos condicionais para um intervalo. Use o <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> método para modificar um formato condicional existente ou use o <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> método para excluir um formato existente antes de adicionar um novo.</para>
-          <para></para>
-        </remarks>
+        <returns>Um <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> objeto que representa o novo formato condicional.</returns>
+        <remarks><para>Você não pode definir mais do que três formatos condicionais para um intervalo. Use o método para modificar um formato condicional existente ou use o método para excluir um formato existente antes de <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> adicionar um novo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddAboveAverage">
@@ -144,13 +132,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retorna uma nova <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> objeto que representa uma regra de formatação condicional do intervalo especificado.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" />objeto</returns>
-        <remarks>
-          <para>O <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> objeto é usado para localizar valores acima ou abaixo uma média ou desvio padrão em um intervalo de células. Por exemplo, você pode encontrar os responsáveis pela execução médios acima em uma revisão de desempenho anual ou você pode localizar materiais fabricados que estejam abaixo duas desvios padrão em uma classificação de qualidade.</para>
-          <para></para>
-        </remarks>
+        <summary>Retorna um novo <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> objeto representando uma regra de formatação condicional para o intervalo especificado.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> object</returns>
+        <remarks><para>O objeto é usado para encontrar valores acima ou abaixo de uma média ou <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> desvio padrão em um intervalo de células. Por exemplo, você pode localizar aqueles que estão acima da média em uma revisão de desempenho anual ou pode localizar os materiais manufaturados que estejam abaixo de dois desvios padrão em uma avaliação de qualidade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddColorScale">
@@ -177,13 +162,10 @@
       </Parameters>
       <Docs>
         <param name="ColorScaleType">O tipo de escala de cores.</param>
-        <summary>Retorna uma nova <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> objeto que representa uma regra de formatação condicional que usa gradações em cores de célula para indicar diferenças relativas nos valores de células incluídos em um intervalo selecionado.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" />objeto</returns>
-        <remarks>
-          <para>As escalas de cores são guias visuais que ajudam você a compreender a distribuição e a variação de dados. Uma escala de cores ajuda você a identificar diferenças relativas nos valores das células em um determinado intervalo usando variação de cores. Cores e graduações diferentes entre cores representam diferenças em valores de célula. Por exemplo, em uma escala de três cores, você pode especificar que as células com os valores de dados relativos mais altos são verdes, as células com valores intermediários são amarelas, e as células com os valores mais baixos são vermelhas.</para>
-          <para></para>
-        </remarks>
+        <summary>Retorna um novo objeto representando uma regra de formatação condicional que usa gradações em cores de célula para indicar diferenças relativas nos valores das células incluídas em <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> um intervalo selecionado.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> object</returns>
+        <remarks><para>As escalas de cores são guias visuais que ajudam você a compreender a distribuição e a variação de dados. Uma escala de cores ajuda a identificar diferenças relativas nos valores das células em um determinado intervalo usando a variação de cor. Cores e gradações diferentes entre cores representam diferenças nos valores das células. Por exemplo, em uma escala de três cores, você pode especificar que as células com os valores de dados relativos mais altos sejam verdes, as células com valores intermediários são amarelas e as células com os valores mais baixos são vermelhos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddDatabar">
@@ -207,13 +189,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> objeto que representa um regra de formatação condicional do intervalo especificado de barra de dados.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Excel.Databar" />objeto</returns>
-        <remarks>
-          <para>As barras de dados ajudam você a ver o valor de uma célula em relação a outras células. O tamanho da barra de dados representa o valor da célula. Uma barra mais longa representa um valor mais alto e uma barra mais curta representa um valor mais baixo. As barras de dados são úteis para a detecção de números mais altos e mais baixos especialmente em grandes quantidades de dados, tais como brinquedos que vendem mais ou menos em um relatório de vendas de feriado.</para>
-          <para></para>
-        </remarks>
+        <summary>Retorna um objeto que representa uma regra de formatação condicional da barra <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> de dados para o intervalo especificado.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.Databar" /> object</returns>
+        <remarks><para>As barras de dados ajudam você a ver o valor de uma célula em relação a outras células. O tamanho da barra de dados representa o valor da célula. Uma barra mais longa representa um valor mais alto e uma barra mais curta representa um valor mais baixo. As barras de dados são úteis para a detecção de números mais altos e mais baixos especialmente em grandes quantidades de dados, tais como brinquedos que vendem mais ou menos em um relatório de vendas de feriado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddIconSetCondition">
@@ -237,13 +216,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retorna uma nova <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> objeto que representa um ícone conjunto regra de formatação condicional do intervalo especificado.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" />objeto</returns>
-        <remarks>
-          <para>Usar um conjunto de ícones para anotar e classificar dados em três a cinco categorias separadas por um valor limite. Cada ícone representa um intervalo de valores. Por exemplo, no conjunto de ícones 3 Setas, a seta vermelha representa os valores mais altos, a seta para os lados amarela representa valores intermediários, e a seta para baixo verde representa os valores mais baixos.</para>
-          <para></para>
-        </remarks>
+        <summary>Retorna um novo objeto que representa uma regra de formatação condicional do conjunto <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> de ícones para o intervalo especificado.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> object</returns>
+        <remarks><para>Usar um conjunto de ícones para anotar e classificar dados em três a cinco categorias separadas por um valor limite. Cada ícone representa um intervalo de valores. Por exemplo, no conjunto de ícones 3 Setas, a seta vermelha representa os valores mais altos, a seta para os lados amarela representa valores intermediários, e a seta para baixo verde representa os valores mais baixos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddTop10">
@@ -267,13 +243,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> objeto que representa uma regra de formatação condicional do intervalo especificado.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Excel.Top10" />objeto</returns>
-        <remarks>
-          <para>Usando o <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> objeto, você pode encontrar os maiores e menores valores em um intervalo de células com base em um valor de corte que você especificar. Por exemplo, você pode encontrar os cinco produtos mais vendidos em um relatório regional, os parte inferior 15% de produtos em uma pesquisa de cliente ou os 25 salários principais em uma análise do departamento pessoal.</para>
-          <para></para>
-        </remarks>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> objeto que representa uma regra de formatação condicional para o intervalo especificado.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.Top10" /> object</returns>
+        <remarks><para>Usando o objeto, você pode encontrar os valores mais altos e mais baixos em um intervalo de células com base em um valor de corte <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> especificado. Por exemplo, você pode localizar os cinco produtos mais vendidos em um relatório regional, os últimos 15% de produtos em uma pesquisa com o cliente, ou os 25 maiores salários em uma análise de pessoal do departamento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddUniqueValues">
@@ -297,13 +270,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retorna uma nova <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> objeto que representa uma regra de formatação condicional do intervalo especificado.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" />objeto</returns>
-        <remarks>
-          <para>Você pode usar o <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> objeto para visualizar rapidamente as células que contêm valores exclusivos ou duplicados.</para>
-          <para></para>
-        </remarks>
+        <summary>Retorna um novo <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> objeto representando uma regra de formatação condicional para o intervalo especificado.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> object</returns>
+        <remarks><para>Você pode usar o <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> objeto para visualizar rapidamente as células que contêm valores exclusivos ou duplicados.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -329,7 +299,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -387,11 +357,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -474,12 +442,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>necessário. O número de índice do objeto.</param>
+        <param name="Index">Objeto <b>Required</b>. O número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,5 @@
 <Type Name="Errors" FullName="Microsoft.Office.Interop.Excel.Errors">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="73bd6a9f765a75f5056ac06000a5ad65696c4627" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576395" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Errors" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="73bd6a9f765a75f5056ac06000a5ad65696c4627" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012254" /></Metadata><TypeSignature Language="C#" Value="public interface Errors" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Errors" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Errors" />
   <TypeSignature Language="VB.NET" Value="Public Interface Errors" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Representa os diversos erros de planilha para um intervalo.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Excel.Range.Errors" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Range" /> coleção, para retornar um objeto <b>Errors</b> .</para>
-      <para>Depois que um objeto <b>Errors</b> é retornado, você pode usar o <see cref="P:Microsoft.Office.Interop.Excel.Error.Value" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Error" /> objeto para verificar se há condições de verificação de erro específicas.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel.Range.Errors" /> propriedade da coleção para retornar um objeto <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <b>Errors</b> .</para>
+      <para>Depois que <b>um objeto Errors</b> é retornado, você pode usar a propriedade do objeto para <see cref="P:Microsoft.Office.Interop.Excel.Error.Value" /> verificar <see cref="T:Microsoft.Office.Interop.Excel.Error" /> condições específicas de verificação de erros.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -69,12 +59,9 @@
         <param name="Index">To be added.</param>
         <summary>Permite que o usuário acesse opções de verificação de erros.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Referência a <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> objeto para exibir uma lista de valores de índice associados às opções de verificação de erros.</para>
-          <para></para>
-        </remarks>
-        <example>
-          <para>Neste exemplo, um número escrito como texto é colocado na célula A1. Em seguida, o Microsoft Excel determina se o número está escrito como texto na célula A1 e notifica o usuário de maneira apropriada.</para>
+        <remarks><para>Fazer referência ao <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> objeto para exibir uma lista de valores de índice associados às opções de verificação de erros.</para>
+          <para> </para></remarks>
+        <example><para>Neste exemplo, um número escrito como texto é colocado na célula A1. Em seguida, o Microsoft Excel determina se o número está escrito como texto na célula A1 e notifica o usuário de maneira apropriada.</para>
           <code>&lt;span class="label"&gt;Sub CheckForErrors()
 
 
@@ -1101,8 +1088,7 @@
 
     If Range("A1").&lt;/span&gt;
 &lt;i&gt;Errors&lt;/i&gt;
-&lt;span class="label"&gt;.Item(xlNumberAsText).Value = True Then        MsgBox "The number is written as text."    Else        MsgBox "The number is not written as text."    End IfEnd Sub&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;.Item(xlNumberAsText).Value = True Then        MsgBox "The number is written as text."    Else        MsgBox "The number is not written as text."    End IfEnd Sub&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -1128,7 +1114,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1158,11 +1144,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -1191,8 +1175,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>necessário. O <paramref name="Index" /> também pode ser uma destas constantes:<b>xlEvaluateToError</b> a célula é avaliada como um valor de erro. <b>xlTextDate</b> A célula contém uma data de texto com anos de 2 dígitos. <b>xlNumberAsText</b> A célula contém um número armazenado como texto. <b>xlInconsistentFormula</b> A célula contém um fórmula inconsistente para uma região. <b>xlOmittedCells</b> A célula contém uma fórmula que omite uma célula para uma região. <b>xlUnlockedFormulaCells</b> A célula desbloqueada contém uma fórmula. <b>xlEmptyCellReferences</b> A célula contém uma fórmula que faz referência a células vazias.</param>
+        <param name="Index">Objeto <b>Required</b>. Também <paramref name="Index" /> pode ser uma destas constantes:<b>xlEvaluateToError</b> A célula é avaliada como um valor de erro.<b> xlTextDate</b> A célula contém uma data de texto com anos de 2 dígitos. <b>xlNumberAsText</b> A célula contém um número armazenado como texto. <b>xlInconsistentFormula</b> A célula contém uma fórmula inconsistente para uma região. <b>xlOmittedCells</b> A célula contém uma fórmula omitindo uma célula para uma região. <b>xlUnlockedFormulaCells</b> A célula desbloqueada contém uma fórmula. <b>xlEmptyCellReferences</b> A célula contém uma fórmula que faz referência a células vazias.</param>
         <summary>Retorna um único membro do <see cref="T:Microsoft.Office.Interop.Excel.Error" /> objeto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

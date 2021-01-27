@@ -1,13 +1,5 @@
 <Type Name="OLEDBError" FullName="Microsoft.Office.Interop.Excel.OLEDBError">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a18ac30019f24f95aff6f5894f53852a7d6cfb61" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581505" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OLEDBError" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a18ac30019f24f95aff6f5894f53852a7d6cfb61" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011351" /></Metadata><TypeSignature Language="C#" Value="public interface OLEDBError" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OLEDBError" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.OLEDBError" />
   <TypeSignature Language="VB.NET" Value="Public Interface OLEDBError" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Representa um erro OLE DB retornado pela consulta OLE DB mais recente.</summary>
-    <remarks>
-      <para>O objeto <b>OLEDBError</b> é um membro do <see cref="T:Microsoft.Office.Interop.Excel.OLEDBErrors" /> conjunto. Se a consulta OLE DB especificada for executado sem erro, a coleção <b>OLEDBErrors</b> está vazia. Os erros na coleção são indexados na ordem em que são gerados pelo provedor OLE DB.</para>
-      <para>Use <b>OLEDBErrors</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do erro OLE DB, para retornar um único objeto <b>OLEDBError</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para>O <b>objeto OLEDBError</b> é um membro da <see cref="T:Microsoft.Office.Interop.Excel.OLEDBErrors" /> coleção. Se a consulta OLE DB especificada for executada sem erros, a coleção <b>OLEDBErrors</b> estará vazia. Os erros na coleção são indexados na ordem em que são gerados pelo provedor OLE DB.</para>
+      <para>Use <b>OLEDBErrors</b>( ), onde é o número de índice do erro OLE DB, para retornar um único <paramref name="index" /> objeto <paramref name="index" /> <b>OLEDBError</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,11 +80,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
-          <para>A propriedade <b>Creator</b> é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+          <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorString">
@@ -148,7 +136,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um valor numérico específico do provedor que especifica um erro. O número do erro corresponde a uma condição de erro que resultou após a consulta OLE DB mais recente.</summary>
+        <summary>Retorna um valor numérico específico do provedor que determina um erro. O número do erro corresponde a uma condição de erro resultante da consulta mais recente ao banco de dados OLE.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,7 +164,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um valor numérico que especifica um erro. O número do erro corresponde a um número de interceptação exclusivo correspondente a uma condição de erro que resultou após a consulta OLE DB mais recente.</summary>
+        <summary>Retorna um valor numérico que especifica um erro. O número do erro está relacionado a um número de trap que corresponde a uma condição de erro resultante da consulta mais recente ao banco de dados OLE.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -204,7 +192,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai para o objeto especificado.</summary>
+        <summary>Retorna o objeto pai do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -234,10 +222,8 @@
       <Docs>
         <summary>Retorna o erro de estado SQL.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obter uma explicação sobre o erro específico, consulte a documentação do SQL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Para uma explicação do erro específico, consulte a documentação do SQL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Stage">
@@ -263,7 +249,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um valor numérico especificando o estágio de um erro que resultou após a consulta OLE DB mais recente.</summary>
+        <summary>Retorna um valor numérico que especifica o estágio de um erro resultante da consulta mais recente ao banco de dados OLE.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

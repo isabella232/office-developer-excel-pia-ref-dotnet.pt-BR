@@ -1,13 +1,5 @@
 <Type Name="Filter" FullName="Microsoft.Office.Interop.Excel.Filter">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0a55068feedec78d62f267ca39e674ead9d7d9f3" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576325" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Filter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0a55068feedec78d62f267ca39e674ead9d7d9f3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012240" /></Metadata><TypeSignature Language="C#" Value="public interface Filter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Filter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Filter" />
   <TypeSignature Language="VB.NET" Value="Public Interface Filter" />
@@ -29,12 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa um filtro para uma única coluna. O objeto <b>Filter</b> é um membro do <see cref="T:Microsoft.Office.Interop.Excel.Filters" /> conjunto. A coleção <b>Filters</b> contém todos os filtros em um intervalo filtrado automaticamente.</summary>
-    <remarks>
-      <para>Use <b>filtros</b>(<paramref name="index" />), onde <paramref name="index" /> é o título do filtro ou número de índice, para retornar um único objeto <b>Filter</b> .</para>
-      <para>Observe que todas as propriedades do objeto <b>Filter</b> são somente leitura. Para definir essas propriedades, aplicar filtragem automática manualmente ou usando o <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> método do <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto.</para>
-      <para></para>
-    </remarks>
+    <summary>Representa um filtro para uma única coluna. O <b>objeto Filter</b> é um membro da <see cref="T:Microsoft.Office.Interop.Excel.Filters" /> coleção. A coleção <b>Filters</b> contém todos os filtros em um intervalo filtrado automaticamente.</summary>
+    <remarks><para>Use <b>Filtros</b>( ), onde está o título do filtro ou o número de <paramref name="index" /> <paramref name="index" /> índice, para retornar um único <b>objeto Filter.</b></para>
+      <para>Observe que todas as propriedades do objeto <b>Filter</b> são somente leitura. Para definir essas propriedades, aplique a filtragem automática manualmente ou usando <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> o método do <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Operator">
@@ -91,7 +81,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,9 +110,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna o número de objetos na coleção. <b>Integer</b> somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,12 +137,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</summary>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>Creator </b>é projetada para ser usado no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel tem o código de criador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>A <b>propriedade Creator </b>foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo tem um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Criteria1">
@@ -208,12 +194,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o segundo valor filtrado da coluna especificada em um intervalo filtrado.</summary>
+        <summary>Retorna o segundo valor filtrado para a coluna especificada em um intervalo filtrado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se você tentar acessar a propriedade <b>Criteria2</b> para um filtro que não usa dois critérios, ocorrerá um erro. Verifique se o <see cref="P:Microsoft.Office.Interop.Excel.Filter.Operator" /> propriedade de um <see cref="T:Microsoft.Office.Interop.Excel.Filter" /> objeto não é igual a zero (0) antes de tentar acessar a propriedade <b>Criteria2</b> .</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se você tentar acessar a propriedade <b>Criteria2</b> para um filtro que não use dois critérios, ocorrerá um erro. Verifique se a <see cref="P:Microsoft.Office.Interop.Excel.Filter.Operator" /> propriedade de um objeto não é igual a zero (0) antes de <see cref="T:Microsoft.Office.Interop.Excel.Filter" /> tentar acessar a propriedade <b>Criteria2.</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="On">
@@ -239,8 +223,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o filtro especificado está ativado.</summary>
+        <summary><b>True</b> se o filtro especificado estiver ativado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
