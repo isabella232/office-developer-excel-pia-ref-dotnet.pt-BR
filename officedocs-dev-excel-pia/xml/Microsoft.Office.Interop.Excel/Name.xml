@@ -1,5 +1,5 @@
 <Type Name="Name" FullName="Microsoft.Office.Interop.Excel.Name">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="03c7a9b67e0c5237abc6e68749010ea9f9840fdb" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011435" /></Metadata><TypeSignature Language="C#" Value="public interface Name" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="783b096b30fb7910984ea78858a7922c88c208c4d0fa4ce46ad6bc61eba0c338" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54515280" /></Metadata><TypeSignature Language="C#" Value="public interface Name" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Name" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Name" />
   <TypeSignature Language="VB.NET" Value="Public Interface Name" />
@@ -24,11 +24,11 @@
     <summary>Representa um nome definido para um intervalo de células.</summary>
     <remarks><para>Os nomes podem ser nomes internos (como Database, Print_Area e Auto_Open) ou nomes personalizados.</para>
       <para>Objetos Application, Workbook e Worksheet</para>
-      <para>O <b>objeto Name</b> é um membro da coleção para os objetos , e <see cref="T:Microsoft.Office.Interop.Excel.Names" /> <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> . Use <b>Names</b>( ), onde está o número de índice do nome ou o <paramref name="index" /> nome <paramref name="index" /> definido, para retornar um único <b>objeto</b> Name.</para>
-      <para>O número de índice indica a posição do nome dentro da coleção. Os nomes são colocados em ordem alfabética, de a a z, e não são sensíveis a letras minúsculas (essa é a mesma ordem exibida nas caixas de diálogo Definir Nome e Aplicar Nomes, retornada clicando no comando Nome no menu Inserir).</para>
+      <para>O <b>objeto Name</b> é um membro da coleção para os objetos , e <see cref="T:Microsoft.Office.Interop.Excel.Names" /> <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> . Use <b>Nomes</b>( ), onde está o número de índice de nome ou <paramref name="index" /> o nome <paramref name="index" /> definido, para retornar um único objeto <b>Name.</b></para>
+      <para>O número de índice indica a posição do nome dentro da coleção. Os nomes são colocados em ordem alfabética, de a a z, e não são sensíveis a casos (essa é a mesma ordem exibida nas caixas de diálogo Definir Nome e Aplicar Nomes, retornadas clicando no comando Nome no menu Inserir).</para>
       <para>Use a <see cref="P:Microsoft.Office.Interop.Excel.Name.Name" /> propriedade para retornar ou definir o texto do próprio nome.</para>
       <para>Objetos Range</para>
-      <para>Embora um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto possa ter mais de um nome, não há coleção <b>Names</b> para o <b>objeto Range</b> . Use <b>Name</b> com um objeto <b>Range</b> para retornar o primeiro nome da lista de nomes (classificados alfabeticamente) atribuídos ao intervalo.</para>
+      <para>Embora um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto possa ter mais de um nome, não há nenhuma coleção <b>Names</b> para o <b>objeto Range.</b> Use <b>Name</b> com um objeto <b>Range</b> para retornar o primeiro nome da lista de nomes (classificados alfabeticamente) atribuídos ao intervalo.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -86,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -211,7 +211,7 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>To be added.</value>
-        <remarks><para>Se o objeto especificado foi criado no Microsoft Excel, essa propriedade retorna a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
+        <remarks><para>Se o objeto especificado foi criado Microsoft Excel, essa propriedade retornará a cadeia de caracteres XCEL, que é equivalente ao número hexadecimal 5843454C.</para>
           <para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
           <para> </para></remarks>
       </Docs>
@@ -632,9 +632,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna uma cadeia de caracteres que contém a fórmula à que o nome está definido para se referir.</summary>
+        <summary>Retorna uma cadeia de caracteres que contém a fórmula à que o nome é definido para se referir.</summary>
         <value>To be added.</value>
-        <remarks><para>A cadeia de caracteres está em notação de estilo A1 na linguagem da macro e começa com um sinal de igual.</para>
+        <remarks><para>A cadeia de caracteres está na notação estilo A1 no idioma da macro e começa com um sinal de igual.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -697,7 +697,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o objeto <see cref="T:Microsoft.Office.Interop.Excel.Name" /> especificado como um parâmetro de livro de trabalho. Leitura/gravação</summary>
+        <summary>Retorna ou define o objeto <see cref="T:Microsoft.Office.Interop.Excel.Name" /> especificado como um parâmetro de workbook. Leitura/gravação</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>

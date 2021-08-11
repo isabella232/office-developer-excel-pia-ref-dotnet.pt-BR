@@ -1,5 +1,5 @@
 <Type Name="LegendEntry" FullName="Microsoft.Office.Interop.Excel.LegendEntry">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="983427dff3c6cf28781fdc671025f8966ca21207" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50000089" /></Metadata><TypeSignature Language="C#" Value="public interface LegendEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5bcee26bebe102f713b6f53f663e94e0998d21faf42b0b37b12ad60a1b21627e" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54515105" /></Metadata><TypeSignature Language="C#" Value="public interface LegendEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LegendEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.LegendEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface LegendEntry" />
@@ -23,12 +23,12 @@
   <Docs>
     <summary>Representa uma entrada de legenda em uma legenda de gráfico.</summary>
     <remarks><para>O <b>objeto LegendEntry</b> é um membro da <see cref="T:Microsoft.Office.Interop.Excel.LegendEntries" /> coleção. A coleção <b>LegendEntries</b> contém todos os objetos <b>LegendEntry</b> na legenda.</para>
-      <para>Cada entrada de legenda tem duas partes: o texto da entrada, que é o nome da série associada à entrada de legenda, e um marcador de entrada, que vincula visualmente a entrada de legenda à sua série ou linha de tendência associada no gráfico. As propriedades de formatação do marcador de entrada e sua série ou linha de tendência associada estão contidas no <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> objeto.</para>
+      <para>Cada entrada de legenda tem duas partes: o texto da entrada, que é o nome da série associada à entrada da legenda, e um marcador de entrada, que vincula visualmente a entrada da legenda com sua série ou linha de tendência associada no gráfico. As propriedades de formatação para o marcador de entrada e sua série ou linha de tendência associadas estão contidas no <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> objeto.</para>
       <para>O texto de uma entrada de legenda não pode ser alterado. Os objetos <b>LegendEntry</b> suportam a formatação de fonte e podem ser excluídos. Nenhuma formatação de padrão é suportado para entradas de legenda. A posição e o tamanho das entradas é fixo.</para>
-      <para>Use <b>LegendEntries</b>( ), onde é o número de índice de entrada de <paramref name="index" /> <paramref name="index" /> legenda, para retornar um único <b>objeto LegendEntry</b> . Você não pode retornar entradas de legenda por nome.</para>
+      <para>Use <b>LegendEntries</b>( ), onde é o número de índice de entrada <paramref name="index" /> da <paramref name="index" /> legenda, para retornar um único objeto <b>LegendEntry.</b> Você não pode retornar entradas de legenda por nome.</para>
       <para>O número de índice representa a posição da entrada de legenda na legenda. LegendEntries(1) está na parte superior da legenda e LegendEntries(LegendEntries.Count) está na inferior.</para>
       <para>Não há uma maneira direta de retornar a série ou linha de tendência correspondente à entrada de legenda.</para>
-      <para>Depois que as entradas de legenda são excluídas, a única maneira de restaurá-las é remover e recriar a legenda que as continha definindo a propriedade para o gráfico como False e, em seguida, de volta <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" /> para <b>True</b>. <b></b></para>
+      <para>Depois que as entradas de legenda foram excluídas, a única maneira de restaurá-las é remover e recriar a legenda que as continha definindo a propriedade para o gráfico como False e, em seguida, voltar <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" /> a <b>True</b>. <b></b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -55,7 +55,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -316,7 +316,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.LegendKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> objeto que representa o tecla de legenda associada à entrada.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> objeto que representa a chave de legenda associada à entrada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

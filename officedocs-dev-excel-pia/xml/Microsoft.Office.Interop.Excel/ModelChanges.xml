@@ -1,5 +1,5 @@
 <Type Name="ModelChanges" FullName="Microsoft.Office.Interop.Excel.ModelChanges">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9f59d830c9bcb2ca9333087af48cbeb26d3d390d" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011757" /></Metadata><TypeSignature Language="C#" Value="public interface ModelChanges" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="eee83a62542a83e8646f09d1092e0b4d17f70147a5595e69fb18280950ee1dfd" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54514993" /></Metadata><TypeSignature Language="C#" Value="public interface ModelChanges" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ModelChanges" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ModelChanges" />
   <TypeSignature Language="VB.NET" Value="Public Interface ModelChanges" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>Representa as alterações feitas no modelo de dados.</summary>
-    <remarks><para>O <b>objeto ModelChanges</b> contém informações sobre quais alterações foram feitas no modelo de dados quando o <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.ModelChange" /> evento ocorre após uma operação de modelo. Quando o Excel faz alterações no modelo de dados, várias alterações podem ser feitas na mesma operação e o objeto <b>ModelChanges</b> incluirá informações sobre todas as alterações feitas em uma operação de modelo.</para>
+    <remarks><para>O <b>objeto ModelChanges</b> contém informações sobre quais alterações foram feitas no modelo de dados quando o evento ocorre <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.ModelChange" /> após uma operação de modelo. Quando Excel faz alterações no modelo de dados, várias alterações podem ser feitas na mesma operação e o <b>objeto ModelChanges</b> incluirá informações sobre todas as alterações feitas em uma operação de modelo.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Excel. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Excel aplicativo. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -105,7 +105,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelColumnChanges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna uma coleção de objetos que representam nomes de tabela e nomes de coluna de todas as colunas de tabela para as quais o tipo de dados foi alterado (pode adicionar mais tipos de alterações aqui no futuro) como parte de uma operação de <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnChanges" /> <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnChange" /> modelo. Somente leitura.</summary>
+        <summary>Retorna uma coleção de objetos que representam nomes de tabela e nomes de colunas de todas as colunas de tabela para as quais o tipo de dados foi alterado (pode adicionar mais tipos de alterações aqui no futuro) como parte de uma operação <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnChanges" /> <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnChange" /> de modelo. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -161,9 +161,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado. Integer somente <b>leitura</b> <b>(int</b> em C#).</summary>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado. Integer somente <b>leitura</b> (<b>int</b> em C#).</summary>
         <value>To be added.</value>
-        <remarks><para>Como o objeto foi criado no Excel, essa propriedade retorna o valor hexadecimal, 5843454C, que representa a cadeia de caracteres "XCEL".</para>
+        <remarks><para>Como o objeto foi criado Excel, essa propriedade retorna o valor hexadecimal, 5843454C, que representa a cadeia de caracteres "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -218,7 +218,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <b>objeto</b> que representa o objeto pai do objeto <b>ModelChanges</b> especificado. Somente leitura.</summary>
+        <summary>Retorna um <b>Object</b> que representa o objeto pai do objeto <b>ModelChanges</b> especificado. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -246,7 +246,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando <b>True</b>, uma ou mais relações no modelo foram alteradas (adicionadas, excluídas ou modificadas) como parte de uma operação de modelo. Quando <b>False</b>, nenhuma relação foi alterada durante a operação. <b>Booliana</b> (<b>bool</b> em C#) Somente leitura.</summary>
+        <summary>Quando <b>True</b>, uma ou mais relações no modelo foram alteradas (adicionadas, excluídas ou modificadas) como parte de uma operação de modelo. Quando <b>False</b>, nenhuma relação foi alterada durante a operação. <b>Boolean</b> (<b>bool</b> no C#) Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -276,7 +276,7 @@
       <Docs>
         <summary>A origem do modelo de dados.</summary>
         <value>XlModelChangeSource</value>
-        <remarks><para>A origem pode ser o Excel ou um PowerPivot Add-in.</para>
+        <remarks><para>A origem pode ser Excel ou um PowerPivot Add-in.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -303,7 +303,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTableNameChanges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna uma coleção de objetos que representam nomes antigos e novos de todas as tabelas que foram renomeadas no modelo como <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNameChanges" /> parte de uma operação de <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNameChange" /> modelo. Somente leitura.</summary>
+        <summary>Retorna uma coleção de objetos que representam nomes antigos e novos de todas as tabelas que foram renomeadas no <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNameChanges" /> modelo como parte de uma operação de <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNameChange" /> modelo. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -331,7 +331,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTableNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna uma coleção de nomes de tabela como cadeias de caracteres que representam todas as tabelas que foram adicionadas <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" /> ao modelo como parte de uma operação de modelo. Somente leitura.</summary>
+        <summary>Retorna uma coleção de nomes de tabela como cadeias de caracteres que representam todas as tabelas que foram adicionadas ao <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" /> modelo como parte de uma operação de modelo. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -359,7 +359,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTableNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna uma coleção de nomes de tabela como cadeias de caracteres que representam todas as tabelas que <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" /> foram excluídas do modelo como parte de uma operação de modelo. Somente leitura.</summary>
+        <summary>Retorna uma coleção de nomes de tabela como cadeias de caracteres que representam todas as <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" /> tabelas que foram excluídas do modelo como parte de uma operação de modelo. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -415,7 +415,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> quando uma alteração não especificada foi feita no modelo como parte de uma transação de modelo. <b>Boolean</b> (<b>bool</b> em C#) Somente leitura</summary>
+        <summary><b>True</b> quando uma alteração não especificada foi feita no modelo como parte de uma transação de modelo. <b>Boolean</b> (<b>bool</b> no C#) Somente leitura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

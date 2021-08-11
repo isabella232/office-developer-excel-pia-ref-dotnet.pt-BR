@@ -1,5 +1,5 @@
 <Type Name="AddIn" FullName="Microsoft.Office.Interop.Excel.AddIn">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ad740aac6b501b523017ffe9ffd52b91e10dd267" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999760" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7e8650ba6cb179a124139c37ac5fcf0524fd83bf176e8e6aa27ea8ab5c37af68" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506271" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AddIn" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIn" />
@@ -22,13 +22,13 @@
   </Attributes>
   <Docs>
     <summary>Representa um único suplemento, instalado ou não.</summary>
-    <remarks><para>O <b>objeto AddIn</b> é um membro da <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> coleção. A coleção <b>AddIns</b> contém uma lista de todos os suplementos disponíveis no Microsoft Excel, estejam eles instalados ou não. Essa lista corresponde à lista de complementos exibidos na caixa Add-Ins de diálogo (menu Ferramentas).</para>
-      <para>Use <b>AddIns</b>( ), onde está o título do complemento ou número de <paramref name="index" /> <paramref name="index" /> índice, para retornar um único <b>objeto AddIn</b> .</para>
+    <remarks><para>O <b>objeto AddIn</b> é um membro da <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> coleção. A coleção <b>AddIns</b> contém uma lista de todos os suplementos disponíveis no Microsoft Excel, estejam eles instalados ou não. Essa lista corresponde à lista de complementos exibidos na caixa de diálogo Add-Ins (menu Ferramentas).</para>
+      <para>Use <b>AddIns</b>( ), onde está o título do complemento ou o número de índice, para <paramref name="index" /> retornar um único objeto <paramref name="index" /> <b>AddIn.</b></para>
       <para>Não confunda o título do suplemento, que aparece na caixa de diálogo Suplementos, com o nome do suplemento, que é o nome de arquivo do suplemento. Você precisa escrever o título do suplemento exatamente como está na caixa de diálogo Suplementos, mas não é necessário que haja correspondência de maiúsculas e minúsculas.</para>
       <para>O número de índice representa a posição do suplemento na caixa Suplementos disponíveis da caixa de diálogo Suplementos.</para>
-      <para>O método adiciona um complemento à lista de complementos disponíveis, mas não <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> instala o complemento. De <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> definida a propriedade do complemento como <b>True</b> para instalar o complemento. Para instalar um suplemento que não apareça na lista de suplementos disponíveis, primeiro use o método <b>Add</b> e depois defina a propriedade <b>Installed</b>. Isso pode ser feito em uma única etapa</para>
-      <para>Use <b>Workbooks</b>( ) onde está o nome de arquivo do <paramref name="index" /> <paramref name="index" /> add-in (não título) para retornar uma referência à pasta de trabalho correspondente a um complemento carregado. Você deve usar o nome do arquivo porque os complementos carregados normalmente não aparecem na <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> coleção.</para>
-      <para>Se a <b>propriedade Installed</b> retornar <b>True</b>, mas as chamadas para funções no add-in ainda falharem, o complemento pode não ser carregado. Isso porque o <b>objeto Addin</b> representa a existência e o estado instalado do complemento, mas não representa o conteúdo real da agenda do complemento. Para garantir que um complemento instalado seja carregado, você deve abrir a agenda do complemento.</para>
+      <para>O método adiciona um complemento à lista de complementos disponíveis, mas não <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> instala o complemento. De definir <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> a propriedade do add-in como <b>True</b> para instalar o add-in. Para instalar um suplemento que não apareça na lista de suplementos disponíveis, primeiro use o método <b>Add</b> e depois defina a propriedade <b>Installed</b>. Isso pode ser feito em uma única etapa</para>
+      <para>Use <b>Workbooks</b>( ) onde está o nome de arquivo do <paramref name="index" /> complemento (não título) para retornar uma referência à pasta de trabalho correspondente a um <paramref name="index" /> complemento carregado. Você deve usar o nome do arquivo porque os complementos carregados normalmente não aparecem na <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> coleção.</para>
+      <para>Se a <b>propriedade Installed</b> retornar <b>True</b>, mas as chamadas para funções no complemento ainda falharem, o complemento pode não ser carregado. Isso porque o <b>objeto Addin</b> representa a existência e o estado instalado do add-in, mas não representa o conteúdo real da agenda de trabalho do complemento. Para garantir que um complemento instalado seja carregado, você deve abrir a workbook do complemento.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -55,7 +55,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -205,7 +205,7 @@
       <Docs>
         <summary>Retorna o nome do objeto, incluindo seu caminho no disco, na forma de uma cadeia de caracteres.</summary>
         <value>To be added.</value>
-        <remarks><para>Essa propriedade é equivalente à propriedade, seguida pelo separador atual do sistema de <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> arquivos, seguido pela <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> propriedade.</para>
+        <remarks><para>Essa propriedade é equivalente à <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> propriedade, seguida pelo separador do sistema de arquivos atual, seguido pela <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> propriedade.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -265,9 +265,9 @@
       </ReturnValue>
       <Docs>
         <summary>Obtém se o complemento está aberto no momento.</summary>
-        <value><b>true</b> se o add-in estiver aberto no momento; caso contrário, <b>false</b>.</value>
+        <value><b>true</b> se o complemento estiver aberto no momento; caso contrário, <b>false</b>.</value>
         <remarks><para>
-            <b>booliana</b> Somente leitura.</para>
+            <b>booleano</b> Somente leitura.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

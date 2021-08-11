@@ -1,5 +1,5 @@
 <Type Name="PageSetup" FullName="Microsoft.Office.Interop.Excel.PageSetup">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="50c5531a9636ff8479dc8d559960466d2a73af0f" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011120" /></Metadata><TypeSignature Language="C#" Value="public interface PageSetup" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6547f45c61e4415beeb18b9e68f2bb5decc40eb68b9e4c5dacc599e36eb2a762" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54515231" /></Metadata><TypeSignature Language="C#" Value="public interface PageSetup" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PageSetup" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PageSetup" />
   <TypeSignature Language="VB.NET" Value="Public Interface PageSetup" />
@@ -21,8 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa a descrição das configurações de página. O <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> objeto contém todos os atributos de configuração de página (margem esquerda, margem inferior, tamanho do papel e assim por diante) como propriedades.</summary>
-    <remarks><para>Use a <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> propriedade de um ou objeto para retornar um <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> objeto.</para>
+    <summary>Representa a descrição das configurações de página. O objeto contém todos os atributos de instalação de página <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> (margem esquerda, margem inferior, tamanho de papel e assim por diante) como propriedades.</summary>
+    <remarks><para>Use a <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> propriedade de um objeto ou para retornar um <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> objeto.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -52,7 +52,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna <b>True</b> para o Excel para alinhar o cabeçalho e o rodapé com as margens definidas nas opções de configuração de página. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary>Retorna <b>True</b> para o Excel para alinhar o cabeçalho e o rodapé com as margens definidas nas opções de configuração de página. <b>Boolean</b> de leitura/gravação.</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -144,7 +144,7 @@
       <Docs>
         <summary>Retorna ou define o tamanho da margem inferior em pontos.</summary>
         <value>To be added.</value>
-        <remarks><para>As margens são definidas ou retornadas em pontos. Use o método <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> ou o método para fazer a <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> conversão.</para>
+        <remarks><para>As margens são definidas ou retornadas em pontos. Use o <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> método ou o método para fazer a <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> conversão.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -362,7 +362,7 @@
       <Docs>
         <summary>Retorna ou define a maneira como um gráfico é dimensionado para caber em uma página.</summary>
         <value>To be added.</value>
-        <remarks><para>Essa propriedade só se aplica a planilhas de gráfico (ela não pode ser usada com gráficos incorporados).</para>
+        <remarks><para>Essa propriedade só se aplica a planilhas de gráficos (ela não pode ser usada com gráficos incorporados).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -422,7 +422,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> se um cabeçalho ou rodapé diferente é usado na primeira página. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> se um cabeçalho ou rodapé diferente for usado na primeira página. <b>Boolean</b> de leitura/gravação.</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -574,7 +574,7 @@
       <Docs>
         <summary>Retorna ou define a altura, em número de páginas, pela qual a planilha será dimensionada quando impressa. Só se aplica a planilhas.</summary>
         <value>To be added.</value>
-        <remarks><para>Se essa propriedade for <b>False</b>, o Microsoft Excel dimensiona a planilha de acordo com a <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesWide" /> propriedade.</para>
+        <remarks><para>Se essa propriedade for <b>False,</b>Microsoft Excel dimensiona a planilha de acordo com a <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesWide" /> propriedade.</para>
           <para>Se a <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.Zoom" /> propriedade for <b>True</b>, a <b>propriedade FitToPagesTall</b> será ignorada.</para>
           <para> </para></remarks>
       </Docs>
@@ -607,7 +607,7 @@
       <Docs>
         <summary>Retorna ou define o número de páginas de largura pelo qual a escala da planilha será dimensionada quando for impressa. Só se aplica a planilhas.</summary>
         <value>To be added.</value>
-        <remarks><para>Se essa propriedade for <b>False</b>, o Microsoft Excel dimensiona a planilha de acordo com a <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesTall" /> propriedade.</para>
+        <remarks><para>Se essa propriedade for <b>False,</b>Microsoft Excel dimensiona a planilha de acordo com a <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesTall" /> propriedade.</para>
           <para>Se a <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.Zoom" /> propriedade for <b>True</b>, a <b>propriedade FitToPagesWide</b> será ignorada.</para>
           <para> </para></remarks>
       </Docs>
@@ -882,7 +882,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a ordem que o Microsoft Excel usa para numerar páginas ao imprimir uma planilha grande.</summary>
+        <summary>Retorna ou define a ordem que Microsoft Excel usa para numerar páginas ao imprimir uma planilha grande.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -942,7 +942,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Pages</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a contagem ou o número de itens das páginas na <see cref="T:Microsoft.Office.Interop.Excel.Pages" /> coleção.</summary>
+        <summary>Retorna ou define a contagem ou o número de item das páginas na <see cref="T:Microsoft.Office.Interop.Excel.Pages" /> coleção.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Pages" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1160,7 +1160,7 @@
       <Docs>
         <summary><b>True</b> se os títulos de coluna e linha forem impressos com essa página. Só se aplica a planilhas.</summary>
         <value>To be added.</value>
-        <remarks><para>A <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayHeadings" /> propriedade controla a exibição de títulos na tela.</para>
+        <remarks><para>A <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayHeadings" /> propriedade controla a exibição na tela de títulos.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1225,7 +1225,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Objeto <b>opcional</b>. Qualidade de impressão horizontal (1) ou qualidade de impressão vertical (2). Algumas impressoras não suportam a qualidade de impressão vertical. Se você não especificar esse argumento, a propriedade <b>PrintQuality</b> retornará (ou poderá ser definida como) uma matriz de dois elementos com qualidade de impressão tanto horizontal quanto vertical.</param>
+        <param name="Index">Objeto <b>Opcional</b>. Qualidade de impressão horizontal (1) ou qualidade de impressão vertical (2). Algumas impressoras não suportam a qualidade de impressão vertical. Se você não especificar esse argumento, a propriedade <b>PrintQuality</b> retornará (ou poderá ser definida como) uma matriz de dois elementos com qualidade de impressão tanto horizontal quanto vertical.</param>
         <summary>Retorna ou define a qualidade de impressão.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1257,7 +1257,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define as colunas que contêm as células a serem repetidas no lado esquerdo de cada página como uma cadeia de caracteres em notação de estilo A1 na linguagem da macro.</summary>
+        <summary>Retorna ou define as colunas que contêm as células a serem repetidas no lado esquerdo de cada página como uma cadeia de caracteres em notação de estilo A1 no idioma da macro.</summary>
         <value>To be added.</value>
         <remarks><para>Quando você especifica apenas parte de uma coluna ou colunas, o Microsoft Excel expande o intervalo para incluir colunas inteiras.</para>
           <para>Defina essa propriedade como <b>False</b> ou como uma sequência de caracteres vazia ("") para desativar colunas de título.</para>
@@ -1291,7 +1291,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define as linhas que contêm as células a serem repetidas na parte superior de cada página como uma cadeia de caracteres em notação de estilo A1 na linguagem da macro.</summary>
+        <summary>Retorna ou define as linhas que contêm as células a serem repetidas na parte superior de cada página como uma cadeia de caracteres em notação de estilo A1 no idioma da macro.</summary>
         <value>To be added.</value>
         <remarks><para>Quando você só especifica parte de uma linha ou linhas, o Microsoft Excel expande o intervalo para incluir linhas inteiras.</para>
           <para>Defina essa propriedade como <b>False</b> ou como uma sequência de caracteres vazia ("") para desativar linhas de título.</para>
@@ -1538,9 +1538,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define uma porcentagem (entre 10 e 400%) pela qual o Microsoft Excel dimensiona a planilha para impressão. Só se aplica a planilhas.</summary>
+        <summary>Retorna ou define um percentual (entre 10 e 400%) pelo qual Microsoft Excel dimensionará a planilha para impressão. Só se aplica a planilhas.</summary>
         <value>To be added.</value>
-        <remarks><para>Se essa propriedade for <b>False</b>, e <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesWide" /> as propriedades <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesTall" /> controlarem como a planilha é dimensionada.</para>
+        <remarks><para>Se essa propriedade for <b>False</b>, as <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesWide" /> propriedades e <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesTall" /> controlarão como a planilha é dimensionada.</para>
           <para>Todo dimensionamento mantém as proporções do documento original.</para>
           <para> </para></remarks>
       </Docs>

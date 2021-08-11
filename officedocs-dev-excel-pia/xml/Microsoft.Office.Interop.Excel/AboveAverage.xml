@@ -1,5 +1,5 @@
 <Type Name="AboveAverage" FullName="Microsoft.Office.Interop.Excel.AboveAverage">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="1a21e926b51408a1d10155a1a8f623c34f2f9726" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999788" /></Metadata><TypeSignature Language="C#" Value="public interface AboveAverage" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a138b80e69cf263d3740139dc41c18f074f9ce52d304a6352d5ec1fa17ee551c" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506159" /></Metadata><TypeSignature Language="C#" Value="public interface AboveAverage" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AboveAverage" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AboveAverage" />
   <TypeSignature Language="VB.NET" Value="Public Interface AboveAverage" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>Representa um visual acima da média de uma regra de formatação condicional. Aplica cor ou preenchimento em um intervalo ou seleção para ajudá-lo a ver o valor de células em relação a outras.</summary>
-    <remarks><para>Todos os objetos de formatação condicional estão contidos em <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> um objeto de coleção, que é filho de uma <see cref="T:Microsoft.Office.Interop.Excel.Range" /> coleção. Você pode criar uma regra de formatação acima da média usando o <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método ou o método da <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddAboveAverage" /> <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> coleção.</para>
+    <remarks><para>Todos os objetos de formatação condicional estão contidos em um <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> objeto de coleção, que é filho de uma <see cref="T:Microsoft.Office.Interop.Excel.Range" /> coleção. Você pode criar uma regra de formatação acima da média usando o <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> ou o método da <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddAboveAverage" /> <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> coleção.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -52,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAboveBelow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define uma das constantes da enumeração, especificando se a regra de formatação condicional procura valores de célula acima ou abaixo da média do intervalo ou desvio <see cref="T:Microsoft.Office.Interop.Excel.XlAboveBelow" /> padrão.</summary>
+        <summary>Retorna ou define uma das constantes da enumeração, especificando se a regra de formatação condicional procura valores de célula acima ou abaixo da média de intervalo ou desvio <see cref="T:Microsoft.Office.Interop.Excel.XlAboveBelow" /> padrão.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlAboveBelow" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -80,8 +80,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna um  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa o aplicativo Microsoft Office Excel. Quando usado com um qualificador de objeto, essa propriedade retorna um objeto <b>Application</b> que representa o criador do objeto especificado. Somente leitura.</summary>
-        <value><b>Aplicativo</b> (veja acima)</value>
+        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna um <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa o Microsoft Office Excel aplicativo. Quando usado com um qualificador de objeto, essa propriedade retorna um objeto <b>Application</b> que representa o criador do objeto especificado. Somente leitura.</summary>
+        <value><b>Aplicativo</b> (consulte acima)</value>
         <remarks><para>Você pode usar essa propriedade com um objeto de Automação OLE para retornar o aplicativo desse objeto.</para>
           <para> </para></remarks>
       </Docs>
@@ -109,7 +109,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um objeto especificando o intervalo de células ao qual a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> regra de formatação é aplicada.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto especificando o intervalo de células ao qual a regra de formatação é aplicada.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Range" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,7 +137,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna uma coleção que especifica a formatação das bordas de célula se a <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> regra de formatação condicional for avaliada como <b>True</b>. Somente leitura.</summary>
+        <summary>Retorna uma coleção que especifica a formatação de bordas de células se a regra de formatação condicional <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> for avaliada como <b>True</b>. Somente leitura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Borders" /></value>
         <remarks><para>Para um objeto de formatação condicional, só podem ser definidas as propriedades referentes às bordas superior, inferior e lateral da célula.</para>
           <para> </para></remarks>
@@ -256,7 +256,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um objeto que especifica a formatação da fonte se a <see cref="T:Microsoft.Office.Interop.Excel.Font" /> regra de formatação condicional for avaliada como <b>True</b>. Somente leitura.</summary>
+        <summary>Retorna um objeto que especifica a formatação de fonte se a regra de formatação condicional <see cref="T:Microsoft.Office.Interop.Excel.Font" /> for avaliada como <b>True</b>. Somente leitura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Font" /></value>
         <remarks><para>Nem todas as propriedades do objeto <b>Font</b> oferecem suporte para um objeto de formatação condicional. É possível definir os atributos de sublinhado, cor, tachado e estilo da fonte.</para>
           <para> </para></remarks>
@@ -285,7 +285,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um objeto que especifica os atributos interiores de uma célula para uma regra de formatação condicional que <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> é avaliada como <b>True</b>. Somente leitura.</summary>
+        <summary>Retorna um objeto que especifica os atributos internos de uma célula para uma regra de formatação condicional que <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> é avaliada como <b>True</b>. Somente leitura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -314,7 +314,7 @@
       <Docs>
         <param name="Range">O intervalo ao qual esta regra de formatação se aplicará.</param>
         <summary>Define o intervalo de células ao qual esta regra de formatação se aplicará.</summary>
-        <remarks><para>O intervalo deve estar no estilo de referência A1 e estar inteiramente contido dentro da planilha que é o pai da <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> coleção. Pode incluir o operador de intervalo (dois-pontos), o operador de interseção (um espaço), ou o operador de união (uma vírgula). Também pode incluir sinais de dólar, mas eles são ignorados.</para>
+        <remarks><para>O intervalo deve estar no estilo de referência A1 e estar inteiramente contido na planilha que é o pai da <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> coleção. Pode incluir o operador de intervalo (dois-pontos), o operador de interseção (um espaço), ou o operador de união (uma vírgula). Também pode incluir sinais de dólar, mas eles são ignorados.</para>
           <para>Você também pode usar um nome definido de local em qualquer parte do intervalo, mas o nome deve estar no idioma da macro.</para>
           <para> </para></remarks>
       </Docs>
@@ -347,7 +347,7 @@
       <Docs>
         <summary>Retorna ou define o formato de número aplicado a uma célula caso a regra de formatação condicional seja avaliada como <b>True</b>. <b>Objeto</b> de leitura/gravação.</summary>
         <value><b>Object</b></value>
-        <remarks><para>O formato de número é especificado com o uso dos mesmos códigos de formato exibidos na guia Número da caixa de diálogo Formatar Células. Você pode usar um formato de número integrado, por exemplo "Geral" ou <see cref="createacustomnumberformat#CrossCollection" /> .</para>
+        <remarks><para>O formato de número é especificado com o uso dos mesmos códigos de formato exibidos na guia Número da caixa de diálogo Formatar Células. Você pode usar um formato de número integrado, por exemplo , "Geral" ou <see cref="createacustomnumberformat#CrossCollection" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -405,7 +405,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai do objeto especificado. Somente leitura.</summary>
+        <summary>Retorna o objeto pai para o objeto especificado. Somente leitura.</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -496,7 +496,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define uma das constantes da enumeração, que determina o escopo do formato condicional quando ele é aplicado a um <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> gráfico de tabela dinâmica.</summary>
+        <summary>Retorna ou define uma das constantes da enumeração, que determina o escopo do formato condicional quando ele é aplicado <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> a um gráfico de tabela dinâmica.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /></value>
         <remarks><para>O valor padrão é <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" /> , que define o escopo usando a <see cref="P:Microsoft.Office.Interop.Excel.AboveAverage.AppliesTo" /> propriedade.</para>
           <para> </para></remarks>
@@ -615,7 +615,7 @@
       <Docs>
         <summary>Retorna uma das constantes da <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> enumeração, que especifica o tipo de formato condicional. Somente leitura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /></value>
-        <remarks><para>Essa propriedade sempre retornará um <b>valor inteiro</b> de "12", que é equivalente a <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlAboveAverageCondition" /> .</para>
+        <remarks><para>Essa propriedade sempre retornará um <b>valor Integer</b> de "12", que é equivalente a <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlAboveAverageCondition" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
