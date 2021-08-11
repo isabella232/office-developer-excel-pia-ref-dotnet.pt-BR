@@ -1,5 +1,5 @@
 <Type Name="ControlFormat" FullName="Microsoft.Office.Interop.Excel.ControlFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d88e80486b6e3c8db83afbc148105146372d3b01" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003917" /></Metadata><TypeSignature Language="C#" Value="public interface ControlFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5354d519a8c84db7f31557e715c7aca0e92b3d07d5a7f742ac1ebeb87ad7ea2a" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508707" /></Metadata><TypeSignature Language="C#" Value="public interface ControlFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ControlFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ControlFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ControlFormat" />
@@ -22,8 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Contém propriedades de controle do Microsoft Excel.</summary>
-    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel.Shape.ControlFormat" /> propriedade para retornar um objeto <b>ControlFormat</b> .</para>
-      <para>Se a forma não for um controle, a propriedade <b>ControlFormat</b> falhará e, se o controle não for uma caixa de listagem, a <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> propriedade falhará.</para>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel.Shape.ControlFormat" /> propriedade para retornar um objeto <b>ControlFormat.</b></para>
+      <para>Se a forma não for um controle, a <b>propriedade ControlFormat</b> falhará e, se o controle não for uma caixa de listagem, a <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> propriedade falhará.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -88,7 +88,7 @@
       </Parameters>
       <Docs>
         <param name="Text"><b>String</b> necessário. O texto a ser adicionado</param>
-        <param name="Index">Objeto <b>opcional</b>. A posição da nova entrada. Se a lista tiver menos entradas que o índice especificado, os itens vazios do final da lista serão adicionados à posição especificada. Se esse argumento for omitido, o item será acrescentado à lista existente.</param>
+        <param name="Index">Objeto <b>Opcional</b>. A posição da nova entrada. Se a lista tiver menos entradas que o índice especificado, os itens vazios do final da lista serão adicionados à posição especificada. Se esse argumento for omitido, o item será acrescentado à lista existente.</param>
         <summary>Adiciona um item a uma caixa de listagem ou caixa de combinação.</summary>
         <remarks><para>O uso desse método limpa qualquer intervalo especificado pela <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> propriedade.</para>
           <para> </para></remarks>
@@ -117,7 +117,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -304,10 +304,10 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Objeto <b>opcional</b>. O número do índice de uma única entrada de texto a ser definida ou retornada. Se esse argumento for omitido, a lista inteira será retornada ou definida como uma matriz de sequências de caracteres.</param>
+        <param name="Index">Objeto <b>Opcional</b>. O número do índice de uma única entrada de texto a ser definida ou retornada. Se esse argumento for omitido, a lista inteira será retornada ou definida como uma matriz de sequências de caracteres.</param>
         <summary>Retorna ou define as entradas de texto da caixa de listagem especificada ou de uma caixa de combinação, como uma matriz de cadeia de caracteres, ou retorna ou define uma única entrada de texto. Ocorre um erro quando não há entradas na lista.</summary>
         <value>To be added.</value>
-        <remarks><para>A definição dessa propriedade limpa qualquer intervalo especificado pela <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> propriedade.</para>
+        <remarks><para>A configuração dessa propriedade limpa qualquer intervalo especificado pela <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> propriedade.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -466,7 +466,7 @@
       <Docs>
         <summary>Retorna ou define o valor máximo do intervalo de um controle giratório ou barra de rolagem. O controle giratório ou barra de rolagem não assumirá valores maiores que seu valor máximo.</summary>
         <value>To be added.</value>
-        <remarks><para>O valor da <b>propriedade Max</b> deve ser maior que o valor da <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Min" /> propriedade.</para>
+        <remarks><para>O valor da <b>propriedade Max</b> deve ser maior do que o valor da <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Min" /> propriedade.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -498,7 +498,7 @@
       <Docs>
         <summary>Retorna ou define o valor mínimo do intervalo de um controle giratório ou barra de rolagem. O controle giratório ou barra de rolagem não levará valores menores que seu valor mínimo.</summary>
         <value>To be added.</value>
-        <remarks><para>O valor da <b>propriedade Min</b> deve ser menor que o valor da <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Max" /> propriedade.</para>
+        <remarks><para>O valor da <b>propriedade Min</b> deve ser menor do que o valor da <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Max" /> propriedade.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -531,10 +531,10 @@
         <summary>Retorna ou define o modo de seleção da caixa de listagem especificada. Pode ser uma das seguintes constantes: <b>xlNone</b>, <b>xlSimple</b> ou <b>xlExtended</b>.</summary>
         <value>To be added.</value>
         <remarks><para>A seleção única (<b>xlNone</b>) permite selecionar apenas um item de cada vez. Clicar o mouse ou pressionar a BARRA DE ESPAÇO cancela a seleção e seleciona o item clicado.</para>
-          <para>A seleção simples de várias seleções (<b>xlSimple</b>) alterna a seleção em um item da lista em que você clica com o mouse ou pressiona a barra de espaços quando o foco está no item. Esse modo é indicado para listas de opções, nas quais costuma haver vários itens selecionados.</para>
-          <para>A seleção multiseleção estendida (<b>xlExtended</b>) geralmente age como uma caixa de listagem de seleção única. Quando você clica em um item, cancela todas as outras seleções. Mantendo pressionada a tecla SHIFT enquanto clica o mouse ou pressiona uma tecla de direção, você seleciona itens sequencialmente a partir do item atual. Mantendo pressionada a tecla CTRL enquanto clica o mouse, você adiciona itens isolados à lista. Esse modo é indicado quando vários itens são permitidos mas não são usados com frequência.</para>
-          <para>Você pode usar a <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Value" /> propriedade ou a propriedade para retornar e definir o item selecionado em uma caixa de <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListIndex" /> listagem de seleção única.</para>
-          <para>Você não pode vincular caixas de listagem de seleção multiselect usando a <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.LinkedCell" /> propriedade.</para>
+          <para>Multiselect simples (<b>xlSimple</b>) alterna a seleção em um item na lista que você clica nele com o mouse ou pressiona a BARRA DE ESPAÇOS quando o foco está no item. Esse modo é indicado para listas de opções, nas quais costuma haver vários itens selecionados.</para>
+          <para>Multiseleção estendida (<b>xlExtended</b>) geralmente age como uma caixa de listagem de seleção única. Quando você clica em um item, cancela todas as outras seleções. Mantendo pressionada a tecla SHIFT enquanto clica o mouse ou pressiona uma tecla de direção, você seleciona itens sequencialmente a partir do item atual. Mantendo pressionada a tecla CTRL enquanto clica o mouse, você adiciona itens isolados à lista. Esse modo é indicado quando vários itens são permitidos mas não são usados com frequência.</para>
+          <para>Você pode usar a <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Value" /> propriedade ou para retornar e definir o item selecionado em uma caixa de <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListIndex" /> listagem de seleção única.</para>
+          <para>Não é possível vincular caixas de listagem de várias seleções usando a <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.LinkedCell" /> propriedade.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -646,10 +646,10 @@
       </Parameters>
       <Docs>
         <param name="Index">Obrigatório <b>Integer</b>. O número do primeiro item a ser removido. Os valores válidos são de 1 até o número de itens na lista (retornados pela <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListCount" /> propriedade).</param>
-        <param name="Count">Objeto <b>opcional</b>. O número de itens a serem removidos, começando pelo <paramref name="Index" /> item. Se esse argumento for omitido, um item será removido. Se exceder o número de itens na lista, todos os itens do final da lista <paramref name="Index" />  +  <paramref name="Count" /> <paramref name="Index" /> serão removidos sem erro.</param>
+        <param name="Count">Objeto <b>Opcional</b>. O número de itens a serem removidos, começando no item <paramref name="Index" /> . Se esse argumento for omitido, um item será removido. Se exceder o número de itens na lista, todos os itens do final da lista <paramref name="Index" />  +  <paramref name="Count" /> serão removidos <paramref name="Index" /> sem um erro.</param>
         <summary>Remove um ou mais itens de uma caixa de listagem ou uma caixa de combinação.</summary>
         <remarks><para>Se o objeto especificado tiver um intervalo de preenchimento definido para ele, este método falhará.</para>
-          <para>Use o método para remover todas as entradas de uma caixa de listagem ou <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.RemoveAllItems" /> caixa de combinação do Microsoft Excel.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.RemoveAllItems" /> método para remover todas as entradas de uma caixa Microsoft Excel lista ou caixa de combinação.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

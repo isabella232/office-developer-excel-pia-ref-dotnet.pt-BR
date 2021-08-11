@@ -1,5 +1,5 @@
 <Type Name="SparkPoints" FullName="Microsoft.Office.Interop.Excel.SparkPoints">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="e5a9199cd752c599cbd9222cae79f2248af65580" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009937" /></Metadata><TypeSignature Language="C#" Value="public interface SparkPoints" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="603170c2f7acb3a89f7e9efefeab5fc1da020af5317cd260f6dd4356b765c0bc" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54517142" /></Metadata><TypeSignature Language="C#" Value="public interface SparkPoints" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SparkPoints" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SparkPoints" />
   <TypeSignature Language="VB.NET" Value="Public Interface SparkPoints" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>Representa as configurações dos marcadores de pontos de dados em um minigráfico.</summary>
-    <remarks><para>Use o objeto para definir a cor e visibilidade dos <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /> marcadores para pontos de dados em um sparkline. Use a <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Points" /> propriedade do objeto para retornar um <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /> objeto. As propriedades do objeto correspondem às configurações das caixas de seleção Ponto Alto, Ponto Baixo, Ponto Negativo, Primeiro Ponto, Último Ponto e Marcadores na seção Mostrar e dos itens na lista drop-down cor do marcador na seção Estilo da guia Design de Ferramentas de Sparkline da faixa de <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /> opções.</para>
+    <remarks><para>Use o objeto para definir a cor e a visibilidade dos marcadores para <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /> pontos de dados em um sparkline. Use a <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Points" /> propriedade do objeto para retornar um <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /> objeto. As propriedades do objeto correspondem às configurações das caixas de seleção Ponto Alto, Ponto Baixo, Ponto Negativo, Primeiro Ponto, Último Ponto e Marcadores na seção Mostrar e dos itens na lista de opções de Cor do Marcador na seção Estilo da guia Design de Ferramentas de Sparkline da faixa de <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /> opções.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna <see cref="T:Microsoft.Office.Interop.Excel.Application" /> um objeto que representa o aplicativo Microsoft Excel. Quando usada com um qualificador de objeto, essa propriedade retorna um objeto que representa o <see cref="T:Microsoft.Office.Interop.Excel.Application" /> criador do objeto especificado.</summary>
+        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo. Quando usada com um qualificador de objeto, essa propriedade retorna um objeto que representa o <see cref="T:Microsoft.Office.Interop.Excel.Application" /> criador do objeto especificado.</summary>
         <value>Um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
         <remarks><para>Somente leitura.</para>
           <para> </para></remarks>
@@ -80,8 +80,8 @@
       <Docs>
         <summary>Obtém um inteiro de 32 <b>bits</b> que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>Um inteiro de 32 <b>bits</b> que indica o aplicativo no qual esse objeto foi criado.</value>
-        <remarks><para>Somente leitura <b>long</b>.</para>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. A propriedade foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo tem um código de criador de <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Creator" /> quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+        <remarks><para>Somente leitura <b>longa</b>.</para>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. A propriedade foi projetada para ser usada Microsoft Excel para o Macintosh, onde cada aplicativo <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Creator" /> tem um código criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -108,10 +108,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SparkColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> um objeto que representa a cor e visibilidade do marcador do primeiro ponto de dados em um sparkline.</summary>
-        <value>Um <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> objeto que representa a cor e visibilidade do marcador do primeiro ponto de dados em um sparkline.</value>
+        <summary>Obtém <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> um objeto que representa a cor e a visibilidade do marcador para o primeiro ponto de dados em um sparkline.</summary>
+        <value>Um objeto que representa a cor e a visibilidade do <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> marcador para o primeiro ponto de dados em um sparkline.</value>
         <remarks><para>Somente leitura.</para>
-          <para>A propriedade corresponde à configuração da caixa de seleção Primeiro Ponto na seção Mostrar e do item Primeiro Ponto na lista drop-down Cor do Marcador, na seção Estilo da guia Design de Ferramentas de Sparkline da faixa de <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Firstpoint" /> opções.</para>
+          <para>A propriedade corresponde à configuração da caixa de seleção Primeiro Ponto na seção Mostrar e do item Primeiro Ponto na listada de opções Cor do Marcador na seção Estilo da guia Design de Ferramentas de Sparkline da faixa de <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Firstpoint" /> opções.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -138,10 +138,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SparkColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> um objeto que representa a cor e visibilidade do marcador para o ponto mais alto de dados em um sparkline.</summary>
-        <value>Um <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> objeto que representa a cor e visibilidade do marcador para o ponto mais alto de dados em um sparkline.</value>
+        <summary>Obtém um objeto que representa a cor e a visibilidade do marcador para o ponto mais <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> alto de dados em um sparkline.</summary>
+        <value>Um <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> objeto que representa a cor e a visibilidade do marcador para o ponto mais alto de dados em um sparkline.</value>
         <remarks><para>Somente leitura.</para>
-          <para>A propriedade corresponde à configuração da caixa de seleção Ponto Alto na seção Mostrar e do item Ponto Alto na lista drop-down Cor do Marcador na seção Estilo da guia Design de Ferramentas de Sparkline da faixa de <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Highpoint" /> opções.</para>
+          <para>A propriedade corresponde à configuração da caixa de seleção Ponto Alto na seção Mostrar e do item Ponto Alto na lista de opções de Cor do Marcador na seção Estilo da guia Design de Ferramentas de Sparkline da faixa de <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Highpoint" /> opções.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -168,10 +168,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SparkColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> um objeto que representa a cor e visibilidade do marcador do último ponto de dados em um sparkline.</summary>
-        <value>Um <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> objeto que representa a cor e visibilidade do marcador do último ponto de dados em um sparkline.</value>
+        <summary>Obtém <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> um objeto que representa a cor e a visibilidade do marcador para o último ponto de dados em um sparkline.</summary>
+        <value>Um <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> objeto que representa a cor e a visibilidade do marcador para o último ponto de dados em um sparkline.</value>
         <remarks><para>Somente leitura.</para>
-          <para>A propriedade corresponde à configuração do Último Ponto, da caixa de seleção na seção Mostrar e do item Último Ponto na lista drop-down Cor do Marcador, na seção Estilo da guia Design de Ferramentas de Sparkline da faixa de <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Lastpoint" /> opções.</para>
+          <para>A propriedade corresponde à configuração do Último Ponto, à caixa de seleção na seção Mostrar e ao item Último Ponto na lista baixa cor do marcador na seção Estilo da guia Design de Ferramentas de Sparkline da faixa de <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Lastpoint" /> opções.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -198,10 +198,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SparkColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> um objeto que representa a cor e visibilidade do marcador para o ponto mais baixo de dados em um sparkline.</summary>
-        <value>Um <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> objeto que representa a cor e visibilidade do marcador para o ponto mais baixo de dados em um sparkline.</value>
+        <summary>Obtém um objeto que representa a cor e a visibilidade do marcador para o ponto <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> mais baixo dos dados em um sparkline.</summary>
+        <value>Um objeto que representa a cor e a visibilidade do marcador para o ponto <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> mais baixo dos dados em um sparkline.</value>
         <remarks><para>Somente leitura.</para>
-          <para>A propriedade corresponde à configuração da caixa de seleção Ponto Baixo na seção Mostrar e do item Ponto Baixo na lista drop-down Cor do Marcador na seção Estilo da guia Design de Ferramentas de Sparkline da faixa de <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Lowpoint" /> opções.</para>
+          <para>A propriedade corresponde à configuração da caixa de seleção Ponto Baixo na seção Mostrar e do item Ponto Baixo na lista de opções de Cor do Marcador na seção Estilo da guia Design de Ferramentas de Sparkline da faixa de <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Lowpoint" /> opções.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -228,10 +228,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SparkColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> um objeto que representa a cor e visibilidade de marcadores para pontos positivos de dados em um sparkline.</summary>
-        <value>Um <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> objeto que representa a cor e visibilidade dos marcadores para pontos positivos de dados em um sparkline.</value>
+        <summary>Obtém um objeto que representa a cor e a visibilidade de marcadores para pontos <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> positivos de dados em um sparkline.</summary>
+        <value>Um objeto que representa a cor e a visibilidade de <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> marcadores para pontos positivos de dados em um sparkline.</value>
         <remarks><para>Somente leitura.</para>
-          <para>A propriedade corresponde à configuração da caixa de seleção Marcadores na seção Mostrar e do item Marcadores na lista drop-down Cor do Marcador na seção Estilo da guia Design de Ferramentas de Sparkline da faixa de <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Markers" /> opções.</para>
+          <para>A propriedade corresponde à configuração da caixa de seleção Marcadores na seção Mostrar e do item Marcadores na listada de opções Cor do Marcador na seção Estilo da guia Design de Ferramentas de Sparkline da faixa de <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Markers" /> opções.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -258,10 +258,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SparkColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> um objeto que representa a cor e visibilidade de marcadores para pontos negativos de dados em um sparkline.</summary>
-        <value>Um <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> objeto que representa a cor e visibilidade de marcadores para pontos negativos de dados em um sparkline.</value>
+        <summary>Obtém um objeto que representa a cor e a visibilidade de marcadores para pontos <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> negativos de dados em um sparkline.</summary>
+        <value>Um objeto que representa a cor e a visibilidade de marcadores para pontos <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> negativos de dados em um sparkline.</value>
         <remarks><para>Somente leitura.</para>
-          <para>A propriedade corresponde à configuração da caixa de seleção Ponto Negativo na seção Mostrar e do item Pontos Negativos na lista drop-down Cor do Marcador na seção Estilo da guia Design de Ferramentas de Sparkline da faixa de <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Negative" /> opções.</para>
+          <para>A propriedade corresponde à configuração da caixa de seleção Ponto Negativo na seção Mostrar e do item Pontos Negativos na lista lista de opções de Cor do Marcador na seção Estilo da guia Design de Ferramentas de Sparkline da faixa de <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Negative" /> opções.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

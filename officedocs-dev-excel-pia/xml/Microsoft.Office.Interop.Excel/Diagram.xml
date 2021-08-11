@@ -1,5 +1,5 @@
 <Type Name="Diagram" FullName="Microsoft.Office.Interop.Excel.Diagram">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9a421c6b190452977e49a87c2df60fb4cf93d756" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005625" /></Metadata><TypeSignature Language="C#" Value="public interface Diagram" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8f23e88bc435fafb03c88a3768f511496656666559e1cc38d9b9bfaee6a4d380" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54509477" /></Metadata><TypeSignature Language="C#" Value="public interface Diagram" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Diagram" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Diagram" />
   <TypeSignature Language="VB.NET" Value="Public Interface Diagram" />
@@ -25,7 +25,7 @@
     <remarks><para>Use a <b>propriedade Diagram</b> do objeto ou coleção para retornar um <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> <b>Diagram.</b></para>
       <para>Você também pode converter o diagrama atual em um diagrama diferente usando o <see cref="M:Microsoft.Office.Interop.Excel.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" /> método.</para>
       <para>
-        <b>Observação</b>   Se o diagrama atual for um organograma (<b>msoDiagramOrgChart</b>), ocorrerá um erro em tempo de executar.</para>
+        <b>Observação</b>   Se o diagrama atual for um gráfico de organização (<b>msoDiagramOrgChart</b>), ocorrerá um erro em tempo de executar.</para>
       <para>Há vários tipos de diagramas para escolher ao trabalhar com o <b>objeto Diagram.</b> Consulte o método <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddDiagram(Microsoft.Office.Core.MsoDiagramType,System.Single,System.Single,System.Single,System.Single)" /> para exibir uma lista de tipos de diagrama disponíveis.</para>
       <para> </para></remarks>
   </Docs>
@@ -53,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,10 +84,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Define ou retorna uma constante indicando o estado de formatação automática de um diagrama.</summary>
+        <summary>Define ou retorna uma constante que indica o estado de formatação automática de um diagrama.</summary>
         <value>To be added.</value>
-        <remarks><para>A <b>configuração da AutoFormatação</b> <b>como msoFalse</b> desabilita a formatação automática do diagrama. A <b>configuração da AutoFormatação</b> <b>como msoTrue</b> permite a formatação automática do diagrama.</para>
-          <para>As seguintes <b>constantes MsoTriState</b> não se aplicam a esta propriedade: <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
+        <remarks><para>A <b>configuração de AutoFormatação</b> como <b>msoFalse</b> desabilita a formatação automática do diagrama. A <b>configuração de AutoFormatação</b> como <b>msoTrue</b> habilita a formatação automática para o diagrama.</para>
+          <para>As seguintes <b>constantes MsoTriState</b> não se aplicam a essa propriedade: <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -119,8 +119,8 @@
       <Docs>
         <summary>Retorna ou define uma constante que determina o posicionamento automático dos nós e conectores em um diagrama.</summary>
         <value>To be added.</value>
-        <remarks><para>Definir <b>AutoLayout</b> como <b>msoFalse desabilita</b> a formatação automática do diagrama. Definir <b>AutoLayout</b> como <b>msoTrue habilita</b> a formatação automática para o diagrama.</para>
-          <para>As seguintes <b>constantes MsoTriState</b> não se aplicam a esta propriedade: <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
+        <remarks><para>A <b>definição de AutoLayout</b> <b>como msoFalse</b> desabilita a formatação automática do diagrama. A <b>definição de AutoLayout</b> <b>como msoTrue</b> habilita a formatação automática para o diagrama.</para>
+          <para>As seguintes <b>constantes MsoTriState</b> não se aplicam a essa propriedade: <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -147,7 +147,7 @@
         <Parameter Name="Type" Type="Microsoft.Office.Core.MsoDiagramType" />
       </Parameters>
       <Docs>
-        <param name="Type">Obrigatório. <see cref="T:Microsoft.Office.Core.MsoDiagramType" /> O tipo de diagrama para o qual converter. <b>MsoDiagramType</b> pode ser uma destas constantes. <b>msoDiagramCycle</b> Um diagrama de processo com um tipo de diagrama de ciclo contínuo. <b>msoDiagramMixed</b> Um tipo de diagrama misto. <b>msoDiagramOrgChart</b> Um tipo de diagrama de relação hierárquica. <b>msoDiagramPyramid</b> Um tipo de diagrama de relações baseadas em base. <b>msoDiagramRadial</b> Um tipo de diagrama mostrando as relações de um elemento principal. <b>msoDiagramTarget</b> Um tipo de diagrama mostrando as etapas em direção a uma meta. <b>msoDiagramVenn</b> Um tipo de diagrama mostrando áreas de sobreposição entre elementos.</param>
+        <param name="Type">Obrigatório <see cref="T:Microsoft.Office.Core.MsoDiagramType" /> . O tipo de diagrama para o qual converter. <b>MsoDiagramType</b> pode ser uma destas constantes. <b>msoDiagramCycle</b> Um diagrama de processo com um tipo de diagrama de ciclo contínuo. <b>msoDiagramMixed</b> Um tipo de diagrama misto. <b>msoDiagramOrgChart</b> Um tipo de diagrama de relação hierárquico. <b>msoDiagramPyramid</b> Um tipo de diagrama de relações baseadas em base. <b>msoDiagramRadial</b> Um tipo de diagrama que mostra as relações de um elemento principal. <b>msoDiagramTarget</b> Um tipo de diagrama mostrando etapas em direção a uma meta. <b>msoDiagramVenn</b> Um tipo de diagrama mostrando áreas de sobreposição entre elementos.</param>
         <summary>Converte o diagrama atual em um diagrama diferente.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -203,8 +203,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ajusta o tamanho do texto nos nós em um diagrama para se ajustar aos limites dos nós.</summary>
-        <remarks><para>Este método funciona somente no Microsoft Office PowerPoint 2003.</para>
+        <summary>Ajusta o tamanho do texto nos nós de um diagrama para caber dentro dos limites dos nós.</summary>
+        <remarks><para>Esse método só funciona no Microsoft Office PowerPoint 2003.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -293,7 +293,7 @@
         <summary>Inverte os nós em um diagrama.</summary>
         <value>To be added.</value>
         <remarks><para>Definir <b>Reverse</b> como <b>msoFalse</b> deixa os nós do diagrama como estão. Definir <b>Reverse</b> como <b>msoTrue</b> reverte os nós em um diagrama.</para>
-          <para>As seguintes <b>constantes MsoTriState</b> não se aplicam a esta propriedade: <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
+          <para>As seguintes <b>constantes MsoTriState</b> não se aplicam a essa propriedade: <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

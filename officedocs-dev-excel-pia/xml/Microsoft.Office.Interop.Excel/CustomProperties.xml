@@ -1,5 +1,5 @@
 <Type Name="CustomProperties" FullName="Microsoft.Office.Interop.Excel.CustomProperties">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="5fa7755a939da1d185231965c1c4aa599e110df3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003889" /></Metadata><TypeSignature Language="C#" Value="public interface CustomProperties : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="90417796f7c43111aa4de390b165a58c9c5682ef439bf33bc2e957d0fd95fe31" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508679" /></Metadata><TypeSignature Language="C#" Value="public interface CustomProperties : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CustomProperties implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CustomProperties" />
   <TypeSignature Language="VB.NET" Value="Public Interface CustomProperties&#xA;Implements IEnumerable" />
@@ -26,10 +26,10 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Excel.CustomProperty" /> objetos que representam informações adicionais. As informações podem ser usadas como metadados do XML.</summary>
-    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel.SmartTag.Properties" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.SmartTag" /> objeto, ou a propriedade do objeto, para retornar uma <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.CustomProperties" /> coleção <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> <b>CustomProperties</b> .</para>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel.SmartTag.Properties" /> propriedade do objeto ou a propriedade do objeto para retornar uma coleção <see cref="T:Microsoft.Office.Interop.Excel.SmartTag" /> <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.CustomProperties" /> <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> <b>CustomProperties.</b></para>
       <para>Depois que uma coleção <b>CustomProperties</b> for retornada, você poderá adicionar metadados a planilhas e rótulos inteligentes de acordo com a opção que tenha escolhido para trabalhar.</para>
       <para>Para adicionar metadados a uma planilha, use a <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.CustomProperties" /> propriedade com o <see cref="M:Microsoft.Office.Interop.Excel.CustomProperties.Add(System.String,System.Object)" /> método.</para>
-      <para>Para adicionar metadados a uma marca inteligente, use <see cref="P:Microsoft.Office.Interop.Excel.SmartTag.Properties" /> a propriedade com o método <b>Add.</b></para>
+      <para>Para adicionar metadados a uma marca inteligente, use a <see cref="P:Microsoft.Office.Interop.Excel.SmartTag.Properties" /> propriedade com o método <b>Add.</b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -93,7 +93,7 @@
       </Parameters>
       <Docs>
         <param name="Name"><b>String</b> necessário. O nome da propriedade personalizada.</param>
-        <param name="Value">Objeto <b>Required</b>. O valor da propriedade personalizada.</param>
+        <param name="Value">Objeto <b>Obrigatório</b>. O valor da propriedade personalizada.</param>
         <summary>Adiciona informações sobre a propriedade personalizada. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.CustomProperty" /> objeto.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -122,7 +122,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -243,7 +243,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Objeto <b>Required</b>. O nome ou número de índice do objeto.</param>
+        <param name="Index">Objeto <b>Obrigatório</b>. O nome ou número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
