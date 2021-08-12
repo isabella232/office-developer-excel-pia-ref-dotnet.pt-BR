@@ -1,5 +1,5 @@
 <Type Name="PivotLine" FullName="Microsoft.Office.Interop.Excel.PivotLine">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="218e5c301b310120d854394926abc0c2c7c92f5a" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997351" /></Metadata><TypeSignature Language="C#" Value="public interface PivotLine" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1b0532bc4fa4047817e63a338463c22e632fd2c9f246906f926179735573cd07" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54517688" /></Metadata><TypeSignature Language="C#" Value="public interface PivotLine" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotLine" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotLine" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotLine" />
@@ -22,8 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Um <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> objeto é uma linha de linhas ou colunas em um Excel <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> .</summary>
-    <remarks><para>Um <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> contém apenas itens visíveis, portanto filhos recolhidos de itens e itens em níveis ocultos não estão presentes na <see cref="T:Microsoft.Office.Interop.Excel.PivotLines" /> coleção.</para>
-      <para>Sempre <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> tem um em todas as <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> posições. Isso significa que os <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> s que representam subtotais no <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> contêm menos s que s <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> regulares.</para>
+    <remarks><para>Um <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> contém apenas itens visíveis, portanto, filhos recolhidos de itens e itens em níveis ocultos não estão presentes na <see cref="T:Microsoft.Office.Interop.Excel.PivotLines" /> coleção.</para>
+      <para>A <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> sempre tem uma em todas as <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> posições. Isso significa que os <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> s representando subtotais no <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> contêm <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> menos s do que <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> s regulares.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -50,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna um  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa o aplicativo Microsoft Office Excel. Quando usado com um qualificador de objeto, essa propriedade retorna um objeto <b>Application</b> que representa o criador do objeto especificado. Somente leitura.</summary>
+        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna um <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa o Microsoft Office Excel aplicativo. Quando usado com um qualificador de objeto, essa propriedade retorna um objeto <b>Application</b> que representa o criador do objeto especificado. Somente leitura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
         <remarks><para>Você pode usar essa propriedade com um objeto de Automação OLE para retornar o aplicativo desse objeto.</para>
           <para> </para></remarks>
@@ -79,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um Inteiro de 32 <b>bits</b> que indica o aplicativo no qual esse objeto foi criado. Somente leitura.</summary>
+        <summary>Retorna um <b>Inteiro</b> de 32 bits que indica o aplicativo no qual esse objeto foi criado. Somente leitura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
         <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.  A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
           <para> </para></remarks>
@@ -136,7 +136,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai do especificado <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> . Somente leitura.</summary>
+        <summary>Retorna o objeto pai para o <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> especificado . Somente leitura.</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -164,7 +164,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotLineCells</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna uma coleção de <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> objetos em um <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> . Somente leitura.</summary>
+        <summary>Retorna uma coleção <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> de objetos em um <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> . Somente leitura.</summary>
         <value><see cref="P:Microsoft.Office.Interop.Excel.PivotLine.PivotLineCells" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -192,7 +192,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotLineCells</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Recupera todas as <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> células, incluindo as ocultas em formato compacto.</summary>
+        <summary>Recupera todas as <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> células, incluindo aquelas que estão ocultas na forma compacta.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

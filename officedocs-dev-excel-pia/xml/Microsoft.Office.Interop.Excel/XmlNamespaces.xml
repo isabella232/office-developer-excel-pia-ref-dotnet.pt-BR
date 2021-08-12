@@ -1,5 +1,5 @@
 <Type Name="XmlNamespaces" FullName="Microsoft.Office.Interop.Excel.XmlNamespaces">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ac6aaff6a7a94436f8945b52b3a9d34e20f3ae1c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012716" /></Metadata><TypeSignature Language="C#" Value="public interface XmlNamespaces : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e7c442a565c1961e1c245263731b265dd77bda63d0e6d7dd8bc0434e63f61f42" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54517765" /></Metadata><TypeSignature Language="C#" Value="public interface XmlNamespaces : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XmlNamespaces implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XmlNamespaces" />
   <TypeSignature Language="VB.NET" Value="Public Interface XmlNamespaces&#xA;Implements IEnumerable" />
@@ -25,10 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa a coleção de <see cref="T:Microsoft.Office.Interop.Excel.XmlNamespace" /> objetos em uma área de trabalho.</summary>
-    <remarks><para>Recursos XML, exceto para salvar arquivos no formato de Planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e no Microsoft Office Excel 2003.</para>
+    <summary>Representa a coleção de <see cref="T:Microsoft.Office.Interop.Excel.XmlNamespace" /> objetos em uma workbook.</summary>
+    <remarks><para>Os recursos XML, exceto para salvar arquivos no formato de Planilha XML, estão disponíveis apenas no Microsoft Office Professional Edition 2003 e Microsoft Office Excel 2003.</para>
       <para>Use a <see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Item(System.Object)" /> propriedade para acessar um objeto <b>XmlNamespace</b> específico.</para>
-      <para>Use a <see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Value" /> propriedade para retornar uma cadeia <b>de</b> caracteres que lista os namespaces que foram adicionados a uma agenda.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Value" /> propriedade para retornar um <b>String</b> que lista os namespaces que foram adicionados a uma lista de trabalho.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -90,7 +90,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,7 +146,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. Somente <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> leitura.</summary>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> .</summary>
         <value>To be added.</value>
         <remarks><para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
           <para> </para></remarks>
@@ -208,9 +208,9 @@
       </Parameters>
       <Docs>
         <param name="Path"><b>String</b> necessário. O caminho e o nome do pacote de expansão XML.</param>
-        <param name="InstallForAllUsers">Opcional <b>booleano</b>. <b>True</b> instala o pacote de expansão para XML e o disponibiliza a todos os usuários em um computador. <b>False</b> torna o pacote de expansão XML disponível apenas para o usuário atual. Padrão é <b>False</b>.</param>
+        <param name="InstallForAllUsers">Opcional <b>Boolean</b>. <b>True</b> instala o pacote de expansão para XML e o disponibiliza a todos os usuários em um computador. <b>False</b> torna o pacote de expansão XML disponível apenas para o usuário atual. Padrão é <b>False</b>.</param>
         <summary>Instala o pacote de expansão XML especificado no computador do usuário, disponibilizando a solução do documento inteligente XML a um ou mais usuários.</summary>
-        <remarks><para>Recursos XML, exceto para salvar arquivos no formato de Planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e no Microsoft Office Excel 2003.</para>
+        <remarks><para>Os recursos XML, exceto para salvar arquivos no formato de Planilha XML, estão disponíveis apenas no Microsoft Office Professional Edition 2003 e Microsoft Office Excel 2003.</para>
           <para>Por motivos de segurança, você não pode instalar um manifesto não assinado. Para obter mais informações sobre manifestos, consulte o SDK de Documentos Inteligentes no site do MSDN.</para>
           <para> </para></remarks>
       </Docs>
@@ -241,7 +241,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Objeto <b>Required</b>. O nome ou número de índice do objeto.</param>
+        <param name="Index">Objeto <b>Obrigatório</b>. O nome ou número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -270,7 +270,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai do objeto especificado. Somente leitura.</summary>
+        <summary>Retorna o objeto pai para o objeto especificado. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -298,9 +298,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna uma <b>cadeia de</b> caracteres que representa os namespaces XML que foram adicionados à agenda.</summary>
+        <summary>Retorna uma <b>cadeia de</b> caracteres que representa os namespaces XML que foram adicionados à workbook.</summary>
         <value>To be added.</value>
-        <remarks><para>Se a área de trabalho contiver mais de um namespace, os namespaces serão separados por um espaço em branco na cadeia de caracteres retornada pela <b>propriedade Value.</b></para>
+        <remarks><para>Se a caixa de trabalho contiver mais de um namespace, os namespaces serão separados por um espaço em branco na cadeia de caracteres retornada pela <b>propriedade Value.</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
