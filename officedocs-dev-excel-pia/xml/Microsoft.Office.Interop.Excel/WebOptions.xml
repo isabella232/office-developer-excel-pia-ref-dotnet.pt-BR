@@ -1,5 +1,5 @@
 <Type Name="WebOptions" FullName="Microsoft.Office.Interop.Excel.WebOptions">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="daab179c046c8ae3d7a70032ace37b8eb5d45e81" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009265" /></Metadata><TypeSignature Language="C#" Value="public interface WebOptions" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4931b180d1a90c7fc24a9cf3ce958feee9c52b65b4f90806444ef2b8410dbdda" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54512417" /></Metadata><TypeSignature Language="C#" Value="public interface WebOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WebOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WebOptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface WebOptions" />
@@ -19,8 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Contém os atributos em nível de pasta de trabalho usados pelo Microsoft Excel quando você salva um documento como uma página da Web ou abre uma dessas páginas.</summary>
-    <remarks><para>É possível retornar ou definir atributos em nível de aplicativo (global) ou de pasta de trabalho. (Observe que os valores de atributo podem ser diferentes de uma workbook para outra, dependendo do valor do atributo no momento em que a área de trabalho foi salva.) As configurações de atributos no nível da agenda substituem as configurações do atributo no nível do aplicativo. Os atributos no nível do aplicativo estão contidos no <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> objeto.</para>
-      <para>Use a <see cref="P:Microsoft.Office.Interop.Excel._Workbook.WebOptions" /> propriedade para retornar o objeto <b>WebOptions</b> .</para>
+    <remarks><para>É possível retornar ou definir atributos em nível de aplicativo (global) ou de pasta de trabalho. (Observe que os valores de atributo podem ser diferentes de uma workbook para outra, dependendo do valor do atributo no momento em que a workbook foi salva.) As configurações de atributo de nível de trabalho substituem as configurações de atributo no nível do aplicativo. Atributos no nível do aplicativo estão contidos no <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> objeto.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Excel._Workbook.WebOptions" /> propriedade para retornar o objeto <b>WebOptions.</b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -79,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,7 +142,7 @@
       <Docs>
         <summary><b>True</b> se os componentes necessários do Microsoft Office Web Components forem baixados quando você exibir o documento salvo em um navegador da Web, mas somente se os componentes ainda não estiverem instalados. <b>False</b> se os componentes não forem baixados. O valor padrão é <b>False</b>.</summary>
         <value>To be added.</value>
-        <remarks><para>Você pode definir a propriedade como uma URL central (na intranet ou na Web) ou o caminho (local ou rede) para um local a partir do qual os usuários autorizados podem baixar componentes ao exibir o <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.LocationOfComponents" /> documento salvo. O caminho deve ser válido e indicar um local que contenha os componentes necessários, e o usuário deve ter uma licença válida do Microsoft Office.</para>
+        <remarks><para>Você pode definir a propriedade como uma URL central (na intranet ou Web) ou caminho (local ou rede) para um local a partir do qual os usuários autorizados podem baixar componentes ao exibir o <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.LocationOfComponents" /> documento salvo. O caminho deve ser válido e indicar um local que contenha os componentes necessários, e o usuário deve ter uma licença válida do Microsoft Office.</para>
           <para>Os componentes do Office Web Components adicionam interatividade a documentos salvos como páginas da Web. Se você exibir uma página da Web no navegador de um computador que não tenha os componentes instalados, as partes interativas da página ficarão estáticas.</para>
           <para> </para></remarks>
       </Docs>
@@ -202,11 +202,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o sufixo de pasta que o Microsoft Excel usa quando você salva um documento como uma página da Web, usa nomes de arquivo longos e opta por salvar os arquivos de suporte em uma pasta separada (ou seja, se as propriedades e as propriedades estão definidas como <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> <b>True</b>).</summary>
+        <summary>Retorna o sufixo de pasta que Microsoft Excel usa quando você salva um documento como uma página da Web, usa nomes de arquivo longos e opta por salvar arquivos de suporte em uma pasta separada (ou seja, se as propriedades e estão definidas como <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> <b>True</b>).</summary>
         <value>To be added.</value>
-        <remarks><para>Os documentos recém-criados usam o sufixo retornado <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" /> pela propriedade do <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> objeto. O valor da propriedade <b>FolderSuffix</b> do objeto poderá ser diferente do objeto <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> <b>DefaultWebOptions</b> se o documento tiver sido editado anteriormente em uma versão de idioma diferente do Microsoft Excel. Você pode usar o método para alterar o sufixo para o idioma que <see cref="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" /> está usando no Momento no Microsoft Office.</para>
+        <remarks><para>Os documentos recém-criados usam o sufixo retornado <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" /> pela propriedade do <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> objeto. O valor da <b>propriedade FolderSuffix</b> do objeto pode ser diferente do objeto <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> <b>DefaultWebOptions</b> se o documento tiver sido editado anteriormente em uma versão de idioma diferente do Microsoft Excel. Você pode usar o método para alterar o sufixo para o idioma que está usando no <see cref="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" /> Microsoft Office.</para>
           <para>Por padrão, o nome da pasta de suporte é o nome da página da Web mais um sublinhado (_), um ponto (.) ou um hífen (-) e a palavra "files" (exibida no idioma da versão do Excel na qual o arquivo foi salvo como página da Web). Por exemplo, suponha que você use a versão do idioma holandês do Excel para salvar um arquivo chamado "Page1" como página da Web. O nome padrão da pasta de suporte será Page1_bestanden.</para>
-          <para>A tabela a seguir lista cada versão de idioma do Office e fornece o valor da propriedade correspondente e o <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> sufixo da pasta. Para os idiomas que não estejam listados na tabela, o sufixo "Files" é usado.</para>
+          <para>A tabela a seguir lista cada versão de idioma Office e fornece seu valor de propriedade correspondente <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> e sufixo de pasta. Para os idiomas que não estejam listados na tabela, o sufixo "Files" é usado.</para>
           <list type="table">
             <item>
               <term>Árabe</term>
@@ -214,7 +214,7 @@
               <description>.files</description>
             </item>
             <item>
-              <term>Basco (Basco)</term>
+              <term>Basque</term>
               <description>1069</description>
               <description>_fitxategiak</description>
             </item>
@@ -435,7 +435,7 @@
       <Docs>
         <summary>Retorna ou define a URL central (na intranet ou na Web) ou o caminho (local ou em rede) como o local a partir do qual usuários autorizados poderão baixar componentes do Microsoft Office Web Components quando exibirem o documento salvo. O valor padrão é o caminho local ou de instalação de rede do Microsoft Office.</summary>
         <value>To be added.</value>
-        <remarks><para>Os componentes do Office Web components são baixados automaticamente com a página da Web especificada se a propriedade estiver definida como True , os componentes ainda não estão instalados, o caminho é válido e aponta para um local que contém os componentes necessários e o usuário tem uma licença válida do <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.DownloadComponents" /> Microsoft Office. <b></b></para>
+        <remarks><para>Office Os componentes da Web são baixados automaticamente com a página da Web especificada se a propriedade estiver definida como True , os componentes ainda não estão instalados, o caminho é válido e aponta para um local que contém os componentes necessários e o usuário tem uma licença de Microsoft Office <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.DownloadComponents" /> válida. <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -467,9 +467,9 @@
       <Docs>
         <summary><b>True</b> se todos os arquivos de suportados, como texturas de plano de fundo e gráficos, são organizados em uma pasta separada quando você salva o documento especificado como uma página da Web. <b>False</b> se os arquivos de suporte são salvos na mesma pasta da página da Web. O valor padrão é <b>True</b>.</summary>
         <value>To be added.</value>
-        <remarks><para>A nova pasta é criada na pasta onde você salvou a página da Web e é nomeada conforme o documento. Se os nomes de arquivo longos forem usados, um sufixo é adicionado ao nome da pasta. A propriedade retorna o sufixo de pasta para o suporte a idioma selecionado ou instalado, ou o <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> sufixo de pasta padrão.</para>
+        <remarks><para>A nova pasta é criada na pasta onde você salvou a página da Web e é nomeada conforme o documento. Se os nomes de arquivo longos forem usados, um sufixo é adicionado ao nome da pasta. A propriedade retorna o sufixo de pasta para o suporte de idioma que você selecionou ou instalou ou o <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> sufixo de pasta padrão.</para>
           <para>Se você salvar um documento que já tenha sido salvo anteriormente com a propriedade <b>OrganizeInFolder</b> definida com um valor diferente, o Microsoft Excel moverá automaticamente os arquivos de suporte para dentro ou para fora da pasta, conforme apropriado.</para>
-          <para>Se você não usar nomes de arquivo longos (ou seja, se a propriedade estiver definida como False ), o Microsoft Excel salvará automaticamente todos os arquivos de suporte em <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> uma pasta separada. <b></b> Os arquivos não podem ser salvos na mesma pasta da página da Web.</para>
+          <para>Se você não usar nomes de arquivo longos (ou seja, se a propriedade estiver definida como False ), Microsoft Excel salvará automaticamente todos os arquivos de suporte em <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> uma pasta separada. <b></b> Os arquivos não podem ser salvos na mesma pasta da página da Web.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -530,7 +530,7 @@
         <summary>Retorna ou define a densidade (pixels por polegada) de imagens gráficas e células de tabela em uma página da Web. Geralmente, o intervalo das configurações é de 19 a 480 e as configurações comuns para tamanhos de tela comuns são 72, 96 e 120. A configuração padrão é 96.</summary>
         <value>To be added.</value>
         <remarks><para>Esta propriedade determinará o tamanho das imagens e das células na página da Web especificada em relação ao tamanho do texto sempre que você exibir o documento salvo em um navegador da Web. As dimensões físicas da imagem ou da célula são resultado das dimensões originais (em polegadas) multiplicadas pelo número de pixels por polegada.</para>
-          <para>Use a propriedade <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.ScreenSize" /> para definir o tamanho de tela ideal para os navegadores da Web de alvo.</para>
+          <para>Você usa a propriedade para definir o tamanho de tela ideal <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.ScreenSize" /> para os navegadores da Web direcionados.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -562,7 +562,7 @@
       <Docs>
         <summary><b>True</b> se folhas de estilo em cascata (CSS) são usadas para formatação de fontes quando você exibe um documento salvo em um navegador da Web. <b>False</b> se as marcas HTML FONT e folhas de estilo em &lt; &gt; cascata são usadas. O valor padrão é <b>True</b>.</summary>
         <value>To be added.</value>
-        <remarks><para>O Microsoft Excel cria um arquivo de folha de estilos em cascata e o salva na pasta especificada ou na mesma pasta da página da Web, dependendo do valor da <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> propriedade.</para>
+        <remarks><para>Microsoft Excel cria um arquivo de folha de estilos em cascata e salva-o na pasta especificada ou na mesma pasta que sua página da Web, dependendo do valor da <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> propriedade.</para>
           <para>Você deve definir esta propriedade como <b>True</b> se o navegador da Web oferecer suporte a folhas de estilos em cascata, pois isso oferecerá um controle de formatação e um layout mais preciso na página da Web, fazendo com que se pareça mais com o seu documento (como ele aparece no Microsoft Excel).</para>
           <para> </para></remarks>
       </Docs>
@@ -595,7 +595,7 @@
       <Docs>
         <summary><b>True</b> se os arquivos de imagem não são gerados a partir de objetos desenhados quando você salva um documento como uma página da Web. <b>False</b> se forem geradas imagens. O valor padrão é <b>False</b>.</summary>
         <value>To be added.</value>
-        <remarks><para>Você pode reduzir tamanhos de arquivo não gerando imagens para objetos de desenho se seu navegador da Web oferece suporte a Vector Markup Language (VML). Você deve definir a <b>propriedade RelyOnVML</b> como <b>True</b> se estiver direcionando um navegador compatível com VML. Para navegadores que não suportam VML, a imagem não será exibida quando você exibir uma página da Web salva com essa propriedade habilitada.</para>
+        <remarks><para>Você pode reduzir tamanhos de arquivo não gerando imagens para objetos de desenho se o navegador da Web oferece suporte ao Vector Markup Language (VML). Você deve definir a <b>propriedade RelyOnVML</b> como <b>True</b> se estiver direcionando um navegador compatível com o VML. Para navegadores que não suportam VML, a imagem não será exibida quando você exibir uma página da Web salva com essa propriedade habilitada.</para>
           <para>Por exemplo, você não deve gerar imagens se a página da Web usar arquivos de imagem gerados anteriormente e se o local em que o documento foi salvo for diferente do local final da página no servidor Web.</para>
           <para> </para></remarks>
       </Docs>
@@ -626,7 +626,7 @@
         <ReturnType>Microsoft.Office.Core.MsoScreenSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define uma constante especificando o tamanho mínimo ideal da tela (largura por altura, em pixels) que você deve usar ao exibir o documento salvo em um <see cref="T:Microsoft.Office.Core.MsoScreenSize" /> navegador da Web. A constante padrão é <b>msoScreenSize800x600</b>.</summary>
+        <summary>Retorna ou define uma constante especificando o tamanho mínimo de tela ideal (largura por altura, em pixels) que você deve usar ao exibir o documento salvo em <see cref="T:Microsoft.Office.Core.MsoScreenSize" /> um navegador da Web. A constante padrão é <b>msoScreenSize800x600</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -657,7 +657,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTargetBrowser</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define uma <see cref="T:Microsoft.Office.Core.MsoTargetBrowser" /> constante indicando a versão do navegador.</summary>
+        <summary>Retorna ou define uma <see cref="T:Microsoft.Office.Core.MsoTargetBrowser" /> constante que indica a versão do navegador.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -684,7 +684,7 @@
       <Parameters />
       <Docs>
         <summary>Define o sufixo de pasta para o documento especificado com o sufixo padrão do suporte a idioma selecionado ou instalado.</summary>
-        <remarks><para>O Microsoft Excel usa o sufixo de pasta quando você salva um documento como uma página da Web, usa nomes de arquivo longos e opta por salvar os arquivos de suporte em uma pasta separada (ou seja, se as propriedades e o documento estão definidas como <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> <b>True</b>).</para>
+        <remarks><para>Microsoft Excel usa o sufixo de pasta quando você salva um documento como uma página da Web, usa nomes de arquivo longos e opta por salvar arquivos de suporte em uma pasta separada (ou seja, se as propriedades e estão definidas como <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> <b>True</b>).</para>
           <para>O sufixo é exibido no nome da pasta, depois do nome do documento. Por exemplo, se o documento for denominado "Book1" e o idioma for inglês, o nome da pasta será Book1_files. Os sufixos de pasta disponíveis estão listados no tópico <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> da propriedade.</para>
           <para> </para></remarks>
       </Docs>

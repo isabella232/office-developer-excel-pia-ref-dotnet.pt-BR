@@ -1,5 +1,5 @@
 <Type Name="CalloutFormat" FullName="Microsoft.Office.Interop.Excel.CalloutFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="144c12a51fd945c3e61defd5702f0c40849afc21" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006024" /></Metadata><TypeSignature Language="C#" Value="public interface CalloutFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6233f9c3484fe7f0bc582770ce3c7a0f5a5300316b4270daaef13eed9b0f8926" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508119" /></Metadata><TypeSignature Language="C#" Value="public interface CalloutFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalloutFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CalloutFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface CalloutFormat&#xA;Implements _IMsoDispObj" />
@@ -23,7 +23,7 @@
   </Attributes>
   <Docs>
     <summary>Contém propriedades e métodos que se aplicam a textos explicativos de linha.</summary>
-    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel.Shape.Callout" /> propriedade para retornar um objeto <b>CalloutFormat</b> .</para>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel.Shape.Callout" /> propriedade para retornar um objeto <b>CalloutFormat.</b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -56,7 +56,7 @@
         <summary>Permite que o usuário coloque uma barra de ênfase vertical para separar o texto explicativo da linha de texto explicativo.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>MsoTriState</b> pode ser uma das <b>constantes MsoTriState:</b></para>
+            <b>MsoTriState</b> pode ser uma destas <b>constantes MsoTriState:</b></para>
           <para>
             <b>msoCTrue</b>
           </para>
@@ -70,7 +70,7 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> Uma ênfase vertical separa o texto explicando da linha do texto explicau.</para>
+            <b>msoTrue</b> Uma barra de ênfase vertical separa o texto explicação da linha de texto explicativas.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -102,9 +102,9 @@
       <Docs>
         <summary>Retorna ou define o ângulo do texto explicativo.</summary>
         <value>To be added.</value>
-        <remarks><para>Se a linha do texto explicato contiver mais de um segmento de linha, a propriedade <b>Angle</b> retornará ou define o ângulo do segmento que está mais distante da caixa do texto explicando.</para>
+        <remarks><para>Se a linha de texto explicação contiver mais de um segmento de linha, a propriedade <b>Angle</b> retornará ou define o ângulo do segmento mais distante da caixa de texto explicação.</para>
           <para>
-            <b>MsoCalloutAngleType</b> pode ser uma das <b>constantes MsoCalloutAngleType:</b></para>
+            <b>MsoCalloutAngleType</b> pode ser uma destas <b>constantes MsoCalloutAngleType:</b></para>
           <para>
             <b>msoCalloutAngle30</b>
           </para>
@@ -153,7 +153,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -187,7 +187,7 @@
         <summary><b>True</b> se o local onde a linha de texto explicativo é anexada na caixa de texto do texto explicativo mudar dependendo se a origem da linha de texto explicativo (para onde o texto explicativo aponta) for para a esquerda ou para a direita da caixa de texto do texto explicativo.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>MsoTriState</b> pode ser uma das <b>constantes MsoTriState:</b></para>
+            <b>MsoTriState</b> pode ser uma destas <b>constantes MsoTriState:</b></para>
           <para>
             <b>msoCTrue</b>
           </para>
@@ -201,9 +201,9 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> O local onde a linha do texto explicatório é anexada à caixa do texto explicatório muda dependendo se a origem da linha do texto explicando (para onde o texto explicaativo aponta) está à esquerda ou à direita da caixa do texto explicatório.</para>
-          <para>Quando o valor dessa propriedade for <b>True</b>, o valor de posicionamento (a distância vertical da borda da caixa de texto do texto explicativo até o local no qual a linha de texto explicativo é anexada) será medida da parte superior da caixa de texto quando esta estiver à direita da origem e será medida a partir da parte inferior da caixa de texto quando esta estiver à esquerda da origem. Quando o valor dessa propriedade for <b>False</b>, o valor de posicionamento será sempre medido a partir da parte superior da caixa de texto, independentemente das posições relativas da caixa de texto e da origem. Use o <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> método para definir o valor de soltar e use a propriedade para retornar o valor de <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> soltar.</para>
-          <para>A definição dessa propriedade afeta um explicativo somente se ele tiver um valor de soltar definido explicitamente — ou seja, se o valor da propriedade for <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /> <b>msoCalloutDropCustom</b>. Como padrão, os textos explicativos têm valores de posicionamento definidos explicitamente quando são criados.</para>
+            <b>msoTrue</b> O local onde a linha de texto explicação é anexada à caixa de texto explicação muda dependendo da origem da linha do texto explicação (onde o texto explicação aponta para) à esquerda ou à direita da caixa de texto explicação.</para>
+          <para>Quando o valor dessa propriedade for <b>True</b>, o valor de posicionamento (a distância vertical da borda da caixa de texto do texto explicativo até o local no qual a linha de texto explicativo é anexada) será medida da parte superior da caixa de texto quando esta estiver à direita da origem e será medida a partir da parte inferior da caixa de texto quando esta estiver à esquerda da origem. Quando o valor dessa propriedade for <b>False</b>, o valor de posicionamento será sempre medido a partir da parte superior da caixa de texto, independentemente das posições relativas da caixa de texto e da origem. Use o <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> método para definir o valor de drop e use a propriedade para retornar o valor de <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> soltar.</para>
+          <para>A configuração dessa propriedade afeta um explicativo somente se ele tiver um valor de drop definido explicitamente — ou seja, se o valor da propriedade for <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /> <b>msoCalloutDropCustom</b>. Como padrão, os textos explicativos têm valores de posicionamento definidos explicitamente quando são criados.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -233,12 +233,12 @@
         <summary>Aplica-se somente a textos explicativos cujas linhas consistam em mais de um segmento (tipos <b>msoCalloutThree</b> e <b>msoCalloutFour</b>).</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>MsoTriState</b> pode ser uma das <b>constantes MsoTriState:</b></para>
+            <b>MsoTriState</b> pode ser uma destas <b>constantes MsoTriState:</b></para>
           <para>
             <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse</b> O primeiro segmento do texto explicando mantém o comprimento fixo especificado pela propriedade sempre que o texto <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> explicando é movido.</para>
+            <b>msoFalse</b> O primeiro segmento do texto explicando mantém o comprimento fixo especificado pela propriedade sempre que <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> o texto explicação for movido.</para>
           <para>
             <b>msoTriStateMixed</b>
           </para>
@@ -246,8 +246,8 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> O primeiro segmento da linha do texto explicaativo (o segmento anexado à caixa do texto explicaativo) é dimensionado automaticamente sempre que o texto explicaativo é movido.</para>
-          <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> método para definir essa propriedade como <b>msoTrue</b>e use o método para definir essa propriedade <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> como <b>msoFalse</b>.</para>
+            <b>msoTrue</b> O primeiro segmento da linha de texto explicando (o segmento anexado à caixa de texto explicando) é dimensionado automaticamente sempre que o texto explicação é movido.</para>
+          <para>Use o método para definir essa propriedade como <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> <b>msoTrue</b>e use o método para definir essa propriedade <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> como <b>msoFalse</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -273,8 +273,8 @@
       <Parameters />
       <Docs>
         <summary>Especifica que o primeiro segmento do texto explicativo (o segmento anexado à caixa do texto explicativo) seja dimensionado automaticamente quando o texto explicativo for movido.</summary>
-        <remarks><para>O <b>método AutomaticLength</b> só se aplica a textos desautorização cujas linhas consistem em mais de um segmento (tipos <b>msoCalloutThree</b> e <b>msoCalloutFour</b>).</para>
-          <para>Use o método para especificar que o primeiro segmento da linha do texto explicato retém o comprimento fixo retornado pela propriedade sempre que o texto <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> explicato for movido.</para>
+        <remarks><para>O <b>método AutomaticLength</b> aplica-se apenas a textos de texto de texto texto cujas linhas consistem em mais de um segmento (tipos <b>msoCalloutThree</b> e <b>msoCalloutFour</b>).</para>
+          <para>Use o método para especificar que o primeiro segmento da linha de texto explicação mantém o comprimento fixo retornado pela propriedade sempre que o <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> texto explicação for movido.</para>
           <para>A aplicação desse método define a <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> propriedade como <b>True</b>.</para>
           <para> </para></remarks>
       </Docs>
@@ -308,7 +308,7 @@
         <summary>Representa as opções de visibilidade para a borda do objeto.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>MsoTriState</b> pode ser uma das <b>constantes MsoTriState:</b></para>
+            <b>MsoTriState</b> pode ser uma destas <b>constantes MsoTriState:</b></para>
           <para>
             <b>msoCTrue</b> Não se aplica a esse objeto.</para>
           <para>
@@ -316,7 +316,7 @@
           <para>
             <b>msoTriStateMixed</b> Não se aplica a esse objeto.</para>
           <para>
-            <b>msoTriStateToggle</b> Permite que o usuário alternar a borda de visível para invisível e vice-versa.</para>
+            <b>msoTriStateToggle</b> Permite que o usuário alternar a borda do visível para o invisível e vice-versa.</para>
           <para>
             <b>msoTrue</b> Padrão. Define a borda como visível.</para>
           <para> </para></remarks>
@@ -378,9 +378,9 @@
         <Parameter Name="Drop" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Drop">Obrigatório <b>Único</b>. A distância da altura, em pontos.</param>
+        <param name="Drop">Obrigatório <b>Single</b>. A distância da altura, em pontos.</param>
         <summary>Define a distância vertical (em pontos) da borda da caixa delimitadora até o lugar onde a linha de texto explicativo é anexada à caixa de texto de texto.</summary>
-        <remarks><para>Essa distância é medida a partir da parte superior da caixa de texto, a menos que a propriedade seja definida como True e a caixa de texto esteja à esquerda da origem da linha do texto explicativa (o lugar para o qual o texto explicativa aponta), nesse caso, a distância de soltar é medida a partir da parte inferior da caixa de <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> texto. <b></b></para>
+        <remarks><para>Essa distância é medida da parte superior da caixa de texto, a menos que a propriedade seja definida como True e a caixa de texto esteja à esquerda da origem da linha de texto explicativa (o local para o qual o texto explicativa aponta), nesse caso, a distância de soltar é medida da parte inferior da caixa <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> de texto. <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -407,11 +407,11 @@
         <Parameter Name="Length" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Length">Obrigatório <b>Único</b>. O comprimento do primeiro segmento do texto explicando em pontos.</param>
-        <summary>Especifica que o primeiro segmento da linha do texto explicaativo (o segmento anexado à caixa do texto explicatativo) mantém um comprimento fixo sempre que o texto explicaativo for movido.</summary>
-        <remarks><para>O <b>método CustomLength</b> aplica-se somente a textos despotivos cujas linhas consistem em mais de um segmento (tipos <b>msoCalloutThree</b> e <b>msoCalloutFour</b>).</para>
-          <para>Use o método para especificar que o primeiro segmento da linha do callout seja dimensionado automaticamente <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> sempre que o callout for movido.</para>
-          <para>A aplicação desse método define a propriedade como False e define a propriedade como <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> o valor especificado para o <b></b> <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> <b>argumento</b> Length.</para>
+        <param name="Length">Obrigatório <b>Single</b>. O comprimento do primeiro segmento do texto explicação em pontos.</param>
+        <summary>Especifica que o primeiro segmento da linha de texto explicativas (o segmento anexado à caixa de texto explicação) mantém um comprimento fixo sempre que o texto explicação for movido.</summary>
+        <remarks><para>O <b>método CustomLength</b> aplica-se apenas a textos de texto de texto texto cujas linhas consistem em mais de um segmento (tipos <b>msoCalloutThree</b> e <b>msoCalloutFour</b>).</para>
+          <para>Use o método para especificar que o primeiro segmento da linha de explicação seja dimensionado automaticamente <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> sempre que o callout for movido.</para>
+          <para>A aplicação desse método define a propriedade como False e define a propriedade como o <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> valor especificado para o argumento <b></b> <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> <b>Length.</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -438,11 +438,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Para textos explicativo com um valor de soltar explicitamente definido, retorna a distância vertical (em pontos) da borda da caixa delimitada por texto até o local onde a linha do texto explicativo é anexada à caixa de texto.</summary>
+        <summary>Para textos explicadores com um valor de soltar definido explicitamente, retorna a distância vertical (em pontos) da borda da caixa delimitada por texto até o local onde a linha de texto explicativo é anexada à caixa de texto.</summary>
         <value>To be added.</value>
-        <remarks><para>A distância é medida a partir da parte superior da caixa de texto, a menos que a propriedade seja definida como True e a caixa de texto esteja à esquerda da origem da linha do texto explicativa (o lugar para o qual o texto explicativa aponta), nesse caso, a distância de soltar é medida a partir da parte inferior da caixa de <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> texto. <b></b></para>
+        <remarks><para>A distância é medida da parte superior da caixa de texto, a menos que a propriedade esteja definida como True e a caixa de texto esteja à esquerda da origem da linha de texto explicativa (o local para o qual o texto explicativa aponta), nesse caso, a distância de soltar é medida da parte inferior da caixa <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> de texto. <b></b></para>
           <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> método para definir o valor dessa propriedade.</para>
-          <para>O valor dessa propriedade reflete com precisão a posição do anexo de linha do texto explicativo na caixa de texto somente se o texto explicativo tiver um valor de posicionamento explicitamente definido — ou seja, se o valor da propriedade for <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /> <b>msoCalloutDropCustom</b>.</para>
+          <para>O valor dessa propriedade reflete com precisão a posição do anexo de linha de texto explicativo para a caixa de texto somente se o texto explicativo tiver um valor de soltar explicitamente definido , ou seja, se o valor da propriedade for <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /> <b>msoCalloutDropCustom</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -472,7 +472,7 @@
         <summary>Retorna um valor que indica onde a linha de texto explicativo é anexada à caixa do texto explicativo.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>MsoCalloutDropType</b> pode ser uma das <b>constantes MsoCalloutDropType:</b></para>
+            <b>MsoCalloutDropType</b> pode ser uma destas <b>constantes MsoCalloutDropType:</b></para>
           <para>
             <b>msoCalloutDropCenter</b>
           </para>
@@ -488,7 +488,7 @@
           <para>
             <b>msoCalloutDropTop</b>
           </para>
-          <para>Se o tipo de posicionamento do texto explicato for <b>msoCalloutDropCustom</b>, os valores das propriedades e as posições relativas da caixa do texto explicato e da origem da linha do texto explicato (o local para o qual o texto explicato aponta) serão usados para determinar onde a linha do texto explicato é anexada à caixa <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> de texto.</para>
+          <para>Se o tipo de texto explicante for <b>msoCalloutDropCustom</b>, os valores das propriedades e e as posições relativas da caixa de texto explicante e da origem da linha de texto explicante (o local para o qual o texto explicato aponta) serão usados para determinar onde a linha de texto explicante é anexada à caixa <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> de texto.</para>
           <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> método para definir o valor dessa propriedade.</para>
           <para> </para></remarks>
       </Docs>
@@ -547,9 +547,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando a propriedade do texto desalinhado especificado é definida como False , retorna o comprimento (em pontos) do primeiro segmento da linha do texto desalinhado (o segmento anexado à caixa do <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> texto desalinhado). <b></b></summary>
+        <summary>Quando a propriedade do texto especificado é definida como False , retorna o comprimento (em pontos) do primeiro segmento da linha de texto-texto (o segmento anexado à caixa de texto <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> . <b></b></summary>
         <value>To be added.</value>
-        <remarks><para>A <b>propriedade Length</b> só se aplica a textos despotivos cujas linhas consistem em mais de um segmento (tipos <b>msoCalloutThree</b> e <b>msoCalloutFour</b>).</para>
+        <remarks><para>A <b>propriedade Length</b> só se aplica a textos de textos de texto texto cujas linhas consistem em mais de um segmento (tipos <b>msoCalloutThree</b> e <b>msoCalloutFour</b>).</para>
           <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> método para definir o valor dessa propriedade para um <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> objeto.</para>
           <para> </para></remarks>
       </Docs>
@@ -605,7 +605,7 @@
         <Parameter Name="DropType" Type="Microsoft.Office.Core.MsoCalloutDropType" />
       </Parameters>
       <Docs>
-        <param name="DropType">Obrigatório. <see cref="T:Microsoft.Office.Interop.Office.MsoCalloutDropType" /> A posição inicial da linha do texto explicativo em relação à caixa delimitadora de texto. Pode ser uma destas <b>constantes MsoCalloutDropType:</b> <b>msoCalloutDropBottom</b><b>msoCalloutDropCenter</b><b>msoCalloutDropCustom</b> Specifying <b>msoCalloutDropCustom</b> for this argument will cause your code to fail. <b>msoCalloutDropMixed</b><b>msoCalloutDropTop</b></param>
+        <param name="DropType">Obrigatório <see cref="T:Microsoft.Office.Interop.Office.MsoCalloutDropType" /> . A posição inicial da linha do texto explicativo em relação à caixa delimitadora de texto. Pode ser uma destas <b>constantes MsoCalloutDropType:</b> <b>msoCalloutDropBottom</b><b>msoCalloutDropCenter</b><b>msoCalloutDropCustom</b> Especificando <b>msoCalloutDropCustom</b> para este argumento fará com que seu código falhe. <b>msoCalloutDropMixed</b><b>msoCalloutDropTop</b></param>
         <summary>Especifica se a linha do texto explicativo é anexada à parte superior, inferior ou central da caixa do texto explicativo ou se ela é anexada a um ponto situado a uma distância especificada da extremidade superior ou inferior da caixa de texto.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -636,10 +636,10 @@
         <ReturnType>Microsoft.Office.Core.MsoCalloutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o tipo de formato de texto explicatil.</summary>
+        <summary>Retorna ou define o tipo de formato de texto explicação.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>MsoCalloutType</b> pode ser uma das <b>constantes MsoCalloutType:</b></para>
+            <b>MsoCalloutType</b> pode ser uma destas <b>constantes MsoCalloutType:</b></para>
           <para>
             <b>msoCalloutFour</b>
           </para>

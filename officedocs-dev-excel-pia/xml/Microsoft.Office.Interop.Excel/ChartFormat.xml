@@ -1,5 +1,5 @@
 <Type Name="ChartFormat" FullName="Microsoft.Office.Interop.Excel.ChartFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="18e25547dff0fcae494f7e6a31d98406eeac4918" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005863" /></Metadata><TypeSignature Language="C#" Value="public interface ChartFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e3245e7cc44c4a433428aa9206fe02b93dfadf2f6faa61de9c0f1fbc41b256fc" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54507559" /></Metadata><TypeSignature Language="C#" Value="public interface ChartFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartFormat" />
@@ -77,8 +77,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna <see cref="T:Microsoft.Office.Interop.Excel._Application" /> um objeto que representa o aplicativo Microsoft Excel. Quando usada com um qualificador de objeto, essa propriedade retornará um objeto <b>Application</b> que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto Automation do OLE para retornar o aplicativo desse objeto). Somente leitura.</summary>
-        <value><b>Aplicativo</b> (veja acima)</value>
+        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna um <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa o Microsoft Excel aplicativo. Quando usada com um qualificador de objeto, essa propriedade retornará um objeto <b>Application</b> que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto Automation do OLE para retornar o aplicativo desse objeto). Somente leitura.</summary>
+        <value><b>Aplicativo</b> (consulte acima)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,7 +138,7 @@
       <Docs>
         <summary>Retorna uma constante na <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeração que indica o aplicativo no qual esse objeto foi criado. <b>Integer</b> somente leitura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
-        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.  A propriedade foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo tem um código de criador de <see cref="P:Microsoft.Office.Interop.Excel.ChartFormat.Creator" /> quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.  A propriedade foi projetada para ser usada Microsoft Excel para o Macintosh, onde cada aplicativo <see cref="P:Microsoft.Office.Interop.Excel.ChartFormat.Creator" /> tem um código criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -165,7 +165,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.FillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um  <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto para o elemento de gráfico pai que contém propriedades de formatação de preenchimento para o elemento de gráfico. Somente leitura.</summary>
+        <summary>Retorna um objeto para o elemento gráfico pai que contém propriedades de formatação de preenchimento  <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> para o elemento gráfico. Somente leitura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -193,7 +193,7 @@
         <ReturnType>Microsoft.Office.Core.GlowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um  <see cref="T:Microsoft.Office.Core.GlowFormat" /> objeto para um gráfico especificado que contém as propriedades de formatação de brilho do elemento de gráfico. Somente leitura.</summary>
+        <summary>Retorna um objeto para um gráfico especificado que contém propriedades de formatação de brilho  <see cref="T:Microsoft.Office.Core.GlowFormat" /> para o elemento gráfico. Somente leitura.</summary>
         <value><see cref="T:Microsoft.Office.Core.GlowFormat" /></value>
         <remarks><para>O efeito de brilho adiciona uma borda colorida vibrante aos gráficos.  </para>
           <para> </para></remarks>
@@ -222,9 +222,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.LineFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.LineFormat" /> objeto que contém as propriedades de formatação de linha para o elemento de gráfico especificado. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.LineFormat" /> objeto que contém propriedades de formatação de linha para o elemento gráfico especificado. Somente leitura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.LineFormat" /></value>
-        <remarks><para>Para uma linha, o objeto representa a própria linha; para um <see cref="T:Microsoft.Office.Interop.Excel.LineFormat" /> gráfico com uma borda, o objeto representa a <see cref="T:Microsoft.Office.Interop.Excel.LineFormat" /> borda.</para>
+        <remarks><para>Para uma linha, o objeto representa a própria linha; para um gráfico com <see cref="T:Microsoft.Office.Interop.Excel.LineFormat" /> uma borda, o <see cref="T:Microsoft.Office.Interop.Excel.LineFormat" /> objeto representa a borda.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -251,7 +251,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai do objeto especificado. Somente leitura.</summary>
+        <summary>Retorna o objeto pai para o objeto especificado. Somente leitura.</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -307,7 +307,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ShadowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.ShadowFormat" /> objeto que contém as propriedades de formatação de sombra para o elemento de gráfico. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.ShadowFormat" /> objeto que contém propriedades de formatação de sombra para o elemento gráfico. Somente leitura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.ShadowFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -335,7 +335,7 @@
         <ReturnType>Microsoft.Office.Core.SoftEdgeFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um objeto para um gráfico especificado que contém propriedades de formatação de borda <see cref="T:Microsoft.Office.Core.SoftEdgeFormat" /> suave para o gráfico. Somente leitura.</summary>
+        <summary>Retorna um objeto para um gráfico especificado que contém propriedades de formatação de borda suave <see cref="T:Microsoft.Office.Core.SoftEdgeFormat" /> para o gráfico. Somente leitura.</summary>
         <value><see cref="T:Microsoft.Office.Core.SoftEdgeFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -363,7 +363,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TextFrame2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.TextFrame2" /> objeto que contém a formatação de texto para o elemento de gráfico especificado. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.TextFrame2" /> objeto que contém formatação de texto para o elemento gráfico especificado. Somente leitura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.TextFrame2" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -391,7 +391,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ThreeDFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um objeto que contém propriedades de formatação de <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> efeito 3D para o gráfico especificado. Somente leitura.</summary>
+        <summary>Retorna um objeto que contém propriedades de formatação de efeito <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> 3D para o gráfico especificado. Somente leitura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>

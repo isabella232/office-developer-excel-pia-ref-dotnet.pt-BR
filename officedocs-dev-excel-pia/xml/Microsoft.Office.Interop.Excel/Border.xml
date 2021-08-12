@@ -1,5 +1,5 @@
 <Type Name="Border" FullName="Microsoft.Office.Interop.Excel.Border">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="615b6d793dd88e23d55febf94b9549b59f9d20c5" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006143" /></Metadata><TypeSignature Language="C#" Value="public interface Border" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="40bc9efc8b01d37573c0b0c93ad2d175a6008a340dd3d9a2aaa04718cb214da5" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54507734" /></Metadata><TypeSignature Language="C#" Value="public interface Border" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Border" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Border" />
   <TypeSignature Language="VB.NET" Value="Public Interface Border" />
@@ -22,10 +22,10 @@
   </Attributes>
   <Docs>
     <summary>Representa a borda de um objeto.</summary>
-    <remarks><para>A maioria dos objetos com borda (todos exceto os objetos e os objetos) têm uma borda que é tratada como uma única entidade, independentemente de quantos <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <see cref="T:Microsoft.Office.Interop.Excel.Style" /> lados ela tenha. A borda inteira deve ser retornada como uma unidade. Use a <b>propriedade Border</b> para retornar o <b>objeto Border</b> para esse tipo de objeto.</para>
+    <remarks><para>A maioria dos objetos bordados (todos, exceto os objetos e) têm uma borda que é tratada como uma única entidade, independentemente de quantos <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <see cref="T:Microsoft.Office.Interop.Excel.Style" /> lados ela tenha. A borda inteira deve ser retornada como uma unidade. Use a <b>propriedade Border</b> para retornar o <b>objeto Border</b> para esse tipo de objeto.</para>
       <para>
-        <b>Os</b> objetos <b>Range e Style</b> têm quatro bordas distintas — esquerda, direita, superior e inferior — que podem ser retornadas individualmente ou como um grupo. Use a <b>propriedade Borders</b> de um <b>objeto Range</b> ou <b>Style</b> para retornar a coleção <b>Borders,</b> que contém todas as quatro bordas e trata as bordas como uma unidade.</para>
-      <para>Use <b>bordas</b>( <paramref name="index" /> ), onde identifica a <paramref name="index" /> borda, para retornar um único <b>objeto Border</b> .</para>
+        <b>Os</b> objetos Range e <b>Style</b> têm quatro bordas discretas — esquerda, direita, superior e inferior — que podem ser retornadas individualmente ou como um grupo. Use a <b>propriedade Borders</b> de um <b>objeto Range</b> ou <b>Style</b> para retornar a coleção <b>Borders,</b> que contém todas as quatro bordas e trata as bordas como uma unidade.</para>
+      <para>Use <b>Bordas</b>( <paramref name="index" /> ), onde identifica a <paramref name="index" /> borda, para retornar um único <b>objeto Border.</b></para>
       <para>
         <paramref name="Index" /> pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> constantes: <b>xlDiagonalDown</b>, <b>xlDiagonalUp</b>, <b>xlEdgeBottom</b>, <b>xlEdgeLeft</b>, <b>xlEdgeRight</b>, <b>xlEdgeTop</b>, <b>xlInsideHorizontal</b>ou <b>xlInsideVertical</b>.</para>
       <para> </para></remarks>
@@ -54,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,7 +85,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a cor principal da borda.</summary>
+        <summary>Retorna ou define a cor primária da borda.</summary>
         <value>To be added.</value>
         <remarks><para>Use a função <b>RGB</b> para criar um valor de cor.</para>
           <para> </para></remarks>
@@ -199,7 +199,7 @@
             <b>xlDashDot</b>
           </para>
           <para>
-            <b>xlDashDotDotDot</b>
+            <b>xlDashDotDot</b>
           </para>
           <para>
             <b>xlDot</b>
