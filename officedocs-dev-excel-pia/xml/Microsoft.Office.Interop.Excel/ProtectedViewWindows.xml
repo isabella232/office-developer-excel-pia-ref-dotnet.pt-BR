@@ -1,5 +1,5 @@
 <Type Name="ProtectedViewWindows" FullName="Microsoft.Office.Interop.Excel.ProtectedViewWindows">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="66b22fff8688e9bbf701a61d74932c01a62ad6e6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997184" /></Metadata><TypeSignature Language="C#" Value="public interface ProtectedViewWindows : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="30fab17c8151b00f07a94b821da32bbf4c527f0d009946e64cb69338a4787943" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516512" /></Metadata><TypeSignature Language="C#" Value="public interface ProtectedViewWindows : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ProtectedViewWindows implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" />
   <TypeSignature Language="VB.NET" Value="Public Interface ProtectedViewWindows&#xA;Implements IEnumerable" />
@@ -25,7 +25,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção dos objetos que representam todas as janelas de Exibição Protegido que <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> estão abertas no aplicativo.</summary>
+    <summary>Uma coleção dos objetos que representam todas as janelas de Exibição Protegida que <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> estão abertas no aplicativo no momento.</summary>
     <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel._Application.ProtectedViewWindows" /> propriedade para retornar a <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> coleção.</para>
       <para> </para></remarks>
   </Docs>
@@ -88,7 +88,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna <see cref="T:Microsoft.Office.Interop.Excel.Application" /> um objeto que representa o aplicativo Microsoft Excel. Quando usada com um qualificador de objeto, essa propriedade retorna um objeto que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto de automação OLE para retornar o aplicativo <see cref="T:Microsoft.Office.Interop.Excel.Application" /> desse objeto).</summary>
+        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo. Quando usada com um qualificador de objeto, essa propriedade retorna um objeto que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto de Automação OLE para retornar o aplicativo <see cref="T:Microsoft.Office.Interop.Excel.Application" /> desse objeto).</summary>
         <value>Um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
         <remarks><para>Somente leitura.</para>
           <para> </para></remarks>
@@ -147,8 +147,8 @@
       <Docs>
         <summary>Obtém um inteiro de 32 <b>bits</b> que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>Um inteiro de 32 <b>bits</b> que indica o aplicativo no qual esse objeto foi criado.</value>
-        <remarks><para>Somente leitura <b>long</b>.</para>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. A propriedade foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo tem um código de criador de <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindows.Creator" /> quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+        <remarks><para>Somente leitura <b>longa</b>.</para>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. A propriedade foi projetada para ser usada Microsoft Excel para o Macintosh, onde cada aplicativo <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindows.Creator" /> tem um código criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -243,7 +243,7 @@
       <Docs>
         <param name="Filename">O nome da pasta de trabalho (os caminhos são aceitos).</param>
         <param name="Password">A senha para abertura da pasta de trabalho.</param>
-        <param name="AddToMru"><b>true</b> para adicionar o nome de arquivo à lista de arquivos usados recentemente na guia Recente do exibição Backstage.</param>
+        <param name="AddToMru"><b>true</b> para adicionar o nome do arquivo à lista de arquivos usados recentemente na guia Recente do exibição Backstage.</param>
         <param name="RepairMode"><b>true</b> para reparar a pasta de trabalho para evitar corrupção de arquivo.</param>
         <summary>Abre a pasta de trabalho especificada na janela Modo de Exibição Protegido.</summary>
         <returns>Um <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objeto.</returns>

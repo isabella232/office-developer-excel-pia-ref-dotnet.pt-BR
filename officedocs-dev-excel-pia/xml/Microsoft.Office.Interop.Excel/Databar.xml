@@ -1,5 +1,5 @@
 <Type Name="Databar" FullName="Microsoft.Office.Interop.Excel.Databar">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="5af0ef6023d3a14611c655e4cb96ffc4b3bf17c5" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005646" /></Metadata><TypeSignature Language="C#" Value="public interface Databar" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="58da1f5d7a0f301d86f744101226259d5c6859057e793abf1326004924b7db6a" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54509533" /></Metadata><TypeSignature Language="C#" Value="public interface Databar" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Databar" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Databar" />
   <TypeSignature Language="VB.NET" Value="Public Interface Databar" />
@@ -22,10 +22,10 @@
   </Attributes>
   <Docs>
     <summary>Representa uma regra de formatação condicional da barra de dados. Aplicar uma barra de dados a um intervalo ajuda você a ver o valor de uma célula em relação a outras células.</summary>
-    <remarks><para>Todos os objetos de formatação condicional estão contidos em <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> um objeto de coleção, que é filho de uma <see cref="T:Microsoft.Office.Interop.Excel.Range" /> coleção. Você pode criar uma regra de formatação de barra de dados usando o <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método ou o método da <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddDatabar" /> <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> coleção.</para>
-      <para>Use as propriedades e os valores do objeto para definir os valores da barra mais curta e da barra mais longa <see cref="P:Microsoft.Office.Interop.Excel.Databar.MinPoint" /> de um intervalo de <see cref="P:Microsoft.Office.Interop.Excel.Databar.MaxPoint" /> <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> dados. Esses properites <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> retornam um objeto, no qual você pode especificar como os limites são avaliados.</para>
+    <remarks><para>Todos os objetos de formatação condicional estão contidos em um <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> objeto de coleção, que é filho de uma <see cref="T:Microsoft.Office.Interop.Excel.Range" /> coleção. Você pode criar uma regra de formatação de barra de dados usando o <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> ou o método da <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddDatabar" /> <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> coleção.</para>
+      <para>Você usa as propriedades e do objeto para definir os valores da barra mais curta e da barra mais longa <see cref="P:Microsoft.Office.Interop.Excel.Databar.MinPoint" /> de um intervalo de <see cref="P:Microsoft.Office.Interop.Excel.Databar.MaxPoint" /> <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> dados. Esses properites retornam <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> um objeto, no qual você pode especificar como os limites são avaliados.</para>
       <para> </para></remarks>
-    <example><para>O exemplo a seguir cria um intervalo de dados e aplica uma barra de dados ao intervalo. Você observará que como há uma um valor extremamente alto e baixo no intervalo, os valores médios têm barras de dados de tamanho semelhante. Para desambiguar os valores intermediários, o código de exemplo usa o objeto para alterar como os limites são avaliados <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> como percentis.</para></example>
+    <example><para>O exemplo a seguir cria um intervalo de dados e aplica uma barra de dados ao intervalo. Você observará que como há uma um valor extremamente alto e baixo no intervalo, os valores médios têm barras de dados de tamanho semelhante. Para desambiguar os valores intermediários, o código de exemplo usa o objeto para alterar como os limites são avaliados <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> em percentis.</para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -51,8 +51,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna um  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa o aplicativo Microsoft Office Excel. Quando usado com um qualificador de objeto, essa propriedade retorna um objeto <b>Application</b> que representa o criador do objeto especificado. Somente leitura.</summary>
-        <value><b>Aplicativo</b> (veja acima)</value>
+        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna um <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa o Microsoft Office Excel aplicativo. Quando usado com um qualificador de objeto, essa propriedade retorna um objeto <b>Application</b> que representa o criador do objeto especificado. Somente leitura.</summary>
+        <value><b>Aplicativo</b> (consulte acima)</value>
         <remarks><para>Você pode usar essa propriedade com um objeto de Automação OLE para retornar o aplicativo desse objeto.</para>
           <para> </para></remarks>
       </Docs>
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um objeto especificando o intervalo de células ao qual a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> regra de formatação é aplicada.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto especificando o intervalo de células ao qual a regra de formatação é aplicada.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Range" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -109,7 +109,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtém a cor do eixo para células com formatação condicional como barras de dados.</summary>
-        <value>A cor do eixo das células com formatação condicional como barras de dados.</value>
+        <value>A cor do eixo para células com formatação condicional como barras de dados.</value>
         <remarks><para>Somente leitura.</para>
           <para> </para></remarks>
       </Docs>
@@ -143,7 +143,7 @@
         <summary>Obtém ou define a posição do eixo das barras de dados especificadas por uma regra de formatação condicional.</summary>
         <value>A posição do eixo das barras de dados especificadas por uma regra de formatação condicional.</value>
         <remarks><para>Leitura/gravação.</para>
-          <para>O eixo das barras de dados é exibido somente quando a propriedade é ou , e quando há valores negativos no intervalo de valores especificado com uma regra de formatação condicional da barra <see cref="P:Microsoft.Office.Interop.Excel.Databar.AxisPosition" /> <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisAutomatic" /> de <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisMidpoint" /> dados. O valor padrão para a <see cref="P:Microsoft.Office.Interop.Excel.Databar.AxisPosition" /> propriedade é <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisAutomatic" /> .</para>
+          <para>O eixo para barras de dados é exibido somente quando a propriedade é ou , e quando há valores negativos no intervalo de valores especificados com uma regra de formatação condicional da barra de <see cref="P:Microsoft.Office.Interop.Excel.Databar.AxisPosition" /> <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisAutomatic" /> <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisMidpoint" /> dados. O valor padrão da <see cref="P:Microsoft.Office.Interop.Excel.Databar.AxisPosition" /> propriedade é <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisAutomatic" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -199,7 +199,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> objeto que você pode usar para modificar a cor das barras em um formato condicional de barra de dados.</summary>
+        <summary>Retorna um objeto que você pode usar para modificar a cor das barras <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> em um formato condicional da barra de dados.</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -233,7 +233,7 @@
         <summary>Obtém ou define como uma barra de dados é preenchida com cor.</summary>
         <value>Especifica como uma barra de dados é preenchida com cores.</value>
         <remarks><para>Leitura/gravação.</para>
-          <para>O valor padrão da <see cref="P:Microsoft.Office.Interop.Excel.Databar.BarFillType" /> propriedade é <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarFillType.xlDataBarFillGradient" /> .</para>
+          <para>O valor padrão da propriedade <see cref="P:Microsoft.Office.Interop.Excel.Databar.BarFillType" /> é <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarFillType.xlDataBarFillGradient" />.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -262,7 +262,7 @@
       <Docs>
         <summary>Retorna uma constante na <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeração que indica o aplicativo no qual esse objeto foi criado. Somente leitura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
-        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. A propriedade foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo tem um código de criador de <see cref="P:Microsoft.Office.Interop.Excel.Databar.Creator" /> quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. A propriedade foi projetada para ser usada Microsoft Excel para o Macintosh, onde cada aplicativo <see cref="P:Microsoft.Office.Interop.Excel.Databar.Creator" /> tem um código criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -318,9 +318,9 @@
       </ReturnValue>
       <Docs>
         <summary>Obtém ou define a direção em que a barra de dados é exibida.</summary>
-        <value>A direção na qual a barra de dados é exibida.</value>
+        <value>A direção em que a barra de dados é exibida.</value>
         <remarks><para>Leitura/gravação.</para>
-          <para>Pode ser um dos <see cref="T:Microsoft.Office.Interop.Excel.Constants" /> seguintes: <see cref="F:Microsoft.Office.Interop.Excel.Constants.xlContext" /> , <see cref="F:Microsoft.Office.Interop.Excel.Constants.xlLTR" /> (da esquerda para a direita) ou <see cref="F:Microsoft.Office.Interop.Excel.Constants.xlRTL" /> (da direita para a esquerda).</para>
+          <para>Pode ser um dos seguintes <see cref="T:Microsoft.Office.Interop.Excel.Constants" /> : <see cref="F:Microsoft.Office.Interop.Excel.Constants.xlContext" /> , <see cref="F:Microsoft.Office.Interop.Excel.Constants.xlLTR" /> (da esquerda para a direita) ou <see cref="F:Microsoft.Office.Interop.Excel.Constants.xlRTL" /> (da direita para a esquerda).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -379,9 +379,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ConditionValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um objeto que especifica como a barra mais <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> longa é avaliada para um formato condicional de barra de dados.</summary>
+        <summary>Retorna um objeto que especifica como a barra mais longa é avaliada para um formato condicional da <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> barra de dados.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /></value>
-        <remarks><para>Você pode especificar o tipo e o valor da avaliação usando as <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" /> propriedades <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Value" /> e o tipo.</para>
+        <remarks><para>Você pode especificar o tipo e o valor da avaliação usando as <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" /> propriedades <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Value" /> e.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -408,9 +408,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ConditionValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> objeto que especifica como a barra mais curta é avaliada para um formato condicional de barra de dados.</summary>
+        <summary>Retorna um objeto que especifica como a barra mais curta é avaliada para um formato condicional da barra <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> de dados.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /></value>
-        <remarks><para>Você pode especificar o tipo e o valor da avaliação usando as <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" /> propriedades <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Value" /> e o tipo.</para>
+        <remarks><para>Você pode especificar o tipo e o valor da avaliação usando as <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" /> propriedades <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Value" /> e.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -438,7 +438,7 @@
       <Docs>
         <param name="Range">O intervalo ao qual esta regra de formatação se aplicará.</param>
         <summary>Define o intervalo de células ao qual esta regra de formatação se aplicará.</summary>
-        <remarks><para>O intervalo deve estar no estilo de referência A1 e estar inteiramente contido dentro da planilha que é o pai da <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> coleção. Pode incluir o operador de intervalo (dois-pontos), o operador de interseção (um espaço), ou o operador de união (uma vírgula). Também pode incluir sinais de dólar, mas eles são ignorados.</para>
+        <remarks><para>O intervalo deve estar no estilo de referência A1 e estar inteiramente contido na planilha que é o pai da <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> coleção. Pode incluir o operador de intervalo (dois-pontos), o operador de interseção (um espaço), ou o operador de união (uma vírgula). Também pode incluir sinais de dólar, mas eles são ignorados.</para>
           <para>Você também pode usar um nome definido de local em qualquer parte do intervalo, mas o nome deve estar no idioma da macro.</para>
           <para> </para></remarks>
       </Docs>
@@ -466,7 +466,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.NegativeBarFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém <see cref="T:Microsoft.Office.Interop.Excel.NegativeBarFormat" /> o objeto associado a uma regra de formatação condicional da barra de dados.</summary>
+        <summary>Obtém o objeto associado a uma regra de formatação condicional da <see cref="T:Microsoft.Office.Interop.Excel.NegativeBarFormat" /> barra de dados.</summary>
         <value>O objeto associado a uma regra de formatação condicional da <see cref="T:Microsoft.Office.Interop.Excel.NegativeBarFormat" /> barra de dados.</value>
         <remarks><para>Somente leitura.</para>
           <para> </para></remarks>
@@ -495,7 +495,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai do objeto especificado. Somente leitura.</summary>
+        <summary>Retorna o objeto pai para o objeto especificado. Somente leitura.</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -526,7 +526,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns or sets a <b>Integer</b> value that specifies the length of the longest data bar as a percentage of cell width.</summary>
+        <summary>Retorna ou define um <b>valor Integer</b> que especifica o comprimento da barra de dados mais longa como uma porcentagem da largura da célula.</summary>
         <value><b>Integer</b></value>
         <remarks><para>O valor deve ser um número inteiro entre 0 e 100.</para>
           <para> </para></remarks>
@@ -558,7 +558,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns or sets a <b>Integer</b> value that specifies the length of the shortest data bar as a percentage of cell width.</summary>
+        <summary>Retorna ou define um <b>valor Integer</b> que especifica o comprimento da barra de dados mais curta como uma porcentagem da largura da célula.</summary>
         <value><b>Integer</b></value>
         <remarks><para>O valor deve ser um número inteiro entre 0 e 100.</para>
           <para> </para></remarks>
@@ -650,7 +650,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define uma das constantes da enumeração, que determina o escopo do formato condicional quando ele é aplicado a um <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> gráfico de tabela dinâmica.</summary>
+        <summary>Retorna ou define uma das constantes da enumeração, que determina o escopo do formato condicional quando ele é aplicado <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> a um gráfico de tabela dinâmica.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /></value>
         <remarks><para>O valor padrão é <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" /> , que define o escopo usando a <see cref="P:Microsoft.Office.Interop.Excel.Databar.AppliesTo" /> propriedade.</para>
           <para> </para></remarks>
@@ -797,7 +797,7 @@
       <Docs>
         <summary>Retorna uma das constantes da <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> enumeração, que especifica o tipo de formato condicional. Somente leitura.</summary>
         <value><b>Integer</b></value>
-        <remarks><para>Essa propriedade sempre retornará um <b>valor Inteiro</b> de "4", que é equivalente a <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlDatabar" /> .</para>
+        <remarks><para>Essa propriedade sempre retornará um <b>valor Integer</b> de "4", que é equivalente a <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlDatabar" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>

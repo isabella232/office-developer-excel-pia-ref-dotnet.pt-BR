@@ -1,5 +1,5 @@
 <Type Name="_OLEObject" FullName="Microsoft.Office.Interop.Excel._OLEObject">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="af49a80aff9121295165535f61d74b6cd1d1256b" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012681" /></Metadata><TypeSignature Language="C#" Value="public interface _OLEObject" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="68d775a6630163aee28d8cfb30306ccaf7e3c4db551d8045bc35fae7ec41c67b" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516029" /></Metadata><TypeSignature Language="C#" Value="public interface _OLEObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _OLEObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel._OLEObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface _OLEObject" />
@@ -111,7 +111,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Essa propriedade retorna um objeto que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto de automação OLE para retornar o aplicativo <see cref="T:Microsoft.Office.Interop.Excel.Application" /> desse objeto). Somente leitura.</summary>
+        <summary>Essa propriedade retorna um objeto que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto de Automação OLE para retornar o aplicativo <see cref="T:Microsoft.Office.Interop.Excel.Application" /> desse objeto). Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,10 +142,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> se o objeto OLE for carregado automaticamente quando a pasta de trabalho que o contém for aberta. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> se o objeto OLE for carregado automaticamente quando a pasta de trabalho que o contém for aberta. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks><para>Esta propriedade é ignorada pelos controles ActiveX. Esses controles são carregados sempre que uma pasta de trabalho é aberta.</para>
-          <para>Para a maioria dos tipos de objeto OLE, essa propriedade não deve ser definida como <b>True</b>. Por padrão, a <b>propriedade AutoLoad</b> é definida como <b>False</b> para novos objetos OLE; isso economiza tempo e memória quando o Microsoft Excel está carregando as planilhas. A vantagem de carregar automaticamente objetos OLE é que, para objetos que representam dados voláteis, os links para dados de origem podem ser restabelecidos imediatamente e os objetos podem ser renderizados novamente, se necessário.</para>
+          <para>Para a maioria dos tipos de objeto OLE, essa propriedade não deve ser definida como <b>True</b>. Por padrão, a <b>propriedade AutoLoad</b> é definida como <b>False</b> para novos objetos OLE; isso economiza tempo e memória quando Microsoft Excel está carregando as guias de trabalho. O benefício de carregar automaticamente objetos OLE é que, para objetos que representam dados voláteis, os links para dados de origem podem ser restabelecidos imediatamente e os objetos podem ser renderizados novamente, se necessário.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -231,7 +231,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa a célula que está no canto inferior direito do objeto. Somente leitura.</summary>
+        <summary>Retorna um objeto que representa a célula que está sob o canto <see cref="T:Microsoft.Office.Interop.Excel.Range" /> inferior direito do objeto. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -341,7 +341,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. <b>XlCreatorCode somente leitura.</b></summary>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. <b>XlCreatorCode</b>somente leitura.</summary>
         <value>To be added.</value>
         <remarks><para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
           <para> </para></remarks>
@@ -572,7 +572,7 @@
       <Docs>
         <summary>A distância, em pontos, entre a borda esquerda do objeto à borda esquerda da coluna A (em uma planilha) ou da borda esquerda da área do gráfico (em um gráfico). <b>Double</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks><para>Se a janela estiver maximizada, essa propriedade retornará um número negativo que varia com base na largura da borda da janela. Definir essa propriedade como 0 (zero) fará com que a janela um pouco menor do que seria se a janela do aplicativo fosse maximizada. Em outras palavras, se a propriedade <b>Left</b> for 0 (zero), a borda esquerda da janela principal do Microsoft Excel simplesmente ficará visível na tela.</para>
+        <remarks><para>Se a janela for maximizada, essa propriedade retornará um número negativo que varia com base na largura da borda da janela. Definir essa propriedade como 0 (zero) fará com que a janela seja um pouco menor do que seria se a janela do aplicativo fosse maximizada. Em outras palavras, se <b>a propriedade Left</b> for 0 (zero), a borda esquerda da janela de Microsoft Excel principal mal ficará visível na tela.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -602,7 +602,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o intervalo de planilha vinculado ao valor do controle. Se você colocar um valor na célula, o controle assumirá esse valor. Da mesma forma, se você alterar o valor do controle, esse valor também será colocado na célula. <b>String</b> de leitura/gravação.</summary>
+        <summary>Retorna ou define o intervalo de planilha vinculado ao valor do controle. Se você colocar um valor na célula, o controle assumirá esse valor. Da mesma forma, se você alterar o valor do controle, esse valor também será colocado na célula. <b>String</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks><para>Você não pode usar esta propriedade em caixas de listagem de várias seleções.</para>
           <para> </para></remarks>
@@ -634,7 +634,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o intervalo de planilha usado para preencher a caixa de listagem especificada. A definição dessa propriedade destrói qualquer lista existente na caixa de listagem. <b>String</b> de leitura/gravação.</summary>
+        <summary>Retorna ou define o intervalo de planilha usado para preencher a caixa de listagem especificada. A definição dessa propriedade destrói qualquer lista existente na caixa de listagem. <b>String</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks><para>O Microsoft Excel lê o conteúdo de cada célula do intervalo e insere os valores da célula na caixa de listagem. A lista registra as alterações nas células do intervalo.</para>
           <para>Se a lista na caixa de listagem tiver sido criada com o método, essa <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" /> propriedade retornará uma cadeia de caracteres vazia ("").</para>
@@ -726,7 +726,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um objeto de Automação OLE associado a esse objeto OLE. Somente leitura <b>objeto</b>.</summary>
+        <summary>Retorna um objeto de Automação OLE associado a esse objeto OLE. <b>Object</b> somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -754,7 +754,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o tipo do objeto OLE. Pode ser uma das seguintes constantes <b>XlOLEType</b> : <b>xlOLELink</b> ou <b>xlOLEEmbed</b>. Retorna <b>xlOLELink</b> se o objeto estiver vinculado (ele existe fora do arquivo) ou retorna <b>xlOLEEmbed</b> se o objeto estiver incorporado (está inteiramente contido no arquivo). Somente leitura <b>objeto</b>.</summary>
+        <summary>Retorna o tipo do objeto OLE. Pode ser uma das seguintes constantes <b>XlOLEType</b> : <b>xlOLELink</b> ou <b>xlOLEEmbed</b>. Retorna <b>xlOLELink</b> se o objeto estiver vinculado (ele existe fora do arquivo) ou retorna <b>xlOLEEmbed</b> se o objeto for incorporado (ele está inteiramente contido no arquivo). Somente leitura <b>objeto</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -832,7 +832,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai do objeto especificado. Somente leitura.</summary>
+        <summary>Retorna o objeto pai para o objeto especificado. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -904,7 +904,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> se o objeto será impresso quando o documento for impresso. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> se o objeto será impresso quando o documento for impresso. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -932,7 +932,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna os identificadores programáticos do objeto. <b>String</b> somente leitura.</summary>
+        <summary>Retorna os identificadores programáticos do objeto. <b>String</b> somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -959,7 +959,7 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">Objeto <b>opcional</b>. <b>True</b> para substituir a seleção atual pelo objeto especificado. <b>False</b> para estender a seleção atual para incluir qualquer selecionada anteriormente objetos e o objeto especificado.</param>
+        <param name="Replace">Objeto <b>Opcional</b>. <b>True</b> para substituir a seleção atual pelo objeto especificado. <b>False</b> para estender a seleção atual para incluir qualquer selecionada anteriormente objetos e o objeto especificado.</param>
         <summary>Seleciona o objeto.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1188,7 +1188,7 @@
         <Parameter Name="Verb" Type="Microsoft.Office.Interop.Excel.XlOLEVerb" />
       </Parameters>
       <Docs>
-        <param name="Verb"><b>XlOLEVerb opcional.</b> O verbo sobre o qual o servidor do objeto OLE deve atuar. Se este argumento for omitido, o verbo padrão será enviado. Os verbos disponíveis são determinados pelo aplicativo de origem do objeto. Abrir e Principal (representados pelas constantes <b>XlOLEVerb</b> chamadas <b>xlOpen</b> e <b>xlPrimary</b>) são verbos típicos para um objeto OLE.</param>
+        <param name="Verb">Opcional <b>XlOLEVerb</b>. O verbo sobre o qual o servidor do objeto OLE deve atuar. Se este argumento for omitido, o verbo padrão será enviado. Os verbos disponíveis são determinados pelo aplicativo de origem do objeto. Abrir e Principal (representados pelas constantes <b>XlOLEVerb</b> chamadas <b>xlOpen</b> e <b>xlPrimary</b>) são verbos típicos para um objeto OLE.</param>
         <summary>Envia um verbo para o servidor do objeto OLE especificado.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1281,7 +1281,7 @@
       <Docs>
         <summary>Retorna a posição do objeto na ordem z. <b>Integer</b> somente leitura.</summary>
         <value>To be added.</value>
-        <remarks><para>Em qualquer coleção de objetos, o objeto no final da ordem z é (1) e o objeto na frente da ordem <paramref name="collection" /> z é <paramref name="collection" /> ( <paramref name="collection" /> .<b> Contagem</b>).</para>
+        <remarks><para>Em qualquer coleção de objetos, o objeto na parte de trás da ordem z é (1) e o objeto à frente da <paramref name="collection" /> ordem z é ( <paramref name="collection" /> <paramref name="collection" /> .<b> Contagem</b>).</para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -1,5 +1,5 @@
 <Type Name="SlicerItem" FullName="Microsoft.Office.Interop.Excel.SlicerItem">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3c1b11b181cf76e60a0a1ab7e6eab3bce566f124" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010189" /></Metadata><TypeSignature Language="C#" Value="public interface SlicerItem" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f7a55f46b762d5e367d09fbd04c745237b4a451b7c02bc1cce187b58e0094484" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516582" /></Metadata><TypeSignature Language="C#" Value="public interface SlicerItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SlicerItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SlicerItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface SlicerItem" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>Representa um item em uma segmentação de dados.</summary>
-    <remarks><para>Para acessar o objeto que representa o botão selecionado no momento na <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> slicer, use <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" /> a propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto. Para acessar a coleção que representa todos os itens em uma slicer filtrando uma tabela dinâmica, use a propriedade do objeto que está <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> associado ao <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto. Para acessar a coleção que representa os itens em uma slicer filtrando um nível de uma hierarquia OLAP, use a propriedade do objeto que representa esse nível <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" /> da <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> hierarquia.</para>
+    <remarks><para>Para acessar o objeto que representa o botão selecionado no momento na <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> slicer, use a <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto. Para acessar a coleção que representa todos os itens em uma slicer filtrando uma Tabela Dinâmica, use a propriedade do objeto associado <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> ao <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto. Para acessar a coleção que representa os itens em uma slicer filtrando um nível de uma hierarquia OLAP, use a propriedade do objeto que representa esse <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" /> nível da <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> hierarquia.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna <see cref="T:Microsoft.Office.Interop.Excel.Application" /> um objeto que representa o aplicativo Microsoft Excel. Quando usada com um qualificador de objeto, essa propriedade retorna um objeto que representa o <see cref="T:Microsoft.Office.Interop.Excel.Application" /> criador do objeto especificado.</summary>
+        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo. Quando usada com um qualificador de objeto, essa propriedade retorna um objeto que representa o <see cref="T:Microsoft.Office.Interop.Excel.Application" /> criador do objeto especificado.</summary>
         <value>Um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
         <remarks><para>Somente leitura.</para>
           <para> </para></remarks>
@@ -78,8 +78,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém o texto do rótulo do item da slicer.</summary>
-        <value>O texto do rótulo do item da slicer.</value>
+        <summary>Obtém o texto do rótulo do item de slicer.</summary>
+        <value>O texto do rótulo do item de slicer.</value>
         <remarks><para>Somente leitura.</para>
           <para> </para></remarks>
       </Docs>
@@ -109,7 +109,7 @@
       <Docs>
         <summary>Obtém um inteiro de 32 <b>bits</b> que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>Um inteiro de 32 <b>bits</b> que indica o aplicativo no qual esse objeto foi criado.</value>
-        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. A propriedade foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo tem um código de criador de <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.Creator" /> quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+        <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. A propriedade foi projetada para ser usada Microsoft Excel para o Macintosh, onde cada aplicativo <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.Creator" /> tem um código criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -136,11 +136,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém se o item da slicer contém dados que coincidem com o estado atual do filtro manual.</summary>
-        <value><b>true</b> se o item da slicer contiver dados que coincidem com o estado atual do filtro manual; caso contrário, <b>false</b>.</value>
+        <summary>Obtém se o item da slicer contém dados que corresponde ao estado de filtro manual atual.</summary>
+        <value><b>true</b> se o item de slicer contiver dados que corresponde ao estado de filtro manual atual; caso contrário, <b>false</b>.</value>
         <remarks><para>Somente leitura.</para>
           <para>
-            <b>true</b> se o item da slicer contiver dados que coincidem com o estado atual do filtro manual; caso <b>contrário, false</b>.</para>
+            <b>true</b> se o item de slicer contiver dados que corresponde ao estado de filtro manual atual; caso <b>contrário, false</b>.</para>
           <para>Esta propriedade só tem suporte quando a filtragem cruzada está ativada e, caso contrário, gerará um erro de tempo de execução. Para determinar se a filtragem cruzada está ligada para uma slicer associada a um relatório de tabela dinâmica, verifique o valor da propriedade do objeto pai <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> do objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> especificado. Para determinar se a filtragem cruzada está ligada para uma slicer associada a uma fonte de dados OLAP, verifique o valor da propriedade do objeto que corresponde à hierarquia OLAP que está sendo <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> filtrada.</para>
           <para> </para></remarks>
       </Docs>
@@ -168,8 +168,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém o nome do item da slicer.</summary>
-        <value>O nome do item da slicer.</value>
+        <summary>Obtém o nome do item de slicer.</summary>
+        <value>O nome do item de slicer.</value>
         <remarks><para>Somente leitura.</para>
           <para> </para></remarks>
       </Docs>
@@ -197,8 +197,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SlicerCache</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém o <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto pai do item da slicer.</summary>
-        <value>O objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> pai do item da slicer.</value>
+        <summary>Obtém o <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto pai do item de slicer.</summary>
+        <value>O objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> pai do item de slicer.</value>
         <remarks><para>Somente leitura.</para>
           <para> </para></remarks>
       </Docs>
@@ -229,11 +229,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define se o item da slicer está selecionado. Leitura/gravação para as slicers conectadas a fontes de dados não OLAP. Somente leitura para as slicers conectadas a fontes de dados OLAP.</summary>
-        <value><b>true</b> se o item da slicer estiver selecionado; caso contrário, <b>false</b>.</value>
+        <summary>Obtém ou define se o item de slicer está selecionado. Leitura/gravação para slicers conectados a fontes de dados não OLAP. Somente leitura para slicers conectados a fontes de dados OLAP.</summary>
+        <value><b>true</b> se o item de slicer estiver selecionado; caso contrário, <b>false</b>.</value>
         <remarks><para>Leitura/gravação.</para>
           <para>
-            <b>true</b> se o item da slicer estiver selecionado; caso <b>contrário, false</b>.</para>
+            <b>true</b> se o item de slicer estiver selecionado; caso <b>contrário, false</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -260,8 +260,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém o nome de origem do item da slicer.</summary>
-        <value>O nome de origem do item da slicer.</value>
+        <summary>Obtém o nome de origem do item de slicer.</summary>
+        <value>O nome de origem do item de slicer.</value>
         <remarks><para>Somente leitura.</para>
           <para> </para></remarks>
       </Docs>
@@ -289,10 +289,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém o nome de origem do item da slicer nas configurações de formato padrão inglês (Estados Unidos).</summary>
-        <value>O nome de origem do item da slicer nas configurações de formato padrão inglês (Estados Unidos).</value>
+        <summary>Obtém o nome de origem do item de slicer nas configurações de formato padrão em inglês (Estados Unidos).</summary>
+        <value>O nome de origem do item de slicer em configurações de formato padrão em inglês (Estados Unidos).</value>
         <remarks><para>Somente leitura.</para>
-          <para>Essa propriedade é usada quando um item de slicer tem uma versão localizada e seu valor de propriedade difere do valor da propriedade, como a <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.SourceNameStandard" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.SourceName" /> formatação de data.</para>
+          <para>Essa propriedade é usada quando um item de slicer tem uma versão localizada e seu valor de propriedade difere do valor da propriedade, como com a <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.SourceNameStandard" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.SourceName" /> formatação de data.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -319,8 +319,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém o valor do item da slicer.</summary>
-        <value>O valor do item da slicer.</value>
+        <summary>Obtém o valor do item de slicer.</summary>
+        <value>O valor do item de slicer.</value>
         <remarks><para>Somente leitura.</para>
           <para> </para></remarks>
       </Docs>

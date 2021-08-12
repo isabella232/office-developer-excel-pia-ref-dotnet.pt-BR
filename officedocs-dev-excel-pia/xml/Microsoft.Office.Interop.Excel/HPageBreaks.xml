@@ -1,5 +1,5 @@
 <Type Name="HPageBreaks" FullName="Microsoft.Office.Interop.Excel.HPageBreaks">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="0624b974810397b893a61eed52c425b38d116dad" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003448" /></Metadata><TypeSignature Language="C#" Value="public interface HPageBreaks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="143b90804cf70a6ebd8042b0ddb60f0508f3aa6fa2f32f38450f6c6ea6aae372" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508336" /></Metadata><TypeSignature Language="C#" Value="public interface HPageBreaks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HPageBreaks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.HPageBreaks" />
   <TypeSignature Language="VB.NET" Value="Public Interface HPageBreaks&#xA;Implements IEnumerable" />
@@ -28,7 +28,7 @@
     <summary>A coleção de quebras de página horizontais dentro da área de impressão. Cada quebra de página horizontal é representada por um <see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" /> objeto.</summary>
     <remarks><para>Use a propriedade <b>HPageBreaks</b> para retornar a coleção <b>HPageBreaks</b>. Use o <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> método para adicionar uma quebra de página horizontal.</para>
       <para>Se você adicionar uma quebra de página que não intercepta a área de impressão, o objeto recém-adicionado <b>HPageBreak</b> não aparecerá na coleção <b>HPageBreaks</b> da área impressa.</para>
-      <para>Quando a propriedade, a propriedade, a propriedade, a propriedade, a propriedade ou o método são usados em conjunto <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Application" /> <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Count" /> com a propriedade <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Creator" /> <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Item(System.Int32)" /> <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Parent" /> <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> <b>HPageBreaks:</b></para>
+      <para>Quando a propriedade, propriedade, propriedade, propriedade, propriedade ou método é usada em conjunto com <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Application" /> <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Count" /> a propriedade <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Creator" /> <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Item(System.Int32)" /> <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Parent" /> <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> <b>HPageBreaks:</b></para>
       <list type="bullet">
         <item>
           <description>Para obter uma área de impressão automática, a propriedade <b>HPageBreaks</b> se aplica somente às quebras de página que estão nos limites da área de impressão.</description>
@@ -38,7 +38,7 @@
         </item>
       </list>
       <para>
-        <b>Observação</b>  Há um limite de 1.026 quebras de página horizontais por folha.</para>
+        <b>Observação</b>  Há um limite de 1.026 quebras de página horizontais por planilha.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -100,7 +100,7 @@
         <Parameter Name="Before" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">Objeto <b>Required</b>. Um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto. O intervalo acima do qual a nova quebra de página será adicionada.</param>
+        <param name="Before">Objeto <b>Obrigatório</b>. Um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto. O intervalo acima do qual a nova quebra de página será adicionada.</param>
         <summary>Adiciona uma quebra de página horizontal. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" /> objeto.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -129,7 +129,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -250,7 +250,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Inteiro obrigatório. O número de índice do objeto.</param>
+        <param name="Index">Integer obrigatório. O número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

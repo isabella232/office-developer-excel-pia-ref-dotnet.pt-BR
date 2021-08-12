@@ -1,5 +1,5 @@
 <Type Name="DataLabel" FullName="Microsoft.Office.Interop.Excel.DataLabel">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2636427ad9e2bda4aa31e39589f7777b7ffdf22f" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003861" /></Metadata><TypeSignature Language="C#" Value="public interface DataLabel" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2bc4d8caa3c4e89da52a5c77d6c9104a770322a36b1378e10a98a33eea0af7fc" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508623" /></Metadata><TypeSignature Language="C#" Value="public interface DataLabel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DataLabel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DataLabel" />
   <TypeSignature Language="VB.NET" Value="Public Interface DataLabel" />
@@ -23,9 +23,9 @@
   <Docs>
     <summary>Representa o rótulo de dados em um ponto de gráfico ou linha de tendência.</summary>
     <remarks><para>Em uma série, o <b>objeto DataLabel</b> é um membro da <see cref="T:Microsoft.Office.Interop.Excel.DataLabels" /> coleção. A coleção <b>DataLabels</b> contém um objeto <b>DataLabel</b> para cada ponto. Para uma série sem pontos definíveis (por exemplo, uma série de área), a coleção <b>DataLabels</b> contém um único objeto <b>DataLabel</b>.</para>
-      <para>Use <b>DataLabels</b>( ), onde é o número de índice do rótulo de <paramref name="index" /> <paramref name="index" /> dados, para retornar um único <b>objeto DataLabel.</b></para>
+      <para>Use <b>DataLabels</b>( ), onde está o número de índice de rótulo de dados, para <paramref name="index" /> retornar um único objeto <paramref name="index" /> <b>DataLabel.</b></para>
       <para>Use a <see cref="P:Microsoft.Office.Interop.Excel.Point.DataLabel" /> propriedade para retornar o objeto <b>DataLabel</b> para um único ponto.</para>
-      <para>Em uma linha de tendência, a propriedade retorna o texto mostrado com a <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DataLabel" /> linha de tendência. Esse texto pode ser a equação, o valor R-quadrado ou ambos (se ambos estiverem sendo mostrados).</para>
+      <para>Em uma linha de tendência, a <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DataLabel" /> propriedade retorna o texto mostrado com a linha de tendência. Esse texto pode ser a equação, o valor R-quadrado ou ambos (se ambos estiverem sendo mostrados).</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -114,7 +114,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -276,8 +276,8 @@
         <Parameter Name="Length" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Start">Objeto <b>opcional</b>. O primeiro caractere a ser retornado. Se esse argumento for 1 ou omitido, essa propriedade retornará um intervalo de caracteres começando com o primeiro caractere.</param>
-        <param name="Length">Objeto <b>opcional</b>. O número de caracteres a ser retornado. Se esse argumento for omitido, essa propriedade retornará o restante da cadeia de caracteres (tudo após o <paramref name="Start" /> caractere).</param>
+        <param name="Start">Objeto <b>Opcional</b>. O primeiro caractere a ser retornado. Se esse argumento for 1 ou omitido, essa propriedade retornará um intervalo de caracteres começando com o primeiro caractere.</param>
+        <param name="Length">Objeto <b>Opcional</b>. O número de caracteres a ser retornado. Se esse argumento for omitido, essa propriedade retornará o restante da cadeia de caracteres (tudo após o <paramref name="Start" /> caractere).</param>
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> objeto que representa um intervalo de caracteres dentro do texto do objeto. Você pode usar o objeto <b>Characters</b> para formatar caracteres dentro de uma cadeia de caracteres de texto.</summary>
         <value>To be added.</value>
         <remarks><para>O objeto <b>Characters</b> não é uma coleção.</para>
@@ -307,7 +307,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. Somente <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> leitura.</summary>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> .</summary>
         <value>To be added.</value>
         <remarks><para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
           <para> </para></remarks>
@@ -456,7 +456,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtém ou define um valor que representa a fórmula do objeto usando notação de estilo A1, em inglês.</summary>
-        <value>A fórmula do objeto usando a notação de estilo A1, em inglês.</value>
+        <value>A fórmula do objeto usando notação estilo A1, em inglês.</value>
         <remarks><para>Leitura/gravação.</para>
           <para> </para></remarks>
       </Docs>
@@ -488,7 +488,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtém ou define um valor que representa a fórmula do objeto usando notação de estilo A1, no idioma do usuário.</summary>
-        <value>A fórmula do objeto usando a notação de estilo A1, no idioma do usuário.</value>
+        <value>A fórmula do objeto usando notação estilo A1, no idioma do usuário.</value>
         <remarks><para>Somente leitura.</para>
           <para> </para></remarks>
       </Docs>
@@ -520,7 +520,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtém ou define um valor que representa a fórmula do objeto usando notação de estilo R1C1, em inglês.</summary>
-        <value>A fórmula do objeto usando a notação de estilo R1C1, em inglês.</value>
+        <value>A fórmula do objeto usando notação de estilo R1C1, em inglês.</value>
         <remarks><para>Leitura/gravação.</para>
           <para> </para></remarks>
       </Docs>
@@ -617,7 +617,7 @@
       <Docs>
         <summary>Retorna ou define o alinhamento horizontal do objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks><para>As constantes a seguir podem ser usadas:</para>
+        <remarks><para>As seguintes constantes podem ser usadas:</para>
           <para>
             <b>xlCenter</b>
           </para>
@@ -696,7 +696,7 @@
       <Docs>
         <summary>A distância, em pontos, entre a borda esquerda do objeto à borda esquerda da coluna A (em uma planilha) ou da borda esquerda da área do gráfico (em um gráfico). <b>Double</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks><para>Se a janela estiver maximizada, essa propriedade retornará um número negativo que varia com base na largura da borda da janela. Definir essa propriedade como 0 (zero) fará com que a janela um pouco menor do que seria se a janela do aplicativo fosse maximizada. Em outras palavras, se essa propriedade for 0 (zero), a borda esquerda da janela principal do Microsoft Excel simplesmente ficará visível na tela.</para>
+        <remarks><para>Se a janela for maximizada, essa propriedade retornará um número negativo que varia com base na largura da borda da janela. Definir essa propriedade como 0 (zero) fará com que a janela seja um pouco menor do que seria se a janela do aplicativo fosse maximizada. Em outras palavras, se essa propriedade for 0 (zero), a borda esquerda da janela Microsoft Excel principal mal ficará visível na tela.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -756,7 +756,7 @@
       <Docs>
         <summary>Retorna ou define o código de formatação para o objeto. <b>Cadeia de caracteres</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks><para>O código de formatação é a mesma cadeia de caracteres da opção Códigos de formato da caixa de diálogo Formatar células. A <b>função Format</b> usa cadeias de caracteres de código de formato diferentes das de <b>NumberFormat</b> e <see cref="P:Microsoft.Office.Interop.Excel.DataLabel.NumberFormatLocal" /> propriedades.</para>
+        <remarks><para>O código de formatação é a mesma cadeia de caracteres da opção Códigos de formato da caixa de diálogo Formatar células. A <b>função Format</b> usa cadeias de caracteres de código de formato diferentes das propriedades <b>NumberFormat</b> <see cref="P:Microsoft.Office.Interop.Excel.DataLabel.NumberFormatLocal" /> e.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -819,7 +819,7 @@
       <Docs>
         <summary>Retorna ou define o código de formatação para o objeto como uma cadeia de caracteres no idioma do usuário. <b>Objeto</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks><para>A <b>função Format</b> usa cadeias de caracteres de código de formato diferentes das que as propriedades <see cref="P:Microsoft.Office.Interop.Excel.DataLabel.NumberFormat" /> <b>NumberFormatLocal e NumberFormatLocal</b> fazem.</para>
+        <remarks><para>A <b>função Format</b> usa cadeias de caracteres de código de formato diferentes das propriedades <see cref="P:Microsoft.Office.Interop.Excel.DataLabel.NumberFormat" /> <b>NumberFormatLocal e NumberFormatLocal.</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -851,7 +851,7 @@
       <Docs>
         <summary>A orientação do texto. Pode ser um valor inteiro de –90 a 90 graus.</summary>
         <value>To be added.</value>
-        <remarks><para>As constantes a seguir podem ser usadas:</para>
+        <remarks><para>As seguintes constantes podem ser usadas:</para>
           <para>
             <b>xlDownward</b>
           </para>
@@ -890,7 +890,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai do objeto especificado. Somente leitura.</summary>
+        <summary>Retorna o objeto pai para o objeto especificado. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1010,7 +1010,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Define ou retorna um <b>Objeto</b> que representa o separador usado para os rótulos de dados em um gráfico. Leitura/gravação.</summary>
+        <summary>Define ou retorna um <b>Object</b> que representa o separador usado para os rótulos de dados em um gráfico. Leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks><para>o gráfico deve estar ativo antes que você possa acessar os rótulos de dados por programação; Caso contrário, ocorrerá um erro de tempo de execução.</para>
           <para> </para></remarks>
@@ -1168,7 +1168,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> para exibir o valor da porcentagem dos rótulos de dados em um gráfico. <b>False</b> para ocultá-lo. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> para exibir o valor de porcentagem dos rótulos de dados em um gráfico. <b>False</b> para ocultá-lo. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks><para>O gráfico deve estar ativo para que você possa acessar os rótulos de dados por programação; caso contrário, ocorrerá um erro em tempo de execução.</para>
           <para> </para></remarks>
@@ -1200,7 +1200,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Usado para alternar o <b>campo Intervalo</b> se ele existir no intervalo do rótulo de dados. <b>Booliana</b> (<b>booleano</b> em C#) Leitura/gravação</summary>
+        <summary>Usado para alternar o <b>campo Intervalo</b> se ele existir no intervalo de rótulos de dados. <b>Boolean</b> (<b>bool</b> no C#) Leitura/gravação</summary>
         <value>To be added.</value>
         <remarks><para>O <b>objeto Range</b> mapeia um intervalo arbitrário de células para um intervalo de rótulos de dados, para que cada rótulo de dados corresponda a uma das células no intervalo.</para>
           <para> </para></remarks>
@@ -1264,7 +1264,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <b>Boolean</b> que corresponde a um determinado comportamento de exibição de valores do rótulo de dados do gráfico. <b>True</b> para exibir os valores. <b>False</b> para ocultá-lo. Leitura/gravação.</summary>
+        <summary>Retorna ou define um <b>Boolean</b> que corresponde a um determinado comportamento de exibição de valores do rótulo de dados do gráfico. <b>True</b> para exibir os valores. <b>False</b> para ocultá-los. Leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks><para>O gráfico especificado deve estar ativo para que você possa acessar os rótulos de dados por programação; caso contrário, ocorrerá um erro em tempo de execução.</para>
           <para> </para></remarks>
@@ -1296,7 +1296,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o texto do objeto especificado. <b>String</b> somente leitura.</summary>
+        <summary>Retorna ou define o texto para o objeto especificado. <b>String</b> somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1397,7 +1397,7 @@
       <Docs>
         <summary>Retorna ou define o alinhamento vertical do objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks><para>As constantes a seguir podem ser usadas:</para>
+        <remarks><para>As seguintes constantes podem ser usadas:</para>
           <para>
             <b>xlBottom</b>
           </para>

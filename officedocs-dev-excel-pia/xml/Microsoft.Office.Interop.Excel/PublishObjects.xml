@@ -1,5 +1,5 @@
 <Type Name="PublishObjects" FullName="Microsoft.Office.Interop.Excel.PublishObjects">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="f387dc9c018dbd0378441a0c44743179b7b5fb9c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010749" /></Metadata><TypeSignature Language="C#" Value="public interface PublishObjects : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6fe2cae33cf7bdeaa934dee8836349bfb3286b0661da03d1e1d77248b6b612d6" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516603" /></Metadata><TypeSignature Language="C#" Value="public interface PublishObjects : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PublishObjects implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PublishObjects" />
   <TypeSignature Language="VB.NET" Value="Public Interface PublishObjects&#xA;Implements IEnumerable" />
@@ -25,9 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de todos <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> os objetos na área de trabalho. Cada objeto <b>PublishObject</b> representa um item em uma pasta de trabalho que foi salva em uma página da Web e pode ser atualizada de acordo com os valores especificados pelas propriedades e métodos do objeto.</summary>
-    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel._Workbook.PublishObjects" /> propriedade para retornar a coleção <b>PublishObjects</b> .</para>
-      <para>Use <b>PublishObjects</b>( ), onde é o número de índice do item especificado na lista de trabalho, para retornar um único <paramref name="index" /> objeto <paramref name="index" /> <b>PublishObject</b> .</para>
+    <summary>Uma coleção de todos <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> os objetos na workbook. Cada objeto <b>PublishObject</b> representa um item em uma pasta de trabalho que foi salva em uma página da Web e pode ser atualizada de acordo com os valores especificados pelas propriedades e métodos do objeto.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Excel._Workbook.PublishObjects" /> propriedade para retornar a coleção <b>PublishObjects.</b></para>
+      <para>Use <b>PublishObjects</b>( ), onde é o número de índice do item especificado na lista de trabalho, para retornar um único objeto <paramref name="index" /> <paramref name="index" /> <b>PublishObject.</b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -94,13 +94,13 @@
         <Parameter Name="Title" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SourceType">Obrigatório. <see cref="T:Microsoft.Office.Interop.Excel.XlSourceType" /> O tipo de fonte.</param>
+        <param name="SourceType">Obrigatório <see cref="T:Microsoft.Office.Interop.Excel.XlSourceType" /> . O tipo de fonte.</param>
         <param name="Filename"><b>String</b> necessário. A URL (na intranet ou na Web) ou o caminho (local ou de rede) no qual o objeto de origem foi salvo.</param>
-        <param name="Sheet">Objeto <b>opcional</b>. O nome da planilha salva como uma página da Web.</param>
-        <param name="Source">Objeto <b>opcional</b>. Um nome exclusivo usado para identificar itens que têm uma das seguintes constantes como <paramref name="SourceType" /> argumento: <b>xlSourceAutoFilter</b>, <b>xlSourceChart</b>, <b>xlSourcePivotTable</b>, <b>xlSourcePrintArea</b>, <b>xlSourceQuery</b>ou <b>xlSourceRange</b>. Se <paramref name="SourceType" /> for <b>xlSourceRange</b>, Source especificará um intervalo, que pode ser um nome definido. Se for <paramref name="SourceType" /> <b>xlSourceChart</b>, <b>xlSourcePivotTable</b>ou <b>xlSourceQuery</b>, especifica o nome de um gráfico, relatório de tabela dinâmica ou tabela de <paramref name="Source" /> consulta.</param>
-        <param name="HtmlType">Objeto <b>opcional</b>. Especifica se o item será salvo como um componente interativo do Microsoft Office Web Components ou como texto e imagens estáticas. Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> constantes. Item ConstantDescription<b>xlHtmlCalc</b>salvo como um componente interativo da Planilha do Microsoft Office. <b>xlHtmlChart</b> Item salvo como um componente interativo do Microsoft Office Chart. <b>xlHtmlList</b> Item salvo como um componente interativo de Tabela Dinâmica do Microsoft Office. <b>xlHtmlStatic</b> Item salvo como texto e imagens estáticos.</param>
-        <param name="DivID">Objeto <b>opcional</b>. O identificador exclusivo usado no rótulo DIV de HTML para identificar o item na página da Web.</param>
-        <param name="Title">Objeto <b>opcional</b>. O título da página da Web.</param>
+        <param name="Sheet">Objeto <b>Opcional</b>. O nome da planilha salva como uma página da Web.</param>
+        <param name="Source">Objeto <b>Opcional</b>. Um nome exclusivo usado para identificar itens que têm uma das seguintes constantes como <paramref name="SourceType" /> argumento: <b>xlSourceAutoFilter</b>, <b>xlSourceChart</b>, <b>xlSourcePivotTable</b>, <b>xlSourcePrintArea</b>, <b>xlSourceQuery</b>ou <b>xlSourceRange</b>. Se <paramref name="SourceType" /> for <b>xlSourceRange</b>, Source especificará um intervalo, que pode ser um nome definido. Se for <paramref name="SourceType" /> <b>xlSourceChart</b>, <b>xlSourcePivotTable</b>ou <b>xlSourceQuery</b>, especificará o nome de um gráfico, relatório de tabela dinâmica ou tabela de <paramref name="Source" /> consulta.</param>
+        <param name="HtmlType">Objeto <b>Opcional</b>. Especifica se o item será salvo como um componente interativo do Microsoft Office Web Components ou como texto e imagens estáticas. Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> constantes. ConstantDescription<b>xlHtmlCalc</b>Item salvo como um componente Microsoft Office Spreadsheet interativo. <b>xlHtmlChart</b> Item salvo como um componente Microsoft Office Gráfico interativo. <b>xlHtmlList</b> Item salvo como um componente Microsoft Office tabela dinâmica interativa. <b>xlHtmlStatic</b> Item salvo como texto e imagens estáticos.</param>
+        <param name="DivID">Objeto <b>Opcional</b>. O identificador exclusivo usado no rótulo DIV de HTML para identificar o item na página da Web.</param>
+        <param name="Title">Objeto <b>Opcional</b>. O título da página da Web.</param>
         <summary>Cria um objeto que representa um item de um documento salvo em uma página da Web. Esses objetos facilitam atualizações subsequentes na página da Web durante alterações automatizadas no documento no Microsoft Excel. Retorna um <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> objeto.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -129,7 +129,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -275,7 +275,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Objeto <b>Required</b>. O nome ou número de índice do objeto.</param>
+        <param name="Index">Objeto <b>Obrigatório</b>. O nome ou número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
