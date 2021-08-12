@@ -1,5 +1,5 @@
 <Type Name="Window" FullName="Microsoft.Office.Interop.Excel.Window">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="628d319ce41e267cd4a082a94f976467ed8bebe1" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009258" /></Metadata><TypeSignature Language="C#" Value="public interface Window" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6d6ba8f19188d4685621e7b8eed25d1911d6d3118b218c2b5a4e0be4b045ca71" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518346" /></Metadata><TypeSignature Language="C#" Value="public interface Window" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Window" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Window" />
   <TypeSignature Language="VB.NET" Value="Public Interface Window" />
@@ -22,8 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Representa uma janela. Muitas características da planilha, como barras de rolagem e linhas de grade, são na realidade propriedades da janela.</summary>
-    <remarks><para>O <b>objeto Window</b> é um membro da <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> coleção. A <b>coleção Windows</b> retornada pela propriedade do objeto contém todas as janelas no aplicativo, enquanto a coleção Windows retornada pela propriedade do objeto contém apenas as janelas na agenda <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> especificada.</para>
-      <para>Use <b>o Windows</b>( ), onde está o nome da janela ou o número de <paramref name="index" /> <paramref name="index" /> índice, para retornar um único objeto <b>Window</b> .</para>
+    <remarks><para>O <b>objeto Window</b> é um membro da <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> coleção. A <b>coleção Windows</b> retornada pela propriedade do objeto contém todas as janelas no aplicativo, enquanto Windows coleção Windows retornada pela propriedade do objeto contém apenas as janelas na manual de trabalho <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> especificada.</para>
+      <para>Use <b>Windows</b>( ), onde está o nome da janela ou o número de <paramref name="index" /> <paramref name="index" /> índice, para retornar um único objeto <b>Window.</b></para>
       <para>Observe que a janela ativa é sempre Windows(1).</para>
       <para>A legenda da janela é o texto mostrado na barra de título na parte superior da janela quando esta não está maximizada. A legenda também é mostrada na lista de arquivos abertos na parte inferior do menu Janelas. Use a <see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" /> propriedade para definir ou retornar a legenda da janela. A alteração da legenda da janela não altera o nome da pasta de trabalho.</para>
       <para> </para></remarks>
@@ -134,7 +134,7 @@
       <Docs>
         <summary>Traz a janela para a frente na ordem z.</summary>
         <returns>To be added.</returns>
-        <remarks><para>O <b>método Activate</b> não executará nenhuma Auto_Activate ou Auto_Deactivate macros que possam estar anexadas à agenda. Use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> método para executar essas macros.</para>
+        <remarks><para>O <b>método Activate</b> não executará nenhuma Auto_Activate ou Auto_Deactivate que possam ser anexadas à agenda de trabalho. Use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> método para executar essas macros.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -159,7 +159,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ativa a janela especificada e a envia para o final da ordem z da janela.</summary>
+        <summary>Ativa a janela especificada e a envia para a parte de trás da ordem z da janela.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -213,7 +213,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa a célula ativa na janela ativa (a janela na parte superior) ou na janela especificada. Se a janela não estiver exibindo uma planilha, essa propriedade falha.</summary>
+        <summary>Retorna um objeto que representa a célula ativa na janela ativa (a janela na <see cref="T:Microsoft.Office.Interop.Excel.Range" /> parte superior) ou na janela especificada. Se a janela não estiver exibindo uma planilha, essa propriedade falha.</summary>
         <value>To be added.</value>
         <remarks><para>Se você não especificar um qualificador de objeto, esta propriedade retornará a planilha ativa na pasta de trabalho ativa.</para>
           <para>Tenha cuidado para distinguir entre a célula ativa e a seleção. A célula ativa é uma única célula dentro da seleção atual. A seleção pode conter mais de uma célula, mas somente uma será a célula ativa.</para>
@@ -243,7 +243,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Chart</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> objeto que representa o gráfico ativo (um gráfico incorporado ou uma planilha de gráfico). Um gráfico inserido é considerado ativo quando está selecionado ou ativado. Quando nenhum gráfico estiver ativo, essa propriedade retornará <b>Nothing</b>.</summary>
+        <summary>Retorna um objeto que representa o gráfico ativo (um gráfico incorporado <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> ou uma planilha de gráfico). Um gráfico inserido é considerado ativo quando está selecionado ou ativado. Quando nenhum gráfico estiver ativo, essa propriedade retornará <b>Nothing</b>.</summary>
         <value>To be added.</value>
         <remarks><para>Se você não especificar um qualificador de objeto, essa propriedade retornará o gráfico ativo da pasta de trabalho ativa.</para>
           <para> </para></remarks>
@@ -360,7 +360,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Excel aplicativo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -422,7 +422,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>O nome que aparece na barra de título da janela de documento.</summary>
+        <summary>O nome que aparece na barra de título da janela do documento.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -451,12 +451,12 @@
         <Parameter Name="RouteWorkbook" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SaveChanges">Objeto <b>opcional</b>. Se não houver alterações na pasta de trabalho, esse argumento será ignorado. Se houver alterações na pasta de trabalho e se a pasta de trabalho aparecer em outras janelas abertas, esse argumento será ignorado. Se houver alterações na agenda, mas a agenda não for exibida em nenhuma outra janela aberta, este argumento especificará se as alterações deverão ser salvas, conforme mostrado na tabela a seguir. ValueAction<b>True</b>Salva as alterações na agenda. Se ainda não houver um nome de arquivo associado à pasta de trabalho, <paramref name="FileName" /> será usado. Se <paramref name="FileName" /> for omitido, o usuário será solicitado a fornecer um nome de arquivo.<b> False</b>não salva as alterações neste arquivo. OmittedDisplays a dialog box asking the user whether or not to save changes.</param>
-        <param name="Filename">Objeto <b>opcional</b>. Salve alterações sob este nome de arquivo.</param>
-        <param name="RouteWorkbook">Objeto <b>opcional</b>. Se a pasta de trabalho não precisar ser roteada para o próximo destinatário (se não tiver uma lista de circulação ou se já tiver sido roteada), este argumento será ignorado. Caso contrário, o Microsoft Excel encaminha a planilha conforme mostrado na tabela a seguir. ValueMeaning<b>True</b>Envia a agenda para o próximo destinatário. <b>False</b> Não envia a agenda. OmittedDisplays a dialog box asking the user whether the workbook should be sent.</param>
+        <param name="SaveChanges">Objeto <b>Opcional</b>. Se não houver alterações na pasta de trabalho, esse argumento será ignorado. Se houver alterações na pasta de trabalho e se a pasta de trabalho aparecer em outras janelas abertas, esse argumento será ignorado. Se houver alterações na lista de trabalho, mas a lista de trabalho não aparecer em outras janelas abertas, esse argumento especificará se as alterações devem ser salvas, conforme mostrado na tabela a seguir. ValueAction<b>True</b>Salva as alterações na workbook. Se ainda não houver um nome de arquivo associado à pasta de trabalho, será <paramref name="FileName" /> usado. Se <paramref name="FileName" /> for omitido, o usuário será solicitado a fornecer um nome de arquivo.<b> False</b>Não salva as alterações neste arquivo. OmittedDisplays a dialog box asking the user whether or not to save changes.</param>
+        <param name="Filename">Objeto <b>Opcional</b>. Salve alterações sob este nome de arquivo.</param>
+        <param name="RouteWorkbook">Objeto <b>Opcional</b>. Se a pasta de trabalho não precisar ser roteada para o próximo destinatário (se não tiver uma lista de circulação ou se já tiver sido roteada), este argumento será ignorado. Caso contrário, Microsoft Excel a lista de trabalho, conforme mostrado na tabela a seguir. ValueMeaning<b>True</b>Envia a workbook para o próximo destinatário. <b>False</b> Não envia a guia de trabalho. OmittedDisplays a dialog box asking the user whether the workbook should be sent.</param>
         <summary>Fecha o objeto.</summary>
         <returns>To be added.</returns>
-        <remarks><para>O <b>método Close</b> não executará nenhuma Auto_Close macros na agenda. Use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> método para executar as macros de fechamento automático.</para>
+        <remarks><para>O <b>método Close</b> não executará nenhuma Auto_Close macros na workbook. Use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> método para executar as macros de fechamento automático.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -897,7 +897,7 @@
       <Docs>
         <summary><b>True</b> se os painéis divididos estiverem congelados.</summary>
         <value>To be added.</value>
-        <remarks><para>É possível que <b>FreezePanes </b>seja <b>True</b> e <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> <b>False</b>ou vice-versa.</para>
+        <remarks><para>É possível que <b>FreezePanes </b>seja <b>True</b> e false , <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> ou <b></b>vice-versa.</para>
           <para>Essa propriedade só se aplica a planilhas e folhas de macro.</para>
           <para> </para></remarks>
       </Docs>
@@ -1020,8 +1020,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o alça de janela da janela especificada.</summary>
-        <value>Inteiro (int em C#)</value>
+        <summary>Retorna a alça de janela da janela especificada.</summary>
+        <value>Integer (int em C#)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1078,14 +1078,14 @@
         <Parameter Name="ToLeft" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Down">Objeto <b>opcional</b>. O número de páginas pelas quais rolar o conteúdo para baixo.</param>
-        <param name="Up">Objeto <b>opcional</b>. O número de páginas pelas quais rolar o conteúdo para cima.</param>
-        <param name="ToRight">Objeto <b>opcional</b>. O número de páginas pelas quais rolar o conteúdo para a direita.</param>
-        <param name="ToLeft">Objeto <b>opcional</b>. O número de páginas pelas quais rolar o conteúdo para a esquerda.</param>
+        <param name="Down">Objeto <b>Opcional</b>. O número de páginas pelas quais rolar o conteúdo para baixo.</param>
+        <param name="Up">Objeto <b>Opcional</b>. O número de páginas pelas quais rolar o conteúdo para cima.</param>
+        <param name="ToRight">Objeto <b>Opcional</b>. O número de páginas pelas quais rolar o conteúdo para a direita.</param>
+        <param name="ToLeft">Objeto <b>Opcional</b>. O número de páginas pelas quais rolar o conteúdo para a esquerda.</param>
         <summary>Rola o conteúdo da janela por páginas.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Se e ambos são especificados, o conteúdo da janela é rolado <paramref name="Down" /> <paramref name="Up" /> pela diferença dos argumentos. Por exemplo, se <paramref name="Down" /> for 3 <paramref name="Up" /> e for 6, o conteúdo será rolado três páginas para cima.</para>
-          <para>Se e ambos são especificados, o conteúdo da janela é rolado <paramref name="ToLeft" /> <paramref name="ToRight" /> pela diferença dos argumentos. Por exemplo, se <paramref name="ToLeft" /> for 3 <paramref name="ToRight" /> e for 6, o conteúdo será rolado para a direita em três páginas.</para>
+        <remarks><para>Se <paramref name="Down" /> e ambos são <paramref name="Up" /> especificados, o conteúdo da janela é rolado pela diferença dos argumentos. Por exemplo, se <paramref name="Down" /> for 3 e <paramref name="Up" /> for 6, o conteúdo será rolado para cima três páginas.</para>
+          <para>Se <paramref name="ToLeft" /> e ambos são <paramref name="ToRight" /> especificados, o conteúdo da janela é rolado pela diferença dos argumentos. Por exemplo, se for 3 e for 6, o conteúdo <paramref name="ToLeft" /> <paramref name="ToRight" /> será rolado para as três páginas direitas.</para>
           <para>Qualquer dos argumentos pode ser um número negativo.</para>
           <para> </para></remarks>
       </Docs>
@@ -1175,7 +1175,7 @@
       <Docs>
         <summary>Retorna ou define o nome do procedimento executado sempre que você ativa uma janela.</summary>
         <value>To be added.</value>
-        <remarks><para>O procedimento especificado por esta propriedade não é executado quando outros procedimentos alternam para a janela ou quando um comando para alternar para uma janela é recebido através de um canal DDE. Em vez disso, o procedimento responde às ações do usuário, como clicar em uma janela com o mouse, clicar em Ir Para no menu Editar e assim por diante.</para>
+        <remarks><para>O procedimento especificado por esta propriedade não é executado quando outros procedimentos alternam para a janela ou quando um comando para alternar para uma janela é recebido através de um canal DDE. Em vez disso, o procedimento responde às ações do usuário, como clicar em uma janela com o mouse, clicar em Ir para no menu Editar e assim por diante.</para>
           <para>Se uma planilha ou uma folha de macro tiver uma macro Ativar_auto ou Desativar_auto definida, essas macros serão executadas após o procedimento especificado pela propriedade <b>OnWindow</b>.</para>
           <para> </para></remarks>
       </Docs>
@@ -1203,9 +1203,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Panes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> coleção que representa todos os painéis na janela especificada.</summary>
+        <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> coleção que representa todos os painéis da janela especificada.</summary>
         <value>To be added.</value>
-        <remarks><para>Essa propriedade só estará disponível para uma janela se a propriedade da <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> janela puder ser definida como <b>True</b>.</para>
+        <remarks><para>Essa propriedade só estará disponível para uma janela se a propriedade da janela <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> puder ser definida como <b>True</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1324,17 +1324,17 @@
         <Parameter Name="PrToFileName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="From">Objeto <b>opcional</b>. O número da página na qual a impressão deve começar. Se esse argumento for omitido, a impressão começará do início.</param>
-        <param name="To">Objeto <b>opcional</b>. O número da última página a ser impressa. Se esse argumento for omitido, a impressão terminará na última página.</param>
-        <param name="Copies">Objeto <b>opcional</b>. O número de cópias a serem impressas. Se esse argumento for omitido, será impressa uma cópia.</param>
-        <param name="Preview">Objeto <b>opcional</b>. <b>True</b> para fazer o Microsoft Excel invocar a visualização de impressão antes de imprimir o objeto. <b>False</b> (ou omitido) para imprimir o objeto imediatamente.</param>
-        <param name="ActivePrinter">Objeto <b>opcional</b>. Define o nome da impressora ativa.</param>
-        <param name="PrintToFile">Objeto <b>opcional</b>. <b>True</b> para imprimir em um arquivo. Se não for especificado, o Microsoft Excel solicitará que o usuário insira <paramref name="PrToFileName" /> o nome do arquivo de saída.</param>
-        <param name="Collate">Objeto <b>opcional</b>. <b>True</b> para agrupar várias cópias.</param>
-        <param name="PrToFileName">Objeto <b>opcional</b>. Se <paramref name="PrintToFile" /> for definido como <b>True</b>, este argumento especificará o nome do arquivo para o que você deseja imprimir.</param>
+        <param name="From">Objeto <b>Opcional</b>. O número da página na qual a impressão deve começar. Se esse argumento for omitido, a impressão começará do início.</param>
+        <param name="To">Objeto <b>Opcional</b>. O número da última página a ser impressa. Se esse argumento for omitido, a impressão terminará na última página.</param>
+        <param name="Copies">Objeto <b>Opcional</b>. O número de cópias a serem impressas. Se esse argumento for omitido, será impressa uma cópia.</param>
+        <param name="Preview">Objeto <b>Opcional</b>. <b>True</b> para fazer o Microsoft Excel invocar a visualização de impressão antes de imprimir o objeto. <b>False</b> (ou omitido) para imprimir o objeto imediatamente.</param>
+        <param name="ActivePrinter">Objeto <b>Opcional</b>. Define o nome da impressora ativa.</param>
+        <param name="PrintToFile">Objeto <b>Opcional</b>. <b>True</b> para imprimir em um arquivo. Se não for especificado, Microsoft Excel solicita que o <paramref name="PrToFileName" /> usuário insira o nome do arquivo de saída.</param>
+        <param name="Collate">Objeto <b>Opcional</b>. <b>True</b> para agrupar várias cópias.</param>
+        <param name="PrToFileName">Objeto <b>Opcional</b>. Se <paramref name="PrintToFile" /> for definido como <b>True,</b>este argumento especificará o nome do arquivo para o que você deseja imprimir.</param>
         <summary>Imprime o objeto.</summary>
         <returns>To be added.</returns>
-        <remarks><para>"Páginas" nas descrições e refere-se a páginas impressas , não a páginas gerais <paramref name="From" /> na planilha ou pasta de <paramref name="To" /> trabalho.</para>
+        <remarks><para>"Páginas" nas descrições de e refere-se a páginas impressas — não páginas gerais <paramref name="From" /> na planilha ou pasta de <paramref name="To" /> trabalho.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1392,7 +1392,7 @@
       <Docs>
         <param name="x">Obrigatório <b>Integer</b>. O valor (em pixels) que representa a distância horizontal a partir do limite esquerdo da tela, começando pela parte superior.</param>
         <param name="y">Obrigatório <b>Integer</b>. O valor (em pixels) que representa a distância vertical a partir da parte superior da tela, começando pela esquerda.</param>
-        <summary>Retorna o <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> ou objeto que está posicionado no par especificado de <see cref="T:Microsoft.Office.Interop.Excel.Range" /> coordenadas de tela. Se não houver uma forma localizada nas coordenadas especificadas, este método retornará <b>Nothing</b>.</summary>
+        <summary>Retorna o <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto ou posicionado no par especificado de <see cref="T:Microsoft.Office.Interop.Excel.Range" /> coordenadas de tela. Se não houver uma forma localizada nas coordenadas especificadas, este método retornará <b>Nothing</b>.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1420,9 +1420,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um objeto que representa as células selecionadas na planilha na janela especificada, mesmo se um objeto gráfico estiver ativo ou <see cref="T:Microsoft.Office.Interop.Excel.Range" /> selecionado na planilha.</summary>
+        <summary>Retorna um objeto que representa as células selecionadas na planilha na janela especificada, mesmo se um objeto gráfico estiver ativo ou selecionado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> na planilha.</summary>
         <value>To be added.</value>
-        <remarks><para>Quando um objeto gráfico é selecionado em uma planilha, a propriedade retorna o objeto gráfico em vez de um objeto <see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" /> <b>Range;</b> a propriedade <b>RangeSelection</b> retorna o intervalo de células que foi selecionado antes da seleção do objeto gráfico.</para>
+        <remarks><para>Quando um objeto gráfico é selecionado em uma planilha, a propriedade retorna o objeto gráfico em vez de um <see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" /> <b>objeto Range;</b> a propriedade <b>RangeSelection</b> retorna o intervalo de células que foi selecionado antes da seleção do objeto gráfico.</para>
           <para>Essa propriedade e a propriedade <b>Selection</b> retornam valores idênticos quando um intervalo (não um objeto gráfico) é selecionado na planilha.</para>
           <para>Se a folha ativa na janela especificada não for uma planilha, essa propriedade falhará.</para>
           <para> </para></remarks>
@@ -1456,7 +1456,7 @@
       <Docs>
         <summary>Retorna ou define o número da coluna mais à esquerda no painel ou na janela.</summary>
         <value>To be added.</value>
-        <remarks><para>Se a janela estiver dividida, a <b>propriedade ScrollColumn</b> do objeto se referirá ao painel superior <see cref="T:Microsoft.Office.Interop.Excel.Window" /> esquerdo. Quando os painéis estão congelados, a propriedade <b>ScrollColumn</b> do objeto <b>Window</b> exclui as áreas congeladas.</para>
+        <remarks><para>Se a janela for dividida, a <b>propriedade ScrollColumn</b> do objeto se <see cref="T:Microsoft.Office.Interop.Excel.Window" /> referirá ao painel superior esquerdo. Quando os painéis estão congelados, a propriedade <b>ScrollColumn</b> do objeto <b>Window</b> exclui as áreas congeladas.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1490,9 +1490,9 @@
         <param name="Top">Obrigatório <b>Integer</b>. A posição vertical do retângulo (em pontos) a partir da parte superior da janela ou painel do documento.</param>
         <param name="Width">Obrigatório <b>Integer</b>. A largura do retângulo, em pontos.</param>
         <param name="Height">Obrigatório <b>Integer</b>. A altura do retângulo, em pontos.</param>
-        <param name="Start">Número <b>inteiro opcional</b>. <b>True</b> para que o canto superior esquerdo do retângulo seja exibido no canto superior esquerdo da janela ou painel do documento. <b>False</b> para que o canto inferior direito do retângulo seja exibido no canto inferior direito da janela ou painel do documento. O valor padrão é <b>True</b>.</param>
-        <summary>Rola a janela do documento para que o conteúdo de uma área retangular especificada seja exibido no canto superior esquerdo ou inferior direito da janela ou painel do documento.</summary>
-        <remarks><para>O argumento é útil para orientar a exibição da tela quando o retângulo for maior que a <paramref name="Start" /> janela ou o painel do documento.</para>
+        <param name="Start">Inteiro <b>opcional</b>. <b>True</b> para que o canto superior esquerdo do retângulo seja exibido no canto superior esquerdo da janela ou painel do documento. <b>False</b> para que o canto inferior direito do retângulo seja exibido no canto inferior direito da janela ou painel do documento. O valor padrão é <b>True</b>.</param>
+        <summary>Rola a janela do documento para que o conteúdo de uma área retangular especificada seja exibido no canto superior esquerdo ou inferior direito da janela ou do painel do documento.</summary>
+        <remarks><para>O argumento é útil para orientar a exibição de tela quando o retângulo é maior do que <paramref name="Start" /> a janela ou o painel do documento.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1524,7 +1524,7 @@
       <Docs>
         <summary>Retorna ou define o número da linha que aparece na parte superior do painel ou da janela.</summary>
         <value>To be added.</value>
-        <remarks><para>Se a janela estiver dividida, a <b>propriedade ScrollRow</b> do objeto se referirá ao painel superior <see cref="T:Microsoft.Office.Interop.Excel.Window" /> esquerdo. Quando os painéis estão congelados, a propriedade <b>ScrollRow</b> do objeto <b>Window</b> exclui as áreas congeladas.</para>
+        <remarks><para>Se a janela for dividida, a <b>propriedade ScrollRow</b> do <see cref="T:Microsoft.Office.Interop.Excel.Window" /> objeto se refere ao painel superior esquerdo. Quando os painéis estão congelados, a propriedade <b>ScrollRow</b> do objeto <b>Window</b> exclui as áreas congeladas.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1551,8 +1551,8 @@
         <Parameter Name="Position" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Sheets">Objeto <b>opcional</b>. O número de planilhas pelas quais rolar. Use um número positivo para rolar para frente, um número negativo para rolar para trás ou 0 (zero) para não rolar para frente. Você deve especificar <paramref name="Sheets" /> se não <paramref name="Position" /> especificar.</param>
-        <param name="Position">Objeto <b>opcional</b>. Use <b>xlFirst</b> para rolar para a primeira planilha, ou use <b>xlLast</b> para rolar para a última planilha. Você deve especificar <paramref name="Position" /> se não <paramref name="Sheets" /> especificar.</param>
+        <param name="Sheets">Objeto <b>Opcional</b>. O número de planilhas pelas quais rolar. Use um número positivo para rolar para frente, um número negativo para rolar para trás ou 0 (zero) para não rolar. Você deve especificar <paramref name="Sheets" /> se não especificar <paramref name="Position" /> .</param>
+        <param name="Position">Objeto <b>Opcional</b>. Use <b>xlFirst</b> para rolar para a primeira planilha, ou use <b>xlLast</b> para rolar para a última planilha. Você deve especificar <paramref name="Position" /> se não especificar <paramref name="Sheets" /> .</param>
         <summary>Rola pelas guias da pasta de trabalho, localizadas na parte inferior da janela.</summary>
         <returns>To be added.</returns>
         <remarks><para>O <b>método ScrollWorkbookTabs</b> não afeta a planilha ativa na pasta de trabalho.</para>
@@ -1613,7 +1613,7 @@
         <summary>Retorna o objeto selecionado na janela especificada.</summary>
         <value>To be added.</value>
         <remarks><para>O tipo de objeto retornado depende da seleção atual (por exemplo, se uma célula estiver selecionada, essa propriedade retornará um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto). A propriedade <b>Selection</b> retornará <b>Nothing</b> se nada estiver selecionado.</para>
-          <para>O uso dessa propriedade sem um qualificador de objeto é equivalente ao uso <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> da propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</para>
+          <para>Usar essa propriedade sem qualificador de objeto equivale a usar a <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> propriedade do <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1670,14 +1670,14 @@
         <Parameter Name="ToLeft" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Down">Objeto <b>opcional</b>. O número de linhas pelas quais rolar o conteúdo para baixo.</param>
-        <param name="Up">Objeto <b>opcional</b>. O número de linhas pelas quais rolar o conteúdo para cima.</param>
-        <param name="ToRight">Objeto <b>opcional</b>. O número de colunas pelas quais rolar o conteúdo para a direita.</param>
-        <param name="ToLeft">Objeto <b>opcional</b>. O número de colunas pelas quais rolar o conteúdo para a esquerda.</param>
+        <param name="Down">Objeto <b>Opcional</b>. O número de linhas pelas quais rolar o conteúdo para baixo.</param>
+        <param name="Up">Objeto <b>Opcional</b>. O número de linhas pelas quais rolar o conteúdo para cima.</param>
+        <param name="ToRight">Objeto <b>Opcional</b>. O número de colunas pelas quais rolar o conteúdo para a direita.</param>
+        <param name="ToLeft">Objeto <b>Opcional</b>. O número de colunas pelas quais rolar o conteúdo para a esquerda.</param>
         <summary>Rola o conteúdo da janela por linhas ou colunas.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Se e ambos são especificados, o conteúdo da janela é rolado <paramref name="Down" /> <paramref name="Up" /> pela diferença dos argumentos. Por exemplo, se <paramref name="Down" /> for 3 <paramref name="Up" /> e for 6, o conteúdo será rolado três linhas para cima.</para>
-          <para>Se e ambos são especificados, o conteúdo da janela é rolado <paramref name="ToLeft" /> <paramref name="ToRight" /> pela diferença dos argumentos. Por exemplo, se <paramref name="ToLeft" /> for 3 <paramref name="ToRight" /> e for 6, o conteúdo será rolado para a direita em três colunas.</para>
+        <remarks><para>Se <paramref name="Down" /> e ambos são <paramref name="Up" /> especificados, o conteúdo da janela é rolado pela diferença dos argumentos. Por exemplo, se for 3 e for 6, o conteúdo <paramref name="Down" /> <paramref name="Up" /> será rolado para cima três linhas.</para>
+          <para>Se <paramref name="ToLeft" /> e ambos são <paramref name="ToRight" /> especificados, o conteúdo da janela é rolado pela diferença dos argumentos. Por exemplo, se <paramref name="ToLeft" /> for 3 e <paramref name="ToRight" /> for 6, o conteúdo será rolado para as três colunas direitas.</para>
           <para>Qualquer um desses argumentos pode ser um número negativo.</para>
           <para> </para></remarks>
       </Docs>
@@ -1710,7 +1710,7 @@
       <Docs>
         <summary><b>True</b> se a janela estiver dividida.</summary>
         <value>To be added.</value>
-        <remarks><para>É possível que True <see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" /> e <b>Split</b> sejam <b>False</b>ou vice-versa. <b></b></para>
+        <remarks><para>É possível que True e <see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" /> <b>Split</b> sejam <b></b> <b>False</b>ou vice-versa.</para>
           <para>Essa propriedade só se aplica a planilhas e folhas de macro.</para>
           <para> </para></remarks>
       </Docs>
@@ -1772,7 +1772,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o local da divisão horizontal da janela em pontos.</summary>
+        <summary>Retorna ou define o local da janela horizontal dividida em pontos.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1834,7 +1834,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o local da divisão vertical da janela em pontos.</summary>
+        <summary>Retorna ou define o local da janela vertical dividida em pontos.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2072,7 +2072,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa o intervalo de células que estão visíveis na janela ou painel. Se uma coluna ou linha estiver parcialmente visível, ela será incluída no intervalo.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa o intervalo de células que estão visíveis na janela ou no painel. Se uma coluna ou linha estiver parcialmente visível, ela será incluída no intervalo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2195,7 +2195,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o tamanho de exibição da janela como uma porcentagem (100 é igual ao tamanho normal, 200 igual a tamanho duplo e assim por diante).</summary>
+        <summary>Retorna ou define o tamanho de exibição da janela como uma porcentagem (100 é igual a tamanho normal, 200 igual a tamanho duplo e assim por diante).</summary>
         <value>To be added.</value>
         <remarks><para>Você também pode definir esta propriedade como <b>True</b> para que o tamanho da janela seja ajustado conforme a seleção atual.</para>
           <para>Essa função só afeta a planilha atualmente ativa na janela. Para usar essa propriedade em outras planilhas, você precisa primeira ativá-las.</para>

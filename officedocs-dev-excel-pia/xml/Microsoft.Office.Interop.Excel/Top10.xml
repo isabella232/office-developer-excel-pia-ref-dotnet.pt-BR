@@ -1,5 +1,5 @@
 <Type Name="Top10" FullName="Microsoft.Office.Interop.Excel.Top10">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="474d68fa0fa867d70e67f0c483f206c92800d97e" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009510" /></Metadata><TypeSignature Language="C#" Value="public interface Top10" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c4552ea7180fd30903326f2ef7389b40ba0efd3c2c953fcd984f31fdcbc66c43" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518871" /></Metadata><TypeSignature Language="C#" Value="public interface Top10" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Top10" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Top10" />
   <TypeSignature Language="VB.NET" Value="Public Interface Top10" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>Representa um visual dos 10 principais valores de uma regra de formatação condicional. Aplicar uma cor a um intervalo facilita a visualização do valor de uma célula em relação a outras células.</summary>
-    <remarks><para>Todos os objetos de formatação condicional estão contidos em <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> um objeto de coleção, que é filho de uma <see cref="T:Microsoft.Office.Interop.Excel.Range" /> coleção. Você pode criar uma regra de formatação 10 principais usando o método ou o <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddTop10" /> método da coleção <b>FormatConditions</b> .</para>
+    <remarks><para>Todos os objetos de formatação condicional estão contidos em um <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> objeto de coleção, que é filho de uma <see cref="T:Microsoft.Office.Interop.Excel.Range" /> coleção. Você pode criar uma regra de formatação top 10 usando o <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método ou da coleção <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddTop10" /> <b>FormatConditions.</b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -49,8 +49,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna um  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa o aplicativo Microsoft Office Excel. Quando usado com um qualificador de objeto, essa propriedade retorna um objeto <b>Application</b> que representa o criador do objeto especificado. Somente leitura.</summary>
-        <value><b>Aplicativo</b></value>
+        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna um <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa o Microsoft Office Excel aplicativo. Quando usado com um qualificador de objeto, essa propriedade retorna um objeto <b>Application</b> que representa o criador do objeto especificado. Somente leitura.</summary>
+        <value><b>Aplicação</b></value>
         <remarks><para>Você pode usar essa propriedade com um objeto de Automação OLE para retornar o aplicativo desse objeto.</para>
           <para> </para></remarks>
       </Docs>
@@ -106,7 +106,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna uma coleção que especifica a formatação das bordas de célula se a <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> regra de formatação condicional for avaliada como <b>True</b>. Somente leitura.</summary>
+        <summary>Retorna uma coleção que especifica a formatação de bordas de células se a regra de formatação condicional <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> for avaliada como <b>True</b>. Somente leitura.</summary>
         <value><b>Borders</b></value>
         <remarks><para>Para um objeto de formatação condicional, só podem ser definidas as propriedades referentes às bordas superior, inferior e lateral da célula.</para>
           <para> </para></remarks>
@@ -222,7 +222,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um objeto que especifica a formatação da fonte se a <see cref="T:Microsoft.Office.Interop.Excel.Font" /> regra de formatação condicional for avaliada como <b>True</b>. Somente leitura.</summary>
+        <summary>Retorna um objeto que especifica a formatação de fonte se a regra de formatação condicional <see cref="T:Microsoft.Office.Interop.Excel.Font" /> for avaliada como <b>True</b>. Somente leitura.</summary>
         <value><b>Font</b></value>
         <remarks><para>Nem todas as propriedades do objeto <b>Font</b> oferecem suporte para um objeto de formatação condicional. É possível definir os atributos de sublinhado, cor, tachado e estilo da fonte.</para>
           <para> </para></remarks>
@@ -251,7 +251,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um objeto que especifica os atributos interiores de uma célula para uma regra de formatação condicional que <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> é avaliada como <b>True</b>. Somente leitura.</summary>
+        <summary>Retorna um objeto que especifica os atributos internos de uma célula para uma regra de formatação condicional que <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> é avaliada como <b>True</b>. Somente leitura.</summary>
         <value><b>Interior</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -280,7 +280,7 @@
       <Docs>
         <param name="Range">O intervalo ao qual esta regra de formatação se aplicará.</param>
         <summary>Define o intervalo de células ao qual esta regra de formatação se aplicará.</summary>
-        <remarks><para>O intervalo deve estar no estilo de referência A1 e estar inteiramente contido dentro da planilha que é o pai da <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> coleção. Pode incluir o operador de intervalo (dois-pontos), o operador de interseção (um espaço), ou o operador de união (uma vírgula). Também pode incluir sinais de dólar, mas eles são ignorados.</para>
+        <remarks><para>O intervalo deve estar no estilo de referência A1 e estar inteiramente contido na planilha que é o pai da <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> coleção. Pode incluir o operador de intervalo (dois-pontos), o operador de interseção (um espaço), ou o operador de união (uma vírgula). Também pode incluir sinais de dólar, mas eles são ignorados.</para>
           <para>Você também pode usar um nome definido de local em qualquer parte do intervalo, mas o nome deve estar no idioma da macro.</para>
           <para> </para></remarks>
       </Docs>
@@ -340,7 +340,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai do objeto especificado. Somente leitura.</summary>
+        <summary>Retorna o objeto pai para o objeto especificado. Somente leitura.</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -462,7 +462,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <b>valor Integer,</b> especificando o número ou porcentagem do valor de classificação para a regra de formato condicional.</summary>
+        <summary>Retorna ou define um <b>valor Integer,</b> especificando o número ou a porcentagem do valor de classificação da regra de formato condicional.</summary>
         <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -521,7 +521,7 @@
       <Parameters />
       <Docs>
         <summary>Define o valor de prioridade para esta regra de formatação condicional como "1", de forma que esta regra seja avaliada antes das outras regras na planilha.</summary>
-        <remarks><para>Quando você tiver várias regras de formatação condicional em uma planilha, se a regra não tiver sido definida anteriormente como prioridade "1", esse método aumentará a prioridade de todas as outras regras existentes na planilha em um.</para>
+        <remarks><para>Quando você tem várias regras de formatação condicional em uma planilha, se a regra não foi definida anteriormente como prioridade "1", esse método fará com que a prioridade de todas as outras regras existentes na planilha seja aumentada em uma.</para>
           <para>
             <b>Observação:</b>os níveis de prioridade para regras de formatação condicional são aplicados no nível da planilha.</para>
           <para> </para></remarks>
@@ -613,7 +613,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlTopBottom</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define uma das constantes da enumeração, determinando se a classificação é <see cref="T:Microsoft.Office.Interop.Excel.XlTopBottom" /> avaliada da parte superior ou inferior.</summary>
+        <summary>Retorna ou define uma das constantes da enumeração, determinando se a classificação é avaliada <see cref="T:Microsoft.Office.Interop.Excel.XlTopBottom" /> da parte superior ou inferior.</summary>
         <value><b>XlTopBottom</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -643,7 +643,7 @@
       <Docs>
         <summary>Retorna o tipo de formato condicional. Somente leitura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /></value>
-        <remarks><para>Essa propriedade sempre retornará um <b>valor Inteiro</b> de "5", que é equivalente a <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTop10" /> .</para>
+        <remarks><para>Essa propriedade sempre retornará um <b>valor Integer</b> de "5", que é equivalente a <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTop10" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>

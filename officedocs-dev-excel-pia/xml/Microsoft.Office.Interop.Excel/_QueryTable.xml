@@ -1,5 +1,5 @@
 <Type Name="_QueryTable" FullName="Microsoft.Office.Interop.Excel._QueryTable">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="249f2de0b7c9698a20aab3d689ca0d60d9e16373" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012688" /></Metadata><TypeSignature Language="C#" Value="public interface _QueryTable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2d85b500e5f2c20add7814c7888e34a03d24a9839ffb18e9d471f845edecea63" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518220" /></Metadata><TypeSignature Language="C#" Value="public interface _QueryTable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _QueryTable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel._QueryTable" />
   <TypeSignature Language="VB.NET" Value="Public Interface _QueryTable" />
@@ -51,7 +51,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> se as larguras das colunas são ajustadas automaticamente para o melhor ajuste sempre que você atualizar a tabela de consulta especificada ou o mapa XML. <b>False</b> se as larguras das colunas não forem ajustadas automaticamente a cada atualização. O valor padrão é <b>True</b>. Leitura/gravação <b>booleano</b>.</summary>
+        <summary><b>True</b> se as larguras da coluna são ajustadas automaticamente para o melhor ajuste sempre que você atualize a tabela de consulta especificada ou o mapa XML. <b>False</b> se as larguras das colunas não forem ajustadas automaticamente a cada atualização. O valor padrão é <b>True</b>. Leitura/gravação <b>booleano</b>.</summary>
         <value>To be added.</value>
         <remarks><para>A largura máxima da coluna é dois terços da largura da tela.</para>
           <para> </para></remarks>
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,7 +137,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cancela todas as consultas em segundo plano da tabela de consultas especificada. Use a <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Refreshing" /> propriedade para determinar se uma consulta em segundo plano está em andamento.</summary>
+        <summary>Cancela todas as consultas em segundo plano da tabela de consultas especificada. Use a propriedade para determinar se uma consulta em segundo <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Refreshing" /> plano está em andamento.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,7 +201,7 @@
       <Docs>
         <summary>Retorna ou define uma <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" /> constante que descreve o tipo de comando associado à <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.CommandText" /> propriedade. O valor padrão é <b>xlCmdSQL</b>. <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />Leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks><para>Você só poderá definir a propriedade <b>CommandType</b> se o valor da propriedade <b>QueryType</b> da tabela de consulta ou do cache de tabela dinâmica for <b>xlOLEDBQuery</b>.</para>
+        <remarks><para>Você pode definir a <b>propriedade CommandType</b> somente se o valor da propriedade <b>QueryType</b> para a tabela de consulta ou o cache de tabela dinâmica for <b>xlOLEDBQuery</b>.</para>
           <para>Se o valor da propriedade <b>CommandType</b> for <b>xlCmdCube</b>, você não poderá alterar esse valor se houver um relatório de tabela dinâmica associado à tabela de consulta.</para>
           <para> </para></remarks>
       </Docs>
@@ -234,10 +234,10 @@
       <Docs>
         <summary>Retorna ou define uma cadeia de caracteres que contém informações de conexão para a tabela de consulta. <b>Objeto</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks><para>A propriedade <b>Connection</b> pode ser uma das seguintes: configurações OLE DB que permitem que o Microsoft Excel se conecte a uma fonte de dados OLE DB, configurações ODBC que permitem que o Microsoft Excel se conecte a uma fonte de dados ODBC, uma URL que permite que o Microsoft Excel se conecte a uma fonte de dados da Web, o caminho e o nome de arquivo de um arquivo de texto ou o caminho e o nome de arquivo de um arquivo que especifica um banco de dados ou consulta da Web.</para>
+        <remarks><para>A propriedade <b>Connection</b> pode ser uma das seguintes: configurações OLE DB que permitem que o Microsoft Excel se conecte a uma fonte de dados OLE DB, configurações ODBC que permitem que o Microsoft Excel se conecte a uma fonte de dados ODBC, uma URL que permite que o Microsoft Excel se conecte a uma fonte de dados da Web, o caminho e o nome do arquivo de um arquivo de texto ou o caminho para e o nome de arquivo de um arquivo que especifica um banco de dados ou consulta da Web.</para>
           <para>Definir a propriedade <b>Connection</b> não inicia imediatamente a conexão à fonte de dados. Você deve usar o <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> método para fazer a conexão e recuperar os dados.</para>
-          <para>Ao usar um arquivo de cubo offline, de definir a propriedade como True e <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> usar a propriedade em vez da propriedade <b></b> <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" /> <b>Connection.</b></para>
-          <para>Para obter mais informações sobre a sintaxe da sequência de conexão, consulte o <see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" /> método da coleção e o método da <see cref="T:Microsoft.Office.Interop.Excel.QueryTables" /> <see cref="M:Microsoft.Office.Interop.Excel.PivotCaches.Add(Microsoft.Office.Interop.Excel.XlPivotTableSourceType,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> coleção.</para>
+          <para>Ao usar um arquivo de cubo offline, de definir a propriedade como True e usar a <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> propriedade em vez da propriedade <b></b> <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" /> <b>Connection.</b></para>
+          <para>Para obter mais informações sobre a sintaxe da cadeia de caracteres de conexão, consulte o <see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" /> método da coleção e o método da <see cref="T:Microsoft.Office.Interop.Excel.QueryTables" /> <see cref="M:Microsoft.Office.Interop.Excel.PivotCaches.Add(Microsoft.Office.Interop.Excel.XlPivotTableSourceType,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> coleção.</para>
           <para>Como alternativa, você pode optar por acessar uma fonte de dados diretamente usando o Microsoft ActiveX Data Objects (ADO).</para>
           <para> </para></remarks>
       </Docs>
@@ -265,7 +265,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna uma constante na <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeração que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. Somente <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> leitura.</summary>
+        <summary>Retorna uma constante na <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeração que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> .</summary>
         <value>To be added.</value>
         <remarks><para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
           <para> </para></remarks>
@@ -350,9 +350,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a URL (uniform resource locator) da página da Web para uma consulta da Web. <b>Objeto</b> de leitura/gravação.</summary>
+        <summary>Retorna ou define o URL (localizador de recurso uniforme) da página da Web para uma consulta da Web. <b>Objeto</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks><para>A <b>propriedade EditWebPage</b> retorna <b>Null se</b> não estiver definida. A <b>propriedade EditWebPage</b> só será significativa se o tipo de consulta for <b>xlWebQuery</b> ou <b>xlOLEDBQuery</b>.</para>
+        <remarks><para>A <b>propriedade EditWebPage</b> retornará <b>Null se</b> não estiver definida. A <b>propriedade EditWebPage</b> só será significativa se o tipo de consulta for <b>xlWebQuery</b> ou <b>xlOLEDBQuery</b>.</para>
           <para>Se <b>EditWebPage não</b> for nulo, ignore <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebTables" /> a propriedade para atualização. Como resultado, uma consulta XML e a propriedade <b>WebTable</b> irão se referir à tabela na página da Web original e deverão ser usadas somente no caso de edição para preencher previamente a caixa de diálogo Web Query.</para>
           <para> </para></remarks>
       </Docs>
@@ -414,7 +414,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> se o o cache de tabela dinâmica ou de consulta pude ser atualizado pelo usuário. O valor padrão é <b>True</b>. Leitura/gravação <b>booleano</b>.</summary>
+        <summary><b>True</b> se o o cache de tabela dinâmica ou de consulta pude ser atualizado pelo usuário. O valor padrão é <b>True</b>. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks><para>A <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.RefreshOnFileOpen" /> propriedade será ignorada se a propriedade <b>EnableRefresh</b> estiver definida como <b>False</b>.</para>
           <para>Em fontes de dados OLAP, a definição dessa propriedade como <b>False</b> desabilita as atualizações.</para>
@@ -444,7 +444,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> se o número de linhas retornado pela última utilização do método for maior do que o número de <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> linhas disponíveis na planilha. <b>Boolean</b> somente leitura.</summary>
+        <summary><b>True</b> se o número de linhas retornadas pelo último uso do método for maior do que o número de linhas <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> disponíveis na planilha. <b>Boolean</b> somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -475,7 +475,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> se os nomes dos campos da fonte de dados aparecerem como títulos de coluna para os dados retornados. O valor padrão é <b>True</b>. Leitura/gravação <b>booleano</b>.</summary>
+        <summary><b>True</b> se os nomes dos campos da fonte de dados aparecerem como títulos de coluna para os dados retornados. O valor padrão é <b>True</b>. <b>Boolean</b> de leitura/gravação</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -506,7 +506,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> se as fórmulas à direita da tabela de consulta especificada forem atualizadas automaticamente sempre que a tabela de consulta for atualizada. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> se as fórmulas à direita da tabela de consulta especificada forem atualizadas automaticamente sempre que a tabela de consulta for atualizada. <b>Boolean</b> de leitura/gravação</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -602,9 +602,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> se a conexão com a fonte de dados especificada for mantida após a atualização e até a pasta de trabalho ser fechada. O valor padrão é <b>True</b>. Leitura/gravação <b>booleano</b>.</summary>
+        <summary><b>True</b> se a conexão com a fonte de dados especificada for mantida após a atualização e até a pasta de trabalho ser fechada. O valor padrão é <b>True</b>. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks><para>Você só poderá definir <b>a propriedade MaintainConnection</b> se a propriedade da tabela de consulta ou do cache de tabela dinâmica estiver definida como <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlOLEDBQuery</b>.</para>
+        <remarks><para>Você pode definir a <b>propriedade MaintainConnection</b> somente se a propriedade da tabela de consulta ou do cache de tabela dinâmica estiver definida <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> como <b>xlOLEDBQuery</b>.</para>
           <para>Se você previr consultas frequentes a um servidor, a definição dessa propriedade como <b>True</b> poderá melhorar o desempenho reduzindo o tempo de reconexão. A definição da propriedade como <b>False</b> fará com que uma conexão aberta seja fechada.</para>
           <para> </para></remarks>
       </Docs>
@@ -637,7 +637,7 @@
       <Docs>
         <summary>Retorna ou define o nome do objeto. <b>String</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks><para>A tabela a seguir mostra valores de exemplo <b>da propriedade Name</b> e propriedades relacionadas dada uma fonte de dados com o nome exclusivo "[Europa]. [França]. [Paris]" e uma fonte de dados não OLAP com o nome do item "Paris".</para>
+        <remarks><para>A tabela a seguir mostra valores de exemplo da <b>propriedade Name</b> e propriedades relacionadas, dada uma fonte de dados com o nome exclusivo "[Europa]. [França]. [Paris]" e uma fonte de dados não OLAP com o nome do item "Paris".</para>
           <list type="table">
             <item>
               <term>
@@ -671,11 +671,11 @@
           <para>Ao especificar um índice na <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> coleção, você pode usar a sintaxe mostrada na tabela a seguir.</para>
           <list type="table">
             <item>
-              <term>expressão. PivotItems("[Europe].[ França]. [Paris]")</term>
+              <term>expressão. PivotItems("[Europa].[ França]. [Paris]")</term>
               <description>Expression.PivotItems("Paris")</description>
             </item>
           </list>
-          <para>Ao usar a propriedade para fazer referência a um determinado membro de uma coleção, você pode usar o nome do índice <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> de texto, conforme mostrado na tabela a seguir.</para>
+          <para>Ao usar a propriedade para fazer referência a um membro específico de uma coleção, você pode usar o nome do índice de texto conforme <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> mostrado na tabela a seguir.</para>
           <list type="table">
             <item>
               <term>[Europa]. [França]. [Paris]</term>
@@ -736,7 +736,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai do objeto especificado. Somente leitura.</summary>
+        <summary>Retorna o objeto pai para o objeto especificado. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -800,7 +800,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> se as informações sobre classificação, filtragem e layout de colunas forem preservadas sempre que uma tabela de consulta for atualizada. O valor padrão é <b>False</b>. Leitura/gravação <b>booleano</b>.</summary>
+        <summary><b>True</b> se as informações sobre classificação, filtragem e layout de colunas forem preservadas sempre que uma tabela de consulta for atualizada. O valor padrão é <b>False</b>. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks><para>Essa propriedade só tem efeito quando a tabela de consulta está usando uma conexão de banco de dados.</para>
           <para>Você pode definir essa propriedade como <b>False</b> para que haja compatibilidade com as versões anteriores do Microsoft Excel.</para>
@@ -833,7 +833,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Essa propriedade será <b>True</b> se qualquer formatação comum às cinco primeiras linhas de dados for aplicada a novas linhas de dados na tabela de consulta. Células não utilizadas não serão formatadas. A propriedade será <b>False</b> se a última AutoFormatação aplicada à tabela de consulta for aplicada às novas linhas de dados. O valor padrão é <b>True</b> (a menos que a tabela de consulta tenha sido criada no Microsoft Excel 97 e a propriedade seja True , nesse caso <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.HasAutoFormat" /> <b>PreserveFormatting</b> é <b>False</b>). <b></b> <b>Boolean</b> de leitura/gravação.</summary>
+        <summary>Essa propriedade será <b>True</b> se qualquer formatação comum às cinco primeiras linhas de dados for aplicada a novas linhas de dados na tabela de consulta. Células não utilizadas não serão formatadas. A propriedade será <b>False</b> se a última AutoFormatação aplicada à tabela de consulta for aplicada às novas linhas de dados. O valor padrão é <b>True</b> (a menos que a tabela de consulta tenha sido criada no Microsoft Excel 97 e a propriedade for True , nesse caso <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.HasAutoFormat" /> <b>PreserveFormatting</b> é <b>False</b>). <b></b> <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks><para>Para tabelas de consulta de bancos de dados, a configuração da formatação padrão é <b>xlSimple</b>.</para>
           <para>O novo estilo de AutoFormatação será aplicado à tabela de consulta quando a tabela for atualizada. A AutoFormatação será redefinida como <b>None</b> sempre que <b>PreserveFormatting</b> for definido como <b>False</b>. Consequentemente, qualquer AutoFormatação que seja definida antes de <b>PreserveFormatting</b> ser definida como <b>False</b> e antes de a tabela de consulta ser atualizada não terá efeito algum, assim como não será aplicada nenhuma formatação à tabela de consulta resultante.</para>
@@ -863,7 +863,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlQueryType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indica o tipo de consulta usado pelo Microsoft Excel para preencher a tabela de consulta ou o cache de tabela dinâmica. Somente <see cref="T:Microsoft.Office.Interop.Excel.XlQueryType" /> leitura.</summary>
+        <summary>Indica o tipo de consulta usado por Microsoft Excel para preencher a tabela de consulta ou o cache de tabela dinâmica. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlQueryType" /> .</summary>
         <value>To be added.</value>
         <remarks><para>Especifique a fonte de dados no prefixo <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> do valor da propriedade.</para>
           <para> </para></remarks>
@@ -895,9 +895,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <b>objeto Recordset</b> que é usado como fonte de dados para a tabela de consulta especificada ou o cache de tabela dinâmica. Leitura/gravação.</summary>
+        <summary>Retorna ou define um <b>objeto Recordset</b> usado como a fonte de dados para a tabela de consulta especificada ou o cache de tabela dinâmica. Leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks><para>Se essa propriedade for usada para substituir um recordset existente, a alteração será efetivada quando o <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> método for executado.</para>
+        <remarks><para>Se essa propriedade for usada para substituir um recordset existente, a alteração entra em vigor quando o <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> método é executado.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -923,15 +923,15 @@
         <Parameter Name="BackgroundQuery" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="BackgroundQuery">Objeto <b>opcional</b>. Usado somente com <b>QueryTables</b> baseadas nos resultados de uma consulta SQL. <b>True</b> para retornar o controle ao procedimento assim que uma conexão de banco de dados for feita e a consulta for enviada. A <b>QueryTable</b> é atualizada em segundo plano. <b>False</b> para retornar o controle ao procedimento somente depois que todos os dados tiverem sido buscados na planilha. Se esse argumento não for especificado, a configuração da <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.BackgroundQuery" /> propriedade determinará o modo de consulta.</param>
-        <summary>Atualiza um intervalo de dados externos ( <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> ). <b>Boolean</b>.</summary>
+        <param name="BackgroundQuery">Objeto <b>Opcional</b>. Usado somente com <b>QueryTables</b> baseadas nos resultados de uma consulta SQL. <b>True</b> para retornar o controle ao procedimento assim que uma conexão de banco de dados for feita e a consulta for enviada. A <b>QueryTable</b> é atualizada em segundo plano. <b>False</b> para retornar o controle ao procedimento somente depois que todos os dados tiverem sido buscados na planilha. Se esse argumento não for especificado, a configuração da <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.BackgroundQuery" /> propriedade determinará o modo de consulta.</param>
+        <summary>Atualiza um intervalo de dados externo ( <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> ). <b>Boolean</b>.</summary>
         <returns>To be added.</returns>
         <remarks><para>Os comentários a seguir se aplicam a objetos <b>QueryTable</b> baseados nos resultados de uma consulta SQL.</para>
           <para>O método <b>Refresh</b> faz com que o Microsoft Excel se conecte à fonte de dados do objeto <b>QueryTable</b>, execute a consulta SQL e retorne os dados para o intervalo baseado no objeto <b>QueryTable</b>. A menos que esse método seja chamado, o objeto <b>QueryTable</b> não se comunicará com a fonte de dados.</para>
-          <para>Ao fazer a conexão com a fonte de dados OLE DB ou ODBC, o Microsoft Excel usa a sequência de conexão especificada pela <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> propriedade. Se a cadeia de conexão especificada não tiver os valores necessários, serão exibidas caixas de diálogo para solicitar ao usuário as informações necessárias. Se a propriedade for False , as caixas de diálogo não serão exibidas e o método <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> <b>Refresh</b> falhará com a exceção Informações de Conexão Insuficientes. <b></b></para>
-          <para>Depois de fazer uma conexão bem-sucedida, o Microsoft Excel armazena a cadeia de conexão completa para que os avisos não sejam exibidos em chamadas subsequentes para o método <b>Refresh</b> durante a mesma sessão de edição. Você pode obter a sequência de conexão concluída examinando o valor da <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> propriedade.</para>
+          <para>Ao fazer a conexão com a fonte de dados OLE DB ou ODBC, Microsoft Excel usa a cadeia de caracteres de conexão especificada pela <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> propriedade. Se a cadeia de conexão especificada não tiver os valores necessários, serão exibidas caixas de diálogo para solicitar ao usuário as informações necessárias. Se a propriedade for False , as caixas de diálogo não serão exibidas e o método Refresh falhará com a exceção Informações de <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> Conexão Insuficientes. <b></b> <b></b></para>
+          <para>Depois de fazer uma conexão bem-sucedida, o Microsoft Excel armazena a cadeia de conexão completa para que os avisos não sejam exibidos em chamadas subsequentes para o método <b>Refresh</b> durante a mesma sessão de edição. Você pode obter a cadeia de caracteres de conexão concluída examinando o valor da <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> propriedade.</para>
           <para>Depois que a conexão de banco de dados tiver sido estabelecida, a consulta SQL será validada. Se a consulta não for válida, o método <b>Refresh</b> falhará com a exceção de erro de sintaxe SQL.</para>
-          <para>Se a consulta exigir parâmetros, a coleção deverá ser inicializada com informações de associação de parâmetros antes <see cref="T:Microsoft.Office.Interop.Excel.Parameters" /> que o método <b>Refresh</b> seja chamado. Se não houver parâmetros suficientes associados, o método <b>Refresh</b> falhará com a exceção de erro de parâmetro. Se os parâmetros são definidos para solicitar seus valores, as caixas de diálogo são exibidas para o usuário, independentemente da configuração da <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> propriedade. Se o usuário cancelar uma caixa de diálogo de parâmetro, o método <b>Refresh</b> será interrompido e retornará <b>False</b>. Se parâmetros extras forem vinculados à coleção <b>Parameters</b>, esses parâmetros extras serão ignorados.</para>
+          <para>Se a consulta exigir parâmetros, a coleção deverá ser inicializada com informações de associação de parâmetros <see cref="T:Microsoft.Office.Interop.Excel.Parameters" /> antes que o método <b>Refresh</b> seja chamado. Se não houver parâmetros suficientes associados, o método <b>Refresh</b> falhará com a exceção de erro de parâmetro. Se os parâmetros são definidos para solicitar seus valores, as caixas de diálogo são exibidas para o usuário, independentemente da configuração da <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> propriedade. Se o usuário cancelar uma caixa de diálogo de parâmetro, o método <b>Refresh</b> será interrompido e retornará <b>False</b>. Se parâmetros extras forem vinculados à coleção <b>Parameters</b>, esses parâmetros extras serão ignorados.</para>
           <para>O método <b>Refresh</b> retornará <b>True</b> se a consulta for concluída ou iniciada com êxito; ele retornará <b>False</b> se o usuário cancelar uma caixa de diálogo de conexão ou de parâmetro.</para>
           <para>Para ver se o número de linhas buscadas excedeu o número de linhas disponíveis na planilha, examine a <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" /> propriedade. Essa propriedade é inicializada sempre que o método <b>Refresh</b> é chamado.</para>
           <para> </para></remarks>
@@ -992,9 +992,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> se a tabela de consulta ou o cache de tabela dinâmica for automaticamente atualizado toda vez que a pasta de trabalho for aberta. O valor padrão é <b>False</b>. Leitura/gravação <b>booleano</b>.</summary>
+        <summary><b>True</b> se a tabela de consulta ou o cache de tabela dinâmica for automaticamente atualizado toda vez que a pasta de trabalho for aberta. O valor padrão é <b>False</b>. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks><para>Tabelas de consulta e relatórios de tabela dinâmica não são atualizados automaticamente quando você abre a agenda usando o <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método. Use o <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> método para atualizar os dados depois que a agenda de trabalho for aberta.</para>
+        <remarks><para>Tabelas de consulta e relatórios de tabela dinâmica não são atualizados automaticamente quando você abre a workbook usando o <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método. Use o <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> método para atualizar os dados depois que a workbook for aberta.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1110,7 +1110,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa a área da planilha ocupada pela tabela de consulta especificada. Somente leitura.</summary>
+        <summary>Retorna um objeto que representa a área da planilha <see cref="T:Microsoft.Office.Interop.Excel.Range" /> ocupada pela tabela de consulta especificada. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks><para>O intervalo não inclui a linha de nome de campo ou a coluna de número de linha.</para>
           <para> </para></remarks>
@@ -1203,10 +1203,10 @@
         <Parameter Name="Keywords" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ODCFileName"><b>String</b> necessário. Local no qual o arquivo é salvo.</param>
-        <param name="Description">Objeto <b>opcional</b>. Descrição que será salva no arquivo.</param>
-        <param name="Keywords">Objeto <b>opcional</b>. Palavras-chave separadas por espaço que podem ser usadas para pesquisar o arquivo.</param>
-        <summary>Salva a fonte do cache de tabela dinâmica como um arquivo de conexão de dados do Microsoft Office.</summary>
+        <param name="ODCFileName"><b>String</b> necessário. Local para o qual o arquivo é salvo.</param>
+        <param name="Description">Objeto <b>Opcional</b>. Descrição que será salva no arquivo.</param>
+        <param name="Keywords">Objeto <b>Opcional</b>. Palavras-chave separadas por espaço que podem ser usadas para pesquisar o arquivo.</param>
+        <summary>Salva a fonte de cache de tabela dinâmica como um arquivo Microsoft Office Conexão de Dados.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1268,9 +1268,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> se a informação de senha de uma sequência de conexão ODBC for salva junto com a consulta especificada. <b>False</b> se a senha for removida. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> se a informação de senha de uma sequência de conexão ODBC for salva junto com a consulta especificada. <b>False</b> se a senha for removida. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks><para>Essa propriedade afeta somente consultas ODBC.</para>
+        <remarks><para>Essa propriedade afeta apenas consultas ODBC.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1299,7 +1299,7 @@
       <Docs>
         <summary>Retorna os critérios de classificação do intervalo da tabela de consulta. Somente leitura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Sort" /></value>
-        <remarks><para>Se você importar dados usando a interface do usuário, os dados de consultas da Web ou de consultas de texto serão importados como um objeto, enquanto todos os outros dados externos serão importados <see cref="T:Microsoft.Office.Interop.Excel._QueryTable" /> como <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> um objeto.</para>
+        <remarks><para>Se você importar dados usando a interface do usuário, os dados de consultas da Web ou consultas de texto serão importados como um objeto, enquanto todos os outros dados externos serão importados <see cref="T:Microsoft.Office.Interop.Excel._QueryTable" /> como <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> um objeto.</para>
           <para>Se você importar dados usando o modelo de objeto, os dados das consultas da Web ou das consultas de texto deverão ser importados como um objeto <b>QueryTable</b>, enquanto todos os demais dados externos poderão ser importados como um objeto <b>ListObject</b> ou <b>QueryTable</b>.</para>
           <para>Você pode usar a propriedade <b>QueryTable</b> do objeto <b>ListObject</b> para acessar a propriedade <b>Sort</b>.</para>
           <para> </para></remarks>
@@ -1362,9 +1362,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <b>String que</b> indica o arquivo de dados de origem para uma tabela de consulta.</summary>
+        <summary>Retorna ou define um <b>String</b> que indica o arquivo de dados de origem de uma tabela de consulta.</summary>
         <value>To be added.</value>
-        <remarks><para>Para fontes de dados baseadas em arquivo (por exemplo, Access), a propriedade <b>SourceDataFile</b> contém um caminho totalmente qualificado para o arquivo de dados de origem. É nulo para fontes de dados baseadas em servidor (por exemplo, SQL Server). A <b>propriedade SourceDataFile</b> será definida como nula se <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> ela for alterada programaticamente.</para>
+        <remarks><para>Para fontes de dados baseadas em arquivo (por exemplo, Access), a <b>propriedade SourceDataFile</b> contém um caminho totalmente qualificado para o arquivo de dados de origem. Ela é nula para fontes de dados baseadas em servidor (por exemplo, SQL Server). A <b>propriedade SourceDataFile</b> será definida como nula se <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> a propriedade for alterada programaticamente.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -29131,7 +29131,7 @@ dataTableRange.&lt;/span&gt;
       <Docs>
         <summary>Retorna ou define uma matriz de constantes ordenadas que especifica os tipos de dados aplicados às colunas correspondentes no arquivo de texto que você está importando para uma tabela de consulta. A constante padrão para cada coluna é <b>xlGeneral</b>. <b>Objeto</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks><para>Você pode usar as constantes listadas na tabela a seguir para especificar os tipos de dados de coluna usados ou as ações <see cref="T:Microsoft.Office.Interop.Excel.XlColumnDataType" /> tomadas durante a importação de dados.</para>
+        <remarks><para>Você pode usar as constantes listadas na tabela a seguir para especificar os tipos de dados de coluna usados ou as ações <see cref="T:Microsoft.Office.Interop.Excel.XlColumnDataType" /> realizadas durante a importação de dados.</para>
           <list type="table">
             <item>
               <term>
@@ -29195,8 +29195,8 @@ dataTableRange.&lt;/span&gt;
             </item>
           </list>
           <para>Use essa propriedade somente quando a tabela de consulta for baseada em dados de um arquivo de texto (com a propriedade <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> definida como <b>xlTextImport</b>).</para>
-          <para>Se você especificar mais elementos na matriz do que colunas, esses valores serão ignorados.</para>
-          <para>Você só poderá usar <b>xlEMDFormat</b> se o suporte ao idioma taiwanês estiver instalado e selecionado. A constante <b>xlEMDFormat</b> especifica que datas da era taiwanesa estão sendo usadas.</para>
+          <para>Se você especificar mais elementos na matriz do que há colunas, esses valores serão ignorados.</para>
+          <para>Você só poderá usar <b>xlEMDFormat</b> se o suporte a idioma taiwanês estiver instalado e selecionado. A constante <b>xlEMDFormat</b> especifica que datas da era taiwanesa estão sendo usadas.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -29226,7 +29226,7 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> se a vírgula for o delimitador quando você importar um arquivo de texto para uma tabela de consulta. <b>False</b> se desejar usar algum outro caractere como o delimitador. O valor padrão é <b>False</b>. Leitura/gravação <b>booleano</b>.</summary>
+        <summary><b>True</b> se a vírgula for o delimitador quando você importar um arquivo de texto para uma tabela de consulta. <b>False</b> se desejar usar algum outro caractere como o delimitador. O valor padrão é <b>False</b>. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks><para>Use essa propriedade somente quando a tabela de consulta for baseada em dados de um arquivo de texto (com a propriedade definida como <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b>) e somente se o valor da propriedade for <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" /> <b>xlDelimited</b>.</para>
           <para> </para></remarks>
@@ -29258,7 +29258,7 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> se os delimitadores consecutivos forem tratados como um único delimitador quando você importar um arquivo de texto para uma tabela de consulta. O valor padrão é <b>Ques</b>e. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> se os delimitadores consecutivos forem tratados como um único delimitador quando você importar um arquivo de texto para uma tabela de consulta. O valor padrão é <b>Fals</b>e. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks><para>Use essa propriedade somente quando a tabela de consulta for baseada em dados de um arquivo de texto (com a propriedade definida como <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b>) e somente se o valor da propriedade for <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" /> <b>xlDelimited</b>.</para>
           <para> </para></remarks>
@@ -29290,9 +29290,9 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o caractere separador decimal que o Microsoft Excel usa quando você importa um arquivo de texto para uma tabela de consulta. O padrão é o caractere separador decimal do sistema. <b>String</b> de leitura/gravação.</summary>
+        <summary>Retorna ou define o caractere separador decimal que o Microsoft Excel usa quando você importa um arquivo de texto para uma tabela de consulta. O padrão é o caractere separador decimal do sistema. <b>String</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks><para>Use essa propriedade somente quando a tabela de consulta for baseada em dados de um arquivo de texto (com a propriedade definida como <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b>) que contenha separadores decimais e milhares diferentes daqueles usados no computador, devido a uma configuração de idioma diferente que está sendo usada.</para>
+        <remarks><para>Use essa propriedade somente quando sua tabela de consulta for baseada em dados de um arquivo de texto (com a propriedade definida como <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b>)que contenha separadores de decimal e milhares de separadores diferentes daqueles usados no computador, devido a uma configuração de idioma diferente sendo usada.</para>
           <para>A tabela a seguir mostra os resultados quando você importa texto para o Microsoft Excel usando vários separadores. Os resultados numéricos são exibidos na coluna mais à direita.</para>
           <list type="table">
             <item>
@@ -29365,7 +29365,7 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define uma matriz de números inteiros que correspondem às larguras das colunas (em caracteres) no arquivo de texto que você está importando para uma tabela de consulta. As larguras válidas vão de 1 a 32.767 caracteres. <b>Objeto</b> de leitura/gravação.</summary>
+        <summary>Retorna ou define uma matriz de números inteiros que correspondem às larguras das colunas (em caracteres) no arquivo de texto que você está importando para uma tabela de consulta. As larguras válidas variam de 1 a 32.767 caracteres. <b>Objeto</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks><para>Use essa propriedade somente quando a tabela de consulta for baseada em dados de um arquivo de texto (com a propriedade definida como xlTextImport ) e somente se o valor da propriedade for <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" /> <b>xlFixedWidth</b>.</para>
           <para>Você precisa especificar uma largura de coluna não-negativa. Se você especificar colunas que ultrapassem a largura do arquivo de texto, esses valores serão ignorados. Se a largura do arquivo de texto for maior que a largura total de colunas especificada, o trecho excedente do arquivo de texto será importado para uma outra coluna.</para>
@@ -29529,7 +29529,7 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> se o ponto-e-vírgula é o delimiter quando você importa um arquivo de texto para uma tabela de consulta e se o valor da propriedade é <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" /> <b>xlDelimited</b>. O valor padrão é <b>False</b>. Leitura/gravação <b>booleano</b>.</summary>
+        <summary><b>True</b> se o ponto e vírgula for o delimiter quando você importar um arquivo de texto para uma tabela de consulta e se o valor da propriedade for <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" /> <b>xlDelimited</b>. O valor padrão é <b>False</b>. Leitura/gravação <b>booleano</b>.</summary>
         <value>To be added.</value>
         <remarks><para>Use essa propriedade somente quando a tabela de consulta for baseada em dados de um arquivo de texto (com a propriedade <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> definida como <b>xlTextImport</b>).</para>
           <para> </para></remarks>
@@ -29561,7 +29561,7 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> se o caractere de espaço for o delimitador quando você importar um arquivo de texto para uma tabela de consulta. O valor padrão é <b>False</b>. Leitura/gravação <b>booleano</b>.</summary>
+        <summary><b>True</b> se o caractere de espaço for o delimitador quando você importar um arquivo de texto para uma tabela de consulta. O valor padrão é <b>False</b>. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks><para>Use essa propriedade somente quando a tabela de consulta for baseada em dados de um arquivo de texto (com a propriedade definida como <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b>) e somente se o valor da propriedade for <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" /> <b>xlDelimited</b>.</para>
           <para> </para></remarks>
@@ -29625,7 +29625,7 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> se o caractere de tabulação for o delimitador quando você importar um arquivo de texto para uma tabela de consulta. O valor padrão é <b>False</b>. Leitura/gravação <b>booleano</b>.</summary>
+        <summary><b>True</b> se o caractere de tabulação for o delimitador quando você importar um arquivo de texto para uma tabela de consulta. O valor padrão é <b>False</b>. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks><para>Use essa propriedade somente quando a tabela de consulta for baseada em dados de um arquivo de texto (com a propriedade definida como <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b>) e somente se o valor da propriedade for <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" /> <b>xlDelimited</b>.</para>
           <para> </para></remarks>
@@ -29689,9 +29689,9 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o caractere separador de milhar que o Microsoft Excel usa quando você importa um arquivo de texto para uma tabela de consulta. O padrão é o caractere separador de milhar do sistema. <b>String</b> de leitura/gravação.</summary>
+        <summary>Retorna ou define o caractere separador de milhares que Microsoft Excel usa quando você importa um arquivo de texto para uma tabela de consulta. O padrão é o caractere separador de milhar do sistema. <b>String</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks><para>Use essa propriedade somente quando a tabela de consulta for baseada em dados de um arquivo de texto (com a propriedade definida como <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b>), especialmente quando o arquivo contiver separadores decimais e milhares diferentes daqueles usados no computador, devido a uma configuração de idioma diferente que está sendo usada.</para>
+        <remarks><para>Use essa propriedade somente quando a tabela de consulta for baseada em dados de um arquivo de texto (com a propriedade definida como <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b>), especialmente quando o arquivo contiver separadores de decimal e milhares que são diferentes daqueles usados no computador, devido a uma configuração de idioma diferente sendo usada.</para>
           <para>A tabela a seguir mostra os resultados quando você importa texto para o Microsoft Excel usando vários separadores. Os resultados numéricos são exibidos na coluna mais à direita.</para>
           <list type="table">
             <item>
@@ -29764,7 +29764,7 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> para o Microsoft Excel tratar números importados como texto que começa com um símbolo "-" como um número negativo. <b>False</b> para o Excel tratar números importados como texto que comece com um símbolo "-" como texto. <b>Boolean</b> de leitura/gravação.</summary>
+        <summary><b>True</b> para Microsoft Excel para tratar números importados como texto que começam com um símbolo "-" como um número negativo. <b>False</b> para o Excel tratar números importados como texto que comece com um símbolo "-" como texto. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -29795,7 +29795,7 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Excel.XlTextVisualLayoutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define uma constante que indica se o layout visual do texto que está sendo importado é da esquerda para a direita ou <see cref="T:Microsoft.Office.Interop.Excel.XlTextVisualLayoutType" /> da direita para a esquerda.</summary>
+        <summary>Retorna ou define uma constante que indica se o layout visual do texto que está sendo importado é da esquerda para a direita ou da direita <see cref="T:Microsoft.Office.Interop.Excel.XlTextVisualLayoutType" /> para a esquerda.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -29828,7 +29828,7 @@ dataTableRange.&lt;/span&gt;
       <Docs>
         <summary><b>True</b> se delimitadores consecutivos são tratados como um único delimitador quando você importa dados de marcas HTML PRE em uma página da Web para uma tabela de consulta e se os dados devem ser analisados em &lt; &gt; colunas. <b>False</b> se você desejar tratar os delimitadores consecutivos como vários delimitadores. O valor padrão é <b>True</b>. Leitura/gravação <b>booleano</b>.</summary>
         <value>To be added.</value>
-        <remarks><para>Use essa propriedade somente quando a propriedade da tabela de consulta estiver definida como <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlWebQuery</b>, a consulta retorna um documento HTML e a propriedade é <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebPreFormattedTextToColumns" /> definida como <b>True</b>.</para>
+        <remarks><para>Use essa propriedade somente quando a propriedade da tabela de consulta estiver definida como <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlWebQuery,</b>a consulta retornará um documento HTML e a propriedade será <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebPreFormattedTextToColumns" /> definida como <b>True</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -29858,7 +29858,7 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> se os dados que se parecerem com datas forem analisados como texto quando você importar uma página da Web para uma tabela de consulta. <b>False</b> se o reconhecimento de data for usado. O valor padrão é <b>False</b>. Leitura/gravação <b>booleano</b>.</summary>
+        <summary><b>True</b> se os dados que se parecerem com datas forem analisados como texto quando você importar uma página da Web para uma tabela de consulta. <b>False</b> se o reconhecimento de data for usado. O valor padrão é <b>False</b>. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks><para>Use essa propriedade somente quando a propriedade da tabela de consulta estiver definida como <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlWebQuery</b> e a consulta retornar um documento HTML.</para>
           <para> </para></remarks>
@@ -29890,7 +29890,7 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> se redirecionamentos de consulta à Web estão desabilitados para um <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> objeto. O valor padrão é <b>False</b>. Leitura/gravação <b>booleano</b>.</summary>
+        <summary><b>True</b> se redirecionamentos de consulta da Web estão desabilitados para um <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> objeto. O valor padrão é <b>False</b>. Leitura/gravação <b>booleano</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -29953,9 +29953,9 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define se os dados contidos em marcas HTML PRE na página da Web são analisados em colunas quando você importa a página para uma &lt; &gt; tabela de consulta. O padrão é <b>True</b>. Leitura/gravação <b>booleano</b>.</summary>
+        <summary>Retorna ou define se os dados contidos nas marcas HTML PRE na página da Web são analisados em colunas quando você importa a página para uma &lt; &gt; tabela de consulta. O padrão é <b>True</b>. Leitura/gravação <b>booleano</b>.</summary>
         <value>To be added.</value>
-        <remarks><para>Essa propriedade é usada somente quando a propriedade da tabela de consulta é <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlWebQuery</b> e a consulta retorna um documento HTML.</para>
+        <remarks><para>Essa propriedade é usada somente quando a propriedade da tabela de consulta <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> é <b>xlWebQuery</b> e a consulta retorna um documento HTML.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -29988,7 +29988,7 @@ dataTableRange.&lt;/span&gt;
         <summary>Retorna ou define um valor que determina se uma página da Web inteira, todas as tabelas nela contidas ou somente tabelas específicas serão importadas para uma tabela de consulta. <see cref="T:Microsoft.Office.Interop.Excel.XlWebSelectionType" />Leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks><para>Use essa propriedade somente quando a propriedade da tabela de consulta estiver definida como <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlWebQuery</b> e a consulta retornar um documento HTML.</para>
-          <para>Se o valor dessa propriedade for <b>xlSpecifiedTables</b>, você poderá usar a propriedade <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebTables" /> para especificar as tabelas a serem importadas.</para>
+          <para>Se o valor dessa propriedade for <b>xlSpecifiedTables,</b>você poderá usar a propriedade para especificar as <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebTables" /> tabelas a serem importadas.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -30018,7 +30018,7 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> se os dados das marcas HTML PRE na página da Web especificada são processados de uma só vez quando você importa a página para uma &lt; tabela de &gt; consulta. <b>False</b> se os dados forem importados em blocos de linhas contíguas para que as linhas de cabeçalho sejam reconhecidas como tais. O valor padrão é <b>False</b>. Leitura/gravação <b>booleano</b>.</summary>
+        <summary><b>True</b> se os dados das marcas HTML PRE na página da Web especificada são processados de uma só vez quando você importa a página &lt; para uma tabela de &gt; consulta. <b>False</b> se os dados forem importados em blocos de linhas contíguas para que as linhas de cabeçalho sejam reconhecidas como tais. O valor padrão é <b>False</b>. Leitura/gravação <b>booleano</b>.</summary>
         <value>To be added.</value>
         <remarks><para>Use essa propriedade somente quando a propriedade da tabela de consulta estiver definida como <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlWebQuery</b> e a consulta retornar um documento HTML.</para>
           <para> </para></remarks>
@@ -30050,9 +30050,9 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define uma lista delimitada por vírgulas de nomes de tabela ou números de índice de tabela quando você importa uma página da Web para uma tabela de consulta. <b>String</b> de leitura/gravação.</summary>
+        <summary>Retorna ou define uma lista delimitada por vírgulas de nomes de tabela ou números de índice de tabela quando você importa uma página da Web para uma tabela de consulta. <b>String</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks><para>Use essa propriedade somente quando a propriedade da tabela de consulta estiver definida como xlWebQuery , a consulta retorna um documento HTML e o valor da propriedade é <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebSelectionType" /> <b>xlSpecifiedTables</b>.</para>
+        <remarks><para>Use essa propriedade somente quando a propriedade da tabela de consulta estiver definida como xlWebQuery , a consulta retornará um documento HTML e o valor da propriedade será <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebSelectionType" /> <b>xlSpecifiedTables</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -30081,7 +30081,7 @@ dataTableRange.&lt;/span&gt;
       <Docs>
         <summary>Retorna o <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto que a tabela de consulta usa. Somente leitura.</summary>
         <value><b>WorkbookConnection</b></value>
-        <remarks><para>Se você importar dados usando a interface do usuário, os dados de uma consulta da Web ou de uma consulta de texto serão importados como um objeto, enquanto todos os outros dados externos serão importados como <see cref="T:Microsoft.Office.Interop.Excel._QueryTable" /> <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> um objeto.</para>
+        <remarks><para>Se você importar dados usando a interface do usuário, os dados de uma consulta da Web ou de uma consulta de texto serão importados como um objeto, enquanto todos os outros dados externos serão importados <see cref="T:Microsoft.Office.Interop.Excel._QueryTable" /> como <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> um objeto.</para>
           <para>Se você importar dados usando o modelo de objeto, os dados de uma consulta da Web ou de uma consulta de texto deverão ser importados como um <b>QueryTable</b>, enquanto todos os demais dados externos podem ser importados como <b>ListObject</b> ou <b>QueryTable</b>.</para>
           <para>A propriedade <b>WorkbookConnection</b> só se aplica aos objetos <b>QueryTable</b>.</para>
           <para> </para></remarks>

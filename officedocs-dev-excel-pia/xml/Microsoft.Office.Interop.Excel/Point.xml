@@ -1,5 +1,5 @@
 <Type Name="Point" FullName="Microsoft.Office.Interop.Excel.Point">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="41d76d059050993a028c8b26b1795b64c3e70e33" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997205" /></Metadata><TypeSignature Language="C#" Value="public interface Point" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="991fad0cf35ec6931cabde63ab81cdb20de16673502d2a78ec53178ea4f7a08d" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518479" /></Metadata><TypeSignature Language="C#" Value="public interface Point" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Point" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Point" />
   <TypeSignature Language="VB.NET" Value="Public Interface Point" />
@@ -23,7 +23,7 @@
   <Docs>
     <summary>Representa um único ponto de uma série em um gráfico.</summary>
     <remarks><para>O <b>objeto Point</b> é um membro da <see cref="T:Microsoft.Office.Interop.Excel.Points" /> coleção. A coleção <b>Points</b> contém todos os pontos da um série.</para>
-      <para>Use <b>Points</b>( <paramref name="index" /> ), onde é o número de índice do <paramref name="index" /> ponto, para retornar um único <b>objeto</b> Point . Pontos são numerados da esquerda para direita na série. Points(1) é o ponto mais à esquerda e Points(Points.Count) é o ponto mais à direita.</para>
+      <para>Use <b>Pontos</b>( <paramref name="index" /> ), onde é o número do índice de <paramref name="index" /> ponto, para retornar um único <b>objeto</b> Point. Pontos são numerados da esquerda para direita na série. Points(1) é o ponto mais à esquerda e Points(Points.Count) é o ponto mais à direita.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -87,7 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,16 +123,16 @@
         <Parameter Name="Separator" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlDataLabelsType" /> . O tipo de rótulo de dados a ser aplicado. Pode ser uma das seguintes <b>constantes XlDataLabelsType:</b> <b>xlDataLabelsShowBubbleSizes</b><b>xlDataLabelsShowLabelAndPercent</b> Porcentagem do total e da categoria do ponto. Disponível somente para gráficos de pizza e de rosca. <b>xlDataLabelsShowPercent</b> Porcentagem do total. Disponível somente para gráficos de pizza e de rosca. <b>xlDataLabelsShowLabel</b> Categoria do ponto. <b>xlDataLabelsShowNone</b> Sem rótulos de dados. <b>xlDataLabelsShowValue</b> Padrão. Valor do ponto (supondo que este argumento não foi especificado).</param>
-        <param name="LegendKey">Objeto <b>opcional</b>. <b>True</b> para mostrar o código da legenda ao lado do ponto. O valor padrão é <b>False</b>.</param>
-        <param name="AutoText">Objeto <b>opcional</b>. <b>True</b> se o objeto gerar automaticamente o texto adequado com base no conteúdo.</param>
-        <param name="HasLeaderLines">Objeto <b>opcional</b>. Para o <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> objeto <see cref="T:Microsoft.Office.Interop.Excel.Series" /> e o <b>objeto, True</b> se a série tiver linhas de líderes.</param>
-        <param name="ShowSeriesName">Objeto <b>opcional</b>. O nome da série do rótulo de dados.</param>
-        <param name="ShowCategoryName">Objeto <b>opcional</b>. O nome da categoria do rótulo de dados.</param>
-        <param name="ShowValue">Objeto <b>opcional</b>. O valor do rótulo de dados.</param>
-        <param name="ShowPercentage">Objeto <b>opcional</b>. A porcentagem do rótulo de dados.</param>
-        <param name="ShowBubbleSize">Objeto <b>opcional</b>. O tamanho da bolha do rótulo de dados.</param>
-        <param name="Separator">Objeto <b>opcional</b>. O separador para o rótulo de dados.</param>
+        <param name="Type">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlDataLabelsType" /> . O tipo de rótulo de dados a ser aplicado. Pode ser uma das seguintes constantes <b>XlDataLabelsType:</b> <b>xlDataLabelsShowBubbleSizes</b><b>xlDataLabelsShowLabelAndPercent</b> Porcentagem do total e da categoria do ponto. Disponível apenas para gráficos de pizza e gráficos de rosca. <b>xlDataLabelsShowPercent</b> Porcentagem do total. Disponível apenas para gráficos de pizza e gráficos de rosca. <b>xlDataLabelsShowLabel</b> Categoria para o ponto. <b>xlDataLabelsShowNone</b> Sem rótulos de dados. <b>xlDataLabelsShowValue</b> Padrão. Valor do ponto (supondo que este argumento não foi especificado).</param>
+        <param name="LegendKey">Objeto <b>Opcional</b>. <b>True</b> para mostrar o código da legenda ao lado do ponto. O valor padrão é <b>False</b>.</param>
+        <param name="AutoText">Objeto <b>Opcional</b>. <b>True</b> se o objeto gerar automaticamente o texto adequado com base no conteúdo.</param>
+        <param name="HasLeaderLines">Objeto <b>Opcional</b>. Para os <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> objetos <see cref="T:Microsoft.Office.Interop.Excel.Series" /> e, <b>True</b> se a série tiver linhas de líderes.</param>
+        <param name="ShowSeriesName">Objeto <b>Opcional</b>. O nome da série para o rótulo de dados.</param>
+        <param name="ShowCategoryName">Objeto <b>Opcional</b>. O nome da categoria do rótulo de dados.</param>
+        <param name="ShowValue">Objeto <b>Opcional</b>. O valor do rótulo de dados.</param>
+        <param name="ShowPercentage">Objeto <b>Opcional</b>. A porcentagem do rótulo de dados.</param>
+        <param name="ShowBubbleSize">Objeto <b>Opcional</b>. O tamanho da bolha do rótulo de dados.</param>
+        <param name="Separator">Objeto <b>Opcional</b>. O separador para o rótulo de dados.</param>
         <summary>Aplica rótulos de dados a um ponto em um gráfico.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -312,7 +312,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Se o ponto ou série tiver um preenchimento de imagem, copia a imagem para a área de transferência.</summary>
+        <summary>Se o ponto ou série tiver um preenchimento de imagem, copie a imagem para a Área de Transferência.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -370,7 +370,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DataLabel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> objeto que representa o rótulo de dados associado ao ponto ou à linha de tendência.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> objeto que representa o rótulo de dados associado ao ponto ou linha de tendência.</summary>
         <value>To be added.</value>
         <remarks><para>Para ativar rótulos de dados para uma linha de tendência, você precisa definir a <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayEquation" /> propriedade ou a propriedade como <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayRSquared" /> <b>True</b>.</para>
           <para> </para></remarks>
@@ -399,7 +399,7 @@
       <Docs>
         <summary>Exclui o objeto.</summary>
         <returns>To be added.</returns>
-        <remarks><para>A exclusão <see cref="T:Microsoft.Office.Interop.Excel.Point" /> de um objeto exclui toda a série.</para>
+        <remarks><para>Excluir um <see cref="T:Microsoft.Office.Interop.Excel.Point" /> objeto exclui a série inteira.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -519,7 +519,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna e define um valor que informa se um ponto tem uma aparência tridimensional. Leitura/gravação.</summary>
+        <summary>Retorna e define um valor que afirma se um ponto tem uma aparência tridimensional. Leitura/gravação.</summary>
         <value>Booliano</value>
         <remarks><para>Retorna True se um ponto tiver uma aparência tridimensional. </para>
           <para>Essa propriedade só se aplica aos gráficos de bolha.</para>
@@ -643,7 +643,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> se o Microsoft Excel inverte o padrão no item quando ele corresponde a um número negativo.</summary>
+        <summary><b>True</b> se Microsoft Excel inverte o padrão no item quando corresponde a um número negativo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -796,7 +796,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a cor de primeiro plano do marcador como um índice na paleta de cores atual ou como uma das seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constantes: <b>xlColorIndexAutomatic</b> ou <b>xlColorIndexNone</b>. É aplicado somente a gráficos de linha, de dispersão e de radar.</summary>
+        <summary>Retorna ou define a cor do marcador em primeiro plano como um índice na paleta de cores atual ou como uma das seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constantes: <b>xlColorIndexAutomatic</b> ou <b>xlColorIndexNone</b>. É aplicado somente a gráficos de linha, de dispersão e de radar.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -970,7 +970,7 @@
       <Docs>
         <summary>Cola uma imagem da Área de Transferência como marcador no ponto selecionado.</summary>
         <returns>To be added.</returns>
-        <remarks><para>O <b>método Paste</b> pode ser usado em gráficos de coluna, barra, linha ou radar e define a propriedade como <see cref="P:Microsoft.Office.Interop.Excel.Point.MarkerStyle" /> <b>xlMarkerStylePicture</b>.</para>
+        <remarks><para>O <b>método Paste</b> pode ser usado em gráficos de coluna, barra, linha ou radar e define a propriedade <see cref="P:Microsoft.Office.Interop.Excel.Point.MarkerStyle" /> como <b>xlMarkerStylePicture</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1048,7 +1048,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a unidade de cada imagem no gráfico se a propriedade estiver definida como <see cref="P:Microsoft.Office.Interop.Excel.Point.PictureType" /> <b>xlStackScale</b> (caso não seja, essa propriedade será ignorada).</summary>
+        <summary>Retorna ou define a unidade para cada imagem no gráfico se a propriedade for definida como <see cref="P:Microsoft.Office.Interop.Excel.Point.PictureType" /> <b>xlStackScale</b> (caso não seja, essa propriedade será ignorada).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1079,7 +1079,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a unidade de cada imagem no gráfico se a propriedade estiver definida como <see cref="P:Microsoft.Office.Interop.Excel.Point.PictureType" /> <b>xlStackScale</b> (caso não seja, essa propriedade será ignorada). Leitura/gravação.</summary>
+        <summary>Retorna ou define a unidade para cada imagem no gráfico se a propriedade for definida como <see cref="P:Microsoft.Office.Interop.Excel.Point.PictureType" /> <b>xlStackScale</b> (caso não seja, essa propriedade será ignorada). Leitura/gravação.</summary>
         <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>

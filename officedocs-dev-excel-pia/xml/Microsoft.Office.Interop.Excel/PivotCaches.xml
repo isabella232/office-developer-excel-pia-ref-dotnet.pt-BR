@@ -1,5 +1,5 @@
 <Type Name="PivotCaches" FullName="Microsoft.Office.Interop.Excel.PivotCaches">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="a96fa5538045c8441266412dcd431b316fe7edd6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010921" /></Metadata><TypeSignature Language="C#" Value="public interface PivotCaches : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="79b074c418dba72dfdf57d294663784a4c1be8876368a70bb4d9c8d800a3dca5" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518682" /></Metadata><TypeSignature Language="C#" Value="public interface PivotCaches : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotCaches implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotCaches" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotCaches&#xA;Implements IEnumerable" />
@@ -92,11 +92,11 @@
         <Parameter Name="SourceData" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SourceType">Obrigatório. <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> A origem dos dados do cache de tabela dinâmica. Pode ser uma das seguintes constantes <b>XlPivotTableSourceType:</b> <b>xlConsolidation</b><b>xlDatabase</b><b>xlExternal</b><b>xlPivotTable</b><b>xlScenario</b></param>
-        <param name="SourceData">Objeto <b>opcional</b>. Os dados para o novo cache da tabela dinâmica. Este argumento será necessário se <paramref name="SourceType" /> não for <b>xlExternal</b>. Pode ser um objeto, uma matriz de intervalos ou uma constante de texto que representa o nome de um relatório de tabela <see cref="T:Microsoft.Office.Interop.Excel.Range" /> dinâmica existente. Para um banco de dados externo, é uma matriz de dois elementos. O primeiro elemento é a sequência de conexão que especifica o provedor dos dados. O segundo elemento é a sequência de consulta SQL usada para obter os dados. Se você especificar esse argumento, também deverá especificar <paramref name="SourceType" /> .</param>
+        <param name="SourceType">Obrigatório <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> . A origem dos dados de cache de tabela dinâmica. Pode ser uma das seguintes <b>constantes XlPivotTableSourceType:</b> <b>xlConsolidation</b><b>xlDatabase</b><b>xlExternal</b><b>xlPivotTable</b><b>xlScenario</b></param>
+        <param name="SourceData">Objeto <b>Opcional</b>. Os dados para o novo cache da tabela dinâmica. Esse argumento será necessário se <paramref name="SourceType" /> não for <b>xlExternal</b>. Pode ser um objeto, uma matriz de intervalos ou uma constante de texto que representa o nome <see cref="T:Microsoft.Office.Interop.Excel.Range" /> de um relatório de tabela dinâmica existente. Para um banco de dados externo, essa é uma matriz de dois elementos. O primeiro elemento é a cadeia de caracteres de conexão que especifica o provedor dos dados. O segundo elemento é a sequência de consulta SQL usada para obter os dados. Se você especificar esse argumento, também deverá especificar <paramref name="SourceType" /> .</param>
         <summary>Adiciona um novo cache de tabela dinâmica a uma <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> coleção.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Se o cache de tabela dinâmica não for referenciado por um objeto, o cache de tabela dinâmica será automaticamente excluído antes que a pasta <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> de trabalho seja salva.</para>
+        <remarks><para>Se o cache de tabela dinâmica não for referenciado por um objeto, o cache de tabela dinâmica será excluído automaticamente antes que a <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> pasta de trabalho seja salva.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -123,7 +123,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -181,13 +181,13 @@
       </Parameters>
       <Docs>
         <param name="SourceType">Obrigatório <paramref name="SourceType" /> pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> constantes: <b>xlConsolidation</b>, <b>xlDatabase</b>ou <b>xlExternal</b>.</param>
-        <param name="SourceData">Objeto <b>opcional</b> Os dados para o novo <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> cache.</param>
-        <param name="Version">Optional <b>Object</b> Version of the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> .  A versão pode ser uma das <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" /> constantes.</param>
+        <param name="SourceData">Objeto <b>Opcional</b> Os dados do novo <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> cache.</param>
+        <param name="Version">Versão <b>do objeto</b> opcional do <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> .  A versão pode ser uma das <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" /> constantes.</param>
         <summary>Cria um novo <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> .</summary>
         <returns><see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /></returns>
-        <remarks><para>As duas <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> constantes a seguir não são suportadas ao usar esse método: <b>xlPivotTable</b> e <b>xlScenario</b>. Um erro em tempo de execução será retornado se uma dessas duas constantes for fornecida.</para>
-          <para>O <paramref name="SourceData" /> argumento será necessário se não for <paramref name="SourceType" /> xlExternal. Pode ser um objeto (quando é xlConsolidation ou xlDatabase) ou um objeto <see cref="T:Microsoft.Office.Interop.Excel.Range" /> do Excel <paramref name="SourceType" /> <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> <paramref name="SourceType" /> (quando é xlExternal).</para>
-          <para>Quando não for fornecida, a versão será <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> xlPivotTableVersion12.  O uso da constante <b>xlPivotTableVersionCurrent</b> não é permitido e retorna um erro em tempo de execução se for fornecida.</para>
+        <remarks><para>As duas seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> constantes não são suportadas ao usar este método: <b>xlPivotTable</b> e <b>xlScenario</b>. Um erro em tempo de execução será retornado se uma dessas duas constantes for fornecida.</para>
+          <para>O <paramref name="SourceData" /> argumento será necessário se não for <paramref name="SourceType" /> xlExternal. Pode ser um objeto (quando é xlConsolidation ou xlDatabase) ou um objeto <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Excel <paramref name="SourceType" /> <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> (quando é <paramref name="SourceType" /> xlExternal).</para>
+          <para>Quando não for fornecida, a versão do <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> será xlPivotTableVersion12.  O uso da constante <b>xlPivotTableVersionCurrent</b> não é permitido e retorna um erro em tempo de execução se for fornecida.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -276,7 +276,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Objeto <b>Required</b>. O número de índice do objeto.</param>
+        <param name="Index">Objeto <b>Obrigatório</b>. O número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

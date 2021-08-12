@@ -1,5 +1,5 @@
 <Type Name="PublishObject" FullName="Microsoft.Office.Interop.Excel.PublishObject">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="fcc61ded7b33a1797bd24a5447641b388b7f9f14" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010777" /></Metadata><TypeSignature Language="C#" Value="public interface PublishObject" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="25a70522ac930fee202381605c46a4549fd8193cfe61b4d688bc30b71c9ed0c6" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54519081" /></Metadata><TypeSignature Language="C#" Value="public interface PublishObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PublishObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PublishObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface PublishObject" />
@@ -20,7 +20,7 @@
   <Docs>
     <summary>Representa um item em uma pasta de trabalho que foi salva em uma página da Web e pode ser atualizada de acordo com os valores especificados pelas propriedades e métodos do objeto <b>PublishObject</b>.</summary>
     <remarks><para>O <b>objeto PublishObject</b> é um membro da <see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" /> coleção.</para>
-      <para>Use <b>PublishObjects</b>( ), onde é o número de índice do item especificado na lista de trabalho, para retornar um único <paramref name="index" /> objeto <paramref name="index" /> <b>PublishObject</b> .</para>
+      <para>Use <b>PublishObjects</b>( ), onde é o número de índice do item especificado na lista de trabalho, para retornar um único objeto <paramref name="index" /> <paramref name="index" /> <b>PublishObject.</b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -47,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -78,7 +78,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando uma planilha é salva, o Microsoft Excel determina se algum item na coleção tem a propriedade <see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" /> <b>AutoRepublish</b> definida como <b>True</b> e, em caso afirmante, a republica. O valor padrão é <b>False</b>.</summary>
+        <summary>Quando uma workbook é salva, Microsoft Excel determina se algum item na coleção tem a propriedade <see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" /> <b>AutoRepublish</b> definida como <b>True</b> e, em caso afirmado, republica-a. O valor padrão é <b>False</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -227,7 +227,7 @@
       <Docs>
         <summary>Retorna ou define o tipo de HTML gerado pelo Microsoft Excel quando o item especificado é salvo em uma página da Web.</summary>
         <value>To be added.</value>
-        <remarks><para>A <b>propriedade HtmlType</b> pode ser uma das constantes que especifica se o item é estático ou <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> interativo na página da Web. O valor padrão é <b>xlHtmlStatic</b>.</para>
+        <remarks><para>A <b>propriedade HtmlType</b> pode ser uma das constantes que especifica se o item é estático <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> ou interativo na página da Web. O valor padrão é <b>xlHtmlStatic</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -281,7 +281,7 @@
         <Parameter Name="Create" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Create">Objeto <b>opcional</b>. Se o arquivo HTML existir, a definição deste argumento como <b>True</b> substitui o arquivo, enquanto a definição como <b>False</b> insere o(s) item(ns) no final do arquivo. Se o arquivo não existir, o arquivo será criado independentemente do valor do <paramref name="Create" /> argumento.</param>
+        <param name="Create">Objeto <b>Opcional</b>. Se o arquivo HTML existir, a definição deste argumento como <b>True</b> substitui o arquivo, enquanto a definição como <b>False</b> insere o(s) item(ns) no final do arquivo. Se o arquivo não existir, o arquivo será criado independentemente do valor do <paramref name="Create" /> argumento.</param>
         <summary>Salva um item ou uma coleção de itens de um documento em uma página da Web.</summary>
         <remarks><para>A <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.Filename" /> propriedade retorna ou define o local e o nome do arquivo HTML.</para>
           <para> </para></remarks>

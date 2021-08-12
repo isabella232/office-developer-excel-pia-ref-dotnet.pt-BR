@@ -1,5 +1,5 @@
 <Type Name="ServerViewableItems" FullName="Microsoft.Office.Interop.Excel.ServerViewableItems">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="6a49378a5a672e109bb0d1469a510a5d3faf8153" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010385" /></Metadata><TypeSignature Language="C#" Value="public interface ServerViewableItems : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="cc883c260d2e188264f53f25ac65e3bf5cbc3c4a7e4656c7f151a22fe20bd43a" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518892" /></Metadata><TypeSignature Language="C#" Value="public interface ServerViewableItems : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ServerViewableItems implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />
   <TypeSignature Language="VB.NET" Value="Public Interface ServerViewableItems&#xA;Implements IEnumerable" />
@@ -26,9 +26,9 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de objetos que foram marcados como visíveis no servidor.</summary>
-    <remarks><para>This is a collection of references to objects in the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> . Somente os objetos nesta coleção serão mostrados no servidor.  Por padrão, toda a pasta de trabalho (incluindo todas as planilhas) é mostrada.  </para>
-      <para>Apenas um <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> objeto pode existir por <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> .  Essa coleção não é indexável por nome porque não há garantia de que os nomes dos objetos marcados como exibiveis no servidor sejam exclusivos.</para>
-      <para>Na interface do usuário do Excel, você pode exibir a coleção de objetos marcados como exibiveis no servidor na caixa de diálogo Opções dos Serviços do Excel.</para>
+    <remarks><para>Esta é uma coleção de referências a objetos no <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> . Somente os objetos nesta coleção serão mostrados no servidor.  Por padrão, toda a pasta de trabalho (incluindo todas as planilhas) é mostrada.  </para>
+      <para>Somente um <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> objeto pode existir por <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> .  Essa coleção não é indexável pelo nome porque não há garantia de que os nomes de objetos marcados como exibiveis no servidor sejam exclusivos.</para>
+      <para>Na interface Excel usuário, você pode exibir a coleção de objetos marcados como exibiveis no servidor na caixa de diálogo Opções Serviços do Excel.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -90,10 +90,10 @@
         <Parameter Name="Obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Obj">Objeto obrigatório <b>pode</b> ser uma referência a planilhas ou itens <paramref name="Obj" /> nomeados (por <see cref="T:Microsoft.Office.Interop.Excel.Range" /> exemplo, nomeados s, gráficos, tabelas e <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> s). Você não pode ter planilhas e itens nomeados na mesma coleção.</param>
+        <param name="Obj">Objeto obrigatório <b>pode ser</b> uma referência a planilhas ou itens <paramref name="Obj" /> nomeados (por exemplo, <see cref="T:Microsoft.Office.Interop.Excel.Range" /> nomeados s, gráficos, tabelas e <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> s). Você não pode ter planilhas e itens nomeados na mesma coleção.</param>
         <summary>Adiciona uma referência à <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> coleção.</summary>
         <returns><b>Object</b></returns>
-        <remarks><para>Se você tentar adicionar uma mistura de planilhas e itens nomeados à <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> coleção, um erro será retornado.  A coleção pode conter referências apenas a planilhas ou referências apenas a itens <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> nomeados, mas não ambos na mesma chamada.  </para>
+        <remarks><para>Se você tentar adicionar uma mistura de folhas e itens nomeados à <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> coleção, um erro será retornado.  A coleção pode conter referências apenas a planilhas ou referências apenas a itens nomeados, mas não a ambos <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> na mesma chamada.  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -122,7 +122,7 @@
       <Docs>
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto. Somente leitura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
-        <remarks><para>Quando usada sem um qualificador de objeto, essa propriedade retorna o aplicativo Microsoft Office Excel. Quando usado com um qualificador de objeto, essa propriedade retorna um objeto <b>Application</b> que representa o criador do objeto especificado.</para>
+        <remarks><para>Quando usada sem um qualificador de objeto, essa propriedade retorna o Microsoft Office Excel aplicativo. Quando usado com um qualificador de objeto, essa propriedade retorna um objeto <b>Application</b> que representa o criador do objeto especificado.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -177,7 +177,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um Inteiro de 32 <b>bits</b> que indica o aplicativo no qual esse objeto foi criado. Somente leitura.</summary>
+        <summary>Retorna um <b>Inteiro</b> de 32 bits que indica o aplicativo no qual esse objeto foi criado. Somente leitura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
         <remarks><para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C.  A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
           <para> </para></remarks>
@@ -233,10 +233,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Exclui referências a todos os objetos na <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> coleção no <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> .</summary>
-        <remarks><para>Se você não quiser que nenhum dos objetos da coleção seja visualizado no servidor, use esse método para <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> removê-los todos de uma vez.</para>
+        <summary>Exclui referências a todos os objetos da <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> coleção no <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> .</summary>
+        <remarks><para>Se você não quiser que nenhum dos objetos da coleção seja visualizado no servidor, use este método para <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> removê-los todos de uma vez.</para>
           <para>
-            <b>Observação:</b>se a coleção não contém pelo menos um objeto , você verá a mensagem "Não é possível exibir intervalo nomeado especificado ou item" ao exibir o no <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> Excel <b></b> <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> Services.</para>
+            <b>Observação</b>: se a coleção não contém pelo menos um Objeto, você verá a mensagem "Não é possível exibir o intervalo ou item nomeado especificado" ao exibir o no <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> <b></b> <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> Serviços do Excel.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -295,8 +295,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Inteiro obrigatório <b>O</b> índice do <b>objeto</b> a ser retornado.</param>
-        <summary>Retorna um único <b>objeto</b> da <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> coleção.</summary>
+        <param name="Index">Inteiro <b>necessário</b> O índice do <b>objeto</b> a ser retornado.</param>
+        <summary>Retorna um único <b>Objeto</b> da <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> coleção.</summary>
         <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>

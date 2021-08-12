@@ -1,5 +1,5 @@
 <Type Name="TickLabels" FullName="Microsoft.Office.Interop.Excel.TickLabels">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="80b3e086ba4d3ed73fe6b8241b450f89bafae6e6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009615" /></Metadata><TypeSignature Language="C#" Value="public interface TickLabels" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="feff087dd9c876bc2c86572cfeb029f84fdbe2c75880cfcc6d9cfcc574bfeb82" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518213" /></Metadata><TypeSignature Language="C#" Value="public interface TickLabels" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TickLabels" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TickLabels" />
   <TypeSignature Language="VB.NET" Value="Public Interface TickLabels" />
@@ -21,9 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa os rótulos de marca de escala associados a marcas de escala em um eixo de gráfico.</summary>
-    <remarks><para>Este objeto não é uma coleção. Não há nenhum objeto que represente um único rótulo de marca de escala; você deve retornar todos os rótulos de marca de escala como uma unidade. O texto do rótulo de marca de escala para o eixo das categorias vem do nome da categoria associada no gráfico. O texto do rótulo de marca de escala padrão para o eixo das categorias é o número que indica a posição da categoria em relação à extremidade esquerda desse eixo. Para alterar o número de marcas de escala sem rótulo entre rótulos de marca de escala, você deve alterar a propriedade <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> do eixo das categorias. O texto do rótulo de marca de escala para o eixo dos valores é calculado com base no <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" /> , e nas propriedades do eixo dos <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" /> <see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" /> valores. Para alterar o texto do rótulo de marca de escala para o eixo dos valores, você deve alterar os valores dessas propriedades.</para>
-      <para>Use a <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabels" /> propriedade para retornar o objeto <b>TickLabels</b> .</para>
+    <summary>Representa os rótulos de marca de escala associados às marcas de escala em um eixo de gráfico.</summary>
+    <remarks><para>Este objeto não é uma coleção. Não há nenhum objeto que represente um único rótulo de marca de escala; você deve retornar todos os rótulos de marca de escala como uma unidade. O texto do rótulo de marca de escala para o eixo de categoria vem do nome da categoria associada no gráfico. O texto do rótulo de marca de escala padrão para o eixo da categoria é o número que indica a posição da categoria em relação à extremidade esquerda desse eixo. Para alterar o número de marcas de escala não rotuladas entre rótulos de marca de escala, você deve alterar a propriedade <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> para o eixo de categoria. O texto do rótulo de marca de escala para o eixo do valor é calculado com base no <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" /> , e nas propriedades do eixo do <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" /> <see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" /> valor. Para alterar o texto do rótulo de marca de escala para o eixo de valores, você deve alterar os valores dessas propriedades.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabels" /> propriedade para retornar o objeto <b>TickLabels.</b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -91,7 +91,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -453,7 +453,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a distância entre os níveis de rótulos e a distância entre o primeiro nível e a linha de eixo.</summary>
+        <summary>Retorna ou define a distância entre os níveis de rótulos e a distância entre o primeiro nível e a linha do eixo.</summary>
         <value>To be added.</value>
         <remarks><para>A distância padrão é 100%, que representa o espaçamento padrão entre os rótulos de eixo e a linha de eixo. O valor pode ser um percentual inteiro de 0 a 1000, relativo ao tamanho da fonte do rótulo de eixo.</para>
           <para> </para></remarks>
@@ -546,7 +546,7 @@
       <Docs>
         <summary>Retorna ou define o sentido de leitura do objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks><para>A <b>propriedade ReadingOrder</b> pode ser uma das seguintes constantes: <b>xlRTL</b> (direita para esquerda), <b>xlLTR</b> (esquerda para direita) ou <b>xlContext</b>.</para>
+        <remarks><para>A <b>propriedade ReadingOrder</b> pode ser uma das seguintes constantes: <b>xlRTL</b> (da direita para a esquerda), <b>xlLTR</b> (da esquerda para a direita) ou <b>xlContext</b>.</para>
           <para>[!OBSERVAçãO] Alguma dessas constantes podem não estar disponíveis para você, dependendo do suporte de idioma (inglês dos EUA, por exemplo) que você selecionou ou instalou.</para>
           <para> </para></remarks>
       </Docs>
