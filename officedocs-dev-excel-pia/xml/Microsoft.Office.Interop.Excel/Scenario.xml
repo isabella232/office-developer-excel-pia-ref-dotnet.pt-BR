@@ -1,5 +1,5 @@
 <Type Name="Scenario" FullName="Microsoft.Office.Interop.Excel.Scenario">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="86d8d02ae441f3ac07255a45ae9cd0cf278fe5fe" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010476" /></Metadata><TypeSignature Language="C#" Value="public interface Scenario" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="942163ef79c471667dca1194a35577d8c25f3644b0ae61b52fa63454b55832ca" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54514209" /></Metadata><TypeSignature Language="C#" Value="public interface Scenario" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Scenario" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Scenario" />
   <TypeSignature Language="VB.NET" Value="Public Interface Scenario" />
@@ -21,9 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa um cenário em uma planilha. Um cenário é um grupo de valores de entrada <paramref name="changing cells" /> (chamado) que é nomeado e salvo.</summary>
-    <remarks><para>O <b>objeto</b> Scenario é um membro da <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> coleção. A coleção <b>Scenarios</b> contém todos os cenários definidos para uma planilha.</para>
-      <para>Use <b>Cenários</b>( ), onde é o nome do cenário ou número <paramref name="index" /> de <paramref name="index" /> índice, para retornar um único objeto <b>Scenario.</b></para>
+    <summary>Representa um cenário em uma planilha. Um cenário é um grupo de valores de entrada (chamado <paramref name="changing cells" /> ) que é nomeado e salvo.</summary>
+    <remarks><para>O <b>objeto Scenario</b> é um membro da <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> coleção. A coleção <b>Scenarios</b> contém todos os cenários definidos para uma planilha.</para>
+      <para>Use <b>Cenários</b>( ), onde está o nome do cenário ou número <paramref name="index" /> de <paramref name="index" /> índice, para retornar um único objeto <b>Scenario.</b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -50,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -78,11 +78,11 @@
         <Parameter Name="Values" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ChangingCells">Objeto <b>Required</b>. Um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que especifica o novo conjunto de células changing para o cenário. As células variáveis precisam estar na mesma planilha que o cenário.</param>
-        <param name="Values">Objeto <b>opcional</b>. Uma matriz que contenha os novos valores de cenário para as células variáveis. Quando esse argumento é omitido, os valores atuais nas células variáveis são atribuídos aos valores de cenário.</param>
+        <param name="ChangingCells">Objeto <b>Obrigatório</b>. Um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que especifica o novo conjunto de células de alteração para o cenário. As células variáveis precisam estar na mesma planilha que o cenário.</param>
+        <param name="Values">Objeto <b>Opcional</b>. Uma matriz que contenha os novos valores de cenário para as células variáveis. Quando esse argumento é omitido, os valores atuais nas células variáveis são atribuídos aos valores de cenário.</param>
         <summary>Altera o cenário para ter um novo conjunto de células variáveis e (opcionalmente) valores de cenário.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Se você especificar v , a matriz deverá conter um elemento para cada célula no <paramref name="alues" /> <paramref name="ChangingCells" /> intervalo; caso contrário, o Microsoft Excel gerará um erro.</para>
+        <remarks><para>Se você especificar v , a matriz deverá conter um elemento para cada célula no intervalo; caso contrário, Microsoft Excel <paramref name="alues" /> <paramref name="ChangingCells" /> gerará um erro.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -109,7 +109,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa as células changing para um cenário.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa as células que mudam para um cenário.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -403,8 +403,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Objeto <b>opcional</b>. A posição do valor.</param>
-        <summary>Retorna uma matriz que contém os valores atuais das células changing para o cenário.</summary>
+        <param name="Index">Objeto <b>Opcional</b>. A posição do valor.</param>
+        <summary>Retorna uma matriz que contém os valores atuais das células que mudam para o cenário.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,5 +1,5 @@
 <Type Name="XmlDataBinding" FullName="Microsoft.Office.Interop.Excel.XmlDataBinding">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="4f7f0721b007f05a4518137e9c9c41ee20b9ad49" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50002308" /></Metadata><TypeSignature Language="C#" Value="public interface XmlDataBinding" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3aaa77c8ade9ad9e98bb1b6b815dc2287ff025fd9cb078a98e930a2b7e082707" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54514412" /></Metadata><TypeSignature Language="C#" Value="public interface XmlDataBinding" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XmlDataBinding" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XmlDataBinding" />
   <TypeSignature Language="VB.NET" Value="Public Interface XmlDataBinding" />
@@ -22,10 +22,10 @@
   </Attributes>
   <Docs>
     <summary>Representa a conexão com os dados de origem de um <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> objeto.</summary>
-    <remarks><para>Recursos XML, exceto para salvar arquivos no formato de Planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e no Microsoft Office Excel 2003.</para>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.XmlDataBinding.LoadSettings(System.String)" /> método para inicializar as configurações de um <b>objeto XmlDataBinding</b> .</para>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.XmlDataBinding.Refresh" /> método para atualizar uma vinculação de dados.</para>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.XmlDataBinding.ClearSettings" /> método para remover uma vinculação de dados.</para>
+    <remarks><para>Os recursos XML, exceto para salvar arquivos no formato de Planilha XML, estão disponíveis apenas no Microsoft Office Professional Edition 2003 e Microsoft Office Excel 2003.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.XmlDataBinding.LoadSettings(System.String)" /> método para inicializar as configurações de um <b>objeto XmlDataBinding.</b></para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.XmlDataBinding.Refresh" /> método para atualizar uma associação de dados.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Excel.XmlDataBinding.ClearSettings" /> método para remover uma associação de dados.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -83,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -110,7 +110,7 @@
       <Parameters />
       <Docs>
         <summary>Remove a vinculação dos dados especificados.</summary>
-        <remarks><para>Recursos XML, exceto para salvar arquivos no formato de Planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e no Microsoft Office Excel 2003.</para>
+        <remarks><para>Os recursos XML, exceto para salvar arquivos no formato de Planilha XML, estão disponíveis apenas no Microsoft Office Professional Edition 2003 e Microsoft Office Excel 2003.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -137,7 +137,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. Somente <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> leitura.</summary>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual esse objeto foi criado. Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. Somente leitura <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> .</summary>
         <value>To be added.</value>
         <remarks><para>A propriedade <b>Creator</b> foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
           <para> </para></remarks>
@@ -166,9 +166,9 @@
         <Parameter Name="Url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Url"><b>String</b> necessário. O caminho para os dados XML ou arquivo de fonte de dados XML do Microsoft Office (.uxdc). O caminho é especificado no formato URL (Uniform Resource Locator) ou UNC (convenção de nomenal universal).</param>
-        <summary>Inicializa a vinculação de dados especificada com configurações de um arquivo de dados XML ou um arquivo de Conexão de Serviço de Recuperação de Dados (.uxdc).</summary>
-        <remarks><para>Recursos XML, exceto para salvar arquivos no formato de Planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e no Microsoft Office Excel 2003.</para>
+        <param name="Url"><b>String</b> necessário. O caminho para os dados XML ou Microsoft Office arquivo XML Data Source (.uxdc). O caminho é especificado no formato URL (Uniform Resource Locator) ou Universal Noming Convention (UNC).</param>
+        <summary>Inicializa a associação de dados especificada com configurações de um arquivo de dados XML ou um arquivo de Conexão de Serviço de Recuperação de Dados (.uxdc).</summary>
+        <remarks><para>Os recursos XML, exceto para salvar arquivos no formato de Planilha XML, estão disponíveis apenas no Microsoft Office Professional Edition 2003 e Microsoft Office Excel 2003.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -195,7 +195,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai do objeto especificado. Somente leitura.</summary>
+        <summary>Retorna o objeto pai para o objeto especificado. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -249,9 +249,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna uma cadeia de caracteres que representa o caminho para o arquivo de dados XML, o arquivo conexão de serviço de recuperação de dados (.uxdc) ou o serviço Web que fornece os dados de origem para <b>a</b> vinculação de dados especificada. Somente leitura.</summary>
+        <summary>Retorna uma <b>Cadeia</b> de Caracteres que representa o caminho para o arquivo de dados XML, o arquivo Conexão de Serviço de Recuperação de Dados (.uxdc) ou o serviço Web que fornece os dados de origem para a associação de dados especificada. Somente leitura.</summary>
         <value>To be added.</value>
-        <remarks><para>Recursos XML, exceto para salvar arquivos no formato de Planilha XML, estão disponíveis somente no Microsoft Office Professional Edition 2003 e no Microsoft Office Excel 2003.</para>
+        <remarks><para>Os recursos XML, exceto para salvar arquivos no formato de Planilha XML, estão disponíveis apenas no Microsoft Office Professional Edition 2003 e Microsoft Office Excel 2003.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

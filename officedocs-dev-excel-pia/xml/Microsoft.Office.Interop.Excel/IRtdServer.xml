@@ -1,5 +1,5 @@
 <Type Name="IRtdServer" FullName="Microsoft.Office.Interop.Excel.IRtdServer">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="91b1868ee8a3354dc6036654d8402e4aad54ba45" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997653" /></Metadata><TypeSignature Language="C#" Value="public interface IRtdServer" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5913a9fd46bfb7d5f88e17acdfa800f3c9bcbcb95acd68db9963071ca4d3270b" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54514370" /></Metadata><TypeSignature Language="C#" Value="public interface IRtdServer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRtdServer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IRtdServer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRtdServer" />
@@ -49,8 +49,8 @@
       </Parameters>
       <Docs>
         <param name="TopicID">Obrigatório <b>Integer</b>. Um valor exclusivo, atribuído pelo Microsoft Excel, que identifica o tópico.</param>
-        <param name="Strings">Objeto <b>Required</b>. Uma matriz unidimensional de sequências de caracteres que identificam o tópico.</param>
-        <param name="GetNewValues">Boolean <b>necessário.</b> <b>True</b> para determinar se novos valores serão adquiridos.</param>
+        <param name="Strings">Objeto <b>Obrigatório</b>. Uma matriz unidimensional de sequências de caracteres que identificam o tópico.</param>
+        <param name="GetNewValues">Boolean <b>obrigatório</b>. <b>True</b> para determinar se novos valores serão adquiridos.</param>
         <summary>Adiciona novos tópicos de um servidor de dados em tempo real. O <b>método ConnectData</b> é chamado quando um arquivo é aberto que contém funções de dados em tempo real ou quando um usuário digita em uma nova fórmula que contém a <b>função RTD.</b></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -107,7 +107,7 @@
       <Docs>
         <summary>Determina se o servidor de dados em tempo real ainda está ativo. Zero ou um número negativo indica uma falha; um número positivo indica que o servidor está ativo.</summary>
         <returns>To be added.</returns>
-        <remarks><para>O método Heartbeat é chamado pelo Microsoft Excel se a propriedade tiver decorrido desde a última vez que <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> o Excel foi chamado com o <see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" /> método.</para>
+        <remarks><para>O método Heartbeat é chamado por Microsoft Excel se a propriedade tiver decorrido desde a última Excel <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> foi chamada com o <see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" /> método.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -137,7 +137,7 @@
         <param name="TopicCount">Obrigatório <b>Integer</b>. O servidor RTD deve alterar o valor do <paramref name="TopicCount" /> para o número de elementos na matriz retornada.</param>
         <summary>Este método é chamado pelo Microsoft Excel para obter novos dados.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Os dados retornados para o Excel são <b>um Objeto</b> que contém uma matriz bidimensional. A primeira dimensão representa a lista de identificações dos tópicos. A segunda dimensão representa os valores associados às identificações dos tópicos.</para>
+        <remarks><para>Os dados retornados ao Excel é <b>um Object</b> que contém uma matriz bidimensional. A primeira dimensão representa a lista de identificações dos tópicos. A segunda dimensão representa os valores associados às identificações dos tópicos.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -165,7 +165,7 @@
       </Parameters>
       <Docs>
         <param name="CallbackObject">Objeto <see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" /> obrigatório. O objeto de retorno de chamada.</param>
-        <summary>O método <b>ServerStart</b> é chamado imediatamente depois que é criada uma instância de um servidor de dados em tempo real. Valor negativo ou zero indica falha ao iniciar o servidor; valor positivo indica êxito.</summary>
+        <summary>O método <b>ServerStart</b> é chamado imediatamente depois que é criada uma instância de um servidor de dados em tempo real. Valor negativo ou zero indica falha ao iniciar o servidor; valor positivo indica sucesso.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
