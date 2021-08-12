@@ -1,5 +1,5 @@
 <Type Name="ValueChange" FullName="Microsoft.Office.Interop.Excel.ValueChange">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="b2dce604b01b455e4f9c71554372a322f7c7c2fe" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009307" /></Metadata><TypeSignature Language="C#" Value="public interface ValueChange" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d9243c520a514e3662b0ffb78c0565edaaf8c69dd321a3d8fc69e5c126a8ab31" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54519718" /></Metadata><TypeSignature Language="C#" Value="public interface ValueChange" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ValueChange" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ValueChange" />
   <TypeSignature Language="VB.NET" Value="Public Interface ValueChange" />
@@ -22,8 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Representa um valor que foi alterado em um relatório de Tabela Dinâmica com base em uma fonte de dados OLAP.</summary>
-    <remarks><para>A coleção contém objetos que representam alterações que um usuário fez às <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> células de valor em um relatório de tabela <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> dinâmica.</para>
-      <para>As propriedades do objeto especificam detalhes sobre a alteração feita, como o valor da alteração, a tupla associada à célula que foi alterada, a ordem na qual a alteração foi feita em relação a outras alterações e se a célula está visível na tabela <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> dinâmica. O objeto também fornece a propriedade que retorna um objeto que representa a célula que foi alterada e fornece informações adicionais <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" /> sobre a célula <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> alterada.</para>
+    <remarks><para>A coleção contém objetos que representam alterações que um usuário fez para <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> valorizar células em um relatório de tabela dinâmica.</para>
+      <para>As propriedades do objeto especificam detalhes sobre a alteração feita, como o valor da alteração, a tupla associada à célula que foi alterada, a ordem na qual a alteração foi feita em relação a outras alterações e se a célula está visível na Tabela <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> Dinâmica. O objeto também fornece a propriedade que retorna um objeto que representa a célula que foi alterada e fornece informações adicionais <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" /> sobre a célula <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> alterada.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -50,10 +50,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAllocationMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém o método a ser usado para alocar esse valor ao executar a análise de "what-if".</summary>
+        <summary>Obtém o método a ser usado para alocar esse valor ao executar a análise de what-if.</summary>
         <value>O método que será usado para alocar esse valor ao executar teste de hipóteses.</value>
         <remarks><para>Somente leitura.</para>
-          <para>A propriedade corresponde à configuração Método de Alocação na caixa de diálogo Configurações de Análise do What-If para um relatório de Tabela Dinâmica com base em uma fonte de dados OLAP, como foi definida no momento em que essa alteração foi <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationMethod" /> aplicada originalmente. Se o objeto especificado foi criado usando o método da coleção e o parâmetro correspondente não foi fornecido, o método de alocação padrão do servidor <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> <paramref name="AllocationMethod" /> OLAP é retornado.</para>
+          <para>A propriedade corresponde à configuração Método de Alocação na caixa de diálogo What-If Análise Configurações para um relatório de tabela dinâmica com base em uma fonte de dados OLAP, pois foi definida no momento em que essa alteração foi <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationMethod" /> aplicada originalmente. Se o objeto especificado foi criado usando o método da coleção e o parâmetro correspondente não foi fornecido, o método de alocação padrão do servidor <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> <paramref name="AllocationMethod" /> OLAP será retornado.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -80,10 +80,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAllocationValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém o valor a ser alocado ao executar a análise de "what-if".</summary>
+        <summary>Obtém o valor a ser alocado ao executar a análise de what-if.</summary>
         <value>O valor que será alocado ao executar teste de hipóteses.</value>
         <remarks><para>Somente leitura.</para>
-          <para>A propriedade corresponde à configuração Valor a Alocar na caixa de diálogo Configurações de Análise do What-If para um relatório de Tabela Dinâmica com base em uma fonte de dados OLAP, já que foi definida no momento em que essa alteração foi <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationValue" /> aplicada originalmente. Se o objeto especificado tiver sido criado usando o método da coleção e o parâmetro correspondente não tiver sido fornecido, o valor de alocação padrão do servidor <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> <paramref name="AllocationValue" /> OLAP será retornado.</para>
+          <para>A propriedade corresponde à configuração What-If Valor a Alocar na caixa de diálogo Análise Configurações de Configurações para um relatório de tabela dinâmica com base em uma fonte de dados OLAP, pois foi definida no momento em que essa alteração foi <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationValue" /> aplicada originalmente. Se o objeto especificado foi criado usando o método da coleção e o parâmetro correspondente não foi fornecido, o valor de alocação padrão do servidor <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> <paramref name="AllocationValue" /> OLAP será retornado.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -110,10 +110,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém a expressão de peso MDX a ser usada para esse valor ao executar a análise de "what-if".</summary>
+        <summary>Obtém a expressão de peso MDX a ser usada para esse valor ao executar a análise de what-if.</summary>
         <value>A expressão de peso MDX que será usada para esse valor ao executar teste de hipóteses.</value>
         <remarks><para>Somente leitura.</para>
-          <para>A propriedade corresponde à configuração expressão de peso na caixa de diálogo configurações de análise do What-If para um relatório de tabela dinâmica com base em uma fonte de dados OLAP como foi definida no momento em que essa alteração foi <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationWeightExpression" /> aplicada originalmente. Se o objeto especificado tiver sido criado usando o método da coleção e o parâmetro correspondente não tiver sido fornecido, a expressão de peso padrão do servidor <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> <paramref name="AllocationWeightExpression" /> OLAP será retornada.</para>
+          <para>A propriedade corresponde à configuração What-If Expressão de Peso na caixa de diálogo Análise Configurações análise para um relatório de tabela dinâmica com base em uma fonte de dados OLAP, pois foi definida no momento em que essa alteração foi <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationWeightExpression" /> aplicada originalmente. Se o objeto especificado foi criado usando o método da coleção e o parâmetro correspondente não foi fornecido, a expressão de peso padrão do servidor <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> <paramref name="AllocationWeightExpression" /> OLAP será retornada.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -140,7 +140,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna <see cref="T:Microsoft.Office.Interop.Excel.Application" /> um objeto que representa o aplicativo Microsoft Excel. Quando usada com um qualificador de objeto, essa propriedade retorna um objeto que representa o <see cref="T:Microsoft.Office.Interop.Excel.Application" /> criador do objeto especificado.</summary>
+        <summary>Quando usada sem um qualificador de objeto, essa propriedade retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo. Quando usada com um qualificador de objeto, essa propriedade retorna um objeto que representa o <see cref="T:Microsoft.Office.Interop.Excel.Application" /> criador do objeto especificado.</summary>
         <value>Um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
         <remarks><para>Somente leitura.</para>
           <para> </para></remarks>
@@ -171,8 +171,8 @@
       <Docs>
         <summary>Obtém um inteiro de 32 <b>bits</b> que indica o aplicativo no qual esse objeto foi criado.</summary>
         <value>Um inteiro de 32 <b>bits</b> que indica o aplicativo no qual esse objeto foi criado.</value>
-        <remarks><para>Somente leitura <b>long</b>.</para>
-          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. A propriedade foi projetada para ser usada no Microsoft Excel para Macintosh, onde cada aplicativo tem um código de criador de <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Creator" /> quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
+        <remarks><para>Somente leitura <b>longa</b>.</para>
+          <para>Se o objeto foi criado no Microsoft Excel, essa propriedade retornará a sequência XCEL, que é equivalente ao número hexadecimal 5843454C. A propriedade foi projetada para ser usada Microsoft Excel para o Macintosh, onde cada aplicativo <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Creator" /> tem um código criador de quatro caracteres. Por exemplo, o Microsoft Excel possui o código de criador XCEL.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -228,7 +228,7 @@
         <summary>Obtém um valor que indica a ordem na qual essa alteração foi executada em relação a outras alterações na <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> coleção.</summary>
         <value>A ordem na qual essa alteração foi realizada em relação a outras alterações na <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> coleção.</value>
         <remarks><para>Somente leitura.</para>
-          <para>O valor da propriedade é atribuído automaticamente pelo Excel com base na ordem em que o usuário aplicou as alterações nas células de valor no relatório <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> de tabela dinâmica. Se várias alterações forem aplicadas em uma única operação, o Excel atribuirá arbitrariamente a ordem nesse conjunto de alterações.</para>
+          <para>O valor da propriedade é atribuído automaticamente por Excel com base na ordem em que o usuário aplicou as alterações às células de valor no relatório <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> de tabela dinâmica. Se várias alterações forem aplicadas em uma única operação, o Excel atribuirá arbitrariamente a ordem nesse conjunto de alterações.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -287,7 +287,7 @@
         <summary>Obtém <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> um objeto que representa a célula (tupla) que foi alterada.</summary>
         <value>A célula (tupla) que foi alterada.</value>
         <remarks><para>Somente leitura.</para>
-          <para>Quando o valor da propriedade do objeto especificado for verdadeiro, a propriedade retornará um objeto para a célula <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.VisibleInPivotTable" /> <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> (tupla) que foi alterada. Quando o valor da propriedade do objeto especificado for falso, a propriedade retornará uma referência <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.VisibleInPivotTable" /> <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" /> nula (Nothing no Visual Basic).</para>
+          <para>Quando o valor da propriedade do objeto especificado é true , a propriedade retorna um objeto para a célula <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.VisibleInPivotTable" /> <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> (tupla) que foi alterada. Quando o valor da propriedade do objeto especificado é false , a propriedade retorna uma referência nula <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.VisibleInPivotTable" /> <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" /> (Nothing em Visual Basic).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -343,7 +343,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém o valor inserido pelo usuário na célula ou até que a fórmula na célula foi avaliada quando a instrução UPDATE CUBE foi executado pela última vez em relação à fonte de dados OLAP.</summary>
+        <summary>Obtém o valor que o usuário entrou na célula ou ao que a fórmula na célula foi avaliada quando a instrução UPDATE CUBE foi executado pela última vez na fonte de dados OLAP.</summary>
         <value>O valor.</value>
         <remarks><para>Somente leitura.</para>
           <para> </para></remarks>
@@ -372,10 +372,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém se a célula (tupla) está visível no momento no relatório de tabela dinâmica.</summary>
-        <value><b>true</b> se a célula (tupla) estiver visível no momento no relatório de tabela dinâmica; caso contrário, <b>false</b>.</value>
+        <summary>Obtém se a célula (tupla) está visível no relatório de tabela dinâmica.</summary>
+        <value><b>true</b> se a célula (tupla) estiver visível no relatório de tabela dinâmica; caso contrário, <b>false</b>.</value>
         <remarks><para>Somente leitura.</para>
-          <para>Retornar <b>true</b> se a célula (tupla) estiver visível no momento no relatório de tabela dinâmica; caso <b>contrário, false</b>.</para>
+          <para>Retornar <b>true</b> se a célula (tupla) estiver visível no relatório de tabela dinâmica; caso <b>contrário, false</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

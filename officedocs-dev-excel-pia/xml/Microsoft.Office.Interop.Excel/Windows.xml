@@ -1,5 +1,5 @@
 <Type Name="Windows" FullName="Microsoft.Office.Interop.Excel.Windows">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="216071def9d8f4a2c63cf628170e2d5fcd646a71" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009251" /></Metadata><TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0fc3d6836588d6c65260a54d7ffab3ff33453b20c06f49f682c883304d7e1ab9" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54519242" /></Metadata><TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Windows implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Windows" />
   <TypeSignature Language="VB.NET" Value="Public Interface Windows&#xA;Implements IEnumerable" />
@@ -25,10 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.Window" /> objetos no Microsoft Excel.</summary>
-    <remarks><para>A <b>coleção Windows</b> retornada pela propriedade do objeto contém todas as janelas no aplicativo, enquanto a coleção Windows retornada pela propriedade do objeto contém apenas as janelas na agenda <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> especificada.</para>
-      <para>Use o <b>método NewWindow</b> de <b>um objeto Window</b> ou <b>Workbook</b> para criar uma nova janela e adicioná-la à coleção.</para>
-      <para>Use <b>o Windows</b>( ), onde está o nome da janela ou o número de <paramref name="index" /> <paramref name="index" /> índice, para retornar um único objeto <b>Window</b> .</para>
+    <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Excel.Window" /> objetos Microsoft Excel.</summary>
+    <remarks><para>A <b>coleção Windows</b> retornada pela propriedade do objeto contém todas as janelas no aplicativo, enquanto Windows coleção Windows retornada pela propriedade do objeto contém apenas as janelas na manual de trabalho <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> especificada.</para>
+      <para>Use o <b>método NewWindow</b> de um <b>objeto Window</b> ou <b>Workbook</b> para criar uma nova janela e adicioná-la à coleção.</para>
+      <para>Use <b>Windows</b>( ), onde está o nome da janela ou o número de <paramref name="index" /> <paramref name="index" /> índice, para retornar um único objeto <b>Window.</b></para>
       <para>Observe que a janela ativa é sempre Windows(1).</para>
       <para> </para></remarks>
   </Docs>
@@ -91,7 +91,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o aplicativo Microsoft Excel.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa o Microsoft Excel aplicativo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,9 +122,9 @@
       </Parameters>
       <Docs>
         <param name="ArrangeStyle">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlArrangeStyle" /> .</param>
-        <param name="ActiveWorkbook">Objeto <b>opcional</b>. <b>True</b> para organizar apenas as janelas visíveis da pasta de trabalho ativa. <b>False</b> para organizar todas as janelas. O valor padrão é <b>False</b>.</param>
-        <param name="SyncHorizontal">Objeto <b>opcional</b>. Ignorado se for <paramref name="ActiveWorkbook" /> <b>False</b> ou omitido. <b>True</b> para sincronizar as janelas da pasta de trabalho ativo quando rolando horizontalmente. <b>False</b> para não sincronizar as janelas. O valor padrão é <b>False</b>.</param>
-        <param name="SyncVertical">Objeto <b>opcional</b>. Ignorado se for <paramref name="ActiveWorkbook" /> <b>False</b> ou omitido. <b>True</b> para sincronizar as janelas da pasta de trabalho ativa ao rolar verticalmente. <b>False</b> para não sincronizar as janelas. O valor padrão é <b>False</b>.</param>
+        <param name="ActiveWorkbook">Objeto <b>Opcional</b>. <b>True</b> para organizar apenas as janelas visíveis da pasta de trabalho ativa. <b>False</b> para organizar todas as janelas. O valor padrão é <b>False</b>.</param>
+        <param name="SyncHorizontal">Objeto <b>Opcional</b>. Ignorado se <paramref name="ActiveWorkbook" /> for <b>False</b> ou omitido. <b>True</b> para sincronizar as janelas da pasta de trabalho ativo quando rolando horizontalmente. <b>False</b> para não sincronizar as janelas. O valor padrão é <b>False</b>.</param>
+        <param name="SyncVertical">Objeto <b>Opcional</b>. Ignorado se <paramref name="ActiveWorkbook" /> for <b>False</b> ou omitido. <b>True</b> para sincronizar as janelas da pasta de trabalho ativa ao rolar verticalmente. <b>False</b> para não sincronizar as janelas. O valor padrão é <b>False</b>.</param>
         <summary>Organiza as janelas na tela.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -182,7 +182,7 @@
         <param name="WindowName">O nome de uma janela a ser aberta.</param>
         <summary>Abre duas janelas no modo lado a lado.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Você não pode usar <b>o método CompareSideBySideWith</b> com <see cref="T:Microsoft.Office.Interop.Excel._Application" /> o objeto ou a <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" /> propriedade.</para>
+        <remarks><para>Não é possível usar o <b>método CompareSideBySideWith</b> com o <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto ou a <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" /> propriedade.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -302,7 +302,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Objeto <b>Required</b>. O nome ou número de índice do objeto.</param>
+        <param name="Index">Objeto <b>Obrigatório</b>. O nome ou número de índice do objeto.</param>
         <summary>Retorna um único objeto de uma coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
